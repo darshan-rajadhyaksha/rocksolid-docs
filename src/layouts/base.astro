@@ -1,0 +1,209 @@
+---
+import Navbar from "@/components/navbar.astro";
+import Sidebar from "@/components/sidebar.astro";
+import project from "@/config/project";
+import "@/styles/global.css";
+
+type Props = {
+  title?: string;
+  metaTitle?: string;
+  description?: string;
+  type?: string;
+  image?: string;
+  url?: string;
+};
+
+const {
+  title = "RockSolid",
+  metaTitle = "",
+  description = "",
+  type = "article",
+  image = "/assets/og.png",
+  url = "",
+} = Astro.props;
+
+const pageMetaTitle = metaTitle || title;
+---
+
+<!doctype html>
+<html lang="en">
+<head>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+  <title>{pageMetaTitle}</title>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="generator" content={Astro.generator} />
+  <meta name="description" content={description} />
+  <meta name="keywords" content={project.keywords.join(", ")}>
+  <meta name="author" content={project.author}>
+  {url && (
+    <link rel="canonical" href={project.url + url} />
+  )}
+  <link rel="sitemap" href="/sitemap-index.xml" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- OG -->
+  <meta property="og:type" content={type} />
+  <meta property="og:title" content={pageMetaTitle} />
+  <meta property="og:description" content={description} />
+  {image && (
+    <meta property="og:image" content={project.url + image} />
+    <meta property="og:image:width" content="1024" />
+    <meta property="og:image:height" content="768" />
+  )}
+  {url && (
+    <meta property="og:url" content={project.url + url} />
+  )}
+  <meta property="og:site_name" content={project.name} />
+  <meta property="og:locale" content="en_US" />
+
+   <!-- X -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content={pageMetaTitle} />
+  <meta name="twitter:description" content={description} />
+  {image && (
+    <meta name="twitter:image" content={project.url + image} />
+    <meta name="twitter:image:width" content="1024" />
+    <meta name="twitter:image:height" content="768" />
+  )}
+
+  <link rel="icon" href="/assets/favicon/favicon.ico" />
+  <link rel="icon" type="image/png" sizes="96x96" href="/assets/favicon/favicon-96x96.png" />
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon/favicon.svg" />
+  <link rel="shortcut icon" href="/assets/favicon/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png" />
+
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+
+  <script is:inline>
+    const theme = localStorage.getItem("theme");
+    if (
+      theme === "dark" ||
+      (
+        !theme &&
+        window.matchMedia(
+          "(prefers-color-scheme: dark)"
+        ).matches
+      )
+    ) {
+      document.documentElement.classList.add("dark");
+    }
+  </script>
+</head>
+
+<body
+  class="min-h-screen bg-white text-neutral-900
+    dark:bg-neutral-950 dark:text-neutral-100"
+>
+  <!-- Mobile overlay -->
+  <div
+    id="sidebar-overlay"
+    class="pointer-events-none fixed inset-0 z-40
+      bg-black/40 opacity-0 transition-opacity
+      duration-200 lg:hidden"
+  ></div>
+  <div
+    class="min-h-screen lg:grid
+      lg:grid-cols-[260px_minmax(0,1fr)]"
+  >
+    <Sidebar />
+    <div class="min-w-0">
+      <Navbar title={title} />
+      <main class="py-8 sm:py-10">
+        <div class="prose-docs px-6 sm:px-10 lg:px-16 xl:px-20">
+          <slot />
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <script is:inline>
+    const root = document.documentElement;
+    function getTheme() {
+      return root.classList.contains("dark") ? "dark" : "light";
+    }
+
+    function updateThemeUI(theme) {
+      const dark = theme === "dark";
+      document
+        .querySelectorAll(".theme-light")
+        .forEach((element) => {
+          element.classList.toggle(
+            "hidden",
+            dark
+          );
+        });
+      document
+        .querySelectorAll(".theme-dark")
+        .forEach((element) => {
+          element.classList.toggle(
+            "hidden",
+            !dark
+          );
+        });
+      document
+        .querySelectorAll("[data-theme-label]")
+        .forEach((element) => {
+          element.textContent = dark
+            ? "Light theme"
+            : "Dark theme";
+        });
+    }
+
+    function toggleTheme() {
+      const theme = getTheme() === "dark" ? "light" : "dark";
+      root.classList.toggle("dark", theme === "dark");
+      localStorage.setItem("theme", theme);
+      updateThemeUI(theme);
+    }
+
+    document.addEventListener("click", (event) => {
+      const target = event.target;
+      if (
+        target instanceof Element &&
+        target.closest("[data-theme-toggle]")
+      ) {
+        toggleTheme();
+      }
+    });
+
+    updateThemeUI(getTheme());
+
+    const sidebar = document.querySelector("aside");
+    const overlay = document.querySelector("#sidebar-overlay");
+    const menuButton = document.querySelector("#mobile-menu-button");
+
+    function openSidebar() {
+      sidebar?.classList.remove("-translate-x-full");
+      sidebar?.classList.add("translate-x-0");
+      overlay?.classList.remove("pointer-events-none", "opacity-0");
+      overlay?.classList.add("pointer-events-auto", "opacity-100");
+      document.body.classList.add("overflow-hidden");
+    }
+
+    function closeSidebar() {
+      sidebar?.classList.remove("translate-x-0");
+      sidebar?.classList.add("-translate-x-full");
+      overlay?.classList.remove("pointer-events-auto", "opacity-100");
+      overlay?.classList.add("pointer-events-none", "opacity-0");
+      document.body.classList.remove("overflow-hidden");
+    }
+
+    menuButton?.addEventListener("click", openSidebar);
+    overlay?.addEventListener("click", closeSidebar);
+    sidebar?.querySelectorAll("a").forEach((link) => {
+      link.addEventListener("click", closeSidebar);
+    });
+
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "Escape") {
+        closeSidebar();
+      }
+    });
+  </script>
+</body>
+</html>

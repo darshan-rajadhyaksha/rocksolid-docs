@@ -1,0 +1,74 @@
+---
+title: Breadcrumbs
+description: Displays a navigation hierarchy that helps users understand their current location within an application.
+---
+
+import MDXTabeWrapper from "@/components/mdx-table-wrapper.astro";
+import ComponentExample from "@/components/component-example.astro";
+import BreadcrumbsProps from "./props/Breadcrumbs.mdx";
+
+# Breadcrumbs
+
+The Breadcrumbs component displays a navigation hierarchy that helps
+users understand their current location within an application or
+website.
+
+<ComponentExample
+  name="Breadcrumbs/examples/basic"
+  title="Basic breadcrumbs"
+/>
+
+## Examples
+
+### Custom Separator
+
+Use the `seperator` prop to customize the separator displayed between
+breadcrumb items. The default separator is `/`.
+
+<ComponentExample
+  name="Breadcrumbs/examples/custom-separator"
+  title="Custom separator"
+/>
+
+### Customization
+
+Use `class` and `slotProps` to customize the Breadcrumbs container,
+breadcrumb items, and separators.
+
+<ComponentExample
+  name="Breadcrumbs/examples/customization"
+  title="Customization"
+/>
+
+## Accessibility
+
+The Breadcrumbs component follows common accessibility patterns for
+breadcrumb navigation.
+
+- Breadcrumbs should be contained within a navigation landmark.
+- The breadcrumb list should use an ordered list to represent the
+  hierarchy.
+- Each breadcrumb should provide a clear and descriptive label.
+- The current page should be distinguishable from other breadcrumb
+  links.
+- Separators are visual elements and should not be the only way to
+  communicate the relationship between breadcrumb items.
+- Ensure custom separators do not introduce unnecessary information
+  for screen readers.
+
+## API
+
+### Breadcrumbs
+
+The Breadcrumbs component supports custom separators, elements, and
+slot-level customization.
+
+<MDXTabeWrapper>
+  <BreadcrumbsProps />
+</MDXTabeWrapper>
+
+## Related Components
+
+- [Link](/components/link/) — Use Link for navigation between pages.
+- [Button](/components/button/) — Use Button for actions that do not
+  navigate to another page.

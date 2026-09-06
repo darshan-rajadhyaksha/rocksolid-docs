@@ -1,0 +1,151 @@
+---
+title: Input
+description: A text input component for collecting and editing user-entered values.
+---
+
+import MDXTabeWrapper from "@/components/mdx-table-wrapper.astro";
+import ComponentExample from "@/components/component-example.astro";
+import InputProps from "./props/Input.mdx";
+
+# Input
+
+The Input component provides a styled field for entering and editing
+text and other supported input values.
+
+<ComponentExample
+name="Input/examples/basic"
+title="Basic input"
+/>
+
+## Examples
+
+### Colors
+
+Use the `color` prop to communicate the semantic state or meaning of
+the input.
+
+<ComponentExample
+name="Input/examples/colors"
+title="Colors"
+/>
+
+### Sizes
+
+Use the `size` prop to control the visual size of the input.
+
+<ComponentExample
+name="Input/examples/sizes"
+title="Sizes"
+/>
+
+### Variants
+
+Use the `variant` prop to control the visual style of the input.
+
+<ComponentExample
+name="Input/examples/variants"
+title="Variants"
+/>
+
+### Full Width
+
+Use the `fullWidth` prop to make the input fill the available width of
+its parent container.
+
+<ComponentExample
+name="Input/examples/full-width"
+title="Full width"
+/>
+
+### Prefix and Suffix
+
+Use the `prefix` and `suffix` props to display content before or after
+the input value.
+
+Prefixes and suffixes can be used for icons, units, or other contextual
+content.
+
+<ComponentExample
+name="Input/examples/prefix-suffix"
+title="Prefix and suffix"
+/>
+
+### Input Types
+
+Use the `type` prop to specify the type of input field.
+
+<ComponentExample
+name="Input/examples/types"
+title="Input types"
+/>
+
+The `type` prop supports the following input types: `number`, `search`, `time`,
+`image`, `text`, `color`, `date`, `datetime-local`, `email`, `file`, `month`,
+`password`, `tel`, `url`, and `week`.
+
+
+Use the most appropriate input type for the expected value so browsers
+and assistive technologies can provide the correct behavior and
+keyboard experience.
+
+### Controlled Value
+
+Use the `value` prop together with `onInput` to control the input value.
+
+<ComponentExample
+  name="Input/examples/controlled"
+  title="Controlled input"
+/>
+
+The `onInput` handler receives the native `InputEvent`, which can be
+used to update the signal that controls the input.
+
+### Customization
+
+Use `class` to apply custom classes to the Input component.
+
+For more targeted customization, use `slotProps` to provide props to
+individual component slots.
+
+The available slots are:
+
+* `base` — Props applied to the base input element.
+* `prefix` — Props applied to the prefix element.
+* `suffix` — Props applied to the suffix element.
+
+<ComponentExample
+name="Input/examples/customization"
+title="Customization"
+/>
+
+## Accessibility
+
+* Use the appropriate `type` for the expected input value.
+* Provide an accessible label for every input.
+* Do not rely on color alone to communicate validation or status.
+* Use the `error` color together with appropriate text or other
+  accessible feedback when communicating validation errors.
+* Ensure prefixes and suffixes do not obscure or replace essential
+  information available to assistive technologies.
+* Use appropriate autocomplete attributes when collecting common user
+  information.
+* Ensure the input has sufficient color contrast in all supported
+  variants and states.
+
+## API
+
+### Input
+
+The Input component supports semantic colors, visual sizes, variants,
+native input types, controlled and uncontrolled values, prefixes,
+suffixes, and slot-level customization.
+
+<MDXTabeWrapper>
+  <InputProps />
+</MDXTabeWrapper>
+
+## Related Components
+
+* [Textarea](/components/textarea/) — Use Textarea for multi-line text input.
+* [Select](/components/select/) — Use Select when users need to choose
+  from a predefined set of options.

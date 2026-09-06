@@ -1,0 +1,134 @@
+---
+title: Switch
+description: A control that allows users to toggle an option between on and off states.
+---
+
+import MDXTabeWrapper from "@/components/mdx-table-wrapper.astro";
+import ComponentExample from "@/components/component-example.astro";
+import SwitchProps from "./props/Switch.mdx";
+
+# Switch
+
+The Switch component allows users to toggle an option between on and
+off states. It can be used for settings, preferences, and other
+binary choices.
+
+<ComponentExample
+name="Switch/examples/basic"
+title="Basic switch"
+/>
+
+## Examples
+
+### Colors
+
+Use the `color` prop to communicate the semantic meaning or state of
+the switch.
+
+<ComponentExample
+name="Switch/examples/colors"
+title="Colors"
+/>
+
+### Sizes
+
+Use the `size` prop to control the size of the switch.
+
+<ComponentExample
+name="Switch/examples/sizes"
+title="Sizes"
+/>
+
+### Controlled
+
+Use the `checked` prop to control the current state of the switch.
+When using a controlled switch, update the value in response to the
+`onChange` event.
+
+<ComponentExample
+name="Switch/examples/controlled"
+title="Controlled switch"
+/>
+
+### Default Checked
+
+Use the `defaultChecked` prop to set the initial state of an
+uncontrolled switch.
+
+<ComponentExample
+name="Switch/examples/default-checked"
+title="Default checked"
+/>
+
+### Disabled
+
+Use the `disabled` prop to prevent users from interacting with the
+switch.
+
+<ComponentExample
+name="Switch/examples/disabled"
+title="Disabled switch"
+/>
+
+### Change
+
+Use the `onChange` prop to respond when the switch state changes.
+
+<ComponentExample
+name="Switch/examples/on-change"
+title="Change"
+/>
+
+### Disable Transition
+
+Use the `disableTransition` prop to disable the transition animation
+when the Switch changes between its checked and unchecked states.
+
+<ComponentExample
+  name="Switch/examples/disable-transition"
+  title="Disable transition"
+/>
+
+
+### Custom Slots
+
+Use `slotProps` to customize the styles or attributes of the switch
+base and handle elements.
+
+<ComponentExample
+name="Switch/examples/slot-props"
+title="Custom slots"
+/>
+
+The `slotProps` object supports the following slots:
+
+* `base` — Customizes the switch's base element.
+* `handle` — Customizes the switch's handle element.
+
+## Accessibility
+
+* Provide an accessible label that clearly describes what the switch
+  controls.
+* Use a visible `<label>` when possible, or provide an appropriate
+  `aria-label` when a visible label is not available.
+* Do not rely on color alone to communicate the switch state.
+* Ensure the switch has sufficient contrast in both checked and
+  unchecked states.
+* Use `disabled` only when the switch cannot currently be changed.
+
+## API
+
+### Switch
+
+The Switch component supports controlled and uncontrolled states,
+semantic colors, multiple sizes, disabled states, change handling, and
+customization of its base and handle slots.
+
+<MDXTabeWrapper>
+  <SwitchProps />
+</MDXTabeWrapper>
+
+## Related Components
+
+* [Checkbox](/components/checkbox/) — Use Checkbox when users can select
+  one or more options from a group.

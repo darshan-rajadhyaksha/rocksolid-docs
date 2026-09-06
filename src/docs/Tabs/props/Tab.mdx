@@ -1,0 +1,8 @@
+| Prop         | Type                          | Required | Default | Description                                                                     |
+| ------------ | ----------------------------- | -------- | ------- | ------------------------------------------------------------------------------- |
+| class        | `string`                      | No       | —       | Adds custom CSS classes to the tab.                                             |
+| icon         | `JSXElement`                  | No       | —       | Displays an icon within the tab.                                                |
+| iconPosition | `"top" \| "bottom" \| "start" \| "end"` | No       | `"top"` | Controls the position of the icon relative to the tab label.                    |
+| label        | `string`                      | No       | —       | The text displayed as the tab label.                                            |
+| value        | `string`                      | **Yes**  | —       | Identifies the tab and associates it with a `TabPanel` that has the same value. |
+| slotProps    | `{ icon?: object }`           | No       | —       | Provides additional props for customizing individual tab slots.<br /><ul><li>`icon` — Props for the icon slot.</li></ul> |

@@ -1,0 +1,12 @@
+| Prop | Type | Required | Default | Description |
+| --- | --- | --- | --- | --- |
+| checked | `boolean` | No | — | Controls whether the switch is checked. |
+| class | `string` | No | — | Custom CSS class applied to the switch. |
+| color | `"default" \| "success" \| "warning" \| "info" \| "error"` | No | `"default"` | Sets the semantic color of the switch. |
+| defaultChecked | `boolean` | No | `false` | Sets the initial checked state for an uncontrolled switch. |
+| disabled | `boolean` | No | `false` | Disables the switch and prevents user interaction. |
+| disableTransition | `boolean` | No       | `false` | Disables the transition animation when set to `true`. |
+| id | `string` | No | — | Sets the `id` attribute of the switch. |
+| onChange | `(event: Event, checked: boolean) => void` | No | — | Called when the checked state changes. Receives the native event and the new checked state. |
+| size | `"small" \| "medium" \| "large"` | No | `"medium"` | Controls the size of the switch. |
+| slotProps | `{ base?: object; handle?: object }` | No | — | Provides props for customizing the Switch slots.<br /><ul><li>`base` — Props for the base slot.</li><li>`handle` — Props for the handle slot.</li></ul> |

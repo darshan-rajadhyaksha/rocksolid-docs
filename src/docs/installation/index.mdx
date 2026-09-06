@@ -1,0 +1,181 @@
+---
+title: Installation
+description: Install and configure RockSolid in your SolidJS application.
+---
+
+import CodeBlock from "@/components/code-block.astro";
+
+# Installation
+
+RockSolid is a component library built with **SolidJS**, **Tailwind CSS**, and **Tailwind Variants**.
+
+Follow the steps below to create a SolidJS project, configure Tailwind CSS, and install RockSolid.
+
+## Prerequisites
+
+RockSolid requires the following:
+
+- Node.js 18 or later
+- SolidJS
+- Tailwind CSS
+- Tailwind Variants
+
+If you already have a SolidJS project with Tailwind CSS configured, you can skip to [Install RockSolid](#5-install-rocksolid).
+
+## 1. Create a SolidJS Project
+
+Create a new SolidJS project using Vite:
+
+<CodeBlock code={`
+npm create vite@latest my-app -- --template solid-ts
+`}
+  class="border"
+  lang="bash"
+/>
+
+
+Navigate to the project:
+
+<CodeBlock code={`
+cd my-app
+`}
+  class="border"
+  lang="bash"
+/>
+
+Install the project dependencies:
+
+<CodeBlock code={`
+npm install
+`}
+  class="border"
+  lang="bash"
+/>
+
+Start the development server:
+
+<CodeBlock code={`
+npm run dev
+`}
+  class="border"
+  lang="bash"
+/>
+
+## 2. Install Tailwind CSS
+
+Install Tailwind CSS and its Vite plugin:
+
+<CodeBlock code={`
+npm install tailwindcss @tailwindcss/vite
+`}
+  class="border"
+  lang="bash"
+/>
+
+## 3. Configure Tailwind CSS
+
+Update your `vite.config.ts`:
+
+<CodeBlock code={`
+  import { defineConfig } from "vite";
+  import solid from "vite-plugin-solid";
+  import tailwindcss from "@tailwindcss/vite";
+
+  export default defineConfig({
+    plugins: [
+      solid(),
+      tailwindcss(),
+    ],
+  });
+`}
+  class="border"
+  lang="js"
+/>
+
+Add Tailwind CSS to your global CSS file, for example `src/index.css`:
+
+<CodeBlock code={`
+@import "tailwindcss";
+`}
+  class="border"
+  lang="css"
+/>
+
+Make sure your entry file imports the global CSS:
+
+<CodeBlock code={`
+import "./index.css";
+`}
+  class="border"
+  lang="js"
+/>
+
+## 4. Install Tailwind Variants
+
+RockSolid uses Tailwind Variants for component styling.
+
+Install it using:
+
+<CodeBlock code={`
+npm install tailwind-variants
+`}
+  class="border"
+  lang="bash"
+/>
+
+## 5. Install RockSolid
+
+Install the RockSolid component library:
+
+<CodeBlock code={`
+npm install rocksolidjs
+`}
+  class="border"
+  lang="js"
+/>
+
+## 6. Import RockSolid Styles
+
+Import the RockSolid stylesheet into your application's global CSS file:
+
+<CodeBlock code={`
+@import "tailwindcss";
+@import "rocksolidjs/index.css";
+@source "../../node_modules/rocksolidjs";
+`}
+  class="border"
+  lang="js"
+/>
+
+The Tailwind CSS import should come before the RockSolid stylesheet.
+
+## 7. Use RockSolid Components
+
+You can now import and use RockSolid components in your SolidJS application:
+
+<CodeBlock code={`
+  import Button from "rocksolidjs/Button";
+
+  export default function App() {
+    return (
+      <Button>
+        Click me
+      </Button>
+    );
+  }
+`}
+  class="border"
+  lang="tsx"
+/>
+
+## Setup Complete
+
+Your project now includes:
+
+- SolidJS
+- Vite
+- Tailwind CSS
+- Tailwind Variants
+- RockSolid
+
+You are now ready to build your application using RockSolid components.

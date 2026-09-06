@@ -1,0 +1,7 @@
+| Prop         | Type                                        | Required | Default | Description                                                                                   |
+| ------------ | ------------------------------------------- | -------- | ------- | --------------------------------------------------------------------------------------------- |
+| children     | `JSXElement`                                | No       | —       | The `Tabs` and `TabPanel` components rendered within the context.                             |
+| defaultValue | `string`                                    | No       | —       | Sets the initially active tab when the component is uncontrolled.                             |
+| onChange     | `(event: Event, activeTab: string) => void` | No       | —       | Called when the active tab changes. Receives the event and the newly active tab value.        |
+| value        | `string`                                    | No       | —       | Controls the currently active tab. When provided, the active tab is controlled by the parent. |
+| tabId        | `string`                                    | No       | —       | A unique identifier used to associate tabs with their corresponding tab panels through accessibility attributes such as `id`, `aria-controls`, and `aria-labelledby`. |

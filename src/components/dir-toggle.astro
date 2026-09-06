@@ -1,0 +1,39 @@
+<div class="flex rounded-md border border-neutral-200 bg-white p-0.5 dark:border-neutral-700 dark:bg-neutral-900">
+  <button
+    id="ltr"
+    type="button"
+    class="rounded px-2 py-1 text-sm"
+  >
+    LTR
+  </button>
+
+  <button
+    id="rtl"
+    type="button"
+    class="rounded px-2 py-1 text-sm"
+  >
+    RTL
+  </button>
+</div>
+
+<script>
+  const ltr = document.querySelector("#ltr");
+  const rtl = document.querySelector("#rtl");
+
+  const setDir = (dir: "ltr" | "rtl") => {
+    document.documentElement.dir = dir;
+    localStorage.setItem("dir", dir);
+
+    ltr?.classList.toggle("bg-neutral-200", dir === "ltr");
+    rtl?.classList.toggle("bg-neutral-200", dir === "rtl");
+
+    ltr?.classList.toggle("dark:bg-neutral-700", dir === "ltr");
+    rtl?.classList.toggle("dark:bg-neutral-700", dir === "rtl");
+  };
+
+  const saved = localStorage.getItem("dir") as "ltr" | "rtl" | null;
+  setDir(saved || "ltr");
+
+  ltr?.addEventListener("click", () => setDir("ltr"));
+  rtl?.addEventListener("click", () => setDir("rtl"));
+</script>

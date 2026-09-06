@@ -1,0 +1,13 @@
+| Prop       | Type                                                                    | Required | Default     | Description                                                      |
+| ---------- | ----------------------------------------------------------------------- | -------- | ----------- | ---------------------------------------------------------------- |
+| avatar     | `JSXElement`                                                            | No       | —           | An avatar displayed before the chip label.                       |
+| color      | `"default" \| "success" \| "warning" \| "info" \| "error"`              | No       | `"default"` | Controls the semantic color of the chip.                         |
+| deleteIcon | `JSXElement`                                                            | No       | —           | A custom icon displayed for the delete action.                   |
+| disabled   | `boolean`                                                               | No       | `false`     | Disables the chip and prevents interactive actions.              |
+| icon       | `JSXElement`                                                            | No       | —           | An icon displayed before the chip label.                         |
+| label      | `string`                                                                | Yes      | —           | The text displayed inside the chip.                              |
+| onClick    | `(event: MouseEvent) => void`                                           | No       | —           | Callback invoked when the Chip is clicked. |
+| onDelete   | `(event: MouseEvent) => void`                                           | No       | —           | Callback invoked when the chip's delete action is triggered.     |
+| size       | `"small" \| "medium" \| "large"`                                        | No       | `"medium"`  | Controls the size of the chip. |
+| slotProps  | `{ deleteIcon?: object; label?: object }`                               | No       | —           | Provides props to customize the Chip slots.<br /><ul><li>`deleteIcon` — Props for the delete icon slot.</li><li>`label` — Props for the label slot. Accepts `TypographyProps`.</li></ul> |
+| variant    | `"solid" \| "filled" \| "outlined"`                                     | No       | `"filled"`  | Controls the visual style of the chip.                           |

@@ -1,0 +1,183 @@
+---
+import { navigations } from "@/config/navigations";
+
+const pathname = Astro.url.pathname;
+
+const isActive = (href: string) => {
+  return (
+    pathname === href || 
+    `${pathname}/` === href ||
+    pathname.startsWith(`${href}/`)
+  );
+};
+---
+
+<aside
+  class="fixed inset-y-0 left-0 z-50 w-[280px]
+    -translate-x-full
+    ltr:border-r rtl:border-l
+    border-neutral-200
+    bg-white
+    transition-transform duration-200
+    dark:border-neutral-800
+    dark:bg-neutral-950
+
+    lg:sticky
+    lg:top-0
+    lg:z-auto
+    lg:h-screen
+    lg:w-[260px]
+    lg:translate-x-0"
+>
+  <div
+    class="flex h-full flex-col overflow-y-auto px-4 py-5"
+  >
+    <!-- Logo -->
+    <div class="mb-6 px-2">
+      <a
+        href="/"
+        class="block text-lg font-bold tracking-tight
+          text-neutral-950
+          dark:text-neutral-50"
+      >
+        RockSolid
+      </a>
+      <p
+        class="mt-1 text-xs
+          text-neutral-400
+          dark:text-neutral-600"
+      >
+        v0.1.1
+      </p>
+    </div>
+
+    <!-- GitHub -->
+    <div class="mb-7">
+      <a
+        href="https://github.com/darshan-rajadhyaksha/rocksolid/"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="flex w-full items-center gap-3
+          rounded-md px-3 py-2
+          text-sm font-medium
+          text-neutral-600
+          transition-colors
+          hover:bg-neutral-100
+          hover:text-neutral-950
+          dark:text-neutral-400
+          dark:hover:bg-neutral-900
+          dark:hover:text-neutral-100"
+      >
+        <svg
+          width="17"
+          height="17"
+          viewBox="0 0 24 24"
+          fill="currentColor"
+          aria-hidden="true"
+        >
+          <path
+            d="M12 .5C5.65.5.5 5.65.5 12
+            c0 5.08 3.29 9.39 7.86 10.91
+            .57.1.78-.25.78-.55
+            0-.27-.01-1-.02-1.96
+            -3.2.7-3.88-1.54-3.88-1.54
+            -.52-1.33-1.28-1.69-1.28-1.69
+            -1.04-.71.08-.7.08-.7
+            1.15.08 1.76 1.18 1.76 1.18
+            1.02 1.75 2.67 1.24 3.32.95
+            .1-.74.4-1.24.73-1.52
+            -2.55-.29-5.23-1.28-5.23-5.69
+            0-1.26.45-2.29 1.18-3.1
+            -.12-.29-.51-1.47.11-3.06
+            0 0 .96-.31 3.15 1.18
+            a10.9 10.9 0 0 1 5.74 0
+            c2.19-1.49 3.15-1.18 3.15-1.18
+            .62 1.59.23 2.77.11 3.06
+            .73.81 1.18 1.84 1.18 3.1
+            0 4.42-2.69 5.39-5.25 5.67
+            .41.35.78 1.04.78 2.1
+            0 1.52-.01 2.74-.01 3.11
+            0 .3.2.66.79.55
+            A11.51 11.51 0 0 0
+            23.5 12C23.5 5.65
+            18.35.5 12 .5Z"
+          />
+        </svg>
+        <span>GitHub</span>
+        <svg
+          class="ml-auto"
+          width="14"
+          height="14"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          aria-hidden="true"
+        >
+          <path d="M7 17 17 7" />
+          <path d="M7 7h10v10" />
+        </svg>
+      </a>
+
+    </div>
+
+    <!-- Navigation -->
+    <nav
+      class="space-y-8"
+      aria-label="Documentation"
+    >
+      {
+        navigations.map((group) => (
+          <div class="space-y-1">
+            <p
+              class="mb-2 px-3
+                text-xs font-semibold
+                uppercase tracking-wider
+                text-neutral-400
+                dark:text-neutral-600"
+            >
+              {group.title}
+            </p>
+            {
+              group.items.map((item) => {
+                const active = isActive(item.href);
+                return (
+                  <a
+                    href={item.href}
+                    aria-current={
+                      active
+                        ? "page"
+                        : undefined
+                    }
+                    class:list={[
+                      "block rounded-md px-3 py-2",
+                      "text-sm font-medium",
+                      "transition-colors",
+                      active
+                        ? [
+                            "bg-neutral-100",
+                            "text-neutral-950",
+                            "dark:bg-neutral-900",
+                            "dark:text-neutral-50",
+                          ]
+                        : [
+                            "text-neutral-600",
+                            "hover:bg-neutral-100",
+                            "hover:text-neutral-950",
+                            "dark:text-neutral-400",
+                            "dark:hover:bg-neutral-900",
+                            "dark:hover:text-neutral-100",
+                          ],
+                    ]}
+                  >
+                    {item.title}
+                  </a>
+                );
+              })
+            }
+          </div>
+        ))
+      }
+    </nav>
+  </div>
+</aside>

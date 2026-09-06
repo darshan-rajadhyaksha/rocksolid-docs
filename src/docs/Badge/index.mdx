@@ -1,0 +1,98 @@
+---
+title: Badge
+description: Displays a small label or indicator attached to another element.
+---
+
+import MDXTabeWrapper from "@/components/mdx-table-wrapper.astro";
+import ComponentExample from "@/components/component-example.astro";
+import BadgeProps from "./props/Badge.mdx";
+
+# Badge
+
+The Badge component displays a small label or indicator attached to
+another element. It can be used to show counts, statuses, or other
+short pieces of information.
+
+<ComponentExample
+  name="Badge/examples/basic"
+  title="Basic badge"
+/>
+
+## Examples
+
+### Colors
+
+Use the `color` prop to communicate the semantic meaning of the badge.
+
+<ComponentExample
+  name="Badge/examples/colors"
+  title="Colors"
+/>
+
+### Position
+
+Use the `position` prop to control where the badge appears relative
+to its content.
+
+<ComponentExample
+  name="Badge/examples/position"
+  title="Position"
+/>
+
+The `position` prop accepts an `x` value of `left` or `right` and a
+`y` value of `top` or `bottom`.
+
+### Overlap
+
+Use the `overlap` prop to adjust the badge position based on the shape
+of the element it overlaps.
+
+<ComponentExample
+  name="Badge/examples/overlap"
+  title="Overlap"
+/>
+
+The available overlap values are:
+
+- `circle` — Positions the badge for circular content.
+- `rect` — Positions the badge for rectangular content.
+
+### Status
+
+A Badge can be used without `badgeContent` to indicate the status of
+an element, such as whether a user is online, busy, or offline.
+
+Use the `class` prop and `slotProps` to customize the Badge and its
+badge element.
+
+<ComponentExample
+  name="Badge/examples/status"
+  title="Status"
+/>
+
+
+## Accessibility
+
+- Keep badge content short and meaningful.
+- Do not rely on color alone to communicate important information.
+- Use text or numbers that clearly communicate the badge's purpose.
+- Ensure badges have sufficient contrast against their background.
+- When the badge communicates important status information, make sure
+  that information is also available in an accessible text form.
+
+## API
+
+### Badge
+
+The Badge component supports custom content, positioning, colors,
+overlap styles, and badge slot customization.
+
+<MDXTabeWrapper>
+  <BadgeProps />
+</MDXTabeWrapper>
+
+## Related Components
+
+- [Avatar](/components/avatar/) — Use Badge to display status or counts
+  alongside an avatar.
+- [Chip](/components/chip/) — Use Chip for standalone labels or statuses.

@@ -1,0 +1,11 @@
+| Prop | Type | Required | Default | Description |
+|---|---|---|---|---|
+| action | `JSXElement` | No | — | Adds a custom action to the alert. Use the `<Button />` component for interactive actions. |
+| as | `string` | No | `"div"` | Specifies the HTML element used to render the alert. |
+| children | `JSXElement` | Yes | — | Content displayed inside the alert. |
+| class | `string` | No | — | Custom CSS class applied to the alert. |
+| color | `"default" \| "success" \| "warning" \| "info" \| "error"` | No | `"default"` | Sets the semantic color of the alert. |
+| icon | `JSXElement` | No | — | Custom icon displayed in the alert. |
+| onClose | `(event: MouseEvent) => void` | No | — | Adds a close button to the alert and handles the close event. |
+| slotProps | `{ icon?: object; content?: object; action?: object; closeButton?: object }` | No | — | Provides props for customizing the Alert slots.<br /><ul><li>`icon` — Props for the icon slot. Accepts `TypographyProps`.</li><li>`content` — Props for the content slot. Accepts `TypographyProps`.</li><li>`action` — Props for the action slot.</li><li>`closeButton` — Props for the close button slot. Accepts `IconButtonProps`.</li></ul> |
+| variant | `"solid " \| "filled" \| "outlined"` | No | `"filled"` | Controls the visual style of the alert. |

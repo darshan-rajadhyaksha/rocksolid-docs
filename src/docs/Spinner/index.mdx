@@ -1,0 +1,95 @@
+---
+title: Spinner
+description: Displays a loading indicator while content or an action is in progress.
+---
+
+import MDXTabeWrapper from "@/components/mdx-table-wrapper.astro";
+import ComponentExample from "@/components/component-example.astro";
+import SpinnerProps from "./props/Spinner.mdx";
+
+# Spinner
+
+The Spinner component displays a visual loading indicator while content
+or an action is in progress. It can be used to communicate that an
+operation is currently being processed or that content is loading.
+
+<ComponentExample
+name="Spinner/examples/basic"
+title="Basic spinner"
+/>
+
+## Examples
+
+### Colors
+
+Use the `color` prop to communicate the context or status of a loading
+operation.
+
+<ComponentExample
+name="Spinner/examples/colors"
+title="Colors"
+/>
+
+### Sizes
+
+Use the `size` prop to control the size of the Spinner.
+
+<ComponentExample
+name="Spinner/examples/sizes"
+title="Sizes"
+/>
+
+### Label
+
+Use the `label` prop to provide accessible text that describes the
+loading state.
+
+<ComponentExample
+name="Spinner/examples/label"
+title="Custom label"
+/>
+
+The default label is `Loading`. Use a more specific label when the
+loading operation has a clear purpose, such as `Saving` or
+`Loading results`.
+
+### Custom Styling
+
+Use the `class` prop to apply custom CSS classes to the Spinner.
+
+<ComponentExample
+name="Spinner/examples/custom-class"
+title="Custom styling"
+/>
+
+Use custom classes when you need to adjust the Spinner's appearance
+to match a specific layout or design.
+
+## Accessibility
+
+* Provide a meaningful `label` that describes what is currently loading
+  when the default `Loading` label is not specific enough.
+* Do not rely on the Spinner's animation or color alone to communicate
+  loading or status information.
+* Ensure the Spinner has sufficient contrast against its background.
+* Keep the loading label concise and descriptive.
+* Use a Spinner alongside visible status text when users need additional
+  context about a long-running operation.
+
+## API
+
+### Spinner
+
+The Spinner component supports custom styling, semantic colors, sizes,
+and accessible loading labels.
+
+<MDXTabeWrapper>
+  <SpinnerProps />
+</MDXTabeWrapper>
+
+## Related Components
+
+* [Progress](/components/progress/) — Use Progress when the completion
+  state of an operation can be measured.
+* [Skeleton](/components/skeleton/) — Use Skeleton to represent the
+  structure of content while it is loading.

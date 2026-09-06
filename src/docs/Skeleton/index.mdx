@@ -1,0 +1,70 @@
+---
+title: Skeleton
+description: Displays a placeholder shape while content is loading.
+---
+
+import MDXTabeWrapper from "@/components/mdx-table-wrapper.astro";
+import ComponentExample from "@/components/component-example.astro";
+import SkeletonProps from "./props/Skeleton.mdx";
+
+# Skeleton
+
+The Skeleton component displays a placeholder shape while content is
+loading. It helps communicate the structure of content before the actual
+content is available.
+
+<ComponentExample
+  name="Skeleton/examples/basic"
+  title="Basic skeleton"
+/>
+
+## Examples
+
+### Variants
+
+Use the `variant` prop to control the shape of the Skeleton.
+
+<ComponentExample
+  name="Skeleton/examples/variants"
+  title="Variants"
+/>
+
+### Custom Styling
+
+Use the `class` prop to add custom CSS classes to the Skeleton.
+
+<ComponentExample
+  name="Skeleton/examples/custom-styling"
+  title="Custom styling"
+/>
+
+The `class` prop can be used to customize the Skeleton's appearance or
+adjust its dimensions based on the content it represents.
+
+## Accessibility
+
+- Use Skeleton only as a visual loading indicator and do not rely on it
+  to communicate essential information.
+- Ensure that the loading state is communicated appropriately to
+  assistive technologies when necessary.
+- Replace the Skeleton with the actual content when loading is complete.
+- Avoid using excessive Skeleton elements that make the loading state
+  difficult to understand.
+
+## API
+
+### Skeleton
+
+The Skeleton component supports custom styling and different placeholder
+shapes for representing loading content.
+
+<MDXTabeWrapper>
+  <SkeletonProps />
+</MDXTabeWrapper>
+
+## Related Components
+
+- [Spinner](/components/spinner/) — Use Spinner to indicate that content or an 
+  operation is loading.
+- [Progress](/components/progress/) — Use to communicate the progress of
+  an ongoing operation.

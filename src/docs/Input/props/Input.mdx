@@ -1,0 +1,15 @@
+| Prop | Type | Required | Default | Description |
+| --- | --- | --- | --- | --- |
+| class | `string` | No | — | Additional CSS classes applied to the input. |
+| color | `"default" \| "success" \| "warning" \| "info" \| "error"` | No | `"default"` | Controls the semantic color and state styling of the input. |
+| disabled | `boolean` | No | `false` | If `true`, the input is disabled and cannot be interacted with. |
+| fullWidth | `boolean` | No | `false` | Makes the input fill the available width of its parent container. |
+| inputSize | `number` | No | — | Sets the native HTML `size` attribute, controlling the approximate number of visible characters. |
+| onInput | `(event: InputEvent) => void` | No | — | Callback invoked when the input value changes. Receives the native `InputEvent`. |
+| prefix | `JSXElement` | No | — | Content displayed before the input value. |
+| size | `"small" \| "medium" \| "large"` | No | `"medium"` | Controls the visual size of the input. |
+| slotProps | `{ base?: object; prefix?: object; suffix?: object }` | No | — | Provides props for customizing the Input slots.<br /><ul><li>`base` — Props for the base input slot.</li><li>`prefix` — Props for the prefix slot.</li><li>`suffix` — Props for the suffix slot.</li></ul> |
+| suffix | `JSXElement` | No | — | Content displayed after the input value. |
+| type | `"number" \| "search" \| "time" \| "image" \| "text" \| "color" \| "date" \| "datetime-local" \| "email" \| "file" \| "month" \| "password" \| "tel" \| "url" \| "week"` | No | `"text"` | Specifies the type of input to render. |
+| value | `string \| number` | No | — | Controls the current value of the input. |
+| variant | `"filled" \| "outlined" \| "ghost"` | No | `"outlined"` | Controls the visual style of the input. |

@@ -1,0 +1,229 @@
+---
+title: Tabs
+description: Organizes related content into selectable tabs and panels.
+---
+
+import MDXTabeWrapper from "@/components/mdx-table-wrapper.astro";
+import ComponentExample from "@/components/component-example.astro";
+import CodeBlock from "@/components/code-block.astro";
+import TabsContextProps from "./props/TabsContext.mdx";
+import TabsProps from "./props/Tabs.mdx";
+import TabProps from "./props/Tab.mdx";
+import TabPanelProps from "./props/TabPanel.mdx";
+
+# Tabs
+
+The Tabs component organizes related content into separate views that
+can be switched between without leaving the current page.
+
+<ComponentExample
+name="Tabs/examples/basic"
+title="Basic tabs"
+/>
+
+## Usage
+
+Wrap the `Tabs` and `TabPanel` components in a `TabsContext`. Each `Tab`
+must have a unique `value`, and its corresponding `TabPanel` must use
+the same value.
+
+<CodeBlock code={`
+  <TabsContext defaultValue="home">
+    <Tabs>
+      <Tab label="Home" value="home" />
+      <Tab label="Profile" value="profile" />
+      <Tab label="Settings" value="settings" />
+    </Tabs>
+
+    <TabPanel value="home">
+      Home content
+    </TabPanel>
+    <TabPanel value="profile">
+      Profile content
+    </TabPanel>
+    <TabPanel value="settings">
+      Settings content
+    </TabPanel>
+  </TabsContext>
+`} 
+  class="border"
+/>
+
+When a tab is selected, the `TabPanel` with the matching `value` is
+displayed.
+
+## Examples
+
+### Controlled
+
+Use the `value` prop on `TabsContext` to control the active tab. Use
+`onChange` to respond when the user selects a different tab.
+
+<ComponentExample
+name="Tabs/examples/controlled"
+title="Controlled tabs"
+/>
+
+### Default Value
+
+Use `defaultValue` to specify the tab that should be active initially
+without controlling the active tab.
+
+<ComponentExample
+name="Tabs/examples/default-value"
+title="Default value"
+/>
+
+### Orientation
+
+Use the `orientation` prop to arrange tabs horizontally or vertically.
+
+<ComponentExample
+name="Tabs/examples/orientation"
+title="Orientation"
+/>
+
+### Centered
+
+Use the `centered` prop to center the tabs within the available space.
+
+<ComponentExample
+name="Tabs/examples/centered"
+title="Centered tabs"
+/>
+
+### Icons
+
+Use the `icon` prop to display an icon alongside a tab label.
+
+<ComponentExample
+name="Tabs/examples/icons"
+title="Tabs with icons"
+/>
+
+### Icon Position
+
+Use the `iconPosition` prop to control where an icon appears relative to
+the tab label.
+
+<ComponentExample
+name="Tabs/examples/icon-position"
+title="Icon position"
+/>
+
+### Disabled
+
+Use the `disabled` prop to prevent users from selecting a tab.
+
+<ComponentExample
+  name="Tabs/examples/disabled"
+  title="Disabled tab"
+/>
+
+### Tab ID
+
+Use the `tabId` prop to automatically associate each tab with its corresponding tab panel.
+
+<ComponentExample
+  name="Tabs/examples/basic"
+  title="Tab ID"
+/>
+
+The `tabId` prop generates the accessibility attributes needed to link each `role="tab"` with its corresponding `role="tabpanel"`, including `id`, `aria-controls`, and `aria-labelledby`.
+
+Provide a unique `tabId` for each `TabsContext` instance when using multiple tab groups on the same page.
+
+If you do not provide `tabId`, you can set these accessibility attributes manually. Give each tab and tab panel a unique `id`, then use `aria-controls` on the tab and `aria-labelledby` on the corresponding tab panel.
+
+<CodeBlock code={`
+  <Tab
+    label="Home"
+    value="home"
+    id="home-tab"
+    aria-controls="home-panel"
+  />
+
+  <TabPanel
+    value="home"
+    tabIndex={0}
+    id="home-panel"
+    aria-labelledby="home-tab"
+  >
+    Welcome to the home page.
+  </TabPanel>
+`} 
+  class="border"
+/>
+
+### Custom Styling
+
+Use the `class` prop to customize the appearance of `TabsContext`, `Tabs`,
+`Tab`, and `TabPanel` components. Use `slotProps` on `Tab` when you need
+to customize individual tab slots.
+
+<ComponentExample
+name="Tabs/examples/custom-styles"
+title="Custom styles"
+/>
+
+## Accessibility
+
+* Associate each `Tab` with its corresponding `TabPanel` so assistive
+  technologies can understand the relationship between the tab and its
+  content.
+* Ensure every `Tab` has a corresponding `TabPanel` with a matching
+  `value`.
+* Keep tab labels concise and meaningful.
+* Use the `orientation` prop to reflect the visual arrangement of the
+  tabs.
+* Use the `disabled` prop when a tab is temporarily unavailable, rather than
+  relying only on visual styling to communicate its state.
+* Do not rely on icons alone to communicate the purpose of a tab when
+  a text label can provide clearer context.
+* Ensure tab and panel content remains accessible when switching between
+  tabs.
+
+## API
+
+### TabsContext
+
+`TabsContext` manages the active tab and provides the selected value to
+its child `Tabs` and `TabPanel` components.
+
+<MDXTabeWrapper>
+  <TabsContextProps />
+</MDXTabeWrapper>
+
+### Tabs
+
+`Tabs` renders the tab navigation and supports horizontal or vertical
+layouts, centered positioning, and custom styling.
+
+<MDXTabeWrapper>
+  <TabsProps />
+</MDXTabeWrapper>
+
+### Tab
+
+`Tab` represents an individual selectable tab. Use `value` to associate
+the tab with a `TabPanel`. Tabs can optionally display a label and icon.
+
+<MDXTabeWrapper>
+  <TabProps />
+</MDXTabeWrapper>
+
+### TabPanel
+
+`TabPanel` contains the content associated with a specific tab. Its
+`value` must match the `value` of the corresponding `Tab`.
+
+<MDXTabeWrapper>
+  <TabPanelProps />
+</MDXTabeWrapper>
+
+## Related Components
+
+* [Accordion](/components/accordion/) — Use Accordion to show and hide
+  related sections vertically.
+* [Button](/components/button/) — Use Button for standalone actions or
+  navigation.

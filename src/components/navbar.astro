@@ -1,0 +1,98 @@
+---
+import DirToggle from "@/components/dir-toggle.astro";
+import project from "@/config/project";
+import Moon from "@/icons/moon";
+import Sun from "@/icons/sun";
+
+const {
+  title = project.name,
+} = Astro.props;
+---
+<header
+  class="sticky top-0 z-30
+    border-b border-neutral-200
+    bg-white/90
+    backdrop-blur
+    dark:border-neutral-800
+    dark:bg-neutral-950/90"
+>
+  <div
+    class="flex h-14 items-center
+      justify-between px-4 sm:px-6"
+  >
+    <!-- Mobile menu -->
+    <button
+      id="mobile-menu-button"
+      type="button"
+      aria-label="Open navigation"
+      class="inline-flex h-9 w-9
+        items-center justify-center
+        rounded-md
+        text-neutral-600
+        transition-colors
+        hover:bg-neutral-100
+        hover:text-neutral-950
+        dark:text-neutral-400
+        dark:hover:bg-neutral-900
+        dark:hover:text-neutral-100
+        lg:hidden"
+    >
+      <svg
+        width="20"
+        height="20"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        aria-hidden="true"
+      >
+        <line x1="4" y1="6" x2="20" y2="6" />
+        <line x1="4" y1="12" x2="20" y2="12" />
+        <line x1="4" y1="18" x2="20" y2="18" />
+      </svg>
+    </button>
+
+    <!-- Title -->
+    <div
+      class="text-sm font-medium
+        text-neutral-600
+        dark:text-neutral-400"
+    >
+      {title}
+    </div>
+
+    <div class="flex gap-3">
+      <DirToggle />
+      <!-- Theme -->
+      <button
+        type="button"
+        data-theme-toggle
+        aria-label="Toggle theme"
+        class="inline-flex items-center gap-2
+          rounded-md
+          border border-neutral-200
+          bg-white
+          px-3 py-1.5
+          cursor-pointer
+          text-lg font-medium
+          text-neutral-700
+          transition-colors
+          hover:bg-neutral-100
+          hover:text-neutral-950
+          dark:border-neutral-800
+          dark:bg-neutral-950
+          dark:text-neutral-300
+          dark:hover:bg-neutral-900
+          dark:hover:text-neutral-100"
+      >
+        <span class="theme-light">
+          <Moon />
+        </span>
+        <span class="theme-dark hidden">
+          <Sun />
+        </span>
+      </button>
+    </div>
+  </div>
+</header>

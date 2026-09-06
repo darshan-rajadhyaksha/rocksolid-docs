@@ -1,0 +1,72 @@
+---
+title: ThemeProvider
+description: Provides a theme to components within the component hierarchy.
+---
+
+import MDXTabeWrapper from "@/components/mdx-table-wrapper.astro";
+import ComponentExample from "@/components/component-example.astro";
+import ThemeProviderProps from "./props/ThemeProvider.mdx";
+
+# ThemeProvider
+
+The ThemeProvider makes a theme available to components within its provider
+hierarchy. It is used to apply a shared theme configuration across your
+application.
+
+Create a theme using the [`createTheme`](/customization/create-theme/) function and pass
+the resulting theme to the `theme` prop.
+
+<ComponentExample
+  name="ThemeProvider/examples/basic"
+  title="Basic usage"
+/>
+
+## Accessing the Theme
+
+Use the `useTheme` hook to access the theme from any component rendered within
+the ThemeProvider hierarchy.
+
+<ComponentExample
+  name="ThemeProvider/examples/use-theme"
+  title="Using useTheme"
+/>
+
+The `useTheme` hook returns the theme provided by the nearest ThemeProvider.
+This allows components to access theme tokens and other theme configuration
+without passing the theme through props.
+
+## Theme Overrides
+
+The `theme` prop accepts a theme created using `createTheme`. Theme overrides
+must follow the structure expected by the theme system.
+
+ThemeProvider throws an error when a theme override does not match the expected
+pattern. This helps identify invalid theme configuration early.
+
+See the [Theme Tokens](/customization/theme-tokens/) documentation for more information about
+the available tokens and the expected theme structure.
+
+## TypeScript
+
+If you add custom theme tokens, you can extend the library's TypeScript
+interfaces to make those values available to TypeScript throughout your
+application.
+
+See the [Extending Theme Types](/customization/extending-theme-types/) documentation for
+information about extending the theme types.
+
+## API
+
+### ThemeProvider
+
+The ThemeProvider accepts a theme and renders its children within the provided
+theme context.
+
+<MDXTabeWrapper>
+  <ThemeProviderProps />
+</MDXTabeWrapper>
+
+## Related
+
+- [createTheme](/customization/create-theme/) — Create a theme configuration.
+- [Theme Tokens](/customization/theme-tokens/) — Learn about available theme tokens and their structure.

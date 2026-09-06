@@ -1,0 +1,108 @@
+---
+title: Checkbox
+description: Allows users to select or deselect an option.
+---
+
+import MDXTabeWrapper from "@/components/mdx-table-wrapper.astro";
+import ComponentExample from "@/components/component-example.astro";
+import CheckboxProps from "./props/Checkbox.mdx";
+
+# Checkbox
+
+The Checkbox component allows users to select or deselect an option. It
+can be used for binary choices, settings, preferences, and form inputs.
+
+<ComponentExample
+name="Checkbox/examples/basic"
+title="Basic checkbox"
+/>
+
+## Examples
+
+### Controlled
+
+Use `checked` together with `onChange` when the Checkbox state needs to be
+controlled by the parent component.
+
+<ComponentExample
+name="Checkbox/examples/controlled"
+title="Controlled checkbox"
+/>
+
+### Default Checked
+
+Use the `defaultChecked` prop to initialize it as selected while allowing the
+component to manage its state internally.
+
+<ComponentExample
+name="Checkbox/examples/default-checked"
+title="Default Checked"
+/>
+
+### Colors
+
+Use the `color` prop to communicate the semantic meaning of the Checkbox.
+
+<ComponentExample
+name="Checkbox/examples/colors"
+title="Colors"
+/>
+
+### Size
+
+Use the `size` prop to control the size of the Checkbox.
+
+<ComponentExample
+name="Checkbox/examples/sizes"
+title="Sizes"
+/>
+
+### Disabled
+
+Use the `disabled` prop to prevent the Checkbox from being changed.
+
+<ComponentExample
+name="Checkbox/examples/disabled"
+title="Disabled"
+/>
+
+
+### Customization
+
+Use the `slotProps.base` to add custom styles to the Checkbox.
+
+<ComponentExample
+name="Checkbox/examples/custom-class"
+title="Custom class"
+/>
+
+## Accessibility
+
+* Use a meaningful label for every Checkbox.
+* Associate the Checkbox with its label using `id` and the corresponding
+  label relationship when necessary.
+* Do not rely on color alone to communicate the Checkbox state.
+* Ensure the Checkbox has sufficient contrast against its background.
+* Keep the Checkbox keyboard accessible.
+* Use the `disabled` state when an option cannot be changed.
+* For groups of related choices, provide a clear group label or
+  description.
+
+## API
+
+### Checkbox
+
+The Checkbox component supports controlled and uncontrolled states,
+semantic colors, disabled states, custom classes, and input slot
+customization.
+
+<MDXTabeWrapper>
+  <CheckboxProps />
+</MDXTabeWrapper>
+
+## Related Components
+
+* [Radio](/components/radio/) — Use Radio when users should select exactly
+  one option from a group.
+* [Switch](/components/switch/) — Use Switch for toggling a setting or
+  preference on or off.

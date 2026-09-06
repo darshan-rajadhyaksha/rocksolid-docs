@@ -1,0 +1,111 @@
+---
+title: Select
+description: Allows users to choose one option from a list of available values.
+---
+
+import MDXTabeWrapper from "@/components/mdx-table-wrapper.astro";
+import ComponentExample from "@/components/component-example.astro";
+import SelectProps from "./props/Select.mdx";
+
+# Select
+
+The Select component allows users to choose one option from a list of
+available values.
+
+<ComponentExample
+name="Select/examples/basic"
+title="Basic select"
+/>
+
+## Examples
+
+### Options
+
+Use the `options` prop to define the choices displayed in the Select.
+Each option accepts a `label` and `value`, with an optional `disabled`
+property for options that should not be selectable.
+
+<ComponentExample
+  name="Select/examples/options"
+  title="Options"
+/>
+
+### Colors
+
+Use the `color` prop to communicate the semantic meaning of the Select.
+
+<ComponentExample
+name="Select/examples/colors"
+title="Colors"
+/>
+
+### Sizes
+
+Use the `size` prop to control the size of the Select.
+
+<ComponentExample
+name="Select/examples/sizes"
+title="Sizes"
+/>
+
+### Variants
+
+Use the `variant` prop to control the visual style of the Select.
+
+<ComponentExample
+name="Select/examples/variants"
+title="Variants"
+/>
+
+### Disabled
+
+Use the `disabled` prop to prevent users from interacting with the
+Select.
+
+<ComponentExample
+name="Select/examples/disabled"
+title="Disabled select"
+/>
+
+### Full Width
+
+Use the `fullWidth` prop to make the Select span the full width of its
+container.
+
+<ComponentExample
+name="Select/examples/full-width"
+title="Full-width select"
+/>
+
+### Change Handling
+
+Use the `onChange` prop to respond when the selected value changes.
+
+<ComponentExample
+name="Select/examples/on-change"
+title="Change handling"
+/>
+
+## Accessibility
+
+* Use a clear and descriptive label for the Select.
+* Do not rely on color alone to communicate validation or status.
+* Use `disabled` only when the Select is unavailable for interaction.
+* Provide meaningful option labels that clearly describe each choice.
+
+## API
+
+### Select
+
+The Select component supports configurable colors, sizes, variants,
+disabled and full-width states, change handling, and a list of selectable
+options.
+
+<MDXTabeWrapper>
+  <SelectProps />
+</MDXTabeWrapper>
+
+## Related Components
+
+* [Input](/components/input/) — Use Input when users need to enter free-form text.
+* [Checkbox](/components/checkbox/) — Use Checkbox when users can select multiple independent options.

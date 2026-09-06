@@ -1,0 +1,104 @@
+---
+title: Alert
+description: Displays important information, status updates, warnings, or errors to users.
+---
+
+import MDXTabeWrapper from "@/components/mdx-table-wrapper.astro";
+import ComponentExample from "@/components/component-example.astro";
+import AlertProps from "./props/Alert.mdx";
+
+# Alert
+
+The Alert component is used to communicate important information,
+status updates, warnings, or errors to users. It supports different
+colors and visual variants, as well as optional icons, actions, and
+dismissal behavior.
+
+<ComponentExample
+  name="Alert/examples/basic"
+  title="Basic alert"
+/>
+
+## Examples
+
+### Colors
+
+Use the `color` prop to communicate the semantic meaning of an alert.
+
+<ComponentExample
+  name="Alert/examples/colors"
+  title="Colors"
+/>
+
+### Variants
+
+Use the `variant` prop to change the visual appearance of the alert.
+
+<ComponentExample
+  name="Alert/examples/variants"
+  title="Variants"
+/>
+
+### Icon
+
+Use the `icon` prop to add an icon to the alert.
+
+<ComponentExample
+  name="Alert/examples/icon"
+  title="Icon"
+/>
+
+### Close
+
+Use the `onClose` prop to make an alert dismissible. Providing
+`onClose` adds a close button to the alert.
+
+<ComponentExample
+  name="Alert/examples/close"
+  title="Close"
+/>
+
+### Custom Actions
+
+Use the `action` prop to add a custom action to the alert. Use the
+`Button` component for interactive actions.
+
+<ComponentExample
+  name="Alert/examples/custom-actions"
+  title="Custom actions"
+/>
+
+## Accessibility
+
+The Alert component follows common accessibility patterns for
+communicating important information to users.
+
+- By default, the Alert component applies `role="alert"` so its content
+  is announced to screen readers when it is rendered.
+- Use `role="status"` for informational or non-critical alerts.
+- Actions within an alert should be keyboard accessible and have
+  `tabindex="0"` when required.
+- Use clear and descriptive text to communicate the purpose of the alert.
+- Do not rely on color or icons alone to communicate meaning.
+- When using `onClose`, ensure the close button has an accessible name.
+- Use descriptive labels for interactive actions.
+
+## API
+
+### Alert
+
+The `Alert` component supports semantic colors, visual variants,
+icons, custom actions, dismissal, and slot customization.
+
+<MDXTabeWrapper>
+  <AlertProps />
+</MDXTabeWrapper>
+
+## Related Components
+
+- [Button](/components/button/) — Use Button for interactive actions
+  inside an alert.
+- [IconButton](/components/icon-button/) — Use IconButton for icon-based
+  actions such as dismissing an alert.
+- [Typography](/components/typography/) — Use Typography to customize
+  alert content and icon slots.

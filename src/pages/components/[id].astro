@@ -1,0 +1,33 @@
+---
+import BaseLayout from "@/layouts/base.astro";
+import { navigations } from "@/config/navigations";
+
+const {
+  id = "",
+} = Astro.params as {
+  id: string;
+};
+
+const components = navigations[1].items;
+
+const matched = components.find((entry) => entry.id === id);
+
+const Document = matched?.document;
+
+export const getStaticPaths = async () => {
+  const allDocuments = navigations[1].items;
+  return allDocuments.map((e) => ({
+    params: {
+      id: e.id,
+    },
+  }));
+};
+---
+
+<BaseLayout
+  title={matched?.title}
+  description={matched?.description}
+  url={matched?.href}
+>
+  {Document && <Document />}
+</BaseLayout>

@@ -1,0 +1,102 @@
+---
+title: Button
+description: Triggers an action or event with a customizable button.
+---
+
+import MDXTabeWrapper from "@/components/mdx-table-wrapper.astro";
+import ComponentExample from "@/components/component-example.astro";
+import ButtonProps from "./props/Button.mdx";
+
+# Button
+
+The Button component is used to trigger an action or event. It supports
+multiple colors, visual variants, sizes, icons, disabled states, and
+full-width layouts.
+
+<ComponentExample
+name="Button/examples/basic"
+title="Basic button"
+/>
+
+## Examples
+
+### Colors
+
+Use the `color` prop to customize the semantic color of the Button.
+
+<ComponentExample
+name="Button/examples/colors"
+title="Colors"
+/>
+
+### Variants
+
+Use the `variant` prop to control the visual style of the Button.
+
+<ComponentExample
+name="Button/examples/variants"
+title="Variants"
+/>
+
+### Sizes
+
+Use the `size` prop to control the size of the Button.
+
+<ComponentExample
+name="Button/examples/sizes"
+title="Sizes"
+/>
+
+### Icons
+
+Use the `startIcon` and `endIcon` props to add icons before or after the
+Button content.
+
+<ComponentExample
+name="Button/examples/icons"
+title="Icons"
+/>
+
+### Disabled
+
+Use the `disabled` prop to prevent the Button from being interacted with.
+
+<ComponentExample
+name="Button/examples/disabled"
+title="Disabled"
+/>
+
+### Full Width
+
+Use the `fullWidth` prop to make the Button take up the full available
+width.
+
+<ComponentExample
+name="Button/examples/full-width"
+title="Full width"
+/>
+
+## Accessibility
+
+* Use descriptive text that clearly communicates the Button's action.
+* Do not rely on color alone to communicate meaning or state.
+* Use the `disabled` prop when an action is unavailable.
+* When using `startIcon` or `endIcon` for decorative icons, set
+  `aria-hidden="true"` on the icon so it is hidden from assistive
+  technologies.
+
+## API
+
+### Button
+
+The `Button` component supports customizable colors, variants, sizes,
+icons, disabled states, and full-width layouts.
+
+<MDXTabeWrapper>
+  <ButtonProps />
+</MDXTabeWrapper>
+
+## Related Components
+
+- [IconButton](/components/icon-button) — Use IconButton for actions that
+  are represented by an icon without visible text.

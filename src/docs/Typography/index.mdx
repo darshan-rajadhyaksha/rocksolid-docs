@@ -1,0 +1,101 @@
+---
+title: Typography
+description: Displays text with consistent styles, colors, alignment, and semantic elements.
+---
+
+import MDXTabeWrapper from "@/components/mdx-table-wrapper.astro";
+import ComponentExample from "@/components/component-example.astro";
+import TypographyProps from "./props/Typography.mdx";
+
+# Typography
+
+The Typography component provides consistent text styles across the
+application. It supports different heading and body variants, semantic
+HTML elements, text alignment, colors, and truncation.
+
+<ComponentExample
+  name="Typography/examples/basic"
+  title="Basic typography"
+/>
+
+## Examples
+
+### Variants
+
+Use the `variant` prop to control the visual style and size of the text.
+
+<ComponentExample
+  name="Typography/examples/variants"
+  title="Variants"
+/>
+
+### Colors
+
+Use the `color` prop to communicate different meanings or visual
+hierarchies.
+
+<ComponentExample
+  name="Typography/examples/colors"
+  title="Colors"
+/>
+
+### Alignment
+
+Use the `align` prop to control the horizontal alignment of text.
+
+<ComponentExample
+  name="Typography/examples/alignment"
+  title="Text alignment"
+/>
+
+### Truncation
+
+Use the `truncate` prop to prevent long text from overflowing its
+container.
+
+<ComponentExample
+  name="Typography/examples/truncate"
+  title="Truncated text"
+/>
+
+### Custom Element
+
+Use the `as` prop to control the semantic HTML element rendered by the
+component.
+
+<ComponentExample
+  name="Typography/examples/custom-element"
+  title="Custom element"
+/>
+
+The `as` prop can be used when the visual variant and semantic HTML
+element need to be different. For example, a `body1` style can be
+rendered as a `span` element.
+
+## Accessibility
+
+- Use heading variants and semantic elements to maintain a logical
+  document structure.
+- Use headings in the correct order rather than choosing a heading
+  variant only for its visual appearance.
+- Do not rely on color alone to communicate meaning.
+- Ensure text has sufficient contrast against its background.
+- Use `truncate` only when the complete text is available through
+  another accessible mechanism when necessary.
+
+## API
+
+### Typography
+
+The Typography component supports text variants, semantic elements,
+colors, alignment, and text truncation.
+
+<MDXTabeWrapper>
+  <TypographyProps />
+</MDXTabeWrapper>
+
+## Related Components
+
+- [Link](/components/link/) — Use for navigational text.
+- [Button](/components/button/) — Use for actions that require user
+  interaction.

@@ -1,0 +1,11 @@
+| Prop           | Type                                                       | Required | Default     | Description                                                                      |
+| -------------- | ---------------------------------------------------------- | -------- | ----------- | -------------------------------------------------------------------------------- |
+| checked        | `boolean`                                                  | No       | —           | Controls whether the Checkbox is checked.                                        |
+| class          | `string`                                                   | No       | —           | Adds a custom CSS class to the Checkbox.                                         |
+| color          | `"default" \| "success" \| "warning" \| "info" \| "error"` | No       | `"default"` | Sets the semantic color of the Checkbox.                                         |
+| defaultChecked | `boolean`                                                  | No       | `false`     | Sets the initial checked state for an uncontrolled Checkbox.                     |
+| disabled       | `boolean`                                                  | No       | `false`     | Disables the Checkbox and prevents user interaction.                             |
+| id             | `string`                                                   | No       | —           | Sets the `id` attribute of the underlying input element.                         |
+| onChange       | `(event: Event, checked: boolean) => void`                 | No       | —           | Called when the checked state changes. Provides the event and new checked state. |
+| size           | `"small" \| "medium" \| "large"`                           | No       | `"medium"`  | Sets the size of the Checkbox.                                                   |
+| slotProps      | `{ base?: object }`                                        | No       | —           | Provides props to customize the Checkbox slots.<br /><ul><li>`base` — Props for the Checkbox base slot.</li></ul> |

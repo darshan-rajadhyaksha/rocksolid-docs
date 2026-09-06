@@ -1,0 +1,10 @@
+| Prop         | Type                                                                 | Required | Default | Description |
+|--------------|----------------------------------------------------------------------|----------|---------|-------------|
+| aria-labelledby | `string`                   | No       | —        | Identifies the element that labels the dialog, typically the `DialogTitle` element. |
+| children     | `JSXElement`                                                         | No       | —       | Content rendered inside the dialog. |
+| class        | `string`                                                             | No       | —       | Custom CSS class applied to the dialog. |
+| fullscreen   | `boolean`                                                            | No       | `false` | Controls whether the dialog is displayed in fullscreen mode. |
+| open         | `boolean`                                                            | No       | —       | Controls whether the dialog is open. |
+| onClose      | `(event: Event, reason: DialogCloseReason) => void` | No | — | Callback invoked when the dialog requests to close. The `reason` identifies how the close was triggered: `escape` when the user presses the Escape key, or `backdrop` when the user clicks the backdrop. |
+| role         | `"dialog" \| "alertdialog"` | No       | `"dialog"` | Defines the semantic role of the dialog. Use `alertdialog` when the dialog requires the user's immediate attention. |
+| slotProps    | `{ backdrop?: object }` | No | — | Provides additional props for customizing individual dialog slots.<br /><ul><li>`backdrop` — Props for customizing the dialog backdrop.</li></ul> |

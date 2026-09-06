@@ -1,0 +1,71 @@
+---
+title: IconButton
+description: A compact button designed for actions represented by an icon.
+---
+
+import MDXTabeWrapper from "@/components/mdx-table-wrapper.astro";
+import ComponentExample from "@/components/component-example.astro";
+import IconButtonProps from "./props/IconButton.mdx";
+
+# IconButton
+
+The IconButton component provides a compact button for actions that can
+be represented by an icon. It is useful for common actions such as
+closing, editing, deleting, or opening additional options.
+
+<ComponentExample
+name="IconButton/examples/basic"
+title="Basic icon button"
+/>
+
+## Examples
+
+### Colors
+
+Use the `color` prop to communicate the semantic meaning of an action.
+
+<ComponentExample
+  name="IconButton/examples/colors"
+  title="Colors"
+/>
+
+### Sizes
+
+Use the `size` prop to control the size of the IconButton.
+
+<ComponentExample
+name="IconButton/examples/sizes"
+title="Sizes"
+/>
+
+### Disabled
+
+Use the `disabled` prop to prevent an action from being triggered.
+
+<ComponentExample
+name="IconButton/examples/disabled"
+title="Disabled"
+/>
+
+## Accessibility
+
+* Provide an accessible label for every IconButton.
+* Use a concise action-oriented label such as `Close`, `Edit`, or `Delete`.
+* Do not rely on the icon alone to communicate the button's purpose.
+* Use `disabled` when the action is temporarily unavailable.
+* Ensure the button has sufficient contrast and a visible focus state.
+
+## API
+
+### IconButton
+
+The IconButton component accepts an icon as its content and supports
+different sizes, disabled state, and custom CSS classes.
+
+<MDXTabeWrapper>
+  <IconButtonProps />
+</MDXTabeWrapper>
+
+## Related Components
+
+* [Button](/components/button/) — Use Button when an action needs visible text.

@@ -1,0 +1,11 @@
+| Prop      | Type                                                       | Required | Default     | Description                                                                                                         |
+| --------- | ---------------------------------------------------------- | -------- | ----------- | ------------------------------------------------------------------------------------------------------------------- |
+| class     | `string`                                                   | No       | —           | Additional CSS classes applied to the Select.                                                                       |
+| color     | `"default" \| "success" \| "warning" \| "info" \| "error"` | No       | `"default"` | Controls the semantic color of the Select.                                                                          |
+| disabled  | `boolean`                                                  | No       | `false`     | Disables the Select and prevents user interaction.                                                                  |
+| fullWidth | `boolean`                                                  | No       | `false`     | Makes the Select span the full width of its container.                                                              |
+| onChange  | `(event: InputEvent) => void`                              | No       | —           | Called when the selected value changes.                                                                             |
+| options   | `Array<{ label: string; value: string; disabled?: boolean}>` | No       | —           | Defines the options displayed in the Select. Each option has a `label`, `value`, and optional `disabled` property. |
+| size      | `"small" \| "medium" \| "large"`                           | No       | `"medium"`  | Controls the size of the Select.                                                                                    |
+| value     | `string`                                                   | No       | —           | The currently selected value of the Select. |
+| variant   | `"filled" \| "outlined" \| "ghost"`                        | No       | `"outlined"` | Controls the visual style of the Select.                                                                            |

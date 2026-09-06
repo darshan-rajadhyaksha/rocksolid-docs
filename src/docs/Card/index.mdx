@@ -1,0 +1,164 @@
+---
+title: Card
+description: Displays related content and actions in a flexible, composable container.
+---
+
+import MDXTabeWrapper from "@/components/mdx-table-wrapper.astro";
+import ComponentExample from "@/components/component-example.astro";
+import CardProps from "./props/Card.mdx";
+import CardHeaderProps from "./props/CardHeader.mdx";
+import CardTitleProps from "./props/CardTitle.mdx";
+import CardDescriptionProps from "./props/CardDescription.mdx";
+import CardContentProps from "./props/CardContent.mdx";
+import CardFooterProps from "./props/CardFooter.mdx";
+
+# Card
+
+The Card component groups related content and actions into a flexible,
+composable container. Cards can be used to display information, actions,
+or other related content in a visually distinct section.
+
+<ComponentExample
+  name="Card/examples/basic"
+  title="Basic card"
+/>
+
+## Composition
+
+Card is composed of smaller components that can be combined to create
+different layouts.
+
+<ComponentExample
+  name="Card/examples/composition"
+  title="Composition"
+/>
+
+Use `CardHeader`, `CardTitle`, and `CardDescription` for introductory
+content, `CardContent` for the main content, and `CardFooter` for actions
+or supporting information.
+
+Each composition component is optional, allowing you to create cards that
+fit different content and layout requirements.
+
+## Examples
+
+### Filled
+
+Use the `filled` variant for cards with a subtle filled background.
+
+<ComponentExample
+  name="Card/examples/filled"
+  title="Filled"
+/>
+
+### Elevated
+
+Use the `elevated` variant when the card should appear raised above the
+surrounding content.
+
+<ComponentExample
+  name="Card/examples/elevated"
+  title="Elevated"
+/>
+
+### Outlined
+
+Use the `outlined` variant to define the card with a visible border.
+
+<ComponentExample
+  name="Card/examples/outlined"
+  title="Outlined"
+/>
+
+### Ghost
+
+Use the `ghost` variant for a minimal card without a background or border.
+
+<ComponentExample
+  name="Card/examples/ghost"
+  title="Ghost"
+/>
+
+### Customized
+
+Combine the Card components with other components to create specialized
+card layouts for different use cases.
+
+<ComponentExample
+  name="Card/examples/customized"
+  title="Customized"
+/>
+
+## Accessibility
+
+- Use a semantic heading for `CardTitle` when the card represents a
+  distinct section of content.
+- Ensure the heading level used by `CardTitle` follows the page's heading
+  hierarchy.
+- Use meaningful text for card titles and descriptions so users can
+  understand the purpose of the card.
+- Do not rely on color, borders, or shadows alone to communicate important
+  information.
+- Ensure interactive elements within a card are keyboard accessible and
+  have clear accessible names.
+- When a card represents a standalone piece of content, consider using a
+  semantic element such as `<article>` for the card container.
+
+## API
+
+### Card
+
+The Card component provides a flexible container for grouping related
+content and supports multiple visual variants.
+
+<MDXTabeWrapper>
+  <CardProps />
+</MDXTabeWrapper>
+
+### CardHeader
+
+The CardHeader component groups the title, description, and other
+introductory content at the top of a card.
+
+<MDXTabeWrapper>
+  <CardHeaderProps />
+</MDXTabeWrapper>
+
+### CardTitle
+
+The CardTitle component displays the primary heading for a card.
+
+<MDXTabeWrapper>
+  <CardTitleProps />
+</MDXTabeWrapper>
+
+### CardDescription
+
+The CardDescription component displays supporting text below the card title.
+
+<MDXTabeWrapper>
+  <CardDescriptionProps />
+</MDXTabeWrapper>
+
+### CardContent
+
+The CardContent component contains the main content of a card.
+
+<MDXTabeWrapper>
+  <CardContentProps />
+</MDXTabeWrapper>
+
+### CardFooter
+
+The CardFooter component contains actions or supporting content at the
+bottom of a card.
+
+<MDXTabeWrapper>
+  <CardFooterProps />
+</MDXTabeWrapper>
+
+## Related Components
+
+- [Button](/components/button/) — Use Button for actions within a card.
+- [Divider](/components/divider/) — Use Divider to visually separate
+  sections within a card.

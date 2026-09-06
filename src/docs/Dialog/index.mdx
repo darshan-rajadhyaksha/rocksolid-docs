@@ -1,0 +1,145 @@
+---
+title: Dialog
+description: Displays content in a modal dialog that requires the user's attention or interaction.
+---
+
+import MDXTabeWrapper from "@/components/mdx-table-wrapper.astro";
+import ComponentExample from "@/components/component-example.astro";
+import DialogProps from "./props/Dialog.mdx";
+import DialogTitleProps from "./props/DialogTitle.mdx";
+import DialogContentProps from "./props/DialogContent.mdx";
+import DialogActionsProps from "./props/DialogActions.mdx";
+
+# Dialog
+
+The Dialog component displays content in a modal overlay. It can be used for
+confirmations, forms, alerts, and other interactions that require the user's
+attention before returning to the underlying page.
+
+<ComponentExample
+name="Dialog/examples/basic"
+title="Basic dialog"
+/>
+
+## Examples
+
+### Open
+
+Use the `open` prop to control whether the dialog is visible. Place the
+interactive content inside the dialog and use `DialogActions` for actions
+such as canceling or confirming an operation.
+
+<ComponentExample
+name="Dialog/examples/open"
+title="Basic dialog"
+/>
+
+### Alert dialog
+
+Use `role="alertdialog"` for dialogs that require the user's immediate
+attention, such as destructive or irreversible actions. Use
+`aria-labelledby` to associate the dialog with its `DialogTitle`.
+
+<ComponentExample
+  name="Dialog/examples/alert-dialog"
+  title="Alert dialog"
+/>
+
+### Fullscreen
+
+Use the `fullscreen` prop when the dialog should occupy the available
+viewport instead of appearing as a smaller modal.
+
+<ComponentExample
+name="Dialog/examples/fullscreen"
+title="Fullscreen dialog"
+/>
+
+### Close Reasons
+
+Use the `onClose` callback to respond when the dialog is requested to close.
+The callback receives the event and a reason describing how the close was
+triggered.
+
+The `reason` can be one of:
+
+* `escape` — The user pressed the Escape key.
+* `backdrop` — The user interacted with the backdrop.
+
+<ComponentExample
+name="Dialog/examples/close-reasons"
+title="Close reasons"
+/>
+
+### Customization
+
+Use the `class` prop on each Dialog component to add custom styling.
+
+<ComponentExample
+name="Dialog/examples/customization"
+title="Customization"
+/>
+
+## Accessibility
+
+- The dialog uses `role="dialog"` by default. Use `role="alertdialog"` when
+  the dialog requires the user's immediate attention, such as a destructive
+  confirmation.
+- The dialog should use `aria-labelledby` to reference the `DialogTitle`,
+  providing an accessible name for the dialog.
+- The dialog uses `aria-modal="true"` to indicate that content outside the
+  dialog is not available while it is open.
+- When the dialog opens, ensure focus is moved to an appropriate element
+  based on the dialog's purpose and interaction requirements.
+- When the dialog closes, focus should be restored to the element that
+  triggered it.
+- The `Dialog` component automatically traps focus within the dialog while
+  it is open.
+- Give every dialog a clear and descriptive `DialogTitle`.
+- Ensure the dialog can be closed using the Escape key when appropriate.
+- Use clear labels for actions, especially for destructive or irreversible
+  operations.
+- When using a close button, ensure it has an accessible name.
+
+## API
+
+### Dialog
+
+The Dialog component controls the modal container and provides support for
+controlled visibility, fullscreen layouts, custom styling, and close events.
+
+<MDXTabeWrapper>
+  <DialogProps />
+</MDXTabeWrapper>
+
+### DialogTitle
+
+`DialogTitle` provides the heading for a dialog.
+
+<MDXTabeWrapper>
+  <DialogTitleProps />
+</MDXTabeWrapper>
+
+### DialogContent
+
+`DialogContent` contains the primary content of the dialog.
+
+<MDXTabeWrapper>
+  <DialogContentProps />
+</MDXTabeWrapper>
+
+### DialogActions
+
+`DialogActions` contains actions such as buttons, links, or other controls
+that appear at the bottom of the dialog.
+
+<MDXTabeWrapper>
+  <DialogActionsProps />
+</MDXTabeWrapper>
+
+## Related Components
+
+* [Alert](/components/alert/) — Use Alert for important messages that do not
+  require modal interaction.
+* [Button](/components/button/) — Use Button for actions inside
+  `DialogActions`.

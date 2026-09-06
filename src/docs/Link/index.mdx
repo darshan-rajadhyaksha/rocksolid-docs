@@ -1,0 +1,88 @@
+---
+title: Link
+description: Displays a navigational link that can be styled with semantic colors, underlines, and truncation.
+---
+
+import MDXTabeWrapper from "@/components/mdx-table-wrapper.astro";
+import ComponentExample from "@/components/component-example.astro";
+import LinkProps from "./props/Link.mdx";
+
+# Link
+
+The Link component displays a navigational link that allows users to
+move between pages, sections, or external resources.
+
+<ComponentExample
+name="Link/examples/basic"
+title="Basic link"
+/>
+
+## Examples
+
+### Colors
+
+Use the `color` prop to control the semantic color of the Link.
+
+<ComponentExample
+name="Link/examples/colors"
+title="Colors"
+/>
+
+### Underline
+
+Use the `underline` prop to control when the Link displays an underline.
+
+<ComponentExample
+name="Link/examples/underline"
+title="Underline"
+/>
+
+### Truncate
+
+Use the `truncate` prop to truncate long Link content when it exceeds
+the available space.
+
+<ComponentExample
+name="Link/examples/truncate"
+title="Truncated link"
+/>
+
+### Custom Styling
+
+Use the `class` prop to apply custom CSS classes to the Link.
+
+<ComponentExample
+name="Link/examples/custom-class"
+title="Custom styling"
+/>
+
+## Accessibility
+
+* Use descriptive Link text that communicates the destination or action.
+* Avoid vague Link text such as `Click here` when more descriptive text
+  is available.
+* Ensure Link text has sufficient color contrast against its background.
+* Do not rely on color alone to distinguish Links from surrounding text.
+* Use underlines when appropriate to make Links easy to identify.
+* When linking to an external resource, make the destination clear to
+  users.
+* Ensure truncated Link content remains understandable and does not
+  hide important information.
+
+## API
+
+### Link
+
+The Link component supports custom content, navigation destinations,
+semantic colors, underline styles, truncation, and custom CSS classes.
+
+<MDXTabeWrapper>
+  <LinkProps />
+</MDXTabeWrapper>
+
+## Related Components
+
+* [Button](/components/button/) — Use Button for actions that change
+  application state rather than navigate to another location.
+* [Typography](/components/typography/) — Use Typography for styled
+  text content without navigation behavior.

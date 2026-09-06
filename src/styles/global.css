@@ -1,0 +1,298 @@
+@import "tailwindcss";
+@import "rocksolidjs/index.css";
+@plugin "@tailwindcss/typography";
+@source "../../node_modules/rocksolidjs";
+@custom-variant dark (&:where(.dark, .dark *));
+
+body {
+  font-family: "DM Sans", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* Light theme */
+.shiki,
+.shiki span {
+  color: var(--shiki-light) !important;
+  background-color: var(--shiki-light-bg) !important;
+}
+
+/* Dark theme */
+html.dark .shiki,
+html.dark .shiki span {
+  color: var(--shiki-dark) !important;
+  @apply dark:bg-neutral-950!;
+}
+
+@layer components {
+  .prose-docs {
+    @apply w-full max-w-5xl
+      text-base leading-7
+      text-neutral-700
+      dark:text-neutral-300;
+  }
+
+  .prose-docs h1:not([data-component-preview] *) {
+    @apply mb-4
+      text-4xl font-bold tracking-tight
+      text-neutral-950
+      dark:text-neutral-50;
+  }
+
+  .prose-docs h2:not([data-component-preview] *) {
+    @apply mt-14 mb-5
+      scroll-m-20
+      border-b border-neutral-200
+      pb-3
+      text-2xl font-semibold tracking-tight
+      text-neutral-950
+      dark:border-neutral-800
+      dark:text-neutral-50;
+  }
+
+  .prose-docs h3:not([data-component-preview] *) {
+    @apply mt-10 mb-3
+      scroll-m-20
+      text-xl font-semibold tracking-tight
+      text-neutral-900
+      dark:text-neutral-100;
+  }
+
+  .prose-docs h4:not([data-component-preview] *) {
+    @apply mt-8 mb-2
+      text-lg font-semibold
+      text-neutral-900
+      dark:text-neutral-100;
+  }
+
+  /* Lead paragraph */
+
+  .prose-docs h1 + p:not([data-component-preview] *) {
+    @apply mt-0 mb-8
+      max-w-3xl
+      text-lg leading-7
+      text-neutral-600
+      dark:text-neutral-400;
+  }
+
+  /* Paragraph */
+
+  .prose-docs p:not([data-component-preview] *) {
+    @apply my-4 text-base leading-7;
+  }
+
+  .prose-docs strong:not([data-component-preview] *) {
+    @apply font-semibold
+      text-neutral-950
+      dark:text-neutral-50;
+  }
+
+  /* Links */
+
+  .prose-docs a:not([data-component-preview] *) {
+    @apply font-medium
+      text-neutral-950
+      underline
+      decoration-neutral-300
+      underline-offset-4
+      transition-colors
+      hover:decoration-neutral-950
+      dark:text-neutral-100
+      dark:decoration-neutral-600
+      dark:hover:decoration-neutral-200;
+  }
+
+  /* Lists */
+
+  .prose-docs ul:not([data-component-preview] *) {
+    @apply my-5 list-disc pl-6;
+  }
+
+  .prose-docs ol:not([data-component-preview] *) {
+    @apply my-5 list-decimal pl-6;
+  }
+
+  .prose-docs ul li:not(:where([data-component-preview] *)),
+  .prose-docs ol li:not(:where([data-component-preview] *))  {
+    @apply my-1.5 pl-1
+      text-base leading-7;
+  }
+
+  .prose-docs li:not(:where([data-component-preview] *))::marker {
+    @apply text-neutral-400
+      dark:text-neutral-600;
+  }
+
+  .prose-docs li:not(:where([data-component-preview] *)) > ul,
+  .prose-docs li:not(:where([data-component-preview] *)) > ol {
+    @apply my-2;
+  }
+
+  /* Inline code */
+
+  .prose-docs :not(pre) > code:not(:where([data-component-preview] *)) {
+    @apply rounded-md
+      border border-neutral-200
+      bg-neutral-100
+      px-1.5 py-0.5
+      font-mono text-[0.85em]
+      font-medium
+      text-neutral-900
+      dark:border-neutral-700
+      dark:bg-neutral-900
+      dark:text-neutral-200;
+  }
+
+  .prose-docs :not(pre):not(:where([data-component-preview] *)) > code::before,
+  .prose-docs :not(pre):not(:where([data-component-preview] *)) > code::after {
+    content: none;
+  }
+
+  /* Code blocks */
+
+  .prose-docs pre:not([data-component-preview] *) {
+    @apply overflow-x-auto
+      bg-neutral-950
+      p-5
+      shadow-sm
+      max-h-65;
+  }
+
+  .prose-docs pre:not(:where([data-component-preview] *)) code {
+    @apply bg-transparent
+      p-0
+      font-mono text-[13px]
+      leading-6
+      text-neutral-100;
+  }
+
+  /* Blockquote */
+
+  .prose-docs blockquote:not([data-component-preview] *) {
+    @apply my-6
+      border-l-4
+      border-neutral-300
+      pl-5
+      italic
+      text-neutral-600
+      dark:border-neutral-700
+      dark:text-neutral-400;
+  }
+
+  /* Horizontal rule */
+
+  .prose-docs hr:not([data-component-preview] *) {
+    @apply my-10
+      border-0
+      border-t
+      border-neutral-200
+      dark:border-neutral-800;
+  }
+
+  /* Tables */
+
+  .prose-docs table:not([data-component-preview] *) {
+    @apply my-6
+      w-full
+      min-w-3xl
+      border-collapse
+      text-[15px]
+      leading-6;
+  }
+
+  .prose-docs thead:not([data-component-preview] *) {
+    @apply border-b
+      border-neutral-200
+      dark:border-neutral-800;
+  }
+
+  .prose-docs th:not([data-component-preview] *) {
+    @apply px-4 py-3
+      text-left
+      text-sm
+      font-semibold
+      text-neutral-950
+      dark:text-neutral-100;
+  }
+
+  .prose-docs td:not([data-component-preview] *) {
+    @apply border-b
+      border-neutral-200
+      px-4 py-3.5
+      text-[15px]
+      leading-6
+      text-neutral-700
+      dark:border-neutral-800
+      dark:text-neutral-300;
+  }
+
+  .prose-docs tbody:not(:where([data-component-preview] *)) tr {
+    @apply transition-colors
+      hover:bg-neutral-50
+      dark:hover:bg-neutral-900/50;
+  }
+
+  /* Images */
+
+  .prose-docs img:not([data-component-preview] *) {
+    @apply my-6
+      rounded-xl
+      border
+      border-neutral-200
+      shadow-sm
+      dark:border-neutral-800;
+  }
+
+  /* Keyboard */
+
+  .prose-docs kbd:not([data-component-preview] *) {
+    @apply rounded-md
+      border border-neutral-300
+      bg-neutral-100
+      px-1.5 py-0.5
+      font-mono text-xs
+      font-medium
+      text-neutral-800
+      shadow-[0_1px_0_1px_rgba(0,0,0,0.08)]
+      dark:border-neutral-700
+      dark:bg-neutral-800
+      dark:text-neutral-200
+      dark:shadow-[0_1px_0_1px_rgba(0,0,0,0.3)];
+  }
+
+  /* Details */
+
+  .prose-docs details:not([data-component-preview] *) {
+    @apply my-6
+      rounded-lg
+      border
+      border-neutral-200
+      dark:border-neutral-800;
+  }
+
+  .prose-docs summary:not([data-component-preview] *) {
+    @apply cursor-pointer
+      px-4 py-3
+      font-medium
+      text-neutral-900
+      transition-colors
+      hover:bg-neutral-50
+      dark:text-neutral-100
+      dark:hover:bg-neutral-900;
+  }
+
+  /* Callouts */
+
+  .prose-docs .callout:not([data-component-preview] *) {
+    @apply my-6
+      rounded-lg
+      border
+      border-neutral-200
+      bg-neutral-50
+      p-4
+      text-base
+      leading-7
+      text-neutral-700
+      dark:border-neutral-800
+      dark:bg-neutral-900
+      dark:text-neutral-300;
+  }
+}

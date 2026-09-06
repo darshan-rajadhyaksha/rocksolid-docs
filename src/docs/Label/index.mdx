@@ -1,0 +1,119 @@
+---
+title: Label
+description: A text label that identifies and describes a form control.
+---
+
+import MDXTabeWrapper from "@/components/mdx-table-wrapper.astro";
+import ComponentExample from "@/components/component-example.astro";
+import CodeBlock from "../../components/code-block.astro";
+import LabelProps from "./props/Label.mdx";
+
+# Label
+
+The Label component provides an accessible text label for form controls.
+It can communicate the purpose of an input and indicate whether a field
+is required.
+
+<ComponentExample
+name="Label/examples/basic"
+title="Basic label"
+/>
+
+## Examples
+
+### Colors
+
+Use the `color` prop to communicate the semantic state or meaning of
+the label.
+
+<ComponentExample
+name="Label/examples/colors"
+title="Colors"
+/>
+
+### Sizes
+
+Use the `size` prop to control the visual size of the label.
+
+<ComponentExample
+name="Label/examples/sizes"
+title="Sizes"
+/>
+
+### Required
+
+Use the `required` prop to indicate that the associated form field is
+required.
+
+<ComponentExample
+name="Label/examples/required"
+title="Required label"
+/>
+
+When `required` is enabled, the Label displays a required indicator.
+
+### Associating a Label with a Form Control
+
+Use the `for` prop to associate the Label with a form control.
+
+The value of `for` should match the `id` of the associated form control.
+
+<ComponentExample
+name="Label/examples/association"
+title="Associated label"
+/>
+
+<CodeBlock code={`<Label for="email">Email address</Label>
+<Input id="email" type="email" />
+`} class="border" />
+
+Associating labels with their controls improves usability and
+accessibility by allowing users to identify the purpose of the control
+and activate the control by interacting with its label.
+
+### Disabled
+
+Use the `disabled` prop to indicate that the label is disabled.
+
+<ComponentExample
+  name="Label/examples/disabled"
+  title="Disabled"
+/>
+
+### Truncation
+
+Use the `truncate` prop to control whether long label text is truncated.
+
+<ComponentExample
+name="Label/examples/truncate"
+title="Truncated label"
+/>
+
+## Accessibility
+
+* Use a Label to clearly identify the purpose of an associated form
+  control.
+* Use the `for` prop to associate the Label with a form control when
+  the control is not nested within the label.
+* Ensure the value of `for` matches the `id` of the associated control.
+* Use `required` to communicate that a field is required, but also
+  enforce the requirement through the form control and validation logic.
+* Do not rely on color alone to communicate important information.
+* Avoid truncating labels when the hidden text contains information
+  necessary to understand or complete the form.
+
+## API
+
+### Label
+
+The Label component supports semantic colors, visual sizes, required
+field indicators, text truncation, and association with form controls.
+
+<MDXTabeWrapper>
+  <LabelProps />
+</MDXTabeWrapper>
+
+## Related Components
+
+* [Input](/components/input/) — Use Input for single-line text entry.
+* [Textarea](/components/textarea/) — Use Textarea for multi-line text entry.

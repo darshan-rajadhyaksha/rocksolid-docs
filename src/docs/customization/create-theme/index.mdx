@@ -1,0 +1,188 @@
+---
+title: createTheme
+description: Creates a validated theme configuration for your application.
+---
+
+import CodeBlock from "@/components/code-block.astro";
+import ComponentExample from "@/components/component-example.astro";
+
+# createTheme
+
+The `createTheme` function creates a theme configuration for your application.
+
+It accepts theme values as overrides and returns a theme that can be provided to
+your application using [`ThemeProvider`](/customization/theme-provider/).
+
+Use `createTheme` to customize existing theme tokens or add new tokens to your
+theme.
+
+
+## How It Works
+
+`createTheme` uses the theme token schema to validate the values provided to it.
+
+Existing theme tokens can be overridden by providing a value at the
+corresponding path.
+
+For example, you can customize the default solid background:
+
+<CodeBlock code={`
+  createTheme({
+    colors: {
+      default: {
+        solid: {
+          background: "bg-white dark:bg-zinc-900",
+        },
+      },
+    },
+  });
+`} 
+  class="border"
+/>
+
+Theme values use Tailwind CSS utility classes. When a value needs to support
+dark mode, include the dark-mode variant in the same string.
+
+You can also add new theme token groups. However, new token groups must follow
+the structure expected by the theme system.
+
+If a theme value does not match the expected structure, `createTheme` throws an
+error.
+
+## Theme Overrides
+
+Use theme overrides to customize values that already exist in the default
+theme.
+
+You only need to provide the values you want to change. Other theme values
+remain unchanged.
+
+For example:
+
+<CodeBlock code={`
+  const theme = createTheme({
+    colors: {
+      default: {
+        solid: {
+          background: "bg-white dark:bg-zinc-900",
+          text: "text-zinc-950 dark:text-white",
+        },
+      },
+    },
+  });
+`} 
+  class="border"
+/>
+
+This overrides the specified tokens without requiring you to redefine the rest
+of the theme.
+
+You can use any valid Tailwind CSS utility classes supported by your project.
+
+See [Theme Tokens](/customization/theme-tokens/) for the available tokens, their
+default values, and the expected token structure.
+
+## Adding Custom Tokens
+
+`createTheme` also supports adding new theme tokens.
+
+Custom tokens must follow the same schema rules used by the theme system. New
+tokens are not arbitrary key-value pairs; their structure must be compatible
+with the expected theme token schema.
+
+For example:
+
+<CodeBlock code={`
+  const theme = createTheme({
+    typography: {
+      colors: {
+        brand: "text-indigo-600 dark:text-indigo-500"
+      },
+    },
+  });
+`} 
+  class="border"
+/>
+
+The `brand` token must follow the structure expected by the theme schema.
+
+When a token needs different styles for light and dark mode, include both
+variants in the same Tailwind class string:
+
+<CodeBlock code={`
+  text: "text-indigo-600 dark:text-indigo-500"
+`} 
+  class="border"
+/>
+
+If the structure of a custom token does not match the expected schema,
+`createTheme` throws an error.
+
+See [Theme Tokens](/customization/theme-tokens/) for more information about the
+theme schema and available token types.
+
+## Using the Theme
+
+The theme returned by `createTheme` can be passed to `ThemeProvider`.
+
+<CodeBlock code={`
+  const theme = createTheme({
+    colors: {
+      default: {
+        solid: {
+          background: "bg-blue-500 dark:bg-blue-400",
+          text: "text-neutral-50 dark:text-neutral-900",
+        },
+      },
+    },
+  });
+
+  <ThemeProvider theme={theme}>
+    <App />
+  </ThemeProvider>;
+`} 
+  class="border"
+/>
+
+Components rendered within the `ThemeProvider` hierarchy can then access the
+provided theme.
+
+<ComponentExample
+  name="ThemeProvider/examples/basic"
+  title="Using the theme"
+/>
+
+See the [ThemeProvider](/customization/theme-provider/) documentation for more
+information about providing themes to your component hierarchy.
+
+## TypeScript
+
+When adding custom theme tokens, you can extend the theme TypeScript interfaces
+to get type checking and autocomplete for your custom values.
+
+The TypeScript type defines the structure of the token, while the token value
+contains the Tailwind CSS classes used by your application.
+
+See [Extending Theme Types](/customization/extending-theme-types/) for more
+information about extending the theme types.
+
+## Validation
+
+`createTheme` validates theme values against the expected theme token schema.
+
+This means:
+
+- Existing tokens must use their expected structure.
+- New token groups must follow the supported token structure.
+- Token values should contain valid Tailwind CSS utility classes.
+- Dark-mode variants should be included in the same class string when needed.
+- Invalid theme structures cause `createTheme` to throw an error.
+
+Validation helps prevent incorrectly structured theme values from being used by
+components.
+
+
+## Related
+
+- [ThemeProvider](/customization/theme-provider/) — Provide a theme to your component hierarchy.
+- [Theme Tokens](/customization/theme-tokens/) — Learn about available tokens, default values, and the expected token structure.

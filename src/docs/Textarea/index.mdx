@@ -1,0 +1,121 @@
+---
+title: Textarea
+description: Allows users to enter and edit multi-line text.
+---
+
+import MDXTabeWrapper from "@/components/mdx-table-wrapper.astro";
+import ComponentExample from "@/components/component-example.astro";
+import TextareaProps from "./props/Textarea.mdx";
+
+# Textarea
+
+The Textarea component allows users to enter and edit multi-line text.
+It supports different sizes, visual variants, semantic colors, and
+resize behaviors.
+
+<ComponentExample
+name="Textarea/examples/basic"
+title="Basic textarea"
+/>
+
+## Examples
+
+### Colors
+
+Use the `color` prop to communicate the semantic state of the textarea.
+
+<ComponentExample
+name="Textarea/examples/colors"
+title="Colors"
+/>
+
+### Variants
+
+Use the `variant` prop to control the visual style of the textarea.
+
+<ComponentExample
+name="Textarea/examples/variants"
+title="Variants"
+/>
+
+### Sizes
+
+Use the `size` prop to control the size of the textarea.
+
+<ComponentExample
+name="Textarea/examples/sizes"
+title="Sizes"
+/>
+
+### Resize
+
+Use the `resize` prop to control how the textarea can be resized.
+
+<ComponentExample
+name="Textarea/examples/resize"
+title="Resize"
+/>
+
+The available resize values are:
+
+* `x` — Allows horizontal resizing.
+* `y` — Allows vertical resizing.
+* `both` — Allows horizontal and vertical resizing.
+* `none` — Prevents resizing.
+
+### Full Width
+
+Use the `fullWidth` prop to make the textarea fill the available
+horizontal space.
+
+<ComponentExample
+name="Textarea/examples/full-width"
+title="Full width"
+/>
+
+### Disabled
+
+Use the `disabled` prop to prevent users from interacting with the
+textarea.
+
+<ComponentExample
+name="Textarea/examples/disabled"
+title="Disabled"
+/>
+
+### Input
+
+Use the `onInput` prop to respond when the textarea value changes
+through user input.
+
+<ComponentExample
+name="Textarea/examples/on-input"
+title="Input"
+/>
+
+## Accessibility
+
+* Provide a descriptive label for the textarea.
+* Use placeholder text only as supporting information, not as a
+  replacement for a label.
+* Provide accessible error or validation messages when the textarea is
+  invalid.
+* Do not rely on color alone to communicate validation or status.
+* Ensure disabled and interactive states have sufficient contrast.
+* Make sure the textarea can be accessed and operated using a keyboard.
+
+## API
+
+### Textarea
+
+The Textarea component supports custom styling, semantic colors,
+multiple sizes and variants, resize behavior, disabled states, and
+input event handling.
+
+<MDXTabeWrapper>
+  <TextareaProps />
+</MDXTabeWrapper>
+
+## Related Components
+
+* [Input](/components/input/) — Use Input for single-line text entry.

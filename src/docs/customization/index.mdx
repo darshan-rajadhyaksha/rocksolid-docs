@@ -1,0 +1,59 @@
+---
+title: Customization
+description: Customize components with classes, slotProps, reusable components, and themes.
+---
+
+import ComponentExample from "@/components/component-example.astro";
+
+# Customization
+
+Components can be customized at different levels depending on how much control you need.
+
+- Use the `class` prop to customize the component's root element.
+- Use `slotProps` to customize individual internal elements.
+- Create reusable components for frequently used customizations.
+- Customize the theme to change the application's overall design system.
+
+## Class Prop
+
+Use the `class` prop to customize the styles of a component's root element.
+
+This is the simplest way to apply component-specific Tailwind CSS classes.
+
+<ComponentExample
+  name="customization/examples/class-prop"
+  title="Class prop"
+/>
+
+## Slot Props
+
+Use `slotProps` to customize the styles and attributes of internal component slots.
+
+This is useful when you need to customize an element inside the component rather than
+just its root element.
+
+<ComponentExample
+  name="Chip/examples/slot-props"
+  title="Slot props"
+/>
+
+## Creating Reusable Components
+
+When the same customization is used in multiple places, consider creating a reusable
+component.
+
+A reusable component can encapsulate commonly used `class` and `slotProps`
+configurations, allowing you to create application-specific components while keeping
+your code consistent.
+
+This approach is useful when a customization becomes a recurring pattern in your
+application.
+
+## Customizing the Theme
+
+Use theme customization when you want to change the design system across your
+application rather than customize individual component instances.
+
+The theme API allows you to customize the design tokens supported by the library.
+
+See the [ThemeProvider documentation](/customization/theme-provider/) for more information.

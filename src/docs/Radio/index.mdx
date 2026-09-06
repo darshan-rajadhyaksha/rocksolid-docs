@@ -1,0 +1,148 @@
+---
+title: Radio
+description: A selectable control for choosing one option from a set of mutually exclusive choices.
+---
+
+import MDXTabeWrapper from "@/components/mdx-table-wrapper.astro";
+import ComponentExample from "@/components/component-example.astro";
+import CodeBlock from "@/components/code-block.astro";
+import RadioProps from "./props/Radio.mdx";
+import RadioGroupProps from "./props/RadioGroup.mdx";
+
+# Radio
+
+The Radio component allows users to select a single option from a set
+of mutually exclusive choices.
+
+Radio components can be used individually or grouped with
+`RadioGroup`. When used inside a RadioGroup, the group's value determines
+which Radio is selected.
+
+For most use cases involving multiple related options, use RadioGroup
+to manage the selected value.
+
+<ComponentExample
+name="Radio/examples/basic"
+title="Basic radio"
+/>
+
+## Examples
+
+### Radio Group
+
+Use `RadioGroup` when presenting multiple mutually exclusive options.
+The group manages the selected value and provides a single value for the
+set of Radio components.
+
+<ComponentExample
+name="Radio/examples/group"
+title="Radio group"
+/>
+
+Each Radio inside the group should have a unique `value`. The selected
+Radio is determined by the group's `value` or `defaultValue`.
+
+### Controlled Radio Group
+
+Use the `value` prop on `RadioGroup` when the selected option should be
+controlled by application state.
+
+<ComponentExample
+name="Radio/examples/controlled"
+title="Controlled radio group"
+/>
+
+Use `onChange` to update the state when the selected Radio changes.
+
+### Default Value
+
+Use `defaultValue` to specify the initially selected option without
+controlling the selected value after initialization.
+
+<ComponentExample
+name="Radio/examples/default-value"
+title="Default value"
+/>
+
+
+### Colors
+
+Use the `color` prop to communicate the semantic meaning or state of a
+Radio.
+
+<ComponentExample
+name="Radio/examples/colors"
+title="Colors"
+/>
+
+### Sizes
+
+Use the `size` prop to control the visual size of the Radio.
+
+<ComponentExample
+name="Radio/examples/sizes"
+title="Sizes"
+/>
+
+### Disabled
+
+Use the `disabled` prop to prevent a Radio from being selected.
+
+<ComponentExample
+name="Radio/examples/disabled"
+title="Disabled radio"
+/>
+
+### Name
+
+When using `RadioGroup`, the group's `name` can be used to provide the
+name for the group of Radio controls.
+
+<ComponentExample
+name="Radio/examples/name"
+title="Radio name"
+/>
+
+## Accessibility
+
+* Use `RadioGroup` for related Radio controls that represent a single
+  choice.
+* Provide a meaningful label or accessible name for each group.
+* Give each Radio a meaningful `value`.
+* Use `disabled` when an option is unavailable rather than removing
+  useful context from the user.
+* Do not rely on color alone to communicate selection or validation
+  state.
+* Ensure the selected state is visually distinguishable from the
+  unselected state.
+* Use `name` when integrating Radio controls with native form behavior.
+
+## API
+
+### RadioGroup
+
+The RadioGroup component manages a collection of Radio controls and
+ensures that a single value is selected at a time.
+
+<MDXTabeWrapper>
+  <RadioGroupProps />
+</MDXTabeWrapper>
+
+### Radio
+
+The Radio component provides an individual selectable option and can be
+used independently or as a child of RadioGroup.
+
+When a Radio is wrapped inside a RadioGroup, its `checked` state is
+determined by the group's selected value.
+
+<MDXTabeWrapper>
+  <RadioProps />
+</MDXTabeWrapper>
+
+## Related Components
+
+* [Checkbox](/components/checkbox/) — Use Checkbox when users can select
+  multiple independent options.
+* [Switch](/components/switch/) — Use Switch for toggling a setting or
+  boolean state.

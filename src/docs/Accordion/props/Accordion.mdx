@@ -1,0 +1,9 @@
+| Prop | Type | Required | Default | Description |
+| --- | --- | --- | --- | --- |
+| accordionId | `string` | No | — | A unique identifier for the Accordion. It is used to construct the underlying IDs for `AccordionSummary` and `AccordionDetails` and their related accessibility attributes. |
+| class | `string` | No | — | Additional CSS classes applied to the Accordion. |
+| defaultExpanded | `boolean` | No | `false` | Determines whether the Accordion is expanded initially. |
+| disabled | `boolean` | No | `false` | Prevents the Accordion from being expanded or collapsed. |
+| disableTransition | `boolean` | No | `false` | Disables the expand and collapse transition animation. |
+| expanded | `boolean` | No | — | Controls whether the Accordion is currently expanded. |
+| onChange | `(event: Event, expanded: boolean) => void` | No | — | Called when the expanded state changes. |

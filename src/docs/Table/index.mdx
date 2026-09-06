@@ -1,0 +1,150 @@
+---
+title: Table
+description: Displays structured data in rows and columns.
+---
+
+import MDXTabeWrapper from "@/components/mdx-table-wrapper.astro";
+import ComponentExample from "@/components/component-example.astro";
+import TableProps from "./props/Table.mdx";
+import TableHeadProps from "./props/TableHead.mdx";
+import TableBodyProps from "./props/TableBody.mdx";
+import TableRowProps from "./props/TableRow.mdx";
+import TableCellProps from "./props/TableCell.mdx";
+import TableFooterProps from "./props/TableFooter.mdx";
+
+# Table
+
+The Table component displays structured data in rows and columns. It
+provides components for defining the table, header, body, rows, and
+cells while supporting dense layouts, selected rows, and cell alignment.
+
+A basic Table can be used to display tabular data with a header and
+multiple rows.
+
+<ComponentExample
+  name="Table/examples/basic"
+  title="Basic table"
+/>
+
+## Examples
+
+### Dense
+
+Use the `dense` prop to reduce the spacing within table rows and cells
+when displaying a larger amount of data.
+
+<ComponentExample
+  name="Table/examples/dense"
+  title="Dense table"
+/>
+
+### Selected Row
+
+Use the `selected` prop on `TableRow` to indicate the currently selected
+row.
+
+<ComponentExample
+  name="Table/examples/selected"
+  title="Selected row"
+/>
+
+### Cell Alignment
+
+Use the `align` prop on `TableCell` to control the horizontal alignment
+of cell content.
+
+<ComponentExample
+  name="Table/examples/alignment"
+  title="Cell alignment"
+/>
+
+### Footer
+
+Use `TableFooter` to display summary information, totals, or other
+content associated with the table data.
+
+<ComponentExample
+  name="Table/examples/footer"
+  title="Table footer"
+/>
+
+### Custom Styling
+
+Use the `class` prop on Table components to add custom CSS classes.
+
+<ComponentExample
+  name="Table/examples/custom-styling"
+  title="Custom styling"
+/>
+
+## Accessibility
+
+- Use `TableHead` for column headings and `TableBody` for table data.
+- Keep column headings concise and descriptive.
+- Use `TableCell` for both header and data cells. Header cells are
+  automatically rendered as `th` elements when used inside `TableHead`.
+- Use `selected` to provide a visual indication of the selected row,
+  but ensure the selection state is also understandable without relying
+  on color alone.
+- Keep the table structure consistent so that assistive technologies can
+  correctly understand the relationship between headers and cells.
+
+## API
+
+### Table
+
+The Table component supports dense layouts and custom styling.
+
+<MDXTabeWrapper>
+  <TableProps />
+</MDXTabeWrapper>
+
+### TableHead
+
+The TableHead component defines the header section of a table.
+
+<MDXTabeWrapper>
+  <TableHeadProps />
+</MDXTabeWrapper>
+
+### TableBody
+
+The TableBody component defines the body section of a table.
+
+<MDXTabeWrapper>
+  <TableBodyProps />
+</MDXTabeWrapper>
+
+### TableRow
+
+The TableRow component represents a row within the table and can indicate
+a selected state.
+
+<MDXTabeWrapper>
+  <TableRowProps />
+</MDXTabeWrapper>
+
+### TableCell
+
+The TableCell component represents a header or data cell. When used
+inside `TableHead`, it is automatically rendered as a `th` element.
+Otherwise, it renders as a `td` element.
+
+<MDXTabeWrapper>
+  <TableCellProps />
+</MDXTabeWrapper>
+
+### TableFooter
+
+The TableFooter component defines the footer section of a table. It can
+be used to display summary information, totals, or other content related
+to the table data.
+
+<MDXTabeWrapper>
+  <TableFooterProps />
+</MDXTabeWrapper>
+
+## Related Components
+
+- [Checkbox](/components/checkbox/) — Use for row selection or bulk
+  selection within a table.

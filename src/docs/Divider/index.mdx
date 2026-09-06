@@ -1,0 +1,64 @@
+---
+title: Divider
+description: Separates content into distinct sections with a horizontal or vertical line.
+---
+
+import MDXTabeWrapper from "@/components/mdx-table-wrapper.astro";
+import ComponentExample from "@/components/component-example.astro";
+import DividerProps from "./props/Divider.mdx";
+
+# Divider
+
+The Divider component provides a visual separation between sections of
+content. It helps organize related content and makes the structure of
+an interface easier to understand.
+
+<ComponentExample
+name="Divider/examples/basic"
+title="Basic divider"
+/>
+
+## Examples
+
+### Vertical Divider
+
+Use a vertical Divider to separate elements in a horizontal layout.
+
+<ComponentExample
+name="Divider/examples/vertical"
+title="Vertical divider"
+/>
+
+When using a vertical Divider, make sure its parent container has an
+appropriate height so that the divider is visible.
+
+### Custom Styling
+
+Use the `class` prop to change properties such as color, spacing, thickness, or size.
+
+<ComponentExample
+name="Divider/examples/custom-class"
+title="Custom styling"
+/>
+
+## Accessibility
+
+- Use the Divider to visually and semantically separate sections of content.
+- For purely decorative dividers that do not convey meaningful structure,
+  use `aria-hidden="true"` so they are ignored by assistive technologies.
+- Do not rely on the Divider alone to communicate important information.
+
+## API
+
+### Divider
+
+The Divider component supports custom HTML elements, horizontal or
+vertical orientations, and custom CSS classes.
+
+<MDXTabeWrapper>
+  <DividerProps />
+</MDXTabeWrapper>
+
+## Related Components
+
+* [Card](/components/card/) — Use Card to group related content into a distinct container.

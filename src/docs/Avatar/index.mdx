@@ -1,0 +1,100 @@
+---
+title: Avatar
+description: Displays a user's profile image or visual representation.
+---
+
+import MDXTabeWrapper from "@/components/mdx-table-wrapper.astro";
+import ComponentExample from "@/components/component-example.astro";
+import AvatarProps from "./props/Avatar.mdx";
+
+# Avatar
+
+The Avatar component is used to represent a user or entity with an
+image. It supports custom images, colors, rounded styles, and image
+slot customization.
+
+<ComponentExample
+  name="Avatar/examples/basic"
+  title="Basic avatar"
+/>
+
+## Examples
+
+### Letters
+
+Use text content inside the Avatar to display initials or letters when
+a profile image is not available.
+
+<ComponentExample
+  name="Avatar/examples/letters"
+  title="Letters"
+/>
+
+### Image
+
+Use the `src` prop to display an image inside the Avatar.
+
+<ComponentExample
+  name="Avatar/examples/image"
+  title="Image"
+/>
+
+### Rounded
+
+Use the `rounded` prop to control the shape of the Avatar.
+
+<ComponentExample
+  name="Avatar/examples/rounded"
+  title="Rounded"
+/>
+
+### Colors
+
+Use the `color` prop to customize the Avatar color.
+
+<ComponentExample
+  name="Avatar/examples/colors"
+  title="Colors"
+/>
+
+### Sizes
+
+Use the `size` prop to customize the size of the Avatar.
+
+<ComponentExample
+  name="Avatar/examples/sizes"
+  title="Sizes"
+/>
+
+### Customization
+
+Use the `class` prop and `slotProps` to customize the Avatar and its
+image.
+
+<ComponentExample
+  name="Avatar/examples/customization"
+  title="Customization"
+/>
+
+## Accessibility
+
+- Provide an `alt` value that describes the avatar image when the image
+  conveys meaningful information.
+- Use an empty `alt` value when the avatar image is purely decorative.
+- Do not rely on color alone to communicate information.
+
+## API
+
+### Avatar
+
+The `Avatar` component supports images, colors, rounded styles, custom
+elements, and image slot customization.
+
+<MDXTabeWrapper>
+  <AvatarProps />
+</MDXTabeWrapper>
+
+## Related Components
+
+- [Badge](/components/badge/) — Use Badge to display a status,
+  notification, or count alongside an avatar.

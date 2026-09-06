@@ -1,0 +1,630 @@
+---
+title: Theme Tokens
+description: Learn about the theme tokens, their structure, and default values.
+---
+
+import CodeBlock from "@/components/code-block.astro";
+
+# Theme Tokens
+
+Theme tokens define the visual styles used throughout the component library.
+
+Each token contains Tailwind CSS utility classes that control a specific part
+of a component's appearance.
+
+Theme tokens can be customized using [`createTheme`](/customization/create-theme/).
+
+All token values are strings containing Tailwind CSS classes. When a style
+needs different values for light and dark mode, both values should be included
+in the same class string.
+
+<CodeBlock code={`
+background: "bg-white dark:bg-zinc-900"
+`} class="border" />
+
+## Colors
+
+`colors` is the main color token group.
+
+It contains semantic color groups such as `default`, `success`, `warning`,
+`info`, and `error`.
+
+Each color group contains the same set of visual variants.
+
+### Color
+
+A **Color** is a group of color variants.
+
+The available color groups are:
+
+- `default` — Neutral appearance for standard components.
+- `success` — Indicates a successful or positive state.
+- `warning` — Indicates a state that requires attention.
+- `info` — Used for informational content or states.
+- `error` — Indicates an error, invalid state, or destructive action.
+
+#### Color Schema
+
+<CodeBlock code={`
+  type ThemeColors = {
+    default: ThemeColorVariants;
+    success: ThemeColorVariants;
+    warning: ThemeColorVariants;
+    info: ThemeColorVariants;
+    error: ThemeColorVariants;
+  };
+`} class="border" />
+
+Each property represents a semantic purpose.
+
+Every color group must follow the `ThemeColorVariants` structure.
+
+### Color Variants
+
+A **ThemeColorVariants** object is a group of visual variants for a color.
+
+For example, the `default` color contains `solid`, `filled`, `outlined`, and
+`ghost` variants.
+
+#### Color Variants Schema
+
+<CodeBlock code={`
+  type ThemeColorVariants = {
+    solid: ThemeColorStateTokens;
+    filled: ThemeColorStateTokens;
+    outlined: ThemeColorStateTokens;
+    ghost: ThemeColorStateTokens;
+  };
+`} class="border" />
+
+The variants represent different levels of visual emphasis:
+
+- `solid` — Strong visual treatment, generally used for prominent actions.
+- `filled` — Filled appearance with less emphasis than `solid`.
+- `outlined` — Uses a visible border without a prominent filled background.
+- `ghost` — Minimal visual treatment, usually with a transparent background.
+
+Every variant must contain a `ThemeColorStateTokens` object.
+
+### Color State Tokens
+
+A **ThemeColorStateTokens** object defines the actual styles for a color variant.
+
+It contains the styles needed for the component's default and interactive
+states.
+
+#### Color State Tokens Schema
+
+<CodeBlock code={`
+  type ThemeColorStateTokens = {
+    background: string;
+    text: string;
+    border: string;
+    hover: string;
+    active: string;
+  };
+`} class="border" />
+
+Each property controls a specific part of the component.
+
+- `background` — Defines the background style of the component.
+- `text` — Defines the foreground color of the component.
+- `border` — Defines the border style of the component.
+- `hover` — Defines the styles applied when the user hovers over the component. The value normally contains Tailwind `hover:` utilities.
+- `active` — Defines the styles applied while the component is pressed or active. The value normally contains Tailwind `active:` utilities.
+
+
+### Default Color Values
+
+<CodeBlock code={`
+  colors: {
+    default: {
+      solid: {
+        background: "bg-neutral-900 dark:bg-neutral-100",
+        text: "text-neutral-50 dark:text-neutral-950",
+        border: "border-transparent",
+        hover: "hover:bg-neutral-800 dark:hover:bg-neutral-200",
+        active: "active:bg-neutral-950 dark:active:bg-neutral-300",
+      },
+      filled: {
+        background: "bg-neutral-200/70 dark:bg-neutral-800",
+        text: "text-neutral-900 dark:text-neutral-100",
+        border: "border-transparent",
+        hover: "hover:bg-neutral-200 dark:hover:bg-neutral-700",
+        active: "active:bg-neutral-300 dark:active:bg-neutral-600",
+      },
+      outlined: {
+        background: "bg-transparent",
+        text: "text-neutral-800 dark:text-neutral-200",
+        border: "border-neutral-800 dark:border-neutral-200",
+        hover: "hover:bg-neutral-100 dark:hover:bg-neutral-800/80",
+        active: "active:bg-neutral-200/80 dark:active:bg-neutral-700/80",
+      },
+      ghost: {
+        background: "bg-transparent",
+        text: "text-neutral-800 dark:text-neutral-200",
+        border: "border-transparent",
+        hover: "hover:bg-neutral-100 dark:hover:bg-neutral-800/80",
+        active: "active:bg-neutral-200/80 dark:active:bg-neutral-700/80",
+      },
+    },
+
+    success: {
+      solid: {
+        background: "bg-emerald-600 dark:bg-emerald-500",
+        text: "text-white dark:text-neutral-950",
+        border: "border-transparent",
+        hover: "hover:bg-emerald-700 dark:hover:bg-emerald-400",
+        active: "active:bg-emerald-800 dark:active:bg-emerald-300",
+      },
+      filled: {
+        background: "bg-emerald-100 dark:bg-emerald-950/90",
+        text: "text-emerald-900 dark:text-emerald-200",
+        border: "border-transparent",
+        hover: "hover:bg-emerald-200/80 dark:hover:bg-emerald-900",
+        active: "active:bg-emerald-300/80 dark:active:bg-emerald-850",
+      },
+      outlined: {
+        background: "bg-transparent",
+        text: "text-emerald-800 dark:text-emerald-300",
+        border: "border-emerald-800 dark:border-emerald-300",
+        hover: "hover:bg-emerald-50 dark:hover:bg-emerald-950/60",
+        active: "active:bg-emerald-100 dark:active:bg-emerald-900/80",
+      },
+      ghost: {
+        background: "bg-transparent",
+        text: "text-emerald-800 dark:text-emerald-300",
+        border: "border-transparent",
+        hover: "hover:bg-emerald-50 dark:hover:bg-emerald-950/60",
+        active: "active:bg-emerald-100 dark:active:bg-emerald-900/80",
+      },
+    },
+
+    warning: {
+      solid: {
+        background: "bg-amber-500 dark:bg-amber-400",
+        text: "text-amber-950 dark:text-amber-950",
+        border: "border-transparent",
+        hover: "hover:bg-amber-600 dark:hover:bg-amber-300",
+        active: "active:bg-amber-700 dark:active:bg-amber-200",
+      },
+      filled: {
+        background: "bg-amber-100 dark:bg-amber-950/90",
+        text: "text-amber-950 dark:text-amber-200",
+        border: "border-transparent",
+        hover: "hover:bg-amber-200/80 dark:hover:bg-amber-900",
+        active: "active:bg-amber-300/80 dark:active:bg-amber-850",
+      },
+      outlined: {
+        background: "bg-transparent",
+        text: "text-amber-900 dark:text-amber-300",
+        border: "border-amber-900 dark:border-amber-300",
+        hover: "hover:bg-amber-50 dark:hover:bg-amber-950/60",
+        active: "active:bg-amber-100 dark:active:bg-amber-900/80",
+      },
+      ghost: {
+        background: "bg-transparent",
+        text: "text-amber-900 dark:text-amber-300",
+        border: "border-transparent",
+        hover: "hover:bg-amber-50 dark:hover:bg-amber-950/60",
+        active: "active:bg-amber-100 dark:active:bg-amber-900/80",
+      },
+    },
+
+    info: {
+      solid: {
+        background: "bg-blue-600 dark:bg-blue-500",
+        text: "text-white dark:text-neutral-950",
+        border: "border-transparent",
+        hover: "hover:bg-blue-700 dark:hover:bg-blue-400",
+        active: "active:bg-blue-800 dark:active:bg-blue-300",
+      },
+      filled: {
+        background: "bg-blue-100 dark:bg-blue-950/90",
+        text: "text-blue-950 dark:text-blue-200",
+        border: "border-transparent",
+        hover: "hover:bg-blue-200/80 dark:hover:bg-blue-900",
+        active: "active:bg-blue-300/80 dark:active:bg-blue-850",
+      },
+      outlined: {
+        background: "bg-transparent",
+        text: "text-blue-800 dark:text-blue-300",
+        border: "border-blue-800 dark:border-blue-300",
+        hover: "hover:bg-blue-50 dark:hover:bg-blue-950/60",
+        active: "active:bg-blue-100 dark:active:bg-blue-900/80",
+      },
+      ghost: {
+        background: "bg-transparent",
+        text: "text-blue-800 dark:text-blue-300",
+        border: "border-transparent",
+        hover: "hover:bg-blue-50 dark:hover:bg-blue-950/60",
+        active: "active:bg-blue-100 dark:active:bg-blue-900/80",
+      },
+    },
+
+    error: {
+      solid: {
+        background: "bg-red-600 dark:bg-red-500",
+        text: "text-white dark:text-neutral-950",
+        border: "border-transparent",
+        hover: "hover:bg-red-700 dark:hover:bg-red-400",
+        active: "active:bg-red-800 dark:active:bg-red-300",
+      },
+      filled: {
+        background: "bg-red-100 dark:bg-red-950/90",
+        text: "text-red-950 dark:text-red-200",
+        border: "border-transparent",
+        hover: "hover:bg-red-200/80 dark:hover:bg-red-900",
+        active: "active:bg-red-300/80 dark:active:bg-red-850",
+      },
+      outlined: {
+        background: "bg-transparent",
+        text: "text-red-800 dark:text-red-300",
+        border: "border-red-800 dark:border-red-300",
+        hover: "hover:bg-red-50 dark:hover:bg-red-950/60",
+        active: "active:bg-red-100 dark:active:bg-red-900/80",
+      },
+      ghost: {
+        background: "bg-transparent",
+        text: "text-red-800 dark:text-red-300",
+        border: "border-transparent",
+        hover: "hover:bg-red-50 dark:hover:bg-red-950/60",
+        active: "active:bg-red-100 dark:active:bg-red-900/80",
+      },
+    },
+  }
+`} class="border" />
+
+## Disabled
+
+The `disabled` token group defines the visual appearance of components that
+cannot currently be interacted with.
+
+It controls the foreground, background, border, and interaction state of
+disabled components.
+
+#### Disabled Schema
+
+<CodeBlock code={`
+  type ThemeDisabled = {
+    background: string;
+    text: string;
+    border: string;
+    state: string;
+  };
+`} class="border" />
+
+The four properties control different aspects of the disabled appearance.
+
+- `background` — Defines the background color of disabled components.
+- `text` — Defines the foreground color of disabled content.
+- `border` — Defines the border color of disabled components.
+- `state` — Defines interaction-related styles for disabled components. This can include utilities for opacity, cursor behavior, and pointer events.
+
+#### Default Values
+
+<CodeBlock code={`
+  disabled: {
+    text: "text-neutral-400 dark:text-neutral-600",
+    background: "bg-neutral-100 dark:bg-neutral-800",
+    border: "border-neutral-200 dark:border-neutral-800",
+    state: "opacity-50 cursor-not-allowed pointer-events-none",
+  }
+`} class="border" />
+
+## Divider
+
+The `divider` token defines the visual style used for separators between
+content or sections.
+
+It is typically used for horizontal or vertical dividers depending on how a
+component applies the token.
+
+#### Divider Schema
+
+The `divider` token is part of the `Theme` type.
+
+<CodeBlock code={`
+  divider: string;
+`} class="border" />
+
+The `divider` token itself is a Tailwind CSS class string.
+
+#### Default Value
+
+<CodeBlock code={`
+  divider: "border-neutral-300 dark:border-neutral-700"
+`} class="border" />
+
+## Focus
+
+The `focus` token defines the visual treatment applied when an interactive
+element receives focus.
+
+A consistent focus style is important for keyboard navigation because it makes
+the currently focused element visible.
+
+#### Focus Schema
+
+The `focus` token is part of the `Theme` type.
+
+<CodeBlock code={`
+  focus: string;
+`} class="border" />
+
+#### Default Value
+
+<CodeBlock code={`
+focus: "focus-visible:outline-none focus-visible:shadow-[0_0_0_1px_#2563eb,0_0_0_4px_rgba(37,99,235,0.35)] dark:focus-visible:shadow-[0_0_0_1px_#60a5fa,0_0_0_4px_rgba(96,165,250,0.35)]"
+`} class="border" />
+
+## Focus Within
+
+The `focusWithin` token defines the visual treatment applied when an element
+or one of its descendants receives focus.
+
+This is useful for composite components where the focused element is inside a
+container but the visual focus indication should appear on the container.
+
+#### Focus Within Schema
+
+The `focusWithin` token is part of the `Theme` type.
+
+<CodeBlock code={`
+  focusWithin: string;
+`} class="border" />
+
+### Default Value
+
+<CodeBlock code={`
+focusWithin: "focus-within:shadow-[0_0_0_1px_#2563eb,0_0_0_4px_rgba(37,99,235,0.35)] dark:focus-within:shadow-[0_0_0_1px_#60a5fa,0_0_0_4px_rgba(96,165,250,0.35)]"
+`} class="border" />
+
+## Rounded
+
+The `rounded` token group defines the border-radius scale used throughout the
+component library.
+
+It provides a consistent set of radius values that components can use instead
+of defining their own radius styles.
+
+The available values are:
+
+- `none` — No border radius.
+- `small` — Small radius.
+- `medium` — Medium radius used by most components.
+- `large` — Large radius.
+- `full` — Fully rounded shape.
+
+#### Rounded Schema
+
+<CodeBlock code={`
+  type ThemeRounded = {
+    none: string;
+    small: string;
+    medium: string;
+    large: string;
+    full: string;
+  };
+`} class="border" />
+
+#### Default Values
+
+<CodeBlock code={`
+  rounded: {
+    none: "rounded-none",
+    small: "rounded-sm",
+    medium: "rounded-md",
+    large: "rounded-lg",
+    full: "rounded-full",
+  }
+`} class="border" />
+
+## Typography
+
+The `typography` token group defines the text styles used throughout the
+component library.
+
+Typography is divided into two groups:
+
+- `variants` — Defines the visual properties of text such as size, weight, and
+  line height.
+- `colors` — Defines semantic text colors based on their level of emphasis.
+
+This separation allows components to combine a typography variant with
+different text colors.
+
+### Typography Variants
+
+`variants` is a group of predefined typography styles.
+
+It provides styles for headings, body text, and code.
+
+#### Typography Variants Schema
+
+<CodeBlock code={`
+  type ThemeTypographyVariants = {
+    h1: string;
+    h2: string;
+    h3: string;
+    h4: string;
+    h5: string;
+    h6: string;
+    body1: string;
+    body2: string;
+    code: string;
+    inherit: string;
+  };
+`} class="border" />
+
+Each value is a Tailwind CSS class string.
+
+
+- `h1` — The largest heading style, intended for primary page or section headings.
+- `h2` — A secondary heading style used for major sections below an `h1`.
+- `h3` — A third-level heading style used for subsections.
+- `h4` — A fourth-level heading style for smaller subsections.
+- `h5` — A smaller heading style for compact sections and component-level headings.
+- `h6` — The smallest heading style in the default heading scale.
+- `body1` — The primary body text style for regular application content.
+- `body2` — A smaller body text style for supporting or secondary content.
+- `code` — The typography style used for code content. It uses a monospace font to visually distinguish code from regular text.
+- `inherit` — Inherits the typography styles from its parent element.
+
+
+### Typography Colors
+
+`colors` is a group of semantic text colors.
+
+These tokens control the level of emphasis given to text.
+
+The available values are:
+
+- `textPrimary` — Highest emphasis.
+- `textSecondary` — Reduced emphasis.
+- `textTertiary` — Lowest emphasis.
+
+### Typography Colors Schema
+
+<CodeBlock code={`
+  type ThemeTypographyColors = {
+    textPrimary: string;
+    textSecondary: string;
+    textTertiary: string;
+  };
+`} class="border" />
+
+#### Typography Schema
+
+The `typography` token combines the `variants` and `colors` groups.
+
+<CodeBlock code={`
+  type ThemeTypography = {
+    variants: ThemeTypographyVariants;
+    colors: ThemeTypographyColors;
+  };
+`} class="border" />
+
+#### Default Values
+
+<CodeBlock code={`
+  typography: {
+    variants: {
+      h1: "text-4xl sm:text-5xl font-extrabold tracking-tight leading-tight",
+      h2: "text-3xl sm:text-4xl font-bold tracking-tight leading-snug",
+      h3: "text-2xl sm:text-3xl font-bold tracking-tight leading-snug",
+      h4: "text-xl sm:text-2xl font-semibold tracking-tight leading-normal",
+      h5: "text-lg font-semibold tracking-normal leading-normal",
+      h6: "text-base font-semibold tracking-normal leading-normal",
+      body1: "text-base font-normal leading-relaxed tracking-normal",
+      body2: "text-sm font-normal leading-normal tracking-normal",
+      code: "font-mono text-sm font-normal leading-relaxed",
+      inherit: "font-[inherit] leading-[inherit] tracking-[inherit]",
+    },
+    colors: {
+      textPrimary: "text-neutral-900 dark:text-neutral-50",
+      textSecondary: "text-neutral-600 dark:text-neutral-300",
+      textTertiary: "text-neutral-500 dark:text-neutral-400",
+    },
+  }
+`} class="border" />
+
+## Shadow
+
+The `shadow` token group defines the elevation scale used throughout the
+component library.
+
+Shadows provide visual separation between elevated components and the surface
+behind them.
+
+The available values are:
+
+- `none` — No shadow.
+- `small` — Subtle elevation.
+- `medium` — Moderate elevation.
+- `large` — Strong elevation.
+
+### Shadow Schema
+
+<CodeBlock code={`
+  type ThemeShadow = {
+    none: string;
+    small: string;
+    medium: string;
+    large: string;
+  };
+`} class="border" />
+
+
+#### Default Values
+
+<CodeBlock code={`
+  shadow: {
+    none: "shadow-none",
+    small: "shadow-sm dark:shadow-[0_1px_2px_0_rgba(0,0,0,0.4)]",
+    medium: "shadow dark:shadow-[0_4px_6px_-1px_rgba(0,0,0,0.5)]",
+    large: "shadow-lg dark:shadow-[0_10px_15px_-3px_rgba(0,0,0,0.6)]",
+  }
+`} class="border" />
+
+## Theme Schema
+
+All token groups described above make up the complete theme.
+
+### Theme Schema
+
+<CodeBlock code={`
+  type Theme = {
+    colors: ThemeColors;
+    disabled: ThemeDisabled;
+    divider: string;
+    focus: string;
+    focusWithin: string;
+    rounded: ThemeRounded;
+    typography: ThemeTypography;
+    shadow: ThemeShadow;
+  };
+`} class="border" />
+
+## Customizing Theme Tokens
+
+Existing theme tokens can be overridden using
+[`createTheme`](/customization/create-theme).
+
+You only need to provide the values you want to change. Values that are not
+overridden continue to use the default theme.
+
+<CodeBlock code={`
+  createTheme({
+    colors: {
+      default: {
+        solid: {
+          background: "bg-slate-900 dark:bg-slate-100",
+        },
+      },
+    },
+  });
+`} class="border" />
+
+New theme tokens can also be added, but they must follow the expected token
+structure.
+
+If a new token does not follow the expected structure,
+`createTheme` will throw an error.
+
+See [createTheme](/customization/create-theme/) for more information.
+
+## Extending Theme Types
+
+When adding custom theme tokens, you can extend the theme TypeScript
+interfaces to get TypeScript type checking and autocomplete for your custom
+values.
+
+See [Extending Theme Types](/customization/extending-theme-types/) for more
+information.
+
+
+## Related
+
+- [createTheme](/customization/create-theme/) — Create and customize a theme.
+- [ThemeProvider](/customization/theme-provider/) — Provide a theme to your component hierarchy.

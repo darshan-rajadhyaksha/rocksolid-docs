@@ -1,0 +1,30 @@
+---
+import { codeToHtml } from "shiki";
+
+const {
+  code = "",
+  lang = "tsx",
+  class: className = "",
+} = Astro.props;
+
+const highlightedCode = await codeToHtml(
+  code.trim(), 
+  {
+    lang,
+    themes: {
+      light: "min-light",
+      dark: "min-dark",
+    },
+    defaultColor: false,
+  },
+);
+---
+
+<div
+  class={`overflow-x-auto
+    text-lg
+    border-neutral-200
+    dark:border-neutral-800 rounded-xl ${className}`}
+  data-highlighted-code
+  set:html={highlightedCode}
+/>

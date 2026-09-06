@@ -1,0 +1,197 @@
+---
+title: Accordion
+description: A vertically stacked set of interactive sections that can be expanded and collapsed.
+---
+
+import ComponentExample from "@/components/component-example.astro";
+import MDXTabeWrapper from "@/components/mdx-table-wrapper.astro";
+import CodeBlock from "@/components/code-block.astro";
+import AccordionProps from "./props/Accordion.mdx";
+import AccordionSummaryProps from "./props/AccordionSummary.mdx";
+import AccordionDetailsProps from "./props/AccordionDetails.mdx";
+
+
+# Accordion
+
+The Accordion component is used to organize related content into
+expandable sections. It is useful when you want to keep a page
+compact while still allowing users to reveal additional information
+when needed.
+
+<ComponentExample
+  name="Accordion/examples/basic"
+  title="Basic accordion"
+/>
+
+## Composition
+
+The Accordion components are designed to be composed together. An Accordion is made up of three components:
+
+1. `Accordion` — The root component that manages the expanded state,
+  disabled state, and expand/collapse behavior.
+2. `AccordionSummary` — The clickable header that users interact with
+  to expand or collapse the accordion.
+3. `AccordionDetails` — The content area that is displayed when the
+  accordion is expanded.
+
+A basic Accordion combines these three components together. The example below shows the basic composition of an Accordion using
+a summary and details section.
+
+
+<CodeBlock code={`
+import Accordion from "rocksolidjs/Accordion";
+import AccordionSummary from "rocksolidjs/AccordionSummary";
+import AccordionDetails from "rocksolidjs/AccordionDetails";
+
+  export default function Example() {
+    return (
+      <Accordion>
+        <AccordionSummary>
+          What is My UI?
+        </AccordionSummary>
+
+        <AccordionDetails>
+          My UI is a collection of reusable components
+          for building modern applications.
+        </AccordionDetails>
+      </Accordion>
+    );
+  }
+`} 
+  class="border"
+/>
+
+`AccordionSummary` should be used as the interactive heading and
+`AccordionDetails` should contain the content associated with that
+heading.
+
+## Examples
+
+### Disabled
+
+Use the `disabled` prop to prevent users from expanding or collapsing
+an Accordion.
+
+<ComponentExample
+  name="Accordion/examples/disabled"
+  title="Disabled"
+/>
+
+### Custom Icon
+
+Use `collapsedIcon` and `expandedIcon` to provide custom icons for
+the collapsed and expanded states.
+
+<ComponentExample
+  name="Accordion/examples/custom-icon"
+  title="Custom icon"
+/>
+
+### Controlled
+
+Use the `expanded` and `onChange` props when the expanded state needs
+to be controlled by the parent component.
+
+<ComponentExample
+  name="Accordion/examples/controlled"
+  title="Controlled accordion"
+/>
+
+### Disable Transition
+
+Use the `disableTransition` prop to disable the expand and collapse
+transition animation.
+
+<ComponentExample
+  name="Accordion/examples/disable-transition"
+  title="Disable transition"
+/>
+
+### Customization
+
+Use the `class` prop on each Accordion component to customize its
+appearance and integrate it with your application's design.
+
+<ComponentExample
+  name="Accordion/examples/customization"
+  title="Customization"
+/>
+
+### Accordion ID
+
+The optional `accordionId` prop provides a stable identifier for the
+Accordion's accessibility relationships.
+
+It links the `AccordionSummary` and `AccordionDetails` by generating
+the appropriate `id`, `aria-controls`, and `aria-labelledby`
+attributes.
+
+When using multiple Accordions on the same page, provide a unique
+`accordionId` for each Accordion to ensure the underlying IDs remain
+unique.
+
+<ComponentExample
+  name="Accordion/examples/accordion-id"
+  title="Accordion with an ID"
+/>
+
+## Accessibility
+
+The Accordion follows common accessible interaction patterns for
+expandable content.
+
+- Use descriptive text for `AccordionSummary` so users can understand
+  what content will be expanded or collapsed.
+- The Accordion manages the expanded and collapsed state for
+  assistive technologies automatically.
+- The relationship between `AccordionSummary` and
+  `AccordionDetails` is established automatically through the
+  appropriate accessibility attributes.
+- When using multiple Accordions, provide a unique `accordionId` for
+  each Accordion. The value is used to construct the underlying IDs
+  for the summary and details and their related ARIA attributes.
+- Ensure the summary has sufficient color contrast and a visible
+  focus indicator.
+- Avoid placing interactive controls inside `AccordionSummary` unless
+  their keyboard and screen reader behavior is handled appropriately.
+- Do not rely on visual styling alone to communicate the purpose or
+  state of the Accordion.
+
+## API
+
+The Accordion API is split across the three components that make up
+the Accordion.
+
+### Accordion
+
+The `Accordion` component is responsible for managing the expanded
+state and the overall behavior of an accordion section.
+
+<MDXTabeWrapper>
+  <AccordionProps />
+</MDXTabeWrapper>
+
+### AccordionSummary
+
+The `AccordionSummary` component provides the interactive header of
+an Accordion.
+
+<MDXTabeWrapper>
+  <AccordionSummaryProps />
+</MDXTabeWrapper>
+### AccordionDetails
+
+The `AccordionDetails` component contains the content displayed when
+an Accordion is expanded.
+
+<MDXTabeWrapper>
+<AccordionDetailsProps />
+</MDXTabeWrapper>
+
+## Related Components
+
+- [Button](/components/button/) — Use Button for standalone actions.
+- [Dialog](/components/dialog/) — Use Dialog for content that requires
+  focused user attention.
+- [Tabs](/components/tabs/) — Use Tabs when users need to switch between
+  related sections of content.

@@ -1,0 +1,13 @@
+| Prop | Type | Required | Default | Description |
+| --- | --- | --- | --- | --- |
+| class | `string` | No | — | Additional CSS classes applied to the Radio. |
+| checked | `boolean` | No | `false` | Controls whether the Radio is selected when it is used independently. When used inside a `RadioGroup`, the checked state is determined by the group's selected value. |
+| color | `"default" \| "success" \| "warning" \| "info" \| "error"` | No | `"default"` | Controls the semantic color and styling of the Radio. |
+| defaultChecked | `boolean` | No | `false` | Controls the initial selected state of the Radio when it is used independently. When used inside a `RadioGroup`, the initial selected state is determined by the group's selected value. |
+| disabled | `boolean` | No | `false` | Prevents the Radio from being selected or interacted with. |
+| id | `string` | No | — | Sets the `id` attribute of the Radio. |
+| name | `string` | No | — | Sets the name of the Radio control. When used inside a `RadioGroup`, the group's `name` can be used for the group. |
+| onChange | `(event: Event) => void` | No | — | Callback invoked when the Radio's checked state changes. |
+| size | `"small" \| "medium" \| "large"` | No | `"medium"` | Controls the visual size of the Radio. |
+| slotProps | `{ base?: object }` | No | — | Provides props for customizing the RadioGroup slots.<br /><ul><li>`base` — Props for the base slot.</li></ul> |
+| value | `string` | No | — | The value represented by the Radio. When used inside a `RadioGroup`, the group uses this value to determine the selected Radio. |

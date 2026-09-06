@@ -1,0 +1,20 @@
+export default ({
+  name: "RockSolid",
+  keywords: [
+    "RockSolid",
+    "rocksolidjs",
+    "SolidJS",
+    "SolidJS components",
+    "SolidJS UI library",
+    "Tailwind CSS",
+    "component library",
+    "UI components",
+    "accessible components",
+    "TypeScript",
+    "themeable components",
+    "reusable components",
+    "frontend library",
+  ],
+  author: "Darshan Sunil Rajadhyaksha",
+  url: "https://rocksolidjs.com",
+});

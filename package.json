@@ -1,7 +1,7 @@
 {
-  "name": "rocksolid",
+  "name": "rocksolid-docs",
   "type": "module",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "engines": {
     "node": ">=22.12.0"
   },
@@ -12,6 +12,18 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^7.2.2"
+    "@astrojs/mdx": "^7.0.5",
+    "@astrojs/sitemap": "^3.7.4",
+    "@astrojs/solid-js": "^7.0.2",
+    "@tailwindcss/vite": "^4.3.3",
+    "astro": "^7.2.2",
+    "rocksolidjs": "^0.1.1",
+    "shiki": "^4.4.3",
+    "solid-js": "^1.9.15",
+    "tailwindcss": "^4.3.3"
+  },
+  "devDependencies": {
+    "@tailwindcss/typography": "^0.5.20",
+    "@types/node": "^26.2.0"
   }
 }

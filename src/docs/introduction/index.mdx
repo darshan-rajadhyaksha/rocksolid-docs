@@ -1,0 +1,177 @@
+---
+title: Introduction
+description: A modern, accessible, and customizable component library built with SolidJS and Tailwind CSS.
+---
+
+import CodeBlock from "@/components/code-block.astro";
+
+# Introduction
+
+**RockSolid** is a component library built with **SolidJS** and **Tailwind CSS** for
+building modern, consistent, and accessible user interfaces.
+
+It provides reusable components with a consistent API, styling approach, and
+theme system, allowing you to build applications faster without recreating
+common UI patterns.
+
+## Why RockSolid?
+
+RockSolid is designed to provide the building blocks needed for application
+interfaces while keeping them easy to customize and compose.
+
+- **SolidJS** — Built specifically for SolidJS applications.
+- **Tailwind CSS** — Uses Tailwind CSS utilities for flexible and familiar
+  styling.
+- **Accessible** — Components are designed with keyboard interaction, focus
+  management, semantic HTML, and ARIA support in mind.
+- **TypeScript** — Provides type safety and autocomplete for component APIs and
+  theme configuration.
+- **Themeable** — Customize colors, typography, rounded corners, shadows, and
+  other design tokens.
+- **Composable** — Components can be combined to create more complex interfaces.
+
+## Components
+
+RockSolid provides reusable components for common UI patterns such as buttons,
+inputs, tables, dialogs, cards, and more.
+
+Components are designed to work consistently together while still allowing
+individual customization.
+
+<CodeBlock code={`
+  import Button from "rocksolidjs/Button";
+
+  function App() {
+    return (
+      <Button>
+        Get Started
+      </Button>
+    );
+  }
+`}
+  class="border"
+/>
+
+Each component has its own documentation covering its properties, variants,
+states, customization options, and accessibility behavior.
+
+See the [Components](/components/) section to explore the available components.
+
+## Accessibility
+
+Accessibility is a core part of RockSolid.
+
+Components are designed to support different ways of interacting with an
+application, including keyboard navigation and assistive technologies.
+
+This includes appropriate:
+
+- Keyboard interactions
+- Focus states and focus management
+- Semantic HTML elements
+- ARIA attributes where necessary
+- Disabled, selected, loading, and other interaction states
+
+Accessibility behavior is documented for individual components where additional
+details are relevant.
+
+## Styling
+
+RockSolid uses Tailwind CSS as the foundation for component styling.
+
+This makes the styling approach familiar to developers already using Tailwind
+CSS and allows theme values to be composed from Tailwind utility classes.
+
+For example, a theme token can define both light and dark styles together:
+
+<CodeBlock
+  code={`
+background: "bg-white dark:bg-zinc-900"
+`}
+  class="border"
+/>
+
+You can use the same approach for colors, typography, borders, shadows, focus
+states, and other visual properties.
+
+## Theming
+
+RockSolid provides a centralized theme system for customizing the visual appearance
+of your application.
+
+Themes can define tokens for:
+
+- Colors
+- Typography
+- Rounded corners
+- Shadows
+- Disabled states
+- Focus styles
+- Dividers
+
+See [Theme Tokens](/customization/theme-tokens/) and
+[createTheme](/customization/create-theme/) for more information.
+
+## TypeScript
+
+RockSolid is built with TypeScript support throughout the library.
+
+TypeScript provides type checking and autocomplete for component properties and
+theme configuration.
+
+The theme system also allows you to extend the provided interfaces when you
+need custom theme tokens.
+
+See [Extending Theme Types](/customization/extending-theme-types/) to learn how
+to add TypeScript support for custom tokens.
+
+## Dark Mode
+
+RockSolid supports dark mode through Tailwind CSS.
+
+Light and dark values can be defined in the same theme token:
+
+<CodeBlock
+  code={`
+  const theme = createTheme({
+    colors: {
+      default: {
+        solid: {
+          background: "bg-white dark:bg-zinc-900",
+          text: "text-zinc-900 dark:text-white",
+          border: "border-zinc-200 dark:border-zinc-800",
+        },
+      },
+    },
+  });
+`}
+  class="border"
+/>
+
+This keeps related light and dark styles together and avoids maintaining
+separate theme configurations.
+
+## Getting Started
+
+To start using RockSolid, install it in your SolidJS application and import the
+components you need.
+
+<CodeBlock
+  code={`
+  import Button from "rocksolidjs/Button";
+
+  function App() {
+    return (
+      <Button>
+        Hello
+      </Button>
+    );
+  }
+`}
+  class="border"
+/>
+
+See the [Installation](/installation/) guide to get started.
+
+Once you are familiar with the basics, explore the [Components](/components/)
+and [Customization](/customization/) sections to learn more.

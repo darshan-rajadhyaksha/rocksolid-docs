@@ -1,0 +1,51 @@
+---
+import BaseLayout from "@/layouts/base.astro";
+import { navigations } from "@/config/navigations";
+
+const components = navigations[1].items;
+---
+
+<BaseLayout
+  title="Components"
+  description="A collection of reusable, accessible, and customizable SolidJS UI components for modern web projects."
+  url="/components/"
+>
+  <h1>Components</h1>
+  <div class="grid mt-8 sm:mt-10
+              grid-cols-1 md:grid-cols-3
+              gap-3 md:gap-6">
+    {
+      components.map((component) => (
+        <a
+          href={component.href}
+          class="group
+                 [text-decoration:none]
+                 rounded-lg md:rounded-xl
+                 border border-neutral-200 dark:border-neutral-900
+                 bg-white dark:bg-neutral-900/80
+                 p-2.5 md:p-4
+                 hover:border-neutral-300 dark:hover:border-neutral-800
+                 hover:shadow-md"
+        >
+          <h2 class="text-base
+                     font-semibold
+                     text-neutral-900 dark:text-white
+                     group-hover:text-blue-600 dark:group-hover:text-blue-500 
+                     md:text-lg my-2">
+            {component.title}
+          </h2>
+
+          <p class="mt-1
+                    text-sm
+                    leading-5
+                    text-neutral-600 dark:text-neutral-400
+                    md:mt-2
+                    md:leading-6
+                    mb-0">
+            {component.description}
+          </p>
+        </a>
+      ))
+    }
+  </div>
+</BaseLayout>

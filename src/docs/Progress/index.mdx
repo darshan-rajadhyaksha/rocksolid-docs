@@ -1,0 +1,99 @@
+---
+title: Progress
+description: A visual indicator that shows the completion or progress of a task.
+---
+
+import MDXTabeWrapper from "@/components/mdx-table-wrapper.astro";
+import ComponentExample from "@/components/component-example.astro";
+import ProgressProps from "./props/Progress.mdx";
+
+# Progress
+
+The Progress component displays the completion state of a task or
+operation.
+
+<ComponentExample
+name="Progress/examples/basic"
+title="Basic progress"
+/>
+
+## Examples
+
+### Colors
+
+Use the `color` prop to communicate the semantic state or meaning of
+the progress.
+
+<ComponentExample
+name="Progress/examples/colors"
+title="Colors"
+/>
+
+### Sizes
+
+Use the `size` prop to control the visual thickness of the progress
+indicator.
+
+<ComponentExample
+name="Progress/examples/sizes"
+title="Sizes"
+/>
+
+### Value
+
+Use the `value` prop to indicate the current progress.
+
+<ComponentExample
+name="Progress/examples/value"
+title="Progress value"
+/>
+
+By default, `value` is `0`, `min` is `0`, and `max` is `100`.
+
+The progress percentage is calculated based on the current value and
+the configured range.
+
+For example, a value of `25` with a minimum of `0` and maximum of `50`
+represents 50% progress.
+
+### Custom Range
+
+Use the `min` and `max` props when the progress value uses a range other
+than `0` to `100`.
+
+<ComponentExample
+name="Progress/examples/range"
+title="Custom range"
+/>
+
+For example, a progress indicator with a range from `0` to `10` can use
+`value={7}`, `min={0}`, and `max={10}` to represent 70% progress.
+
+## Accessibility
+
+* Use Progress to communicate the completion state of an operation.
+* Ensure the current progress value provides meaningful information
+  to users.
+* Do not rely on color alone to communicate progress or status.
+* Use `min`, `max`, and `value` consistently to represent the intended
+  range.
+* For operations where the progress value changes dynamically, ensure
+  updates are exposed appropriately to assistive technologies.
+* Use additional text when the exact progress value is important to
+  understanding the status of an operation.
+
+## API
+
+### Progress
+
+The Progress component supports semantic colors, multiple sizes,
+custom value ranges, inline styling, and track-level customization.
+
+<MDXTabeWrapper>
+  <ProgressProps />
+</MDXTabeWrapper>
+
+## Related Components
+
+* [Spinner](/components/spinner/) — Use Spinner when an operation is in
+  progress but its completion percentage is unknown.
