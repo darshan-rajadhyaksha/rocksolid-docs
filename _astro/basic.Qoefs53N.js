@@ -1,0 +1,1 @@
+import{S as e,i as t,p as n,s as r}from"./web.Ck_zQUvi.js";import{t as i}from"./Progress.DIg62BkB.js";var a=n(`<div class="w-full max-w-md">`);function o(){return(()=>{var n=t(a);return r(n,e(i,{value:40})),n})()}export{o as default};

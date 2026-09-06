@@ -1,0 +1,1185 @@
+<!DOCTYPE html><html lang="en"> <head><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><title>Accordion</title><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="generator" content="Astro v7.2.2"><meta name="description" content="A vertically stacked set of interactive sections that can be expanded and collapsed."><meta name="keywords" content="RockSolid, rocksolidjs, SolidJS, SolidJS components, SolidJS UI library, Tailwind CSS, component library, UI components, accessible components, TypeScript, themeable components, reusable components, frontend library"><meta name="author" content="Darshan Sunil Rajadhyaksha"><link rel="canonical" href="https://rocksolidjs.com/components/accordion/"><link rel="sitemap" href="/sitemap-index.xml"><meta name="robots" content="index, follow"><!-- OG --><meta property="og:type" content="article"><meta property="og:title" content="Accordion"><meta property="og:description" content="A vertically stacked set of interactive sections that can be expanded and collapsed."><meta property="og:image" content="https://rocksolidjs.com/assets/og.png"><meta property="og:image:width" content="1024"><meta property="og:image:height" content="768"><meta property="og:url" content="https://rocksolidjs.com/components/accordion/"><meta property="og:site_name" content="RockSolid"><meta property="og:locale" content="en_US"><!-- X --><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Accordion"><meta name="twitter:description" content="A vertically stacked set of interactive sections that can be expanded and collapsed."><meta name="twitter:image" content="https://rocksolidjs.com/assets/og.png"><meta name="twitter:image:width" content="1024"><meta name="twitter:image:height" content="768"><link rel="icon" href="/assets/favicon/favicon.ico"><link rel="icon" type="image/png" sizes="96x96" href="/assets/favicon/favicon-96x96.png"><link rel="icon" type="image/svg+xml" href="/assets/favicon/favicon.svg"><link rel="shortcut icon" href="/assets/favicon/favicon.ico"><link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png"><link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet"><script>
+    const theme = localStorage.getItem("theme");
+    if (
+      theme === "dark" ||
+      (
+        !theme &&
+        window.matchMedia(
+          "(prefers-color-scheme: dark)"
+        ).matches
+      )
+    ) {
+      document.documentElement.classList.add("dark");
+    }
+  </script><link rel="stylesheet" href="/_astro/base.HBy6anu7.css"></head> <body class="min-h-screen bg-white text-neutral-900
+    dark:bg-neutral-950 dark:text-neutral-100"> <!-- Mobile overlay --> <div id="sidebar-overlay" class="pointer-events-none fixed inset-0 z-40
+      bg-black/40 opacity-0 transition-opacity
+      duration-200 lg:hidden"></div> <div class="min-h-screen lg:grid
+      lg:grid-cols-[260px_minmax(0,1fr)]"> <aside class="fixed inset-y-0 left-0 z-50 w-[280px]
+    -translate-x-full
+    ltr:border-r rtl:border-l
+    border-neutral-200
+    bg-white
+    transition-transform duration-200
+    dark:border-neutral-800
+    dark:bg-neutral-950
+
+    lg:sticky
+    lg:top-0
+    lg:z-auto
+    lg:h-screen
+    lg:w-[260px]
+    lg:translate-x-0"> <div class="flex h-full flex-col overflow-y-auto px-4 py-5"> <!-- Logo --> <div class="mb-6 px-2"> <a href="/" class="block text-lg font-bold tracking-tight
+          text-neutral-950
+          dark:text-neutral-50">
+RockSolid
+</a> <p class="mt-1 text-xs
+          text-neutral-400
+          dark:text-neutral-600">
+v0.1.1
+</p> </div> <!-- GitHub --> <div class="mb-7"> <a href="https://github.com/darshan-rajadhyaksha/rocksolid/" target="_blank" rel="noopener noreferrer" class="flex w-full items-center gap-3
+          rounded-md px-3 py-2
+          text-sm font-medium
+          text-neutral-600
+          transition-colors
+          hover:bg-neutral-100
+          hover:text-neutral-950
+          dark:text-neutral-400
+          dark:hover:bg-neutral-900
+          dark:hover:text-neutral-100"> <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"> <path d="M12 .5C5.65.5.5 5.65.5 12
+            c0 5.08 3.29 9.39 7.86 10.91
+            .57.1.78-.25.78-.55
+            0-.27-.01-1-.02-1.96
+            -3.2.7-3.88-1.54-3.88-1.54
+            -.52-1.33-1.28-1.69-1.28-1.69
+            -1.04-.71.08-.7.08-.7
+            1.15.08 1.76 1.18 1.76 1.18
+            1.02 1.75 2.67 1.24 3.32.95
+            .1-.74.4-1.24.73-1.52
+            -2.55-.29-5.23-1.28-5.23-5.69
+            0-1.26.45-2.29 1.18-3.1
+            -.12-.29-.51-1.47.11-3.06
+            0 0 .96-.31 3.15 1.18
+            a10.9 10.9 0 0 1 5.74 0
+            c2.19-1.49 3.15-1.18 3.15-1.18
+            .62 1.59.23 2.77.11 3.06
+            .73.81 1.18 1.84 1.18 3.1
+            0 4.42-2.69 5.39-5.25 5.67
+            .41.35.78 1.04.78 2.1
+            0 1.52-.01 2.74-.01 3.11
+            0 .3.2.66.79.55
+            A11.51 11.51 0 0 0
+            23.5 12C23.5 5.65
+            18.35.5 12 .5Z"></path> </svg> <span>GitHub</span> <svg class="ml-auto" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"> <path d="M7 17 17 7"></path> <path d="M7 7h10v10"></path> </svg> </a> </div> <!-- Navigation --> <nav class="space-y-8" aria-label="Documentation"> <div class="space-y-1"> <p class="mb-2 px-3
+                text-xs font-semibold
+                uppercase tracking-wider
+                text-neutral-400
+                dark:text-neutral-600"> Getting Started </p> <a href="/introduction/" class="block rounded-md px-3 py-2 text-sm font-medium transition-colors text-neutral-600 hover:bg-neutral-100 hover:text-neutral-950 dark:text-neutral-400 dark:hover:bg-neutral-900 dark:hover:text-neutral-100"> Introduction </a><a href="/installation/" class="block rounded-md px-3 py-2 text-sm font-medium transition-colors text-neutral-600 hover:bg-neutral-100 hover:text-neutral-950 dark:text-neutral-400 dark:hover:bg-neutral-900 dark:hover:text-neutral-100"> Installation </a><a href="/customization/" class="block rounded-md px-3 py-2 text-sm font-medium transition-colors text-neutral-600 hover:bg-neutral-100 hover:text-neutral-950 dark:text-neutral-400 dark:hover:bg-neutral-900 dark:hover:text-neutral-100"> Customization </a> </div><div class="space-y-1"> <p class="mb-2 px-3
+                text-xs font-semibold
+                uppercase tracking-wider
+                text-neutral-400
+                dark:text-neutral-600"> Components </p> <a href="/components/accordion/" aria-current="page" class="block rounded-md px-3 py-2 text-sm font-medium transition-colors bg-neutral-100 text-neutral-950 dark:bg-neutral-900 dark:text-neutral-50"> Accordion </a><a href="/components/alert/" class="block rounded-md px-3 py-2 text-sm font-medium transition-colors text-neutral-600 hover:bg-neutral-100 hover:text-neutral-950 dark:text-neutral-400 dark:hover:bg-neutral-900 dark:hover:text-neutral-100"> Alert </a><a href="/components/avatar/" class="block rounded-md px-3 py-2 text-sm font-medium transition-colors text-neutral-600 hover:bg-neutral-100 hover:text-neutral-950 dark:text-neutral-400 dark:hover:bg-neutral-900 dark:hover:text-neutral-100"> Avatar </a><a href="/components/badge/" class="block rounded-md px-3 py-2 text-sm font-medium transition-colors text-neutral-600 hover:bg-neutral-100 hover:text-neutral-950 dark:text-neutral-400 dark:hover:bg-neutral-900 dark:hover:text-neutral-100"> Badge </a><a href="/components/breadcrumbs/" class="block rounded-md px-3 py-2 text-sm font-medium transition-colors text-neutral-600 hover:bg-neutral-100 hover:text-neutral-950 dark:text-neutral-400 dark:hover:bg-neutral-900 dark:hover:text-neutral-100"> Breadcrumbs </a><a href="/components/button/" class="block rounded-md px-3 py-2 text-sm font-medium transition-colors text-neutral-600 hover:bg-neutral-100 hover:text-neutral-950 dark:text-neutral-400 dark:hover:bg-neutral-900 dark:hover:text-neutral-100"> Button </a><a href="/components/card/" class="block rounded-md px-3 py-2 text-sm font-medium transition-colors text-neutral-600 hover:bg-neutral-100 hover:text-neutral-950 dark:text-neutral-400 dark:hover:bg-neutral-900 dark:hover:text-neutral-100"> Card </a><a href="/components/checkbox/" class="block rounded-md px-3 py-2 text-sm font-medium transition-colors text-neutral-600 hover:bg-neutral-100 hover:text-neutral-950 dark:text-neutral-400 dark:hover:bg-neutral-900 dark:hover:text-neutral-100"> Checkbox </a><a href="/components/chip/" class="block rounded-md px-3 py-2 text-sm font-medium transition-colors text-neutral-600 hover:bg-neutral-100 hover:text-neutral-950 dark:text-neutral-400 dark:hover:bg-neutral-900 dark:hover:text-neutral-100"> Chip </a><a href="/components/dialog/" class="block rounded-md px-3 py-2 text-sm font-medium transition-colors text-neutral-600 hover:bg-neutral-100 hover:text-neutral-950 dark:text-neutral-400 dark:hover:bg-neutral-900 dark:hover:text-neutral-100"> Dialog </a><a href="/components/divider/" class="block rounded-md px-3 py-2 text-sm font-medium transition-colors text-neutral-600 hover:bg-neutral-100 hover:text-neutral-950 dark:text-neutral-400 dark:hover:bg-neutral-900 dark:hover:text-neutral-100"> Divider </a><a href="/components/icon-button/" class="block rounded-md px-3 py-2 text-sm font-medium transition-colors text-neutral-600 hover:bg-neutral-100 hover:text-neutral-950 dark:text-neutral-400 dark:hover:bg-neutral-900 dark:hover:text-neutral-100"> IconButton </a><a href="/components/input/" class="block rounded-md px-3 py-2 text-sm font-medium transition-colors text-neutral-600 hover:bg-neutral-100 hover:text-neutral-950 dark:text-neutral-400 dark:hover:bg-neutral-900 dark:hover:text-neutral-100"> Input </a><a href="/components/label/" class="block rounded-md px-3 py-2 text-sm font-medium transition-colors text-neutral-600 hover:bg-neutral-100 hover:text-neutral-950 dark:text-neutral-400 dark:hover:bg-neutral-900 dark:hover:text-neutral-100"> Label </a><a href="/components/link/" class="block rounded-md px-3 py-2 text-sm font-medium transition-colors text-neutral-600 hover:bg-neutral-100 hover:text-neutral-950 dark:text-neutral-400 dark:hover:bg-neutral-900 dark:hover:text-neutral-100"> Link </a><a href="/components/progress/" class="block rounded-md px-3 py-2 text-sm font-medium transition-colors text-neutral-600 hover:bg-neutral-100 hover:text-neutral-950 dark:text-neutral-400 dark:hover:bg-neutral-900 dark:hover:text-neutral-100"> Progress </a><a href="/components/radio/" class="block rounded-md px-3 py-2 text-sm font-medium transition-colors text-neutral-600 hover:bg-neutral-100 hover:text-neutral-950 dark:text-neutral-400 dark:hover:bg-neutral-900 dark:hover:text-neutral-100"> Radio </a><a href="/components/select/" class="block rounded-md px-3 py-2 text-sm font-medium transition-colors text-neutral-600 hover:bg-neutral-100 hover:text-neutral-950 dark:text-neutral-400 dark:hover:bg-neutral-900 dark:hover:text-neutral-100"> Select </a><a href="/components/skeleton/" class="block rounded-md px-3 py-2 text-sm font-medium transition-colors text-neutral-600 hover:bg-neutral-100 hover:text-neutral-950 dark:text-neutral-400 dark:hover:bg-neutral-900 dark:hover:text-neutral-100"> Skeleton </a><a href="/components/spinner/" class="block rounded-md px-3 py-2 text-sm font-medium transition-colors text-neutral-600 hover:bg-neutral-100 hover:text-neutral-950 dark:text-neutral-400 dark:hover:bg-neutral-900 dark:hover:text-neutral-100"> Spinner </a><a href="/components/switch/" class="block rounded-md px-3 py-2 text-sm font-medium transition-colors text-neutral-600 hover:bg-neutral-100 hover:text-neutral-950 dark:text-neutral-400 dark:hover:bg-neutral-900 dark:hover:text-neutral-100"> Switch </a><a href="/components/table/" class="block rounded-md px-3 py-2 text-sm font-medium transition-colors text-neutral-600 hover:bg-neutral-100 hover:text-neutral-950 dark:text-neutral-400 dark:hover:bg-neutral-900 dark:hover:text-neutral-100"> Table </a><a href="/components/tabs/" class="block rounded-md px-3 py-2 text-sm font-medium transition-colors text-neutral-600 hover:bg-neutral-100 hover:text-neutral-950 dark:text-neutral-400 dark:hover:bg-neutral-900 dark:hover:text-neutral-100"> Tabs </a><a href="/components/textarea/" class="block rounded-md px-3 py-2 text-sm font-medium transition-colors text-neutral-600 hover:bg-neutral-100 hover:text-neutral-950 dark:text-neutral-400 dark:hover:bg-neutral-900 dark:hover:text-neutral-100"> Textarea </a><a href="/components/typography/" class="block rounded-md px-3 py-2 text-sm font-medium transition-colors text-neutral-600 hover:bg-neutral-100 hover:text-neutral-950 dark:text-neutral-400 dark:hover:bg-neutral-900 dark:hover:text-neutral-100"> Typography </a> </div><div class="space-y-1"> <p class="mb-2 px-3
+                text-xs font-semibold
+                uppercase tracking-wider
+                text-neutral-400
+                dark:text-neutral-600"> Customization </p> <a href="/customization/theme-provider/" class="block rounded-md px-3 py-2 text-sm font-medium transition-colors text-neutral-600 hover:bg-neutral-100 hover:text-neutral-950 dark:text-neutral-400 dark:hover:bg-neutral-900 dark:hover:text-neutral-100"> ThemeProvider </a><a href="/customization/create-theme/" class="block rounded-md px-3 py-2 text-sm font-medium transition-colors text-neutral-600 hover:bg-neutral-100 hover:text-neutral-950 dark:text-neutral-400 dark:hover:bg-neutral-900 dark:hover:text-neutral-100"> createTheme </a><a href="/customization/theme-tokens/" class="block rounded-md px-3 py-2 text-sm font-medium transition-colors text-neutral-600 hover:bg-neutral-100 hover:text-neutral-950 dark:text-neutral-400 dark:hover:bg-neutral-900 dark:hover:text-neutral-100"> Theme Tokens </a><a href="/customization/extending-theme-types/" class="block rounded-md px-3 py-2 text-sm font-medium transition-colors text-neutral-600 hover:bg-neutral-100 hover:text-neutral-950 dark:text-neutral-400 dark:hover:bg-neutral-900 dark:hover:text-neutral-100"> Extending Theme Types </a> </div> </nav> </div> </aside> <div class="min-w-0"> <header class="sticky top-0 z-30
+    border-b border-neutral-200
+    bg-white/90
+    backdrop-blur
+    dark:border-neutral-800
+    dark:bg-neutral-950/90"> <div class="flex h-14 items-center
+      justify-between px-4 sm:px-6"> <!-- Mobile menu --> <button id="mobile-menu-button" type="button" aria-label="Open navigation" class="inline-flex h-9 w-9
+        items-center justify-center
+        rounded-md
+        text-neutral-600
+        transition-colors
+        hover:bg-neutral-100
+        hover:text-neutral-950
+        dark:text-neutral-400
+        dark:hover:bg-neutral-900
+        dark:hover:text-neutral-100
+        lg:hidden"> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"> <line x1="4" y1="6" x2="20" y2="6"></line> <line x1="4" y1="12" x2="20" y2="12"></line> <line x1="4" y1="18" x2="20" y2="18"></line> </svg> </button> <!-- Title --> <div class="text-sm font-medium
+        text-neutral-600
+        dark:text-neutral-400"> Accordion </div> <div class="flex gap-3"> <div class="flex rounded-md border border-neutral-200 bg-white p-0.5 dark:border-neutral-700 dark:bg-neutral-900"> <button id="ltr" type="button" class="rounded px-2 py-1 text-sm">
+LTR
+</button> <button id="rtl" type="button" class="rounded px-2 py-1 text-sm">
+RTL
+</button> </div> <script type="module">var e=document.querySelector(`#ltr`),t=document.querySelector(`#rtl`),n=n=>{document.documentElement.dir=n,localStorage.setItem(`dir`,n),e?.classList.toggle(`bg-neutral-200`,n===`ltr`),t?.classList.toggle(`bg-neutral-200`,n===`rtl`),e?.classList.toggle(`dark:bg-neutral-700`,n===`ltr`),t?.classList.toggle(`dark:bg-neutral-700`,n===`rtl`)};n(localStorage.getItem(`dir`)||`ltr`),e?.addEventListener(`click`,()=>n(`ltr`)),t?.addEventListener(`click`,()=>n(`rtl`));</script> <!-- Theme --> <button type="button" data-theme-toggle aria-label="Toggle theme" class="inline-flex items-center gap-2
+          rounded-md
+          border border-neutral-200
+          bg-white
+          px-3 py-1.5
+          cursor-pointer
+          text-lg font-medium
+          text-neutral-700
+          transition-colors
+          hover:bg-neutral-100
+          hover:text-neutral-950
+          dark:border-neutral-800
+          dark:bg-neutral-950
+          dark:text-neutral-300
+          dark:hover:bg-neutral-900
+          dark:hover:text-neutral-100"> <span class="theme-light"> <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="m15 8l-3-3l3-3l3 3zm5 3l-2-2l2-2l2 2zm-7.925 11q-2.1 0-3.937-.8t-3.2-2.162t-2.163-3.2t-.8-3.938q0-3.65 2.325-6.437T10.225 2q-.45 2.475.275 4.838t2.5 4.137t4.138 2.5t4.837.275q-.65 3.6-3.45 5.925T12.075 22"></path></svg> </span> <span class="theme-dark hidden"> <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="M11 3V2q0-.425.288-.712T12 1t.713.288T13 2v1q0 .425-.288.713T12 4t-.712-.288T11 3m0 19v-1q0-.425.288-.712T12 20t.713.288T13 21v1q0 .425-.288.713T12 23t-.712-.288T11 22m11-9h-1q-.425 0-.712-.288T20 12t.288-.712T21 11h1q.425 0 .713.288T23 12t-.288.713T22 13M3 13H2q-.425 0-.712-.288T1 12t.288-.712T2 11h1q.425 0 .713.288T4 12t-.288.713T3 13m16.75-7.325l-.35.35q-.275.275-.687.275T18 6q-.275-.275-.288-.687t.263-.713l.375-.375q.275-.3.7-.3t.725.3t.288.725t-.313.725M6.025 19.4l-.375.375q-.275.3-.7.3t-.725-.3t-.288-.725t.313-.725l.35-.35q.275-.275.688-.275T6 18q.275.275.288.688t-.263.712m12.3.35l-.35-.35q-.275-.275-.275-.687T18 18q.275-.275.688-.287t.712.262l.375.375q.3.275.3.7t-.3.725t-.725.288t-.725-.313M4.6 6.025l-.375-.375q-.3-.275-.3-.7t.3-.725t.725-.288t.725.313l.35.35q.275.275.275.688T6 6q-.275.275-.687.288T4.6 6.025M7.75 16.25Q6 14.5 6 12t1.75-4.25T12 6t4.25 1.75T18 12t-1.75 4.25T12 18t-4.25-1.75"></path></svg> </span> </button> </div> </div> </header> <main class="py-8 sm:py-10"> <div class="prose-docs px-6 sm:px-10 lg:px-16 xl:px-20"> <h1 id="accordion">Accordion</h1>
+<p>The Accordion component is used to organize related content into
+expandable sections. It is useful when you want to keep a page
+compact while still allowing users to reveal additional information
+when needed.</p>
+<div id="compoent-example-gobdod00pm4" data-component-example class="my-8
+    overflow-hidden
+    rounded-xl
+    border
+    border-neutral-200
+    bg-white
+    dark:border-neutral-800
+    dark:bg-neutral-950"> <div class="flex
+      justify-center
+      items-center
+      min-h-20
+      bg-white
+      p-5
+      text-base
+      text-neutral-900
+      dark:bg-neutral-950
+      dark:text-neutral-100" data-component-preview> <style>astro-island,astro-slot,astro-static-slot{display:contents}</style><script>(()=>{var e=async t=>{await(await t())()};(self.Astro||(self.Astro={})).only=e;window.dispatchEvent(new Event("astro:only"));})();</script><script>(()=>{var g=Object.defineProperty;var w=(a,s,c)=>s in a?g(a,s,{enumerable:!0,configurable:!0,writable:!0,value:c}):a[s]=c;var l=(a,s,c)=>w(a,typeof s!="symbol"?s+"":s,c);var E=new Set(["__proto__","constructor","prototype"]);{let a={0:t=>y(t),1:t=>c(t),2:t=>new RegExp(t),3:t=>new Date(t),4:t=>new Map(c(t)),5:t=>new Set(c(t)),6:t=>BigInt(t),7:t=>new URL(t),8:t=>new Uint8Array(t),9:t=>new Uint16Array(t),10:t=>new Uint32Array(t),11:t=>Number.POSITIVE_INFINITY*t},s=t=>{let[p,e]=t;return p in a?a[p](e):void 0},c=t=>t.map(s),y=t=>typeof t!="object"||t===null?t:Object.fromEntries(Object.entries(t).map(([p,e])=>[p,s(e)]));class f extends HTMLElement{constructor(){super(...arguments);l(this,"Component");l(this,"hydrator");l(this,"hydrate",async()=>{var b;if(!this.hydrator||!this.isConnected)return;let e=(b=this.parentElement)==null?void 0:b.closest("astro-island[ssr]");if(e){e.addEventListener("astro:hydrate",this.hydrate,{once:!0});return}let r=this.querySelectorAll("astro-slot"),n={},d=this.querySelectorAll("template[data-astro-template]");for(let o of d){let i=o.closest(this.tagName);i!=null&&i.isSameNode(this)&&(n[o.getAttribute("data-astro-template")||"default"]=o.innerHTML,o.remove())}for(let o of r){let i=o.closest(this.tagName);i!=null&&i.isSameNode(this)&&(n[o.getAttribute("name")||"default"]=o.innerHTML)}let u;try{u=this.hasAttribute("props")?y(JSON.parse(this.getAttribute("props"))):{}}catch(o){let i=this.getAttribute("component-url")||"<unknown>",v=this.getAttribute("component-export");throw v&&(i+=` (export ${v})`),console.error(`[hydrate] Error parsing props for component ${i}`,this.getAttribute("props"),o),o}let h;await this.hydrator(this)(this.Component,u,n,{client:this.getAttribute("client")}),this.removeAttribute("ssr"),this.dispatchEvent(new CustomEvent("astro:hydrate"))});l(this,"unmount",()=>{this.isConnected||this.dispatchEvent(new CustomEvent("astro:unmount"))})}disconnectedCallback(){document.removeEventListener("astro:after-swap",this.unmount),document.addEventListener("astro:after-swap",this.unmount,{once:!0})}connectedCallback(){if(!this.hasAttribute("await-children")||document.readyState==="interactive"||document.readyState==="complete")this.childrenConnectedCallback();else{let e=()=>{document.removeEventListener("DOMContentLoaded",e),r.disconnect(),this.childrenConnectedCallback()},r=new MutationObserver(()=>{var n;((n=this.lastChild)==null?void 0:n.nodeType)===Node.COMMENT_NODE&&this.lastChild.nodeValue==="astro:end"&&(this.lastChild.remove(),e())});r.observe(this,{childList:!0}),document.addEventListener("DOMContentLoaded",e)}}async childrenConnectedCallback(){let e=this.getAttribute("before-hydration-url");e&&await import(e),this.start()}getRetryImportUrl(e){let r=new URL(e,document.baseURI);return r.searchParams.set("astro-retry",Date.now().toString()),r.toString()}async importWithRetry(e){try{return await import(e)}catch(r){return await new Promise(n=>setTimeout(n,1e3)),import(this.getRetryImportUrl(e))}}handleHydrationError(e){let r=this.getAttribute("component-url"),n=new CustomEvent("astro:hydration-error",{cancelable:!0,bubbles:!0,composed:!0,detail:{error:e,componentUrl:r}});this.dispatchEvent(n)&&console.error(`[astro-island] Error hydrating ${r}`,e)}async start(){let e=JSON.parse(this.getAttribute("opts")),r=this.getAttribute("client");if(Astro[r]===void 0){window.addEventListener(`astro:${r}`,()=>this.start(),{once:!0});return}try{await Astro[r](async()=>{let n=this.getAttribute("renderer-url");try{let[d,{default:u}]=await Promise.all([this.importWithRetry(this.getAttribute("component-url")),n?this.importWithRetry(n):Promise.resolve({default:()=>()=>{}})]),h=this.getAttribute("component-export")||"default";if(h.includes(".")){this.Component=d;for(let m of h.split(".")){if(E.has(m)||!this.Component||typeof this.Component!="object"&&typeof this.Component!="function"||!Object.hasOwn(this.Component,m))throw new Error(`Invalid component export path: ${h}`);this.Component=this.Component[m]}}else{if(E.has(h))throw new Error(`Invalid component export path: ${h}`);this.Component=d[h]}return this.hydrator=u,this.hydrate}catch(d){return this.handleHydrationError(d),()=>{}}},e,this)}catch(n){this.handleHydrationError(n)}}attributeChangedCallback(){this.hydrate()}}l(f,"observedAttributes",["props"]),customElements.get("astro-island")||customElements.define("astro-island",f)}})();</script><astro-island uid="ZkThzY" component-url="/_astro/dynamic-component-renderer.CBS3Ippf.js" component-export="default" renderer-url="/_astro/client.BgJ9siUT.js" props="{&quot;name&quot;:[0,&quot;Accordion/examples/basic&quot;]}" ssr client="only" opts="{&quot;name&quot;:&quot;DynamicComponentRenderer&quot;,&quot;value&quot;:&quot;solid-js&quot;}"></astro-island> </div> <div data-code class="border-t
+      border-neutral-200
+      dark:border-neutral-800"> <div class="relative"> <button type="button" data-copy class="absolute
+          top-3
+          z-10
+          ltr:right-3
+          rtl:left-3
+          rounded-md
+          bg-neutral-200
+          size-6
+          text-xl
+          grid
+          place-items-center
+          text-neutral-900
+          transition-colors
+          hover:bg-neutral-200/80
+          dark:bg-neutral-700/90
+          dark:text-white
+          dark:hover:bg-neutral-700"> <svg class="checkmark hidden " xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="m10 13.6l5.9-5.9q.275-.275.7-.275t.7.275t.275.7t-.275.7l-6.6 6.6q-.3.3-.7.3t-.7-.3l-2.6-2.6q-.275-.275-.275-.7t.275-.7t.7-.275t.7.275z"></path></svg> <svg class="copy " xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"></path><g fill="none" stroke="currentColor"><rect width="9" height="13" x="6.5" y="6.5" rx="1.5"></rect><path d="M8.5 6A1.5 1.5 0 0 1 10 4.5h6A1.5 1.5 0 0 1 17.5 6v10a1.5 1.5 0 0 1-1.5 1.5"></path></g></svg> </button> <div class="overflow-x-auto
+    text-lg
+    border-neutral-200
+    dark:border-neutral-800 rounded-xl " data-highlighted-code><pre class="shiki shiki-themes min-light min-dark" style="--shiki-light:#24292eff;--shiki-dark:#b392f0;--shiki-light-bg:#ffffff;--shiki-dark-bg:#1f1f1f" tabindex="0"><code><span class="line"><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">import</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0"> Accordion </span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">from</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70"> "rocksolidjs/Accordion"</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">;</span></span>
+<span class="line"><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">import</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0"> AccordionSummary </span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">from</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70"> "rocksolidjs/AccordionSummary"</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">;</span></span>
+<span class="line"><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">import</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0"> AccordionDetails </span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">from</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70"> "rocksolidjs/AccordionDetails"</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">;</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">export</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583"> default</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583"> function</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> Example</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">() {</span></span>
+<span class="line"><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">  return</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0"> (</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">    &#x3C;</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">div</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> class</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">=</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">"max-w-md"</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">      &#x3C;</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">Accordion</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">        &#x3C;</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">AccordionSummary</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">          What is gravity?</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">        &#x3C;/</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">AccordionSummary</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">        &#x3C;</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">AccordionDetails</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">          Gravity is a force that attracts objects with mass</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">          toward one another. On Earth, it gives objects weight</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">          and causes them to fall toward the ground.</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">        &#x3C;/</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">AccordionDetails</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">      &#x3C;/</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">Accordion</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">      &#x3C;</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">Accordion</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">        &#x3C;</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">AccordionSummary</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">          What is photosynthesis?</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">        &#x3C;/</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">AccordionSummary</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">        &#x3C;</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">AccordionDetails</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">          Photosynthesis is the process by which plants use</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">          sunlight, water, and carbon dioxide to produce</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">          energy in the form of glucose.</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">        &#x3C;/</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">AccordionDetails</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">      &#x3C;/</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">Accordion</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">      &#x3C;</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">Accordion</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">        &#x3C;</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">AccordionSummary</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">          What is an atom?</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">        &#x3C;/</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">AccordionSummary</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">        &#x3C;</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">AccordionDetails</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">          An atom is the smallest unit of an element that</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">          retains the chemical properties of that element.</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">          It consists of a nucleus surrounded by electrons.</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">        &#x3C;/</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">AccordionDetails</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">      &#x3C;/</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">Accordion</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">    &#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">div</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">  );</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> </div> </div> <script>(function(){const id = "gobdod00pm4";
+const source = "import Accordion from \"rocksolidjs/Accordion\";\nimport AccordionSummary from \"rocksolidjs/AccordionSummary\";\nimport AccordionDetails from \"rocksolidjs/AccordionDetails\";\n\nexport default function Example() {\n  return (\n    \u003cdiv class=\"max-w-md\">\n      \u003cAccordion>\n        \u003cAccordionSummary>\n          What is gravity?\n        \u003c/AccordionSummary>\n        \u003cAccordionDetails>\n          Gravity is a force that attracts objects with mass\n          toward one another. On Earth, it gives objects weight\n          and causes them to fall toward the ground.\n        \u003c/AccordionDetails>\n      \u003c/Accordion>\n      \u003cAccordion>\n        \u003cAccordionSummary>\n          What is photosynthesis?\n        \u003c/AccordionSummary>\n        \u003cAccordionDetails>\n          Photosynthesis is the process by which plants use\n          sunlight, water, and carbon dioxide to produce\n          energy in the form of glucose.\n        \u003c/AccordionDetails>\n      \u003c/Accordion>\n      \u003cAccordion>\n        \u003cAccordionSummary>\n          What is an atom?\n        \u003c/AccordionSummary>\n        \u003cAccordionDetails>\n          An atom is the smallest unit of an element that\n          retains the chemical properties of that element.\n          It consists of a nucleus surrounded by electrons.\n        \u003c/AccordionDetails>\n      \u003c/Accordion>\n    \u003c/div>\n  );\n}";
+
+  const copyBtn = document.querySelector(`#compoent-example-${id} [data-copy]`);
+  copyBtn?.addEventListener("click", async () => {
+    try {
+      const copyIcon = copyBtn.querySelector(".copy");
+      const checkmarkIcon = copyBtn.querySelector(".checkmark");
+      await navigator.clipboard.writeText(source);
+      copyIcon.classList.add("hidden");
+      checkmarkIcon.classList.remove("hidden");
+      copyBtn.disabled = true;
+      setTimeout(() => {
+        copyIcon.classList.remove("hidden");
+        checkmarkIcon.classList.add("hidden");
+        copyBtn.disabled = false;
+      }, 2000);
+    } catch (error) {
+      console.error("failed to copy to clipboard");
+    }
+  });
+})();</script>
+<h2 id="composition">Composition</h2>
+<p>The Accordion components are designed to be composed together. An Accordion is made up of three components:</p>
+<ol>
+<li><code>Accordion</code> — The root component that manages the expanded state,
+disabled state, and expand/collapse behavior.</li>
+<li><code>AccordionSummary</code> — The clickable header that users interact with
+to expand or collapse the accordion.</li>
+<li><code>AccordionDetails</code> — The content area that is displayed when the
+accordion is expanded.</li>
+</ol>
+<p>A basic Accordion combines these three components together. The example below shows the basic composition of an Accordion using
+a summary and details section.</p>
+<div class="overflow-x-auto
+    text-lg
+    border-neutral-200
+    dark:border-neutral-800 rounded-xl border" data-highlighted-code><pre class="shiki shiki-themes min-light min-dark" style="--shiki-light:#24292eff;--shiki-dark:#b392f0;--shiki-light-bg:#ffffff;--shiki-dark-bg:#1f1f1f" tabindex="0"><code><span class="line"><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">import</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0"> Accordion </span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">from</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70"> "rocksolidjs/Accordion"</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">;</span></span>
+<span class="line"><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">import</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0"> AccordionSummary </span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">from</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70"> "rocksolidjs/AccordionSummary"</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">;</span></span>
+<span class="line"><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">import</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0"> AccordionDetails </span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">from</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70"> "rocksolidjs/AccordionDetails"</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">;</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">export</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583"> default</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583"> function</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> Example</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">() {</span></span>
+<span class="line"><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">  return</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0"> (</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">    &#x3C;</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">Accordion</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">      &#x3C;</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">AccordionSummary</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">        What is My UI?</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">      &#x3C;/</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">AccordionSummary</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">      &#x3C;</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">AccordionDetails</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">        My UI is a collection of reusable components</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">        for building modern applications.</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">      &#x3C;/</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">AccordionDetails</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">    &#x3C;/</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">Accordion</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">  );</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div>
+<p><code>AccordionSummary</code> should be used as the interactive heading and
+<code>AccordionDetails</code> should contain the content associated with that
+heading.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="disabled">Disabled</h3>
+<p>Use the <code>disabled</code> prop to prevent users from expanding or collapsing
+an Accordion.</p>
+<div id="compoent-example-z69oxd4kk2q" data-component-example class="my-8
+    overflow-hidden
+    rounded-xl
+    border
+    border-neutral-200
+    bg-white
+    dark:border-neutral-800
+    dark:bg-neutral-950"> <div class="flex
+      justify-center
+      items-center
+      min-h-20
+      bg-white
+      p-5
+      text-base
+      text-neutral-900
+      dark:bg-neutral-950
+      dark:text-neutral-100" data-component-preview> <astro-island uid="8iWvu" component-url="/_astro/dynamic-component-renderer.CBS3Ippf.js" component-export="default" renderer-url="/_astro/client.BgJ9siUT.js" props="{&quot;name&quot;:[0,&quot;Accordion/examples/disabled&quot;]}" ssr client="only" opts="{&quot;name&quot;:&quot;DynamicComponentRenderer&quot;,&quot;value&quot;:&quot;solid-js&quot;}"></astro-island> </div> <div data-code class="border-t
+      border-neutral-200
+      dark:border-neutral-800"> <div class="relative"> <button type="button" data-copy class="absolute
+          top-3
+          z-10
+          ltr:right-3
+          rtl:left-3
+          rounded-md
+          bg-neutral-200
+          size-6
+          text-xl
+          grid
+          place-items-center
+          text-neutral-900
+          transition-colors
+          hover:bg-neutral-200/80
+          dark:bg-neutral-700/90
+          dark:text-white
+          dark:hover:bg-neutral-700"> <svg class="checkmark hidden " xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="m10 13.6l5.9-5.9q.275-.275.7-.275t.7.275t.275.7t-.275.7l-6.6 6.6q-.3.3-.7.3t-.7-.3l-2.6-2.6q-.275-.275-.275-.7t.275-.7t.7-.275t.7.275z"></path></svg> <svg class="copy " xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"></path><g fill="none" stroke="currentColor"><rect width="9" height="13" x="6.5" y="6.5" rx="1.5"></rect><path d="M8.5 6A1.5 1.5 0 0 1 10 4.5h6A1.5 1.5 0 0 1 17.5 6v10a1.5 1.5 0 0 1-1.5 1.5"></path></g></svg> </button> <div class="overflow-x-auto
+    text-lg
+    border-neutral-200
+    dark:border-neutral-800 rounded-xl " data-highlighted-code><pre class="shiki shiki-themes min-light min-dark" style="--shiki-light:#24292eff;--shiki-dark:#b392f0;--shiki-light-bg:#ffffff;--shiki-dark-bg:#1f1f1f" tabindex="0"><code><span class="line"><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">import</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0"> Accordion </span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">from</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70"> "rocksolidjs/Accordion"</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">;</span></span>
+<span class="line"><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">import</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0"> AccordionSummary </span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">from</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70"> "rocksolidjs/AccordionSummary"</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">;</span></span>
+<span class="line"><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">import</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0"> AccordionDetails </span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">from</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70"> "rocksolidjs/AccordionDetails"</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">;</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">export</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583"> default</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583"> function</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> DisabledAccordion</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">() {</span></span>
+<span class="line"><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">  return</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0"> (</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">    &#x3C;</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">div</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> class</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">=</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">"max-w-md"</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">      &#x3C;</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">Accordion</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">        &#x3C;</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">AccordionSummary</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">          What is the speed of light?</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">        &#x3C;/</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">AccordionSummary</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">        &#x3C;</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">AccordionDetails</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">          Light travels through a vacuum at approximately</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">          299,792 kilometers per second.</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">        &#x3C;/</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">AccordionDetails</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">      &#x3C;/</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">Accordion</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">      &#x3C;</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">Accordion</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> disabled</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">        &#x3C;</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">AccordionSummary</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">          What is quantum entanglement?</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">        &#x3C;/</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">AccordionSummary</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">        &#x3C;</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">AccordionDetails</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">          Quantum entanglement is a phenomenon where two</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">          particles can share a correlated quantum state,</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">          even when separated by large distances.</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">        &#x3C;/</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">AccordionDetails</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">      &#x3C;/</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">Accordion</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">      &#x3C;</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">Accordion</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">        &#x3C;</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">AccordionSummary</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">          What is evaporation?</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">        &#x3C;/</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">AccordionSummary</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">        &#x3C;</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">AccordionDetails</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">          Evaporation occurs when molecules at the surface</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">          of a liquid gain enough energy to escape into</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">          the surrounding environment as a gas.</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">        &#x3C;/</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">AccordionDetails</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">      &#x3C;/</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">Accordion</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">    &#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">div</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">  );</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> </div> </div> <script>(function(){const id = "z69oxd4kk2q";
+const source = "import Accordion from \"rocksolidjs/Accordion\";\nimport AccordionSummary from \"rocksolidjs/AccordionSummary\";\nimport AccordionDetails from \"rocksolidjs/AccordionDetails\";\n\nexport default function DisabledAccordion() {\n  return (\n    \u003cdiv class=\"max-w-md\">\n      \u003cAccordion>\n        \u003cAccordionSummary>\n          What is the speed of light?\n        \u003c/AccordionSummary>\n        \u003cAccordionDetails>\n          Light travels through a vacuum at approximately\n          299,792 kilometers per second.\n        \u003c/AccordionDetails>\n      \u003c/Accordion>\n      \u003cAccordion disabled>\n        \u003cAccordionSummary>\n          What is quantum entanglement?\n        \u003c/AccordionSummary>\n        \u003cAccordionDetails>\n          Quantum entanglement is a phenomenon where two\n          particles can share a correlated quantum state,\n          even when separated by large distances.\n        \u003c/AccordionDetails>\n      \u003c/Accordion>\n      \u003cAccordion>\n        \u003cAccordionSummary>\n          What is evaporation?\n        \u003c/AccordionSummary>\n        \u003cAccordionDetails>\n          Evaporation occurs when molecules at the surface\n          of a liquid gain enough energy to escape into\n          the surrounding environment as a gas.\n        \u003c/AccordionDetails>\n      \u003c/Accordion>\n    \u003c/div>\n  );\n}";
+
+  const copyBtn = document.querySelector(`#compoent-example-${id} [data-copy]`);
+  copyBtn?.addEventListener("click", async () => {
+    try {
+      const copyIcon = copyBtn.querySelector(".copy");
+      const checkmarkIcon = copyBtn.querySelector(".checkmark");
+      await navigator.clipboard.writeText(source);
+      copyIcon.classList.add("hidden");
+      checkmarkIcon.classList.remove("hidden");
+      copyBtn.disabled = true;
+      setTimeout(() => {
+        copyIcon.classList.remove("hidden");
+        checkmarkIcon.classList.add("hidden");
+        copyBtn.disabled = false;
+      }, 2000);
+    } catch (error) {
+      console.error("failed to copy to clipboard");
+    }
+  });
+})();</script>
+<h3 id="custom-icon">Custom Icon</h3>
+<p>Use <code>collapsedIcon</code> and <code>expandedIcon</code> to provide custom icons for
+the collapsed and expanded states.</p>
+<div id="compoent-example-2e98luozhth" data-component-example class="my-8
+    overflow-hidden
+    rounded-xl
+    border
+    border-neutral-200
+    bg-white
+    dark:border-neutral-800
+    dark:bg-neutral-950"> <div class="flex
+      justify-center
+      items-center
+      min-h-20
+      bg-white
+      p-5
+      text-base
+      text-neutral-900
+      dark:bg-neutral-950
+      dark:text-neutral-100" data-component-preview> <astro-island uid="1c5g5P" component-url="/_astro/dynamic-component-renderer.CBS3Ippf.js" component-export="default" renderer-url="/_astro/client.BgJ9siUT.js" props="{&quot;name&quot;:[0,&quot;Accordion/examples/custom-icon&quot;]}" ssr client="only" opts="{&quot;name&quot;:&quot;DynamicComponentRenderer&quot;,&quot;value&quot;:&quot;solid-js&quot;}"></astro-island> </div> <div data-code class="border-t
+      border-neutral-200
+      dark:border-neutral-800"> <div class="relative"> <button type="button" data-copy class="absolute
+          top-3
+          z-10
+          ltr:right-3
+          rtl:left-3
+          rounded-md
+          bg-neutral-200
+          size-6
+          text-xl
+          grid
+          place-items-center
+          text-neutral-900
+          transition-colors
+          hover:bg-neutral-200/80
+          dark:bg-neutral-700/90
+          dark:text-white
+          dark:hover:bg-neutral-700"> <svg class="checkmark hidden " xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="m10 13.6l5.9-5.9q.275-.275.7-.275t.7.275t.275.7t-.275.7l-6.6 6.6q-.3.3-.7.3t-.7-.3l-2.6-2.6q-.275-.275-.275-.7t.275-.7t.7-.275t.7.275z"></path></svg> <svg class="copy " xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"></path><g fill="none" stroke="currentColor"><rect width="9" height="13" x="6.5" y="6.5" rx="1.5"></rect><path d="M8.5 6A1.5 1.5 0 0 1 10 4.5h6A1.5 1.5 0 0 1 17.5 6v10a1.5 1.5 0 0 1-1.5 1.5"></path></g></svg> </button> <div class="overflow-x-auto
+    text-lg
+    border-neutral-200
+    dark:border-neutral-800 rounded-xl " data-highlighted-code><pre class="shiki shiki-themes min-light min-dark" style="--shiki-light:#24292eff;--shiki-dark:#b392f0;--shiki-light-bg:#ffffff;--shiki-dark-bg:#1f1f1f" tabindex="0"><code><span class="line"><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">import</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583"> type</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0"> { ComponentProps } </span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">from</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70"> "solid-js"</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">;</span></span>
+<span class="line"><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">import</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0"> Accordion </span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">from</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70"> "rocksolidjs/Accordion"</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">;</span></span>
+<span class="line"><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">import</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0"> AccordionSummary </span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">from</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70"> "rocksolidjs/AccordionSummary"</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">;</span></span>
+<span class="line"><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">import</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0"> AccordionDetails </span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">from</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70"> "rocksolidjs/AccordionDetails"</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">;</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">export</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583"> default</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583"> function</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> Example</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">() {</span></span>
+<span class="line"><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">  return</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0"> (</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">    &#x3C;</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">div</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> class</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">=</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">"max-w-md"</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">      &#x3C;</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">Accordion</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">        &#x3C;</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">AccordionSummary</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">          collapsedIcon</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">=</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">{&#x3C;</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">TriangleIcon</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0"> />}</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">          expandedIcon</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">=</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">{&#x3C;</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">TriangleIcon</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> class</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">=</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">"rotate-180"</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0"> />}</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">        ></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">          What is a molecule?</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">        &#x3C;/</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">AccordionSummary</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">        &#x3C;</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">AccordionDetails</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">          A molecule is a group of two or more atoms held</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">          together by chemical bonds.</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">        &#x3C;/</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">AccordionDetails</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">      &#x3C;/</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">Accordion</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">      &#x3C;</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">Accordion</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">        &#x3C;</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">AccordionSummary</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">          collapsedIcon</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">=</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">"+"</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">          expandedIcon</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">=</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">"-"</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">        ></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">          What causes the seasons?</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">        &#x3C;/</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">AccordionSummary</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">        &#x3C;</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">AccordionDetails</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">          Earth's seasons are primarily caused by the tilt</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">          of Earth's rotational axis as it orbits the Sun.</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">        &#x3C;/</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">AccordionDetails</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">      &#x3C;/</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">Accordion</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">      &#x3C;</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">Accordion</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">        &#x3C;</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">AccordionSummary</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">          collapsedIcon</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">=</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">{&#x3C;</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">TriangleIcon</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0"> />}</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">          expandedIcon</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">=</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">{&#x3C;</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">TriangleIcon</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> class</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">=</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">"rotate-180"</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0"> />}</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">        ></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">          What is sound?</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">        &#x3C;/</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">AccordionSummary</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">        &#x3C;</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">AccordionDetails</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">          Sound is a mechanical wave produced by vibrations</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">          that travel through a medium such as air, water,</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">          or a solid material.</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">        &#x3C;/</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">AccordionDetails</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">      &#x3C;/</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">Accordion</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">    &#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">div</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">  );</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">const</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> TriangleIcon</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583"> =</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0"> (</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">  props</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">:</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> ComponentProps</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">&#x3C;</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">"svg"</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">) </span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">=></span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0"> (</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">	&#x3C;</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">svg</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0"> {</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">...</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">props} </span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">xmlns</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">=</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">"http://www.w3.org/2000/svg"</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> width</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">=</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">"1em"</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> height</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">=</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">"1em"</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> viewBox</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">=</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">"0 0 24 24"</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">		&#x3C;</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">path</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> d</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">=</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">"M0 0h24v24H0z"</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> fill</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">=</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">"none"</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0"> /></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">		&#x3C;</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">path</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> fill</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">=</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">"currentColor"</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> d</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">=</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">"M10.285 3.858c.777-1.294 2.653-1.294 3.43 0l8.468 14.113c.8 1.333-.16 3.029-1.715 3.029H3.532c-1.554 0-2.514-1.696-1.715-3.029z"</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0"> /></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">	&#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">svg</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">);</span></span></code></pre></div> </div> </div> </div> <script>(function(){const id = "2e98luozhth";
+const source = "import type { ComponentProps } from \"solid-js\";\nimport Accordion from \"rocksolidjs/Accordion\";\nimport AccordionSummary from \"rocksolidjs/AccordionSummary\";\nimport AccordionDetails from \"rocksolidjs/AccordionDetails\";\n\nexport default function Example() {\n  return (\n    \u003cdiv class=\"max-w-md\">\n      \u003cAccordion>\n        \u003cAccordionSummary\n          collapsedIcon={\u003cTriangleIcon />}\n          expandedIcon={\u003cTriangleIcon class=\"rotate-180\" />}\n        >\n          What is a molecule?\n        \u003c/AccordionSummary>\n        \u003cAccordionDetails>\n          A molecule is a group of two or more atoms held\n          together by chemical bonds.\n        \u003c/AccordionDetails>\n      \u003c/Accordion>\n      \u003cAccordion>\n        \u003cAccordionSummary\n          collapsedIcon=\"+\"\n          expandedIcon=\"-\"\n        >\n          What causes the seasons?\n        \u003c/AccordionSummary>\n        \u003cAccordionDetails>\n          Earth's seasons are primarily caused by the tilt\n          of Earth's rotational axis as it orbits the Sun.\n        \u003c/AccordionDetails>\n      \u003c/Accordion>\n      \u003cAccordion>\n        \u003cAccordionSummary\n          collapsedIcon={\u003cTriangleIcon />}\n          expandedIcon={\u003cTriangleIcon class=\"rotate-180\" />}\n        >\n          What is sound?\n        \u003c/AccordionSummary>\n        \u003cAccordionDetails>\n          Sound is a mechanical wave produced by vibrations\n          that travel through a medium such as air, water,\n          or a solid material.\n        \u003c/AccordionDetails>\n      \u003c/Accordion>\n    \u003c/div>\n  );\n}\n\nconst TriangleIcon = (\n  props: ComponentProps\u003c\"svg\">\n) => (\n\t\u003csvg {...props} xmlns=\"http://www.w3.org/2000/svg\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\">\n\t\t\u003cpath d=\"M0 0h24v24H0z\" fill=\"none\" />\n\t\t\u003cpath fill=\"currentColor\" d=\"M10.285 3.858c.777-1.294 2.653-1.294 3.43 0l8.468 14.113c.8 1.333-.16 3.029-1.715 3.029H3.532c-1.554 0-2.514-1.696-1.715-3.029z\" />\n\t\u003c/svg>\n);";
+
+  const copyBtn = document.querySelector(`#compoent-example-${id} [data-copy]`);
+  copyBtn?.addEventListener("click", async () => {
+    try {
+      const copyIcon = copyBtn.querySelector(".copy");
+      const checkmarkIcon = copyBtn.querySelector(".checkmark");
+      await navigator.clipboard.writeText(source);
+      copyIcon.classList.add("hidden");
+      checkmarkIcon.classList.remove("hidden");
+      copyBtn.disabled = true;
+      setTimeout(() => {
+        copyIcon.classList.remove("hidden");
+        checkmarkIcon.classList.add("hidden");
+        copyBtn.disabled = false;
+      }, 2000);
+    } catch (error) {
+      console.error("failed to copy to clipboard");
+    }
+  });
+})();</script>
+<h3 id="controlled">Controlled</h3>
+<p>Use the <code>expanded</code> and <code>onChange</code> props when the expanded state needs
+to be controlled by the parent component.</p>
+<div id="compoent-example-5lddpl88fi" data-component-example class="my-8
+    overflow-hidden
+    rounded-xl
+    border
+    border-neutral-200
+    bg-white
+    dark:border-neutral-800
+    dark:bg-neutral-950"> <div class="flex
+      justify-center
+      items-center
+      min-h-20
+      bg-white
+      p-5
+      text-base
+      text-neutral-900
+      dark:bg-neutral-950
+      dark:text-neutral-100" data-component-preview> <astro-island uid="169cpW" component-url="/_astro/dynamic-component-renderer.CBS3Ippf.js" component-export="default" renderer-url="/_astro/client.BgJ9siUT.js" props="{&quot;name&quot;:[0,&quot;Accordion/examples/controlled&quot;]}" ssr client="only" opts="{&quot;name&quot;:&quot;DynamicComponentRenderer&quot;,&quot;value&quot;:&quot;solid-js&quot;}"></astro-island> </div> <div data-code class="border-t
+      border-neutral-200
+      dark:border-neutral-800"> <div class="relative"> <button type="button" data-copy class="absolute
+          top-3
+          z-10
+          ltr:right-3
+          rtl:left-3
+          rounded-md
+          bg-neutral-200
+          size-6
+          text-xl
+          grid
+          place-items-center
+          text-neutral-900
+          transition-colors
+          hover:bg-neutral-200/80
+          dark:bg-neutral-700/90
+          dark:text-white
+          dark:hover:bg-neutral-700"> <svg class="checkmark hidden " xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="m10 13.6l5.9-5.9q.275-.275.7-.275t.7.275t.275.7t-.275.7l-6.6 6.6q-.3.3-.7.3t-.7-.3l-2.6-2.6q-.275-.275-.275-.7t.275-.7t.7-.275t.7.275z"></path></svg> <svg class="copy " xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"></path><g fill="none" stroke="currentColor"><rect width="9" height="13" x="6.5" y="6.5" rx="1.5"></rect><path d="M8.5 6A1.5 1.5 0 0 1 10 4.5h6A1.5 1.5 0 0 1 17.5 6v10a1.5 1.5 0 0 1-1.5 1.5"></path></g></svg> </button> <div class="overflow-x-auto
+    text-lg
+    border-neutral-200
+    dark:border-neutral-800 rounded-xl " data-highlighted-code><pre class="shiki shiki-themes min-light min-dark" style="--shiki-light:#24292eff;--shiki-dark:#b392f0;--shiki-light-bg:#ffffff;--shiki-dark-bg:#1f1f1f" tabindex="0"><code><span class="line"><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">import</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0"> { createSignal } </span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">from</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70"> "solid-js"</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">;</span></span>
+<span class="line"><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">import</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0"> Accordion </span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">from</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70"> "rocksolidjs/Accordion"</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">;</span></span>
+<span class="line"><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">import</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0"> AccordionSummary </span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">from</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70"> "rocksolidjs/AccordionSummary"</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">;</span></span>
+<span class="line"><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">import</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0"> AccordionDetails </span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">from</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70"> "rocksolidjs/AccordionDetails"</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">;</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">export</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583"> default</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583"> function</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> Example</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">() {</span></span>
+<span class="line"><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">  const</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0"> [</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">expanded</span><span style="--shiki-light:#212121;--shiki-dark:#BBBBBB">,</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF"> setExpanded</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">] </span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">=</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> createSignal</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">&#x3C;</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">number</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583"> |</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF"> null</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">>(</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">null</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">);</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">  const</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> handleChange</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583"> =</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0"> (index</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">:</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF"> number</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">) </span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">=></span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0"> {</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">    setExpanded</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">(</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">expanded</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">() </span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">===</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0"> index </span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">?</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF"> null</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583"> :</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0"> index);</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">  };</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">  return</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0"> (</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">    &#x3C;</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">div</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> class</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">=</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">"max-w-md"</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">      &#x3C;</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">Accordion</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">        expanded</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">=</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">{</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">expanded</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">() </span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">===</span><span style="--shiki-light:#1976D2;--shiki-dark:#F8F8F8"> 0</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">        onChange</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">=</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">{() </span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">=></span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> handleChange</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">(</span><span style="--shiki-light:#1976D2;--shiki-dark:#F8F8F8">0</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">)}</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">      ></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">        &#x3C;</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">AccordionSummary</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">          What is an electric current?</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">        &#x3C;/</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">AccordionSummary</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">        &#x3C;</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">AccordionDetails</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">          Electric current is the flow of electric charge</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">          through a conductor or other medium.</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">        &#x3C;/</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">AccordionDetails</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">      &#x3C;/</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">Accordion</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">      &#x3C;</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">Accordion</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">        expanded</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">=</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">{</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">expanded</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">() </span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">===</span><span style="--shiki-light:#1976D2;--shiki-dark:#F8F8F8"> 1</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">        onChange</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">=</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">{() </span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">=></span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> handleChange</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">(</span><span style="--shiki-light:#1976D2;--shiki-dark:#F8F8F8">1</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">)}</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">      ></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">        &#x3C;</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">AccordionSummary</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">          What is kinetic energy?</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">        &#x3C;/</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">AccordionSummary</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">        &#x3C;</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">AccordionDetails</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">          Kinetic energy is the energy an object possesses</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">          because of its motion. It depends on the object's</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">          mass and velocity.</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">        &#x3C;/</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">AccordionDetails</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">      &#x3C;/</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">Accordion</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">      &#x3C;</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">Accordion</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">        expanded</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">=</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">{</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">expanded</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">() </span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">===</span><span style="--shiki-light:#1976D2;--shiki-dark:#F8F8F8"> 2</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">        onChange</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">=</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">{() </span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">=></span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> handleChange</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">(</span><span style="--shiki-light:#1976D2;--shiki-dark:#F8F8F8">2</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">)}</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">      ></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">        &#x3C;</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">AccordionSummary</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">          What is the water cycle?</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">        &#x3C;/</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">AccordionSummary</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">        &#x3C;</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">AccordionDetails</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">          The water cycle describes the continuous movement</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">          of water through evaporation, condensation,</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">          precipitation, and collection.</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">        &#x3C;/</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">AccordionDetails</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">      &#x3C;/</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">Accordion</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">    &#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">div</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">  );</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> </div> </div> <script>(function(){const id = "5lddpl88fi";
+const source = "import { createSignal } from \"solid-js\";\nimport Accordion from \"rocksolidjs/Accordion\";\nimport AccordionSummary from \"rocksolidjs/AccordionSummary\";\nimport AccordionDetails from \"rocksolidjs/AccordionDetails\";\n\nexport default function Example() {\n  const [expanded, setExpanded] = createSignal\u003cnumber | null>(null);\n\n  const handleChange = (index: number) => {\n    setExpanded(expanded() === index ? null : index);\n  };\n\n  return (\n    \u003cdiv class=\"max-w-md\">\n      \u003cAccordion\n        expanded={expanded() === 0}\n        onChange={() => handleChange(0)}\n      >\n        \u003cAccordionSummary>\n          What is an electric current?\n        \u003c/AccordionSummary>\n        \u003cAccordionDetails>\n          Electric current is the flow of electric charge\n          through a conductor or other medium.\n        \u003c/AccordionDetails>\n      \u003c/Accordion>\n      \u003cAccordion\n        expanded={expanded() === 1}\n        onChange={() => handleChange(1)}\n      >\n        \u003cAccordionSummary>\n          What is kinetic energy?\n        \u003c/AccordionSummary>\n        \u003cAccordionDetails>\n          Kinetic energy is the energy an object possesses\n          because of its motion. It depends on the object's\n          mass and velocity.\n        \u003c/AccordionDetails>\n      \u003c/Accordion>\n      \u003cAccordion\n        expanded={expanded() === 2}\n        onChange={() => handleChange(2)}\n      >\n        \u003cAccordionSummary>\n          What is the water cycle?\n        \u003c/AccordionSummary>\n        \u003cAccordionDetails>\n          The water cycle describes the continuous movement\n          of water through evaporation, condensation,\n          precipitation, and collection.\n        \u003c/AccordionDetails>\n      \u003c/Accordion>\n    \u003c/div>\n  );\n}";
+
+  const copyBtn = document.querySelector(`#compoent-example-${id} [data-copy]`);
+  copyBtn?.addEventListener("click", async () => {
+    try {
+      const copyIcon = copyBtn.querySelector(".copy");
+      const checkmarkIcon = copyBtn.querySelector(".checkmark");
+      await navigator.clipboard.writeText(source);
+      copyIcon.classList.add("hidden");
+      checkmarkIcon.classList.remove("hidden");
+      copyBtn.disabled = true;
+      setTimeout(() => {
+        copyIcon.classList.remove("hidden");
+        checkmarkIcon.classList.add("hidden");
+        copyBtn.disabled = false;
+      }, 2000);
+    } catch (error) {
+      console.error("failed to copy to clipboard");
+    }
+  });
+})();</script>
+<h3 id="disable-transition">Disable Transition</h3>
+<p>Use the <code>disableTransition</code> prop to disable the expand and collapse
+transition animation.</p>
+<div id="compoent-example-isqw5s0jlrm" data-component-example class="my-8
+    overflow-hidden
+    rounded-xl
+    border
+    border-neutral-200
+    bg-white
+    dark:border-neutral-800
+    dark:bg-neutral-950"> <div class="flex
+      justify-center
+      items-center
+      min-h-20
+      bg-white
+      p-5
+      text-base
+      text-neutral-900
+      dark:bg-neutral-950
+      dark:text-neutral-100" data-component-preview> <astro-island uid="Z2jJ4kH" component-url="/_astro/dynamic-component-renderer.CBS3Ippf.js" component-export="default" renderer-url="/_astro/client.BgJ9siUT.js" props="{&quot;name&quot;:[0,&quot;Accordion/examples/disable-transition&quot;]}" ssr client="only" opts="{&quot;name&quot;:&quot;DynamicComponentRenderer&quot;,&quot;value&quot;:&quot;solid-js&quot;}"></astro-island> </div> <div data-code class="border-t
+      border-neutral-200
+      dark:border-neutral-800"> <div class="relative"> <button type="button" data-copy class="absolute
+          top-3
+          z-10
+          ltr:right-3
+          rtl:left-3
+          rounded-md
+          bg-neutral-200
+          size-6
+          text-xl
+          grid
+          place-items-center
+          text-neutral-900
+          transition-colors
+          hover:bg-neutral-200/80
+          dark:bg-neutral-700/90
+          dark:text-white
+          dark:hover:bg-neutral-700"> <svg class="checkmark hidden " xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="m10 13.6l5.9-5.9q.275-.275.7-.275t.7.275t.275.7t-.275.7l-6.6 6.6q-.3.3-.7.3t-.7-.3l-2.6-2.6q-.275-.275-.275-.7t.275-.7t.7-.275t.7.275z"></path></svg> <svg class="copy " xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"></path><g fill="none" stroke="currentColor"><rect width="9" height="13" x="6.5" y="6.5" rx="1.5"></rect><path d="M8.5 6A1.5 1.5 0 0 1 10 4.5h6A1.5 1.5 0 0 1 17.5 6v10a1.5 1.5 0 0 1-1.5 1.5"></path></g></svg> </button> <div class="overflow-x-auto
+    text-lg
+    border-neutral-200
+    dark:border-neutral-800 rounded-xl " data-highlighted-code><pre class="shiki shiki-themes min-light min-dark" style="--shiki-light:#24292eff;--shiki-dark:#b392f0;--shiki-light-bg:#ffffff;--shiki-dark-bg:#1f1f1f" tabindex="0"><code><span class="line"><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">import</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0"> Accordion </span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">from</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70"> "rocksolidjs/Accordion"</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">;</span></span>
+<span class="line"><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">import</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0"> AccordionSummary </span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">from</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70"> "rocksolidjs/AccordionSummary"</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">;</span></span>
+<span class="line"><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">import</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0"> AccordionDetails </span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">from</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70"> "rocksolidjs/AccordionDetails"</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">;</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">export</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583"> default</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583"> function</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> BasicAccordion</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">() {</span></span>
+<span class="line"><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">  return</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0"> (</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">    &#x3C;</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">div</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> class</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">=</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">"max-w-md"</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">      &#x3C;</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">Accordion</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> disableTransition</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">        &#x3C;</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">AccordionSummary</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">          What is gravity?</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">        &#x3C;/</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">AccordionSummary</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">        &#x3C;</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">AccordionDetails</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">          Gravity is a force that attracts objects with mass</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">          toward one another. On Earth, it gives objects weight</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">          and causes them to fall toward the ground.</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">        &#x3C;/</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">AccordionDetails</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">      &#x3C;/</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">Accordion</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">      &#x3C;</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">Accordion</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> disableTransition</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">        &#x3C;</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">AccordionSummary</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">          What is photosynthesis?</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">        &#x3C;/</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">AccordionSummary</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">        &#x3C;</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">AccordionDetails</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">          Photosynthesis is the process by which plants use</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">          sunlight, water, and carbon dioxide to produce</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">          energy in the form of glucose.</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">        &#x3C;/</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">AccordionDetails</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">      &#x3C;/</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">Accordion</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">      &#x3C;</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">Accordion</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> disableTransition</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">        &#x3C;</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">AccordionSummary</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">          What is an atom?</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">        &#x3C;/</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">AccordionSummary</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">        &#x3C;</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">AccordionDetails</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">          An atom is the smallest unit of an element that</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">          retains the chemical properties of that element.</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">          It consists of a nucleus surrounded by electrons.</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">        &#x3C;/</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">AccordionDetails</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">      &#x3C;/</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">Accordion</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">    &#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">div</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">  );</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> </div> </div> <script>(function(){const id = "isqw5s0jlrm";
+const source = "import Accordion from \"rocksolidjs/Accordion\";\nimport AccordionSummary from \"rocksolidjs/AccordionSummary\";\nimport AccordionDetails from \"rocksolidjs/AccordionDetails\";\n\nexport default function BasicAccordion() {\n  return (\n    \u003cdiv class=\"max-w-md\">\n      \u003cAccordion disableTransition>\n        \u003cAccordionSummary>\n          What is gravity?\n        \u003c/AccordionSummary>\n        \u003cAccordionDetails>\n          Gravity is a force that attracts objects with mass\n          toward one another. On Earth, it gives objects weight\n          and causes them to fall toward the ground.\n        \u003c/AccordionDetails>\n      \u003c/Accordion>\n      \u003cAccordion disableTransition>\n        \u003cAccordionSummary>\n          What is photosynthesis?\n        \u003c/AccordionSummary>\n        \u003cAccordionDetails>\n          Photosynthesis is the process by which plants use\n          sunlight, water, and carbon dioxide to produce\n          energy in the form of glucose.\n        \u003c/AccordionDetails>\n      \u003c/Accordion>\n      \u003cAccordion disableTransition>\n        \u003cAccordionSummary>\n          What is an atom?\n        \u003c/AccordionSummary>\n        \u003cAccordionDetails>\n          An atom is the smallest unit of an element that\n          retains the chemical properties of that element.\n          It consists of a nucleus surrounded by electrons.\n        \u003c/AccordionDetails>\n      \u003c/Accordion>\n    \u003c/div>\n  );\n}";
+
+  const copyBtn = document.querySelector(`#compoent-example-${id} [data-copy]`);
+  copyBtn?.addEventListener("click", async () => {
+    try {
+      const copyIcon = copyBtn.querySelector(".copy");
+      const checkmarkIcon = copyBtn.querySelector(".checkmark");
+      await navigator.clipboard.writeText(source);
+      copyIcon.classList.add("hidden");
+      checkmarkIcon.classList.remove("hidden");
+      copyBtn.disabled = true;
+      setTimeout(() => {
+        copyIcon.classList.remove("hidden");
+        checkmarkIcon.classList.add("hidden");
+        copyBtn.disabled = false;
+      }, 2000);
+    } catch (error) {
+      console.error("failed to copy to clipboard");
+    }
+  });
+})();</script>
+<h3 id="customization">Customization</h3>
+<p>Use the <code>class</code> prop on each Accordion component to customize its
+appearance and integrate it with your application’s design.</p>
+<div id="compoent-example-vh0t9p796cm" data-component-example class="my-8
+    overflow-hidden
+    rounded-xl
+    border
+    border-neutral-200
+    bg-white
+    dark:border-neutral-800
+    dark:bg-neutral-950"> <div class="flex
+      justify-center
+      items-center
+      min-h-20
+      bg-white
+      p-5
+      text-base
+      text-neutral-900
+      dark:bg-neutral-950
+      dark:text-neutral-100" data-component-preview> <astro-island uid="Z1nta6H" component-url="/_astro/dynamic-component-renderer.CBS3Ippf.js" component-export="default" renderer-url="/_astro/client.BgJ9siUT.js" props="{&quot;name&quot;:[0,&quot;Accordion/examples/customization&quot;]}" ssr client="only" opts="{&quot;name&quot;:&quot;DynamicComponentRenderer&quot;,&quot;value&quot;:&quot;solid-js&quot;}"></astro-island> </div> <div data-code class="border-t
+      border-neutral-200
+      dark:border-neutral-800"> <div class="relative"> <button type="button" data-copy class="absolute
+          top-3
+          z-10
+          ltr:right-3
+          rtl:left-3
+          rounded-md
+          bg-neutral-200
+          size-6
+          text-xl
+          grid
+          place-items-center
+          text-neutral-900
+          transition-colors
+          hover:bg-neutral-200/80
+          dark:bg-neutral-700/90
+          dark:text-white
+          dark:hover:bg-neutral-700"> <svg class="checkmark hidden " xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="m10 13.6l5.9-5.9q.275-.275.7-.275t.7.275t.275.7t-.275.7l-6.6 6.6q-.3.3-.7.3t-.7-.3l-2.6-2.6q-.275-.275-.275-.7t.275-.7t.7-.275t.7.275z"></path></svg> <svg class="copy " xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"></path><g fill="none" stroke="currentColor"><rect width="9" height="13" x="6.5" y="6.5" rx="1.5"></rect><path d="M8.5 6A1.5 1.5 0 0 1 10 4.5h6A1.5 1.5 0 0 1 17.5 6v10a1.5 1.5 0 0 1-1.5 1.5"></path></g></svg> </button> <div class="overflow-x-auto
+    text-lg
+    border-neutral-200
+    dark:border-neutral-800 rounded-xl " data-highlighted-code><pre class="shiki shiki-themes min-light min-dark" style="--shiki-light:#24292eff;--shiki-dark:#b392f0;--shiki-light-bg:#ffffff;--shiki-dark-bg:#1f1f1f" tabindex="0"><code><span class="line"><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">import</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0"> Accordion </span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">from</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70"> "rocksolidjs/Accordion"</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">;</span></span>
+<span class="line"><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">import</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0"> AccordionSummary </span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">from</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70"> "rocksolidjs/AccordionSummary"</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">;</span></span>
+<span class="line"><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">import</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0"> AccordionDetails </span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">from</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70"> "rocksolidjs/AccordionDetails"</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">;</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">export</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583"> default</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583"> function</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> Example</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">() {</span></span>
+<span class="line"><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">  return</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0"> (</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">    &#x3C;</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">div</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> class</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">=</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">"max-w-md space-y-2"</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">      &#x3C;</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">Accordion</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">        class</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">=</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">"overflow-hidden rounded-lg border border-neutral-200 bg-white shadow-sm dark:border-neutral-800 dark:bg-neutral-950"</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">      ></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">        &#x3C;</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">AccordionSummary</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">          class</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">=</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">"px-4 py-3 font-semibold text-neutral-900 dark:text-neutral-100"</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">        ></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">          What is photosynthesis?</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">        &#x3C;/</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">AccordionSummary</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">        &#x3C;</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">AccordionDetails</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">          class</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">=</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">"border-t border-neutral-200 px-4 text-sm leading-6 text-neutral-600 dark:border-neutral-800 dark:text-neutral-400"</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">        ></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">          Photosynthesis is the process by which plants,</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">          algae, and some bacteria convert light energy into</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">          chemical energy. Plants use sunlight, water, and</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">          carbon dioxide to produce glucose and oxygen.</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">        &#x3C;/</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">AccordionDetails</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">      &#x3C;/</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">Accordion</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">      &#x3C;</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">Accordion</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">        class</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">=</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">"overflow-hidden rounded-xl border border-blue-200 bg-blue-50/50 dark:border-blue-900 dark:bg-blue-950/20"</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">      ></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">        &#x3C;</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">AccordionSummary</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">          class</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">=</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">"px-5 py-4 font-medium text-blue-900 dark:text-blue-100"</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">        ></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">          How does gravity work?</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">        &#x3C;/</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">AccordionSummary</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">        &#x3C;</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">AccordionDetails</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">          class</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">=</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">"border-t border-blue-200 px-5 text-sm leading-6 text-blue-800 dark:border-blue-900 dark:text-blue-200"</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">        ></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">          Gravity is the attractive force between objects with</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">          mass. It keeps planets in orbit around stars and</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">          causes objects near Earth's surface to accelerate</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">          toward the ground.</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">        &#x3C;/</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">AccordionDetails</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">      &#x3C;/</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">Accordion</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">      &#x3C;</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">Accordion</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">        class</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">=</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">"overflow-hidden rounded-2xl border border-purple-200 bg-purple-50/50 dark:border-purple-900 dark:bg-purple-950/20"</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">      ></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">        &#x3C;</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">AccordionSummary</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">          class</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">=</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">"px-6 py-4 text-lg font-semibold text-purple-900 dark:text-purple-100"</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">        ></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">          What is a black hole?</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">        &#x3C;/</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">AccordionSummary</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">        &#x3C;</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">AccordionDetails</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">          class</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">=</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">"border-t border-purple-200 px-6 text-sm leading-7 text-purple-800 dark:border-purple-900 dark:text-purple-200"</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">        ></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">          A black hole is a region of spacetime where gravity</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">          is extremely strong. Beyond its event horizon,</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">          nothing can escape, including light.</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">        &#x3C;/</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">AccordionDetails</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">      &#x3C;/</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">Accordion</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">    &#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">div</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">  );</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> </div> </div> <script>(function(){const id = "vh0t9p796cm";
+const source = "import Accordion from \"rocksolidjs/Accordion\";\nimport AccordionSummary from \"rocksolidjs/AccordionSummary\";\nimport AccordionDetails from \"rocksolidjs/AccordionDetails\";\n\nexport default function Example() {\n  return (\n    \u003cdiv class=\"max-w-md space-y-2\">\n      \u003cAccordion\n        class=\"overflow-hidden rounded-lg border border-neutral-200 bg-white shadow-sm dark:border-neutral-800 dark:bg-neutral-950\"\n      >\n        \u003cAccordionSummary\n          class=\"px-4 py-3 font-semibold text-neutral-900 dark:text-neutral-100\"\n        >\n          What is photosynthesis?\n        \u003c/AccordionSummary>\n        \u003cAccordionDetails\n          class=\"border-t border-neutral-200 px-4 text-sm leading-6 text-neutral-600 dark:border-neutral-800 dark:text-neutral-400\"\n        >\n          Photosynthesis is the process by which plants,\n          algae, and some bacteria convert light energy into\n          chemical energy. Plants use sunlight, water, and\n          carbon dioxide to produce glucose and oxygen.\n        \u003c/AccordionDetails>\n      \u003c/Accordion>\n      \u003cAccordion\n        class=\"overflow-hidden rounded-xl border border-blue-200 bg-blue-50/50 dark:border-blue-900 dark:bg-blue-950/20\"\n      >\n        \u003cAccordionSummary\n          class=\"px-5 py-4 font-medium text-blue-900 dark:text-blue-100\"\n        >\n          How does gravity work?\n        \u003c/AccordionSummary>\n        \u003cAccordionDetails\n          class=\"border-t border-blue-200 px-5 text-sm leading-6 text-blue-800 dark:border-blue-900 dark:text-blue-200\"\n        >\n          Gravity is the attractive force between objects with\n          mass. It keeps planets in orbit around stars and\n          causes objects near Earth's surface to accelerate\n          toward the ground.\n        \u003c/AccordionDetails>\n      \u003c/Accordion>\n      \u003cAccordion\n        class=\"overflow-hidden rounded-2xl border border-purple-200 bg-purple-50/50 dark:border-purple-900 dark:bg-purple-950/20\"\n      >\n        \u003cAccordionSummary\n          class=\"px-6 py-4 text-lg font-semibold text-purple-900 dark:text-purple-100\"\n        >\n          What is a black hole?\n        \u003c/AccordionSummary>\n        \u003cAccordionDetails\n          class=\"border-t border-purple-200 px-6 text-sm leading-7 text-purple-800 dark:border-purple-900 dark:text-purple-200\"\n        >\n          A black hole is a region of spacetime where gravity\n          is extremely strong. Beyond its event horizon,\n          nothing can escape, including light.\n        \u003c/AccordionDetails>\n      \u003c/Accordion>\n    \u003c/div>\n  );\n}";
+
+  const copyBtn = document.querySelector(`#compoent-example-${id} [data-copy]`);
+  copyBtn?.addEventListener("click", async () => {
+    try {
+      const copyIcon = copyBtn.querySelector(".copy");
+      const checkmarkIcon = copyBtn.querySelector(".checkmark");
+      await navigator.clipboard.writeText(source);
+      copyIcon.classList.add("hidden");
+      checkmarkIcon.classList.remove("hidden");
+      copyBtn.disabled = true;
+      setTimeout(() => {
+        copyIcon.classList.remove("hidden");
+        checkmarkIcon.classList.add("hidden");
+        copyBtn.disabled = false;
+      }, 2000);
+    } catch (error) {
+      console.error("failed to copy to clipboard");
+    }
+  });
+})();</script>
+<h3 id="accordion-id">Accordion ID</h3>
+<p>The optional <code>accordionId</code> prop provides a stable identifier for the
+Accordion’s accessibility relationships.</p>
+<p>It links the <code>AccordionSummary</code> and <code>AccordionDetails</code> by generating
+the appropriate <code>id</code>, <code>aria-controls</code>, and <code>aria-labelledby</code>
+attributes.</p>
+<p>When using multiple Accordions on the same page, provide a unique
+<code>accordionId</code> for each Accordion to ensure the underlying IDs remain
+unique.</p>
+<div id="compoent-example-lxbnbswe0w" data-component-example class="my-8
+    overflow-hidden
+    rounded-xl
+    border
+    border-neutral-200
+    bg-white
+    dark:border-neutral-800
+    dark:bg-neutral-950"> <div class="flex
+      justify-center
+      items-center
+      min-h-20
+      bg-white
+      p-5
+      text-base
+      text-neutral-900
+      dark:bg-neutral-950
+      dark:text-neutral-100" data-component-preview> <astro-island uid="ZOrBvK" component-url="/_astro/dynamic-component-renderer.CBS3Ippf.js" component-export="default" renderer-url="/_astro/client.BgJ9siUT.js" props="{&quot;name&quot;:[0,&quot;Accordion/examples/accordion-id&quot;]}" ssr client="only" opts="{&quot;name&quot;:&quot;DynamicComponentRenderer&quot;,&quot;value&quot;:&quot;solid-js&quot;}"></astro-island> </div> <div data-code class="border-t
+      border-neutral-200
+      dark:border-neutral-800"> <div class="relative"> <button type="button" data-copy class="absolute
+          top-3
+          z-10
+          ltr:right-3
+          rtl:left-3
+          rounded-md
+          bg-neutral-200
+          size-6
+          text-xl
+          grid
+          place-items-center
+          text-neutral-900
+          transition-colors
+          hover:bg-neutral-200/80
+          dark:bg-neutral-700/90
+          dark:text-white
+          dark:hover:bg-neutral-700"> <svg class="checkmark hidden " xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="m10 13.6l5.9-5.9q.275-.275.7-.275t.7.275t.275.7t-.275.7l-6.6 6.6q-.3.3-.7.3t-.7-.3l-2.6-2.6q-.275-.275-.275-.7t.275-.7t.7-.275t.7.275z"></path></svg> <svg class="copy " xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"></path><g fill="none" stroke="currentColor"><rect width="9" height="13" x="6.5" y="6.5" rx="1.5"></rect><path d="M8.5 6A1.5 1.5 0 0 1 10 4.5h6A1.5 1.5 0 0 1 17.5 6v10a1.5 1.5 0 0 1-1.5 1.5"></path></g></svg> </button> <div class="overflow-x-auto
+    text-lg
+    border-neutral-200
+    dark:border-neutral-800 rounded-xl " data-highlighted-code><pre class="shiki shiki-themes min-light min-dark" style="--shiki-light:#24292eff;--shiki-dark:#b392f0;--shiki-light-bg:#ffffff;--shiki-dark-bg:#1f1f1f" tabindex="0"><code><span class="line"><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">import</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0"> Accordion </span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">from</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70"> "rocksolidjs/Accordion"</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">;</span></span>
+<span class="line"><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">import</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0"> AccordionSummary </span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">from</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70"> "rocksolidjs/AccordionSummary"</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">;</span></span>
+<span class="line"><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">import</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0"> AccordionDetails </span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">from</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70"> "rocksolidjs/AccordionDetails"</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">;</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">export</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583"> default</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583"> function</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> Example</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">() {</span></span>
+<span class="line"><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">  return</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0"> (</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">    &#x3C;</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">div</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> class</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">=</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">"max-w-md"</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">      &#x3C;</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">Accordion</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> accordionId</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">=</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">"accordion-id-example-1"</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">        &#x3C;</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">AccordionSummary</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">          What is gravity?</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">        &#x3C;/</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">AccordionSummary</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">        &#x3C;</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">AccordionDetails</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">          Gravity is a force that attracts objects with mass</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">          toward one another. On Earth, it gives objects weight</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">          and causes them to fall toward the ground.</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">        &#x3C;/</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">AccordionDetails</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">      &#x3C;/</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">Accordion</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">      &#x3C;</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">Accordion</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> accordionId</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">=</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">"accordion-id-example-2"</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">        &#x3C;</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">AccordionSummary</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">          What is photosynthesis?</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">        &#x3C;/</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">AccordionSummary</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">        &#x3C;</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">AccordionDetails</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">          Photosynthesis is the process by which plants use</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">          sunlight, water, and carbon dioxide to produce</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">          energy in the form of glucose.</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">        &#x3C;/</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">AccordionDetails</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">      &#x3C;/</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">Accordion</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">      &#x3C;</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">Accordion</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> accordionId</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">=</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">"accordion-id-example-3"</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">        &#x3C;</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">AccordionSummary</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">          What is an atom?</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">        &#x3C;/</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">AccordionSummary</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">        &#x3C;</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">AccordionDetails</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">          An atom is the smallest unit of an element that</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">          retains the chemical properties of that element.</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">          It consists of a nucleus surrounded by electrons.</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">        &#x3C;/</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">AccordionDetails</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">      &#x3C;/</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">Accordion</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">    &#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">div</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">  );</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> </div> </div> <script>(function(){const id = "lxbnbswe0w";
+const source = "import Accordion from \"rocksolidjs/Accordion\";\nimport AccordionSummary from \"rocksolidjs/AccordionSummary\";\nimport AccordionDetails from \"rocksolidjs/AccordionDetails\";\n\nexport default function Example() {\n  return (\n    \u003cdiv class=\"max-w-md\">\n      \u003cAccordion accordionId=\"accordion-id-example-1\">\n        \u003cAccordionSummary>\n          What is gravity?\n        \u003c/AccordionSummary>\n        \u003cAccordionDetails>\n          Gravity is a force that attracts objects with mass\n          toward one another. On Earth, it gives objects weight\n          and causes them to fall toward the ground.\n        \u003c/AccordionDetails>\n      \u003c/Accordion>\n      \u003cAccordion accordionId=\"accordion-id-example-2\">\n        \u003cAccordionSummary>\n          What is photosynthesis?\n        \u003c/AccordionSummary>\n        \u003cAccordionDetails>\n          Photosynthesis is the process by which plants use\n          sunlight, water, and carbon dioxide to produce\n          energy in the form of glucose.\n        \u003c/AccordionDetails>\n      \u003c/Accordion>\n      \u003cAccordion accordionId=\"accordion-id-example-3\">\n        \u003cAccordionSummary>\n          What is an atom?\n        \u003c/AccordionSummary>\n        \u003cAccordionDetails>\n          An atom is the smallest unit of an element that\n          retains the chemical properties of that element.\n          It consists of a nucleus surrounded by electrons.\n        \u003c/AccordionDetails>\n      \u003c/Accordion>\n    \u003c/div>\n  );\n}";
+
+  const copyBtn = document.querySelector(`#compoent-example-${id} [data-copy]`);
+  copyBtn?.addEventListener("click", async () => {
+    try {
+      const copyIcon = copyBtn.querySelector(".copy");
+      const checkmarkIcon = copyBtn.querySelector(".checkmark");
+      await navigator.clipboard.writeText(source);
+      copyIcon.classList.add("hidden");
+      checkmarkIcon.classList.remove("hidden");
+      copyBtn.disabled = true;
+      setTimeout(() => {
+        copyIcon.classList.remove("hidden");
+        checkmarkIcon.classList.add("hidden");
+        copyBtn.disabled = false;
+      }, 2000);
+    } catch (error) {
+      console.error("failed to copy to clipboard");
+    }
+  });
+})();</script>
+<h2 id="accessibility">Accessibility</h2>
+<p>The Accordion follows common accessible interaction patterns for
+expandable content.</p>
+<ul>
+<li>Use descriptive text for <code>AccordionSummary</code> so users can understand
+what content will be expanded or collapsed.</li>
+<li>The Accordion manages the expanded and collapsed state for
+assistive technologies automatically.</li>
+<li>The relationship between <code>AccordionSummary</code> and
+<code>AccordionDetails</code> is established automatically through the
+appropriate accessibility attributes.</li>
+<li>When using multiple Accordions, provide a unique <code>accordionId</code> for
+each Accordion. The value is used to construct the underlying IDs
+for the summary and details and their related ARIA attributes.</li>
+<li>Ensure the summary has sufficient color contrast and a visible
+focus indicator.</li>
+<li>Avoid placing interactive controls inside <code>AccordionSummary</code> unless
+their keyboard and screen reader behavior is handled appropriately.</li>
+<li>Do not rely on visual styling alone to communicate the purpose or
+state of the Accordion.</li>
+</ul>
+<h2 id="api">API</h2>
+<p>The Accordion API is split across the three components that make up
+the Accordion.</p>
+<h3 id="accordion-1">Accordion</h3>
+<p>The <code>Accordion</code> component is responsible for managing the expanded
+state and the overall behavior of an accordion section.</p>
+<div class="overflow-x-auto"> <table>
+<thead>
+<tr>
+<th>Prop</th>
+<th>Type</th>
+<th>Required</th>
+<th>Default</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>accordionId</td>
+<td><code>string</code></td>
+<td>No</td>
+<td>—</td>
+<td>A unique identifier for the Accordion. It is used to construct the underlying IDs for <code>AccordionSummary</code> and <code>AccordionDetails</code> and their related accessibility attributes.</td>
+</tr>
+<tr>
+<td>class</td>
+<td><code>string</code></td>
+<td>No</td>
+<td>—</td>
+<td>Additional CSS classes applied to the Accordion.</td>
+</tr>
+<tr>
+<td>defaultExpanded</td>
+<td><code>boolean</code></td>
+<td>No</td>
+<td><code>false</code></td>
+<td>Determines whether the Accordion is expanded initially.</td>
+</tr>
+<tr>
+<td>disabled</td>
+<td><code>boolean</code></td>
+<td>No</td>
+<td><code>false</code></td>
+<td>Prevents the Accordion from being expanded or collapsed.</td>
+</tr>
+<tr>
+<td>disableTransition</td>
+<td><code>boolean</code></td>
+<td>No</td>
+<td><code>false</code></td>
+<td>Disables the expand and collapse transition animation.</td>
+</tr>
+<tr>
+<td>expanded</td>
+<td><code>boolean</code></td>
+<td>No</td>
+<td>—</td>
+<td>Controls whether the Accordion is currently expanded.</td>
+</tr>
+<tr>
+<td>onChange</td>
+<td><code>(event: Event, expanded: boolean) =&gt; void</code></td>
+<td>No</td>
+<td>—</td>
+<td>Called when the expanded state changes.</td>
+</tr>
+</tbody>
+</table> </div>
+<h3 id="accordionsummary">AccordionSummary</h3>
+<p>The <code>AccordionSummary</code> component provides the interactive header of
+an Accordion.</p>
+<div class="overflow-x-auto"> <table>
+<thead>
+<tr>
+<th>Prop</th>
+<th>Type</th>
+<th>Required</th>
+<th>Default</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>children</td>
+<td><code>JSXElement</code></td>
+<td>No</td>
+<td>—</td>
+<td>Content rendered inside the AccordionSummary.</td>
+</tr>
+<tr>
+<td>class</td>
+<td><code>string</code></td>
+<td>No</td>
+<td>—</td>
+<td>Additional CSS classes applied to the AccordionSummary.</td>
+</tr>
+<tr>
+<td>collapsedIcon</td>
+<td><code>JSXElement</code></td>
+<td>No</td>
+<td>—</td>
+<td>Icon displayed when the Accordion is collapsed.</td>
+</tr>
+<tr>
+<td>expandedIcon</td>
+<td><code>JSXElement</code></td>
+<td>No</td>
+<td>—</td>
+<td>Icon displayed when the Accordion is expanded.</td>
+</tr>
+<tr>
+<td>slotProps</td>
+<td><code>{ button?: object; icon?: object }</code></td>
+<td>No</td>
+<td>—</td>
+<td>Provides props for customizing the Accordion slots.<br/><ul><li><code>button</code> — Props for the summary button. Accepts <code>ButtonProps</code>.</li><li><code>icon</code> — Props for the summary icon.</li></ul></td>
+</tr>
+</tbody>
+</table> </div>
+<h3 id="accordiondetails">AccordionDetails</h3>
+<p>The <code>AccordionDetails</code> component contains the content displayed when
+an Accordion is expanded.</p>
+<div class="overflow-x-auto"> <table>
+<thead>
+<tr>
+<th>Prop</th>
+<th>Type</th>
+<th>Required</th>
+<th>Default</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>children</td>
+<td><code>JSXElement</code></td>
+<td>No</td>
+<td>—</td>
+<td>Content rendered inside the AccordionDetails.</td>
+</tr>
+<tr>
+<td>class</td>
+<td><code>string</code></td>
+<td>No</td>
+<td>—</td>
+<td>Additional CSS classes applied to the AccordionDetails.</td>
+</tr>
+</tbody>
+</table> </div>
+<h2 id="related-components">Related Components</h2>
+<ul>
+<li><a href="/components/button/">Button</a> — Use Button for standalone actions.</li>
+<li><a href="/components/dialog/">Dialog</a> — Use Dialog for content that requires
+focused user attention.</li>
+<li><a href="/components/tabs/">Tabs</a> — Use Tabs when users need to switch between
+related sections of content.</li>
+</ul> </div> </main> </div> </div> <script>
+    const root = document.documentElement;
+    function getTheme() {
+      return root.classList.contains("dark") ? "dark" : "light";
+    }
+
+    function updateThemeUI(theme) {
+      const dark = theme === "dark";
+      document
+        .querySelectorAll(".theme-light")
+        .forEach((element) => {
+          element.classList.toggle(
+            "hidden",
+            dark
+          );
+        });
+      document
+        .querySelectorAll(".theme-dark")
+        .forEach((element) => {
+          element.classList.toggle(
+            "hidden",
+            !dark
+          );
+        });
+      document
+        .querySelectorAll("[data-theme-label]")
+        .forEach((element) => {
+          element.textContent = dark
+            ? "Light theme"
+            : "Dark theme";
+        });
+    }
+
+    function toggleTheme() {
+      const theme = getTheme() === "dark" ? "light" : "dark";
+      root.classList.toggle("dark", theme === "dark");
+      localStorage.setItem("theme", theme);
+      updateThemeUI(theme);
+    }
+
+    document.addEventListener("click", (event) => {
+      const target = event.target;
+      if (
+        target instanceof Element &&
+        target.closest("[data-theme-toggle]")
+      ) {
+        toggleTheme();
+      }
+    });
+
+    updateThemeUI(getTheme());
+
+    const sidebar = document.querySelector("aside");
+    const overlay = document.querySelector("#sidebar-overlay");
+    const menuButton = document.querySelector("#mobile-menu-button");
+
+    function openSidebar() {
+      sidebar?.classList.remove("-translate-x-full");
+      sidebar?.classList.add("translate-x-0");
+      overlay?.classList.remove("pointer-events-none", "opacity-0");
+      overlay?.classList.add("pointer-events-auto", "opacity-100");
+      document.body.classList.add("overflow-hidden");
+    }
+
+    function closeSidebar() {
+      sidebar?.classList.remove("translate-x-0");
+      sidebar?.classList.add("-translate-x-full");
+      overlay?.classList.remove("pointer-events-auto", "opacity-100");
+      overlay?.classList.add("pointer-events-none", "opacity-0");
+      document.body.classList.remove("overflow-hidden");
+    }
+
+    menuButton?.addEventListener("click", openSidebar);
+    overlay?.addEventListener("click", closeSidebar);
+    sidebar?.querySelectorAll("a").forEach((link) => {
+      link.addEventListener("click", closeSidebar);
+    });
+
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "Escape") {
+        closeSidebar();
+      }
+    });
+  </script></body> </html>

@@ -1,0 +1,1 @@
+import{S as e}from"./web.Ck_zQUvi.js";import{t}from"./Alert.DQ8F2ch7.js";function n(){return e(t,{color:`success`,children:`Your changes have been saved successfully.`})}export{n as default};

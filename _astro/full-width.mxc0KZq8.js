@@ -1,0 +1,1 @@
+import{S as e,i as t,p as n,s as r}from"./web.Ck_zQUvi.js";import{t as i}from"./Button.OQ5Fe5Hy.js";var a=n(`<div class=w-full>`);function o(){return(()=>{var n=t(a);return r(n,e(i,{fullWidth:!0,children:`Full width button`})),n})()}export{o as default};

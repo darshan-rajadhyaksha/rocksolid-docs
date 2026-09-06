@@ -1,0 +1,1 @@
+import{S as e,i as t,p as n,s as r}from"./web.Ck_zQUvi.js";import{t as i}from"./Link.WU_u82tA.js";var a=n(`<div class=w-64>`);function o(){return(()=>{var n=t(a);return r(n,e(i,{href:`#`,truncate:!0,children:`This is a very long link that will be truncated when it exceeds the available width.`})),n})()}export{o as default};

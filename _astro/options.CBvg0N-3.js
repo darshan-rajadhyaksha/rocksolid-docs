@@ -1,0 +1,1 @@
+import{S as e}from"./web.Ck_zQUvi.js";import{t}from"./Select.D8__Dv8F.js";function n(){return e(t,{options:[{label:`Engineering`,value:`engineering`},{label:`Design`,value:`design`},{label:`Marketing`,value:`marketing`},{label:`Sales`,value:`sales`,disabled:!0},{label:`Support`,value:`support`}]})}export{n as default};

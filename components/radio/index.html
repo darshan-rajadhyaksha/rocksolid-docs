@@ -1,0 +1,1108 @@
+<!DOCTYPE html><html lang="en"> <head><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><title>Radio</title><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="generator" content="Astro v7.2.2"><meta name="description" content="A selectable control for choosing one option from a set of mutually exclusive choices."><meta name="keywords" content="RockSolid, rocksolidjs, SolidJS, SolidJS components, SolidJS UI library, Tailwind CSS, component library, UI components, accessible components, TypeScript, themeable components, reusable components, frontend library"><meta name="author" content="Darshan Sunil Rajadhyaksha"><link rel="canonical" href="https://rocksolidjs.com/components/radio/"><link rel="sitemap" href="/sitemap-index.xml"><meta name="robots" content="index, follow"><!-- OG --><meta property="og:type" content="article"><meta property="og:title" content="Radio"><meta property="og:description" content="A selectable control for choosing one option from a set of mutually exclusive choices."><meta property="og:image" content="https://rocksolidjs.com/assets/og.png"><meta property="og:image:width" content="1024"><meta property="og:image:height" content="768"><meta property="og:url" content="https://rocksolidjs.com/components/radio/"><meta property="og:site_name" content="RockSolid"><meta property="og:locale" content="en_US"><!-- X --><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Radio"><meta name="twitter:description" content="A selectable control for choosing one option from a set of mutually exclusive choices."><meta name="twitter:image" content="https://rocksolidjs.com/assets/og.png"><meta name="twitter:image:width" content="1024"><meta name="twitter:image:height" content="768"><link rel="icon" href="/assets/favicon/favicon.ico"><link rel="icon" type="image/png" sizes="96x96" href="/assets/favicon/favicon-96x96.png"><link rel="icon" type="image/svg+xml" href="/assets/favicon/favicon.svg"><link rel="shortcut icon" href="/assets/favicon/favicon.ico"><link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png"><link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet"><script>
+    const theme = localStorage.getItem("theme");
+    if (
+      theme === "dark" ||
+      (
+        !theme &&
+        window.matchMedia(
+          "(prefers-color-scheme: dark)"
+        ).matches
+      )
+    ) {
+      document.documentElement.classList.add("dark");
+    }
+  </script><link rel="stylesheet" href="/_astro/base.HBy6anu7.css"></head> <body class="min-h-screen bg-white text-neutral-900
+    dark:bg-neutral-950 dark:text-neutral-100"> <!-- Mobile overlay --> <div id="sidebar-overlay" class="pointer-events-none fixed inset-0 z-40
+      bg-black/40 opacity-0 transition-opacity
+      duration-200 lg:hidden"></div> <div class="min-h-screen lg:grid
+      lg:grid-cols-[260px_minmax(0,1fr)]"> <aside class="fixed inset-y-0 left-0 z-50 w-[280px]
+    -translate-x-full
+    ltr:border-r rtl:border-l
+    border-neutral-200
+    bg-white
+    transition-transform duration-200
+    dark:border-neutral-800
+    dark:bg-neutral-950
+
+    lg:sticky
+    lg:top-0
+    lg:z-auto
+    lg:h-screen
+    lg:w-[260px]
+    lg:translate-x-0"> <div class="flex h-full flex-col overflow-y-auto px-4 py-5"> <!-- Logo --> <div class="mb-6 px-2"> <a href="/" class="block text-lg font-bold tracking-tight
+          text-neutral-950
+          dark:text-neutral-50">
+RockSolid
+</a> <p class="mt-1 text-xs
+          text-neutral-400
+          dark:text-neutral-600">
+v0.1.1
+</p> </div> <!-- GitHub --> <div class="mb-7"> <a href="https://github.com/darshan-rajadhyaksha/rocksolid/" target="_blank" rel="noopener noreferrer" class="flex w-full items-center gap-3
+          rounded-md px-3 py-2
+          text-sm font-medium
+          text-neutral-600
+          transition-colors
+          hover:bg-neutral-100
+          hover:text-neutral-950
+          dark:text-neutral-400
+          dark:hover:bg-neutral-900
+          dark:hover:text-neutral-100"> <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"> <path d="M12 .5C5.65.5.5 5.65.5 12
+            c0 5.08 3.29 9.39 7.86 10.91
+            .57.1.78-.25.78-.55
+            0-.27-.01-1-.02-1.96
+            -3.2.7-3.88-1.54-3.88-1.54
+            -.52-1.33-1.28-1.69-1.28-1.69
+            -1.04-.71.08-.7.08-.7
+            1.15.08 1.76 1.18 1.76 1.18
+            1.02 1.75 2.67 1.24 3.32.95
+            .1-.74.4-1.24.73-1.52
+            -2.55-.29-5.23-1.28-5.23-5.69
+            0-1.26.45-2.29 1.18-3.1
+            -.12-.29-.51-1.47.11-3.06
+            0 0 .96-.31 3.15 1.18
+            a10.9 10.9 0 0 1 5.74 0
+            c2.19-1.49 3.15-1.18 3.15-1.18
+            .62 1.59.23 2.77.11 3.06
+            .73.81 1.18 1.84 1.18 3.1
+            0 4.42-2.69 5.39-5.25 5.67
+            .41.35.78 1.04.78 2.1
+            0 1.52-.01 2.74-.01 3.11
+            0 .3.2.66.79.55
+            A11.51 11.51 0 0 0
+            23.5 12C23.5 5.65
+            18.35.5 12 .5Z"></path> </svg> <span>GitHub</span> <svg class="ml-auto" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"> <path d="M7 17 17 7"></path> <path d="M7 7h10v10"></path> </svg> </a> </div> <!-- Navigation --> <nav class="space-y-8" aria-label="Documentation"> <div class="space-y-1"> <p class="mb-2 px-3
+                text-xs font-semibold
+                uppercase tracking-wider
+                text-neutral-400
+                dark:text-neutral-600"> Getting Started </p> <a href="/introduction/" class="block rounded-md px-3 py-2 text-sm font-medium transition-colors text-neutral-600 hover:bg-neutral-100 hover:text-neutral-950 dark:text-neutral-400 dark:hover:bg-neutral-900 dark:hover:text-neutral-100"> Introduction </a><a href="/installation/" class="block rounded-md px-3 py-2 text-sm font-medium transition-colors text-neutral-600 hover:bg-neutral-100 hover:text-neutral-950 dark:text-neutral-400 dark:hover:bg-neutral-900 dark:hover:text-neutral-100"> Installation </a><a href="/customization/" class="block rounded-md px-3 py-2 text-sm font-medium transition-colors text-neutral-600 hover:bg-neutral-100 hover:text-neutral-950 dark:text-neutral-400 dark:hover:bg-neutral-900 dark:hover:text-neutral-100"> Customization </a> </div><div class="space-y-1"> <p class="mb-2 px-3
+                text-xs font-semibold
+                uppercase tracking-wider
+                text-neutral-400
+                dark:text-neutral-600"> Components </p> <a href="/components/accordion/" class="block rounded-md px-3 py-2 text-sm font-medium transition-colors text-neutral-600 hover:bg-neutral-100 hover:text-neutral-950 dark:text-neutral-400 dark:hover:bg-neutral-900 dark:hover:text-neutral-100"> Accordion </a><a href="/components/alert/" class="block rounded-md px-3 py-2 text-sm font-medium transition-colors text-neutral-600 hover:bg-neutral-100 hover:text-neutral-950 dark:text-neutral-400 dark:hover:bg-neutral-900 dark:hover:text-neutral-100"> Alert </a><a href="/components/avatar/" class="block rounded-md px-3 py-2 text-sm font-medium transition-colors text-neutral-600 hover:bg-neutral-100 hover:text-neutral-950 dark:text-neutral-400 dark:hover:bg-neutral-900 dark:hover:text-neutral-100"> Avatar </a><a href="/components/badge/" class="block rounded-md px-3 py-2 text-sm font-medium transition-colors text-neutral-600 hover:bg-neutral-100 hover:text-neutral-950 dark:text-neutral-400 dark:hover:bg-neutral-900 dark:hover:text-neutral-100"> Badge </a><a href="/components/breadcrumbs/" class="block rounded-md px-3 py-2 text-sm font-medium transition-colors text-neutral-600 hover:bg-neutral-100 hover:text-neutral-950 dark:text-neutral-400 dark:hover:bg-neutral-900 dark:hover:text-neutral-100"> Breadcrumbs </a><a href="/components/button/" class="block rounded-md px-3 py-2 text-sm font-medium transition-colors text-neutral-600 hover:bg-neutral-100 hover:text-neutral-950 dark:text-neutral-400 dark:hover:bg-neutral-900 dark:hover:text-neutral-100"> Button </a><a href="/components/card/" class="block rounded-md px-3 py-2 text-sm font-medium transition-colors text-neutral-600 hover:bg-neutral-100 hover:text-neutral-950 dark:text-neutral-400 dark:hover:bg-neutral-900 dark:hover:text-neutral-100"> Card </a><a href="/components/checkbox/" class="block rounded-md px-3 py-2 text-sm font-medium transition-colors text-neutral-600 hover:bg-neutral-100 hover:text-neutral-950 dark:text-neutral-400 dark:hover:bg-neutral-900 dark:hover:text-neutral-100"> Checkbox </a><a href="/components/chip/" class="block rounded-md px-3 py-2 text-sm font-medium transition-colors text-neutral-600 hover:bg-neutral-100 hover:text-neutral-950 dark:text-neutral-400 dark:hover:bg-neutral-900 dark:hover:text-neutral-100"> Chip </a><a href="/components/dialog/" class="block rounded-md px-3 py-2 text-sm font-medium transition-colors text-neutral-600 hover:bg-neutral-100 hover:text-neutral-950 dark:text-neutral-400 dark:hover:bg-neutral-900 dark:hover:text-neutral-100"> Dialog </a><a href="/components/divider/" class="block rounded-md px-3 py-2 text-sm font-medium transition-colors text-neutral-600 hover:bg-neutral-100 hover:text-neutral-950 dark:text-neutral-400 dark:hover:bg-neutral-900 dark:hover:text-neutral-100"> Divider </a><a href="/components/icon-button/" class="block rounded-md px-3 py-2 text-sm font-medium transition-colors text-neutral-600 hover:bg-neutral-100 hover:text-neutral-950 dark:text-neutral-400 dark:hover:bg-neutral-900 dark:hover:text-neutral-100"> IconButton </a><a href="/components/input/" class="block rounded-md px-3 py-2 text-sm font-medium transition-colors text-neutral-600 hover:bg-neutral-100 hover:text-neutral-950 dark:text-neutral-400 dark:hover:bg-neutral-900 dark:hover:text-neutral-100"> Input </a><a href="/components/label/" class="block rounded-md px-3 py-2 text-sm font-medium transition-colors text-neutral-600 hover:bg-neutral-100 hover:text-neutral-950 dark:text-neutral-400 dark:hover:bg-neutral-900 dark:hover:text-neutral-100"> Label </a><a href="/components/link/" class="block rounded-md px-3 py-2 text-sm font-medium transition-colors text-neutral-600 hover:bg-neutral-100 hover:text-neutral-950 dark:text-neutral-400 dark:hover:bg-neutral-900 dark:hover:text-neutral-100"> Link </a><a href="/components/progress/" class="block rounded-md px-3 py-2 text-sm font-medium transition-colors text-neutral-600 hover:bg-neutral-100 hover:text-neutral-950 dark:text-neutral-400 dark:hover:bg-neutral-900 dark:hover:text-neutral-100"> Progress </a><a href="/components/radio/" aria-current="page" class="block rounded-md px-3 py-2 text-sm font-medium transition-colors bg-neutral-100 text-neutral-950 dark:bg-neutral-900 dark:text-neutral-50"> Radio </a><a href="/components/select/" class="block rounded-md px-3 py-2 text-sm font-medium transition-colors text-neutral-600 hover:bg-neutral-100 hover:text-neutral-950 dark:text-neutral-400 dark:hover:bg-neutral-900 dark:hover:text-neutral-100"> Select </a><a href="/components/skeleton/" class="block rounded-md px-3 py-2 text-sm font-medium transition-colors text-neutral-600 hover:bg-neutral-100 hover:text-neutral-950 dark:text-neutral-400 dark:hover:bg-neutral-900 dark:hover:text-neutral-100"> Skeleton </a><a href="/components/spinner/" class="block rounded-md px-3 py-2 text-sm font-medium transition-colors text-neutral-600 hover:bg-neutral-100 hover:text-neutral-950 dark:text-neutral-400 dark:hover:bg-neutral-900 dark:hover:text-neutral-100"> Spinner </a><a href="/components/switch/" class="block rounded-md px-3 py-2 text-sm font-medium transition-colors text-neutral-600 hover:bg-neutral-100 hover:text-neutral-950 dark:text-neutral-400 dark:hover:bg-neutral-900 dark:hover:text-neutral-100"> Switch </a><a href="/components/table/" class="block rounded-md px-3 py-2 text-sm font-medium transition-colors text-neutral-600 hover:bg-neutral-100 hover:text-neutral-950 dark:text-neutral-400 dark:hover:bg-neutral-900 dark:hover:text-neutral-100"> Table </a><a href="/components/tabs/" class="block rounded-md px-3 py-2 text-sm font-medium transition-colors text-neutral-600 hover:bg-neutral-100 hover:text-neutral-950 dark:text-neutral-400 dark:hover:bg-neutral-900 dark:hover:text-neutral-100"> Tabs </a><a href="/components/textarea/" class="block rounded-md px-3 py-2 text-sm font-medium transition-colors text-neutral-600 hover:bg-neutral-100 hover:text-neutral-950 dark:text-neutral-400 dark:hover:bg-neutral-900 dark:hover:text-neutral-100"> Textarea </a><a href="/components/typography/" class="block rounded-md px-3 py-2 text-sm font-medium transition-colors text-neutral-600 hover:bg-neutral-100 hover:text-neutral-950 dark:text-neutral-400 dark:hover:bg-neutral-900 dark:hover:text-neutral-100"> Typography </a> </div><div class="space-y-1"> <p class="mb-2 px-3
+                text-xs font-semibold
+                uppercase tracking-wider
+                text-neutral-400
+                dark:text-neutral-600"> Customization </p> <a href="/customization/theme-provider/" class="block rounded-md px-3 py-2 text-sm font-medium transition-colors text-neutral-600 hover:bg-neutral-100 hover:text-neutral-950 dark:text-neutral-400 dark:hover:bg-neutral-900 dark:hover:text-neutral-100"> ThemeProvider </a><a href="/customization/create-theme/" class="block rounded-md px-3 py-2 text-sm font-medium transition-colors text-neutral-600 hover:bg-neutral-100 hover:text-neutral-950 dark:text-neutral-400 dark:hover:bg-neutral-900 dark:hover:text-neutral-100"> createTheme </a><a href="/customization/theme-tokens/" class="block rounded-md px-3 py-2 text-sm font-medium transition-colors text-neutral-600 hover:bg-neutral-100 hover:text-neutral-950 dark:text-neutral-400 dark:hover:bg-neutral-900 dark:hover:text-neutral-100"> Theme Tokens </a><a href="/customization/extending-theme-types/" class="block rounded-md px-3 py-2 text-sm font-medium transition-colors text-neutral-600 hover:bg-neutral-100 hover:text-neutral-950 dark:text-neutral-400 dark:hover:bg-neutral-900 dark:hover:text-neutral-100"> Extending Theme Types </a> </div> </nav> </div> </aside> <div class="min-w-0"> <header class="sticky top-0 z-30
+    border-b border-neutral-200
+    bg-white/90
+    backdrop-blur
+    dark:border-neutral-800
+    dark:bg-neutral-950/90"> <div class="flex h-14 items-center
+      justify-between px-4 sm:px-6"> <!-- Mobile menu --> <button id="mobile-menu-button" type="button" aria-label="Open navigation" class="inline-flex h-9 w-9
+        items-center justify-center
+        rounded-md
+        text-neutral-600
+        transition-colors
+        hover:bg-neutral-100
+        hover:text-neutral-950
+        dark:text-neutral-400
+        dark:hover:bg-neutral-900
+        dark:hover:text-neutral-100
+        lg:hidden"> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"> <line x1="4" y1="6" x2="20" y2="6"></line> <line x1="4" y1="12" x2="20" y2="12"></line> <line x1="4" y1="18" x2="20" y2="18"></line> </svg> </button> <!-- Title --> <div class="text-sm font-medium
+        text-neutral-600
+        dark:text-neutral-400"> Radio </div> <div class="flex gap-3"> <div class="flex rounded-md border border-neutral-200 bg-white p-0.5 dark:border-neutral-700 dark:bg-neutral-900"> <button id="ltr" type="button" class="rounded px-2 py-1 text-sm">
+LTR
+</button> <button id="rtl" type="button" class="rounded px-2 py-1 text-sm">
+RTL
+</button> </div> <script type="module">var e=document.querySelector(`#ltr`),t=document.querySelector(`#rtl`),n=n=>{document.documentElement.dir=n,localStorage.setItem(`dir`,n),e?.classList.toggle(`bg-neutral-200`,n===`ltr`),t?.classList.toggle(`bg-neutral-200`,n===`rtl`),e?.classList.toggle(`dark:bg-neutral-700`,n===`ltr`),t?.classList.toggle(`dark:bg-neutral-700`,n===`rtl`)};n(localStorage.getItem(`dir`)||`ltr`),e?.addEventListener(`click`,()=>n(`ltr`)),t?.addEventListener(`click`,()=>n(`rtl`));</script> <!-- Theme --> <button type="button" data-theme-toggle aria-label="Toggle theme" class="inline-flex items-center gap-2
+          rounded-md
+          border border-neutral-200
+          bg-white
+          px-3 py-1.5
+          cursor-pointer
+          text-lg font-medium
+          text-neutral-700
+          transition-colors
+          hover:bg-neutral-100
+          hover:text-neutral-950
+          dark:border-neutral-800
+          dark:bg-neutral-950
+          dark:text-neutral-300
+          dark:hover:bg-neutral-900
+          dark:hover:text-neutral-100"> <span class="theme-light"> <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="m15 8l-3-3l3-3l3 3zm5 3l-2-2l2-2l2 2zm-7.925 11q-2.1 0-3.937-.8t-3.2-2.162t-2.163-3.2t-.8-3.938q0-3.65 2.325-6.437T10.225 2q-.45 2.475.275 4.838t2.5 4.137t4.138 2.5t4.837.275q-.65 3.6-3.45 5.925T12.075 22"></path></svg> </span> <span class="theme-dark hidden"> <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="M11 3V2q0-.425.288-.712T12 1t.713.288T13 2v1q0 .425-.288.713T12 4t-.712-.288T11 3m0 19v-1q0-.425.288-.712T12 20t.713.288T13 21v1q0 .425-.288.713T12 23t-.712-.288T11 22m11-9h-1q-.425 0-.712-.288T20 12t.288-.712T21 11h1q.425 0 .713.288T23 12t-.288.713T22 13M3 13H2q-.425 0-.712-.288T1 12t.288-.712T2 11h1q.425 0 .713.288T4 12t-.288.713T3 13m16.75-7.325l-.35.35q-.275.275-.687.275T18 6q-.275-.275-.288-.687t.263-.713l.375-.375q.275-.3.7-.3t.725.3t.288.725t-.313.725M6.025 19.4l-.375.375q-.275.3-.7.3t-.725-.3t-.288-.725t.313-.725l.35-.35q.275-.275.688-.275T6 18q.275.275.288.688t-.263.712m12.3.35l-.35-.35q-.275-.275-.275-.687T18 18q.275-.275.688-.287t.712.262l.375.375q.3.275.3.7t-.3.725t-.725.288t-.725-.313M4.6 6.025l-.375-.375q-.3-.275-.3-.7t.3-.725t.725-.288t.725.313l.35.35q.275.275.275.688T6 6q-.275.275-.687.288T4.6 6.025M7.75 16.25Q6 14.5 6 12t1.75-4.25T12 6t4.25 1.75T18 12t-1.75 4.25T12 18t-4.25-1.75"></path></svg> </span> </button> </div> </div> </header> <main class="py-8 sm:py-10"> <div class="prose-docs px-6 sm:px-10 lg:px-16 xl:px-20"> <h1 id="radio">Radio</h1>
+<p>The Radio component allows users to select a single option from a set
+of mutually exclusive choices.</p>
+<p>Radio components can be used individually or grouped with
+<code>RadioGroup</code>. When used inside a RadioGroup, the group’s value determines
+which Radio is selected.</p>
+<p>For most use cases involving multiple related options, use RadioGroup
+to manage the selected value.</p>
+<div id="compoent-example-0r1vi72o4mg" data-component-example class="my-8
+    overflow-hidden
+    rounded-xl
+    border
+    border-neutral-200
+    bg-white
+    dark:border-neutral-800
+    dark:bg-neutral-950"> <div class="flex
+      justify-center
+      items-center
+      min-h-20
+      bg-white
+      p-5
+      text-base
+      text-neutral-900
+      dark:bg-neutral-950
+      dark:text-neutral-100" data-component-preview> <style>astro-island,astro-slot,astro-static-slot{display:contents}</style><script>(()=>{var e=async t=>{await(await t())()};(self.Astro||(self.Astro={})).only=e;window.dispatchEvent(new Event("astro:only"));})();</script><script>(()=>{var g=Object.defineProperty;var w=(a,s,c)=>s in a?g(a,s,{enumerable:!0,configurable:!0,writable:!0,value:c}):a[s]=c;var l=(a,s,c)=>w(a,typeof s!="symbol"?s+"":s,c);var E=new Set(["__proto__","constructor","prototype"]);{let a={0:t=>y(t),1:t=>c(t),2:t=>new RegExp(t),3:t=>new Date(t),4:t=>new Map(c(t)),5:t=>new Set(c(t)),6:t=>BigInt(t),7:t=>new URL(t),8:t=>new Uint8Array(t),9:t=>new Uint16Array(t),10:t=>new Uint32Array(t),11:t=>Number.POSITIVE_INFINITY*t},s=t=>{let[p,e]=t;return p in a?a[p](e):void 0},c=t=>t.map(s),y=t=>typeof t!="object"||t===null?t:Object.fromEntries(Object.entries(t).map(([p,e])=>[p,s(e)]));class f extends HTMLElement{constructor(){super(...arguments);l(this,"Component");l(this,"hydrator");l(this,"hydrate",async()=>{var b;if(!this.hydrator||!this.isConnected)return;let e=(b=this.parentElement)==null?void 0:b.closest("astro-island[ssr]");if(e){e.addEventListener("astro:hydrate",this.hydrate,{once:!0});return}let r=this.querySelectorAll("astro-slot"),n={},d=this.querySelectorAll("template[data-astro-template]");for(let o of d){let i=o.closest(this.tagName);i!=null&&i.isSameNode(this)&&(n[o.getAttribute("data-astro-template")||"default"]=o.innerHTML,o.remove())}for(let o of r){let i=o.closest(this.tagName);i!=null&&i.isSameNode(this)&&(n[o.getAttribute("name")||"default"]=o.innerHTML)}let u;try{u=this.hasAttribute("props")?y(JSON.parse(this.getAttribute("props"))):{}}catch(o){let i=this.getAttribute("component-url")||"<unknown>",v=this.getAttribute("component-export");throw v&&(i+=` (export ${v})`),console.error(`[hydrate] Error parsing props for component ${i}`,this.getAttribute("props"),o),o}let h;await this.hydrator(this)(this.Component,u,n,{client:this.getAttribute("client")}),this.removeAttribute("ssr"),this.dispatchEvent(new CustomEvent("astro:hydrate"))});l(this,"unmount",()=>{this.isConnected||this.dispatchEvent(new CustomEvent("astro:unmount"))})}disconnectedCallback(){document.removeEventListener("astro:after-swap",this.unmount),document.addEventListener("astro:after-swap",this.unmount,{once:!0})}connectedCallback(){if(!this.hasAttribute("await-children")||document.readyState==="interactive"||document.readyState==="complete")this.childrenConnectedCallback();else{let e=()=>{document.removeEventListener("DOMContentLoaded",e),r.disconnect(),this.childrenConnectedCallback()},r=new MutationObserver(()=>{var n;((n=this.lastChild)==null?void 0:n.nodeType)===Node.COMMENT_NODE&&this.lastChild.nodeValue==="astro:end"&&(this.lastChild.remove(),e())});r.observe(this,{childList:!0}),document.addEventListener("DOMContentLoaded",e)}}async childrenConnectedCallback(){let e=this.getAttribute("before-hydration-url");e&&await import(e),this.start()}getRetryImportUrl(e){let r=new URL(e,document.baseURI);return r.searchParams.set("astro-retry",Date.now().toString()),r.toString()}async importWithRetry(e){try{return await import(e)}catch(r){return await new Promise(n=>setTimeout(n,1e3)),import(this.getRetryImportUrl(e))}}handleHydrationError(e){let r=this.getAttribute("component-url"),n=new CustomEvent("astro:hydration-error",{cancelable:!0,bubbles:!0,composed:!0,detail:{error:e,componentUrl:r}});this.dispatchEvent(n)&&console.error(`[astro-island] Error hydrating ${r}`,e)}async start(){let e=JSON.parse(this.getAttribute("opts")),r=this.getAttribute("client");if(Astro[r]===void 0){window.addEventListener(`astro:${r}`,()=>this.start(),{once:!0});return}try{await Astro[r](async()=>{let n=this.getAttribute("renderer-url");try{let[d,{default:u}]=await Promise.all([this.importWithRetry(this.getAttribute("component-url")),n?this.importWithRetry(n):Promise.resolve({default:()=>()=>{}})]),h=this.getAttribute("component-export")||"default";if(h.includes(".")){this.Component=d;for(let m of h.split(".")){if(E.has(m)||!this.Component||typeof this.Component!="object"&&typeof this.Component!="function"||!Object.hasOwn(this.Component,m))throw new Error(`Invalid component export path: ${h}`);this.Component=this.Component[m]}}else{if(E.has(h))throw new Error(`Invalid component export path: ${h}`);this.Component=d[h]}return this.hydrator=u,this.hydrate}catch(d){return this.handleHydrationError(d),()=>{}}},e,this)}catch(n){this.handleHydrationError(n)}}attributeChangedCallback(){this.hydrate()}}l(f,"observedAttributes",["props"]),customElements.get("astro-island")||customElements.define("astro-island",f)}})();</script><astro-island uid="1UG3RJ" component-url="/_astro/dynamic-component-renderer.CBS3Ippf.js" component-export="default" renderer-url="/_astro/client.BgJ9siUT.js" props="{&quot;name&quot;:[0,&quot;Radio/examples/basic&quot;]}" ssr client="only" opts="{&quot;name&quot;:&quot;DynamicComponentRenderer&quot;,&quot;value&quot;:&quot;solid-js&quot;}"></astro-island> </div> <div data-code class="border-t
+      border-neutral-200
+      dark:border-neutral-800"> <div class="relative"> <button type="button" data-copy class="absolute
+          top-3
+          z-10
+          ltr:right-3
+          rtl:left-3
+          rounded-md
+          bg-neutral-200
+          size-6
+          text-xl
+          grid
+          place-items-center
+          text-neutral-900
+          transition-colors
+          hover:bg-neutral-200/80
+          dark:bg-neutral-700/90
+          dark:text-white
+          dark:hover:bg-neutral-700"> <svg class="checkmark hidden " xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="m10 13.6l5.9-5.9q.275-.275.7-.275t.7.275t.275.7t-.275.7l-6.6 6.6q-.3.3-.7.3t-.7-.3l-2.6-2.6q-.275-.275-.275-.7t.275-.7t.7-.275t.7.275z"></path></svg> <svg class="copy " xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"></path><g fill="none" stroke="currentColor"><rect width="9" height="13" x="6.5" y="6.5" rx="1.5"></rect><path d="M8.5 6A1.5 1.5 0 0 1 10 4.5h6A1.5 1.5 0 0 1 17.5 6v10a1.5 1.5 0 0 1-1.5 1.5"></path></g></svg> </button> <div class="overflow-x-auto
+    text-lg
+    border-neutral-200
+    dark:border-neutral-800 rounded-xl " data-highlighted-code><pre class="shiki shiki-themes min-light min-dark" style="--shiki-light:#24292eff;--shiki-dark:#b392f0;--shiki-light-bg:#ffffff;--shiki-dark-bg:#1f1f1f" tabindex="0"><code><span class="line"><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">import</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0"> Radio </span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">from</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70"> "rocksolidjs/Radio"</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">;</span></span>
+<span class="line"><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">import</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0"> Label </span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">from</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70"> "rocksolidjs/Label"</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">;</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">export</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583"> default</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583"> function</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> Example</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">() {</span></span>
+<span class="line"><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">  return</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0"> (</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">    &#x3C;</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">div</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> class</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">=</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">"flex items-center gap-1"</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">      &#x3C;</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">Radio</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">        id</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">=</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">"notifications"</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">        value</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">=</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">"notifications"</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">      /></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">      &#x3C;</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">Label</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> for</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">=</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">"notifications"</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">        Enable notifications</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">      &#x3C;/</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">Label</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">    &#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">div</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">  );</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> </div> </div> <script>(function(){const id = "0r1vi72o4mg";
+const source = "import Radio from \"rocksolidjs/Radio\";\nimport Label from \"rocksolidjs/Label\";\n\nexport default function Example() {\n  return (\n    \u003cdiv class=\"flex items-center gap-1\">\n      \u003cRadio\n        id=\"notifications\"\n        value=\"notifications\"\n      />\n      \u003cLabel for=\"notifications\">\n        Enable notifications\n      \u003c/Label>\n    \u003c/div>\n  );\n}";
+
+  const copyBtn = document.querySelector(`#compoent-example-${id} [data-copy]`);
+  copyBtn?.addEventListener("click", async () => {
+    try {
+      const copyIcon = copyBtn.querySelector(".copy");
+      const checkmarkIcon = copyBtn.querySelector(".checkmark");
+      await navigator.clipboard.writeText(source);
+      copyIcon.classList.add("hidden");
+      checkmarkIcon.classList.remove("hidden");
+      copyBtn.disabled = true;
+      setTimeout(() => {
+        copyIcon.classList.remove("hidden");
+        checkmarkIcon.classList.add("hidden");
+        copyBtn.disabled = false;
+      }, 2000);
+    } catch (error) {
+      console.error("failed to copy to clipboard");
+    }
+  });
+})();</script>
+<h2 id="examples">Examples</h2>
+<h3 id="radio-group">Radio Group</h3>
+<p>Use <code>RadioGroup</code> when presenting multiple mutually exclusive options.
+The group manages the selected value and provides a single value for the
+set of Radio components.</p>
+<div id="compoent-example-ph9zsdj4vu" data-component-example class="my-8
+    overflow-hidden
+    rounded-xl
+    border
+    border-neutral-200
+    bg-white
+    dark:border-neutral-800
+    dark:bg-neutral-950"> <div class="flex
+      justify-center
+      items-center
+      min-h-20
+      bg-white
+      p-5
+      text-base
+      text-neutral-900
+      dark:bg-neutral-950
+      dark:text-neutral-100" data-component-preview> <astro-island uid="ZvT5vv" component-url="/_astro/dynamic-component-renderer.CBS3Ippf.js" component-export="default" renderer-url="/_astro/client.BgJ9siUT.js" props="{&quot;name&quot;:[0,&quot;Radio/examples/group&quot;]}" ssr client="only" opts="{&quot;name&quot;:&quot;DynamicComponentRenderer&quot;,&quot;value&quot;:&quot;solid-js&quot;}"></astro-island> </div> <div data-code class="border-t
+      border-neutral-200
+      dark:border-neutral-800"> <div class="relative"> <button type="button" data-copy class="absolute
+          top-3
+          z-10
+          ltr:right-3
+          rtl:left-3
+          rounded-md
+          bg-neutral-200
+          size-6
+          text-xl
+          grid
+          place-items-center
+          text-neutral-900
+          transition-colors
+          hover:bg-neutral-200/80
+          dark:bg-neutral-700/90
+          dark:text-white
+          dark:hover:bg-neutral-700"> <svg class="checkmark hidden " xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="m10 13.6l5.9-5.9q.275-.275.7-.275t.7.275t.275.7t-.275.7l-6.6 6.6q-.3.3-.7.3t-.7-.3l-2.6-2.6q-.275-.275-.275-.7t.275-.7t.7-.275t.7.275z"></path></svg> <svg class="copy " xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"></path><g fill="none" stroke="currentColor"><rect width="9" height="13" x="6.5" y="6.5" rx="1.5"></rect><path d="M8.5 6A1.5 1.5 0 0 1 10 4.5h6A1.5 1.5 0 0 1 17.5 6v10a1.5 1.5 0 0 1-1.5 1.5"></path></g></svg> </button> <div class="overflow-x-auto
+    text-lg
+    border-neutral-200
+    dark:border-neutral-800 rounded-xl " data-highlighted-code><pre class="shiki shiki-themes min-light min-dark" style="--shiki-light:#24292eff;--shiki-dark:#b392f0;--shiki-light-bg:#ffffff;--shiki-dark-bg:#1f1f1f" tabindex="0"><code><span class="line"><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">import</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0"> Radio </span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">from</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70"> "rocksolidjs/Radio"</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">;</span></span>
+<span class="line"><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">import</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0"> RadioGroup </span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">from</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70"> "rocksolidjs/RadioGroup"</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">;</span></span>
+<span class="line"><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">import</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0"> Label </span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">from</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70"> "rocksolidjs/Label"</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">;</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">export</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583"> default</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583"> function</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> Example</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">() {</span></span>
+<span class="line"><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">  return</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0"> (</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">    &#x3C;</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">RadioGroup</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">      class</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">=</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">"flex flex-col gap-4"</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">      name</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">=</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">"plan"</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">    ></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">      &#x3C;</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">div</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> class</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">=</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">"flex items-center gap-1"</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">        &#x3C;</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">Radio</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> id</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">=</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">"free"</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> value</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">=</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">"free"</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0"> /></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">        &#x3C;</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">Label</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> for</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">=</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">"free"</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">>Free&#x3C;/</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">Label</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">      &#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">div</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">      &#x3C;</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">div</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> class</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">=</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">"flex items-center gap-1"</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">        &#x3C;</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">Radio</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> id</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">=</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">"pro"</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> value</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">=</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">"pro"</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0"> /></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">        &#x3C;</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">Label</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> for</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">=</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">"pro"</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">>Pro&#x3C;/</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">Label</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">      &#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">div</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">      &#x3C;</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">div</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> class</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">=</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">"flex items-center gap-1"</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">        &#x3C;</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">Radio</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> id</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">=</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">"enterprise"</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> value</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">=</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">"enterprise"</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0"> /></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">        &#x3C;</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">Label</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> for</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">=</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">"enterprise"</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">>Enterprise&#x3C;/</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">Label</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">      &#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">div</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">    &#x3C;/</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">RadioGroup</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">  );</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> </div> </div> <script>(function(){const id = "ph9zsdj4vu";
+const source = "import Radio from \"rocksolidjs/Radio\";\nimport RadioGroup from \"rocksolidjs/RadioGroup\";\nimport Label from \"rocksolidjs/Label\";\n\nexport default function Example() {\n  return (\n    \u003cRadioGroup\n      class=\"flex flex-col gap-4\"\n      name=\"plan\"\n    >\n      \u003cdiv class=\"flex items-center gap-1\">\n        \u003cRadio id=\"free\" value=\"free\" />\n        \u003cLabel for=\"free\">Free\u003c/Label>\n      \u003c/div>\n      \u003cdiv class=\"flex items-center gap-1\">\n        \u003cRadio id=\"pro\" value=\"pro\" />\n        \u003cLabel for=\"pro\">Pro\u003c/Label>\n      \u003c/div>\n      \u003cdiv class=\"flex items-center gap-1\">\n        \u003cRadio id=\"enterprise\" value=\"enterprise\" />\n        \u003cLabel for=\"enterprise\">Enterprise\u003c/Label>\n      \u003c/div>\n    \u003c/RadioGroup>\n  );\n}";
+
+  const copyBtn = document.querySelector(`#compoent-example-${id} [data-copy]`);
+  copyBtn?.addEventListener("click", async () => {
+    try {
+      const copyIcon = copyBtn.querySelector(".copy");
+      const checkmarkIcon = copyBtn.querySelector(".checkmark");
+      await navigator.clipboard.writeText(source);
+      copyIcon.classList.add("hidden");
+      checkmarkIcon.classList.remove("hidden");
+      copyBtn.disabled = true;
+      setTimeout(() => {
+        copyIcon.classList.remove("hidden");
+        checkmarkIcon.classList.add("hidden");
+        copyBtn.disabled = false;
+      }, 2000);
+    } catch (error) {
+      console.error("failed to copy to clipboard");
+    }
+  });
+})();</script>
+<p>Each Radio inside the group should have a unique <code>value</code>. The selected
+Radio is determined by the group’s <code>value</code> or <code>defaultValue</code>.</p>
+<h3 id="controlled-radio-group">Controlled Radio Group</h3>
+<p>Use the <code>value</code> prop on <code>RadioGroup</code> when the selected option should be
+controlled by application state.</p>
+<div id="compoent-example-bktxo5vr4of" data-component-example class="my-8
+    overflow-hidden
+    rounded-xl
+    border
+    border-neutral-200
+    bg-white
+    dark:border-neutral-800
+    dark:bg-neutral-950"> <div class="flex
+      justify-center
+      items-center
+      min-h-20
+      bg-white
+      p-5
+      text-base
+      text-neutral-900
+      dark:bg-neutral-950
+      dark:text-neutral-100" data-component-preview> <astro-island uid="Z1ehyaQ" component-url="/_astro/dynamic-component-renderer.CBS3Ippf.js" component-export="default" renderer-url="/_astro/client.BgJ9siUT.js" props="{&quot;name&quot;:[0,&quot;Radio/examples/controlled&quot;]}" ssr client="only" opts="{&quot;name&quot;:&quot;DynamicComponentRenderer&quot;,&quot;value&quot;:&quot;solid-js&quot;}"></astro-island> </div> <div data-code class="border-t
+      border-neutral-200
+      dark:border-neutral-800"> <div class="relative"> <button type="button" data-copy class="absolute
+          top-3
+          z-10
+          ltr:right-3
+          rtl:left-3
+          rounded-md
+          bg-neutral-200
+          size-6
+          text-xl
+          grid
+          place-items-center
+          text-neutral-900
+          transition-colors
+          hover:bg-neutral-200/80
+          dark:bg-neutral-700/90
+          dark:text-white
+          dark:hover:bg-neutral-700"> <svg class="checkmark hidden " xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="m10 13.6l5.9-5.9q.275-.275.7-.275t.7.275t.275.7t-.275.7l-6.6 6.6q-.3.3-.7.3t-.7-.3l-2.6-2.6q-.275-.275-.275-.7t.275-.7t.7-.275t.7.275z"></path></svg> <svg class="copy " xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"></path><g fill="none" stroke="currentColor"><rect width="9" height="13" x="6.5" y="6.5" rx="1.5"></rect><path d="M8.5 6A1.5 1.5 0 0 1 10 4.5h6A1.5 1.5 0 0 1 17.5 6v10a1.5 1.5 0 0 1-1.5 1.5"></path></g></svg> </button> <div class="overflow-x-auto
+    text-lg
+    border-neutral-200
+    dark:border-neutral-800 rounded-xl " data-highlighted-code><pre class="shiki shiki-themes min-light min-dark" style="--shiki-light:#24292eff;--shiki-dark:#b392f0;--shiki-light-bg:#ffffff;--shiki-dark-bg:#1f1f1f" tabindex="0"><code><span class="line"><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">import</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0"> { createSignal } </span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">from</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70"> "solid-js"</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">;</span></span>
+<span class="line"><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">import</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0"> Radio </span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">from</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70"> "rocksolidjs/Radio"</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">;</span></span>
+<span class="line"><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">import</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0"> RadioGroup </span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">from</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70"> "rocksolidjs/RadioGroup"</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">;</span></span>
+<span class="line"><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">import</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0"> Label </span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">from</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70"> "rocksolidjs/Label"</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">;</span></span>
+<span class="line"><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">import</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0"> Typography </span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">from</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70"> "rocksolidjs/Typography"</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">;</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">export</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583"> default</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583"> function</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> Example</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">() {</span></span>
+<span class="line"><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">  const</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0"> [</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">plan</span><span style="--shiki-light:#212121;--shiki-dark:#BBBBBB">,</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF"> setPlan</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">] </span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">=</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> createSignal</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">(</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">"free"</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">);</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">  return</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0"> (</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">    &#x3C;</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">div</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> class</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">=</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">"flex flex-col gap-2 max-w-sm"</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">      &#x3C;</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">RadioGroup</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">        class</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">=</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">"flex flex-col gap-3"</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">        name</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">=</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">"controlled-plan"</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">        value</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">=</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">{</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">plan</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">()}</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">        onChange</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">=</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">{(_</span><span style="--shiki-light:#212121;--shiki-dark:#BBBBBB">,</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0"> value) </span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">=></span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> setPlan</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">(value)}</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">      ></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">        &#x3C;</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">div</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> class</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">=</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">"flex items-center gap-1"</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">          &#x3C;</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">Radio</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> id</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">=</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">"controlled-free"</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> value</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">=</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">"free"</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">/></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">          &#x3C;</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">Label</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> for</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">=</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">"controlled-free"</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">>Free&#x3C;/</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">Label</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">        &#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">div</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">        &#x3C;</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">div</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> class</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">=</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">"flex items-center gap-1"</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">          &#x3C;</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">Radio</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> id</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">=</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">"controlled-pro"</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> value</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">=</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">"pro"</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0"> /></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">          &#x3C;</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">Label</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> for</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">=</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">"controlled-pro"</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">>Pro&#x3C;/</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">Label</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">        &#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">div</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">        &#x3C;</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">div</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> class</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">=</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">"flex items-center gap-1"</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">          &#x3C;</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">Radio</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> id</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">=</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">"controlled-enterprise"</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> value</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">=</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">"enterprise"</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0"> /></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">          &#x3C;</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">Label</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> for</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">=</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">"controlled-enterprise"</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">            Enterprise</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">          &#x3C;/</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">Label</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">        &#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">div</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">      &#x3C;/</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">RadioGroup</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">      &#x3C;</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">Typography</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">        Selected plan: {</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">plan</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">()}</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">      &#x3C;/</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">Typography</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">    &#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">div</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">  );</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> </div> </div> <script>(function(){const id = "bktxo5vr4of";
+const source = "import { createSignal } from \"solid-js\";\nimport Radio from \"rocksolidjs/Radio\";\nimport RadioGroup from \"rocksolidjs/RadioGroup\";\nimport Label from \"rocksolidjs/Label\";\nimport Typography from \"rocksolidjs/Typography\";\n\nexport default function Example() {\n  const [plan, setPlan] = createSignal(\"free\");\n\n  return (\n    \u003cdiv class=\"flex flex-col gap-2 max-w-sm\">\n      \u003cRadioGroup\n        class=\"flex flex-col gap-3\"\n        name=\"controlled-plan\"\n        value={plan()}\n        onChange={(_, value) => setPlan(value)}\n      >\n        \u003cdiv class=\"flex items-center gap-1\">\n          \u003cRadio id=\"controlled-free\" value=\"free\"/>\n          \u003cLabel for=\"controlled-free\">Free\u003c/Label>\n        \u003c/div>\n        \u003cdiv class=\"flex items-center gap-1\">\n          \u003cRadio id=\"controlled-pro\" value=\"pro\" />\n          \u003cLabel for=\"controlled-pro\">Pro\u003c/Label>\n        \u003c/div>\n        \u003cdiv class=\"flex items-center gap-1\">\n          \u003cRadio id=\"controlled-enterprise\" value=\"enterprise\" />\n          \u003cLabel for=\"controlled-enterprise\">\n            Enterprise\n          \u003c/Label>\n        \u003c/div>\n      \u003c/RadioGroup>\n\n      \u003cTypography>\n        Selected plan: {plan()}\n      \u003c/Typography>\n    \u003c/div>\n  );\n}";
+
+  const copyBtn = document.querySelector(`#compoent-example-${id} [data-copy]`);
+  copyBtn?.addEventListener("click", async () => {
+    try {
+      const copyIcon = copyBtn.querySelector(".copy");
+      const checkmarkIcon = copyBtn.querySelector(".checkmark");
+      await navigator.clipboard.writeText(source);
+      copyIcon.classList.add("hidden");
+      checkmarkIcon.classList.remove("hidden");
+      copyBtn.disabled = true;
+      setTimeout(() => {
+        copyIcon.classList.remove("hidden");
+        checkmarkIcon.classList.add("hidden");
+        copyBtn.disabled = false;
+      }, 2000);
+    } catch (error) {
+      console.error("failed to copy to clipboard");
+    }
+  });
+})();</script>
+<p>Use <code>onChange</code> to update the state when the selected Radio changes.</p>
+<h3 id="default-value">Default Value</h3>
+<p>Use <code>defaultValue</code> to specify the initially selected option without
+controlling the selected value after initialization.</p>
+<div id="compoent-example-m8bsctndiq" data-component-example class="my-8
+    overflow-hidden
+    rounded-xl
+    border
+    border-neutral-200
+    bg-white
+    dark:border-neutral-800
+    dark:bg-neutral-950"> <div class="flex
+      justify-center
+      items-center
+      min-h-20
+      bg-white
+      p-5
+      text-base
+      text-neutral-900
+      dark:bg-neutral-950
+      dark:text-neutral-100" data-component-preview> <astro-island uid="1O25Lw" component-url="/_astro/dynamic-component-renderer.CBS3Ippf.js" component-export="default" renderer-url="/_astro/client.BgJ9siUT.js" props="{&quot;name&quot;:[0,&quot;Radio/examples/default-value&quot;]}" ssr client="only" opts="{&quot;name&quot;:&quot;DynamicComponentRenderer&quot;,&quot;value&quot;:&quot;solid-js&quot;}"></astro-island> </div> <div data-code class="border-t
+      border-neutral-200
+      dark:border-neutral-800"> <div class="relative"> <button type="button" data-copy class="absolute
+          top-3
+          z-10
+          ltr:right-3
+          rtl:left-3
+          rounded-md
+          bg-neutral-200
+          size-6
+          text-xl
+          grid
+          place-items-center
+          text-neutral-900
+          transition-colors
+          hover:bg-neutral-200/80
+          dark:bg-neutral-700/90
+          dark:text-white
+          dark:hover:bg-neutral-700"> <svg class="checkmark hidden " xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="m10 13.6l5.9-5.9q.275-.275.7-.275t.7.275t.275.7t-.275.7l-6.6 6.6q-.3.3-.7.3t-.7-.3l-2.6-2.6q-.275-.275-.275-.7t.275-.7t.7-.275t.7.275z"></path></svg> <svg class="copy " xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"></path><g fill="none" stroke="currentColor"><rect width="9" height="13" x="6.5" y="6.5" rx="1.5"></rect><path d="M8.5 6A1.5 1.5 0 0 1 10 4.5h6A1.5 1.5 0 0 1 17.5 6v10a1.5 1.5 0 0 1-1.5 1.5"></path></g></svg> </button> <div class="overflow-x-auto
+    text-lg
+    border-neutral-200
+    dark:border-neutral-800 rounded-xl " data-highlighted-code><pre class="shiki shiki-themes min-light min-dark" style="--shiki-light:#24292eff;--shiki-dark:#b392f0;--shiki-light-bg:#ffffff;--shiki-dark-bg:#1f1f1f" tabindex="0"><code><span class="line"><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">import</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0"> Radio </span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">from</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70"> "rocksolidjs/Radio"</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">;</span></span>
+<span class="line"><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">import</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0"> RadioGroup </span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">from</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70"> "rocksolidjs/RadioGroup"</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">;</span></span>
+<span class="line"><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">import</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0"> Label </span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">from</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70"> "rocksolidjs/Label"</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">;</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">export</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583"> default</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583"> function</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> Example</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">() {</span></span>
+<span class="line"><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">  return</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0"> (</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">    &#x3C;</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">RadioGroup</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">      class</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">=</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">"flex flex-col gap-4"</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">      name</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">=</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">"payment-method"</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">      defaultValue</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">=</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">"bank"</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">    ></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">      &#x3C;</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">div</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> class</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">=</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">"flex items-center gap-1"</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">        &#x3C;</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">Radio</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> id</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">=</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">"card"</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> value</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">=</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">"card"</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0"> /></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">        &#x3C;</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">Label</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> for</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">=</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">"card"</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">>Credit card&#x3C;/</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">Label</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">      &#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">div</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">      &#x3C;</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">div</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> class</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">=</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">"flex items-center gap-1"</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">        &#x3C;</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">Radio</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> id</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">=</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">"bank"</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> value</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">=</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">"bank"</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0"> /></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">        &#x3C;</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">Label</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> for</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">=</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">"bank"</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">>Bank transfer&#x3C;/</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">Label</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">      &#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">div</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">      &#x3C;</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">div</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> class</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">=</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">"flex items-center gap-1"</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">        &#x3C;</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">Radio</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> id</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">=</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">"paypal"</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> value</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">=</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">"paypal"</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0"> /></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">        &#x3C;</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">Label</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> for</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">=</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">"paypal"</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">>PayPal&#x3C;/</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">Label</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">      &#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">div</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">    &#x3C;/</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">RadioGroup</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">  );</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> </div> </div> <script>(function(){const id = "m8bsctndiq";
+const source = "import Radio from \"rocksolidjs/Radio\";\nimport RadioGroup from \"rocksolidjs/RadioGroup\";\nimport Label from \"rocksolidjs/Label\";\n\nexport default function Example() {\n  return (\n    \u003cRadioGroup\n      class=\"flex flex-col gap-4\"\n      name=\"payment-method\"\n      defaultValue=\"bank\"\n    >\n      \u003cdiv class=\"flex items-center gap-1\">\n        \u003cRadio id=\"card\" value=\"card\" />\n        \u003cLabel for=\"card\">Credit card\u003c/Label>\n      \u003c/div>\n      \u003cdiv class=\"flex items-center gap-1\">\n        \u003cRadio id=\"bank\" value=\"bank\" />\n        \u003cLabel for=\"bank\">Bank transfer\u003c/Label>\n      \u003c/div>\n      \u003cdiv class=\"flex items-center gap-1\">\n        \u003cRadio id=\"paypal\" value=\"paypal\" />\n        \u003cLabel for=\"paypal\">PayPal\u003c/Label>\n      \u003c/div>\n    \u003c/RadioGroup>\n  );\n}";
+
+  const copyBtn = document.querySelector(`#compoent-example-${id} [data-copy]`);
+  copyBtn?.addEventListener("click", async () => {
+    try {
+      const copyIcon = copyBtn.querySelector(".copy");
+      const checkmarkIcon = copyBtn.querySelector(".checkmark");
+      await navigator.clipboard.writeText(source);
+      copyIcon.classList.add("hidden");
+      checkmarkIcon.classList.remove("hidden");
+      copyBtn.disabled = true;
+      setTimeout(() => {
+        copyIcon.classList.remove("hidden");
+        checkmarkIcon.classList.add("hidden");
+        copyBtn.disabled = false;
+      }, 2000);
+    } catch (error) {
+      console.error("failed to copy to clipboard");
+    }
+  });
+})();</script>
+<h3 id="colors">Colors</h3>
+<p>Use the <code>color</code> prop to communicate the semantic meaning or state of a
+Radio.</p>
+<div id="compoent-example-0bcqcv2jvcis" data-component-example class="my-8
+    overflow-hidden
+    rounded-xl
+    border
+    border-neutral-200
+    bg-white
+    dark:border-neutral-800
+    dark:bg-neutral-950"> <div class="flex
+      justify-center
+      items-center
+      min-h-20
+      bg-white
+      p-5
+      text-base
+      text-neutral-900
+      dark:bg-neutral-950
+      dark:text-neutral-100" data-component-preview> <astro-island uid="Z1Vfjzn" component-url="/_astro/dynamic-component-renderer.CBS3Ippf.js" component-export="default" renderer-url="/_astro/client.BgJ9siUT.js" props="{&quot;name&quot;:[0,&quot;Radio/examples/colors&quot;]}" ssr client="only" opts="{&quot;name&quot;:&quot;DynamicComponentRenderer&quot;,&quot;value&quot;:&quot;solid-js&quot;}"></astro-island> </div> <div data-code class="border-t
+      border-neutral-200
+      dark:border-neutral-800"> <div class="relative"> <button type="button" data-copy class="absolute
+          top-3
+          z-10
+          ltr:right-3
+          rtl:left-3
+          rounded-md
+          bg-neutral-200
+          size-6
+          text-xl
+          grid
+          place-items-center
+          text-neutral-900
+          transition-colors
+          hover:bg-neutral-200/80
+          dark:bg-neutral-700/90
+          dark:text-white
+          dark:hover:bg-neutral-700"> <svg class="checkmark hidden " xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="m10 13.6l5.9-5.9q.275-.275.7-.275t.7.275t.275.7t-.275.7l-6.6 6.6q-.3.3-.7.3t-.7-.3l-2.6-2.6q-.275-.275-.275-.7t.275-.7t.7-.275t.7.275z"></path></svg> <svg class="copy " xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"></path><g fill="none" stroke="currentColor"><rect width="9" height="13" x="6.5" y="6.5" rx="1.5"></rect><path d="M8.5 6A1.5 1.5 0 0 1 10 4.5h6A1.5 1.5 0 0 1 17.5 6v10a1.5 1.5 0 0 1-1.5 1.5"></path></g></svg> </button> <div class="overflow-x-auto
+    text-lg
+    border-neutral-200
+    dark:border-neutral-800 rounded-xl " data-highlighted-code><pre class="shiki shiki-themes min-light min-dark" style="--shiki-light:#24292eff;--shiki-dark:#b392f0;--shiki-light-bg:#ffffff;--shiki-dark-bg:#1f1f1f" tabindex="0"><code><span class="line"><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">import</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0"> Radio </span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">from</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70"> "rocksolidjs/Radio"</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">;</span></span>
+<span class="line"><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">import</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0"> Label </span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">from</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70"> "rocksolidjs/Label"</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">;</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">export</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583"> default</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583"> function</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> Example</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">() {</span></span>
+<span class="line"><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">  const</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF"> colors</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583"> =</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0"> [</span></span>
+<span class="line"><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">    "default"</span><span style="--shiki-light:#212121;--shiki-dark:#BBBBBB">,</span></span>
+<span class="line"><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">    "success"</span><span style="--shiki-light:#212121;--shiki-dark:#BBBBBB">,</span></span>
+<span class="line"><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">    "warning"</span><span style="--shiki-light:#212121;--shiki-dark:#BBBBBB">,</span></span>
+<span class="line"><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">    "info"</span><span style="--shiki-light:#212121;--shiki-dark:#BBBBBB">,</span></span>
+<span class="line"><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">    "error"</span><span style="--shiki-light:#212121;--shiki-dark:#BBBBBB">,</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">  ] </span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">as</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583"> const</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">;</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">  return</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0"> (</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">    &#x3C;</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">div</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> class</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">=</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">"flex flex-col gap-4"</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">      {</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">colors</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">.map</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">((color) </span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">=></span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0"> (</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">        &#x3C;</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">div</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> class</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">=</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">"flex items-center gap-1"</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">          &#x3C;</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">Radio</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">            id</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">=</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">{</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">`radio-</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">${</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">color</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">}</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">`</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">            value</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">=</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">{color}</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">            color</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">=</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">{color}</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">          /></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">          &#x3C;</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">Label</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> for</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">=</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">{</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">`radio-</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">${</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">color</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">}</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">`</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">            {color}</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">          &#x3C;/</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">Label</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">        &#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">div</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">      ))}</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">    &#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">div</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">  );</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> </div> </div> <script>(function(){const id = "0bcqcv2jvcis";
+const source = "import Radio from \"rocksolidjs/Radio\";\nimport Label from \"rocksolidjs/Label\";\n\nexport default function Example() {\n  const colors = [\n    \"default\",\n    \"success\",\n    \"warning\",\n    \"info\",\n    \"error\",\n  ] as const;\n\n  return (\n    \u003cdiv class=\"flex flex-col gap-4\">\n      {colors.map((color) => (\n        \u003cdiv class=\"flex items-center gap-1\">\n          \u003cRadio\n            id={`radio-${color}`}\n            value={color}\n            color={color}\n          />\n          \u003cLabel for={`radio-${color}`}>\n            {color}\n          \u003c/Label>\n        \u003c/div>\n      ))}\n    \u003c/div>\n  );\n}";
+
+  const copyBtn = document.querySelector(`#compoent-example-${id} [data-copy]`);
+  copyBtn?.addEventListener("click", async () => {
+    try {
+      const copyIcon = copyBtn.querySelector(".copy");
+      const checkmarkIcon = copyBtn.querySelector(".checkmark");
+      await navigator.clipboard.writeText(source);
+      copyIcon.classList.add("hidden");
+      checkmarkIcon.classList.remove("hidden");
+      copyBtn.disabled = true;
+      setTimeout(() => {
+        copyIcon.classList.remove("hidden");
+        checkmarkIcon.classList.add("hidden");
+        copyBtn.disabled = false;
+      }, 2000);
+    } catch (error) {
+      console.error("failed to copy to clipboard");
+    }
+  });
+})();</script>
+<h3 id="sizes">Sizes</h3>
+<p>Use the <code>size</code> prop to control the visual size of the Radio.</p>
+<div id="compoent-example-meue6txmhzh" data-component-example class="my-8
+    overflow-hidden
+    rounded-xl
+    border
+    border-neutral-200
+    bg-white
+    dark:border-neutral-800
+    dark:bg-neutral-950"> <div class="flex
+      justify-center
+      items-center
+      min-h-20
+      bg-white
+      p-5
+      text-base
+      text-neutral-900
+      dark:bg-neutral-950
+      dark:text-neutral-100" data-component-preview> <astro-island uid="Z7es0H" component-url="/_astro/dynamic-component-renderer.CBS3Ippf.js" component-export="default" renderer-url="/_astro/client.BgJ9siUT.js" props="{&quot;name&quot;:[0,&quot;Radio/examples/sizes&quot;]}" ssr client="only" opts="{&quot;name&quot;:&quot;DynamicComponentRenderer&quot;,&quot;value&quot;:&quot;solid-js&quot;}"></astro-island> </div> <div data-code class="border-t
+      border-neutral-200
+      dark:border-neutral-800"> <div class="relative"> <button type="button" data-copy class="absolute
+          top-3
+          z-10
+          ltr:right-3
+          rtl:left-3
+          rounded-md
+          bg-neutral-200
+          size-6
+          text-xl
+          grid
+          place-items-center
+          text-neutral-900
+          transition-colors
+          hover:bg-neutral-200/80
+          dark:bg-neutral-700/90
+          dark:text-white
+          dark:hover:bg-neutral-700"> <svg class="checkmark hidden " xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="m10 13.6l5.9-5.9q.275-.275.7-.275t.7.275t.275.7t-.275.7l-6.6 6.6q-.3.3-.7.3t-.7-.3l-2.6-2.6q-.275-.275-.275-.7t.275-.7t.7-.275t.7.275z"></path></svg> <svg class="copy " xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"></path><g fill="none" stroke="currentColor"><rect width="9" height="13" x="6.5" y="6.5" rx="1.5"></rect><path d="M8.5 6A1.5 1.5 0 0 1 10 4.5h6A1.5 1.5 0 0 1 17.5 6v10a1.5 1.5 0 0 1-1.5 1.5"></path></g></svg> </button> <div class="overflow-x-auto
+    text-lg
+    border-neutral-200
+    dark:border-neutral-800 rounded-xl " data-highlighted-code><pre class="shiki shiki-themes min-light min-dark" style="--shiki-light:#24292eff;--shiki-dark:#b392f0;--shiki-light-bg:#ffffff;--shiki-dark-bg:#1f1f1f" tabindex="0"><code><span class="line"><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">import</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0"> Radio </span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">from</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70"> "rocksolidjs/Radio"</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">;</span></span>
+<span class="line"><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">import</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0"> Label </span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">from</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70"> "rocksolidjs/Label"</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">;</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">export</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583"> default</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583"> function</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> Example</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">() {</span></span>
+<span class="line"><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">  return</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0"> (</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">    &#x3C;</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">div</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> class</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">=</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">"flex flex-col gap-4"</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">      &#x3C;</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">div</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> class</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">=</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">"flex items-center gap-1"</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">        &#x3C;</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">Radio</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">          id</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">=</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">"small-radio"</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">          value</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">=</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">"small"</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">          size</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">=</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">"small"</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">          checked</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">        /></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">        &#x3C;</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">Label</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> for</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">=</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">"small-radio"</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">>Small&#x3C;/</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">Label</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">      &#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">div</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">      &#x3C;</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">div</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> class</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">=</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">"flex items-center gap-1"</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">        &#x3C;</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">Radio</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">          id</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">=</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">"medium-radio"</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">          value</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">=</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">"medium"</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">          size</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">=</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">"medium"</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">          checked</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">        /></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">        &#x3C;</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">Label</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> for</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">=</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">"medium-radio"</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">>Medium&#x3C;/</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">Label</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">      &#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">div</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">      &#x3C;</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">div</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> class</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">=</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">"flex items-center gap-1"</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">        &#x3C;</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">Radio</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">          id</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">=</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">"large-radio"</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">          value</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">=</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">"large"</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">          size</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">=</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">"large"</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">          checked</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">        /></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">        &#x3C;</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">Label</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> for</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">=</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">"large-radio"</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">>Large&#x3C;/</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">Label</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">      &#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">div</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">    &#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">div</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">  );</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> </div> </div> <script>(function(){const id = "meue6txmhzh";
+const source = "import Radio from \"rocksolidjs/Radio\";\nimport Label from \"rocksolidjs/Label\";\n\nexport default function Example() {\n  return (\n    \u003cdiv class=\"flex flex-col gap-4\">\n      \u003cdiv class=\"flex items-center gap-1\">\n        \u003cRadio\n          id=\"small-radio\"\n          value=\"small\"\n          size=\"small\"\n          checked\n        />\n        \u003cLabel for=\"small-radio\">Small\u003c/Label>\n      \u003c/div>\n      \u003cdiv class=\"flex items-center gap-1\">\n        \u003cRadio\n          id=\"medium-radio\"\n          value=\"medium\"\n          size=\"medium\"\n          checked\n        />\n        \u003cLabel for=\"medium-radio\">Medium\u003c/Label>\n      \u003c/div>\n      \u003cdiv class=\"flex items-center gap-1\">\n        \u003cRadio\n          id=\"large-radio\"\n          value=\"large\"\n          size=\"large\"\n          checked\n        />\n        \u003cLabel for=\"large-radio\">Large\u003c/Label>\n      \u003c/div>\n    \u003c/div>\n  );\n}";
+
+  const copyBtn = document.querySelector(`#compoent-example-${id} [data-copy]`);
+  copyBtn?.addEventListener("click", async () => {
+    try {
+      const copyIcon = copyBtn.querySelector(".copy");
+      const checkmarkIcon = copyBtn.querySelector(".checkmark");
+      await navigator.clipboard.writeText(source);
+      copyIcon.classList.add("hidden");
+      checkmarkIcon.classList.remove("hidden");
+      copyBtn.disabled = true;
+      setTimeout(() => {
+        copyIcon.classList.remove("hidden");
+        checkmarkIcon.classList.add("hidden");
+        copyBtn.disabled = false;
+      }, 2000);
+    } catch (error) {
+      console.error("failed to copy to clipboard");
+    }
+  });
+})();</script>
+<h3 id="disabled">Disabled</h3>
+<p>Use the <code>disabled</code> prop to prevent a Radio from being selected.</p>
+<div id="compoent-example-exkos4sh01" data-component-example class="my-8
+    overflow-hidden
+    rounded-xl
+    border
+    border-neutral-200
+    bg-white
+    dark:border-neutral-800
+    dark:bg-neutral-950"> <div class="flex
+      justify-center
+      items-center
+      min-h-20
+      bg-white
+      p-5
+      text-base
+      text-neutral-900
+      dark:bg-neutral-950
+      dark:text-neutral-100" data-component-preview> <astro-island uid="Z2ijv04" component-url="/_astro/dynamic-component-renderer.CBS3Ippf.js" component-export="default" renderer-url="/_astro/client.BgJ9siUT.js" props="{&quot;name&quot;:[0,&quot;Radio/examples/disabled&quot;]}" ssr client="only" opts="{&quot;name&quot;:&quot;DynamicComponentRenderer&quot;,&quot;value&quot;:&quot;solid-js&quot;}"></astro-island> </div> <div data-code class="border-t
+      border-neutral-200
+      dark:border-neutral-800"> <div class="relative"> <button type="button" data-copy class="absolute
+          top-3
+          z-10
+          ltr:right-3
+          rtl:left-3
+          rounded-md
+          bg-neutral-200
+          size-6
+          text-xl
+          grid
+          place-items-center
+          text-neutral-900
+          transition-colors
+          hover:bg-neutral-200/80
+          dark:bg-neutral-700/90
+          dark:text-white
+          dark:hover:bg-neutral-700"> <svg class="checkmark hidden " xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="m10 13.6l5.9-5.9q.275-.275.7-.275t.7.275t.275.7t-.275.7l-6.6 6.6q-.3.3-.7.3t-.7-.3l-2.6-2.6q-.275-.275-.275-.7t.275-.7t.7-.275t.7.275z"></path></svg> <svg class="copy " xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"></path><g fill="none" stroke="currentColor"><rect width="9" height="13" x="6.5" y="6.5" rx="1.5"></rect><path d="M8.5 6A1.5 1.5 0 0 1 10 4.5h6A1.5 1.5 0 0 1 17.5 6v10a1.5 1.5 0 0 1-1.5 1.5"></path></g></svg> </button> <div class="overflow-x-auto
+    text-lg
+    border-neutral-200
+    dark:border-neutral-800 rounded-xl " data-highlighted-code><pre class="shiki shiki-themes min-light min-dark" style="--shiki-light:#24292eff;--shiki-dark:#b392f0;--shiki-light-bg:#ffffff;--shiki-dark-bg:#1f1f1f" tabindex="0"><code><span class="line"><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">import</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0"> Radio </span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">from</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70"> "rocksolidjs/Radio"</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">;</span></span>
+<span class="line"><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">import</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0"> RadioGroup </span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">from</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70"> "rocksolidjs/RadioGroup"</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">;</span></span>
+<span class="line"><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">import</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0"> Label </span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">from</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70"> "rocksolidjs/Label"</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">;</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">export</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583"> default</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583"> function</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> Example</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">() {</span></span>
+<span class="line"><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">  return</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0"> (</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">    &#x3C;</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">RadioGroup</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">      name</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">=</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">"delivery"</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">      defaultValue</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">=</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">"standard"</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">      class</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">=</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">"flex flex-col gap-4"</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">    ></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">      &#x3C;</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">div</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> class</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">=</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">"flex items-center gap-1"</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">        &#x3C;</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">Radio</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> id</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">=</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">"standard"</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> value</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">=</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">"standard"</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0"> /></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">        &#x3C;</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">Label</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> for</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">=</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">"standard"</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">          Standard delivery</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">        &#x3C;/</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">Label</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">      &#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">div</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">      &#x3C;</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">div</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> class</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">=</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">"flex items-center gap-1"</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">        &#x3C;</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">Radio</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> id</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">=</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">"express"</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> value</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">=</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">"express"</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0"> /></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">        &#x3C;</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">Label</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> for</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">=</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">"express"</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">          Express delivery</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">        &#x3C;/</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">Label</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">      &#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">div</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">      &#x3C;</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">div</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> class</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">=</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">"flex items-center gap-1"</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">        &#x3C;</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">Radio</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">          id</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">=</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">"same-day"</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">          value</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">=</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">"same-day"</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">          disabled</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">        /></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">        &#x3C;</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">Label</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> for</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">=</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">"same-day"</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> disabled</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">          Same-day delivery</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">        &#x3C;/</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">Label</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">      &#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">div</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">    &#x3C;/</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">RadioGroup</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">  );</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> </div> </div> <script>(function(){const id = "exkos4sh01";
+const source = "import Radio from \"rocksolidjs/Radio\";\nimport RadioGroup from \"rocksolidjs/RadioGroup\";\nimport Label from \"rocksolidjs/Label\";\n\nexport default function Example() {\n  return (\n    \u003cRadioGroup\n      name=\"delivery\"\n      defaultValue=\"standard\"\n      class=\"flex flex-col gap-4\"\n    >\n      \u003cdiv class=\"flex items-center gap-1\">\n        \u003cRadio id=\"standard\" value=\"standard\" />\n        \u003cLabel for=\"standard\">\n          Standard delivery\n        \u003c/Label>\n      \u003c/div>\n      \u003cdiv class=\"flex items-center gap-1\">\n        \u003cRadio id=\"express\" value=\"express\" />\n        \u003cLabel for=\"express\">\n          Express delivery\n        \u003c/Label>\n      \u003c/div>\n      \u003cdiv class=\"flex items-center gap-1\">\n        \u003cRadio\n          id=\"same-day\"\n          value=\"same-day\"\n          disabled\n        />\n        \u003cLabel for=\"same-day\" disabled>\n          Same-day delivery\n        \u003c/Label>\n      \u003c/div>\n    \u003c/RadioGroup>\n  );\n}";
+
+  const copyBtn = document.querySelector(`#compoent-example-${id} [data-copy]`);
+  copyBtn?.addEventListener("click", async () => {
+    try {
+      const copyIcon = copyBtn.querySelector(".copy");
+      const checkmarkIcon = copyBtn.querySelector(".checkmark");
+      await navigator.clipboard.writeText(source);
+      copyIcon.classList.add("hidden");
+      checkmarkIcon.classList.remove("hidden");
+      copyBtn.disabled = true;
+      setTimeout(() => {
+        copyIcon.classList.remove("hidden");
+        checkmarkIcon.classList.add("hidden");
+        copyBtn.disabled = false;
+      }, 2000);
+    } catch (error) {
+      console.error("failed to copy to clipboard");
+    }
+  });
+})();</script>
+<h3 id="name">Name</h3>
+<p>When using <code>RadioGroup</code>, the group’s <code>name</code> can be used to provide the
+name for the group of Radio controls.</p>
+<div id="compoent-example-mgt758edcr9" data-component-example class="my-8
+    overflow-hidden
+    rounded-xl
+    border
+    border-neutral-200
+    bg-white
+    dark:border-neutral-800
+    dark:bg-neutral-950"> <div class="flex
+      justify-center
+      items-center
+      min-h-20
+      bg-white
+      p-5
+      text-base
+      text-neutral-900
+      dark:bg-neutral-950
+      dark:text-neutral-100" data-component-preview> <astro-island uid="Z1AYhhi" component-url="/_astro/dynamic-component-renderer.CBS3Ippf.js" component-export="default" renderer-url="/_astro/client.BgJ9siUT.js" props="{&quot;name&quot;:[0,&quot;Radio/examples/name&quot;]}" ssr client="only" opts="{&quot;name&quot;:&quot;DynamicComponentRenderer&quot;,&quot;value&quot;:&quot;solid-js&quot;}"></astro-island> </div> <div data-code class="border-t
+      border-neutral-200
+      dark:border-neutral-800"> <div class="relative"> <button type="button" data-copy class="absolute
+          top-3
+          z-10
+          ltr:right-3
+          rtl:left-3
+          rounded-md
+          bg-neutral-200
+          size-6
+          text-xl
+          grid
+          place-items-center
+          text-neutral-900
+          transition-colors
+          hover:bg-neutral-200/80
+          dark:bg-neutral-700/90
+          dark:text-white
+          dark:hover:bg-neutral-700"> <svg class="checkmark hidden " xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="m10 13.6l5.9-5.9q.275-.275.7-.275t.7.275t.275.7t-.275.7l-6.6 6.6q-.3.3-.7.3t-.7-.3l-2.6-2.6q-.275-.275-.275-.7t.275-.7t.7-.275t.7.275z"></path></svg> <svg class="copy " xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"></path><g fill="none" stroke="currentColor"><rect width="9" height="13" x="6.5" y="6.5" rx="1.5"></rect><path d="M8.5 6A1.5 1.5 0 0 1 10 4.5h6A1.5 1.5 0 0 1 17.5 6v10a1.5 1.5 0 0 1-1.5 1.5"></path></g></svg> </button> <div class="overflow-x-auto
+    text-lg
+    border-neutral-200
+    dark:border-neutral-800 rounded-xl " data-highlighted-code><pre class="shiki shiki-themes min-light min-dark" style="--shiki-light:#24292eff;--shiki-dark:#b392f0;--shiki-light-bg:#ffffff;--shiki-dark-bg:#1f1f1f" tabindex="0"><code><span class="line"><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">import</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0"> Radio </span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">from</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70"> "rocksolidjs/Radio"</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">;</span></span>
+<span class="line"><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">import</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0"> RadioGroup </span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">from</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70"> "rocksolidjs/RadioGroup"</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">;</span></span>
+<span class="line"><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">import</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0"> Label </span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">from</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70"> "rocksolidjs/Label"</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">;</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">export</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583"> default</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583"> function</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> Example</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">() {</span></span>
+<span class="line"><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">  return</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0"> (</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">    &#x3C;</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">RadioGroup</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">      class</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">=</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">"flex flex-col gap-4"</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">      name</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">=</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">"contact-method"</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">      defaultValue</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">=</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">"email"</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">    ></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">      &#x3C;</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">div</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> class</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">=</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">"flex items-center gap-1"</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">        &#x3C;</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">Radio</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> id</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">=</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">"contact-email"</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> value</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">=</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">"email"</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0"> /></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">        &#x3C;</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">Label</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> for</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">=</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">"contact-email"</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">>Email&#x3C;/</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">Label</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">      &#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">div</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">      &#x3C;</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">div</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> class</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">=</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">"flex items-center gap-1"</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">        &#x3C;</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">Radio</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> id</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">=</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">"contact-phone"</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> value</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">=</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">"phone"</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0"> /></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">        &#x3C;</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">Label</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> for</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">=</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">"contact-phone"</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">>Phone&#x3C;/</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">Label</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">      &#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">div</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">      &#x3C;</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">div</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> class</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">=</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">"flex items-center gap-1"</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">        &#x3C;</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">Radio</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> id</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">=</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">"contact-sms"</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> value</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">=</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">"sms"</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0"> /></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">        &#x3C;</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">Label</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> for</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">=</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">"contact-sms"</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">>SMS&#x3C;/</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">Label</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">      &#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">div</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">    &#x3C;/</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">RadioGroup</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">  );</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> </div> </div> <script>(function(){const id = "mgt758edcr9";
+const source = "import Radio from \"rocksolidjs/Radio\";\nimport RadioGroup from \"rocksolidjs/RadioGroup\";\nimport Label from \"rocksolidjs/Label\";\n\nexport default function Example() {\n  return (\n    \u003cRadioGroup\n      class=\"flex flex-col gap-4\"\n      name=\"contact-method\"\n      defaultValue=\"email\"\n    >\n      \u003cdiv class=\"flex items-center gap-1\">\n        \u003cRadio id=\"contact-email\" value=\"email\" />\n        \u003cLabel for=\"contact-email\">Email\u003c/Label>\n      \u003c/div>\n      \u003cdiv class=\"flex items-center gap-1\">\n        \u003cRadio id=\"contact-phone\" value=\"phone\" />\n        \u003cLabel for=\"contact-phone\">Phone\u003c/Label>\n      \u003c/div>\n      \u003cdiv class=\"flex items-center gap-1\">\n        \u003cRadio id=\"contact-sms\" value=\"sms\" />\n        \u003cLabel for=\"contact-sms\">SMS\u003c/Label>\n      \u003c/div>\n    \u003c/RadioGroup>\n  );\n}";
+
+  const copyBtn = document.querySelector(`#compoent-example-${id} [data-copy]`);
+  copyBtn?.addEventListener("click", async () => {
+    try {
+      const copyIcon = copyBtn.querySelector(".copy");
+      const checkmarkIcon = copyBtn.querySelector(".checkmark");
+      await navigator.clipboard.writeText(source);
+      copyIcon.classList.add("hidden");
+      checkmarkIcon.classList.remove("hidden");
+      copyBtn.disabled = true;
+      setTimeout(() => {
+        copyIcon.classList.remove("hidden");
+        checkmarkIcon.classList.add("hidden");
+        copyBtn.disabled = false;
+      }, 2000);
+    } catch (error) {
+      console.error("failed to copy to clipboard");
+    }
+  });
+})();</script>
+<h2 id="accessibility">Accessibility</h2>
+<ul>
+<li>Use <code>RadioGroup</code> for related Radio controls that represent a single
+choice.</li>
+<li>Provide a meaningful label or accessible name for each group.</li>
+<li>Give each Radio a meaningful <code>value</code>.</li>
+<li>Use <code>disabled</code> when an option is unavailable rather than removing
+useful context from the user.</li>
+<li>Do not rely on color alone to communicate selection or validation
+state.</li>
+<li>Ensure the selected state is visually distinguishable from the
+unselected state.</li>
+<li>Use <code>name</code> when integrating Radio controls with native form behavior.</li>
+</ul>
+<h2 id="api">API</h2>
+<h3 id="radiogroup">RadioGroup</h3>
+<p>The RadioGroup component manages a collection of Radio controls and
+ensures that a single value is selected at a time.</p>
+<div class="overflow-x-auto"> <table>
+<thead>
+<tr>
+<th>Prop</th>
+<th>Type</th>
+<th>Required</th>
+<th>Default</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>children</td>
+<td><code>JSXElement</code></td>
+<td>No</td>
+<td>—</td>
+<td>Radio components rendered as part of the group.</td>
+</tr>
+<tr>
+<td>class</td>
+<td><code>string</code></td>
+<td>No</td>
+<td>—</td>
+<td>Additional CSS class name(s) applied to the RadioGroup.</td>
+</tr>
+<tr>
+<td>defaultValue</td>
+<td><code>string</code></td>
+<td>No</td>
+<td>—</td>
+<td>Sets the initially selected Radio without controlling the group after initialization.</td>
+</tr>
+<tr>
+<td>name</td>
+<td><code>string</code></td>
+<td>No</td>
+<td>—</td>
+<td>Sets the name for the group of Radio controls.</td>
+</tr>
+<tr>
+<td>onChange</td>
+<td><code>(event: Event, value: string) =&gt; void</code></td>
+<td>No</td>
+<td>—</td>
+<td>Callback invoked when the selected Radio changes. Receives the native <code>Event</code> and the newly selected value.</td>
+</tr>
+<tr>
+<td>value</td>
+<td><code>string</code></td>
+<td>No</td>
+<td>—</td>
+<td>Controls the currently selected Radio value.</td>
+</tr>
+</tbody>
+</table> </div>
+<h3 id="radio-1">Radio</h3>
+<p>The Radio component provides an individual selectable option and can be
+used independently or as a child of RadioGroup.</p>
+<p>When a Radio is wrapped inside a RadioGroup, its <code>checked</code> state is
+determined by the group’s selected value.</p>
+<div class="overflow-x-auto"> <table>
+<thead>
+<tr>
+<th>Prop</th>
+<th>Type</th>
+<th>Required</th>
+<th>Default</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>class</td>
+<td><code>string</code></td>
+<td>No</td>
+<td>—</td>
+<td>Additional CSS classes applied to the Radio.</td>
+</tr>
+<tr>
+<td>checked</td>
+<td><code>boolean</code></td>
+<td>No</td>
+<td><code>false</code></td>
+<td>Controls whether the Radio is selected when it is used independently. When used inside a <code>RadioGroup</code>, the checked state is determined by the group’s selected value.</td>
+</tr>
+<tr>
+<td>color</td>
+<td><code>&quot;default&quot; | &quot;success&quot; | &quot;warning&quot; | &quot;info&quot; | &quot;error&quot;</code></td>
+<td>No</td>
+<td><code>&quot;default&quot;</code></td>
+<td>Controls the semantic color and styling of the Radio.</td>
+</tr>
+<tr>
+<td>defaultChecked</td>
+<td><code>boolean</code></td>
+<td>No</td>
+<td><code>false</code></td>
+<td>Controls the initial selected state of the Radio when it is used independently. When used inside a <code>RadioGroup</code>, the initial selected state is determined by the group’s selected value.</td>
+</tr>
+<tr>
+<td>disabled</td>
+<td><code>boolean</code></td>
+<td>No</td>
+<td><code>false</code></td>
+<td>Prevents the Radio from being selected or interacted with.</td>
+</tr>
+<tr>
+<td>id</td>
+<td><code>string</code></td>
+<td>No</td>
+<td>—</td>
+<td>Sets the <code>id</code> attribute of the Radio.</td>
+</tr>
+<tr>
+<td>name</td>
+<td><code>string</code></td>
+<td>No</td>
+<td>—</td>
+<td>Sets the name of the Radio control. When used inside a <code>RadioGroup</code>, the group’s <code>name</code> can be used for the group.</td>
+</tr>
+<tr>
+<td>onChange</td>
+<td><code>(event: Event) =&gt; void</code></td>
+<td>No</td>
+<td>—</td>
+<td>Callback invoked when the Radio’s checked state changes.</td>
+</tr>
+<tr>
+<td>size</td>
+<td><code>&quot;small&quot; | &quot;medium&quot; | &quot;large&quot;</code></td>
+<td>No</td>
+<td><code>&quot;medium&quot;</code></td>
+<td>Controls the visual size of the Radio.</td>
+</tr>
+<tr>
+<td>slotProps</td>
+<td><code>{ base?: object }</code></td>
+<td>No</td>
+<td>—</td>
+<td>Provides props for customizing the RadioGroup slots.<br/><ul><li><code>base</code> — Props for the base slot.</li></ul></td>
+</tr>
+<tr>
+<td>value</td>
+<td><code>string</code></td>
+<td>No</td>
+<td>—</td>
+<td>The value represented by the Radio. When used inside a <code>RadioGroup</code>, the group uses this value to determine the selected Radio.</td>
+</tr>
+</tbody>
+</table> </div>
+<h2 id="related-components">Related Components</h2>
+<ul>
+<li><a href="/components/checkbox/">Checkbox</a> — Use Checkbox when users can select
+multiple independent options.</li>
+<li><a href="/components/switch/">Switch</a> — Use Switch for toggling a setting or
+boolean state.</li>
+</ul> </div> </main> </div> </div> <script>
+    const root = document.documentElement;
+    function getTheme() {
+      return root.classList.contains("dark") ? "dark" : "light";
+    }
+
+    function updateThemeUI(theme) {
+      const dark = theme === "dark";
+      document
+        .querySelectorAll(".theme-light")
+        .forEach((element) => {
+          element.classList.toggle(
+            "hidden",
+            dark
+          );
+        });
+      document
+        .querySelectorAll(".theme-dark")
+        .forEach((element) => {
+          element.classList.toggle(
+            "hidden",
+            !dark
+          );
+        });
+      document
+        .querySelectorAll("[data-theme-label]")
+        .forEach((element) => {
+          element.textContent = dark
+            ? "Light theme"
+            : "Dark theme";
+        });
+    }
+
+    function toggleTheme() {
+      const theme = getTheme() === "dark" ? "light" : "dark";
+      root.classList.toggle("dark", theme === "dark");
+      localStorage.setItem("theme", theme);
+      updateThemeUI(theme);
+    }
+
+    document.addEventListener("click", (event) => {
+      const target = event.target;
+      if (
+        target instanceof Element &&
+        target.closest("[data-theme-toggle]")
+      ) {
+        toggleTheme();
+      }
+    });
+
+    updateThemeUI(getTheme());
+
+    const sidebar = document.querySelector("aside");
+    const overlay = document.querySelector("#sidebar-overlay");
+    const menuButton = document.querySelector("#mobile-menu-button");
+
+    function openSidebar() {
+      sidebar?.classList.remove("-translate-x-full");
+      sidebar?.classList.add("translate-x-0");
+      overlay?.classList.remove("pointer-events-none", "opacity-0");
+      overlay?.classList.add("pointer-events-auto", "opacity-100");
+      document.body.classList.add("overflow-hidden");
+    }
+
+    function closeSidebar() {
+      sidebar?.classList.remove("translate-x-0");
+      sidebar?.classList.add("-translate-x-full");
+      overlay?.classList.remove("pointer-events-auto", "opacity-100");
+      overlay?.classList.add("pointer-events-none", "opacity-0");
+      document.body.classList.remove("overflow-hidden");
+    }
+
+    menuButton?.addEventListener("click", openSidebar);
+    overlay?.addEventListener("click", closeSidebar);
+    sidebar?.querySelectorAll("a").forEach((link) => {
+      link.addEventListener("click", closeSidebar);
+    });
+
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "Escape") {
+        closeSidebar();
+      }
+    });
+  </script></body> </html>

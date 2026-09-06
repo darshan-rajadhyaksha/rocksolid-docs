@@ -1,0 +1,1 @@
+import{S as e,i as t,p as n,s as r}from"./web.Ck_zQUvi.js";import{t as i}from"./Input.DcZ6T0hJ.js";var a=n(`<div class=w-full>`);function o(){return(()=>{var n=t(a);return r(n,e(i,{fullWidth:!0,placeholder:`Enter your email address`,"aria-label":`Email address`})),n})()}export{o as default};
