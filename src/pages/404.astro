@@ -1,0 +1,44 @@
+---
+import BaseLayout from "@/layouts/base.astro";
+---
+
+<BaseLayout
+  title=""
+  metaTitle="This page doesn't exist"
+  description="The page you're looking for doesn't exist or may have been moved. Browse our component documentation to find what you need."
+>
+  <div class="max-w-2xl">
+    <p class="font-mono text-md text-neutral-500 dark:text-neutral-500">404</p>
+    <h1
+      class="mt-3 text-3xl font-semibold tracking-tight
+             text-neutral-900 dark:text-neutral-100"
+    >
+      Page not found
+    </h1>
+    <p
+      class="mt-3 max-w-xl text-sm leading-6
+             text-neutral-600 dark:text-neutral-400"
+    >
+      The component or documentation page you're looking for doesn't exist or
+      may have been moved.
+    </p>
+    <div class="mt-6 flex gap-3">
+      <a
+        href="/components/"
+        class="no-underline rounded-md bg-neutral-900 px-4 py-2 text-sm font-medium text-white
+               transition-colors hover:bg-neutral-800
+               dark:bg-neutral-100 dark:text-neutral-900 dark:hover:bg-neutral-200"
+      >
+        Browse components
+      </a>
+      <a
+        href="/"
+        class="no-underline rounded-md border border-neutral-200 px-4 py-2 text-sm font-medium
+               text-neutral-700 transition-colors hover:bg-neutral-100
+               dark:border-neutral-800 dark:text-neutral-300 dark:hover:bg-neutral-900"
+      >
+        Go Home
+    </a>
+    </div>
+  </div>
+</BaseLayout>

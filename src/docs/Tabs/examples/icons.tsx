@@ -10,19 +10,16 @@ export default function Example() {
         <Tabs class="mb-2">
           <Tab
             icon={<HomeIcon />}
-            iconPosition="top"
             label="Home"
             value="home"
           />
           <Tab
             icon={<ProfileIcon />}
-            iconPosition="start"
             label="Profile"
             value="profile"
           />
           <Tab
             icon={<SettingsIcon />}
-            iconPosition="end"
             label="Settings"
             value="settings"
           />

@@ -13,8 +13,9 @@ const isActive = (href: string) => {
 ---
 
 <aside
-  class="fixed inset-y-0 left-0 z-50 w-[280px]
-    -translate-x-full
+  class="fixed inset-y-0 z-50 w-[280px]
+    ltr:left-0 rtl:right-0
+    ltr:-translate-x-full rtl:translate-x-full
     ltr:border-r rtl:border-l
     border-neutral-200
     bg-white
@@ -27,7 +28,8 @@ const isActive = (href: string) => {
     lg:z-auto
     lg:h-screen
     lg:w-[260px]
-    lg:translate-x-0"
+    lg:ltr:translate-x-0
+    lg:rtl:translate-x-0"
 >
   <div
     class="flex h-full flex-col overflow-y-auto px-4 py-5"
@@ -44,8 +46,8 @@ const isActive = (href: string) => {
       </a>
       <p
         class="mt-1 text-xs
-          text-neutral-400
-          dark:text-neutral-600"
+          text-neutral-500
+          dark:text-neutral-500"
       >
         v0.1.1
       </p>

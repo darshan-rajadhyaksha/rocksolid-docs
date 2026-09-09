@@ -141,13 +141,15 @@ Import the RockSolid stylesheet into your application's global CSS file:
 <CodeBlock code={`
 @import "tailwindcss";
 @import "rocksolidjs/index.css";
-@source "../../node_modules/rocksolidjs";
+/* Provide the relative path of the rocksolidjs package */
+@source "../node_modules/rocksolidjs"; 
 `}
   class="border"
   lang="js"
 />
 
-The Tailwind CSS import should come before the RockSolid stylesheet.
+The Tailwind CSS import should come before the RockSolid stylesheet. 
+Add the package as a Tailwind source so its classes are detected.
 
 ## 7. Use RockSolid Components
 

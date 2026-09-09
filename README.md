@@ -1,12 +1,12 @@
-# SolidJS UI Components
+# RockSolid - SolidJS UI Components
 
 A collection of reusable, accessible, and customizable SolidJS UI components for modern web projects.
 
-![SolidJS UI Components](./public/og.png)
+![SolidJS UI Components](./public/assets/og.png)
 
 ## Links
 
-- [Introduction](./src/pages/introduction/)
-- [Installation](./src/pages/installation/)
-- [Components](./src/pages/components/)
-- [Customizations](./src/pages/customizations/)
+- [Introduction](https://rocksolidjs.com/introduction/)
+- [Installation](https://rocksolidjs.com/installation/)
+- [Components](https://rocksolidjs.com/components/)
+- [Customization](https://rocksolidjs.com/customization/)
