@@ -11,12 +11,13 @@
     ) {
       document.documentElement.classList.add("dark");
     }
-  </script><link rel="stylesheet" href="/_astro/base.HBy6anu7.css"></head> <body class="min-h-screen bg-white text-neutral-900
+  </script><link rel="stylesheet" href="/_astro/base.j5MurjQG.css"></head> <body class="min-h-screen bg-white text-neutral-900
     dark:bg-neutral-950 dark:text-neutral-100"> <!-- Mobile overlay --> <div id="sidebar-overlay" class="pointer-events-none fixed inset-0 z-40
       bg-black/40 opacity-0 transition-opacity
       duration-200 lg:hidden"></div> <div class="min-h-screen lg:grid
-      lg:grid-cols-[260px_minmax(0,1fr)]"> <aside class="fixed inset-y-0 left-0 z-50 w-[280px]
-    -translate-x-full
+      lg:grid-cols-[260px_minmax(0,1fr)]"> <aside class="fixed inset-y-0 z-50 w-[280px]
+    ltr:left-0 rtl:right-0
+    ltr:-translate-x-full rtl:translate-x-full
     ltr:border-r rtl:border-l
     border-neutral-200
     bg-white
@@ -29,13 +30,14 @@
     lg:z-auto
     lg:h-screen
     lg:w-[260px]
-    lg:translate-x-0"> <div class="flex h-full flex-col overflow-y-auto px-4 py-5"> <!-- Logo --> <div class="mb-6 px-2"> <a href="/" class="block text-lg font-bold tracking-tight
+    lg:ltr:translate-x-0
+    lg:rtl:translate-x-0"> <div class="flex h-full flex-col overflow-y-auto px-4 py-5"> <!-- Logo --> <div class="mb-6 px-2"> <a href="/" class="block text-lg font-bold tracking-tight
           text-neutral-950
           dark:text-neutral-50">
 RockSolid
 </a> <p class="mt-1 text-xs
-          text-neutral-400
-          dark:text-neutral-600">
+          text-neutral-500
+          dark:text-neutral-500">
 v0.1.1
 </p> </div> <!-- GitHub --> <div class="mb-7"> <a href="https://github.com/darshan-rajadhyaksha/rocksolid/" target="_blank" rel="noopener noreferrer" class="flex w-full items-center gap-3
           rounded-md px-3 py-2
@@ -98,7 +100,12 @@ v0.1.1
         dark:text-neutral-400
         dark:hover:bg-neutral-900
         dark:hover:text-neutral-100
-        lg:hidden"> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"> <line x1="4" y1="6" x2="20" y2="6"></line> <line x1="4" y1="12" x2="20" y2="12"></line> <line x1="4" y1="18" x2="20" y2="18"></line> </svg> </button> <!-- Title --> <div class="text-sm font-medium
+        lg:hidden"> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"> <line x1="4" y1="6" x2="20" y2="6"></line> <line x1="4" y1="12" x2="20" y2="12"></line> <line x1="4" y1="18" x2="20" y2="18"></line> </svg> </button> <!-- Title --> <div class="flex-1
+        ml-1.5 lg:ml-0
+        pe-2
+        leading-tight
+        text-sm 
+        font-medium
         text-neutral-600
         dark:text-neutral-400"> Label </div> <div class="flex gap-3"> <div class="flex rounded-md border border-neutral-200 bg-white p-0.5 dark:border-neutral-700 dark:bg-neutral-900"> <button id="ltr" type="button" class="rounded px-2 py-1 text-sm">
 LTR
@@ -123,7 +130,7 @@ RTL
 <p>The Label component provides an accessible text label for form controls.
 It can communicate the purpose of an input and indicate whether a field
 is required.</p>
-<div id="compoent-example-c523eiussjb" data-component-example class="my-8
+<div id="compoent-example-0c3ti2u2p2ps" data-component-example class="my-8
     overflow-hidden
     rounded-xl
     border
@@ -139,7 +146,7 @@ is required.</p>
       text-base
       text-neutral-900
       dark:bg-neutral-950
-      dark:text-neutral-100" data-component-preview> <style>astro-island,astro-slot,astro-static-slot{display:contents}</style><script>(()=>{var e=async t=>{await(await t())()};(self.Astro||(self.Astro={})).only=e;window.dispatchEvent(new Event("astro:only"));})();</script><script>(()=>{var g=Object.defineProperty;var w=(a,s,c)=>s in a?g(a,s,{enumerable:!0,configurable:!0,writable:!0,value:c}):a[s]=c;var l=(a,s,c)=>w(a,typeof s!="symbol"?s+"":s,c);var E=new Set(["__proto__","constructor","prototype"]);{let a={0:t=>y(t),1:t=>c(t),2:t=>new RegExp(t),3:t=>new Date(t),4:t=>new Map(c(t)),5:t=>new Set(c(t)),6:t=>BigInt(t),7:t=>new URL(t),8:t=>new Uint8Array(t),9:t=>new Uint16Array(t),10:t=>new Uint32Array(t),11:t=>Number.POSITIVE_INFINITY*t},s=t=>{let[p,e]=t;return p in a?a[p](e):void 0},c=t=>t.map(s),y=t=>typeof t!="object"||t===null?t:Object.fromEntries(Object.entries(t).map(([p,e])=>[p,s(e)]));class f extends HTMLElement{constructor(){super(...arguments);l(this,"Component");l(this,"hydrator");l(this,"hydrate",async()=>{var b;if(!this.hydrator||!this.isConnected)return;let e=(b=this.parentElement)==null?void 0:b.closest("astro-island[ssr]");if(e){e.addEventListener("astro:hydrate",this.hydrate,{once:!0});return}let r=this.querySelectorAll("astro-slot"),n={},d=this.querySelectorAll("template[data-astro-template]");for(let o of d){let i=o.closest(this.tagName);i!=null&&i.isSameNode(this)&&(n[o.getAttribute("data-astro-template")||"default"]=o.innerHTML,o.remove())}for(let o of r){let i=o.closest(this.tagName);i!=null&&i.isSameNode(this)&&(n[o.getAttribute("name")||"default"]=o.innerHTML)}let u;try{u=this.hasAttribute("props")?y(JSON.parse(this.getAttribute("props"))):{}}catch(o){let i=this.getAttribute("component-url")||"<unknown>",v=this.getAttribute("component-export");throw v&&(i+=` (export ${v})`),console.error(`[hydrate] Error parsing props for component ${i}`,this.getAttribute("props"),o),o}let h;await this.hydrator(this)(this.Component,u,n,{client:this.getAttribute("client")}),this.removeAttribute("ssr"),this.dispatchEvent(new CustomEvent("astro:hydrate"))});l(this,"unmount",()=>{this.isConnected||this.dispatchEvent(new CustomEvent("astro:unmount"))})}disconnectedCallback(){document.removeEventListener("astro:after-swap",this.unmount),document.addEventListener("astro:after-swap",this.unmount,{once:!0})}connectedCallback(){if(!this.hasAttribute("await-children")||document.readyState==="interactive"||document.readyState==="complete")this.childrenConnectedCallback();else{let e=()=>{document.removeEventListener("DOMContentLoaded",e),r.disconnect(),this.childrenConnectedCallback()},r=new MutationObserver(()=>{var n;((n=this.lastChild)==null?void 0:n.nodeType)===Node.COMMENT_NODE&&this.lastChild.nodeValue==="astro:end"&&(this.lastChild.remove(),e())});r.observe(this,{childList:!0}),document.addEventListener("DOMContentLoaded",e)}}async childrenConnectedCallback(){let e=this.getAttribute("before-hydration-url");e&&await import(e),this.start()}getRetryImportUrl(e){let r=new URL(e,document.baseURI);return r.searchParams.set("astro-retry",Date.now().toString()),r.toString()}async importWithRetry(e){try{return await import(e)}catch(r){return await new Promise(n=>setTimeout(n,1e3)),import(this.getRetryImportUrl(e))}}handleHydrationError(e){let r=this.getAttribute("component-url"),n=new CustomEvent("astro:hydration-error",{cancelable:!0,bubbles:!0,composed:!0,detail:{error:e,componentUrl:r}});this.dispatchEvent(n)&&console.error(`[astro-island] Error hydrating ${r}`,e)}async start(){let e=JSON.parse(this.getAttribute("opts")),r=this.getAttribute("client");if(Astro[r]===void 0){window.addEventListener(`astro:${r}`,()=>this.start(),{once:!0});return}try{await Astro[r](async()=>{let n=this.getAttribute("renderer-url");try{let[d,{default:u}]=await Promise.all([this.importWithRetry(this.getAttribute("component-url")),n?this.importWithRetry(n):Promise.resolve({default:()=>()=>{}})]),h=this.getAttribute("component-export")||"default";if(h.includes(".")){this.Component=d;for(let m of h.split(".")){if(E.has(m)||!this.Component||typeof this.Component!="object"&&typeof this.Component!="function"||!Object.hasOwn(this.Component,m))throw new Error(`Invalid component export path: ${h}`);this.Component=this.Component[m]}}else{if(E.has(h))throw new Error(`Invalid component export path: ${h}`);this.Component=d[h]}return this.hydrator=u,this.hydrate}catch(d){return this.handleHydrationError(d),()=>{}}},e,this)}catch(n){this.handleHydrationError(n)}}attributeChangedCallback(){this.hydrate()}}l(f,"observedAttributes",["props"]),customElements.get("astro-island")||customElements.define("astro-island",f)}})();</script><astro-island uid="Z2tajHA" component-url="/_astro/dynamic-component-renderer.CBS3Ippf.js" component-export="default" renderer-url="/_astro/client.BgJ9siUT.js" props="{&quot;name&quot;:[0,&quot;Label/examples/basic&quot;]}" ssr client="only" opts="{&quot;name&quot;:&quot;DynamicComponentRenderer&quot;,&quot;value&quot;:&quot;solid-js&quot;}"></astro-island> </div> <div data-code class="border-t
+      dark:text-neutral-100" data-component-preview> <style>astro-island,astro-slot,astro-static-slot{display:contents}</style><script>(()=>{var e=async t=>{await(await t())()};(self.Astro||(self.Astro={})).only=e;window.dispatchEvent(new Event("astro:only"));})();</script><script>(()=>{var g=Object.defineProperty;var w=(a,s,c)=>s in a?g(a,s,{enumerable:!0,configurable:!0,writable:!0,value:c}):a[s]=c;var l=(a,s,c)=>w(a,typeof s!="symbol"?s+"":s,c);var E=new Set(["__proto__","constructor","prototype"]);{let a={0:t=>y(t),1:t=>c(t),2:t=>new RegExp(t),3:t=>new Date(t),4:t=>new Map(c(t)),5:t=>new Set(c(t)),6:t=>BigInt(t),7:t=>new URL(t),8:t=>new Uint8Array(t),9:t=>new Uint16Array(t),10:t=>new Uint32Array(t),11:t=>Number.POSITIVE_INFINITY*t},s=t=>{let[p,e]=t;return p in a?a[p](e):void 0},c=t=>t.map(s),y=t=>typeof t!="object"||t===null?t:Object.fromEntries(Object.entries(t).map(([p,e])=>[p,s(e)]));class f extends HTMLElement{constructor(){super(...arguments);l(this,"Component");l(this,"hydrator");l(this,"hydrate",async()=>{var b;if(!this.hydrator||!this.isConnected)return;let e=(b=this.parentElement)==null?void 0:b.closest("astro-island[ssr]");if(e){e.addEventListener("astro:hydrate",this.hydrate,{once:!0});return}let r=this.querySelectorAll("astro-slot"),n={},d=this.querySelectorAll("template[data-astro-template]");for(let o of d){let i=o.closest(this.tagName);i!=null&&i.isSameNode(this)&&(n[o.getAttribute("data-astro-template")||"default"]=o.innerHTML,o.remove())}for(let o of r){let i=o.closest(this.tagName);i!=null&&i.isSameNode(this)&&(n[o.getAttribute("name")||"default"]=o.innerHTML)}let u;try{u=this.hasAttribute("props")?y(JSON.parse(this.getAttribute("props"))):{}}catch(o){let i=this.getAttribute("component-url")||"<unknown>",v=this.getAttribute("component-export");throw v&&(i+=` (export ${v})`),console.error(`[hydrate] Error parsing props for component ${i}`,this.getAttribute("props"),o),o}let h;await this.hydrator(this)(this.Component,u,n,{client:this.getAttribute("client")}),this.removeAttribute("ssr"),this.dispatchEvent(new CustomEvent("astro:hydrate"))});l(this,"unmount",()=>{this.isConnected||this.dispatchEvent(new CustomEvent("astro:unmount"))})}disconnectedCallback(){document.removeEventListener("astro:after-swap",this.unmount),document.addEventListener("astro:after-swap",this.unmount,{once:!0})}connectedCallback(){if(!this.hasAttribute("await-children")||document.readyState==="interactive"||document.readyState==="complete")this.childrenConnectedCallback();else{let e=()=>{document.removeEventListener("DOMContentLoaded",e),r.disconnect(),this.childrenConnectedCallback()},r=new MutationObserver(()=>{var n;((n=this.lastChild)==null?void 0:n.nodeType)===Node.COMMENT_NODE&&this.lastChild.nodeValue==="astro:end"&&(this.lastChild.remove(),e())});r.observe(this,{childList:!0}),document.addEventListener("DOMContentLoaded",e)}}async childrenConnectedCallback(){let e=this.getAttribute("before-hydration-url");e&&await import(e),this.start()}getRetryImportUrl(e){let r=new URL(e,document.baseURI);return r.searchParams.set("astro-retry",Date.now().toString()),r.toString()}async importWithRetry(e){try{return await import(e)}catch(r){return await new Promise(n=>setTimeout(n,1e3)),import(this.getRetryImportUrl(e))}}handleHydrationError(e){let r=this.getAttribute("component-url"),n=new CustomEvent("astro:hydration-error",{cancelable:!0,bubbles:!0,composed:!0,detail:{error:e,componentUrl:r}});this.dispatchEvent(n)&&console.error(`[astro-island] Error hydrating ${r}`,e)}async start(){let e=JSON.parse(this.getAttribute("opts")),r=this.getAttribute("client");if(Astro[r]===void 0){window.addEventListener(`astro:${r}`,()=>this.start(),{once:!0});return}try{await Astro[r](async()=>{let n=this.getAttribute("renderer-url");try{let[d,{default:u}]=await Promise.all([this.importWithRetry(this.getAttribute("component-url")),n?this.importWithRetry(n):Promise.resolve({default:()=>()=>{}})]),h=this.getAttribute("component-export")||"default";if(h.includes(".")){this.Component=d;for(let m of h.split(".")){if(E.has(m)||!this.Component||typeof this.Component!="object"&&typeof this.Component!="function"||!Object.hasOwn(this.Component,m))throw new Error(`Invalid component export path: ${h}`);this.Component=this.Component[m]}}else{if(E.has(h))throw new Error(`Invalid component export path: ${h}`);this.Component=d[h]}return this.hydrator=u,this.hydrate}catch(d){return this.handleHydrationError(d),()=>{}}},e,this)}catch(n){this.handleHydrationError(n)}}attributeChangedCallback(){this.hydrate()}}l(f,"observedAttributes",["props"]),customElements.get("astro-island")||customElements.define("astro-island",f)}})();</script><astro-island uid="Z2tajHA" component-url="/_astro/dynamic-component-renderer.D9U5PMa1.js" component-export="default" renderer-url="/_astro/client.BgJ9siUT.js" props="{&quot;name&quot;:[0,&quot;Label/examples/basic&quot;]}" ssr client="only" opts="{&quot;name&quot;:&quot;DynamicComponentRenderer&quot;,&quot;value&quot;:&quot;solid-js&quot;}"></astro-island> </div> <div data-code class="border-t
       border-neutral-200
       dark:border-neutral-800"> <div class="relative"> <button type="button" data-copy class="absolute
           top-3
@@ -173,7 +180,7 @@ is required.</p>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">      /></span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">    &#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">div</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">  );</span></span>
-<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> </div> </div> <script>(function(){const id = "c523eiussjb";
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> </div> </div> <script>(function(){const id = "0c3ti2u2p2ps";
 const source = "import Input from \"rocksolidjs/Input\";\nimport Label from \"rocksolidjs/Label\";\n\nexport default function Example() {\n  return (\n    \u003cdiv class=\"flex flex-col gap-1\">\n      \u003cLabel for=\"name\">Name\u003c/Label>\n      \u003cInput\n        id=\"name\"\n        placeholder=\"Enter your name\"\n      />\n    \u003c/div>\n  );\n}";
 
   const copyBtn = document.querySelector(`#compoent-example-${id} [data-copy]`);
@@ -199,7 +206,7 @@ const source = "import Input from \"rocksolidjs/Input\";\nimport Label from \"ro
 <h3 id="colors">Colors</h3>
 <p>Use the <code>color</code> prop to communicate the semantic state or meaning of
 the label.</p>
-<div id="compoent-example-139bfppgtv2" data-component-example class="my-8
+<div id="compoent-example-iaa4n2omxc" data-component-example class="my-8
     overflow-hidden
     rounded-xl
     border
@@ -215,7 +222,7 @@ the label.</p>
       text-base
       text-neutral-900
       dark:bg-neutral-950
-      dark:text-neutral-100" data-component-preview> <astro-island uid="Z1guoVj" component-url="/_astro/dynamic-component-renderer.CBS3Ippf.js" component-export="default" renderer-url="/_astro/client.BgJ9siUT.js" props="{&quot;name&quot;:[0,&quot;Label/examples/colors&quot;]}" ssr client="only" opts="{&quot;name&quot;:&quot;DynamicComponentRenderer&quot;,&quot;value&quot;:&quot;solid-js&quot;}"></astro-island> </div> <div data-code class="border-t
+      dark:text-neutral-100" data-component-preview> <astro-island uid="Z1guoVj" component-url="/_astro/dynamic-component-renderer.D9U5PMa1.js" component-export="default" renderer-url="/_astro/client.BgJ9siUT.js" props="{&quot;name&quot;:[0,&quot;Label/examples/colors&quot;]}" ssr client="only" opts="{&quot;name&quot;:&quot;DynamicComponentRenderer&quot;,&quot;value&quot;:&quot;solid-js&quot;}"></astro-island> </div> <div data-code class="border-t
       border-neutral-200
       dark:border-neutral-800"> <div class="relative"> <button type="button" data-copy class="absolute
           top-3
@@ -299,7 +306,7 @@ the label.</p>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">      &#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">div</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">    &#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">div</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">  );</span></span>
-<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> </div> </div> <script>(function(){const id = "139bfppgtv2";
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> </div> </div> <script>(function(){const id = "iaa4n2omxc";
 const source = "import Input from \"rocksolidjs/Input\";\nimport Label from \"rocksolidjs/Label\";\n\nexport default function Example() {\n  return (\n    \u003cdiv class=\"flex flex-col gap-4\">\n      \u003cdiv class=\"flex flex-col gap-1\">\n        \u003cLabel for=\"default-email\" color=\"default\">\n          Email address\n        \u003c/Label>\n        \u003cInput\n          id=\"default-email\"\n          type=\"email\"\n          placeholder=\"you@example.com\"\n          fullWidth\n        />\n      \u003c/div>\n      \u003cdiv class=\"flex flex-col gap-1\">\n        \u003cLabel for=\"success-email\" color=\"success\">\n          Email address\n        \u003c/Label>\n        \u003cInput\n          id=\"success-email\"\n          type=\"email\"\n          value=\"john@example.com\"\n          fullWidth\n        />\n      \u003c/div>\n      \u003cdiv class=\"flex flex-col gap-1\">\n        \u003cLabel for=\"warning-email\" color=\"warning\">\n          Email address\n        \u003c/Label>\n        \u003cInput\n          id=\"warning-email\"\n          type=\"email\"\n          value=\"john@example\"\n          fullWidth\n        />\n      \u003c/div>\n      \u003cdiv class=\"flex flex-col gap-1\">\n        \u003cLabel for=\"info-email\" color=\"info\">\n          Email address\n        \u003c/Label>\n        \u003cInput\n          id=\"info-email\"\n          type=\"email\"\n          placeholder=\"Enter your email\"\n          fullWidth\n        />\n      \u003c/div>\n      \u003cdiv class=\"flex flex-col gap-1\">\n        \u003cLabel for=\"error-email\" color=\"error\">\n          Email address\n        \u003c/Label>\n        \u003cInput\n          id=\"error-email\"\n          type=\"email\"\n          value=\"invalid-email\"\n          fullWidth\n        />\n      \u003c/div>\n    \u003c/div>\n  );\n}";
 
   const copyBtn = document.querySelector(`#compoent-example-${id} [data-copy]`);
@@ -323,7 +330,7 @@ const source = "import Input from \"rocksolidjs/Input\";\nimport Label from \"ro
 })();</script>
 <h3 id="sizes">Sizes</h3>
 <p>Use the <code>size</code> prop to control the visual size of the label.</p>
-<div id="compoent-example-ulo38wm6b5h" data-component-example class="my-8
+<div id="compoent-example-wuem8m2dgc" data-component-example class="my-8
     overflow-hidden
     rounded-xl
     border
@@ -339,7 +346,7 @@ const source = "import Input from \"rocksolidjs/Input\";\nimport Label from \"ro
       text-base
       text-neutral-900
       dark:bg-neutral-950
-      dark:text-neutral-100" data-component-preview> <astro-island uid="y6icT" component-url="/_astro/dynamic-component-renderer.CBS3Ippf.js" component-export="default" renderer-url="/_astro/client.BgJ9siUT.js" props="{&quot;name&quot;:[0,&quot;Label/examples/sizes&quot;]}" ssr client="only" opts="{&quot;name&quot;:&quot;DynamicComponentRenderer&quot;,&quot;value&quot;:&quot;solid-js&quot;}"></astro-island> </div> <div data-code class="border-t
+      dark:text-neutral-100" data-component-preview> <astro-island uid="y6icT" component-url="/_astro/dynamic-component-renderer.D9U5PMa1.js" component-export="default" renderer-url="/_astro/client.BgJ9siUT.js" props="{&quot;name&quot;:[0,&quot;Label/examples/sizes&quot;]}" ssr client="only" opts="{&quot;name&quot;:&quot;DynamicComponentRenderer&quot;,&quot;value&quot;:&quot;solid-js&quot;}"></astro-island> </div> <div data-code class="border-t
       border-neutral-200
       dark:border-neutral-800"> <div class="relative"> <button type="button" data-copy class="absolute
           top-3
@@ -398,7 +405,7 @@ const source = "import Input from \"rocksolidjs/Input\";\nimport Label from \"ro
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">      &#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">div</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">    &#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">div</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">  );</span></span>
-<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> </div> </div> <script>(function(){const id = "ulo38wm6b5h";
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> </div> </div> <script>(function(){const id = "wuem8m2dgc";
 const source = "import Input from \"rocksolidjs/Input\";\nimport Label from \"rocksolidjs/Label\";\n\nexport default function Example() {\n  return (\n    \u003cdiv class=\"flex flex-col gap-4\">\n      \u003cdiv class=\"flex flex-col gap-1\">\n        \u003cLabel for=\"small-name\" size=\"small\">\n          Name\n        \u003c/Label>\n        \u003cInput\n          id=\"small-name\"\n          size=\"small\"\n          placeholder=\"Small input\"\n        />\n      \u003c/div>\n      \u003cdiv class=\"flex flex-col gap-1\">\n        \u003cLabel for=\"medium-name\" size=\"medium\">\n          Name\n        \u003c/Label>\n        \u003cInput\n          id=\"medium-name\"\n          size=\"medium\"\n          placeholder=\"Medium input\"\n        />\n      \u003c/div>\n      \u003cdiv class=\"flex flex-col gap-1\">\n        \u003cLabel for=\"large-name\" size=\"large\">\n          Name\n        \u003c/Label>\n        \u003cInput\n          id=\"large-name\"\n          size=\"large\"\n          placeholder=\"Large input\"\n        />\n      \u003c/div>\n    \u003c/div>\n  );\n}";
 
   const copyBtn = document.querySelector(`#compoent-example-${id} [data-copy]`);
@@ -423,7 +430,7 @@ const source = "import Input from \"rocksolidjs/Input\";\nimport Label from \"ro
 <h3 id="required">Required</h3>
 <p>Use the <code>required</code> prop to indicate that the associated form field is
 required.</p>
-<div id="compoent-example-xii80sdr5b" data-component-example class="my-8
+<div id="compoent-example-t5a1hmge88p" data-component-example class="my-8
     overflow-hidden
     rounded-xl
     border
@@ -439,7 +446,7 @@ required.</p>
       text-base
       text-neutral-900
       dark:bg-neutral-950
-      dark:text-neutral-100" data-component-preview> <astro-island uid="Z2bDLly" component-url="/_astro/dynamic-component-renderer.CBS3Ippf.js" component-export="default" renderer-url="/_astro/client.BgJ9siUT.js" props="{&quot;name&quot;:[0,&quot;Label/examples/required&quot;]}" ssr client="only" opts="{&quot;name&quot;:&quot;DynamicComponentRenderer&quot;,&quot;value&quot;:&quot;solid-js&quot;}"></astro-island> </div> <div data-code class="border-t
+      dark:text-neutral-100" data-component-preview> <astro-island uid="Z2bDLly" component-url="/_astro/dynamic-component-renderer.D9U5PMa1.js" component-export="default" renderer-url="/_astro/client.BgJ9siUT.js" props="{&quot;name&quot;:[0,&quot;Label/examples/required&quot;]}" ssr client="only" opts="{&quot;name&quot;:&quot;DynamicComponentRenderer&quot;,&quot;value&quot;:&quot;solid-js&quot;}"></astro-island> </div> <div data-code class="border-t
       border-neutral-200
       dark:border-neutral-800"> <div class="relative"> <button type="button" data-copy class="absolute
           top-3
@@ -476,7 +483,7 @@ required.</p>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">      /></span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">    &#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">div</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">  );</span></span>
-<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> </div> </div> <script>(function(){const id = "xii80sdr5b";
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> </div> </div> <script>(function(){const id = "t5a1hmge88p";
 const source = "import Input from \"rocksolidjs/Input\";\nimport Label from \"rocksolidjs/Label\";\n\nexport default function Example() {\n  return (\n    \u003cdiv class=\"flex flex-col gap-1\">\n      \u003cLabel for=\"email\" required>\n        Email address\n      \u003c/Label>\n      \u003cInput\n        id=\"email\"\n        type=\"email\"\n        placeholder=\"you@example.com\"\n      />\n    \u003c/div>\n  );\n}";
 
   const copyBtn = document.querySelector(`#compoent-example-${id} [data-copy]`);
@@ -502,7 +509,7 @@ const source = "import Input from \"rocksolidjs/Input\";\nimport Label from \"ro
 <h3 id="associating-a-label-with-a-form-control">Associating a Label with a Form Control</h3>
 <p>Use the <code>for</code> prop to associate the Label with a form control.</p>
 <p>The value of <code>for</code> should match the <code>id</code> of the associated form control.</p>
-<div id="compoent-example-awwh7mivncd" data-component-example class="my-8
+<div id="compoent-example-qoyylll6u6" data-component-example class="my-8
     overflow-hidden
     rounded-xl
     border
@@ -518,7 +525,7 @@ const source = "import Input from \"rocksolidjs/Input\";\nimport Label from \"ro
       text-base
       text-neutral-900
       dark:bg-neutral-950
-      dark:text-neutral-100" data-component-preview> <astro-island uid="AdsI9" component-url="/_astro/dynamic-component-renderer.CBS3Ippf.js" component-export="default" renderer-url="/_astro/client.BgJ9siUT.js" props="{&quot;name&quot;:[0,&quot;Label/examples/association&quot;]}" ssr client="only" opts="{&quot;name&quot;:&quot;DynamicComponentRenderer&quot;,&quot;value&quot;:&quot;solid-js&quot;}"></astro-island> </div> <div data-code class="border-t
+      dark:text-neutral-100" data-component-preview> <astro-island uid="AdsI9" component-url="/_astro/dynamic-component-renderer.D9U5PMa1.js" component-export="default" renderer-url="/_astro/client.BgJ9siUT.js" props="{&quot;name&quot;:[0,&quot;Label/examples/association&quot;]}" ssr client="only" opts="{&quot;name&quot;:&quot;DynamicComponentRenderer&quot;,&quot;value&quot;:&quot;solid-js&quot;}"></astro-island> </div> <div data-code class="border-t
       border-neutral-200
       dark:border-neutral-800"> <div class="relative"> <button type="button" data-copy class="absolute
           top-3
@@ -554,7 +561,7 @@ const source = "import Input from \"rocksolidjs/Input\";\nimport Label from \"ro
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">      /></span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">    &#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">div</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">  );</span></span>
-<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> </div> </div> <script>(function(){const id = "awwh7mivncd";
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> </div> </div> <script>(function(){const id = "qoyylll6u6";
 const source = "import Input from \"rocksolidjs/Input\";\nimport Label from \"rocksolidjs/Label\";\n\nexport default function Example() {\n  return (\n    \u003cdiv class=\"flex flex-col gap-1\">\n      \u003cLabel for=\"username\">\n        Username\n      \u003c/Label>\n      \u003cInput\n        id=\"username\"\n        placeholder=\"Enter your username\"\n      />\n    \u003c/div>\n  );\n}";
 
   const copyBtn = document.querySelector(`#compoent-example-${id} [data-copy]`);
@@ -586,7 +593,7 @@ accessibility by allowing users to identify the purpose of the control
 and activate the control by interacting with its label.</p>
 <h3 id="disabled">Disabled</h3>
 <p>Use the <code>disabled</code> prop to indicate that the label is disabled.</p>
-<div id="compoent-example-mc6ojr2nsp" data-component-example class="my-8
+<div id="compoent-example-jvj4wus1fir" data-component-example class="my-8
     overflow-hidden
     rounded-xl
     border
@@ -602,7 +609,7 @@ and activate the control by interacting with its label.</p>
       text-base
       text-neutral-900
       dark:bg-neutral-950
-      dark:text-neutral-100" data-component-preview> <astro-island uid="Z1169GM" component-url="/_astro/dynamic-component-renderer.CBS3Ippf.js" component-export="default" renderer-url="/_astro/client.BgJ9siUT.js" props="{&quot;name&quot;:[0,&quot;Label/examples/disabled&quot;]}" ssr client="only" opts="{&quot;name&quot;:&quot;DynamicComponentRenderer&quot;,&quot;value&quot;:&quot;solid-js&quot;}"></astro-island> </div> <div data-code class="border-t
+      dark:text-neutral-100" data-component-preview> <astro-island uid="Z1169GM" component-url="/_astro/dynamic-component-renderer.D9U5PMa1.js" component-export="default" renderer-url="/_astro/client.BgJ9siUT.js" props="{&quot;name&quot;:[0,&quot;Label/examples/disabled&quot;]}" ssr client="only" opts="{&quot;name&quot;:&quot;DynamicComponentRenderer&quot;,&quot;value&quot;:&quot;solid-js&quot;}"></astro-island> </div> <div data-code class="border-t
       border-neutral-200
       dark:border-neutral-800"> <div class="relative"> <button type="button" data-copy class="absolute
           top-3
@@ -637,7 +644,7 @@ and activate the control by interacting with its label.</p>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">      /></span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">    &#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">div</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">  );</span></span>
-<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> </div> </div> <script>(function(){const id = "mc6ojr2nsp";
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> </div> </div> <script>(function(){const id = "jvj4wus1fir";
 const source = "import Input from \"rocksolidjs/Input\";\nimport Label from \"rocksolidjs/Label\";\n\nexport default function Example() {\n  return (\n    \u003cdiv class=\"flex flex-col gap-1\">\n      \u003cLabel for=\"company\" disabled>Company\u003c/Label>\n      \u003cInput\n        id=\"company\"\n        placeholder=\"Enter your company\"\n        disabled\n      />\n    \u003c/div>\n  );\n}";
 
   const copyBtn = document.querySelector(`#compoent-example-${id} [data-copy]`);
@@ -661,7 +668,7 @@ const source = "import Input from \"rocksolidjs/Input\";\nimport Label from \"ro
 })();</script>
 <h3 id="truncation">Truncation</h3>
 <p>Use the <code>truncate</code> prop to control whether long label text is truncated.</p>
-<div id="compoent-example-6cz8pc6g16m" data-component-example class="my-8
+<div id="compoent-example-4y2z4ghuh2x" data-component-example class="my-8
     overflow-hidden
     rounded-xl
     border
@@ -677,7 +684,7 @@ const source = "import Input from \"rocksolidjs/Input\";\nimport Label from \"ro
       text-base
       text-neutral-900
       dark:bg-neutral-950
-      dark:text-neutral-100" data-component-preview> <astro-island uid="1kPXdH" component-url="/_astro/dynamic-component-renderer.CBS3Ippf.js" component-export="default" renderer-url="/_astro/client.BgJ9siUT.js" props="{&quot;name&quot;:[0,&quot;Label/examples/truncate&quot;]}" ssr client="only" opts="{&quot;name&quot;:&quot;DynamicComponentRenderer&quot;,&quot;value&quot;:&quot;solid-js&quot;}"></astro-island> </div> <div data-code class="border-t
+      dark:text-neutral-100" data-component-preview> <astro-island uid="1kPXdH" component-url="/_astro/dynamic-component-renderer.D9U5PMa1.js" component-export="default" renderer-url="/_astro/client.BgJ9siUT.js" props="{&quot;name&quot;:[0,&quot;Label/examples/truncate&quot;]}" ssr client="only" opts="{&quot;name&quot;:&quot;DynamicComponentRenderer&quot;,&quot;value&quot;:&quot;solid-js&quot;}"></astro-island> </div> <div data-code class="border-t
       border-neutral-200
       dark:border-neutral-800"> <div class="relative"> <button type="button" data-copy class="absolute
           top-3
@@ -726,7 +733,7 @@ const source = "import Input from \"rocksolidjs/Input\";\nimport Label from \"ro
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">      &#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">div</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">    &#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">div</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">  );</span></span>
-<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> </div> </div> <script>(function(){const id = "6cz8pc6g16m";
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> </div> </div> <script>(function(){const id = "4y2z4ghuh2x";
 const source = "import Input from \"rocksolidjs/Input\";\nimport Label from \"rocksolidjs/Label\";\n\nexport default function Example() {\n  return (\n    \u003cdiv class=\"flex flex-col gap-4\">\n      \u003cdiv class=\"w-64\">\n        \u003cLabel for=\"address-1\" class=\"mb-1\" truncate required>\n          Complete residential or business address\n        \u003c/Label>\n        \u003cInput\n          id=\"address-1\"\n          placeholder=\"Enter your address\"\n          fullWidth\n        />\n      \u003c/div>\n      \u003cdiv class=\"w-64\">\n        \u003cLabel for=\"address-2\" class=\"mb-1\">\n          Complete residential or business address\n        \u003c/Label>\n        \u003cInput\n          id=\"address-2\"\n          placeholder=\"Enter your address\"\n          fullWidth\n        />\n      \u003c/div>\n    \u003c/div>\n  );\n}";
 
   const copyBtn = document.querySelector(`#compoent-example-${id} [data-copy]`);
@@ -895,7 +902,8 @@ field indicators, text truncation, and association with form controls.</p>
     const menuButton = document.querySelector("#mobile-menu-button");
 
     function openSidebar() {
-      sidebar?.classList.remove("-translate-x-full");
+      sidebar?.classList.remove("ltr:-translate-x-full");
+      sidebar?.classList.remove("rtl:translate-x-full");
       sidebar?.classList.add("translate-x-0");
       overlay?.classList.remove("pointer-events-none", "opacity-0");
       overlay?.classList.add("pointer-events-auto", "opacity-100");
@@ -904,7 +912,8 @@ field indicators, text truncation, and association with form controls.</p>
 
     function closeSidebar() {
       sidebar?.classList.remove("translate-x-0");
-      sidebar?.classList.add("-translate-x-full");
+      sidebar?.classList.add("ltr:-translate-x-full");
+      sidebar?.classList.add("rtl:translate-x-full");
       overlay?.classList.remove("pointer-events-auto", "opacity-100");
       overlay?.classList.add("pointer-events-none", "opacity-0");
       document.body.classList.remove("overflow-hidden");

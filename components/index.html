@@ -11,12 +11,13 @@
     ) {
       document.documentElement.classList.add("dark");
     }
-  </script><link rel="stylesheet" href="/_astro/base.HBy6anu7.css"></head> <body class="min-h-screen bg-white text-neutral-900
+  </script><link rel="stylesheet" href="/_astro/base.j5MurjQG.css"></head> <body class="min-h-screen bg-white text-neutral-900
     dark:bg-neutral-950 dark:text-neutral-100"> <!-- Mobile overlay --> <div id="sidebar-overlay" class="pointer-events-none fixed inset-0 z-40
       bg-black/40 opacity-0 transition-opacity
       duration-200 lg:hidden"></div> <div class="min-h-screen lg:grid
-      lg:grid-cols-[260px_minmax(0,1fr)]"> <aside class="fixed inset-y-0 left-0 z-50 w-[280px]
-    -translate-x-full
+      lg:grid-cols-[260px_minmax(0,1fr)]"> <aside class="fixed inset-y-0 z-50 w-[280px]
+    ltr:left-0 rtl:right-0
+    ltr:-translate-x-full rtl:translate-x-full
     ltr:border-r rtl:border-l
     border-neutral-200
     bg-white
@@ -29,13 +30,14 @@
     lg:z-auto
     lg:h-screen
     lg:w-[260px]
-    lg:translate-x-0"> <div class="flex h-full flex-col overflow-y-auto px-4 py-5"> <!-- Logo --> <div class="mb-6 px-2"> <a href="/" class="block text-lg font-bold tracking-tight
+    lg:ltr:translate-x-0
+    lg:rtl:translate-x-0"> <div class="flex h-full flex-col overflow-y-auto px-4 py-5"> <!-- Logo --> <div class="mb-6 px-2"> <a href="/" class="block text-lg font-bold tracking-tight
           text-neutral-950
           dark:text-neutral-50">
 RockSolid
 </a> <p class="mt-1 text-xs
-          text-neutral-400
-          dark:text-neutral-600">
+          text-neutral-500
+          dark:text-neutral-500">
 v0.1.1
 </p> </div> <!-- GitHub --> <div class="mb-7"> <a href="https://github.com/darshan-rajadhyaksha/rocksolid/" target="_blank" rel="noopener noreferrer" class="flex w-full items-center gap-3
           rounded-md px-3 py-2
@@ -98,7 +100,12 @@ v0.1.1
         dark:text-neutral-400
         dark:hover:bg-neutral-900
         dark:hover:text-neutral-100
-        lg:hidden"> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"> <line x1="4" y1="6" x2="20" y2="6"></line> <line x1="4" y1="12" x2="20" y2="12"></line> <line x1="4" y1="18" x2="20" y2="18"></line> </svg> </button> <!-- Title --> <div class="text-sm font-medium
+        lg:hidden"> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"> <line x1="4" y1="6" x2="20" y2="6"></line> <line x1="4" y1="12" x2="20" y2="12"></line> <line x1="4" y1="18" x2="20" y2="18"></line> </svg> </button> <!-- Title --> <div class="flex-1
+        ml-1.5 lg:ml-0
+        pe-2
+        leading-tight
+        text-sm 
+        font-medium
         text-neutral-600
         dark:text-neutral-400"> Components </div> <div class="flex gap-3"> <div class="flex rounded-md border border-neutral-200 bg-white p-0.5 dark:border-neutral-700 dark:bg-neutral-900"> <button id="ltr" type="button" class="rounded px-2 py-1 text-sm">
 LTR
@@ -603,7 +610,8 @@ RTL
     const menuButton = document.querySelector("#mobile-menu-button");
 
     function openSidebar() {
-      sidebar?.classList.remove("-translate-x-full");
+      sidebar?.classList.remove("ltr:-translate-x-full");
+      sidebar?.classList.remove("rtl:translate-x-full");
       sidebar?.classList.add("translate-x-0");
       overlay?.classList.remove("pointer-events-none", "opacity-0");
       overlay?.classList.add("pointer-events-auto", "opacity-100");
@@ -612,7 +620,8 @@ RTL
 
     function closeSidebar() {
       sidebar?.classList.remove("translate-x-0");
-      sidebar?.classList.add("-translate-x-full");
+      sidebar?.classList.add("ltr:-translate-x-full");
+      sidebar?.classList.add("rtl:translate-x-full");
       overlay?.classList.remove("pointer-events-auto", "opacity-100");
       overlay?.classList.add("pointer-events-none", "opacity-0");
       document.body.classList.remove("overflow-hidden");

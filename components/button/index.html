@@ -11,12 +11,13 @@
     ) {
       document.documentElement.classList.add("dark");
     }
-  </script><link rel="stylesheet" href="/_astro/base.HBy6anu7.css"></head> <body class="min-h-screen bg-white text-neutral-900
+  </script><link rel="stylesheet" href="/_astro/base.j5MurjQG.css"></head> <body class="min-h-screen bg-white text-neutral-900
     dark:bg-neutral-950 dark:text-neutral-100"> <!-- Mobile overlay --> <div id="sidebar-overlay" class="pointer-events-none fixed inset-0 z-40
       bg-black/40 opacity-0 transition-opacity
       duration-200 lg:hidden"></div> <div class="min-h-screen lg:grid
-      lg:grid-cols-[260px_minmax(0,1fr)]"> <aside class="fixed inset-y-0 left-0 z-50 w-[280px]
-    -translate-x-full
+      lg:grid-cols-[260px_minmax(0,1fr)]"> <aside class="fixed inset-y-0 z-50 w-[280px]
+    ltr:left-0 rtl:right-0
+    ltr:-translate-x-full rtl:translate-x-full
     ltr:border-r rtl:border-l
     border-neutral-200
     bg-white
@@ -29,13 +30,14 @@
     lg:z-auto
     lg:h-screen
     lg:w-[260px]
-    lg:translate-x-0"> <div class="flex h-full flex-col overflow-y-auto px-4 py-5"> <!-- Logo --> <div class="mb-6 px-2"> <a href="/" class="block text-lg font-bold tracking-tight
+    lg:ltr:translate-x-0
+    lg:rtl:translate-x-0"> <div class="flex h-full flex-col overflow-y-auto px-4 py-5"> <!-- Logo --> <div class="mb-6 px-2"> <a href="/" class="block text-lg font-bold tracking-tight
           text-neutral-950
           dark:text-neutral-50">
 RockSolid
 </a> <p class="mt-1 text-xs
-          text-neutral-400
-          dark:text-neutral-600">
+          text-neutral-500
+          dark:text-neutral-500">
 v0.1.1
 </p> </div> <!-- GitHub --> <div class="mb-7"> <a href="https://github.com/darshan-rajadhyaksha/rocksolid/" target="_blank" rel="noopener noreferrer" class="flex w-full items-center gap-3
           rounded-md px-3 py-2
@@ -98,7 +100,12 @@ v0.1.1
         dark:text-neutral-400
         dark:hover:bg-neutral-900
         dark:hover:text-neutral-100
-        lg:hidden"> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"> <line x1="4" y1="6" x2="20" y2="6"></line> <line x1="4" y1="12" x2="20" y2="12"></line> <line x1="4" y1="18" x2="20" y2="18"></line> </svg> </button> <!-- Title --> <div class="text-sm font-medium
+        lg:hidden"> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"> <line x1="4" y1="6" x2="20" y2="6"></line> <line x1="4" y1="12" x2="20" y2="12"></line> <line x1="4" y1="18" x2="20" y2="18"></line> </svg> </button> <!-- Title --> <div class="flex-1
+        ml-1.5 lg:ml-0
+        pe-2
+        leading-tight
+        text-sm 
+        font-medium
         text-neutral-600
         dark:text-neutral-400"> Button </div> <div class="flex gap-3"> <div class="flex rounded-md border border-neutral-200 bg-white p-0.5 dark:border-neutral-700 dark:bg-neutral-900"> <button id="ltr" type="button" class="rounded px-2 py-1 text-sm">
 LTR
@@ -123,7 +130,7 @@ RTL
 <p>The Button component is used to trigger an action or event. It supports
 multiple colors, visual variants, sizes, icons, disabled states, and
 full-width layouts.</p>
-<div id="compoent-example-98a276781f" data-component-example class="my-8
+<div id="compoent-example-9iteqio5ci6" data-component-example class="my-8
     overflow-hidden
     rounded-xl
     border
@@ -139,7 +146,7 @@ full-width layouts.</p>
       text-base
       text-neutral-900
       dark:bg-neutral-950
-      dark:text-neutral-100" data-component-preview> <style>astro-island,astro-slot,astro-static-slot{display:contents}</style><script>(()=>{var e=async t=>{await(await t())()};(self.Astro||(self.Astro={})).only=e;window.dispatchEvent(new Event("astro:only"));})();</script><script>(()=>{var g=Object.defineProperty;var w=(a,s,c)=>s in a?g(a,s,{enumerable:!0,configurable:!0,writable:!0,value:c}):a[s]=c;var l=(a,s,c)=>w(a,typeof s!="symbol"?s+"":s,c);var E=new Set(["__proto__","constructor","prototype"]);{let a={0:t=>y(t),1:t=>c(t),2:t=>new RegExp(t),3:t=>new Date(t),4:t=>new Map(c(t)),5:t=>new Set(c(t)),6:t=>BigInt(t),7:t=>new URL(t),8:t=>new Uint8Array(t),9:t=>new Uint16Array(t),10:t=>new Uint32Array(t),11:t=>Number.POSITIVE_INFINITY*t},s=t=>{let[p,e]=t;return p in a?a[p](e):void 0},c=t=>t.map(s),y=t=>typeof t!="object"||t===null?t:Object.fromEntries(Object.entries(t).map(([p,e])=>[p,s(e)]));class f extends HTMLElement{constructor(){super(...arguments);l(this,"Component");l(this,"hydrator");l(this,"hydrate",async()=>{var b;if(!this.hydrator||!this.isConnected)return;let e=(b=this.parentElement)==null?void 0:b.closest("astro-island[ssr]");if(e){e.addEventListener("astro:hydrate",this.hydrate,{once:!0});return}let r=this.querySelectorAll("astro-slot"),n={},d=this.querySelectorAll("template[data-astro-template]");for(let o of d){let i=o.closest(this.tagName);i!=null&&i.isSameNode(this)&&(n[o.getAttribute("data-astro-template")||"default"]=o.innerHTML,o.remove())}for(let o of r){let i=o.closest(this.tagName);i!=null&&i.isSameNode(this)&&(n[o.getAttribute("name")||"default"]=o.innerHTML)}let u;try{u=this.hasAttribute("props")?y(JSON.parse(this.getAttribute("props"))):{}}catch(o){let i=this.getAttribute("component-url")||"<unknown>",v=this.getAttribute("component-export");throw v&&(i+=` (export ${v})`),console.error(`[hydrate] Error parsing props for component ${i}`,this.getAttribute("props"),o),o}let h;await this.hydrator(this)(this.Component,u,n,{client:this.getAttribute("client")}),this.removeAttribute("ssr"),this.dispatchEvent(new CustomEvent("astro:hydrate"))});l(this,"unmount",()=>{this.isConnected||this.dispatchEvent(new CustomEvent("astro:unmount"))})}disconnectedCallback(){document.removeEventListener("astro:after-swap",this.unmount),document.addEventListener("astro:after-swap",this.unmount,{once:!0})}connectedCallback(){if(!this.hasAttribute("await-children")||document.readyState==="interactive"||document.readyState==="complete")this.childrenConnectedCallback();else{let e=()=>{document.removeEventListener("DOMContentLoaded",e),r.disconnect(),this.childrenConnectedCallback()},r=new MutationObserver(()=>{var n;((n=this.lastChild)==null?void 0:n.nodeType)===Node.COMMENT_NODE&&this.lastChild.nodeValue==="astro:end"&&(this.lastChild.remove(),e())});r.observe(this,{childList:!0}),document.addEventListener("DOMContentLoaded",e)}}async childrenConnectedCallback(){let e=this.getAttribute("before-hydration-url");e&&await import(e),this.start()}getRetryImportUrl(e){let r=new URL(e,document.baseURI);return r.searchParams.set("astro-retry",Date.now().toString()),r.toString()}async importWithRetry(e){try{return await import(e)}catch(r){return await new Promise(n=>setTimeout(n,1e3)),import(this.getRetryImportUrl(e))}}handleHydrationError(e){let r=this.getAttribute("component-url"),n=new CustomEvent("astro:hydration-error",{cancelable:!0,bubbles:!0,composed:!0,detail:{error:e,componentUrl:r}});this.dispatchEvent(n)&&console.error(`[astro-island] Error hydrating ${r}`,e)}async start(){let e=JSON.parse(this.getAttribute("opts")),r=this.getAttribute("client");if(Astro[r]===void 0){window.addEventListener(`astro:${r}`,()=>this.start(),{once:!0});return}try{await Astro[r](async()=>{let n=this.getAttribute("renderer-url");try{let[d,{default:u}]=await Promise.all([this.importWithRetry(this.getAttribute("component-url")),n?this.importWithRetry(n):Promise.resolve({default:()=>()=>{}})]),h=this.getAttribute("component-export")||"default";if(h.includes(".")){this.Component=d;for(let m of h.split(".")){if(E.has(m)||!this.Component||typeof this.Component!="object"&&typeof this.Component!="function"||!Object.hasOwn(this.Component,m))throw new Error(`Invalid component export path: ${h}`);this.Component=this.Component[m]}}else{if(E.has(h))throw new Error(`Invalid component export path: ${h}`);this.Component=d[h]}return this.hydrator=u,this.hydrate}catch(d){return this.handleHydrationError(d),()=>{}}},e,this)}catch(n){this.handleHydrationError(n)}}attributeChangedCallback(){this.hydrate()}}l(f,"observedAttributes",["props"]),customElements.get("astro-island")||customElements.define("astro-island",f)}})();</script><astro-island uid="197nla" component-url="/_astro/dynamic-component-renderer.CBS3Ippf.js" component-export="default" renderer-url="/_astro/client.BgJ9siUT.js" props="{&quot;name&quot;:[0,&quot;Button/examples/basic&quot;]}" ssr client="only" opts="{&quot;name&quot;:&quot;DynamicComponentRenderer&quot;,&quot;value&quot;:&quot;solid-js&quot;}"></astro-island> </div> <div data-code class="border-t
+      dark:text-neutral-100" data-component-preview> <style>astro-island,astro-slot,astro-static-slot{display:contents}</style><script>(()=>{var e=async t=>{await(await t())()};(self.Astro||(self.Astro={})).only=e;window.dispatchEvent(new Event("astro:only"));})();</script><script>(()=>{var g=Object.defineProperty;var w=(a,s,c)=>s in a?g(a,s,{enumerable:!0,configurable:!0,writable:!0,value:c}):a[s]=c;var l=(a,s,c)=>w(a,typeof s!="symbol"?s+"":s,c);var E=new Set(["__proto__","constructor","prototype"]);{let a={0:t=>y(t),1:t=>c(t),2:t=>new RegExp(t),3:t=>new Date(t),4:t=>new Map(c(t)),5:t=>new Set(c(t)),6:t=>BigInt(t),7:t=>new URL(t),8:t=>new Uint8Array(t),9:t=>new Uint16Array(t),10:t=>new Uint32Array(t),11:t=>Number.POSITIVE_INFINITY*t},s=t=>{let[p,e]=t;return p in a?a[p](e):void 0},c=t=>t.map(s),y=t=>typeof t!="object"||t===null?t:Object.fromEntries(Object.entries(t).map(([p,e])=>[p,s(e)]));class f extends HTMLElement{constructor(){super(...arguments);l(this,"Component");l(this,"hydrator");l(this,"hydrate",async()=>{var b;if(!this.hydrator||!this.isConnected)return;let e=(b=this.parentElement)==null?void 0:b.closest("astro-island[ssr]");if(e){e.addEventListener("astro:hydrate",this.hydrate,{once:!0});return}let r=this.querySelectorAll("astro-slot"),n={},d=this.querySelectorAll("template[data-astro-template]");for(let o of d){let i=o.closest(this.tagName);i!=null&&i.isSameNode(this)&&(n[o.getAttribute("data-astro-template")||"default"]=o.innerHTML,o.remove())}for(let o of r){let i=o.closest(this.tagName);i!=null&&i.isSameNode(this)&&(n[o.getAttribute("name")||"default"]=o.innerHTML)}let u;try{u=this.hasAttribute("props")?y(JSON.parse(this.getAttribute("props"))):{}}catch(o){let i=this.getAttribute("component-url")||"<unknown>",v=this.getAttribute("component-export");throw v&&(i+=` (export ${v})`),console.error(`[hydrate] Error parsing props for component ${i}`,this.getAttribute("props"),o),o}let h;await this.hydrator(this)(this.Component,u,n,{client:this.getAttribute("client")}),this.removeAttribute("ssr"),this.dispatchEvent(new CustomEvent("astro:hydrate"))});l(this,"unmount",()=>{this.isConnected||this.dispatchEvent(new CustomEvent("astro:unmount"))})}disconnectedCallback(){document.removeEventListener("astro:after-swap",this.unmount),document.addEventListener("astro:after-swap",this.unmount,{once:!0})}connectedCallback(){if(!this.hasAttribute("await-children")||document.readyState==="interactive"||document.readyState==="complete")this.childrenConnectedCallback();else{let e=()=>{document.removeEventListener("DOMContentLoaded",e),r.disconnect(),this.childrenConnectedCallback()},r=new MutationObserver(()=>{var n;((n=this.lastChild)==null?void 0:n.nodeType)===Node.COMMENT_NODE&&this.lastChild.nodeValue==="astro:end"&&(this.lastChild.remove(),e())});r.observe(this,{childList:!0}),document.addEventListener("DOMContentLoaded",e)}}async childrenConnectedCallback(){let e=this.getAttribute("before-hydration-url");e&&await import(e),this.start()}getRetryImportUrl(e){let r=new URL(e,document.baseURI);return r.searchParams.set("astro-retry",Date.now().toString()),r.toString()}async importWithRetry(e){try{return await import(e)}catch(r){return await new Promise(n=>setTimeout(n,1e3)),import(this.getRetryImportUrl(e))}}handleHydrationError(e){let r=this.getAttribute("component-url"),n=new CustomEvent("astro:hydration-error",{cancelable:!0,bubbles:!0,composed:!0,detail:{error:e,componentUrl:r}});this.dispatchEvent(n)&&console.error(`[astro-island] Error hydrating ${r}`,e)}async start(){let e=JSON.parse(this.getAttribute("opts")),r=this.getAttribute("client");if(Astro[r]===void 0){window.addEventListener(`astro:${r}`,()=>this.start(),{once:!0});return}try{await Astro[r](async()=>{let n=this.getAttribute("renderer-url");try{let[d,{default:u}]=await Promise.all([this.importWithRetry(this.getAttribute("component-url")),n?this.importWithRetry(n):Promise.resolve({default:()=>()=>{}})]),h=this.getAttribute("component-export")||"default";if(h.includes(".")){this.Component=d;for(let m of h.split(".")){if(E.has(m)||!this.Component||typeof this.Component!="object"&&typeof this.Component!="function"||!Object.hasOwn(this.Component,m))throw new Error(`Invalid component export path: ${h}`);this.Component=this.Component[m]}}else{if(E.has(h))throw new Error(`Invalid component export path: ${h}`);this.Component=d[h]}return this.hydrator=u,this.hydrate}catch(d){return this.handleHydrationError(d),()=>{}}},e,this)}catch(n){this.handleHydrationError(n)}}attributeChangedCallback(){this.hydrate()}}l(f,"observedAttributes",["props"]),customElements.get("astro-island")||customElements.define("astro-island",f)}})();</script><astro-island uid="197nla" component-url="/_astro/dynamic-component-renderer.D9U5PMa1.js" component-export="default" renderer-url="/_astro/client.BgJ9siUT.js" props="{&quot;name&quot;:[0,&quot;Button/examples/basic&quot;]}" ssr client="only" opts="{&quot;name&quot;:&quot;DynamicComponentRenderer&quot;,&quot;value&quot;:&quot;solid-js&quot;}"></astro-island> </div> <div data-code class="border-t
       border-neutral-200
       dark:border-neutral-800"> <div class="relative"> <button type="button" data-copy class="absolute
           top-3
@@ -164,7 +171,7 @@ full-width layouts.</p>
 <span class="line"></span>
 <span class="line"><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">export</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583"> default</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583"> function</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> Example</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">() {</span></span>
 <span class="line"><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">  return</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0"> &#x3C;</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">Button</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">>Click me&#x3C;/</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">Button</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">>;</span></span>
-<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> </div> </div> <script>(function(){const id = "98a276781f";
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> </div> </div> <script>(function(){const id = "9iteqio5ci6";
 const source = "import Button from \"rocksolidjs/Button\";\n\nexport default function Example() {\n  return \u003cButton>Click me\u003c/Button>;\n}";
 
   const copyBtn = document.querySelector(`#compoent-example-${id} [data-copy]`);
@@ -189,7 +196,7 @@ const source = "import Button from \"rocksolidjs/Button\";\n\nexport default fun
 <h2 id="examples">Examples</h2>
 <h3 id="colors">Colors</h3>
 <p>Use the <code>color</code> prop to customize the semantic color of the Button.</p>
-<div id="compoent-example-ncj1htx8q6" data-component-example class="my-8
+<div id="compoent-example-lt4lbz3a72" data-component-example class="my-8
     overflow-hidden
     rounded-xl
     border
@@ -205,7 +212,7 @@ const source = "import Button from \"rocksolidjs/Button\";\n\nexport default fun
       text-base
       text-neutral-900
       dark:bg-neutral-950
-      dark:text-neutral-100" data-component-preview> <astro-island uid="ZFRH2u" component-url="/_astro/dynamic-component-renderer.CBS3Ippf.js" component-export="default" renderer-url="/_astro/client.BgJ9siUT.js" props="{&quot;name&quot;:[0,&quot;Button/examples/colors&quot;]}" ssr client="only" opts="{&quot;name&quot;:&quot;DynamicComponentRenderer&quot;,&quot;value&quot;:&quot;solid-js&quot;}"></astro-island> </div> <div data-code class="border-t
+      dark:text-neutral-100" data-component-preview> <astro-island uid="ZFRH2u" component-url="/_astro/dynamic-component-renderer.D9U5PMa1.js" component-export="default" renderer-url="/_astro/client.BgJ9siUT.js" props="{&quot;name&quot;:[0,&quot;Button/examples/colors&quot;]}" ssr client="only" opts="{&quot;name&quot;:&quot;DynamicComponentRenderer&quot;,&quot;value&quot;:&quot;solid-js&quot;}"></astro-island> </div> <div data-code class="border-t
       border-neutral-200
       dark:border-neutral-800"> <div class="relative"> <button type="button" data-copy class="absolute
           top-3
@@ -238,7 +245,7 @@ const source = "import Button from \"rocksolidjs/Button\";\n\nexport default fun
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">      &#x3C;</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">Button</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> color</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">=</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">"error"</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">>Error&#x3C;/</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">Button</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">    &#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">div</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">  );</span></span>
-<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> </div> </div> <script>(function(){const id = "ncj1htx8q6";
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> </div> </div> <script>(function(){const id = "lt4lbz3a72";
 const source = "import Button from \"rocksolidjs/Button\";\n\nexport default function Example() {\n  return (\n    \u003cdiv class=\"flex flex-wrap gap-4\">\n      \u003cButton color=\"default\">Default\u003c/Button>\n      \u003cButton color=\"success\">Success\u003c/Button>\n      \u003cButton color=\"warning\">Warning\u003c/Button>\n      \u003cButton color=\"info\">Info\u003c/Button>\n      \u003cButton color=\"error\">Error\u003c/Button>\n    \u003c/div>\n  );\n}";
 
   const copyBtn = document.querySelector(`#compoent-example-${id} [data-copy]`);
@@ -262,7 +269,7 @@ const source = "import Button from \"rocksolidjs/Button\";\n\nexport default fun
 })();</script>
 <h3 id="variants">Variants</h3>
 <p>Use the <code>variant</code> prop to control the visual style of the Button.</p>
-<div id="compoent-example-8w7m8cgk8k" data-component-example class="my-8
+<div id="compoent-example-t3028zlz9g" data-component-example class="my-8
     overflow-hidden
     rounded-xl
     border
@@ -278,7 +285,7 @@ const source = "import Button from \"rocksolidjs/Button\";\n\nexport default fun
       text-base
       text-neutral-900
       dark:bg-neutral-950
-      dark:text-neutral-100" data-component-preview> <astro-island uid="2jO40G" component-url="/_astro/dynamic-component-renderer.CBS3Ippf.js" component-export="default" renderer-url="/_astro/client.BgJ9siUT.js" props="{&quot;name&quot;:[0,&quot;Button/examples/variants&quot;]}" ssr client="only" opts="{&quot;name&quot;:&quot;DynamicComponentRenderer&quot;,&quot;value&quot;:&quot;solid-js&quot;}"></astro-island> </div> <div data-code class="border-t
+      dark:text-neutral-100" data-component-preview> <astro-island uid="2jO40G" component-url="/_astro/dynamic-component-renderer.D9U5PMa1.js" component-export="default" renderer-url="/_astro/client.BgJ9siUT.js" props="{&quot;name&quot;:[0,&quot;Button/examples/variants&quot;]}" ssr client="only" opts="{&quot;name&quot;:&quot;DynamicComponentRenderer&quot;,&quot;value&quot;:&quot;solid-js&quot;}"></astro-island> </div> <div data-code class="border-t
       border-neutral-200
       dark:border-neutral-800"> <div class="relative"> <button type="button" data-copy class="absolute
           top-3
@@ -350,7 +357,7 @@ const source = "import Button from \"rocksolidjs/Button\";\n\nexport default fun
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">      &#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">div</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">    &#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">div</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">  );</span></span>
-<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> </div> </div> <script>(function(){const id = "8w7m8cgk8k";
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> </div> </div> <script>(function(){const id = "t3028zlz9g";
 const source = "import Button from \"rocksolidjs/Button\";\n\nexport default function Example() {\n  return (\n    \u003cdiv class=\"flex flex-col gap-4\">\n      \u003cdiv class=\"flex flex-wrap gap-4\">\n        \u003cButton variant=\"solid\" color=\"default\">\n          Solid\n        \u003c/Button>\n        \u003cButton variant=\"solid\" color=\"success\">\n          Solid\n        \u003c/Button>\n        \u003cButton variant=\"solid\" color=\"error\">\n          Solid\n        \u003c/Button>\n      \u003c/div>\n      \u003cdiv class=\"flex flex-wrap gap-4\">\n        \u003cButton variant=\"outlined\" color=\"default\">\n          Outlined\n        \u003c/Button>\n        \u003cButton variant=\"outlined\" color=\"success\">\n          Outlined\n        \u003c/Button>\n        \u003cButton variant=\"outlined\" color=\"error\">\n          Outlined\n        \u003c/Button>\n      \u003c/div>\n      \u003cdiv class=\"flex flex-wrap gap-4\">\n        \u003cButton variant=\"filled\" color=\"default\">\n          Filled\n        \u003c/Button>\n        \u003cButton variant=\"filled\" color=\"success\">\n          Filled\n        \u003c/Button>\n        \u003cButton variant=\"filled\" color=\"error\">\n          Filled\n        \u003c/Button>\n      \u003c/div>\n      \u003cdiv class=\"flex flex-wrap gap-4\">\n        \u003cButton variant=\"ghost\" color=\"default\">\n          Text\n        \u003c/Button>\n        \u003cButton variant=\"ghost\" color=\"success\">\n          Text\n        \u003c/Button>\n        \u003cButton variant=\"ghost\" color=\"error\">\n          Text\n        \u003c/Button>\n      \u003c/div>\n    \u003c/div>\n  );\n}";
 
   const copyBtn = document.querySelector(`#compoent-example-${id} [data-copy]`);
@@ -374,7 +381,7 @@ const source = "import Button from \"rocksolidjs/Button\";\n\nexport default fun
 })();</script>
 <h3 id="sizes">Sizes</h3>
 <p>Use the <code>size</code> prop to control the size of the Button.</p>
-<div id="compoent-example-r255los9g6c" data-component-example class="my-8
+<div id="compoent-example-tzx4ummfpp" data-component-example class="my-8
     overflow-hidden
     rounded-xl
     border
@@ -390,7 +397,7 @@ const source = "import Button from \"rocksolidjs/Button\";\n\nexport default fun
       text-base
       text-neutral-900
       dark:bg-neutral-950
-      dark:text-neutral-100" data-component-preview> <astro-island uid="ZSN8xh" component-url="/_astro/dynamic-component-renderer.CBS3Ippf.js" component-export="default" renderer-url="/_astro/client.BgJ9siUT.js" props="{&quot;name&quot;:[0,&quot;Button/examples/sizes&quot;]}" ssr client="only" opts="{&quot;name&quot;:&quot;DynamicComponentRenderer&quot;,&quot;value&quot;:&quot;solid-js&quot;}"></astro-island> </div> <div data-code class="border-t
+      dark:text-neutral-100" data-component-preview> <astro-island uid="ZSN8xh" component-url="/_astro/dynamic-component-renderer.D9U5PMa1.js" component-export="default" renderer-url="/_astro/client.BgJ9siUT.js" props="{&quot;name&quot;:[0,&quot;Button/examples/sizes&quot;]}" ssr client="only" opts="{&quot;name&quot;:&quot;DynamicComponentRenderer&quot;,&quot;value&quot;:&quot;solid-js&quot;}"></astro-island> </div> <div data-code class="border-t
       border-neutral-200
       dark:border-neutral-800"> <div class="relative"> <button type="button" data-copy class="absolute
           top-3
@@ -451,7 +458,7 @@ const source = "import Button from \"rocksolidjs/Button\";\n\nexport default fun
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">      &#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">div</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">    &#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">div</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">  );</span></span>
-<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> </div> </div> <script>(function(){const id = "r255los9g6c";
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> </div> </div> <script>(function(){const id = "tzx4ummfpp";
 const source = "import Button from \"rocksolidjs/Button\";\n\nexport default function Example() {\n  return (\n    \u003cdiv class=\"flex flex-col gap-4\">\n      \u003cdiv class=\"flex flex-wrap gap-4\">\n        \u003cButton size=\"small\" color=\"default\">\n          Small\n        \u003c/Button>\n        \u003cButton size=\"small\" color=\"success\">\n          Small\n        \u003c/Button>\n        \u003cButton size=\"small\" color=\"error\">\n          Small\n        \u003c/Button>\n      \u003c/div>\n      \u003cdiv class=\"flex flex-wrap gap-4\">\n        \u003cButton size=\"medium\" color=\"default\">\n          Medium\n        \u003c/Button>\n        \u003cButton size=\"medium\" color=\"success\">\n          Medium\n        \u003c/Button>\n        \u003cButton size=\"medium\" color=\"error\">\n          Medium\n        \u003c/Button>\n      \u003c/div>\n      \u003cdiv class=\"flex flex-wrap gap-4\">\n        \u003cButton size=\"large\" color=\"default\">\n          Large\n        \u003c/Button>\n        \u003cButton size=\"large\" color=\"success\">\n          Large\n        \u003c/Button>\n        \u003cButton size=\"large\" color=\"error\">\n          Large\n        \u003c/Button>\n      \u003c/div>\n    \u003c/div>\n  );\n}";
 
   const copyBtn = document.querySelector(`#compoent-example-${id} [data-copy]`);
@@ -476,7 +483,7 @@ const source = "import Button from \"rocksolidjs/Button\";\n\nexport default fun
 <h3 id="icons">Icons</h3>
 <p>Use the <code>startIcon</code> and <code>endIcon</code> props to add icons before or after the
 Button content.</p>
-<div id="compoent-example-mg1g0dx9i2" data-component-example class="my-8
+<div id="compoent-example-fz4dr60zw1" data-component-example class="my-8
     overflow-hidden
     rounded-xl
     border
@@ -492,7 +499,7 @@ Button content.</p>
       text-base
       text-neutral-900
       dark:bg-neutral-950
-      dark:text-neutral-100" data-component-preview> <astro-island uid="2iUtVp" component-url="/_astro/dynamic-component-renderer.CBS3Ippf.js" component-export="default" renderer-url="/_astro/client.BgJ9siUT.js" props="{&quot;name&quot;:[0,&quot;Button/examples/icons&quot;]}" ssr client="only" opts="{&quot;name&quot;:&quot;DynamicComponentRenderer&quot;,&quot;value&quot;:&quot;solid-js&quot;}"></astro-island> </div> <div data-code class="border-t
+      dark:text-neutral-100" data-component-preview> <astro-island uid="2iUtVp" component-url="/_astro/dynamic-component-renderer.D9U5PMa1.js" component-export="default" renderer-url="/_astro/client.BgJ9siUT.js" props="{&quot;name&quot;:[0,&quot;Button/examples/icons&quot;]}" ssr client="only" opts="{&quot;name&quot;:&quot;DynamicComponentRenderer&quot;,&quot;value&quot;:&quot;solid-js&quot;}"></astro-island> </div> <div data-code class="border-t
       border-neutral-200
       dark:border-neutral-800"> <div class="relative"> <button type="button" data-copy class="absolute
           top-3
@@ -536,7 +543,7 @@ Button content.</p>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">      &#x3C;/</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">Button</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">    &#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">div</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">  );</span></span>
-<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> </div> </div> <script>(function(){const id = "mg1g0dx9i2";
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> </div> </div> <script>(function(){const id = "fz4dr60zw1";
 const source = "import Button from \"rocksolidjs/Button\";\n\nexport default function Example() {\n  return (\n    \u003cdiv class=\"flex flex-wrap gap-4\">\n      \u003cButton\n        startIcon={\u003cspan aria-hidden>+\u003c/span>}\n        >\n        Start content\n      \u003c/Button>\n      \u003cButton\n        endIcon={\u003cspan aria-hidden>→\u003c/span>}\n      >\n        End content\n      \u003c/Button>\n      \u003cButton\n        startIcon={\u003cspan aria-hidden>+\u003c/span>}\n        endIcon={\u003cspan aria-hidden>→\u003c/span>}\n      >\n        Both\n      \u003c/Button>\n    \u003c/div>\n  );\n}";
 
   const copyBtn = document.querySelector(`#compoent-example-${id} [data-copy]`);
@@ -560,7 +567,7 @@ const source = "import Button from \"rocksolidjs/Button\";\n\nexport default fun
 })();</script>
 <h3 id="disabled">Disabled</h3>
 <p>Use the <code>disabled</code> prop to prevent the Button from being interacted with.</p>
-<div id="compoent-example-wtsclf0iq9m" data-component-example class="my-8
+<div id="compoent-example-902vamnsjyg" data-component-example class="my-8
     overflow-hidden
     rounded-xl
     border
@@ -576,7 +583,7 @@ const source = "import Button from \"rocksolidjs/Button\";\n\nexport default fun
       text-base
       text-neutral-900
       dark:bg-neutral-950
-      dark:text-neutral-100" data-component-preview> <astro-island uid="IXKS8" component-url="/_astro/dynamic-component-renderer.CBS3Ippf.js" component-export="default" renderer-url="/_astro/client.BgJ9siUT.js" props="{&quot;name&quot;:[0,&quot;Button/examples/disabled&quot;]}" ssr client="only" opts="{&quot;name&quot;:&quot;DynamicComponentRenderer&quot;,&quot;value&quot;:&quot;solid-js&quot;}"></astro-island> </div> <div data-code class="border-t
+      dark:text-neutral-100" data-component-preview> <astro-island uid="IXKS8" component-url="/_astro/dynamic-component-renderer.D9U5PMa1.js" component-export="default" renderer-url="/_astro/client.BgJ9siUT.js" props="{&quot;name&quot;:[0,&quot;Button/examples/disabled&quot;]}" ssr client="only" opts="{&quot;name&quot;:&quot;DynamicComponentRenderer&quot;,&quot;value&quot;:&quot;solid-js&quot;}"></astro-island> </div> <div data-code class="border-t
       border-neutral-200
       dark:border-neutral-800"> <div class="relative"> <button type="button" data-copy class="absolute
           top-3
@@ -616,7 +623,7 @@ const source = "import Button from \"rocksolidjs/Button\";\n\nexport default fun
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">      &#x3C;/</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">Button</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">    &#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">div</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">  );</span></span>
-<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> </div> </div> <script>(function(){const id = "wtsclf0iq9m";
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> </div> </div> <script>(function(){const id = "902vamnsjyg";
 const source = "import Button from \"rocksolidjs/Button\";\n\nexport default function Example() {\n  return (\n    \u003cdiv class=\"flex flex-wrap gap-4\">\n      \u003cButton disabled>\n        Disabled Solid\n      \u003c/Button>\n      \u003cButton variant=\"outlined\" disabled>\n        Disabled Outlined\n      \u003c/Button>\n      \u003cButton variant=\"filled\" disabled>\n        Disabled Filled\n      \u003c/Button>\n      \u003cButton variant=\"ghost\" disabled>\n        Disabled Text\n      \u003c/Button>\n    \u003c/div>\n  );\n}";
 
   const copyBtn = document.querySelector(`#compoent-example-${id} [data-copy]`);
@@ -641,7 +648,7 @@ const source = "import Button from \"rocksolidjs/Button\";\n\nexport default fun
 <h3 id="full-width">Full Width</h3>
 <p>Use the <code>fullWidth</code> prop to make the Button take up the full available
 width.</p>
-<div id="compoent-example-dn0bjeeqh8w" data-component-example class="my-8
+<div id="compoent-example-rzqdf9g1ggp" data-component-example class="my-8
     overflow-hidden
     rounded-xl
     border
@@ -657,7 +664,7 @@ width.</p>
       text-base
       text-neutral-900
       dark:bg-neutral-950
-      dark:text-neutral-100" data-component-preview> <astro-island uid="Z1YdGs5" component-url="/_astro/dynamic-component-renderer.CBS3Ippf.js" component-export="default" renderer-url="/_astro/client.BgJ9siUT.js" props="{&quot;name&quot;:[0,&quot;Button/examples/full-width&quot;]}" ssr client="only" opts="{&quot;name&quot;:&quot;DynamicComponentRenderer&quot;,&quot;value&quot;:&quot;solid-js&quot;}"></astro-island> </div> <div data-code class="border-t
+      dark:text-neutral-100" data-component-preview> <astro-island uid="Z1YdGs5" component-url="/_astro/dynamic-component-renderer.D9U5PMa1.js" component-export="default" renderer-url="/_astro/client.BgJ9siUT.js" props="{&quot;name&quot;:[0,&quot;Button/examples/full-width&quot;]}" ssr client="only" opts="{&quot;name&quot;:&quot;DynamicComponentRenderer&quot;,&quot;value&quot;:&quot;solid-js&quot;}"></astro-island> </div> <div data-code class="border-t
       border-neutral-200
       dark:border-neutral-800"> <div class="relative"> <button type="button" data-copy class="absolute
           top-3
@@ -688,7 +695,7 @@ width.</p>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">      &#x3C;/</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">Button</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">    &#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">div</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">  );</span></span>
-<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> </div> </div> <script>(function(){const id = "dn0bjeeqh8w";
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> </div> </div> <script>(function(){const id = "rzqdf9g1ggp";
 const source = "import Button from \"rocksolidjs/Button\";\n\nexport default function Example() {\n  return (\n    \u003cdiv class=\"w-full\">\n      \u003cButton fullWidth>\n        Full width button\n      \u003c/Button>\n    \u003c/div>\n  );\n}";
 
   const copyBtn = document.querySelector(`#compoent-example-${id} [data-copy]`);
@@ -867,7 +874,8 @@ are represented by an icon without visible text.</li>
     const menuButton = document.querySelector("#mobile-menu-button");
 
     function openSidebar() {
-      sidebar?.classList.remove("-translate-x-full");
+      sidebar?.classList.remove("ltr:-translate-x-full");
+      sidebar?.classList.remove("rtl:translate-x-full");
       sidebar?.classList.add("translate-x-0");
       overlay?.classList.remove("pointer-events-none", "opacity-0");
       overlay?.classList.add("pointer-events-auto", "opacity-100");
@@ -876,7 +884,8 @@ are represented by an icon without visible text.</li>
 
     function closeSidebar() {
       sidebar?.classList.remove("translate-x-0");
-      sidebar?.classList.add("-translate-x-full");
+      sidebar?.classList.add("ltr:-translate-x-full");
+      sidebar?.classList.add("rtl:translate-x-full");
       overlay?.classList.remove("pointer-events-auto", "opacity-100");
       overlay?.classList.add("pointer-events-none", "opacity-0");
       document.body.classList.remove("overflow-hidden");

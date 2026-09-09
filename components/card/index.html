@@ -11,12 +11,13 @@
     ) {
       document.documentElement.classList.add("dark");
     }
-  </script><link rel="stylesheet" href="/_astro/base.HBy6anu7.css"></head> <body class="min-h-screen bg-white text-neutral-900
+  </script><link rel="stylesheet" href="/_astro/base.j5MurjQG.css"></head> <body class="min-h-screen bg-white text-neutral-900
     dark:bg-neutral-950 dark:text-neutral-100"> <!-- Mobile overlay --> <div id="sidebar-overlay" class="pointer-events-none fixed inset-0 z-40
       bg-black/40 opacity-0 transition-opacity
       duration-200 lg:hidden"></div> <div class="min-h-screen lg:grid
-      lg:grid-cols-[260px_minmax(0,1fr)]"> <aside class="fixed inset-y-0 left-0 z-50 w-[280px]
-    -translate-x-full
+      lg:grid-cols-[260px_minmax(0,1fr)]"> <aside class="fixed inset-y-0 z-50 w-[280px]
+    ltr:left-0 rtl:right-0
+    ltr:-translate-x-full rtl:translate-x-full
     ltr:border-r rtl:border-l
     border-neutral-200
     bg-white
@@ -29,13 +30,14 @@
     lg:z-auto
     lg:h-screen
     lg:w-[260px]
-    lg:translate-x-0"> <div class="flex h-full flex-col overflow-y-auto px-4 py-5"> <!-- Logo --> <div class="mb-6 px-2"> <a href="/" class="block text-lg font-bold tracking-tight
+    lg:ltr:translate-x-0
+    lg:rtl:translate-x-0"> <div class="flex h-full flex-col overflow-y-auto px-4 py-5"> <!-- Logo --> <div class="mb-6 px-2"> <a href="/" class="block text-lg font-bold tracking-tight
           text-neutral-950
           dark:text-neutral-50">
 RockSolid
 </a> <p class="mt-1 text-xs
-          text-neutral-400
-          dark:text-neutral-600">
+          text-neutral-500
+          dark:text-neutral-500">
 v0.1.1
 </p> </div> <!-- GitHub --> <div class="mb-7"> <a href="https://github.com/darshan-rajadhyaksha/rocksolid/" target="_blank" rel="noopener noreferrer" class="flex w-full items-center gap-3
           rounded-md px-3 py-2
@@ -98,7 +100,12 @@ v0.1.1
         dark:text-neutral-400
         dark:hover:bg-neutral-900
         dark:hover:text-neutral-100
-        lg:hidden"> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"> <line x1="4" y1="6" x2="20" y2="6"></line> <line x1="4" y1="12" x2="20" y2="12"></line> <line x1="4" y1="18" x2="20" y2="18"></line> </svg> </button> <!-- Title --> <div class="text-sm font-medium
+        lg:hidden"> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"> <line x1="4" y1="6" x2="20" y2="6"></line> <line x1="4" y1="12" x2="20" y2="12"></line> <line x1="4" y1="18" x2="20" y2="18"></line> </svg> </button> <!-- Title --> <div class="flex-1
+        ml-1.5 lg:ml-0
+        pe-2
+        leading-tight
+        text-sm 
+        font-medium
         text-neutral-600
         dark:text-neutral-400"> Card </div> <div class="flex gap-3"> <div class="flex rounded-md border border-neutral-200 bg-white p-0.5 dark:border-neutral-700 dark:bg-neutral-900"> <button id="ltr" type="button" class="rounded px-2 py-1 text-sm">
 LTR
@@ -123,7 +130,7 @@ RTL
 <p>The Card component groups related content and actions into a flexible,
 composable container. Cards can be used to display information, actions,
 or other related content in a visually distinct section.</p>
-<div id="compoent-example-3inmg72hw9y" data-component-example class="my-8
+<div id="compoent-example-ti3myyi5xa" data-component-example class="my-8
     overflow-hidden
     rounded-xl
     border
@@ -139,7 +146,7 @@ or other related content in a visually distinct section.</p>
       text-base
       text-neutral-900
       dark:bg-neutral-950
-      dark:text-neutral-100" data-component-preview> <style>astro-island,astro-slot,astro-static-slot{display:contents}</style><script>(()=>{var e=async t=>{await(await t())()};(self.Astro||(self.Astro={})).only=e;window.dispatchEvent(new Event("astro:only"));})();</script><script>(()=>{var g=Object.defineProperty;var w=(a,s,c)=>s in a?g(a,s,{enumerable:!0,configurable:!0,writable:!0,value:c}):a[s]=c;var l=(a,s,c)=>w(a,typeof s!="symbol"?s+"":s,c);var E=new Set(["__proto__","constructor","prototype"]);{let a={0:t=>y(t),1:t=>c(t),2:t=>new RegExp(t),3:t=>new Date(t),4:t=>new Map(c(t)),5:t=>new Set(c(t)),6:t=>BigInt(t),7:t=>new URL(t),8:t=>new Uint8Array(t),9:t=>new Uint16Array(t),10:t=>new Uint32Array(t),11:t=>Number.POSITIVE_INFINITY*t},s=t=>{let[p,e]=t;return p in a?a[p](e):void 0},c=t=>t.map(s),y=t=>typeof t!="object"||t===null?t:Object.fromEntries(Object.entries(t).map(([p,e])=>[p,s(e)]));class f extends HTMLElement{constructor(){super(...arguments);l(this,"Component");l(this,"hydrator");l(this,"hydrate",async()=>{var b;if(!this.hydrator||!this.isConnected)return;let e=(b=this.parentElement)==null?void 0:b.closest("astro-island[ssr]");if(e){e.addEventListener("astro:hydrate",this.hydrate,{once:!0});return}let r=this.querySelectorAll("astro-slot"),n={},d=this.querySelectorAll("template[data-astro-template]");for(let o of d){let i=o.closest(this.tagName);i!=null&&i.isSameNode(this)&&(n[o.getAttribute("data-astro-template")||"default"]=o.innerHTML,o.remove())}for(let o of r){let i=o.closest(this.tagName);i!=null&&i.isSameNode(this)&&(n[o.getAttribute("name")||"default"]=o.innerHTML)}let u;try{u=this.hasAttribute("props")?y(JSON.parse(this.getAttribute("props"))):{}}catch(o){let i=this.getAttribute("component-url")||"<unknown>",v=this.getAttribute("component-export");throw v&&(i+=` (export ${v})`),console.error(`[hydrate] Error parsing props for component ${i}`,this.getAttribute("props"),o),o}let h;await this.hydrator(this)(this.Component,u,n,{client:this.getAttribute("client")}),this.removeAttribute("ssr"),this.dispatchEvent(new CustomEvent("astro:hydrate"))});l(this,"unmount",()=>{this.isConnected||this.dispatchEvent(new CustomEvent("astro:unmount"))})}disconnectedCallback(){document.removeEventListener("astro:after-swap",this.unmount),document.addEventListener("astro:after-swap",this.unmount,{once:!0})}connectedCallback(){if(!this.hasAttribute("await-children")||document.readyState==="interactive"||document.readyState==="complete")this.childrenConnectedCallback();else{let e=()=>{document.removeEventListener("DOMContentLoaded",e),r.disconnect(),this.childrenConnectedCallback()},r=new MutationObserver(()=>{var n;((n=this.lastChild)==null?void 0:n.nodeType)===Node.COMMENT_NODE&&this.lastChild.nodeValue==="astro:end"&&(this.lastChild.remove(),e())});r.observe(this,{childList:!0}),document.addEventListener("DOMContentLoaded",e)}}async childrenConnectedCallback(){let e=this.getAttribute("before-hydration-url");e&&await import(e),this.start()}getRetryImportUrl(e){let r=new URL(e,document.baseURI);return r.searchParams.set("astro-retry",Date.now().toString()),r.toString()}async importWithRetry(e){try{return await import(e)}catch(r){return await new Promise(n=>setTimeout(n,1e3)),import(this.getRetryImportUrl(e))}}handleHydrationError(e){let r=this.getAttribute("component-url"),n=new CustomEvent("astro:hydration-error",{cancelable:!0,bubbles:!0,composed:!0,detail:{error:e,componentUrl:r}});this.dispatchEvent(n)&&console.error(`[astro-island] Error hydrating ${r}`,e)}async start(){let e=JSON.parse(this.getAttribute("opts")),r=this.getAttribute("client");if(Astro[r]===void 0){window.addEventListener(`astro:${r}`,()=>this.start(),{once:!0});return}try{await Astro[r](async()=>{let n=this.getAttribute("renderer-url");try{let[d,{default:u}]=await Promise.all([this.importWithRetry(this.getAttribute("component-url")),n?this.importWithRetry(n):Promise.resolve({default:()=>()=>{}})]),h=this.getAttribute("component-export")||"default";if(h.includes(".")){this.Component=d;for(let m of h.split(".")){if(E.has(m)||!this.Component||typeof this.Component!="object"&&typeof this.Component!="function"||!Object.hasOwn(this.Component,m))throw new Error(`Invalid component export path: ${h}`);this.Component=this.Component[m]}}else{if(E.has(h))throw new Error(`Invalid component export path: ${h}`);this.Component=d[h]}return this.hydrator=u,this.hydrate}catch(d){return this.handleHydrationError(d),()=>{}}},e,this)}catch(n){this.handleHydrationError(n)}}attributeChangedCallback(){this.hydrate()}}l(f,"observedAttributes",["props"]),customElements.get("astro-island")||customElements.define("astro-island",f)}})();</script><astro-island uid="1si4kS" component-url="/_astro/dynamic-component-renderer.CBS3Ippf.js" component-export="default" renderer-url="/_astro/client.BgJ9siUT.js" props="{&quot;name&quot;:[0,&quot;Card/examples/basic&quot;]}" ssr client="only" opts="{&quot;name&quot;:&quot;DynamicComponentRenderer&quot;,&quot;value&quot;:&quot;solid-js&quot;}"></astro-island> </div> <div data-code class="border-t
+      dark:text-neutral-100" data-component-preview> <style>astro-island,astro-slot,astro-static-slot{display:contents}</style><script>(()=>{var e=async t=>{await(await t())()};(self.Astro||(self.Astro={})).only=e;window.dispatchEvent(new Event("astro:only"));})();</script><script>(()=>{var g=Object.defineProperty;var w=(a,s,c)=>s in a?g(a,s,{enumerable:!0,configurable:!0,writable:!0,value:c}):a[s]=c;var l=(a,s,c)=>w(a,typeof s!="symbol"?s+"":s,c);var E=new Set(["__proto__","constructor","prototype"]);{let a={0:t=>y(t),1:t=>c(t),2:t=>new RegExp(t),3:t=>new Date(t),4:t=>new Map(c(t)),5:t=>new Set(c(t)),6:t=>BigInt(t),7:t=>new URL(t),8:t=>new Uint8Array(t),9:t=>new Uint16Array(t),10:t=>new Uint32Array(t),11:t=>Number.POSITIVE_INFINITY*t},s=t=>{let[p,e]=t;return p in a?a[p](e):void 0},c=t=>t.map(s),y=t=>typeof t!="object"||t===null?t:Object.fromEntries(Object.entries(t).map(([p,e])=>[p,s(e)]));class f extends HTMLElement{constructor(){super(...arguments);l(this,"Component");l(this,"hydrator");l(this,"hydrate",async()=>{var b;if(!this.hydrator||!this.isConnected)return;let e=(b=this.parentElement)==null?void 0:b.closest("astro-island[ssr]");if(e){e.addEventListener("astro:hydrate",this.hydrate,{once:!0});return}let r=this.querySelectorAll("astro-slot"),n={},d=this.querySelectorAll("template[data-astro-template]");for(let o of d){let i=o.closest(this.tagName);i!=null&&i.isSameNode(this)&&(n[o.getAttribute("data-astro-template")||"default"]=o.innerHTML,o.remove())}for(let o of r){let i=o.closest(this.tagName);i!=null&&i.isSameNode(this)&&(n[o.getAttribute("name")||"default"]=o.innerHTML)}let u;try{u=this.hasAttribute("props")?y(JSON.parse(this.getAttribute("props"))):{}}catch(o){let i=this.getAttribute("component-url")||"<unknown>",v=this.getAttribute("component-export");throw v&&(i+=` (export ${v})`),console.error(`[hydrate] Error parsing props for component ${i}`,this.getAttribute("props"),o),o}let h;await this.hydrator(this)(this.Component,u,n,{client:this.getAttribute("client")}),this.removeAttribute("ssr"),this.dispatchEvent(new CustomEvent("astro:hydrate"))});l(this,"unmount",()=>{this.isConnected||this.dispatchEvent(new CustomEvent("astro:unmount"))})}disconnectedCallback(){document.removeEventListener("astro:after-swap",this.unmount),document.addEventListener("astro:after-swap",this.unmount,{once:!0})}connectedCallback(){if(!this.hasAttribute("await-children")||document.readyState==="interactive"||document.readyState==="complete")this.childrenConnectedCallback();else{let e=()=>{document.removeEventListener("DOMContentLoaded",e),r.disconnect(),this.childrenConnectedCallback()},r=new MutationObserver(()=>{var n;((n=this.lastChild)==null?void 0:n.nodeType)===Node.COMMENT_NODE&&this.lastChild.nodeValue==="astro:end"&&(this.lastChild.remove(),e())});r.observe(this,{childList:!0}),document.addEventListener("DOMContentLoaded",e)}}async childrenConnectedCallback(){let e=this.getAttribute("before-hydration-url");e&&await import(e),this.start()}getRetryImportUrl(e){let r=new URL(e,document.baseURI);return r.searchParams.set("astro-retry",Date.now().toString()),r.toString()}async importWithRetry(e){try{return await import(e)}catch(r){return await new Promise(n=>setTimeout(n,1e3)),import(this.getRetryImportUrl(e))}}handleHydrationError(e){let r=this.getAttribute("component-url"),n=new CustomEvent("astro:hydration-error",{cancelable:!0,bubbles:!0,composed:!0,detail:{error:e,componentUrl:r}});this.dispatchEvent(n)&&console.error(`[astro-island] Error hydrating ${r}`,e)}async start(){let e=JSON.parse(this.getAttribute("opts")),r=this.getAttribute("client");if(Astro[r]===void 0){window.addEventListener(`astro:${r}`,()=>this.start(),{once:!0});return}try{await Astro[r](async()=>{let n=this.getAttribute("renderer-url");try{let[d,{default:u}]=await Promise.all([this.importWithRetry(this.getAttribute("component-url")),n?this.importWithRetry(n):Promise.resolve({default:()=>()=>{}})]),h=this.getAttribute("component-export")||"default";if(h.includes(".")){this.Component=d;for(let m of h.split(".")){if(E.has(m)||!this.Component||typeof this.Component!="object"&&typeof this.Component!="function"||!Object.hasOwn(this.Component,m))throw new Error(`Invalid component export path: ${h}`);this.Component=this.Component[m]}}else{if(E.has(h))throw new Error(`Invalid component export path: ${h}`);this.Component=d[h]}return this.hydrator=u,this.hydrate}catch(d){return this.handleHydrationError(d),()=>{}}},e,this)}catch(n){this.handleHydrationError(n)}}attributeChangedCallback(){this.hydrate()}}l(f,"observedAttributes",["props"]),customElements.get("astro-island")||customElements.define("astro-island",f)}})();</script><astro-island uid="1si4kS" component-url="/_astro/dynamic-component-renderer.D9U5PMa1.js" component-export="default" renderer-url="/_astro/client.BgJ9siUT.js" props="{&quot;name&quot;:[0,&quot;Card/examples/basic&quot;]}" ssr client="only" opts="{&quot;name&quot;:&quot;DynamicComponentRenderer&quot;,&quot;value&quot;:&quot;solid-js&quot;}"></astro-island> </div> <div data-code class="border-t
       border-neutral-200
       dark:border-neutral-800"> <div class="relative"> <button type="button" data-copy class="absolute
           top-3
@@ -200,7 +207,7 @@ or other related content in a visually distinct section.</p>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">      &#x3C;/</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">CardFooter</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">    &#x3C;/</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">Card</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">  );</span></span>
-<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> </div> </div> <script>(function(){const id = "3inmg72hw9y";
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> </div> </div> <script>(function(){const id = "ti3myyi5xa";
 const source = "import Avatar from \"rocksolidjs/Avatar\";\nimport Card from \"rocksolidjs/Card\";\nimport CardHeader from \"rocksolidjs/CardHeader\";\nimport CardTitle from \"rocksolidjs/CardTitle\";\nimport CardContent from \"rocksolidjs/CardContent\";\nimport CardFooter from \"rocksolidjs/CardFooter\";\nimport Button from \"rocksolidjs/Button\";\nimport CardDescription from \"rocksolidjs/CardDescription\";\nimport Chip from \"rocksolidjs/Chip\";\nimport Typography from \"rocksolidjs/Typography\";\n\nexport default function Example() {\n  return (\n    \u003cCard class=\"max-w-sm\">\n      \u003cCardHeader class=\"flex flex-row items-center gap-3\">\n        \u003cAvatar\n          src=\"https://i.pravatar.cc/80?img=12\"\n          alt=\"John Doe\"\n          size=\"large\"\n        />\n        \u003cdiv>\n          \u003cCardTitle class=\"text-normal\">John Doe\u003c/CardTitle>\n          \u003cCardDescription class=\"pt-0\">Product Designer\u003c/CardDescription>\n        \u003c/div>\n      \u003c/CardHeader>\n      \u003cCardContent>\n        \u003cTypography variant=\"body2\" color=\"textSecondary\">\n          Designing simple and accessible experiences for the next\n          generation of products.\n        \u003c/Typography>\n        \u003cdiv class=\"mt-3 flex gap-2\">\n          \u003cChip size=\"small\" label=\"Design\" />\n          \u003cChip size=\"small\" label=\"Product\" />\n        \u003c/div>\n      \u003c/CardContent>\n      \u003cCardFooter>\n        \u003cButton>View profile\u003c/Button>\n      \u003c/CardFooter>\n    \u003c/Card>\n  );\n}";
 
   const copyBtn = document.querySelector(`#compoent-example-${id} [data-copy]`);
@@ -225,7 +232,7 @@ const source = "import Avatar from \"rocksolidjs/Avatar\";\nimport Card from \"r
 <h2 id="composition">Composition</h2>
 <p>Card is composed of smaller components that can be combined to create
 different layouts.</p>
-<div id="compoent-example-lwr8xavkf0m" data-component-example class="my-8
+<div id="compoent-example-nuydiapdq3d" data-component-example class="my-8
     overflow-hidden
     rounded-xl
     border
@@ -241,7 +248,7 @@ different layouts.</p>
       text-base
       text-neutral-900
       dark:bg-neutral-950
-      dark:text-neutral-100" data-component-preview> <astro-island uid="1v2wML" component-url="/_astro/dynamic-component-renderer.CBS3Ippf.js" component-export="default" renderer-url="/_astro/client.BgJ9siUT.js" props="{&quot;name&quot;:[0,&quot;Card/examples/composition&quot;]}" ssr client="only" opts="{&quot;name&quot;:&quot;DynamicComponentRenderer&quot;,&quot;value&quot;:&quot;solid-js&quot;}"></astro-island> </div> <div data-code class="border-t
+      dark:text-neutral-100" data-component-preview> <astro-island uid="1v2wML" component-url="/_astro/dynamic-component-renderer.D9U5PMa1.js" component-export="default" renderer-url="/_astro/client.BgJ9siUT.js" props="{&quot;name&quot;:[0,&quot;Card/examples/composition&quot;]}" ssr client="only" opts="{&quot;name&quot;:&quot;DynamicComponentRenderer&quot;,&quot;value&quot;:&quot;solid-js&quot;}"></astro-island> </div> <div data-code class="border-t
       border-neutral-200
       dark:border-neutral-800"> <div class="relative"> <button type="button" data-copy class="absolute
           top-3
@@ -288,7 +295,7 @@ different layouts.</p>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">      &#x3C;/</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">CardFooter</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">    &#x3C;/</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">Card</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">  );</span></span>
-<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> </div> </div> <script>(function(){const id = "lwr8xavkf0m";
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> </div> </div> <script>(function(){const id = "nuydiapdq3d";
 const source = "import Card from \"rocksolidjs/Card\";\nimport CardHeader from \"rocksolidjs/CardHeader\";\nimport CardTitle from \"rocksolidjs/CardTitle\";\nimport CardDescription from \"rocksolidjs/CardDescription\";\nimport CardContent from \"rocksolidjs/CardContent\";\nimport CardFooter from \"rocksolidjs/CardFooter\";\nimport Button from \"rocksolidjs/Button\";\n\nexport default function Example() {\n  return (\n    \u003cCard class=\"max-w-sm\">\n      \u003cCardHeader>\n        \u003cCardTitle>Project overview\u003c/CardTitle>\n        \u003cCardDescription>\n          Track your project progress.\n        \u003c/CardDescription>\n      \u003c/CardHeader>\n      \u003cCardContent>\n        Your project is currently on track and all milestones are\n        progressing as expected.\n      \u003c/CardContent>\n      \u003cCardFooter>\n        \u003cButton>View project\u003c/Button>\n      \u003c/CardFooter>\n    \u003c/Card>\n  );\n}\n";
 
   const copyBtn = document.querySelector(`#compoent-example-${id} [data-copy]`);
@@ -318,7 +325,7 @@ fit different content and layout requirements.</p>
 <h2 id="examples">Examples</h2>
 <h3 id="filled">Filled</h3>
 <p>Use the <code>filled</code> variant for cards with a subtle filled background.</p>
-<div id="compoent-example-j9n5q6mqyzm" data-component-example class="my-8
+<div id="compoent-example-dgrcm8zopeu" data-component-example class="my-8
     overflow-hidden
     rounded-xl
     border
@@ -334,7 +341,7 @@ fit different content and layout requirements.</p>
       text-base
       text-neutral-900
       dark:bg-neutral-950
-      dark:text-neutral-100" data-component-preview> <astro-island uid="iYheC" component-url="/_astro/dynamic-component-renderer.CBS3Ippf.js" component-export="default" renderer-url="/_astro/client.BgJ9siUT.js" props="{&quot;name&quot;:[0,&quot;Card/examples/filled&quot;]}" ssr client="only" opts="{&quot;name&quot;:&quot;DynamicComponentRenderer&quot;,&quot;value&quot;:&quot;solid-js&quot;}"></astro-island> </div> <div data-code class="border-t
+      dark:text-neutral-100" data-component-preview> <astro-island uid="iYheC" component-url="/_astro/dynamic-component-renderer.D9U5PMa1.js" component-export="default" renderer-url="/_astro/client.BgJ9siUT.js" props="{&quot;name&quot;:[0,&quot;Card/examples/filled&quot;]}" ssr client="only" opts="{&quot;name&quot;:&quot;DynamicComponentRenderer&quot;,&quot;value&quot;:&quot;solid-js&quot;}"></astro-island> </div> <div data-code class="border-t
       border-neutral-200
       dark:border-neutral-800"> <div class="relative"> <button type="button" data-copy class="absolute
           top-3
@@ -380,7 +387,7 @@ fit different content and layout requirements.</p>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">      &#x3C;/</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">CardFooter</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">    &#x3C;/</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">Card</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">  );</span></span>
-<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> </div> </div> <script>(function(){const id = "j9n5q6mqyzm";
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> </div> </div> <script>(function(){const id = "dgrcm8zopeu";
 const source = "import Card from \"rocksolidjs/Card\";\nimport CardHeader from \"rocksolidjs/CardHeader\";\nimport CardTitle from \"rocksolidjs/CardTitle\";\nimport CardDescription from \"rocksolidjs/CardDescription\";\nimport CardContent from \"rocksolidjs/CardContent\";\nimport CardFooter from \"rocksolidjs/CardFooter\";\nimport Button from \"rocksolidjs/Button\";\n\nexport default function Example() {\n  return (\n    \u003cCard variant=\"filled\">\n      \u003cCardHeader>\n        \u003cCardTitle>Project overview\u003c/CardTitle>\n        \u003cCardDescription>\n          Track your project progress.\n        \u003c/CardDescription>\n      \u003c/CardHeader>\n      \u003cCardContent>\n        Your project is currently on track.\n      \u003c/CardContent>\n      \u003cCardFooter>\n        \u003cButton>View project\u003c/Button>\n      \u003c/CardFooter>\n    \u003c/Card>\n  );\n}\n";
 
   const copyBtn = document.querySelector(`#compoent-example-${id} [data-copy]`);
@@ -405,7 +412,7 @@ const source = "import Card from \"rocksolidjs/Card\";\nimport CardHeader from \
 <h3 id="elevated">Elevated</h3>
 <p>Use the <code>elevated</code> variant when the card should appear raised above the
 surrounding content.</p>
-<div id="compoent-example-bplk441ljnj" data-component-example class="my-8
+<div id="compoent-example-ewqrw8xm9f" data-component-example class="my-8
     overflow-hidden
     rounded-xl
     border
@@ -421,7 +428,7 @@ surrounding content.</p>
       text-base
       text-neutral-900
       dark:bg-neutral-950
-      dark:text-neutral-100" data-component-preview> <astro-island uid="23D5j7" component-url="/_astro/dynamic-component-renderer.CBS3Ippf.js" component-export="default" renderer-url="/_astro/client.BgJ9siUT.js" props="{&quot;name&quot;:[0,&quot;Card/examples/elevated&quot;]}" ssr client="only" opts="{&quot;name&quot;:&quot;DynamicComponentRenderer&quot;,&quot;value&quot;:&quot;solid-js&quot;}"></astro-island> </div> <div data-code class="border-t
+      dark:text-neutral-100" data-component-preview> <astro-island uid="23D5j7" component-url="/_astro/dynamic-component-renderer.D9U5PMa1.js" component-export="default" renderer-url="/_astro/client.BgJ9siUT.js" props="{&quot;name&quot;:[0,&quot;Card/examples/elevated&quot;]}" ssr client="only" opts="{&quot;name&quot;:&quot;DynamicComponentRenderer&quot;,&quot;value&quot;:&quot;solid-js&quot;}"></astro-island> </div> <div data-code class="border-t
       border-neutral-200
       dark:border-neutral-800"> <div class="relative"> <button type="button" data-copy class="absolute
           top-3
@@ -467,7 +474,7 @@ surrounding content.</p>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">      &#x3C;/</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">CardFooter</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">    &#x3C;/</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">Card</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">  );</span></span>
-<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> </div> </div> <script>(function(){const id = "bplk441ljnj";
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> </div> </div> <script>(function(){const id = "ewqrw8xm9f";
 const source = "import Card from \"rocksolidjs/Card\";\nimport CardHeader from \"rocksolidjs/CardHeader\";\nimport CardTitle from \"rocksolidjs/CardTitle\";\nimport CardDescription from \"rocksolidjs/CardDescription\";\nimport CardContent from \"rocksolidjs/CardContent\";\nimport CardFooter from \"rocksolidjs/CardFooter\";\nimport Button from \"rocksolidjs/Button\";\n\nexport default function Example() {\n  return (\n    \u003cCard variant=\"elevated\">\n      \u003cCardHeader>\n        \u003cCardTitle>Project overview\u003c/CardTitle>\n        \u003cCardDescription>\n          Track your project progress.\n        \u003c/CardDescription>\n      \u003c/CardHeader>\n      \u003cCardContent>\n        Your project is currently on track.\n      \u003c/CardContent>\n      \u003cCardFooter>\n        \u003cButton>View project\u003c/Button>\n      \u003c/CardFooter>\n    \u003c/Card>\n  );\n}\n";
 
   const copyBtn = document.querySelector(`#compoent-example-${id} [data-copy]`);
@@ -491,7 +498,7 @@ const source = "import Card from \"rocksolidjs/Card\";\nimport CardHeader from \
 })();</script>
 <h3 id="outlined">Outlined</h3>
 <p>Use the <code>outlined</code> variant to define the card with a visible border.</p>
-<div id="compoent-example-1c0x5yd91ak" data-component-example class="my-8
+<div id="compoent-example-dqes5rcx4df" data-component-example class="my-8
     overflow-hidden
     rounded-xl
     border
@@ -507,7 +514,7 @@ const source = "import Card from \"rocksolidjs/Card\";\nimport CardHeader from \
       text-base
       text-neutral-900
       dark:bg-neutral-950
-      dark:text-neutral-100" data-component-preview> <astro-island uid="gcvVX" component-url="/_astro/dynamic-component-renderer.CBS3Ippf.js" component-export="default" renderer-url="/_astro/client.BgJ9siUT.js" props="{&quot;name&quot;:[0,&quot;Card/examples/outlined&quot;]}" ssr client="only" opts="{&quot;name&quot;:&quot;DynamicComponentRenderer&quot;,&quot;value&quot;:&quot;solid-js&quot;}"></astro-island> </div> <div data-code class="border-t
+      dark:text-neutral-100" data-component-preview> <astro-island uid="gcvVX" component-url="/_astro/dynamic-component-renderer.D9U5PMa1.js" component-export="default" renderer-url="/_astro/client.BgJ9siUT.js" props="{&quot;name&quot;:[0,&quot;Card/examples/outlined&quot;]}" ssr client="only" opts="{&quot;name&quot;:&quot;DynamicComponentRenderer&quot;,&quot;value&quot;:&quot;solid-js&quot;}"></astro-island> </div> <div data-code class="border-t
       border-neutral-200
       dark:border-neutral-800"> <div class="relative"> <button type="button" data-copy class="absolute
           top-3
@@ -553,7 +560,7 @@ const source = "import Card from \"rocksolidjs/Card\";\nimport CardHeader from \
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">      &#x3C;/</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">CardFooter</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">    &#x3C;/</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">Card</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">  );</span></span>
-<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> </div> </div> <script>(function(){const id = "1c0x5yd91ak";
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> </div> </div> <script>(function(){const id = "dqes5rcx4df";
 const source = "import Card from \"rocksolidjs/Card\";\nimport CardHeader from \"rocksolidjs/CardHeader\";\nimport CardTitle from \"rocksolidjs/CardTitle\";\nimport CardDescription from \"rocksolidjs/CardDescription\";\nimport CardContent from \"rocksolidjs/CardContent\";\nimport CardFooter from \"rocksolidjs/CardFooter\";\nimport Button from \"rocksolidjs/Button\";\n\nexport default function Example() {\n  return (\n    \u003cCard variant=\"outlined\">\n      \u003cCardHeader>\n        \u003cCardTitle>Project overview\u003c/CardTitle>\n        \u003cCardDescription>\n          Track your project progress.\n        \u003c/CardDescription>\n      \u003c/CardHeader>\n      \u003cCardContent>\n        Your project is currently on track.\n      \u003c/CardContent>\n      \u003cCardFooter>\n        \u003cButton>View project\u003c/Button>\n      \u003c/CardFooter>\n    \u003c/Card>\n  );\n}\n";
 
   const copyBtn = document.querySelector(`#compoent-example-${id} [data-copy]`);
@@ -577,7 +584,7 @@ const source = "import Card from \"rocksolidjs/Card\";\nimport CardHeader from \
 })();</script>
 <h3 id="ghost">Ghost</h3>
 <p>Use the <code>ghost</code> variant for a minimal card without a background or border.</p>
-<div id="compoent-example-swm7f1c85z" data-component-example class="my-8
+<div id="compoent-example-6xevtjogaj" data-component-example class="my-8
     overflow-hidden
     rounded-xl
     border
@@ -593,7 +600,7 @@ const source = "import Card from \"rocksolidjs/Card\";\nimport CardHeader from \
       text-base
       text-neutral-900
       dark:bg-neutral-950
-      dark:text-neutral-100" data-component-preview> <astro-island uid="Z1k0Kc5" component-url="/_astro/dynamic-component-renderer.CBS3Ippf.js" component-export="default" renderer-url="/_astro/client.BgJ9siUT.js" props="{&quot;name&quot;:[0,&quot;Card/examples/ghost&quot;]}" ssr client="only" opts="{&quot;name&quot;:&quot;DynamicComponentRenderer&quot;,&quot;value&quot;:&quot;solid-js&quot;}"></astro-island> </div> <div data-code class="border-t
+      dark:text-neutral-100" data-component-preview> <astro-island uid="Z1k0Kc5" component-url="/_astro/dynamic-component-renderer.D9U5PMa1.js" component-export="default" renderer-url="/_astro/client.BgJ9siUT.js" props="{&quot;name&quot;:[0,&quot;Card/examples/ghost&quot;]}" ssr client="only" opts="{&quot;name&quot;:&quot;DynamicComponentRenderer&quot;,&quot;value&quot;:&quot;solid-js&quot;}"></astro-island> </div> <div data-code class="border-t
       border-neutral-200
       dark:border-neutral-800"> <div class="relative"> <button type="button" data-copy class="absolute
           top-3
@@ -639,7 +646,7 @@ const source = "import Card from \"rocksolidjs/Card\";\nimport CardHeader from \
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">      &#x3C;/</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">CardFooter</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">    &#x3C;/</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">Card</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">  );</span></span>
-<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> </div> </div> <script>(function(){const id = "swm7f1c85z";
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> </div> </div> <script>(function(){const id = "6xevtjogaj";
 const source = "import Card from \"rocksolidjs/Card\";\nimport CardHeader from \"rocksolidjs/CardHeader\";\nimport CardTitle from \"rocksolidjs/CardTitle\";\nimport CardDescription from \"rocksolidjs/CardDescription\";\nimport CardContent from \"rocksolidjs/CardContent\";\nimport CardFooter from \"rocksolidjs/CardFooter\";\nimport Button from \"rocksolidjs/Button\";\n\nexport default function Example() {\n  return (\n    \u003cCard variant=\"ghost\">\n      \u003cCardHeader>\n        \u003cCardTitle>Project overview\u003c/CardTitle>\n        \u003cCardDescription>\n          Track your project progress.\n        \u003c/CardDescription>\n      \u003c/CardHeader>\n      \u003cCardContent>\n        Your project is currently on track.\n      \u003c/CardContent>\n      \u003cCardFooter>\n        \u003cButton>View project\u003c/Button>\n      \u003c/CardFooter>\n    \u003c/Card>\n  );\n}\n";
 
   const copyBtn = document.querySelector(`#compoent-example-${id} [data-copy]`);
@@ -664,7 +671,7 @@ const source = "import Card from \"rocksolidjs/Card\";\nimport CardHeader from \
 <h3 id="customized">Customized</h3>
 <p>Combine the Card components with other components to create specialized
 card layouts for different use cases.</p>
-<div id="compoent-example-iciyd5nannj" data-component-example class="my-8
+<div id="compoent-example-h7nvm1zp3ih" data-component-example class="my-8
     overflow-hidden
     rounded-xl
     border
@@ -680,7 +687,7 @@ card layouts for different use cases.</p>
       text-base
       text-neutral-900
       dark:bg-neutral-950
-      dark:text-neutral-100" data-component-preview> <astro-island uid="FjePn" component-url="/_astro/dynamic-component-renderer.CBS3Ippf.js" component-export="default" renderer-url="/_astro/client.BgJ9siUT.js" props="{&quot;name&quot;:[0,&quot;Card/examples/customized&quot;]}" ssr client="only" opts="{&quot;name&quot;:&quot;DynamicComponentRenderer&quot;,&quot;value&quot;:&quot;solid-js&quot;}"></astro-island> </div> <div data-code class="border-t
+      dark:text-neutral-100" data-component-preview> <astro-island uid="FjePn" component-url="/_astro/dynamic-component-renderer.D9U5PMa1.js" component-export="default" renderer-url="/_astro/client.BgJ9siUT.js" props="{&quot;name&quot;:[0,&quot;Card/examples/customized&quot;]}" ssr client="only" opts="{&quot;name&quot;:&quot;DynamicComponentRenderer&quot;,&quot;value&quot;:&quot;solid-js&quot;}"></astro-island> </div> <div data-code class="border-t
       border-neutral-200
       dark:border-neutral-800"> <div class="relative"> <button type="button" data-copy class="absolute
           top-3
@@ -776,7 +783,7 @@ card layouts for different use cases.</p>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">      &#x3C;/</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">CardFooter</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">    &#x3C;/</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">Card</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">  );</span></span>
-<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> </div> </div> <script>(function(){const id = "iciyd5nannj";
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> </div> </div> <script>(function(){const id = "h7nvm1zp3ih";
 const source = "import Card from \"rocksolidjs/Card\";\nimport CardContent from \"rocksolidjs/CardContent\";\nimport CardFooter from \"rocksolidjs/CardFooter\";\nimport Button from \"rocksolidjs/Button\";\nimport Chip from \"rocksolidjs/Chip\";\nimport Typography from \"rocksolidjs/Typography\";\n\nexport default function Example() {\n  return (\n    \u003cCard \n      variant=\"ghost\"\n      class=\"bg-gradient-to-br from-sky-500 via-blue-500 to-indigo-600 text-white shadow-lg\"\n    >\n      \u003cCardContent class=\"p-5\">\n        \u003cdiv class=\"flex items-start justify-between\">\n          \u003cdiv>\n            \u003cTypography\n              variant=\"body2\"\n              class=\"text-white/80\"\n            >\n              Mumbai\n            \u003c/Typography>\n            \u003cTypography\n              variant=\"h2\"\n              class=\"mt-1 font-semibold tracking-tight text-white\"\n            >\n              28°\n            \u003c/Typography>\n            \u003cTypography\n              variant=\"body2\"\n              class=\"text-white/80\"\n            >\n              Mostly sunny\n            \u003c/Typography>\n          \u003c/div>\n          \u003cdiv class=\"flex size-12 items-center justify-center rounded-full bg-white/15 text-2xl backdrop-blur-sm\">\n            ☀️\n          \u003c/div>\n        \u003c/div>\n        \u003cdiv class=\"mt-5 flex items-center gap-2\">\n          \u003cChip\n            label=\"H: 32°\"\n            size=\"small\"\n            class=\"border-0 bg-white/15 dark:bg-white/15 text-white backdrop-blur-sm\"\n          />\n          \u003cChip\n            label=\"L: 25°\"\n            size=\"small\"\n            class=\"border-0 bg-white/15 dark:bg-white/15 text-white backdrop-blur-sm\"\n          />\n          \u003cChip\n            label=\"Humidity 54%\"\n            size=\"small\"\n            class=\"border-0 bg-white/15 dark:bg-white/15 text-white backdrop-blur-sm\"\n          />\n        \u003c/div>\n      \u003c/CardContent>\n      \u003cCardFooter \n        class=\"items-center justify-between border-t border-white/10 bg-white/5 px-5 py-3\">\n          \u003cTypography\n            variant=\"body2\"\n            class=\"text-white/70\"\n          >\n            Updated 5 min ago\n          \u003c/Typography>\n          \u003cButton\n            size=\"small\"\n            variant=\"ghost\"\n            class=\"text-white hover:bg-white/10 hover:text-white\"\n          >\n            Details\n          \u003c/Button>\n      \u003c/CardFooter>\n    \u003c/Card>\n  );\n}\n\n";
 
   const copyBtn = document.querySelector(`#compoent-example-${id} [data-copy]`);
@@ -1067,7 +1074,8 @@ sections within a card.</li>
     const menuButton = document.querySelector("#mobile-menu-button");
 
     function openSidebar() {
-      sidebar?.classList.remove("-translate-x-full");
+      sidebar?.classList.remove("ltr:-translate-x-full");
+      sidebar?.classList.remove("rtl:translate-x-full");
       sidebar?.classList.add("translate-x-0");
       overlay?.classList.remove("pointer-events-none", "opacity-0");
       overlay?.classList.add("pointer-events-auto", "opacity-100");
@@ -1076,7 +1084,8 @@ sections within a card.</li>
 
     function closeSidebar() {
       sidebar?.classList.remove("translate-x-0");
-      sidebar?.classList.add("-translate-x-full");
+      sidebar?.classList.add("ltr:-translate-x-full");
+      sidebar?.classList.add("rtl:translate-x-full");
       overlay?.classList.remove("pointer-events-auto", "opacity-100");
       overlay?.classList.add("pointer-events-none", "opacity-0");
       document.body.classList.remove("overflow-hidden");
