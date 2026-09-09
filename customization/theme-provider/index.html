@@ -11,7 +11,7 @@
     ) {
       document.documentElement.classList.add("dark");
     }
-  </script><link rel="stylesheet" href="/_astro/base.j5MurjQG.css"></head> <body class="min-h-screen bg-white text-neutral-900
+  </script><link rel="stylesheet" href="/_astro/base.C1-k0NAi.css"></head> <body class="min-h-screen bg-white text-neutral-900
     dark:bg-neutral-950 dark:text-neutral-100"> <!-- Mobile overlay --> <div id="sidebar-overlay" class="pointer-events-none fixed inset-0 z-40
       bg-black/40 opacity-0 transition-opacity
       duration-200 lg:hidden"></div> <div class="min-h-screen lg:grid
@@ -115,7 +115,7 @@ RTL
           rounded-md
           border border-neutral-200
           bg-white
-          px-3 py-1.5
+          p-1.5
           cursor-pointer
           text-lg font-medium
           text-neutral-700
@@ -132,7 +132,7 @@ hierarchy. It is used to apply a shared theme configuration across your
 application.</p>
 <p>Create a theme using the <a href="/customization/create-theme/"><code>createTheme</code></a> function and pass
 the resulting theme to the <code>theme</code> prop.</p>
-<div id="compoent-example-1h04234jvua" data-component-example class="my-8
+<div id="compoent-example-lmlf2avxoo" data-component-example class="my-8
     overflow-hidden
     rounded-xl
     border
@@ -193,7 +193,7 @@ the resulting theme to the <code>theme</code> prop.</p>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">      &#x3C;/</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">ThemeProvider</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">    &#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">div</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">  );</span></span>
-<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">};</span></span></code></pre></div> </div> </div> </div> <script>(function(){const id = "1h04234jvua";
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">};</span></span></code></pre></div> </div> </div> </div> <script>(function(){const id = "lmlf2avxoo";
 const source = "import Button from \"rocksolidjs/Button\";\nimport ThemeProvider from \"rocksolidjs/ThemeProvider\";\nimport createTheme from \"rocksolidjs/styles/createTheme\";\n\nexport default function Example() {\n  const theme = createTheme({\n    colors: {\n      default: {\n        solid: {\n          background: \"bg-blue-500 dark:bg-blue-400\",\n          text: \"text-neutral-50 dark:text-neutral-900\",\n        },\n      },\n    },\n  });\n\n  return (\n    \u003cdiv class=\"flex flex-col gap-4\">\n      \u003cButton>Button With Default Theme\u003c/Button>\n      \u003cThemeProvider theme={theme}>\n        \u003cButton>Button With Overriden Theme\u003c/Button>\n      \u003c/ThemeProvider>\n    \u003c/div>\n  );\n};";
 
   const copyBtn = document.querySelector(`#compoent-example-${id} [data-copy]`);
@@ -218,7 +218,7 @@ const source = "import Button from \"rocksolidjs/Button\";\nimport ThemeProvider
 <h2 id="accessing-the-theme">Accessing the Theme</h2>
 <p>Use the <code>useTheme</code> hook to access the theme from any component rendered within
 the ThemeProvider hierarchy.</p>
-<div id="compoent-example-mqcgd6z8r07" data-component-example class="my-8
+<div id="compoent-example-11bto8b1dvee" data-component-example class="my-8
     overflow-hidden
     rounded-xl
     border
@@ -279,7 +279,7 @@ the ThemeProvider hierarchy.</p>
 <span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">      class</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">=</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">{</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">theme</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">.</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">rounded</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">.full}</span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">    /></span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">  );</span></span>
-<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">};</span></span></code></pre></div> </div> </div> </div> <script>(function(){const id = "mqcgd6z8r07";
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">};</span></span></code></pre></div> </div> </div> </div> <script>(function(){const id = "11bto8b1dvee";
 const source = "import Button, { type ButtonProps } from \"rocksolidjs/Button\";\nimport ThemeProvider from \"rocksolidjs/ThemeProvider\";\nimport createTheme from \"rocksolidjs/styles/createTheme\";\nimport useTheme from \"rocksolidjs/styles/useTheme\";\n\nexport default function Example() {\n  const theme = createTheme({});\n  return (\n    \u003cThemeProvider theme={theme}>\n      \u003cMyButton>Customized Button\u003c/MyButton>\n    \u003c/ThemeProvider>\n  );\n}\n\nconst MyButton = (\n  props: ButtonProps,\n) => {\n  const theme = useTheme();\n  return (\n    \u003cButton\n      {...props}\n      class={theme.rounded.full}\n    />\n  );\n};";
 
   const copyBtn = document.querySelector(`#compoent-example-${id} [data-copy]`);

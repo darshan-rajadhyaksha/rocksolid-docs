@@ -11,7 +11,7 @@
     ) {
       document.documentElement.classList.add("dark");
     }
-  </script><link rel="stylesheet" href="/_astro/base.j5MurjQG.css"></head> <body class="min-h-screen bg-white text-neutral-900
+  </script><link rel="stylesheet" href="/_astro/base.C1-k0NAi.css"></head> <body class="min-h-screen bg-white text-neutral-900
     dark:bg-neutral-950 dark:text-neutral-100"> <!-- Mobile overlay --> <div id="sidebar-overlay" class="pointer-events-none fixed inset-0 z-40
       bg-black/40 opacity-0 transition-opacity
       duration-200 lg:hidden"></div> <div class="min-h-screen lg:grid
@@ -115,7 +115,7 @@ RTL
           rounded-md
           border border-neutral-200
           bg-white
-          px-3 py-1.5
+          p-1.5
           cursor-pointer
           text-lg font-medium
           text-neutral-700
@@ -130,7 +130,7 @@ RTL
 <p>The Typography component provides consistent text styles across the
 application. It supports different heading and body variants, semantic
 HTML elements, text alignment, colors, and truncation.</p>
-<div id="compoent-example-l3up1lj8s3n" data-component-example class="my-8
+<div id="compoent-example-x2libpj351" data-component-example class="my-8
     overflow-hidden
     rounded-xl
     border
@@ -178,7 +178,7 @@ HTML elements, text alignment, colors, and truncation.</p>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">      &#x3C;/</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">Typography</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">    &#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">div</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">  );</span></span>
-<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> </div> </div> <script>(function(){const id = "l3up1lj8s3n";
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> </div> </div> <script>(function(){const id = "x2libpj351";
 const source = "import Typography from \"rocksolidjs/Typography\";\n\nexport default function Example() {\n  return (\n    \u003cdiv class=\"flex flex-col gap-1\">\n      \u003cTypography variant=\"h4\">Welcome back\u003c/Typography>\n      \u003cTypography color=\"textSecondary\">\n        Here’s a quick overview of your account.\n      \u003c/Typography>\n    \u003c/div>\n  );\n}";
 
   const copyBtn = document.querySelector(`#compoent-example-${id} [data-copy]`);
@@ -203,7 +203,7 @@ const source = "import Typography from \"rocksolidjs/Typography\";\n\nexport def
 <h2 id="examples">Examples</h2>
 <h3 id="variants">Variants</h3>
 <p>Use the <code>variant</code> prop to control the visual style and size of the text.</p>
-<div id="compoent-example-clb7vwp0f59" data-component-example class="my-8
+<div id="compoent-example-fa6sfvfwr75" data-component-example class="my-8
     overflow-hidden
     rounded-xl
     border
@@ -267,7 +267,7 @@ const source = "import Typography from \"rocksolidjs/Typography\";\n\nexport def
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">      &#x3C;/</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">For</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">    &#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">div</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">  );</span></span>
-<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> </div> </div> <script>(function(){const id = "clb7vwp0f59";
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> </div> </div> <script>(function(){const id = "fa6sfvfwr75";
 const source = "import { For } from \"solid-js\";\nimport Typography from \"rocksolidjs/Typography\";\n\nconst variants = [\n  { variant: \"h1\", label: \"Heading 1\" },\n  { variant: \"h2\", label: \"Heading 2\" },\n  { variant: \"h3\", label: \"Heading 3\" },\n  { variant: \"h4\", label: \"Heading 4\" },\n  { variant: \"h5\", label: \"Heading 5\" },\n  { variant: \"h6\", label: \"Heading 6\" },\n  { variant: \"body1\", label: \"Body 1\" },\n  { variant: \"body2\", label: \"Body 2\" },\n  { variant: \"code\", label: \"const greeting = 'Hello';\" },\n];\n\nexport default function Example() {\n  return (\n    \u003cdiv class=\"flex flex-col gap-4\">\n      \u003cFor each={variants}>\n        {(item) => (\n          \u003cTypography variant={item.variant as any}>\n            {item.label}\n          \u003c/Typography>\n        )}\n      \u003c/For>\n    \u003c/div>\n  );\n}";
 
   const copyBtn = document.querySelector(`#compoent-example-${id} [data-copy]`);
@@ -292,7 +292,7 @@ const source = "import { For } from \"solid-js\";\nimport Typography from \"rock
 <h3 id="colors">Colors</h3>
 <p>Use the <code>color</code> prop to communicate different meanings or visual
 hierarchies.</p>
-<div id="compoent-example-20g08ulixca" data-component-example class="my-8
+<div id="compoent-example-rubak8t8gz9" data-component-example class="my-8
     overflow-hidden
     rounded-xl
     border
@@ -356,7 +356,7 @@ hierarchies.</p>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">      &#x3C;/</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">For</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">    &#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">div</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">  );</span></span>
-<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> </div> </div> <script>(function(){const id = "20g08ulixca";
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> </div> </div> <script>(function(){const id = "rubak8t8gz9";
 const source = "import { For } from \"solid-js\";\nimport Typography from \"rocksolidjs/Typography\";\n\nconst colors = [\n  \"default\",\n  \"textPrimary\",\n  \"textSecondary\",\n  \"textTertiary\",\n  \"success\",\n  \"warning\",\n  \"info\",\n  \"error\",\n  \"disabled\",\n] as const;\n\nexport default function Example() {\n  return (\n    \u003cdiv class=\"flex flex-col gap-2\">\n      \u003cFor each={colors}>\n        {(color) => (\n          \u003cTypography color={color}>\n            {color}\n          \u003c/Typography>\n        )}\n      \u003c/For>\n    \u003c/div>\n  );\n}";
 
   const copyBtn = document.querySelector(`#compoent-example-${id} [data-copy]`);
@@ -380,7 +380,7 @@ const source = "import { For } from \"solid-js\";\nimport Typography from \"rock
 })();</script>
 <h3 id="alignment">Alignment</h3>
 <p>Use the <code>align</code> prop to control the horizontal alignment of text.</p>
-<div id="compoent-example-fuy4efw3byj" data-component-example class="my-8
+<div id="compoent-example-1igl4ughvjl" data-component-example class="my-8
     overflow-hidden
     rounded-xl
     border
@@ -434,7 +434,7 @@ const source = "import { For } from \"solid-js\";\nimport Typography from \"rock
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">      &#x3C;/</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">For</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">    &#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">div</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">  );</span></span>
-<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> </div> </div> <script>(function(){const id = "fuy4efw3byj";
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> </div> </div> <script>(function(){const id = "1igl4ughvjl";
 const source = "import { For } from \"solid-js\";\nimport Typography from \"rocksolidjs/Typography\";\n\nconst alignments = [\"left\", \"center\", \"right\", \"justify\"] as const;\n\nexport default function Example() {\n  return (\n    \u003cdiv class=\"flex flex-col gap-4 w-full max-w-sm\">\n      \u003cFor each={alignments}>\n        {(align) => (\n          \u003cTypography align={align} class=\"border p-2\">\n            {align} alignment\n          \u003c/Typography>\n        )}\n      \u003c/For>\n    \u003c/div>\n  );\n}";
 
   const copyBtn = document.querySelector(`#compoent-example-${id} [data-copy]`);
@@ -459,7 +459,7 @@ const source = "import { For } from \"solid-js\";\nimport Typography from \"rock
 <h3 id="truncation">Truncation</h3>
 <p>Use the <code>truncate</code> prop to prevent long text from overflowing its
 container.</p>
-<div id="compoent-example-6ihlf6y7ybp" data-component-example class="my-8
+<div id="compoent-example-l32t8j4a39n" data-component-example class="my-8
     overflow-hidden
     rounded-xl
     border
@@ -507,7 +507,7 @@ container.</p>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">      &#x3C;/</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">Typography</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">    &#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">div</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">  );</span></span>
-<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> </div> </div> <script>(function(){const id = "6ihlf6y7ybp";
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> </div> </div> <script>(function(){const id = "l32t8j4a39n";
 const source = "import Typography from \"rocksolidjs/Typography\";\n\nexport default function Example() {\n  return (\n    \u003cdiv class=\"max-w-xs\">\n      \u003cTypography truncate>\n        This is a long piece of text that will be truncated when it does\n        not fit within the available space.\n      \u003c/Typography>\n    \u003c/div>\n  );\n}";
 
   const copyBtn = document.querySelector(`#compoent-example-${id} [data-copy]`);
@@ -532,7 +532,7 @@ const source = "import Typography from \"rocksolidjs/Typography\";\n\nexport def
 <h3 id="custom-element">Custom Element</h3>
 <p>Use the <code>as</code> prop to control the semantic HTML element rendered by the
 component.</p>
-<div id="compoent-example-m1igg9fkf3h" data-component-example class="my-8
+<div id="compoent-example-c25tl28uu49" data-component-example class="my-8
     overflow-hidden
     rounded-xl
     border
@@ -582,7 +582,7 @@ component.</p>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">      &#x3C;/</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">Typography</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">    &#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">div</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">  );</span></span>
-<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> </div> </div> <script>(function(){const id = "m1igg9fkf3h";
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> </div> </div> <script>(function(){const id = "c25tl28uu49";
 const source = "import Typography from \"rocksolidjs/Typography\";\n\nexport default function Example() {\n  return (\n    \u003cdiv class=\"flex flex-col gap-2\">\n      \u003cTypography variant=\"h3\" as=\"p\">\n        A heading style rendered as a paragraph\n      \u003c/Typography>\n      \u003cTypography variant=\"body1\" as=\"span\">\n        Body text rendered as a span.\n      \u003c/Typography>\n    \u003c/div>\n  );\n}";
 
   const copyBtn = document.querySelector(`#compoent-example-${id} [data-copy]`);

@@ -11,7 +11,7 @@
     ) {
       document.documentElement.classList.add("dark");
     }
-  </script><link rel="stylesheet" href="/_astro/base.j5MurjQG.css"></head> <body class="min-h-screen bg-white text-neutral-900
+  </script><link rel="stylesheet" href="/_astro/base.C1-k0NAi.css"></head> <body class="min-h-screen bg-white text-neutral-900
     dark:bg-neutral-950 dark:text-neutral-100"> <!-- Mobile overlay --> <div id="sidebar-overlay" class="pointer-events-none fixed inset-0 z-40
       bg-black/40 opacity-0 transition-opacity
       duration-200 lg:hidden"></div> <div class="min-h-screen lg:grid
@@ -115,7 +115,7 @@ RTL
           rounded-md
           border border-neutral-200
           bg-white
-          px-3 py-1.5
+          p-1.5
           cursor-pointer
           text-lg font-medium
           text-neutral-700
@@ -129,7 +129,7 @@ RTL
           dark:hover:text-neutral-100"> <span class="theme-light"> <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="m15 8l-3-3l3-3l3 3zm5 3l-2-2l2-2l2 2zm-7.925 11q-2.1 0-3.937-.8t-3.2-2.162t-2.163-3.2t-.8-3.938q0-3.65 2.325-6.437T10.225 2q-.45 2.475.275 4.838t2.5 4.137t4.138 2.5t4.837.275q-.65 3.6-3.45 5.925T12.075 22"></path></svg> </span> <span class="theme-dark hidden"> <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="M11 3V2q0-.425.288-.712T12 1t.713.288T13 2v1q0 .425-.288.713T12 4t-.712-.288T11 3m0 19v-1q0-.425.288-.712T12 20t.713.288T13 21v1q0 .425-.288.713T12 23t-.712-.288T11 22m11-9h-1q-.425 0-.712-.288T20 12t.288-.712T21 11h1q.425 0 .713.288T23 12t-.288.713T22 13M3 13H2q-.425 0-.712-.288T1 12t.288-.712T2 11h1q.425 0 .713.288T4 12t-.288.713T3 13m16.75-7.325l-.35.35q-.275.275-.687.275T18 6q-.275-.275-.288-.687t.263-.713l.375-.375q.275-.3.7-.3t.725.3t.288.725t-.313.725M6.025 19.4l-.375.375q-.275.3-.7.3t-.725-.3t-.288-.725t.313-.725l.35-.35q.275-.275.688-.275T6 18q.275.275.288.688t-.263.712m12.3.35l-.35-.35q-.275-.275-.275-.687T18 18q.275-.275.688-.287t.712.262l.375.375q.3.275.3.7t-.3.725t-.725.288t-.725-.313M4.6 6.025l-.375-.375q-.3-.275-.3-.7t.3-.725t.725-.288t.725.313l.35.35q.275.275.275.688T6 6q-.275.275-.687.288T4.6 6.025M7.75 16.25Q6 14.5 6 12t1.75-4.25T12 6t4.25 1.75T18 12t-1.75 4.25T12 18t-4.25-1.75"></path></svg> </span> </button> </div> </div> </header> <main class="py-8 sm:py-10"> <div class="prose-docs px-6 sm:px-10 lg:px-16 xl:px-20"> <h1 id="tabs">Tabs</h1>
 <p>The Tabs component organizes related content into separate views that
 can be switched between without leaving the current page.</p>
-<div id="compoent-example-vyaulvcl6g" data-component-example class="my-8
+<div id="compoent-example-ds5dwcft5su" data-component-example class="my-8
     overflow-hidden
     rounded-xl
     border
@@ -192,7 +192,7 @@ can be switched between without leaving the current page.</p>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">      &#x3C;/</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">TabsContext</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">    &#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">div</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">  );</span></span>
-<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> </div> </div> <script>(function(){const id = "vyaulvcl6g";
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> </div> </div> <script>(function(){const id = "ds5dwcft5su";
 const source = "import Tab from \"rocksolidjs/Tab\";\nimport TabsContext from \"rocksolidjs/TabsContext\";\nimport TabPanel from \"rocksolidjs/TabPanel\";\nimport Tabs from \"rocksolidjs/Tabs\";\n\nexport default function Example() {\n  return (\n    \u003cdiv class=\"max-w-5xl w-full\">\n      \u003cTabsContext defaultValue=\"home\" tabId=\"basic\">\n        \u003cTabs class=\"mb-2\">\n          \u003cTab label=\"Home\" value=\"home\" />\n          \u003cTab label=\"Profile\" value=\"profile\" />\n          \u003cTab label=\"Settings\" value=\"settings\" />\n        \u003c/Tabs>\n        \u003cTabPanel value=\"home\" tabIndex={0}>\n          Welcome to the home page.\n        \u003c/TabPanel>\n        \u003cTabPanel value=\"profile\" tabIndex={0}>\n          View and manage your profile.\n        \u003c/TabPanel>\n        \u003cTabPanel value=\"settings\" tabIndex={0}>\n          Manage your account settings.\n        \u003c/TabPanel>\n      \u003c/TabsContext>\n    \u003c/div>\n  );\n}";
 
   const copyBtn = document.querySelector(`#compoent-example-${id} [data-copy]`);
@@ -244,7 +244,7 @@ displayed.</p>
 <h3 id="controlled">Controlled</h3>
 <p>Use the <code>value</code> prop on <code>TabsContext</code> to control the active tab. Use
 <code>onChange</code> to respond when the user selects a different tab.</p>
-<div id="compoent-example-pfqu1r291xp" data-component-example class="my-8
+<div id="compoent-example-2sifs5jc4oi" data-component-example class="my-8
     overflow-hidden
     rounded-xl
     border
@@ -314,7 +314,7 @@ displayed.</p>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">      &#x3C;/</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">TabsContext</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">    &#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">div</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">  );</span></span>
-<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> </div> </div> <script>(function(){const id = "pfqu1r291xp";
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> </div> </div> <script>(function(){const id = "2sifs5jc4oi";
 const source = "import { createSignal } from \"solid-js\";\nimport Tab from \"rocksolidjs/Tab\";\nimport TabsContext from \"rocksolidjs/TabsContext\";\nimport TabPanel from \"rocksolidjs/TabPanel\";\nimport Tabs from \"rocksolidjs/Tabs\";\n\nexport default function Example() {\n  const [activeTab, setActiveTab] = createSignal(\"home\");\n\n  return (\n    \u003cdiv class=\"max-w-5xl w-full\">\n      \u003cTabsContext\n        value={activeTab()}\n        onChange={(_event, tab) => setActiveTab(tab)}\n        tabId=\"controlled\"\n      >\n        \u003cTabs class=\"mb-2\">\n          \u003cTab label=\"Home\" value=\"home\" />\n          \u003cTab label=\"Profile\" value=\"profile\" />\n          \u003cTab label=\"Settings\" value=\"settings\" />\n        \u003c/Tabs>\n        \u003cTabPanel value=\"home\">\n          Welcome to the home page.\n        \u003c/TabPanel>\n        \u003cTabPanel value=\"profile\">\n          View and manage your profile.\n        \u003c/TabPanel>\n        \u003cTabPanel value=\"settings\">\n          Manage your account settings.\n        \u003c/TabPanel>\n      \u003c/TabsContext>\n    \u003c/div>\n  );\n}";
 
   const copyBtn = document.querySelector(`#compoent-example-${id} [data-copy]`);
@@ -339,7 +339,7 @@ const source = "import { createSignal } from \"solid-js\";\nimport Tab from \"ro
 <h3 id="default-value">Default Value</h3>
 <p>Use <code>defaultValue</code> to specify the tab that should be active initially
 without controlling the active tab.</p>
-<div id="compoent-example-9bv05kj95qt" data-component-example class="my-8
+<div id="compoent-example-peegk71xs3n" data-component-example class="my-8
     overflow-hidden
     rounded-xl
     border
@@ -402,7 +402,7 @@ without controlling the active tab.</p>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">      &#x3C;/</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">TabsContext</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">    &#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">div</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">  );</span></span>
-<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> </div> </div> <script>(function(){const id = "9bv05kj95qt";
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> </div> </div> <script>(function(){const id = "peegk71xs3n";
 const source = "import Tab from \"rocksolidjs/Tab\";\nimport TabsContext from \"rocksolidjs/TabsContext\";\nimport TabPanel from \"rocksolidjs/TabPanel\";\nimport Tabs from \"rocksolidjs/Tabs\";\n\nexport default function Example() {\n  return (\n    \u003cdiv class=\"max-w-5xl w-full\">\n      \u003cTabsContext defaultValue=\"profile\" tabId=\"default-value\">\n        \u003cTabs class=\"mb-2\">\n          \u003cTab label=\"Home\" value=\"home\" />\n          \u003cTab label=\"Profile\" value=\"profile\" />\n          \u003cTab label=\"Settings\" value=\"settings\" />\n        \u003c/Tabs>\n        \u003cTabPanel value=\"home\">\n          Welcome to the home page.\n        \u003c/TabPanel>\n        \u003cTabPanel value=\"profile\">\n          This tab is selected by default.\n        \u003c/TabPanel>\n        \u003cTabPanel value=\"settings\">\n          Manage your account settings.\n        \u003c/TabPanel>\n      \u003c/TabsContext>\n    \u003c/div>\n  );\n}";
 
   const copyBtn = document.querySelector(`#compoent-example-${id} [data-copy]`);
@@ -426,7 +426,7 @@ const source = "import Tab from \"rocksolidjs/Tab\";\nimport TabsContext from \"
 })();</script>
 <h3 id="orientation">Orientation</h3>
 <p>Use the <code>orientation</code> prop to arrange tabs horizontally or vertically.</p>
-<div id="compoent-example-i75hjqxavu" data-component-example class="my-8
+<div id="compoent-example-ob0mg2xedeo" data-component-example class="my-8
     overflow-hidden
     rounded-xl
     border
@@ -491,7 +491,7 @@ const source = "import Tab from \"rocksolidjs/Tab\";\nimport TabsContext from \"
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">      &#x3C;/</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">TabsContext</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">    &#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">div</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">  );</span></span>
-<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> </div> </div> <script>(function(){const id = "i75hjqxavu";
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> </div> </div> <script>(function(){const id = "ob0mg2xedeo";
 const source = "import Tab from \"rocksolidjs/Tab\";\nimport TabsContext from \"rocksolidjs/TabsContext\";\nimport TabPanel from \"rocksolidjs/TabPanel\";\nimport Tabs from \"rocksolidjs/Tabs\";\n\nexport default function Example() {\n  return (\n    \u003cdiv class=\"max-w-5xl w-full grid grid-cols-[100px_1fr] gap-4\">\n      \u003cTabsContext defaultValue=\"home\" tabId=\"orientation\">\n        \u003cTabs orientation=\"vertical\">\n          \u003cTab label=\"Home\" value=\"home\" />\n          \u003cTab label=\"Profile\" value=\"profile\" />\n          \u003cTab label=\"Settings\" value=\"settings\" />\n        \u003c/Tabs>\n        \u003cdiv>\n          \u003cTabPanel value=\"home\">\n            Welcome to the home page.\n          \u003c/TabPanel>\n          \u003cTabPanel value=\"profile\">\n            View and manage your profile.\n          \u003c/TabPanel>\n          \u003cTabPanel value=\"settings\">\n            Manage your account settings.\n          \u003c/TabPanel>\n        \u003c/div>\n      \u003c/TabsContext>\n    \u003c/div>\n  );\n}";
 
   const copyBtn = document.querySelector(`#compoent-example-${id} [data-copy]`);
@@ -515,7 +515,7 @@ const source = "import Tab from \"rocksolidjs/Tab\";\nimport TabsContext from \"
 })();</script>
 <h3 id="centered">Centered</h3>
 <p>Use the <code>centered</code> prop to center the tabs within the available space.</p>
-<div id="compoent-example-7x668mm29ai" data-component-example class="my-8
+<div id="compoent-example-raz6tegku8" data-component-example class="my-8
     overflow-hidden
     rounded-xl
     border
@@ -578,7 +578,7 @@ const source = "import Tab from \"rocksolidjs/Tab\";\nimport TabsContext from \"
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">      &#x3C;/</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">TabsContext</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">    &#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">div</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">  );</span></span>
-<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> </div> </div> <script>(function(){const id = "7x668mm29ai";
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> </div> </div> <script>(function(){const id = "raz6tegku8";
 const source = "import Tab from \"rocksolidjs/Tab\";\nimport TabsContext from \"rocksolidjs/TabsContext\";\nimport TabPanel from \"rocksolidjs/TabPanel\";\nimport Tabs from \"rocksolidjs/Tabs\";\n\nexport default function Example() {\n  return (\n    \u003cdiv class=\"max-w-5xl w-full\">\n      \u003cTabsContext defaultValue=\"home\" tabId=\"centered\">\n        \u003cTabs centered class=\"mb-3\">\n          \u003cTab label=\"Home\" value=\"home\" />\n          \u003cTab label=\"Profile\" value=\"profile\" />\n          \u003cTab label=\"Settings\" value=\"settings\" />\n        \u003c/Tabs>\n        \u003cTabPanel value=\"home\">\n          Welcome to the home page.\n        \u003c/TabPanel>\n        \u003cTabPanel value=\"profile\">\n          View and manage your profile.\n        \u003c/TabPanel>\n        \u003cTabPanel value=\"settings\">\n          Manage your account settings.\n        \u003c/TabPanel>\n      \u003c/TabsContext>\n    \u003c/div>\n  );\n}";
 
   const copyBtn = document.querySelector(`#compoent-example-${id} [data-copy]`);
@@ -602,7 +602,7 @@ const source = "import Tab from \"rocksolidjs/Tab\";\nimport TabsContext from \"
 })();</script>
 <h3 id="icons">Icons</h3>
 <p>Use the <code>icon</code> prop to display an icon alongside a tab label.</p>
-<div id="compoent-example-yxx1zhj370b" data-component-example class="my-8
+<div id="compoent-example-c9a19w8v864" data-component-example class="my-8
     overflow-hidden
     rounded-xl
     border
@@ -736,7 +736,7 @@ const source = "import Tab from \"rocksolidjs/Tab\";\nimport TabsContext from \"
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">      &#x3C;</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">path</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> d</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">=</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">"M19.4 15a1.7 1.7 0 0 0 .3 1.9l.1.1-1.7 1.7-.1-.1a1.7 1.7 0 0 0-1.9-.3 1.7 1.7 0 0 0-1 1.6v.1h-2.4v-.1a1.7 1.7 0 0 0-1-1.6 1.7 1.7 0 0 0-1.9.3l-.1.1L8 17l.1-.1a1.7 1.7 0 0 0 .3-1.9 1.7 1.7 0 0 0-1.6-1H6.7v-2.4h.1a1.7 1.7 0 0 0 1.6-1 1.7 1.7 0 0 0-.3-1.9L8 8.6l1.7-1.7.1.1a1.7 1.7 0 0 0 1.9.3 1.7 1.7 0 0 0 1-1.6v-.1h2.4v.1a1.7 1.7 0 0 0 1 1.6 1.7 1.7 0 0 0 1.9-.3l.1-.1 1.7 1.7-.1.1a1.7 1.7 0 0 0-.3 1.9 1.7 1.7 0 0 0 1.6 1h.1V14h-.1a1.7 1.7 0 0 0-1.6 1Z"</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0"> /></span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">    &#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">svg</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">  );</span></span>
-<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> </div> </div> <script>(function(){const id = "yxx1zhj370b";
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> </div> </div> <script>(function(){const id = "c9a19w8v864";
 const source = "import Tab from \"rocksolidjs/Tab\";\nimport TabsContext from \"rocksolidjs/TabsContext\";\nimport TabPanel from \"rocksolidjs/TabPanel\";\nimport Tabs from \"rocksolidjs/Tabs\";\n\nexport default function Example() {\n  return (\n    \u003cdiv class=\"max-w-5xl w-full\">\n      \u003cTabsContext defaultValue=\"home\" tabId=\"icons\">\n        \u003cTabs class=\"mb-2\">\n          \u003cTab\n            icon={\u003cHomeIcon />}\n            label=\"Home\"\n            value=\"home\"\n          />\n          \u003cTab\n            icon={\u003cProfileIcon />}\n            label=\"Profile\"\n            value=\"profile\"\n          />\n          \u003cTab\n            icon={\u003cSettingsIcon />}\n            label=\"Settings\"\n            value=\"settings\"\n          />\n        \u003c/Tabs>\n\n        \u003cTabPanel value=\"home\">\n          Welcome to the home page.\n        \u003c/TabPanel>\n        \u003cTabPanel value=\"profile\">\n          View and manage your profile.\n        \u003c/TabPanel>\n        \u003cTabPanel value=\"settings\">\n          Manage your account settings.\n        \u003c/TabPanel>\n      \u003c/TabsContext>\n    \u003c/div>\n  );\n}\n\nfunction HomeIcon() {\n  return (\n    \u003csvg\n      width=\"20\"\n      height=\"20\"\n      viewBox=\"0 0 24 24\"\n      fill=\"none\"\n      stroke=\"currentColor\"\n      stroke-width=\"2\"\n      stroke-linecap=\"round\"\n      stroke-linejoin=\"round\"\n      aria-hidden={true}\n    >\n      \u003cpath d=\"m3 10 9-7 9 7\" />\n      \u003cpath d=\"M5 9v11h14V9\" />\n      \u003cpath d=\"M9 20v-6h6v6\" />\n    \u003c/svg>\n  );\n}\n\nfunction ProfileIcon() {\n  return (\n    \u003csvg\n      width=\"20\"\n      height=\"20\"\n      viewBox=\"0 0 24 24\"\n      fill=\"none\"\n      stroke=\"currentColor\"\n      stroke-width=\"2\"\n      stroke-linecap=\"round\"\n      stroke-linejoin=\"round\"\n      aria-hidden={true}\n    >\n      \u003ccircle cx=\"12\" cy=\"8\" r=\"4\" />\n      \u003cpath d=\"M4 21a8 8 0 0 1 16 0\" />\n    \u003c/svg>\n  );\n}\n\nfunction SettingsIcon() {\n  return (\n    \u003csvg\n      width=\"20\"\n      height=\"20\"\n      viewBox=\"0 0 24 24\"\n      fill=\"none\"\n      stroke=\"currentColor\"\n      stroke-width=\"2\"\n      stroke-linecap=\"round\"\n      stroke-linejoin=\"round\"\n      aria-hidden={true}\n    >\n      \u003cpath d=\"M12 15.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7Z\" />\n      \u003cpath d=\"M19.4 15a1.7 1.7 0 0 0 .3 1.9l.1.1-1.7 1.7-.1-.1a1.7 1.7 0 0 0-1.9-.3 1.7 1.7 0 0 0-1 1.6v.1h-2.4v-.1a1.7 1.7 0 0 0-1-1.6 1.7 1.7 0 0 0-1.9.3l-.1.1L8 17l.1-.1a1.7 1.7 0 0 0 .3-1.9 1.7 1.7 0 0 0-1.6-1H6.7v-2.4h.1a1.7 1.7 0 0 0 1.6-1 1.7 1.7 0 0 0-.3-1.9L8 8.6l1.7-1.7.1.1a1.7 1.7 0 0 0 1.9.3 1.7 1.7 0 0 0 1-1.6v-.1h2.4v.1a1.7 1.7 0 0 0 1 1.6 1.7 1.7 0 0 0 1.9-.3l.1-.1 1.7 1.7-.1.1a1.7 1.7 0 0 0-.3 1.9 1.7 1.7 0 0 0 1.6 1h.1V14h-.1a1.7 1.7 0 0 0-1.6 1Z\" />\n    \u003c/svg>\n  );\n}";
 
   const copyBtn = document.querySelector(`#compoent-example-${id} [data-copy]`);
@@ -761,7 +761,7 @@ const source = "import Tab from \"rocksolidjs/Tab\";\nimport TabsContext from \"
 <h3 id="icon-position">Icon Position</h3>
 <p>Use the <code>iconPosition</code> prop to control where an icon appears relative to
 the tab label.</p>
-<div id="compoent-example-j3p0ogmhlf" data-component-example class="my-8
+<div id="compoent-example-k33g6w4265" data-component-example class="my-8
     overflow-hidden
     rounded-xl
     border
@@ -855,7 +855,7 @@ the tab label.</p>
 <span class="line"><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">  return</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0"> (</span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">    &#x3C;</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">span</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> aria-hidden</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">=</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">"true"</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">>●&#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">span</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">  );</span></span>
-<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> </div> </div> <script>(function(){const id = "j3p0ogmhlf";
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> </div> </div> <script>(function(){const id = "k33g6w4265";
 const source = "import Tab from \"rocksolidjs/Tab\";\nimport TabsContext from \"rocksolidjs/TabsContext\";\nimport TabPanel from \"rocksolidjs/TabPanel\";\nimport Tabs from \"rocksolidjs/Tabs\";\n\nexport default function Example() {\n  return (\n    \u003cdiv class=\"max-w-5xl w-full\">\n      \u003cTabsContext defaultValue=\"top\" tabId=\"icon-position\">\n        \u003cTabs class=\"mb-2\">\n          \u003cTab\n            icon={\u003cIcon />}\n            iconPosition=\"top\"\n            label=\"Top\"\n            value=\"top\"\n          />\n          \u003cTab\n            icon={\u003cIcon />}\n            iconPosition=\"bottom\"\n            label=\"Bottom\"\n            value=\"bottom\"\n          />\n          \u003cTab\n            icon={\u003cIcon />}\n            iconPosition=\"start\"\n            label=\"Start\"\n            value=\"start\"\n          />\n          \u003cTab\n            icon={\u003cIcon />}\n            iconPosition=\"end\"\n            label=\"End\"\n            value=\"end\"\n          />\n        \u003c/Tabs>\n\n        \u003cTabPanel value=\"top\">\n          Icon positioned above the label.\n        \u003c/TabPanel>\n        \u003cTabPanel value=\"bottom\">\n          Icon positioned below the label.\n        \u003c/TabPanel>\n        \u003cTabPanel value=\"start\">\n          Icon positioned to the start of the label.\n        \u003c/TabPanel>\n        \u003cTabPanel value=\"end\">\n          Icon positioned to the end of the label.\n        \u003c/TabPanel>\n      \u003c/TabsContext>\n    \u003c/div>\n  );\n}\n\nfunction Icon() {\n  return (\n    \u003cspan aria-hidden=\"true\">●\u003c/span>\n  );\n}";
 
   const copyBtn = document.querySelector(`#compoent-example-${id} [data-copy]`);
@@ -879,7 +879,7 @@ const source = "import Tab from \"rocksolidjs/Tab\";\nimport TabsContext from \"
 })();</script>
 <h3 id="disabled">Disabled</h3>
 <p>Use the <code>disabled</code> prop to prevent users from selecting a tab.</p>
-<div id="compoent-example-29tiicdprnh" data-component-example class="my-8
+<div id="compoent-example-1xh68yzjy9m" data-component-example class="my-8
     overflow-hidden
     rounded-xl
     border
@@ -942,7 +942,7 @@ const source = "import Tab from \"rocksolidjs/Tab\";\nimport TabsContext from \"
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">      &#x3C;/</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">TabsContext</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">    &#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">div</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">  );</span></span>
-<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> </div> </div> <script>(function(){const id = "29tiicdprnh";
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> </div> </div> <script>(function(){const id = "1xh68yzjy9m";
 const source = "import Tab from \"rocksolidjs/Tab\";\nimport TabsContext from \"rocksolidjs/TabsContext\";\nimport TabPanel from \"rocksolidjs/TabPanel\";\nimport Tabs from \"rocksolidjs/Tabs\";\n\nexport default function Example() {\n  return (\n    \u003cdiv class=\"max-w-5xl w-full\">\n      \u003cTabsContext defaultValue=\"home\" tabId=\"disabled-example\">\n        \u003cTabs class=\"mb-2\">\n          \u003cTab label=\"Home\" value=\"home\" />\n          \u003cTab label=\"Profile\" value=\"profile\" />\n          \u003cTab label=\"Settings\" value=\"settings\" disabled />\n        \u003c/Tabs>\n        \u003cTabPanel value=\"home\" tabIndex={0}>\n          Welcome to the home page.\n        \u003c/TabPanel>\n        \u003cTabPanel value=\"profile\" tabIndex={0}>\n          View and manage your profile.\n        \u003c/TabPanel>\n        \u003cTabPanel value=\"settings\" tabIndex={0}>\n          Manage your account settings.\n        \u003c/TabPanel>\n      \u003c/TabsContext>\n    \u003c/div>\n  );\n}";
 
   const copyBtn = document.querySelector(`#compoent-example-${id} [data-copy]`);
@@ -966,7 +966,7 @@ const source = "import Tab from \"rocksolidjs/Tab\";\nimport TabsContext from \"
 })();</script>
 <h3 id="tab-id">Tab ID</h3>
 <p>Use the <code>tabId</code> prop to automatically associate each tab with its corresponding tab panel.</p>
-<div id="compoent-example-ftjyz9gjwt" data-component-example class="my-8
+<div id="compoent-example-ygqg7hsj1yh" data-component-example class="my-8
     overflow-hidden
     rounded-xl
     border
@@ -1029,7 +1029,7 @@ const source = "import Tab from \"rocksolidjs/Tab\";\nimport TabsContext from \"
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">      &#x3C;/</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">TabsContext</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">    &#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">div</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">  );</span></span>
-<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> </div> </div> <script>(function(){const id = "ftjyz9gjwt";
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> </div> </div> <script>(function(){const id = "ygqg7hsj1yh";
 const source = "import Tab from \"rocksolidjs/Tab\";\nimport TabsContext from \"rocksolidjs/TabsContext\";\nimport TabPanel from \"rocksolidjs/TabPanel\";\nimport Tabs from \"rocksolidjs/Tabs\";\n\nexport default function Example() {\n  return (\n    \u003cdiv class=\"max-w-5xl w-full\">\n      \u003cTabsContext defaultValue=\"home\" tabId=\"basic\">\n        \u003cTabs class=\"mb-2\">\n          \u003cTab label=\"Home\" value=\"home\" />\n          \u003cTab label=\"Profile\" value=\"profile\" />\n          \u003cTab label=\"Settings\" value=\"settings\" />\n        \u003c/Tabs>\n        \u003cTabPanel value=\"home\" tabIndex={0}>\n          Welcome to the home page.\n        \u003c/TabPanel>\n        \u003cTabPanel value=\"profile\" tabIndex={0}>\n          View and manage your profile.\n        \u003c/TabPanel>\n        \u003cTabPanel value=\"settings\" tabIndex={0}>\n          Manage your account settings.\n        \u003c/TabPanel>\n      \u003c/TabsContext>\n    \u003c/div>\n  );\n}";
 
   const copyBtn = document.querySelector(`#compoent-example-${id} [data-copy]`);
@@ -1076,7 +1076,7 @@ const source = "import Tab from \"rocksolidjs/Tab\";\nimport TabsContext from \"
 <p>Use the <code>class</code> prop to customize the appearance of <code>TabsContext</code>, <code>Tabs</code>,
 <code>Tab</code>, and <code>TabPanel</code> components. Use <code>slotProps</code> on <code>Tab</code> when you need
 to customize individual tab slots.</p>
-<div id="compoent-example-2qhogh8i0ma" data-component-example class="my-8
+<div id="compoent-example-uoedyjai29q" data-component-example class="my-8
     overflow-hidden
     rounded-xl
     border
@@ -1171,7 +1171,7 @@ to customize individual tab slots.</p>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">      &#x3C;/</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">TabsContext</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">    &#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">div</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">  );</span></span>
-<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> </div> </div> <script>(function(){const id = "2qhogh8i0ma";
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> </div> </div> <script>(function(){const id = "uoedyjai29q";
 const source = "import Tab from \"rocksolidjs/Tab\";\nimport TabsContext from \"rocksolidjs/TabsContext\";\nimport TabPanel from \"rocksolidjs/TabPanel\";\nimport Tabs from \"rocksolidjs/Tabs\";\nimport { createSignal } from \"solid-js\";\n\nexport default function Example() {\n  const [activeTab, setActiveTab] = createSignal(\"home\");\n\n  const getClass = (tab: string) => (`\n    shadow-none \n    ${activeTab() === tab ? `\n      text-white\n      bg-blue-500 dark:bg-blue-500\n      hover:bg-blue-600 hover:dark:bg-blue-400\n      active:bg-blue-600/80 active:dark:bg-blue-400/80\n    ` : \"\"}\n  `);\n\n  return (\n    \u003cdiv class=\"w-full\">\n      \u003cTabsContext\n        value={activeTab()}\n        onChange={(_event, tab) => setActiveTab(tab)}\n        tabId=\"custom-styled\"\n      >\n        \u003cTabs \n          class=\"border-none grid grid-cols-3 bg-neutral-100 dark:bg-neutral-800\"\n        >\n          \u003cTab\n            class={getClass(\"home\")}\n            label=\"Home\"\n            value=\"home\"\n          />\n          \u003cTab\n            class={getClass(\"profile\")}\n            label=\"Profile\"\n            value=\"profile\"\n          />\n          \u003cTab\n            class={getClass(\"settings\")}\n            label=\"Settings\"\n            value=\"settings\"\n          />\n        \u003c/Tabs>\n\n        \u003cTabPanel class=\"p-4\" value=\"home\">\n          Welcome to the home page.\n        \u003c/TabPanel>\n        \u003cTabPanel class=\"p-4\" value=\"profile\">\n          View and manage your profile.\n        \u003c/TabPanel>\n        \u003cTabPanel class=\"p-4\" value=\"settings\">\n          Manage your account settings.\n        \u003c/TabPanel>\n      \u003c/TabsContext>\n    \u003c/div>\n  );\n}";
 
   const copyBtn = document.querySelector(`#compoent-example-${id} [data-copy]`);

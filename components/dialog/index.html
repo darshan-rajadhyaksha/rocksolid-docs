@@ -11,7 +11,7 @@
     ) {
       document.documentElement.classList.add("dark");
     }
-  </script><link rel="stylesheet" href="/_astro/base.j5MurjQG.css"></head> <body class="min-h-screen bg-white text-neutral-900
+  </script><link rel="stylesheet" href="/_astro/base.C1-k0NAi.css"></head> <body class="min-h-screen bg-white text-neutral-900
     dark:bg-neutral-950 dark:text-neutral-100"> <!-- Mobile overlay --> <div id="sidebar-overlay" class="pointer-events-none fixed inset-0 z-40
       bg-black/40 opacity-0 transition-opacity
       duration-200 lg:hidden"></div> <div class="min-h-screen lg:grid
@@ -115,7 +115,7 @@ RTL
           rounded-md
           border border-neutral-200
           bg-white
-          px-3 py-1.5
+          p-1.5
           cursor-pointer
           text-lg font-medium
           text-neutral-700
@@ -130,7 +130,7 @@ RTL
 <p>The Dialog component displays content in a modal overlay. It can be used for
 confirmations, forms, alerts, and other interactions that require the user’s
 attention before returning to the underlying page.</p>
-<div id="compoent-example-fp00mgf5lg" data-component-example class="my-8
+<div id="compoent-example-wqij2trnzfh" data-component-example class="my-8
     overflow-hidden
     rounded-xl
     border
@@ -223,7 +223,7 @@ attention before returning to the underlying page.</p>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">      &#x3C;/</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">Dialog</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">    &#x3C;/></span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">  );</span></span>
-<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> </div> </div> <script>(function(){const id = "fp00mgf5lg";
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> </div> </div> <script>(function(){const id = "wqij2trnzfh";
 const source = "import { createEffect, createSignal } from \"solid-js\";\nimport Button from \"rocksolidjs/Button\";\nimport Dialog from \"rocksolidjs/Dialog\";\nimport DialogActions from \"rocksolidjs/DialogActions\";\nimport DialogContent from \"rocksolidjs/DialogContent\";\nimport DialogTitle from \"rocksolidjs/DialogTitle\";\n\nexport default function Example() {\n  const [open, setOpen] = createSignal(false);\n\n  let openButton!: HTMLButtonElement, \n      closeBtn!: HTMLButtonElement;\n\n  createEffect(() => {\n    if (open()) {\n      closeBtn.focus();\n    }\n  });\n\n  const handleDialogClose = () => {\n    setOpen(false);\n    openButton.focus();\n  };\n\n  return (\n    \u003c>\n      \u003cButton\n        ref={openButton}\n        onClick={() => setOpen(true)}\n      >\n        Open dialog\n      \u003c/Button>\n\n      \u003cDialog\n        open={open()}\n        aria-labelledby=\"getting-started-dialog-title\"\n        onClose={handleDialogClose}\n        class=\"max-w-md\"\n      >\n        \u003cDialogTitle id=\"getting-started-dialog-title\">\n          Getting Started\n        \u003c/DialogTitle>\n        \u003cDialogContent>\n          Complete the setup to access all available features.\n        \u003c/DialogContent>\n        \u003cDialogActions>\n          \u003cButton\n            ref={closeBtn}\n            onClick={handleDialogClose}\n          >\n            Close\n          \u003c/Button>\n        \u003c/DialogActions>\n      \u003c/Dialog>\n    \u003c/>\n  );\n}";
 
   const copyBtn = document.querySelector(`#compoent-example-${id} [data-copy]`);
@@ -250,7 +250,7 @@ const source = "import { createEffect, createSignal } from \"solid-js\";\nimport
 <p>Use the <code>open</code> prop to control whether the dialog is visible. Place the
 interactive content inside the dialog and use <code>DialogActions</code> for actions
 such as canceling or confirming an operation.</p>
-<div id="compoent-example-91p7x9ju1rc" data-component-example class="my-8
+<div id="compoent-example-ue75i4k3xni" data-component-example class="my-8
     overflow-hidden
     rounded-xl
     border
@@ -344,7 +344,7 @@ such as canceling or confirming an operation.</p>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">      &#x3C;/</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">Dialog</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">    &#x3C;/></span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">  );</span></span>
-<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> </div> </div> <script>(function(){const id = "91p7x9ju1rc";
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> </div> </div> <script>(function(){const id = "ue75i4k3xni";
 const source = "import { createEffect, createSignal } from \"solid-js\";\nimport Button from \"rocksolidjs/Button\";\nimport Dialog from \"rocksolidjs/Dialog\";\nimport DialogActions from \"rocksolidjs/DialogActions\";\nimport DialogContent from \"rocksolidjs/DialogContent\";\nimport DialogTitle from \"rocksolidjs/DialogTitle\";\n\nexport default function Example() {\n  const [open, setOpen] = createSignal(false);\n\n  let openButton!: HTMLButtonElement, \n      closeBtn!: HTMLButtonElement;\n\n  createEffect(() => {\n    if (open()) {\n      closeBtn.focus();\n    }\n  });\n\n  const handleDialogClose = () => {\n    setOpen(false);\n    openButton.focus();\n  };\n\n  return (\n    \u003c>\n      \u003cButton\n        ref={openButton}\n        onClick={() => setOpen(true)}\n      >\n        Open dialog\n      \u003c/Button>\n\n      \u003cDialog\n        open={open()}\n        aria-labelledby=\"welcome-dialog-title\"\n        onClose={handleDialogClose}\n        class=\"max-w-md\"\n      >\n        \u003cDialogTitle id=\"welcome-dialog-title\">\n          Welcome to the workspace\n        \u003c/DialogTitle>\n        \u003cDialogContent>\n          Your workspace is ready. You can invite your team, create\n          projects, and start collaborating.\n        \u003c/DialogContent>\n        \u003cDialogActions>\n          \u003cButton\n            ref={closeBtn}\n            onClick={handleDialogClose}\n          >\n            Close\n          \u003c/Button>\n        \u003c/DialogActions>\n      \u003c/Dialog>\n    \u003c/>\n  );\n}";
 
   const copyBtn = document.querySelector(`#compoent-example-${id} [data-copy]`);
@@ -370,7 +370,7 @@ const source = "import { createEffect, createSignal } from \"solid-js\";\nimport
 <p>Use <code>role=&quot;alertdialog&quot;</code> for dialogs that require the user’s immediate
 attention, such as destructive or irreversible actions. Use
 <code>aria-labelledby</code> to associate the dialog with its <code>DialogTitle</code>.</p>
-<div id="compoent-example-imaoq4yvywk" data-component-example class="my-8
+<div id="compoent-example-e1qtiymqml7" data-component-example class="my-8
     overflow-hidden
     rounded-xl
     border
@@ -472,7 +472,7 @@ attention, such as destructive or irreversible actions. Use
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">      &#x3C;/</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">Dialog</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">    &#x3C;/></span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">  );</span></span>
-<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> </div> </div> <script>(function(){const id = "imaoq4yvywk";
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> </div> </div> <script>(function(){const id = "e1qtiymqml7";
 const source = "import { createSignal, createEffect } from \"solid-js\";\nimport Button from \"rocksolidjs/Button\";\nimport Dialog from \"rocksolidjs/Dialog\";\nimport DialogActions from \"rocksolidjs/DialogActions\";\nimport DialogContent from \"rocksolidjs/DialogContent\";\nimport DialogTitle from \"rocksolidjs/DialogTitle\";\n\nexport default function Example() {\n  const [open, setOpen] = createSignal(false);\n\n  let openButton!: HTMLButtonElement, \n      cancelBtn!: HTMLButtonElement;\n  \n  createEffect(() => {\n    if (open()) {\n      cancelBtn.focus();\n    }\n  });\n\n  const handleDialogClose = () => {\n    setOpen(false);\n    openButton.focus();\n  };\n\n  return (\n    \u003c>\n      \u003cButton\n        ref={openButton}\n        onClick={() => setOpen(true)}\n      >\n          Delete account\n      \u003c/Button>\n\n      \u003cDialog\n        open={open()}\n        role=\"alertdialog\"\n        aria-labelledby=\"delete-account-title\"\n        onClose={handleDialogClose}\n        class=\"max-w-md\"\n      >\n        \u003cDialogTitle id=\"delete-account-title\">\n          Delete account?\n        \u003c/DialogTitle>\n        \u003cDialogContent>\n          This action permanently deletes your account and all of its data.\n          You won't be able to undo this action.\n        \u003c/DialogContent>\n        \u003cDialogActions>\n          \u003cButton\n            ref={cancelBtn}\n            variant=\"outlined\"\n            onClick={handleDialogClose}\n          >\n            Cancel\n          \u003c/Button>\n          \u003cButton\n            color=\"error\"\n            onClick={handleDialogClose}\n          >\n            Delete account\n          \u003c/Button>\n        \u003c/DialogActions>\n      \u003c/Dialog>\n    \u003c/>\n  );\n}";
 
   const copyBtn = document.querySelector(`#compoent-example-${id} [data-copy]`);
@@ -497,7 +497,7 @@ const source = "import { createSignal, createEffect } from \"solid-js\";\nimport
 <h3 id="fullscreen">Fullscreen</h3>
 <p>Use the <code>fullscreen</code> prop when the dialog should occupy the available
 viewport instead of appearing as a smaller modal.</p>
-<div id="compoent-example-yxh3xn0426k" data-component-example class="my-8
+<div id="compoent-example-15lpjwm5u71" data-component-example class="my-8
     overflow-hidden
     rounded-xl
     border
@@ -570,7 +570,7 @@ viewport instead of appearing as a smaller modal.</p>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">      &#x3C;/</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">Dialog</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">    &#x3C;/></span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">  );</span></span>
-<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> </div> </div> <script>(function(){const id = "yxh3xn0426k";
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> </div> </div> <script>(function(){const id = "15lpjwm5u71";
 const source = "import { createSignal } from \"solid-js\";\nimport Button from \"rocksolidjs/Button\";\nimport Dialog from \"rocksolidjs/Dialog\";\nimport DialogActions from \"rocksolidjs/DialogActions\";\nimport DialogContent from \"rocksolidjs/DialogContent\";\nimport DialogTitle from \"rocksolidjs/DialogTitle\";\n\nexport default function Example() {\n  const [open, setOpen] = createSignal(false);\n\n  return (\n    \u003c>\n      \u003cButton onClick={() => setOpen(true)}>View report\u003c/Button>\n\n      \u003cDialog\n        open={open()}\n        fullscreen\n        onClose={() => setOpen(false)}\n      >\n        \u003cDialogTitle>Quarterly sales report\u003c/DialogTitle>\n        \u003cDialogContent>\n          \u003cp>\n            Review your sales performance for the current quarter.\n          \u003c/p>\n          \u003cul>\n            \u003cli>Revenue increased by 18%.\u003c/li>\n            \u003cli>New customers increased by 24%.\u003c/li>\n            \u003cli>Customer retention improved by 6%.\u003c/li>\n          \u003c/ul>\n        \u003c/DialogContent>\n        \u003cDialogActions>\n          \u003cButton onClick={() => setOpen(false)}>Close\u003c/Button>\n        \u003c/DialogActions>\n      \u003c/Dialog>\n    \u003c/>\n  );\n}";
 
   const copyBtn = document.querySelector(`#compoent-example-${id} [data-copy]`);
@@ -601,7 +601,7 @@ triggered.</p>
 <li><code>escape</code> — The user pressed the Escape key.</li>
 <li><code>backdrop</code> — The user interacted with the backdrop.</li>
 </ul>
-<div id="compoent-example-sjn72visgb9" data-component-example class="my-8
+<div id="compoent-example-1xpms2lyz3m" data-component-example class="my-8
     overflow-hidden
     rounded-xl
     border
@@ -697,7 +697,7 @@ triggered.</p>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">      &#x3C;/</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">Dialog</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">    &#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">div</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">  );</span></span>
-<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> </div> </div> <script>(function(){const id = "sjn72visgb9";
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> </div> </div> <script>(function(){const id = "1xpms2lyz3m";
 const source = "import { createSignal } from \"solid-js\";\nimport Button from \"rocksolidjs/Button\";\nimport Dialog, { type DialogCloseReason } from \"rocksolidjs/Dialog\";\nimport DialogActions from \"rocksolidjs/DialogActions\";\nimport DialogContent from \"rocksolidjs/DialogContent\";\nimport DialogTitle from \"rocksolidjs/DialogTitle\";\nimport Typography from \"rocksolidjs/Typography\";\n\nexport default function Example() {\n  const [open, setOpen] = createSignal(false);\n  const [reason, setReason] = createSignal\u003cstring>();\n\n  const handleClose = (\n    _event: Event,\n    closeReason: DialogCloseReason,\n  ) => {\n    setReason(closeReason);\n    setOpen(false);\n  };\n\n  return (\n    \u003cdiv class=\"space-y-2 text-center\">\n      \u003cButton\n        onClick={() => setOpen(true)}\n      >\n        Open dialog\n      \u003c/Button>\n\n      {reason() && (\n        \u003cTypography>\n          Dialog closed because of: \u003cstrong>{reason()}\u003c/strong>\n        \u003c/Typography>\n      )}\n\n      \u003cDialog\n        open={open()}\n        onClose={handleClose}\n      >\n        \u003cDialogTitle>Unsaved changes\u003c/DialogTitle>\n        \u003cDialogContent>\n          You have changes that haven't been saved. Are you sure you want to\n          leave this dialog?\n        \u003c/DialogContent>\n        \u003cDialogActions>\n          \u003cButton\n            onClick={() => setOpen(false)}\n          >\n            Keep editing\n          \u003c/Button>\n          \u003cButton\n            onClick={() => setOpen(false)}\n            color=\"error\"\n          >\n            Discard changes\n          \u003c/Button>\n        \u003c/DialogActions>\n      \u003c/Dialog>\n    \u003c/div>\n  );\n}";
 
   const copyBtn = document.querySelector(`#compoent-example-${id} [data-copy]`);
@@ -721,7 +721,7 @@ const source = "import { createSignal } from \"solid-js\";\nimport Button from \
 })();</script>
 <h3 id="customization">Customization</h3>
 <p>Use the <code>class</code> prop on each Dialog component to add custom styling.</p>
-<div id="compoent-example-jh6uoz0v69" data-component-example class="my-8
+<div id="compoent-example-m96p1d62f4r" data-component-example class="my-8
     overflow-hidden
     rounded-xl
     border
@@ -810,7 +810,7 @@ const source = "import { createSignal } from \"solid-js\";\nimport Button from \
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">      &#x3C;/</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">Dialog</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">    &#x3C;/></span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">  );</span></span>
-<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> </div> </div> <script>(function(){const id = "jh6uoz0v69";
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> </div> </div> <script>(function(){const id = "m96p1d62f4r";
 const source = "import { createSignal } from \"solid-js\";\nimport Button from \"rocksolidjs/Button\";\nimport Dialog from \"rocksolidjs/Dialog\";\nimport DialogActions from \"rocksolidjs/DialogActions\";\nimport DialogContent from \"rocksolidjs/DialogContent\";\nimport DialogTitle from \"rocksolidjs/DialogTitle\";\nimport Divider from \"rocksolidjs/Divider\";\n\nexport default function Example() {\n  const [open, setOpen] = createSignal(false);\n\n  return (\n    \u003c>\n      \u003cButton onClick={() => setOpen(true)}>Show alert\u003c/Button>\n\n      \u003cDialog\n        open={open()}\n        class=\"max-w-xs rounded-2xl\"\n        aria-labelledby=\"ios-dialog-title\"\n        onClose={() => setOpen(false)}\n      >\n        \u003cDialogTitle\n          id=\"ios-dialog-title\"\n          class=\"text-center\"\n        >\n          Allow Notifications?\n        \u003c/DialogTitle>\n        \u003cDialogContent class=\"px-6 pb-5 text-center text-balance\">\n            Notifications may include alerts, sounds, and icon badges.\n        \u003c/DialogContent>\n        \u003cDialogActions class=\"flex gap-2\">\n          \u003cButton\n            variant=\"text\"\n            class=\"flex-1\"\n            onClick={() => setOpen(false)}\n          >\n            Don't Allow\n          \u003c/Button>\n          \u003cDivider\n            orientation=\"vertical\" \n          />\n          \u003cButton\n            variant=\"text\"\n            class=\"font-semibold flex-1\"\n            onClick={() => setOpen(false)}\n          >\n            Allow\n          \u003c/Button>\n        \u003c/DialogActions>\n      \u003c/Dialog>\n    \u003c/>\n  );\n}\n";
 
   const copyBtn = document.querySelector(`#compoent-example-${id} [data-copy]`);
