@@ -227,7 +227,7 @@ theme schema and available token types.</p>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">&#x3C;/</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">ThemeProvider</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">>;</span></span></code></pre></div>
 <p>Components rendered within the <code>ThemeProvider</code> hierarchy can then access the
 provided theme.</p>
-<div id="compoent-example-1p7m2c6utyq" data-component-example class="my-8
+<div id="compoent-example-hryuti34ggo" data-component-example class="my-8
     overflow-hidden
     rounded-xl
     border
@@ -288,7 +288,7 @@ provided theme.</p>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">      &#x3C;/</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">ThemeProvider</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">    &#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">div</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">  );</span></span>
-<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">};</span></span></code></pre></div> </div> </div> </div> <script>(function(){const id = "1p7m2c6utyq";
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">};</span></span></code></pre></div> </div> </div> </div> <script>(function(){const id = "hryuti34ggo";
 const source = "import Button from \"rocksolidjs/Button\";\nimport ThemeProvider from \"rocksolidjs/ThemeProvider\";\nimport createTheme from \"rocksolidjs/styles/createTheme\";\n\nexport default function Example() {\n  const theme = createTheme({\n    colors: {\n      default: {\n        solid: {\n          background: \"bg-blue-500 dark:bg-blue-400\",\n          text: \"text-neutral-50 dark:text-neutral-900\",\n        },\n      },\n    },\n  });\n\n  return (\n    \u003cdiv class=\"flex flex-col gap-4\">\n      \u003cButton>Button With Default Theme\u003c/Button>\n      \u003cThemeProvider theme={theme}>\n        \u003cButton>Button With Overriden Theme\u003c/Button>\n      \u003c/ThemeProvider>\n    \u003c/div>\n  );\n};";
 
   const copyBtn = document.querySelector(`#compoent-example-${id} [data-copy]`);
