@@ -1,1 +1,0 @@
-import{S as e,a as t,i as n,p as r,s as i}from"./web.Ck_zQUvi.js";import{t as a}from"./Checkbox.CiXb3pBv.js";var o=r(`<div class="flex gap-4"><!$><!/><!$><!/>`);function s(){return(()=>{var r=n(o),s=r.firstChild,[c,l]=t(s.nextSibling),u=c.nextSibling,[d,f]=t(u.nextSibling);return i(r,e(a,{disabled:!0}),c,l),i(r,e(a,{disabled:!0,defaultChecked:!0}),d,f),r})()}export{s as default};

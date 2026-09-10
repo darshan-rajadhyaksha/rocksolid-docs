@@ -1,0 +1,1 @@
+import{S as e}from"./web.Ck_zQUvi.js";import{t}from"./Link.DZ4EKp5f.js";function n(){return e(t,{href:`/components/button`,class:`font-semibold text-blue-600 dark:text-blue-500`,children:`Custom styled link`})}export{n as default};

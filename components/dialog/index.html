@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="en"> <head><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><title>Dialog</title><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="generator" content="Astro v7.2.2"><meta name="description" content="Dialog component displays content in a modal dialog that requires the user's attention or interaction."><meta name="keywords" content="RockSolid, rocksolidjs, SolidJS, SolidJS components, SolidJS UI library, Tailwind CSS, component library, UI components, accessible components, TypeScript, themeable components, reusable components, frontend library"><meta name="author" content="Darshan Sunil Rajadhyaksha"><link rel="canonical" href="https://rocksolidjs.com/components/dialog/"><link rel="sitemap" href="/sitemap-index.xml"><meta name="robots" content="index, follow"><!-- OG --><meta property="og:type" content="article"><meta property="og:title" content="Dialog"><meta property="og:description" content="Dialog component displays content in a modal dialog that requires the user's attention or interaction."><meta property="og:image" content="https://rocksolidjs.com/assets/og.png"><meta property="og:image:width" content="1024"><meta property="og:image:height" content="768"><meta property="og:url" content="https://rocksolidjs.com/components/dialog/"><meta property="og:site_name" content="RockSolid"><meta property="og:locale" content="en_US"><!-- X --><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Dialog"><meta name="twitter:description" content="Dialog component displays content in a modal dialog that requires the user's attention or interaction."><meta name="twitter:image" content="https://rocksolidjs.com/assets/og.png"><meta name="twitter:image:width" content="1024"><meta name="twitter:image:height" content="768"><link rel="icon" href="/assets/favicon/favicon.ico"><link rel="icon" type="image/png" sizes="96x96" href="/assets/favicon/favicon-96x96.png"><link rel="icon" type="image/svg+xml" href="/assets/favicon/favicon.svg"><link rel="shortcut icon" href="/assets/favicon/favicon.ico"><link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png"><link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet"><script>
+<!DOCTYPE html><html lang="en"> <head><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><title>Dialog</title><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="generator" content="Astro v7.3.2"><meta name="description" content="Dialog component displays content in a modal dialog that requires the user's attention or interaction."><meta name="keywords" content="RockSolid, rocksolidjs, SolidJS, SolidJS components, SolidJS UI library, Tailwind CSS, component library, UI components, accessible components, TypeScript, themeable components, reusable components, frontend library"><meta name="author" content="Darshan Sunil Rajadhyaksha"><link rel="canonical" href="https://rocksolidjs.com/components/dialog/"><link rel="sitemap" href="/sitemap-index.xml"><meta name="robots" content="index, follow"><!-- OG --><meta property="og:type" content="article"><meta property="og:title" content="Dialog"><meta property="og:description" content="Dialog component displays content in a modal dialog that requires the user's attention or interaction."><meta property="og:image" content="https://rocksolidjs.com/assets/og.png"><meta property="og:image:width" content="1024"><meta property="og:image:height" content="768"><meta property="og:url" content="https://rocksolidjs.com/components/dialog/"><meta property="og:site_name" content="RockSolid"><meta property="og:locale" content="en_US"><!-- X --><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Dialog"><meta name="twitter:description" content="Dialog component displays content in a modal dialog that requires the user's attention or interaction."><meta name="twitter:image" content="https://rocksolidjs.com/assets/og.png"><meta name="twitter:image:width" content="1024"><meta name="twitter:image:height" content="768"><link rel="icon" href="/assets/favicon/favicon.ico"><link rel="icon" type="image/png" sizes="96x96" href="/assets/favicon/favicon-96x96.png"><link rel="icon" type="image/svg+xml" href="/assets/favicon/favicon.svg"><link rel="shortcut icon" href="/assets/favicon/favicon.ico"><link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png"><link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet"><script>
     const theme = localStorage.getItem("theme");
     if (
       theme === "dark" ||
@@ -11,7 +11,7 @@
     ) {
       document.documentElement.classList.add("dark");
     }
-  </script><link rel="stylesheet" href="/_astro/base.C1-k0NAi.css"></head> <body class="min-h-screen bg-white text-neutral-900
+  </script><link rel="stylesheet" href="/_astro/base.CiuBXjTW.css"></head> <body class="min-h-screen bg-white text-neutral-900
     dark:bg-neutral-950 dark:text-neutral-100"> <!-- Mobile overlay --> <div id="sidebar-overlay" class="pointer-events-none fixed inset-0 z-40
       bg-black/40 opacity-0 transition-opacity
       duration-200 lg:hidden"></div> <div class="min-h-screen lg:grid
@@ -38,8 +38,7 @@ RockSolid
 </a> <p class="mt-1 text-xs
           text-neutral-500
           dark:text-neutral-500">
-v0.1.1
-</p> </div> <!-- GitHub --> <div class="mb-7"> <a href="https://github.com/darshan-rajadhyaksha/rocksolid/" target="_blank" rel="noopener noreferrer" class="flex w-full items-center gap-3
+v0.1.2 </p> </div> <!-- GitHub --> <div class="mb-7"> <a href="https://github.com/darshan-rajadhyaksha/rocksolid/" target="_blank" rel="noopener noreferrer" class="flex w-full items-center gap-3
           rounded-md px-3 py-2
           text-sm font-medium
           text-neutral-600
@@ -130,7 +129,7 @@ RTL
 <p>The Dialog component displays content in a modal overlay. It can be used for
 confirmations, forms, alerts, and other interactions that require the user’s
 attention before returning to the underlying page.</p>
-<div id="compoent-example-wqij2trnzfh" data-component-example class="my-8
+<div data-component-example class="my-8
     overflow-hidden
     rounded-xl
     border
@@ -146,9 +145,9 @@ attention before returning to the underlying page.</p>
       text-base
       text-neutral-900
       dark:bg-neutral-950
-      dark:text-neutral-100" data-component-preview> <style>astro-island,astro-slot,astro-static-slot{display:contents}</style><script>(()=>{var e=async t=>{await(await t())()};(self.Astro||(self.Astro={})).only=e;window.dispatchEvent(new Event("astro:only"));})();</script><script>(()=>{var g=Object.defineProperty;var w=(a,s,c)=>s in a?g(a,s,{enumerable:!0,configurable:!0,writable:!0,value:c}):a[s]=c;var l=(a,s,c)=>w(a,typeof s!="symbol"?s+"":s,c);var E=new Set(["__proto__","constructor","prototype"]);{let a={0:t=>y(t),1:t=>c(t),2:t=>new RegExp(t),3:t=>new Date(t),4:t=>new Map(c(t)),5:t=>new Set(c(t)),6:t=>BigInt(t),7:t=>new URL(t),8:t=>new Uint8Array(t),9:t=>new Uint16Array(t),10:t=>new Uint32Array(t),11:t=>Number.POSITIVE_INFINITY*t},s=t=>{let[p,e]=t;return p in a?a[p](e):void 0},c=t=>t.map(s),y=t=>typeof t!="object"||t===null?t:Object.fromEntries(Object.entries(t).map(([p,e])=>[p,s(e)]));class f extends HTMLElement{constructor(){super(...arguments);l(this,"Component");l(this,"hydrator");l(this,"hydrate",async()=>{var b;if(!this.hydrator||!this.isConnected)return;let e=(b=this.parentElement)==null?void 0:b.closest("astro-island[ssr]");if(e){e.addEventListener("astro:hydrate",this.hydrate,{once:!0});return}let r=this.querySelectorAll("astro-slot"),n={},d=this.querySelectorAll("template[data-astro-template]");for(let o of d){let i=o.closest(this.tagName);i!=null&&i.isSameNode(this)&&(n[o.getAttribute("data-astro-template")||"default"]=o.innerHTML,o.remove())}for(let o of r){let i=o.closest(this.tagName);i!=null&&i.isSameNode(this)&&(n[o.getAttribute("name")||"default"]=o.innerHTML)}let u;try{u=this.hasAttribute("props")?y(JSON.parse(this.getAttribute("props"))):{}}catch(o){let i=this.getAttribute("component-url")||"<unknown>",v=this.getAttribute("component-export");throw v&&(i+=` (export ${v})`),console.error(`[hydrate] Error parsing props for component ${i}`,this.getAttribute("props"),o),o}let h;await this.hydrator(this)(this.Component,u,n,{client:this.getAttribute("client")}),this.removeAttribute("ssr"),this.dispatchEvent(new CustomEvent("astro:hydrate"))});l(this,"unmount",()=>{this.isConnected||this.dispatchEvent(new CustomEvent("astro:unmount"))})}disconnectedCallback(){document.removeEventListener("astro:after-swap",this.unmount),document.addEventListener("astro:after-swap",this.unmount,{once:!0})}connectedCallback(){if(!this.hasAttribute("await-children")||document.readyState==="interactive"||document.readyState==="complete")this.childrenConnectedCallback();else{let e=()=>{document.removeEventListener("DOMContentLoaded",e),r.disconnect(),this.childrenConnectedCallback()},r=new MutationObserver(()=>{var n;((n=this.lastChild)==null?void 0:n.nodeType)===Node.COMMENT_NODE&&this.lastChild.nodeValue==="astro:end"&&(this.lastChild.remove(),e())});r.observe(this,{childList:!0}),document.addEventListener("DOMContentLoaded",e)}}async childrenConnectedCallback(){let e=this.getAttribute("before-hydration-url");e&&await import(e),this.start()}getRetryImportUrl(e){let r=new URL(e,document.baseURI);return r.searchParams.set("astro-retry",Date.now().toString()),r.toString()}async importWithRetry(e){try{return await import(e)}catch(r){return await new Promise(n=>setTimeout(n,1e3)),import(this.getRetryImportUrl(e))}}handleHydrationError(e){let r=this.getAttribute("component-url"),n=new CustomEvent("astro:hydration-error",{cancelable:!0,bubbles:!0,composed:!0,detail:{error:e,componentUrl:r}});this.dispatchEvent(n)&&console.error(`[astro-island] Error hydrating ${r}`,e)}async start(){let e=JSON.parse(this.getAttribute("opts")),r=this.getAttribute("client");if(Astro[r]===void 0){window.addEventListener(`astro:${r}`,()=>this.start(),{once:!0});return}try{await Astro[r](async()=>{let n=this.getAttribute("renderer-url");try{let[d,{default:u}]=await Promise.all([this.importWithRetry(this.getAttribute("component-url")),n?this.importWithRetry(n):Promise.resolve({default:()=>()=>{}})]),h=this.getAttribute("component-export")||"default";if(h.includes(".")){this.Component=d;for(let m of h.split(".")){if(E.has(m)||!this.Component||typeof this.Component!="object"&&typeof this.Component!="function"||!Object.hasOwn(this.Component,m))throw new Error(`Invalid component export path: ${h}`);this.Component=this.Component[m]}}else{if(E.has(h))throw new Error(`Invalid component export path: ${h}`);this.Component=d[h]}return this.hydrator=u,this.hydrate}catch(d){return this.handleHydrationError(d),()=>{}}},e,this)}catch(n){this.handleHydrationError(n)}}attributeChangedCallback(){this.hydrate()}}l(f,"observedAttributes",["props"]),customElements.get("astro-island")||customElements.define("astro-island",f)}})();</script><astro-island uid="Z1rdxeL" component-url="/_astro/dynamic-component-renderer.D9U5PMa1.js" component-export="default" renderer-url="/_astro/client.BgJ9siUT.js" props="{&quot;name&quot;:[0,&quot;Dialog/examples/basic&quot;]}" ssr client="only" opts="{&quot;name&quot;:&quot;DynamicComponentRenderer&quot;,&quot;value&quot;:&quot;solid-js&quot;}"></astro-island> </div> <div data-code class="border-t
+      dark:text-neutral-100" data-component-preview> <style>astro-island,astro-slot,astro-static-slot{display:contents}</style><script>(()=>{var e=async t=>{await(await t())()};(self.Astro||(self.Astro={})).only=e;window.dispatchEvent(new Event("astro:only"));})();</script><script>(()=>{var g=Object.defineProperty;var w=(a,s,c)=>s in a?g(a,s,{enumerable:!0,configurable:!0,writable:!0,value:c}):a[s]=c;var l=(a,s,c)=>w(a,typeof s!="symbol"?s+"":s,c);var E=new Set(["__proto__","constructor","prototype"]);{let a={0:t=>y(t),1:t=>c(t),2:t=>new RegExp(t),3:t=>new Date(t),4:t=>new Map(c(t)),5:t=>new Set(c(t)),6:t=>BigInt(t),7:t=>new URL(t),8:t=>new Uint8Array(t),9:t=>new Uint16Array(t),10:t=>new Uint32Array(t),11:t=>Number.POSITIVE_INFINITY*t},s=t=>{let[p,e]=t;return p in a?a[p](e):void 0},c=t=>t.map(s),y=t=>typeof t!="object"||t===null?t:Object.fromEntries(Object.entries(t).map(([p,e])=>[p,s(e)]));class f extends HTMLElement{constructor(){super(...arguments);l(this,"Component");l(this,"hydrator");l(this,"hydrate",async()=>{var b;if(!this.hydrator||!this.isConnected)return;let e=(b=this.parentElement)==null?void 0:b.closest("astro-island[ssr]");if(e){e.addEventListener("astro:hydrate",this.hydrate,{once:!0});return}let r=this.querySelectorAll("astro-slot"),n={},d=this.querySelectorAll("template[data-astro-template]");for(let o of d){let i=o.closest(this.tagName);i!=null&&i.isSameNode(this)&&(n[o.getAttribute("data-astro-template")||"default"]=o.innerHTML,o.remove())}for(let o of r){let i=o.closest(this.tagName);i!=null&&i.isSameNode(this)&&(n[o.getAttribute("name")||"default"]=o.innerHTML)}let u;try{u=this.hasAttribute("props")?y(JSON.parse(this.getAttribute("props"))):{}}catch(o){let i=this.getAttribute("component-url")||"<unknown>",v=this.getAttribute("component-export");throw v&&(i+=` (export ${v})`),console.error(`[hydrate] Error parsing props for component ${i}`,this.getAttribute("props"),o),o}let h;await this.hydrator(this)(this.Component,u,n,{client:this.getAttribute("client")}),this.removeAttribute("ssr"),this.dispatchEvent(new CustomEvent("astro:hydrate"))});l(this,"unmount",()=>{this.isConnected||this.dispatchEvent(new CustomEvent("astro:unmount"))})}disconnectedCallback(){document.removeEventListener("astro:after-swap",this.unmount),document.addEventListener("astro:after-swap",this.unmount,{once:!0})}connectedCallback(){if(!this.hasAttribute("await-children")||document.readyState==="interactive"||document.readyState==="complete")this.childrenConnectedCallback();else{let e=()=>{document.removeEventListener("DOMContentLoaded",e),r.disconnect(),this.childrenConnectedCallback()},r=new MutationObserver(()=>{var n;((n=this.lastChild)==null?void 0:n.nodeType)===Node.COMMENT_NODE&&this.lastChild.nodeValue==="astro:end"&&(this.lastChild.remove(),e())});r.observe(this,{childList:!0}),document.addEventListener("DOMContentLoaded",e)}}async childrenConnectedCallback(){let e=this.getAttribute("before-hydration-url");e&&await import(e),this.start()}getRetryImportUrl(e){let r=new URL(e,document.baseURI);return r.searchParams.set("astro-retry",Date.now().toString()),r.toString()}async importWithRetry(e){try{return await import(e)}catch(r){return await new Promise(n=>setTimeout(n,1e3)),import(this.getRetryImportUrl(e))}}handleHydrationError(e){let r=this.getAttribute("component-url"),n=new CustomEvent("astro:hydration-error",{cancelable:!0,bubbles:!0,composed:!0,detail:{error:e,componentUrl:r}});this.dispatchEvent(n)&&console.error(`[astro-island] Error hydrating ${r}`,e)}async start(){let e=JSON.parse(this.getAttribute("opts")),r=this.getAttribute("client");if(Astro[r]===void 0){window.addEventListener(`astro:${r}`,()=>this.start(),{once:!0});return}try{await Astro[r](async()=>{let n=this.getAttribute("renderer-url");try{let[d,{default:u}]=await Promise.all([this.importWithRetry(this.getAttribute("component-url")),n?this.importWithRetry(n):Promise.resolve({default:()=>()=>{}})]),h=this.getAttribute("component-export")||"default";if(h.includes(".")){this.Component=d;for(let m of h.split(".")){if(E.has(m)||!this.Component||typeof this.Component!="object"&&typeof this.Component!="function"||!Object.hasOwn(this.Component,m))throw new Error(`Invalid component export path: ${h}`);this.Component=this.Component[m]}}else{if(E.has(h))throw new Error(`Invalid component export path: ${h}`);this.Component=d[h]}return this.hydrator=u,this.hydrate}catch(d){return this.handleHydrationError(d),()=>{}}},e,this)}catch(n){this.handleHydrationError(n)}}attributeChangedCallback(){this.hydrate()}}l(f,"observedAttributes",["props"]),customElements.get("astro-island")||customElements.define("astro-island",f)}})();</script><astro-island uid="Z1rdxeL" component-url="/_astro/dynamic-component-renderer.DMQQXM0d.js" component-export="default" renderer-url="/_astro/client.BgJ9siUT.js" props="{&quot;name&quot;:[0,&quot;Dialog/examples/basic&quot;]}" ssr client="only" opts="{&quot;name&quot;:&quot;DynamicComponentRenderer&quot;,&quot;value&quot;:&quot;solid-js&quot;}"></astro-island> </div> <div data-code class="border-t
       border-neutral-200
-      dark:border-neutral-800"> <div class="relative"> <button type="button" data-copy class="absolute
+      dark:border-neutral-800"> <div id="code-block-kjvay5ovr28" class="relative"> <button type="button" data-copy class="absolute
           top-3
           z-10
           ltr:right-3
@@ -164,7 +163,9 @@ attention before returning to the underlying page.</p>
           hover:bg-neutral-200/80
           dark:bg-neutral-700/90
           dark:text-white
-          dark:hover:bg-neutral-700"> <svg class="checkmark hidden " xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="m10 13.6l5.9-5.9q.275-.275.7-.275t.7.275t.275.7t-.275.7l-6.6 6.6q-.3.3-.7.3t-.7-.3l-2.6-2.6q-.275-.275-.275-.7t.275-.7t.7-.275t.7.275z"></path></svg> <svg class="copy " xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"></path><g fill="none" stroke="currentColor"><rect width="9" height="13" x="6.5" y="6.5" rx="1.5"></rect><path d="M8.5 6A1.5 1.5 0 0 1 10 4.5h6A1.5 1.5 0 0 1 17.5 6v10a1.5 1.5 0 0 1-1.5 1.5"></path></g></svg> </button> <div class="overflow-x-auto
+          dark:hover:bg-neutral-700
+          
+          "> <svg class="checkmark hidden " xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="m10 13.6l5.9-5.9q.275-.275.7-.275t.7.275t.275.7t-.275.7l-6.6 6.6q-.3.3-.7.3t-.7-.3l-2.6-2.6q-.275-.275-.275-.7t.275-.7t.7-.275t.7.275z"></path></svg> <svg class="copy " xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"></path><g fill="none" stroke="currentColor"><rect width="9" height="13" x="6.5" y="6.5" rx="1.5"></rect><path d="M8.5 6A1.5 1.5 0 0 1 10 4.5h6A1.5 1.5 0 0 1 17.5 6v10a1.5 1.5 0 0 1-1.5 1.5"></path></g></svg> </button> <div class="overflow-x-auto
     text-lg
     border-neutral-200
     dark:border-neutral-800 rounded-xl " data-highlighted-code><pre class="shiki shiki-themes min-light min-dark" style="--shiki-light:#24292eff;--shiki-dark:#b392f0;--shiki-light-bg:#ffffff;--shiki-dark-bg:#1f1f1f" tabindex="0"><code><span class="line"><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">import</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0"> { createEffect</span><span style="--shiki-light:#212121;--shiki-dark:#BBBBBB">,</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0"> createSignal } </span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">from</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70"> "solid-js"</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">;</span></span>
@@ -223,15 +224,15 @@ attention before returning to the underlying page.</p>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">      &#x3C;/</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">Dialog</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">    &#x3C;/></span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">  );</span></span>
-<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> </div> </div> <script>(function(){const id = "wqij2trnzfh";
-const source = "import { createEffect, createSignal } from \"solid-js\";\nimport Button from \"rocksolidjs/Button\";\nimport Dialog from \"rocksolidjs/Dialog\";\nimport DialogActions from \"rocksolidjs/DialogActions\";\nimport DialogContent from \"rocksolidjs/DialogContent\";\nimport DialogTitle from \"rocksolidjs/DialogTitle\";\n\nexport default function Example() {\n  const [open, setOpen] = createSignal(false);\n\n  let openButton!: HTMLButtonElement, \n      closeBtn!: HTMLButtonElement;\n\n  createEffect(() => {\n    if (open()) {\n      closeBtn.focus();\n    }\n  });\n\n  const handleDialogClose = () => {\n    setOpen(false);\n    openButton.focus();\n  };\n\n  return (\n    \u003c>\n      \u003cButton\n        ref={openButton}\n        onClick={() => setOpen(true)}\n      >\n        Open dialog\n      \u003c/Button>\n\n      \u003cDialog\n        open={open()}\n        aria-labelledby=\"getting-started-dialog-title\"\n        onClose={handleDialogClose}\n        class=\"max-w-md\"\n      >\n        \u003cDialogTitle id=\"getting-started-dialog-title\">\n          Getting Started\n        \u003c/DialogTitle>\n        \u003cDialogContent>\n          Complete the setup to access all available features.\n        \u003c/DialogContent>\n        \u003cDialogActions>\n          \u003cButton\n            ref={closeBtn}\n            onClick={handleDialogClose}\n          >\n            Close\n          \u003c/Button>\n        \u003c/DialogActions>\n      \u003c/Dialog>\n    \u003c/>\n  );\n}";
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> <script>(function(){const id = "kjvay5ovr28";
+const code = "import { createEffect, createSignal } from \"solid-js\";\nimport Button from \"rocksolidjs/Button\";\nimport Dialog from \"rocksolidjs/Dialog\";\nimport DialogActions from \"rocksolidjs/DialogActions\";\nimport DialogContent from \"rocksolidjs/DialogContent\";\nimport DialogTitle from \"rocksolidjs/DialogTitle\";\n\nexport default function Example() {\n  const [open, setOpen] = createSignal(false);\n\n  let openButton!: HTMLButtonElement, \n      closeBtn!: HTMLButtonElement;\n\n  createEffect(() => {\n    if (open()) {\n      closeBtn.focus();\n    }\n  });\n\n  const handleDialogClose = () => {\n    setOpen(false);\n    openButton.focus();\n  };\n\n  return (\n    \u003c>\n      \u003cButton\n        ref={openButton}\n        onClick={() => setOpen(true)}\n      >\n        Open dialog\n      \u003c/Button>\n\n      \u003cDialog\n        open={open()}\n        aria-labelledby=\"getting-started-dialog-title\"\n        onClose={handleDialogClose}\n        class=\"max-w-md\"\n      >\n        \u003cDialogTitle id=\"getting-started-dialog-title\">\n          Getting Started\n        \u003c/DialogTitle>\n        \u003cDialogContent>\n          Complete the setup to access all available features.\n        \u003c/DialogContent>\n        \u003cDialogActions>\n          \u003cButton\n            ref={closeBtn}\n            onClick={handleDialogClose}\n          >\n            Close\n          \u003c/Button>\n        \u003c/DialogActions>\n      \u003c/Dialog>\n    \u003c/>\n  );\n}";
 
-  const copyBtn = document.querySelector(`#compoent-example-${id} [data-copy]`);
+  const copyBtn = document.querySelector(`#code-block-${id} [data-copy]`);
   copyBtn?.addEventListener("click", async () => {
     try {
       const copyIcon = copyBtn.querySelector(".copy");
       const checkmarkIcon = copyBtn.querySelector(".checkmark");
-      await navigator.clipboard.writeText(source);
+      await navigator.clipboard.writeText(code);
       copyIcon.classList.add("hidden");
       checkmarkIcon.classList.remove("hidden");
       copyBtn.disabled = true;
@@ -244,13 +245,13 @@ const source = "import { createEffect, createSignal } from \"solid-js\";\nimport
       console.error("failed to copy to clipboard");
     }
   });
-})();</script>
+})();</script> </div> </div>
 <h2 id="examples">Examples</h2>
 <h3 id="open">Open</h3>
 <p>Use the <code>open</code> prop to control whether the dialog is visible. Place the
 interactive content inside the dialog and use <code>DialogActions</code> for actions
 such as canceling or confirming an operation.</p>
-<div id="compoent-example-ue75i4k3xni" data-component-example class="my-8
+<div data-component-example class="my-8
     overflow-hidden
     rounded-xl
     border
@@ -266,9 +267,9 @@ such as canceling or confirming an operation.</p>
       text-base
       text-neutral-900
       dark:bg-neutral-950
-      dark:text-neutral-100" data-component-preview> <astro-island uid="283D0z" component-url="/_astro/dynamic-component-renderer.D9U5PMa1.js" component-export="default" renderer-url="/_astro/client.BgJ9siUT.js" props="{&quot;name&quot;:[0,&quot;Dialog/examples/open&quot;]}" ssr client="only" opts="{&quot;name&quot;:&quot;DynamicComponentRenderer&quot;,&quot;value&quot;:&quot;solid-js&quot;}"></astro-island> </div> <div data-code class="border-t
+      dark:text-neutral-100" data-component-preview> <astro-island uid="283D0z" component-url="/_astro/dynamic-component-renderer.DMQQXM0d.js" component-export="default" renderer-url="/_astro/client.BgJ9siUT.js" props="{&quot;name&quot;:[0,&quot;Dialog/examples/open&quot;]}" ssr client="only" opts="{&quot;name&quot;:&quot;DynamicComponentRenderer&quot;,&quot;value&quot;:&quot;solid-js&quot;}"></astro-island> </div> <div data-code class="border-t
       border-neutral-200
-      dark:border-neutral-800"> <div class="relative"> <button type="button" data-copy class="absolute
+      dark:border-neutral-800"> <div id="code-block-gjgq6p5xvfj" class="relative"> <button type="button" data-copy class="absolute
           top-3
           z-10
           ltr:right-3
@@ -284,7 +285,9 @@ such as canceling or confirming an operation.</p>
           hover:bg-neutral-200/80
           dark:bg-neutral-700/90
           dark:text-white
-          dark:hover:bg-neutral-700"> <svg class="checkmark hidden " xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="m10 13.6l5.9-5.9q.275-.275.7-.275t.7.275t.275.7t-.275.7l-6.6 6.6q-.3.3-.7.3t-.7-.3l-2.6-2.6q-.275-.275-.275-.7t.275-.7t.7-.275t.7.275z"></path></svg> <svg class="copy " xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"></path><g fill="none" stroke="currentColor"><rect width="9" height="13" x="6.5" y="6.5" rx="1.5"></rect><path d="M8.5 6A1.5 1.5 0 0 1 10 4.5h6A1.5 1.5 0 0 1 17.5 6v10a1.5 1.5 0 0 1-1.5 1.5"></path></g></svg> </button> <div class="overflow-x-auto
+          dark:hover:bg-neutral-700
+          
+          "> <svg class="checkmark hidden " xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="m10 13.6l5.9-5.9q.275-.275.7-.275t.7.275t.275.7t-.275.7l-6.6 6.6q-.3.3-.7.3t-.7-.3l-2.6-2.6q-.275-.275-.275-.7t.275-.7t.7-.275t.7.275z"></path></svg> <svg class="copy " xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"></path><g fill="none" stroke="currentColor"><rect width="9" height="13" x="6.5" y="6.5" rx="1.5"></rect><path d="M8.5 6A1.5 1.5 0 0 1 10 4.5h6A1.5 1.5 0 0 1 17.5 6v10a1.5 1.5 0 0 1-1.5 1.5"></path></g></svg> </button> <div class="overflow-x-auto
     text-lg
     border-neutral-200
     dark:border-neutral-800 rounded-xl " data-highlighted-code><pre class="shiki shiki-themes min-light min-dark" style="--shiki-light:#24292eff;--shiki-dark:#b392f0;--shiki-light-bg:#ffffff;--shiki-dark-bg:#1f1f1f" tabindex="0"><code><span class="line"><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">import</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0"> { createEffect</span><span style="--shiki-light:#212121;--shiki-dark:#BBBBBB">,</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0"> createSignal } </span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">from</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70"> "solid-js"</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">;</span></span>
@@ -344,15 +347,15 @@ such as canceling or confirming an operation.</p>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">      &#x3C;/</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">Dialog</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">    &#x3C;/></span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">  );</span></span>
-<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> </div> </div> <script>(function(){const id = "ue75i4k3xni";
-const source = "import { createEffect, createSignal } from \"solid-js\";\nimport Button from \"rocksolidjs/Button\";\nimport Dialog from \"rocksolidjs/Dialog\";\nimport DialogActions from \"rocksolidjs/DialogActions\";\nimport DialogContent from \"rocksolidjs/DialogContent\";\nimport DialogTitle from \"rocksolidjs/DialogTitle\";\n\nexport default function Example() {\n  const [open, setOpen] = createSignal(false);\n\n  let openButton!: HTMLButtonElement, \n      closeBtn!: HTMLButtonElement;\n\n  createEffect(() => {\n    if (open()) {\n      closeBtn.focus();\n    }\n  });\n\n  const handleDialogClose = () => {\n    setOpen(false);\n    openButton.focus();\n  };\n\n  return (\n    \u003c>\n      \u003cButton\n        ref={openButton}\n        onClick={() => setOpen(true)}\n      >\n        Open dialog\n      \u003c/Button>\n\n      \u003cDialog\n        open={open()}\n        aria-labelledby=\"welcome-dialog-title\"\n        onClose={handleDialogClose}\n        class=\"max-w-md\"\n      >\n        \u003cDialogTitle id=\"welcome-dialog-title\">\n          Welcome to the workspace\n        \u003c/DialogTitle>\n        \u003cDialogContent>\n          Your workspace is ready. You can invite your team, create\n          projects, and start collaborating.\n        \u003c/DialogContent>\n        \u003cDialogActions>\n          \u003cButton\n            ref={closeBtn}\n            onClick={handleDialogClose}\n          >\n            Close\n          \u003c/Button>\n        \u003c/DialogActions>\n      \u003c/Dialog>\n    \u003c/>\n  );\n}";
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> <script>(function(){const id = "gjgq6p5xvfj";
+const code = "import { createEffect, createSignal } from \"solid-js\";\nimport Button from \"rocksolidjs/Button\";\nimport Dialog from \"rocksolidjs/Dialog\";\nimport DialogActions from \"rocksolidjs/DialogActions\";\nimport DialogContent from \"rocksolidjs/DialogContent\";\nimport DialogTitle from \"rocksolidjs/DialogTitle\";\n\nexport default function Example() {\n  const [open, setOpen] = createSignal(false);\n\n  let openButton!: HTMLButtonElement, \n      closeBtn!: HTMLButtonElement;\n\n  createEffect(() => {\n    if (open()) {\n      closeBtn.focus();\n    }\n  });\n\n  const handleDialogClose = () => {\n    setOpen(false);\n    openButton.focus();\n  };\n\n  return (\n    \u003c>\n      \u003cButton\n        ref={openButton}\n        onClick={() => setOpen(true)}\n      >\n        Open dialog\n      \u003c/Button>\n\n      \u003cDialog\n        open={open()}\n        aria-labelledby=\"welcome-dialog-title\"\n        onClose={handleDialogClose}\n        class=\"max-w-md\"\n      >\n        \u003cDialogTitle id=\"welcome-dialog-title\">\n          Welcome to the workspace\n        \u003c/DialogTitle>\n        \u003cDialogContent>\n          Your workspace is ready. You can invite your team, create\n          projects, and start collaborating.\n        \u003c/DialogContent>\n        \u003cDialogActions>\n          \u003cButton\n            ref={closeBtn}\n            onClick={handleDialogClose}\n          >\n            Close\n          \u003c/Button>\n        \u003c/DialogActions>\n      \u003c/Dialog>\n    \u003c/>\n  );\n}";
 
-  const copyBtn = document.querySelector(`#compoent-example-${id} [data-copy]`);
+  const copyBtn = document.querySelector(`#code-block-${id} [data-copy]`);
   copyBtn?.addEventListener("click", async () => {
     try {
       const copyIcon = copyBtn.querySelector(".copy");
       const checkmarkIcon = copyBtn.querySelector(".checkmark");
-      await navigator.clipboard.writeText(source);
+      await navigator.clipboard.writeText(code);
       copyIcon.classList.add("hidden");
       checkmarkIcon.classList.remove("hidden");
       copyBtn.disabled = true;
@@ -365,12 +368,12 @@ const source = "import { createEffect, createSignal } from \"solid-js\";\nimport
       console.error("failed to copy to clipboard");
     }
   });
-})();</script>
+})();</script> </div> </div>
 <h3 id="alert-dialog">Alert dialog</h3>
 <p>Use <code>role=&quot;alertdialog&quot;</code> for dialogs that require the user’s immediate
 attention, such as destructive or irreversible actions. Use
 <code>aria-labelledby</code> to associate the dialog with its <code>DialogTitle</code>.</p>
-<div id="compoent-example-e1qtiymqml7" data-component-example class="my-8
+<div data-component-example class="my-8
     overflow-hidden
     rounded-xl
     border
@@ -386,9 +389,9 @@ attention, such as destructive or irreversible actions. Use
       text-base
       text-neutral-900
       dark:bg-neutral-950
-      dark:text-neutral-100" data-component-preview> <astro-island uid="ZRh1It" component-url="/_astro/dynamic-component-renderer.D9U5PMa1.js" component-export="default" renderer-url="/_astro/client.BgJ9siUT.js" props="{&quot;name&quot;:[0,&quot;Dialog/examples/alert-dialog&quot;]}" ssr client="only" opts="{&quot;name&quot;:&quot;DynamicComponentRenderer&quot;,&quot;value&quot;:&quot;solid-js&quot;}"></astro-island> </div> <div data-code class="border-t
+      dark:text-neutral-100" data-component-preview> <astro-island uid="ZRh1It" component-url="/_astro/dynamic-component-renderer.DMQQXM0d.js" component-export="default" renderer-url="/_astro/client.BgJ9siUT.js" props="{&quot;name&quot;:[0,&quot;Dialog/examples/alert-dialog&quot;]}" ssr client="only" opts="{&quot;name&quot;:&quot;DynamicComponentRenderer&quot;,&quot;value&quot;:&quot;solid-js&quot;}"></astro-island> </div> <div data-code class="border-t
       border-neutral-200
-      dark:border-neutral-800"> <div class="relative"> <button type="button" data-copy class="absolute
+      dark:border-neutral-800"> <div id="code-block-ycvsswqvvva" class="relative"> <button type="button" data-copy class="absolute
           top-3
           z-10
           ltr:right-3
@@ -404,7 +407,9 @@ attention, such as destructive or irreversible actions. Use
           hover:bg-neutral-200/80
           dark:bg-neutral-700/90
           dark:text-white
-          dark:hover:bg-neutral-700"> <svg class="checkmark hidden " xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="m10 13.6l5.9-5.9q.275-.275.7-.275t.7.275t.275.7t-.275.7l-6.6 6.6q-.3.3-.7.3t-.7-.3l-2.6-2.6q-.275-.275-.275-.7t.275-.7t.7-.275t.7.275z"></path></svg> <svg class="copy " xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"></path><g fill="none" stroke="currentColor"><rect width="9" height="13" x="6.5" y="6.5" rx="1.5"></rect><path d="M8.5 6A1.5 1.5 0 0 1 10 4.5h6A1.5 1.5 0 0 1 17.5 6v10a1.5 1.5 0 0 1-1.5 1.5"></path></g></svg> </button> <div class="overflow-x-auto
+          dark:hover:bg-neutral-700
+          
+          "> <svg class="checkmark hidden " xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="m10 13.6l5.9-5.9q.275-.275.7-.275t.7.275t.275.7t-.275.7l-6.6 6.6q-.3.3-.7.3t-.7-.3l-2.6-2.6q-.275-.275-.275-.7t.275-.7t.7-.275t.7.275z"></path></svg> <svg class="copy " xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"></path><g fill="none" stroke="currentColor"><rect width="9" height="13" x="6.5" y="6.5" rx="1.5"></rect><path d="M8.5 6A1.5 1.5 0 0 1 10 4.5h6A1.5 1.5 0 0 1 17.5 6v10a1.5 1.5 0 0 1-1.5 1.5"></path></g></svg> </button> <div class="overflow-x-auto
     text-lg
     border-neutral-200
     dark:border-neutral-800 rounded-xl " data-highlighted-code><pre class="shiki shiki-themes min-light min-dark" style="--shiki-light:#24292eff;--shiki-dark:#b392f0;--shiki-light-bg:#ffffff;--shiki-dark-bg:#1f1f1f" tabindex="0"><code><span class="line"><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">import</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0"> { createSignal</span><span style="--shiki-light:#212121;--shiki-dark:#BBBBBB">,</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0"> createEffect } </span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">from</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70"> "solid-js"</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">;</span></span>
@@ -472,15 +477,15 @@ attention, such as destructive or irreversible actions. Use
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">      &#x3C;/</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">Dialog</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">    &#x3C;/></span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">  );</span></span>
-<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> </div> </div> <script>(function(){const id = "e1qtiymqml7";
-const source = "import { createSignal, createEffect } from \"solid-js\";\nimport Button from \"rocksolidjs/Button\";\nimport Dialog from \"rocksolidjs/Dialog\";\nimport DialogActions from \"rocksolidjs/DialogActions\";\nimport DialogContent from \"rocksolidjs/DialogContent\";\nimport DialogTitle from \"rocksolidjs/DialogTitle\";\n\nexport default function Example() {\n  const [open, setOpen] = createSignal(false);\n\n  let openButton!: HTMLButtonElement, \n      cancelBtn!: HTMLButtonElement;\n  \n  createEffect(() => {\n    if (open()) {\n      cancelBtn.focus();\n    }\n  });\n\n  const handleDialogClose = () => {\n    setOpen(false);\n    openButton.focus();\n  };\n\n  return (\n    \u003c>\n      \u003cButton\n        ref={openButton}\n        onClick={() => setOpen(true)}\n      >\n          Delete account\n      \u003c/Button>\n\n      \u003cDialog\n        open={open()}\n        role=\"alertdialog\"\n        aria-labelledby=\"delete-account-title\"\n        onClose={handleDialogClose}\n        class=\"max-w-md\"\n      >\n        \u003cDialogTitle id=\"delete-account-title\">\n          Delete account?\n        \u003c/DialogTitle>\n        \u003cDialogContent>\n          This action permanently deletes your account and all of its data.\n          You won't be able to undo this action.\n        \u003c/DialogContent>\n        \u003cDialogActions>\n          \u003cButton\n            ref={cancelBtn}\n            variant=\"outlined\"\n            onClick={handleDialogClose}\n          >\n            Cancel\n          \u003c/Button>\n          \u003cButton\n            color=\"error\"\n            onClick={handleDialogClose}\n          >\n            Delete account\n          \u003c/Button>\n        \u003c/DialogActions>\n      \u003c/Dialog>\n    \u003c/>\n  );\n}";
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> <script>(function(){const id = "ycvsswqvvva";
+const code = "import { createSignal, createEffect } from \"solid-js\";\nimport Button from \"rocksolidjs/Button\";\nimport Dialog from \"rocksolidjs/Dialog\";\nimport DialogActions from \"rocksolidjs/DialogActions\";\nimport DialogContent from \"rocksolidjs/DialogContent\";\nimport DialogTitle from \"rocksolidjs/DialogTitle\";\n\nexport default function Example() {\n  const [open, setOpen] = createSignal(false);\n\n  let openButton!: HTMLButtonElement, \n      cancelBtn!: HTMLButtonElement;\n  \n  createEffect(() => {\n    if (open()) {\n      cancelBtn.focus();\n    }\n  });\n\n  const handleDialogClose = () => {\n    setOpen(false);\n    openButton.focus();\n  };\n\n  return (\n    \u003c>\n      \u003cButton\n        ref={openButton}\n        onClick={() => setOpen(true)}\n      >\n          Delete account\n      \u003c/Button>\n\n      \u003cDialog\n        open={open()}\n        role=\"alertdialog\"\n        aria-labelledby=\"delete-account-title\"\n        onClose={handleDialogClose}\n        class=\"max-w-md\"\n      >\n        \u003cDialogTitle id=\"delete-account-title\">\n          Delete account?\n        \u003c/DialogTitle>\n        \u003cDialogContent>\n          This action permanently deletes your account and all of its data.\n          You won't be able to undo this action.\n        \u003c/DialogContent>\n        \u003cDialogActions>\n          \u003cButton\n            ref={cancelBtn}\n            variant=\"outlined\"\n            onClick={handleDialogClose}\n          >\n            Cancel\n          \u003c/Button>\n          \u003cButton\n            color=\"error\"\n            onClick={handleDialogClose}\n          >\n            Delete account\n          \u003c/Button>\n        \u003c/DialogActions>\n      \u003c/Dialog>\n    \u003c/>\n  );\n}";
 
-  const copyBtn = document.querySelector(`#compoent-example-${id} [data-copy]`);
+  const copyBtn = document.querySelector(`#code-block-${id} [data-copy]`);
   copyBtn?.addEventListener("click", async () => {
     try {
       const copyIcon = copyBtn.querySelector(".copy");
       const checkmarkIcon = copyBtn.querySelector(".checkmark");
-      await navigator.clipboard.writeText(source);
+      await navigator.clipboard.writeText(code);
       copyIcon.classList.add("hidden");
       checkmarkIcon.classList.remove("hidden");
       copyBtn.disabled = true;
@@ -493,11 +498,11 @@ const source = "import { createSignal, createEffect } from \"solid-js\";\nimport
       console.error("failed to copy to clipboard");
     }
   });
-})();</script>
+})();</script> </div> </div>
 <h3 id="fullscreen">Fullscreen</h3>
 <p>Use the <code>fullscreen</code> prop when the dialog should occupy the available
 viewport instead of appearing as a smaller modal.</p>
-<div id="compoent-example-15lpjwm5u71" data-component-example class="my-8
+<div data-component-example class="my-8
     overflow-hidden
     rounded-xl
     border
@@ -513,9 +518,9 @@ viewport instead of appearing as a smaller modal.</p>
       text-base
       text-neutral-900
       dark:bg-neutral-950
-      dark:text-neutral-100" data-component-preview> <astro-island uid="Z1myke7" component-url="/_astro/dynamic-component-renderer.D9U5PMa1.js" component-export="default" renderer-url="/_astro/client.BgJ9siUT.js" props="{&quot;name&quot;:[0,&quot;Dialog/examples/fullscreen&quot;]}" ssr client="only" opts="{&quot;name&quot;:&quot;DynamicComponentRenderer&quot;,&quot;value&quot;:&quot;solid-js&quot;}"></astro-island> </div> <div data-code class="border-t
+      dark:text-neutral-100" data-component-preview> <astro-island uid="Z1myke7" component-url="/_astro/dynamic-component-renderer.DMQQXM0d.js" component-export="default" renderer-url="/_astro/client.BgJ9siUT.js" props="{&quot;name&quot;:[0,&quot;Dialog/examples/fullscreen&quot;]}" ssr client="only" opts="{&quot;name&quot;:&quot;DynamicComponentRenderer&quot;,&quot;value&quot;:&quot;solid-js&quot;}"></astro-island> </div> <div data-code class="border-t
       border-neutral-200
-      dark:border-neutral-800"> <div class="relative"> <button type="button" data-copy class="absolute
+      dark:border-neutral-800"> <div id="code-block-3y0aat6igz4" class="relative"> <button type="button" data-copy class="absolute
           top-3
           z-10
           ltr:right-3
@@ -531,7 +536,9 @@ viewport instead of appearing as a smaller modal.</p>
           hover:bg-neutral-200/80
           dark:bg-neutral-700/90
           dark:text-white
-          dark:hover:bg-neutral-700"> <svg class="checkmark hidden " xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="m10 13.6l5.9-5.9q.275-.275.7-.275t.7.275t.275.7t-.275.7l-6.6 6.6q-.3.3-.7.3t-.7-.3l-2.6-2.6q-.275-.275-.275-.7t.275-.7t.7-.275t.7.275z"></path></svg> <svg class="copy " xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"></path><g fill="none" stroke="currentColor"><rect width="9" height="13" x="6.5" y="6.5" rx="1.5"></rect><path d="M8.5 6A1.5 1.5 0 0 1 10 4.5h6A1.5 1.5 0 0 1 17.5 6v10a1.5 1.5 0 0 1-1.5 1.5"></path></g></svg> </button> <div class="overflow-x-auto
+          dark:hover:bg-neutral-700
+          
+          "> <svg class="checkmark hidden " xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="m10 13.6l5.9-5.9q.275-.275.7-.275t.7.275t.275.7t-.275.7l-6.6 6.6q-.3.3-.7.3t-.7-.3l-2.6-2.6q-.275-.275-.275-.7t.275-.7t.7-.275t.7.275z"></path></svg> <svg class="copy " xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"></path><g fill="none" stroke="currentColor"><rect width="9" height="13" x="6.5" y="6.5" rx="1.5"></rect><path d="M8.5 6A1.5 1.5 0 0 1 10 4.5h6A1.5 1.5 0 0 1 17.5 6v10a1.5 1.5 0 0 1-1.5 1.5"></path></g></svg> </button> <div class="overflow-x-auto
     text-lg
     border-neutral-200
     dark:border-neutral-800 rounded-xl " data-highlighted-code><pre class="shiki shiki-themes min-light min-dark" style="--shiki-light:#24292eff;--shiki-dark:#b392f0;--shiki-light-bg:#ffffff;--shiki-dark-bg:#1f1f1f" tabindex="0"><code><span class="line"><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">import</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0"> { createSignal } </span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">from</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70"> "solid-js"</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">;</span></span>
@@ -570,15 +577,15 @@ viewport instead of appearing as a smaller modal.</p>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">      &#x3C;/</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">Dialog</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">    &#x3C;/></span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">  );</span></span>
-<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> </div> </div> <script>(function(){const id = "15lpjwm5u71";
-const source = "import { createSignal } from \"solid-js\";\nimport Button from \"rocksolidjs/Button\";\nimport Dialog from \"rocksolidjs/Dialog\";\nimport DialogActions from \"rocksolidjs/DialogActions\";\nimport DialogContent from \"rocksolidjs/DialogContent\";\nimport DialogTitle from \"rocksolidjs/DialogTitle\";\n\nexport default function Example() {\n  const [open, setOpen] = createSignal(false);\n\n  return (\n    \u003c>\n      \u003cButton onClick={() => setOpen(true)}>View report\u003c/Button>\n\n      \u003cDialog\n        open={open()}\n        fullscreen\n        onClose={() => setOpen(false)}\n      >\n        \u003cDialogTitle>Quarterly sales report\u003c/DialogTitle>\n        \u003cDialogContent>\n          \u003cp>\n            Review your sales performance for the current quarter.\n          \u003c/p>\n          \u003cul>\n            \u003cli>Revenue increased by 18%.\u003c/li>\n            \u003cli>New customers increased by 24%.\u003c/li>\n            \u003cli>Customer retention improved by 6%.\u003c/li>\n          \u003c/ul>\n        \u003c/DialogContent>\n        \u003cDialogActions>\n          \u003cButton onClick={() => setOpen(false)}>Close\u003c/Button>\n        \u003c/DialogActions>\n      \u003c/Dialog>\n    \u003c/>\n  );\n}";
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> <script>(function(){const id = "3y0aat6igz4";
+const code = "import { createSignal } from \"solid-js\";\nimport Button from \"rocksolidjs/Button\";\nimport Dialog from \"rocksolidjs/Dialog\";\nimport DialogActions from \"rocksolidjs/DialogActions\";\nimport DialogContent from \"rocksolidjs/DialogContent\";\nimport DialogTitle from \"rocksolidjs/DialogTitle\";\n\nexport default function Example() {\n  const [open, setOpen] = createSignal(false);\n\n  return (\n    \u003c>\n      \u003cButton onClick={() => setOpen(true)}>View report\u003c/Button>\n\n      \u003cDialog\n        open={open()}\n        fullscreen\n        onClose={() => setOpen(false)}\n      >\n        \u003cDialogTitle>Quarterly sales report\u003c/DialogTitle>\n        \u003cDialogContent>\n          \u003cp>\n            Review your sales performance for the current quarter.\n          \u003c/p>\n          \u003cul>\n            \u003cli>Revenue increased by 18%.\u003c/li>\n            \u003cli>New customers increased by 24%.\u003c/li>\n            \u003cli>Customer retention improved by 6%.\u003c/li>\n          \u003c/ul>\n        \u003c/DialogContent>\n        \u003cDialogActions>\n          \u003cButton onClick={() => setOpen(false)}>Close\u003c/Button>\n        \u003c/DialogActions>\n      \u003c/Dialog>\n    \u003c/>\n  );\n}";
 
-  const copyBtn = document.querySelector(`#compoent-example-${id} [data-copy]`);
+  const copyBtn = document.querySelector(`#code-block-${id} [data-copy]`);
   copyBtn?.addEventListener("click", async () => {
     try {
       const copyIcon = copyBtn.querySelector(".copy");
       const checkmarkIcon = copyBtn.querySelector(".checkmark");
-      await navigator.clipboard.writeText(source);
+      await navigator.clipboard.writeText(code);
       copyIcon.classList.add("hidden");
       checkmarkIcon.classList.remove("hidden");
       copyBtn.disabled = true;
@@ -591,7 +598,7 @@ const source = "import { createSignal } from \"solid-js\";\nimport Button from \
       console.error("failed to copy to clipboard");
     }
   });
-})();</script>
+})();</script> </div> </div>
 <h3 id="close-reasons">Close Reasons</h3>
 <p>Use the <code>onClose</code> callback to respond when the dialog is requested to close.
 The callback receives the event and a reason describing how the close was
@@ -601,7 +608,7 @@ triggered.</p>
 <li><code>escape</code> — The user pressed the Escape key.</li>
 <li><code>backdrop</code> — The user interacted with the backdrop.</li>
 </ul>
-<div id="compoent-example-1xpms2lyz3m" data-component-example class="my-8
+<div data-component-example class="my-8
     overflow-hidden
     rounded-xl
     border
@@ -617,9 +624,9 @@ triggered.</p>
       text-base
       text-neutral-900
       dark:bg-neutral-950
-      dark:text-neutral-100" data-component-preview> <astro-island uid="1bdxV6" component-url="/_astro/dynamic-component-renderer.D9U5PMa1.js" component-export="default" renderer-url="/_astro/client.BgJ9siUT.js" props="{&quot;name&quot;:[0,&quot;Dialog/examples/close-reasons&quot;]}" ssr client="only" opts="{&quot;name&quot;:&quot;DynamicComponentRenderer&quot;,&quot;value&quot;:&quot;solid-js&quot;}"></astro-island> </div> <div data-code class="border-t
+      dark:text-neutral-100" data-component-preview> <astro-island uid="1bdxV6" component-url="/_astro/dynamic-component-renderer.DMQQXM0d.js" component-export="default" renderer-url="/_astro/client.BgJ9siUT.js" props="{&quot;name&quot;:[0,&quot;Dialog/examples/close-reasons&quot;]}" ssr client="only" opts="{&quot;name&quot;:&quot;DynamicComponentRenderer&quot;,&quot;value&quot;:&quot;solid-js&quot;}"></astro-island> </div> <div data-code class="border-t
       border-neutral-200
-      dark:border-neutral-800"> <div class="relative"> <button type="button" data-copy class="absolute
+      dark:border-neutral-800"> <div id="code-block-18xcn8q3du4" class="relative"> <button type="button" data-copy class="absolute
           top-3
           z-10
           ltr:right-3
@@ -635,7 +642,9 @@ triggered.</p>
           hover:bg-neutral-200/80
           dark:bg-neutral-700/90
           dark:text-white
-          dark:hover:bg-neutral-700"> <svg class="checkmark hidden " xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="m10 13.6l5.9-5.9q.275-.275.7-.275t.7.275t.275.7t-.275.7l-6.6 6.6q-.3.3-.7.3t-.7-.3l-2.6-2.6q-.275-.275-.275-.7t.275-.7t.7-.275t.7.275z"></path></svg> <svg class="copy " xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"></path><g fill="none" stroke="currentColor"><rect width="9" height="13" x="6.5" y="6.5" rx="1.5"></rect><path d="M8.5 6A1.5 1.5 0 0 1 10 4.5h6A1.5 1.5 0 0 1 17.5 6v10a1.5 1.5 0 0 1-1.5 1.5"></path></g></svg> </button> <div class="overflow-x-auto
+          dark:hover:bg-neutral-700
+          
+          "> <svg class="checkmark hidden " xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="m10 13.6l5.9-5.9q.275-.275.7-.275t.7.275t.275.7t-.275.7l-6.6 6.6q-.3.3-.7.3t-.7-.3l-2.6-2.6q-.275-.275-.275-.7t.275-.7t.7-.275t.7.275z"></path></svg> <svg class="copy " xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"></path><g fill="none" stroke="currentColor"><rect width="9" height="13" x="6.5" y="6.5" rx="1.5"></rect><path d="M8.5 6A1.5 1.5 0 0 1 10 4.5h6A1.5 1.5 0 0 1 17.5 6v10a1.5 1.5 0 0 1-1.5 1.5"></path></g></svg> </button> <div class="overflow-x-auto
     text-lg
     border-neutral-200
     dark:border-neutral-800 rounded-xl " data-highlighted-code><pre class="shiki shiki-themes min-light min-dark" style="--shiki-light:#24292eff;--shiki-dark:#b392f0;--shiki-light-bg:#ffffff;--shiki-dark-bg:#1f1f1f" tabindex="0"><code><span class="line"><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">import</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0"> { createSignal } </span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">from</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70"> "solid-js"</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">;</span></span>
@@ -697,15 +706,15 @@ triggered.</p>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">      &#x3C;/</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">Dialog</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">    &#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">div</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">  );</span></span>
-<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> </div> </div> <script>(function(){const id = "1xpms2lyz3m";
-const source = "import { createSignal } from \"solid-js\";\nimport Button from \"rocksolidjs/Button\";\nimport Dialog, { type DialogCloseReason } from \"rocksolidjs/Dialog\";\nimport DialogActions from \"rocksolidjs/DialogActions\";\nimport DialogContent from \"rocksolidjs/DialogContent\";\nimport DialogTitle from \"rocksolidjs/DialogTitle\";\nimport Typography from \"rocksolidjs/Typography\";\n\nexport default function Example() {\n  const [open, setOpen] = createSignal(false);\n  const [reason, setReason] = createSignal\u003cstring>();\n\n  const handleClose = (\n    _event: Event,\n    closeReason: DialogCloseReason,\n  ) => {\n    setReason(closeReason);\n    setOpen(false);\n  };\n\n  return (\n    \u003cdiv class=\"space-y-2 text-center\">\n      \u003cButton\n        onClick={() => setOpen(true)}\n      >\n        Open dialog\n      \u003c/Button>\n\n      {reason() && (\n        \u003cTypography>\n          Dialog closed because of: \u003cstrong>{reason()}\u003c/strong>\n        \u003c/Typography>\n      )}\n\n      \u003cDialog\n        open={open()}\n        onClose={handleClose}\n      >\n        \u003cDialogTitle>Unsaved changes\u003c/DialogTitle>\n        \u003cDialogContent>\n          You have changes that haven't been saved. Are you sure you want to\n          leave this dialog?\n        \u003c/DialogContent>\n        \u003cDialogActions>\n          \u003cButton\n            onClick={() => setOpen(false)}\n          >\n            Keep editing\n          \u003c/Button>\n          \u003cButton\n            onClick={() => setOpen(false)}\n            color=\"error\"\n          >\n            Discard changes\n          \u003c/Button>\n        \u003c/DialogActions>\n      \u003c/Dialog>\n    \u003c/div>\n  );\n}";
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> <script>(function(){const id = "18xcn8q3du4";
+const code = "import { createSignal } from \"solid-js\";\nimport Button from \"rocksolidjs/Button\";\nimport Dialog, { type DialogCloseReason } from \"rocksolidjs/Dialog\";\nimport DialogActions from \"rocksolidjs/DialogActions\";\nimport DialogContent from \"rocksolidjs/DialogContent\";\nimport DialogTitle from \"rocksolidjs/DialogTitle\";\nimport Typography from \"rocksolidjs/Typography\";\n\nexport default function Example() {\n  const [open, setOpen] = createSignal(false);\n  const [reason, setReason] = createSignal\u003cstring>();\n\n  const handleClose = (\n    _event: Event,\n    closeReason: DialogCloseReason,\n  ) => {\n    setReason(closeReason);\n    setOpen(false);\n  };\n\n  return (\n    \u003cdiv class=\"space-y-2 text-center\">\n      \u003cButton\n        onClick={() => setOpen(true)}\n      >\n        Open dialog\n      \u003c/Button>\n\n      {reason() && (\n        \u003cTypography>\n          Dialog closed because of: \u003cstrong>{reason()}\u003c/strong>\n        \u003c/Typography>\n      )}\n\n      \u003cDialog\n        open={open()}\n        onClose={handleClose}\n      >\n        \u003cDialogTitle>Unsaved changes\u003c/DialogTitle>\n        \u003cDialogContent>\n          You have changes that haven't been saved. Are you sure you want to\n          leave this dialog?\n        \u003c/DialogContent>\n        \u003cDialogActions>\n          \u003cButton\n            onClick={() => setOpen(false)}\n          >\n            Keep editing\n          \u003c/Button>\n          \u003cButton\n            onClick={() => setOpen(false)}\n            color=\"error\"\n          >\n            Discard changes\n          \u003c/Button>\n        \u003c/DialogActions>\n      \u003c/Dialog>\n    \u003c/div>\n  );\n}";
 
-  const copyBtn = document.querySelector(`#compoent-example-${id} [data-copy]`);
+  const copyBtn = document.querySelector(`#code-block-${id} [data-copy]`);
   copyBtn?.addEventListener("click", async () => {
     try {
       const copyIcon = copyBtn.querySelector(".copy");
       const checkmarkIcon = copyBtn.querySelector(".checkmark");
-      await navigator.clipboard.writeText(source);
+      await navigator.clipboard.writeText(code);
       copyIcon.classList.add("hidden");
       checkmarkIcon.classList.remove("hidden");
       copyBtn.disabled = true;
@@ -718,10 +727,10 @@ const source = "import { createSignal } from \"solid-js\";\nimport Button from \
       console.error("failed to copy to clipboard");
     }
   });
-})();</script>
+})();</script> </div> </div>
 <h3 id="customization">Customization</h3>
 <p>Use the <code>class</code> prop on each Dialog component to add custom styling.</p>
-<div id="compoent-example-m96p1d62f4r" data-component-example class="my-8
+<div data-component-example class="my-8
     overflow-hidden
     rounded-xl
     border
@@ -737,9 +746,9 @@ const source = "import { createSignal } from \"solid-js\";\nimport Button from \
       text-base
       text-neutral-900
       dark:bg-neutral-950
-      dark:text-neutral-100" data-component-preview> <astro-island uid="Awi99" component-url="/_astro/dynamic-component-renderer.D9U5PMa1.js" component-export="default" renderer-url="/_astro/client.BgJ9siUT.js" props="{&quot;name&quot;:[0,&quot;Dialog/examples/customization&quot;]}" ssr client="only" opts="{&quot;name&quot;:&quot;DynamicComponentRenderer&quot;,&quot;value&quot;:&quot;solid-js&quot;}"></astro-island> </div> <div data-code class="border-t
+      dark:text-neutral-100" data-component-preview> <astro-island uid="Awi99" component-url="/_astro/dynamic-component-renderer.DMQQXM0d.js" component-export="default" renderer-url="/_astro/client.BgJ9siUT.js" props="{&quot;name&quot;:[0,&quot;Dialog/examples/customization&quot;]}" ssr client="only" opts="{&quot;name&quot;:&quot;DynamicComponentRenderer&quot;,&quot;value&quot;:&quot;solid-js&quot;}"></astro-island> </div> <div data-code class="border-t
       border-neutral-200
-      dark:border-neutral-800"> <div class="relative"> <button type="button" data-copy class="absolute
+      dark:border-neutral-800"> <div id="code-block-9yr1v07grkp" class="relative"> <button type="button" data-copy class="absolute
           top-3
           z-10
           ltr:right-3
@@ -755,7 +764,9 @@ const source = "import { createSignal } from \"solid-js\";\nimport Button from \
           hover:bg-neutral-200/80
           dark:bg-neutral-700/90
           dark:text-white
-          dark:hover:bg-neutral-700"> <svg class="checkmark hidden " xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="m10 13.6l5.9-5.9q.275-.275.7-.275t.7.275t.275.7t-.275.7l-6.6 6.6q-.3.3-.7.3t-.7-.3l-2.6-2.6q-.275-.275-.275-.7t.275-.7t.7-.275t.7.275z"></path></svg> <svg class="copy " xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"></path><g fill="none" stroke="currentColor"><rect width="9" height="13" x="6.5" y="6.5" rx="1.5"></rect><path d="M8.5 6A1.5 1.5 0 0 1 10 4.5h6A1.5 1.5 0 0 1 17.5 6v10a1.5 1.5 0 0 1-1.5 1.5"></path></g></svg> </button> <div class="overflow-x-auto
+          dark:hover:bg-neutral-700
+          
+          "> <svg class="checkmark hidden " xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="m10 13.6l5.9-5.9q.275-.275.7-.275t.7.275t.275.7t-.275.7l-6.6 6.6q-.3.3-.7.3t-.7-.3l-2.6-2.6q-.275-.275-.275-.7t.275-.7t.7-.275t.7.275z"></path></svg> <svg class="copy " xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"></path><g fill="none" stroke="currentColor"><rect width="9" height="13" x="6.5" y="6.5" rx="1.5"></rect><path d="M8.5 6A1.5 1.5 0 0 1 10 4.5h6A1.5 1.5 0 0 1 17.5 6v10a1.5 1.5 0 0 1-1.5 1.5"></path></g></svg> </button> <div class="overflow-x-auto
     text-lg
     border-neutral-200
     dark:border-neutral-800 rounded-xl " data-highlighted-code><pre class="shiki shiki-themes min-light min-dark" style="--shiki-light:#24292eff;--shiki-dark:#b392f0;--shiki-light-bg:#ffffff;--shiki-dark-bg:#1f1f1f" tabindex="0"><code><span class="line"><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">import</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0"> { createSignal } </span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">from</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70"> "solid-js"</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">;</span></span>
@@ -810,15 +821,15 @@ const source = "import { createSignal } from \"solid-js\";\nimport Button from \
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">      &#x3C;/</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">Dialog</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">    &#x3C;/></span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">  );</span></span>
-<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> </div> </div> <script>(function(){const id = "m96p1d62f4r";
-const source = "import { createSignal } from \"solid-js\";\nimport Button from \"rocksolidjs/Button\";\nimport Dialog from \"rocksolidjs/Dialog\";\nimport DialogActions from \"rocksolidjs/DialogActions\";\nimport DialogContent from \"rocksolidjs/DialogContent\";\nimport DialogTitle from \"rocksolidjs/DialogTitle\";\nimport Divider from \"rocksolidjs/Divider\";\n\nexport default function Example() {\n  const [open, setOpen] = createSignal(false);\n\n  return (\n    \u003c>\n      \u003cButton onClick={() => setOpen(true)}>Show alert\u003c/Button>\n\n      \u003cDialog\n        open={open()}\n        class=\"max-w-xs rounded-2xl\"\n        aria-labelledby=\"ios-dialog-title\"\n        onClose={() => setOpen(false)}\n      >\n        \u003cDialogTitle\n          id=\"ios-dialog-title\"\n          class=\"text-center\"\n        >\n          Allow Notifications?\n        \u003c/DialogTitle>\n        \u003cDialogContent class=\"px-6 pb-5 text-center text-balance\">\n            Notifications may include alerts, sounds, and icon badges.\n        \u003c/DialogContent>\n        \u003cDialogActions class=\"flex gap-2\">\n          \u003cButton\n            variant=\"text\"\n            class=\"flex-1\"\n            onClick={() => setOpen(false)}\n          >\n            Don't Allow\n          \u003c/Button>\n          \u003cDivider\n            orientation=\"vertical\" \n          />\n          \u003cButton\n            variant=\"text\"\n            class=\"font-semibold flex-1\"\n            onClick={() => setOpen(false)}\n          >\n            Allow\n          \u003c/Button>\n        \u003c/DialogActions>\n      \u003c/Dialog>\n    \u003c/>\n  );\n}\n";
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> <script>(function(){const id = "9yr1v07grkp";
+const code = "import { createSignal } from \"solid-js\";\nimport Button from \"rocksolidjs/Button\";\nimport Dialog from \"rocksolidjs/Dialog\";\nimport DialogActions from \"rocksolidjs/DialogActions\";\nimport DialogContent from \"rocksolidjs/DialogContent\";\nimport DialogTitle from \"rocksolidjs/DialogTitle\";\nimport Divider from \"rocksolidjs/Divider\";\n\nexport default function Example() {\n  const [open, setOpen] = createSignal(false);\n\n  return (\n    \u003c>\n      \u003cButton onClick={() => setOpen(true)}>Show alert\u003c/Button>\n\n      \u003cDialog\n        open={open()}\n        class=\"max-w-xs rounded-2xl\"\n        aria-labelledby=\"ios-dialog-title\"\n        onClose={() => setOpen(false)}\n      >\n        \u003cDialogTitle\n          id=\"ios-dialog-title\"\n          class=\"text-center\"\n        >\n          Allow Notifications?\n        \u003c/DialogTitle>\n        \u003cDialogContent class=\"px-6 pb-5 text-center text-balance\">\n            Notifications may include alerts, sounds, and icon badges.\n        \u003c/DialogContent>\n        \u003cDialogActions class=\"flex gap-2\">\n          \u003cButton\n            variant=\"text\"\n            class=\"flex-1\"\n            onClick={() => setOpen(false)}\n          >\n            Don't Allow\n          \u003c/Button>\n          \u003cDivider\n            orientation=\"vertical\" \n          />\n          \u003cButton\n            variant=\"text\"\n            class=\"font-semibold flex-1\"\n            onClick={() => setOpen(false)}\n          >\n            Allow\n          \u003c/Button>\n        \u003c/DialogActions>\n      \u003c/Dialog>\n    \u003c/>\n  );\n}";
 
-  const copyBtn = document.querySelector(`#compoent-example-${id} [data-copy]`);
+  const copyBtn = document.querySelector(`#code-block-${id} [data-copy]`);
   copyBtn?.addEventListener("click", async () => {
     try {
       const copyIcon = copyBtn.querySelector(".copy");
       const checkmarkIcon = copyBtn.querySelector(".checkmark");
-      await navigator.clipboard.writeText(source);
+      await navigator.clipboard.writeText(code);
       copyIcon.classList.add("hidden");
       checkmarkIcon.classList.remove("hidden");
       copyBtn.disabled = true;
@@ -831,7 +842,7 @@ const source = "import { createSignal } from \"solid-js\";\nimport Button from \
       console.error("failed to copy to clipboard");
     }
   });
-})();</script>
+})();</script> </div> </div>
 <h2 id="accessibility">Accessibility</h2>
 <ul>
 <li>The dialog uses <code>role=&quot;dialog&quot;</code> by default. Use <code>role=&quot;alertdialog&quot;</code> when

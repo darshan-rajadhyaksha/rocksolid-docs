@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="en"> <head><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><title>Chip</title><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="generator" content="Astro v7.2.2"><meta name="description" content="Chip component displays a compact label with optional avatars, icons, delete actions, and disabled state."><meta name="keywords" content="RockSolid, rocksolidjs, SolidJS, SolidJS components, SolidJS UI library, Tailwind CSS, component library, UI components, accessible components, TypeScript, themeable components, reusable components, frontend library"><meta name="author" content="Darshan Sunil Rajadhyaksha"><link rel="canonical" href="https://rocksolidjs.com/components/chip/"><link rel="sitemap" href="/sitemap-index.xml"><meta name="robots" content="index, follow"><!-- OG --><meta property="og:type" content="article"><meta property="og:title" content="Chip"><meta property="og:description" content="Chip component displays a compact label with optional avatars, icons, delete actions, and disabled state."><meta property="og:image" content="https://rocksolidjs.com/assets/og.png"><meta property="og:image:width" content="1024"><meta property="og:image:height" content="768"><meta property="og:url" content="https://rocksolidjs.com/components/chip/"><meta property="og:site_name" content="RockSolid"><meta property="og:locale" content="en_US"><!-- X --><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Chip"><meta name="twitter:description" content="Chip component displays a compact label with optional avatars, icons, delete actions, and disabled state."><meta name="twitter:image" content="https://rocksolidjs.com/assets/og.png"><meta name="twitter:image:width" content="1024"><meta name="twitter:image:height" content="768"><link rel="icon" href="/assets/favicon/favicon.ico"><link rel="icon" type="image/png" sizes="96x96" href="/assets/favicon/favicon-96x96.png"><link rel="icon" type="image/svg+xml" href="/assets/favicon/favicon.svg"><link rel="shortcut icon" href="/assets/favicon/favicon.ico"><link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png"><link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet"><script>
+<!DOCTYPE html><html lang="en"> <head><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><title>Chip</title><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="generator" content="Astro v7.3.2"><meta name="description" content="Chip component displays a compact label with optional avatars, icons, delete actions, and disabled state."><meta name="keywords" content="RockSolid, rocksolidjs, SolidJS, SolidJS components, SolidJS UI library, Tailwind CSS, component library, UI components, accessible components, TypeScript, themeable components, reusable components, frontend library"><meta name="author" content="Darshan Sunil Rajadhyaksha"><link rel="canonical" href="https://rocksolidjs.com/components/chip/"><link rel="sitemap" href="/sitemap-index.xml"><meta name="robots" content="index, follow"><!-- OG --><meta property="og:type" content="article"><meta property="og:title" content="Chip"><meta property="og:description" content="Chip component displays a compact label with optional avatars, icons, delete actions, and disabled state."><meta property="og:image" content="https://rocksolidjs.com/assets/og.png"><meta property="og:image:width" content="1024"><meta property="og:image:height" content="768"><meta property="og:url" content="https://rocksolidjs.com/components/chip/"><meta property="og:site_name" content="RockSolid"><meta property="og:locale" content="en_US"><!-- X --><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Chip"><meta name="twitter:description" content="Chip component displays a compact label with optional avatars, icons, delete actions, and disabled state."><meta name="twitter:image" content="https://rocksolidjs.com/assets/og.png"><meta name="twitter:image:width" content="1024"><meta name="twitter:image:height" content="768"><link rel="icon" href="/assets/favicon/favicon.ico"><link rel="icon" type="image/png" sizes="96x96" href="/assets/favicon/favicon-96x96.png"><link rel="icon" type="image/svg+xml" href="/assets/favicon/favicon.svg"><link rel="shortcut icon" href="/assets/favicon/favicon.ico"><link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png"><link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet"><script>
     const theme = localStorage.getItem("theme");
     if (
       theme === "dark" ||
@@ -11,7 +11,7 @@
     ) {
       document.documentElement.classList.add("dark");
     }
-  </script><link rel="stylesheet" href="/_astro/base.C1-k0NAi.css"></head> <body class="min-h-screen bg-white text-neutral-900
+  </script><link rel="stylesheet" href="/_astro/base.CiuBXjTW.css"></head> <body class="min-h-screen bg-white text-neutral-900
     dark:bg-neutral-950 dark:text-neutral-100"> <!-- Mobile overlay --> <div id="sidebar-overlay" class="pointer-events-none fixed inset-0 z-40
       bg-black/40 opacity-0 transition-opacity
       duration-200 lg:hidden"></div> <div class="min-h-screen lg:grid
@@ -38,8 +38,7 @@ RockSolid
 </a> <p class="mt-1 text-xs
           text-neutral-500
           dark:text-neutral-500">
-v0.1.1
-</p> </div> <!-- GitHub --> <div class="mb-7"> <a href="https://github.com/darshan-rajadhyaksha/rocksolid/" target="_blank" rel="noopener noreferrer" class="flex w-full items-center gap-3
+v0.1.2 </p> </div> <!-- GitHub --> <div class="mb-7"> <a href="https://github.com/darshan-rajadhyaksha/rocksolid/" target="_blank" rel="noopener noreferrer" class="flex w-full items-center gap-3
           rounded-md px-3 py-2
           text-sm font-medium
           text-neutral-600
@@ -130,7 +129,7 @@ RTL
 <p>The Chip component displays a compact label that can represent a value,
 category, status, or interactive item. Chips can include an avatar or icon,
 and can optionally provide a delete action.</p>
-<div id="compoent-example-vvlnjj2vo3" data-component-example class="my-8
+<div data-component-example class="my-8
     overflow-hidden
     rounded-xl
     border
@@ -146,9 +145,9 @@ and can optionally provide a delete action.</p>
       text-base
       text-neutral-900
       dark:bg-neutral-950
-      dark:text-neutral-100" data-component-preview> <style>astro-island,astro-slot,astro-static-slot{display:contents}</style><script>(()=>{var e=async t=>{await(await t())()};(self.Astro||(self.Astro={})).only=e;window.dispatchEvent(new Event("astro:only"));})();</script><script>(()=>{var g=Object.defineProperty;var w=(a,s,c)=>s in a?g(a,s,{enumerable:!0,configurable:!0,writable:!0,value:c}):a[s]=c;var l=(a,s,c)=>w(a,typeof s!="symbol"?s+"":s,c);var E=new Set(["__proto__","constructor","prototype"]);{let a={0:t=>y(t),1:t=>c(t),2:t=>new RegExp(t),3:t=>new Date(t),4:t=>new Map(c(t)),5:t=>new Set(c(t)),6:t=>BigInt(t),7:t=>new URL(t),8:t=>new Uint8Array(t),9:t=>new Uint16Array(t),10:t=>new Uint32Array(t),11:t=>Number.POSITIVE_INFINITY*t},s=t=>{let[p,e]=t;return p in a?a[p](e):void 0},c=t=>t.map(s),y=t=>typeof t!="object"||t===null?t:Object.fromEntries(Object.entries(t).map(([p,e])=>[p,s(e)]));class f extends HTMLElement{constructor(){super(...arguments);l(this,"Component");l(this,"hydrator");l(this,"hydrate",async()=>{var b;if(!this.hydrator||!this.isConnected)return;let e=(b=this.parentElement)==null?void 0:b.closest("astro-island[ssr]");if(e){e.addEventListener("astro:hydrate",this.hydrate,{once:!0});return}let r=this.querySelectorAll("astro-slot"),n={},d=this.querySelectorAll("template[data-astro-template]");for(let o of d){let i=o.closest(this.tagName);i!=null&&i.isSameNode(this)&&(n[o.getAttribute("data-astro-template")||"default"]=o.innerHTML,o.remove())}for(let o of r){let i=o.closest(this.tagName);i!=null&&i.isSameNode(this)&&(n[o.getAttribute("name")||"default"]=o.innerHTML)}let u;try{u=this.hasAttribute("props")?y(JSON.parse(this.getAttribute("props"))):{}}catch(o){let i=this.getAttribute("component-url")||"<unknown>",v=this.getAttribute("component-export");throw v&&(i+=` (export ${v})`),console.error(`[hydrate] Error parsing props for component ${i}`,this.getAttribute("props"),o),o}let h;await this.hydrator(this)(this.Component,u,n,{client:this.getAttribute("client")}),this.removeAttribute("ssr"),this.dispatchEvent(new CustomEvent("astro:hydrate"))});l(this,"unmount",()=>{this.isConnected||this.dispatchEvent(new CustomEvent("astro:unmount"))})}disconnectedCallback(){document.removeEventListener("astro:after-swap",this.unmount),document.addEventListener("astro:after-swap",this.unmount,{once:!0})}connectedCallback(){if(!this.hasAttribute("await-children")||document.readyState==="interactive"||document.readyState==="complete")this.childrenConnectedCallback();else{let e=()=>{document.removeEventListener("DOMContentLoaded",e),r.disconnect(),this.childrenConnectedCallback()},r=new MutationObserver(()=>{var n;((n=this.lastChild)==null?void 0:n.nodeType)===Node.COMMENT_NODE&&this.lastChild.nodeValue==="astro:end"&&(this.lastChild.remove(),e())});r.observe(this,{childList:!0}),document.addEventListener("DOMContentLoaded",e)}}async childrenConnectedCallback(){let e=this.getAttribute("before-hydration-url");e&&await import(e),this.start()}getRetryImportUrl(e){let r=new URL(e,document.baseURI);return r.searchParams.set("astro-retry",Date.now().toString()),r.toString()}async importWithRetry(e){try{return await import(e)}catch(r){return await new Promise(n=>setTimeout(n,1e3)),import(this.getRetryImportUrl(e))}}handleHydrationError(e){let r=this.getAttribute("component-url"),n=new CustomEvent("astro:hydration-error",{cancelable:!0,bubbles:!0,composed:!0,detail:{error:e,componentUrl:r}});this.dispatchEvent(n)&&console.error(`[astro-island] Error hydrating ${r}`,e)}async start(){let e=JSON.parse(this.getAttribute("opts")),r=this.getAttribute("client");if(Astro[r]===void 0){window.addEventListener(`astro:${r}`,()=>this.start(),{once:!0});return}try{await Astro[r](async()=>{let n=this.getAttribute("renderer-url");try{let[d,{default:u}]=await Promise.all([this.importWithRetry(this.getAttribute("component-url")),n?this.importWithRetry(n):Promise.resolve({default:()=>()=>{}})]),h=this.getAttribute("component-export")||"default";if(h.includes(".")){this.Component=d;for(let m of h.split(".")){if(E.has(m)||!this.Component||typeof this.Component!="object"&&typeof this.Component!="function"||!Object.hasOwn(this.Component,m))throw new Error(`Invalid component export path: ${h}`);this.Component=this.Component[m]}}else{if(E.has(h))throw new Error(`Invalid component export path: ${h}`);this.Component=d[h]}return this.hydrator=u,this.hydrate}catch(d){return this.handleHydrationError(d),()=>{}}},e,this)}catch(n){this.handleHydrationError(n)}}attributeChangedCallback(){this.hydrate()}}l(f,"observedAttributes",["props"]),customElements.get("astro-island")||customElements.define("astro-island",f)}})();</script><astro-island uid="Ec0VA" component-url="/_astro/dynamic-component-renderer.D9U5PMa1.js" component-export="default" renderer-url="/_astro/client.BgJ9siUT.js" props="{&quot;name&quot;:[0,&quot;Chip/examples/basic&quot;]}" ssr client="only" opts="{&quot;name&quot;:&quot;DynamicComponentRenderer&quot;,&quot;value&quot;:&quot;solid-js&quot;}"></astro-island> </div> <div data-code class="border-t
+      dark:text-neutral-100" data-component-preview> <style>astro-island,astro-slot,astro-static-slot{display:contents}</style><script>(()=>{var e=async t=>{await(await t())()};(self.Astro||(self.Astro={})).only=e;window.dispatchEvent(new Event("astro:only"));})();</script><script>(()=>{var g=Object.defineProperty;var w=(a,s,c)=>s in a?g(a,s,{enumerable:!0,configurable:!0,writable:!0,value:c}):a[s]=c;var l=(a,s,c)=>w(a,typeof s!="symbol"?s+"":s,c);var E=new Set(["__proto__","constructor","prototype"]);{let a={0:t=>y(t),1:t=>c(t),2:t=>new RegExp(t),3:t=>new Date(t),4:t=>new Map(c(t)),5:t=>new Set(c(t)),6:t=>BigInt(t),7:t=>new URL(t),8:t=>new Uint8Array(t),9:t=>new Uint16Array(t),10:t=>new Uint32Array(t),11:t=>Number.POSITIVE_INFINITY*t},s=t=>{let[p,e]=t;return p in a?a[p](e):void 0},c=t=>t.map(s),y=t=>typeof t!="object"||t===null?t:Object.fromEntries(Object.entries(t).map(([p,e])=>[p,s(e)]));class f extends HTMLElement{constructor(){super(...arguments);l(this,"Component");l(this,"hydrator");l(this,"hydrate",async()=>{var b;if(!this.hydrator||!this.isConnected)return;let e=(b=this.parentElement)==null?void 0:b.closest("astro-island[ssr]");if(e){e.addEventListener("astro:hydrate",this.hydrate,{once:!0});return}let r=this.querySelectorAll("astro-slot"),n={},d=this.querySelectorAll("template[data-astro-template]");for(let o of d){let i=o.closest(this.tagName);i!=null&&i.isSameNode(this)&&(n[o.getAttribute("data-astro-template")||"default"]=o.innerHTML,o.remove())}for(let o of r){let i=o.closest(this.tagName);i!=null&&i.isSameNode(this)&&(n[o.getAttribute("name")||"default"]=o.innerHTML)}let u;try{u=this.hasAttribute("props")?y(JSON.parse(this.getAttribute("props"))):{}}catch(o){let i=this.getAttribute("component-url")||"<unknown>",v=this.getAttribute("component-export");throw v&&(i+=` (export ${v})`),console.error(`[hydrate] Error parsing props for component ${i}`,this.getAttribute("props"),o),o}let h;await this.hydrator(this)(this.Component,u,n,{client:this.getAttribute("client")}),this.removeAttribute("ssr"),this.dispatchEvent(new CustomEvent("astro:hydrate"))});l(this,"unmount",()=>{this.isConnected||this.dispatchEvent(new CustomEvent("astro:unmount"))})}disconnectedCallback(){document.removeEventListener("astro:after-swap",this.unmount),document.addEventListener("astro:after-swap",this.unmount,{once:!0})}connectedCallback(){if(!this.hasAttribute("await-children")||document.readyState==="interactive"||document.readyState==="complete")this.childrenConnectedCallback();else{let e=()=>{document.removeEventListener("DOMContentLoaded",e),r.disconnect(),this.childrenConnectedCallback()},r=new MutationObserver(()=>{var n;((n=this.lastChild)==null?void 0:n.nodeType)===Node.COMMENT_NODE&&this.lastChild.nodeValue==="astro:end"&&(this.lastChild.remove(),e())});r.observe(this,{childList:!0}),document.addEventListener("DOMContentLoaded",e)}}async childrenConnectedCallback(){let e=this.getAttribute("before-hydration-url");e&&await import(e),this.start()}getRetryImportUrl(e){let r=new URL(e,document.baseURI);return r.searchParams.set("astro-retry",Date.now().toString()),r.toString()}async importWithRetry(e){try{return await import(e)}catch(r){return await new Promise(n=>setTimeout(n,1e3)),import(this.getRetryImportUrl(e))}}handleHydrationError(e){let r=this.getAttribute("component-url"),n=new CustomEvent("astro:hydration-error",{cancelable:!0,bubbles:!0,composed:!0,detail:{error:e,componentUrl:r}});this.dispatchEvent(n)&&console.error(`[astro-island] Error hydrating ${r}`,e)}async start(){let e=JSON.parse(this.getAttribute("opts")),r=this.getAttribute("client");if(Astro[r]===void 0){window.addEventListener(`astro:${r}`,()=>this.start(),{once:!0});return}try{await Astro[r](async()=>{let n=this.getAttribute("renderer-url");try{let[d,{default:u}]=await Promise.all([this.importWithRetry(this.getAttribute("component-url")),n?this.importWithRetry(n):Promise.resolve({default:()=>()=>{}})]),h=this.getAttribute("component-export")||"default";if(h.includes(".")){this.Component=d;for(let m of h.split(".")){if(E.has(m)||!this.Component||typeof this.Component!="object"&&typeof this.Component!="function"||!Object.hasOwn(this.Component,m))throw new Error(`Invalid component export path: ${h}`);this.Component=this.Component[m]}}else{if(E.has(h))throw new Error(`Invalid component export path: ${h}`);this.Component=d[h]}return this.hydrator=u,this.hydrate}catch(d){return this.handleHydrationError(d),()=>{}}},e,this)}catch(n){this.handleHydrationError(n)}}attributeChangedCallback(){this.hydrate()}}l(f,"observedAttributes",["props"]),customElements.get("astro-island")||customElements.define("astro-island",f)}})();</script><astro-island uid="Ec0VA" component-url="/_astro/dynamic-component-renderer.DMQQXM0d.js" component-export="default" renderer-url="/_astro/client.BgJ9siUT.js" props="{&quot;name&quot;:[0,&quot;Chip/examples/basic&quot;]}" ssr client="only" opts="{&quot;name&quot;:&quot;DynamicComponentRenderer&quot;,&quot;value&quot;:&quot;solid-js&quot;}"></astro-island> </div> <div data-code class="border-t
       border-neutral-200
-      dark:border-neutral-800"> <div class="relative"> <button type="button" data-copy class="absolute
+      dark:border-neutral-800"> <div id="code-block-w2hth7vir4e" class="relative"> <button type="button" data-copy class="absolute
           top-3
           z-10
           ltr:right-3
@@ -164,7 +163,9 @@ and can optionally provide a delete action.</p>
           hover:bg-neutral-200/80
           dark:bg-neutral-700/90
           dark:text-white
-          dark:hover:bg-neutral-700"> <svg class="checkmark hidden " xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="m10 13.6l5.9-5.9q.275-.275.7-.275t.7.275t.275.7t-.275.7l-6.6 6.6q-.3.3-.7.3t-.7-.3l-2.6-2.6q-.275-.275-.275-.7t.275-.7t.7-.275t.7.275z"></path></svg> <svg class="copy " xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"></path><g fill="none" stroke="currentColor"><rect width="9" height="13" x="6.5" y="6.5" rx="1.5"></rect><path d="M8.5 6A1.5 1.5 0 0 1 10 4.5h6A1.5 1.5 0 0 1 17.5 6v10a1.5 1.5 0 0 1-1.5 1.5"></path></g></svg> </button> <div class="overflow-x-auto
+          dark:hover:bg-neutral-700
+          
+          "> <svg class="checkmark hidden " xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="m10 13.6l5.9-5.9q.275-.275.7-.275t.7.275t.275.7t-.275.7l-6.6 6.6q-.3.3-.7.3t-.7-.3l-2.6-2.6q-.275-.275-.275-.7t.275-.7t.7-.275t.7.275z"></path></svg> <svg class="copy " xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"></path><g fill="none" stroke="currentColor"><rect width="9" height="13" x="6.5" y="6.5" rx="1.5"></rect><path d="M8.5 6A1.5 1.5 0 0 1 10 4.5h6A1.5 1.5 0 0 1 17.5 6v10a1.5 1.5 0 0 1-1.5 1.5"></path></g></svg> </button> <div class="overflow-x-auto
     text-lg
     border-neutral-200
     dark:border-neutral-800 rounded-xl " data-highlighted-code><pre class="shiki shiki-themes min-light min-dark" style="--shiki-light:#24292eff;--shiki-dark:#b392f0;--shiki-light-bg:#ffffff;--shiki-dark-bg:#1f1f1f" tabindex="0"><code><span class="line"><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">import</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0"> Chip </span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">from</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70"> "rocksolidjs/Chip"</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">;</span></span>
@@ -187,15 +188,15 @@ and can optionally provide a delete action.</p>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">      /></span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">    &#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">div</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">  );</span></span>
-<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> </div> </div> <script>(function(){const id = "vvlnjj2vo3";
-const source = "import Chip from \"rocksolidjs/Chip\";\n\nexport default function Example() {\n  const handleDelete = (event: MouseEvent) => {\n    console.log(\"Chip deleted\", event);\n  };\n  return (\n    \u003cdiv class=\"flex gap-4\">\n      \u003cChip\n        label=\"Chip 1\"\n        variant=\"solid\"\n        onDelete={handleDelete}\n        onClick={(e) => {}}\n      />\n      \u003cChip\n        label=\"Chip 2\"\n        onDelete={handleDelete}\n      />\n    \u003c/div>\n  );\n}";
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> <script>(function(){const id = "w2hth7vir4e";
+const code = "import Chip from \"rocksolidjs/Chip\";\n\nexport default function Example() {\n  const handleDelete = (event: MouseEvent) => {\n    console.log(\"Chip deleted\", event);\n  };\n  return (\n    \u003cdiv class=\"flex gap-4\">\n      \u003cChip\n        label=\"Chip 1\"\n        variant=\"solid\"\n        onDelete={handleDelete}\n        onClick={(e) => {}}\n      />\n      \u003cChip\n        label=\"Chip 2\"\n        onDelete={handleDelete}\n      />\n    \u003c/div>\n  );\n}";
 
-  const copyBtn = document.querySelector(`#compoent-example-${id} [data-copy]`);
+  const copyBtn = document.querySelector(`#code-block-${id} [data-copy]`);
   copyBtn?.addEventListener("click", async () => {
     try {
       const copyIcon = copyBtn.querySelector(".copy");
       const checkmarkIcon = copyBtn.querySelector(".checkmark");
-      await navigator.clipboard.writeText(source);
+      await navigator.clipboard.writeText(code);
       copyIcon.classList.add("hidden");
       checkmarkIcon.classList.remove("hidden");
       copyBtn.disabled = true;
@@ -208,11 +209,11 @@ const source = "import Chip from \"rocksolidjs/Chip\";\n\nexport default functio
       console.error("failed to copy to clipboard");
     }
   });
-})();</script>
+})();</script> </div> </div>
 <h2 id="examples">Examples</h2>
 <h3 id="colors">Colors</h3>
 <p>Use the <code>color</code> prop to communicate the semantic meaning of the chip.</p>
-<div id="compoent-example-u357hris84" data-component-example class="my-8
+<div data-component-example class="my-8
     overflow-hidden
     rounded-xl
     border
@@ -228,9 +229,9 @@ const source = "import Chip from \"rocksolidjs/Chip\";\n\nexport default functio
       text-base
       text-neutral-900
       dark:bg-neutral-950
-      dark:text-neutral-100" data-component-preview> <astro-island uid="ZCUE4t" component-url="/_astro/dynamic-component-renderer.D9U5PMa1.js" component-export="default" renderer-url="/_astro/client.BgJ9siUT.js" props="{&quot;name&quot;:[0,&quot;Chip/examples/colors&quot;]}" ssr client="only" opts="{&quot;name&quot;:&quot;DynamicComponentRenderer&quot;,&quot;value&quot;:&quot;solid-js&quot;}"></astro-island> </div> <div data-code class="border-t
+      dark:text-neutral-100" data-component-preview> <astro-island uid="ZCUE4t" component-url="/_astro/dynamic-component-renderer.DMQQXM0d.js" component-export="default" renderer-url="/_astro/client.BgJ9siUT.js" props="{&quot;name&quot;:[0,&quot;Chip/examples/colors&quot;]}" ssr client="only" opts="{&quot;name&quot;:&quot;DynamicComponentRenderer&quot;,&quot;value&quot;:&quot;solid-js&quot;}"></astro-island> </div> <div data-code class="border-t
       border-neutral-200
-      dark:border-neutral-800"> <div class="relative"> <button type="button" data-copy class="absolute
+      dark:border-neutral-800"> <div id="code-block-j6zawue0yb" class="relative"> <button type="button" data-copy class="absolute
           top-3
           z-10
           ltr:right-3
@@ -246,7 +247,9 @@ const source = "import Chip from \"rocksolidjs/Chip\";\n\nexport default functio
           hover:bg-neutral-200/80
           dark:bg-neutral-700/90
           dark:text-white
-          dark:hover:bg-neutral-700"> <svg class="checkmark hidden " xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="m10 13.6l5.9-5.9q.275-.275.7-.275t.7.275t.275.7t-.275.7l-6.6 6.6q-.3.3-.7.3t-.7-.3l-2.6-2.6q-.275-.275-.275-.7t.275-.7t.7-.275t.7.275z"></path></svg> <svg class="copy " xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"></path><g fill="none" stroke="currentColor"><rect width="9" height="13" x="6.5" y="6.5" rx="1.5"></rect><path d="M8.5 6A1.5 1.5 0 0 1 10 4.5h6A1.5 1.5 0 0 1 17.5 6v10a1.5 1.5 0 0 1-1.5 1.5"></path></g></svg> </button> <div class="overflow-x-auto
+          dark:hover:bg-neutral-700
+          
+          "> <svg class="checkmark hidden " xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="m10 13.6l5.9-5.9q.275-.275.7-.275t.7.275t.275.7t-.275.7l-6.6 6.6q-.3.3-.7.3t-.7-.3l-2.6-2.6q-.275-.275-.275-.7t.275-.7t.7-.275t.7.275z"></path></svg> <svg class="copy " xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"></path><g fill="none" stroke="currentColor"><rect width="9" height="13" x="6.5" y="6.5" rx="1.5"></rect><path d="M8.5 6A1.5 1.5 0 0 1 10 4.5h6A1.5 1.5 0 0 1 17.5 6v10a1.5 1.5 0 0 1-1.5 1.5"></path></g></svg> </button> <div class="overflow-x-auto
     text-lg
     border-neutral-200
     dark:border-neutral-800 rounded-xl " data-highlighted-code><pre class="shiki shiki-themes min-light min-dark" style="--shiki-light:#24292eff;--shiki-dark:#b392f0;--shiki-light-bg:#ffffff;--shiki-dark-bg:#1f1f1f" tabindex="0"><code><span class="line"><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">import</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0"> Chip  </span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">from</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70"> "rocksolidjs/Chip"</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">;</span></span>
@@ -261,15 +264,15 @@ const source = "import Chip from \"rocksolidjs/Chip\";\n\nexport default functio
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">      &#x3C;</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">Chip</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> label</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">=</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">"Error"</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> color</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">=</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">"error"</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0"> /></span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">    &#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">div</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">  );</span></span>
-<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> </div> </div> <script>(function(){const id = "u357hris84";
-const source = "import Chip  from \"rocksolidjs/Chip\";\n\nexport default function Example() {\n  return (\n    \u003cdiv class=\"flex gap-2\">\n      \u003cChip label=\"Default\" color=\"default\" />\n      \u003cChip label=\"Success\" color=\"success\" />\n      \u003cChip label=\"Warning\" color=\"warning\" />\n      \u003cChip label=\"Info\" color=\"info\" />\n      \u003cChip label=\"Error\" color=\"error\" />\n    \u003c/div>\n  );\n}";
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> <script>(function(){const id = "j6zawue0yb";
+const code = "import Chip  from \"rocksolidjs/Chip\";\n\nexport default function Example() {\n  return (\n    \u003cdiv class=\"flex gap-2\">\n      \u003cChip label=\"Default\" color=\"default\" />\n      \u003cChip label=\"Success\" color=\"success\" />\n      \u003cChip label=\"Warning\" color=\"warning\" />\n      \u003cChip label=\"Info\" color=\"info\" />\n      \u003cChip label=\"Error\" color=\"error\" />\n    \u003c/div>\n  );\n}";
 
-  const copyBtn = document.querySelector(`#compoent-example-${id} [data-copy]`);
+  const copyBtn = document.querySelector(`#code-block-${id} [data-copy]`);
   copyBtn?.addEventListener("click", async () => {
     try {
       const copyIcon = copyBtn.querySelector(".copy");
       const checkmarkIcon = copyBtn.querySelector(".checkmark");
-      await navigator.clipboard.writeText(source);
+      await navigator.clipboard.writeText(code);
       copyIcon.classList.add("hidden");
       checkmarkIcon.classList.remove("hidden");
       copyBtn.disabled = true;
@@ -282,10 +285,10 @@ const source = "import Chip  from \"rocksolidjs/Chip\";\n\nexport default functi
       console.error("failed to copy to clipboard");
     }
   });
-})();</script>
+})();</script> </div> </div>
 <h3 id="variants">Variants</h3>
 <p>Use the <code>variant</code> prop to control the visual style of the chip.</p>
-<div id="compoent-example-kj8zb785gwp" data-component-example class="my-8
+<div data-component-example class="my-8
     overflow-hidden
     rounded-xl
     border
@@ -301,9 +304,9 @@ const source = "import Chip  from \"rocksolidjs/Chip\";\n\nexport default functi
       text-base
       text-neutral-900
       dark:bg-neutral-950
-      dark:text-neutral-100" data-component-preview> <astro-island uid="Z21ECpT" component-url="/_astro/dynamic-component-renderer.D9U5PMa1.js" component-export="default" renderer-url="/_astro/client.BgJ9siUT.js" props="{&quot;name&quot;:[0,&quot;Chip/examples/variants&quot;]}" ssr client="only" opts="{&quot;name&quot;:&quot;DynamicComponentRenderer&quot;,&quot;value&quot;:&quot;solid-js&quot;}"></astro-island> </div> <div data-code class="border-t
+      dark:text-neutral-100" data-component-preview> <astro-island uid="Z21ECpT" component-url="/_astro/dynamic-component-renderer.DMQQXM0d.js" component-export="default" renderer-url="/_astro/client.BgJ9siUT.js" props="{&quot;name&quot;:[0,&quot;Chip/examples/variants&quot;]}" ssr client="only" opts="{&quot;name&quot;:&quot;DynamicComponentRenderer&quot;,&quot;value&quot;:&quot;solid-js&quot;}"></astro-island> </div> <div data-code class="border-t
       border-neutral-200
-      dark:border-neutral-800"> <div class="relative"> <button type="button" data-copy class="absolute
+      dark:border-neutral-800"> <div id="code-block-7eomaeaa5w6" class="relative"> <button type="button" data-copy class="absolute
           top-3
           z-10
           ltr:right-3
@@ -319,7 +322,9 @@ const source = "import Chip  from \"rocksolidjs/Chip\";\n\nexport default functi
           hover:bg-neutral-200/80
           dark:bg-neutral-700/90
           dark:text-white
-          dark:hover:bg-neutral-700"> <svg class="checkmark hidden " xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="m10 13.6l5.9-5.9q.275-.275.7-.275t.7.275t.275.7t-.275.7l-6.6 6.6q-.3.3-.7.3t-.7-.3l-2.6-2.6q-.275-.275-.275-.7t.275-.7t.7-.275t.7.275z"></path></svg> <svg class="copy " xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"></path><g fill="none" stroke="currentColor"><rect width="9" height="13" x="6.5" y="6.5" rx="1.5"></rect><path d="M8.5 6A1.5 1.5 0 0 1 10 4.5h6A1.5 1.5 0 0 1 17.5 6v10a1.5 1.5 0 0 1-1.5 1.5"></path></g></svg> </button> <div class="overflow-x-auto
+          dark:hover:bg-neutral-700
+          
+          "> <svg class="checkmark hidden " xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="m10 13.6l5.9-5.9q.275-.275.7-.275t.7.275t.275.7t-.275.7l-6.6 6.6q-.3.3-.7.3t-.7-.3l-2.6-2.6q-.275-.275-.275-.7t.275-.7t.7-.275t.7.275z"></path></svg> <svg class="copy " xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"></path><g fill="none" stroke="currentColor"><rect width="9" height="13" x="6.5" y="6.5" rx="1.5"></rect><path d="M8.5 6A1.5 1.5 0 0 1 10 4.5h6A1.5 1.5 0 0 1 17.5 6v10a1.5 1.5 0 0 1-1.5 1.5"></path></g></svg> </button> <div class="overflow-x-auto
     text-lg
     border-neutral-200
     dark:border-neutral-800 rounded-xl " data-highlighted-code><pre class="shiki shiki-themes min-light min-dark" style="--shiki-light:#24292eff;--shiki-dark:#b392f0;--shiki-light-bg:#ffffff;--shiki-dark-bg:#1f1f1f" tabindex="0"><code><span class="line"><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">import</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0"> Chip  </span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">from</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70"> "rocksolidjs/Chip"</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">;</span></span>
@@ -332,15 +337,15 @@ const source = "import Chip  from \"rocksolidjs/Chip\";\n\nexport default functi
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">      &#x3C;</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">Chip</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> label</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">=</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">"Outlined"</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> variant</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">=</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">"outlined"</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0"> /></span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">    &#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">div</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">  );</span></span>
-<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> </div> </div> <script>(function(){const id = "kj8zb785gwp";
-const source = "import Chip  from \"rocksolidjs/Chip\";\n\nexport default function Example() {\n  return (\n    \u003cdiv class=\"flex gap-4\">\n      \u003cChip label=\"Solid\" variant=\"solid\" />\n      \u003cChip label=\"Filled\" variant=\"filled\" />\n      \u003cChip label=\"Outlined\" variant=\"outlined\" />\n    \u003c/div>\n  );\n}";
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> <script>(function(){const id = "7eomaeaa5w6";
+const code = "import Chip  from \"rocksolidjs/Chip\";\n\nexport default function Example() {\n  return (\n    \u003cdiv class=\"flex gap-4\">\n      \u003cChip label=\"Solid\" variant=\"solid\" />\n      \u003cChip label=\"Filled\" variant=\"filled\" />\n      \u003cChip label=\"Outlined\" variant=\"outlined\" />\n    \u003c/div>\n  );\n}";
 
-  const copyBtn = document.querySelector(`#compoent-example-${id} [data-copy]`);
+  const copyBtn = document.querySelector(`#code-block-${id} [data-copy]`);
   copyBtn?.addEventListener("click", async () => {
     try {
       const copyIcon = copyBtn.querySelector(".copy");
       const checkmarkIcon = copyBtn.querySelector(".checkmark");
-      await navigator.clipboard.writeText(source);
+      await navigator.clipboard.writeText(code);
       copyIcon.classList.add("hidden");
       checkmarkIcon.classList.remove("hidden");
       copyBtn.disabled = true;
@@ -353,10 +358,10 @@ const source = "import Chip  from \"rocksolidjs/Chip\";\n\nexport default functi
       console.error("failed to copy to clipboard");
     }
   });
-})();</script>
+})();</script> </div> </div>
 <h3 id="size">Size</h3>
 <p>Use the <code>size</code> prop to control the overall size of the chip.</p>
-<div id="compoent-example-xxj93ex4j9e" data-component-example class="my-8
+<div data-component-example class="my-8
     overflow-hidden
     rounded-xl
     border
@@ -372,9 +377,9 @@ const source = "import Chip  from \"rocksolidjs/Chip\";\n\nexport default functi
       text-base
       text-neutral-900
       dark:bg-neutral-950
-      dark:text-neutral-100" data-component-preview> <astro-island uid="7gkbu" component-url="/_astro/dynamic-component-renderer.D9U5PMa1.js" component-export="default" renderer-url="/_astro/client.BgJ9siUT.js" props="{&quot;name&quot;:[0,&quot;Chip/examples/size&quot;]}" ssr client="only" opts="{&quot;name&quot;:&quot;DynamicComponentRenderer&quot;,&quot;value&quot;:&quot;solid-js&quot;}"></astro-island> </div> <div data-code class="border-t
+      dark:text-neutral-100" data-component-preview> <astro-island uid="7gkbu" component-url="/_astro/dynamic-component-renderer.DMQQXM0d.js" component-export="default" renderer-url="/_astro/client.BgJ9siUT.js" props="{&quot;name&quot;:[0,&quot;Chip/examples/size&quot;]}" ssr client="only" opts="{&quot;name&quot;:&quot;DynamicComponentRenderer&quot;,&quot;value&quot;:&quot;solid-js&quot;}"></astro-island> </div> <div data-code class="border-t
       border-neutral-200
-      dark:border-neutral-800"> <div class="relative"> <button type="button" data-copy class="absolute
+      dark:border-neutral-800"> <div id="code-block-lbw937mud3s" class="relative"> <button type="button" data-copy class="absolute
           top-3
           z-10
           ltr:right-3
@@ -390,7 +395,9 @@ const source = "import Chip  from \"rocksolidjs/Chip\";\n\nexport default functi
           hover:bg-neutral-200/80
           dark:bg-neutral-700/90
           dark:text-white
-          dark:hover:bg-neutral-700"> <svg class="checkmark hidden " xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="m10 13.6l5.9-5.9q.275-.275.7-.275t.7.275t.275.7t-.275.7l-6.6 6.6q-.3.3-.7.3t-.7-.3l-2.6-2.6q-.275-.275-.275-.7t.275-.7t.7-.275t.7.275z"></path></svg> <svg class="copy " xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"></path><g fill="none" stroke="currentColor"><rect width="9" height="13" x="6.5" y="6.5" rx="1.5"></rect><path d="M8.5 6A1.5 1.5 0 0 1 10 4.5h6A1.5 1.5 0 0 1 17.5 6v10a1.5 1.5 0 0 1-1.5 1.5"></path></g></svg> </button> <div class="overflow-x-auto
+          dark:hover:bg-neutral-700
+          
+          "> <svg class="checkmark hidden " xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="m10 13.6l5.9-5.9q.275-.275.7-.275t.7.275t.275.7t-.275.7l-6.6 6.6q-.3.3-.7.3t-.7-.3l-2.6-2.6q-.275-.275-.275-.7t.275-.7t.7-.275t.7.275z"></path></svg> <svg class="copy " xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"></path><g fill="none" stroke="currentColor"><rect width="9" height="13" x="6.5" y="6.5" rx="1.5"></rect><path d="M8.5 6A1.5 1.5 0 0 1 10 4.5h6A1.5 1.5 0 0 1 17.5 6v10a1.5 1.5 0 0 1-1.5 1.5"></path></g></svg> </button> <div class="overflow-x-auto
     text-lg
     border-neutral-200
     dark:border-neutral-800 rounded-xl " data-highlighted-code><pre class="shiki shiki-themes min-light min-dark" style="--shiki-light:#24292eff;--shiki-dark:#b392f0;--shiki-light-bg:#ffffff;--shiki-dark-bg:#1f1f1f" tabindex="0"><code><span class="line"><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">import</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0"> Chip  </span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">from</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70"> "rocksolidjs/Chip"</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">;</span></span>
@@ -403,15 +410,15 @@ const source = "import Chip  from \"rocksolidjs/Chip\";\n\nexport default functi
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">      &#x3C;</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">Chip</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> label</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">=</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">"Large"</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> size</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">=</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">"large"</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0"> /></span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">    &#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">div</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">  );</span></span>
-<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> </div> </div> <script>(function(){const id = "xxj93ex4j9e";
-const source = "import Chip  from \"rocksolidjs/Chip\";\n\nexport default function Example() {\n  return (\n    \u003cdiv class=\"flex gap-4 items-center\">\n      \u003cChip label=\"Small\" size=\"small\" />\n      \u003cChip label=\"Medium\" size=\"medium\" />\n      \u003cChip label=\"Large\" size=\"large\" />\n    \u003c/div>\n  );\n}";
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> <script>(function(){const id = "lbw937mud3s";
+const code = "import Chip  from \"rocksolidjs/Chip\";\n\nexport default function Example() {\n  return (\n    \u003cdiv class=\"flex gap-4 items-center\">\n      \u003cChip label=\"Small\" size=\"small\" />\n      \u003cChip label=\"Medium\" size=\"medium\" />\n      \u003cChip label=\"Large\" size=\"large\" />\n    \u003c/div>\n  );\n}";
 
-  const copyBtn = document.querySelector(`#compoent-example-${id} [data-copy]`);
+  const copyBtn = document.querySelector(`#code-block-${id} [data-copy]`);
   copyBtn?.addEventListener("click", async () => {
     try {
       const copyIcon = copyBtn.querySelector(".copy");
       const checkmarkIcon = copyBtn.querySelector(".checkmark");
-      await navigator.clipboard.writeText(source);
+      await navigator.clipboard.writeText(code);
       copyIcon.classList.add("hidden");
       checkmarkIcon.classList.remove("hidden");
       copyBtn.disabled = true;
@@ -424,10 +431,10 @@ const source = "import Chip  from \"rocksolidjs/Chip\";\n\nexport default functi
       console.error("failed to copy to clipboard");
     }
   });
-})();</script>
+})();</script> </div> </div>
 <h3 id="avatar">Avatar</h3>
 <p>Use the <code>avatar</code> prop to display an avatar before the chip label.</p>
-<div id="compoent-example-vn6nharut4s" data-component-example class="my-8
+<div data-component-example class="my-8
     overflow-hidden
     rounded-xl
     border
@@ -443,9 +450,9 @@ const source = "import Chip  from \"rocksolidjs/Chip\";\n\nexport default functi
       text-base
       text-neutral-900
       dark:bg-neutral-950
-      dark:text-neutral-100" data-component-preview> <astro-island uid="1AaK0v" component-url="/_astro/dynamic-component-renderer.D9U5PMa1.js" component-export="default" renderer-url="/_astro/client.BgJ9siUT.js" props="{&quot;name&quot;:[0,&quot;Chip/examples/avatar&quot;]}" ssr client="only" opts="{&quot;name&quot;:&quot;DynamicComponentRenderer&quot;,&quot;value&quot;:&quot;solid-js&quot;}"></astro-island> </div> <div data-code class="border-t
+      dark:text-neutral-100" data-component-preview> <astro-island uid="1AaK0v" component-url="/_astro/dynamic-component-renderer.DMQQXM0d.js" component-export="default" renderer-url="/_astro/client.BgJ9siUT.js" props="{&quot;name&quot;:[0,&quot;Chip/examples/avatar&quot;]}" ssr client="only" opts="{&quot;name&quot;:&quot;DynamicComponentRenderer&quot;,&quot;value&quot;:&quot;solid-js&quot;}"></astro-island> </div> <div data-code class="border-t
       border-neutral-200
-      dark:border-neutral-800"> <div class="relative"> <button type="button" data-copy class="absolute
+      dark:border-neutral-800"> <div id="code-block-szppwucwof" class="relative"> <button type="button" data-copy class="absolute
           top-3
           z-10
           ltr:right-3
@@ -461,7 +468,9 @@ const source = "import Chip  from \"rocksolidjs/Chip\";\n\nexport default functi
           hover:bg-neutral-200/80
           dark:bg-neutral-700/90
           dark:text-white
-          dark:hover:bg-neutral-700"> <svg class="checkmark hidden " xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="m10 13.6l5.9-5.9q.275-.275.7-.275t.7.275t.275.7t-.275.7l-6.6 6.6q-.3.3-.7.3t-.7-.3l-2.6-2.6q-.275-.275-.275-.7t.275-.7t.7-.275t.7.275z"></path></svg> <svg class="copy " xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"></path><g fill="none" stroke="currentColor"><rect width="9" height="13" x="6.5" y="6.5" rx="1.5"></rect><path d="M8.5 6A1.5 1.5 0 0 1 10 4.5h6A1.5 1.5 0 0 1 17.5 6v10a1.5 1.5 0 0 1-1.5 1.5"></path></g></svg> </button> <div class="overflow-x-auto
+          dark:hover:bg-neutral-700
+          
+          "> <svg class="checkmark hidden " xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="m10 13.6l5.9-5.9q.275-.275.7-.275t.7.275t.275.7t-.275.7l-6.6 6.6q-.3.3-.7.3t-.7-.3l-2.6-2.6q-.275-.275-.275-.7t.275-.7t.7-.275t.7.275z"></path></svg> <svg class="copy " xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"></path><g fill="none" stroke="currentColor"><rect width="9" height="13" x="6.5" y="6.5" rx="1.5"></rect><path d="M8.5 6A1.5 1.5 0 0 1 10 4.5h6A1.5 1.5 0 0 1 17.5 6v10a1.5 1.5 0 0 1-1.5 1.5"></path></g></svg> </button> <div class="overflow-x-auto
     text-lg
     border-neutral-200
     dark:border-neutral-800 rounded-xl " data-highlighted-code><pre class="shiki shiki-themes min-light min-dark" style="--shiki-light:#24292eff;--shiki-dark:#b392f0;--shiki-light-bg:#ffffff;--shiki-dark-bg:#1f1f1f" tabindex="0"><code><span class="line"><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">import</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0"> Avatar  </span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">from</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70"> "rocksolidjs/Avatar"</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">;</span></span>
@@ -474,15 +483,15 @@ const source = "import Chip  from \"rocksolidjs/Chip\";\n\nexport default functi
 <span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">      avatar</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">=</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">{&#x3C;</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">Avatar</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> src</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">=</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">"https://i.pravatar.cc/100?img=11"</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> size</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">=</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">"small"</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0"> />}</span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">    /></span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">  );</span></span>
-<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> </div> </div> <script>(function(){const id = "vn6nharut4s";
-const source = "import Avatar  from \"rocksolidjs/Avatar\";\nimport Chip  from \"rocksolidjs/Chip\";\n\nexport default function Example() {\n  return (\n    \u003cChip\n      label=\"John Doe\"\n      avatar={\u003cAvatar src=\"https://i.pravatar.cc/100?img=11\" size=\"small\" />}\n    />\n  );\n}";
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> <script>(function(){const id = "szppwucwof";
+const code = "import Avatar  from \"rocksolidjs/Avatar\";\nimport Chip  from \"rocksolidjs/Chip\";\n\nexport default function Example() {\n  return (\n    \u003cChip\n      label=\"John Doe\"\n      avatar={\u003cAvatar src=\"https://i.pravatar.cc/100?img=11\" size=\"small\" />}\n    />\n  );\n}";
 
-  const copyBtn = document.querySelector(`#compoent-example-${id} [data-copy]`);
+  const copyBtn = document.querySelector(`#code-block-${id} [data-copy]`);
   copyBtn?.addEventListener("click", async () => {
     try {
       const copyIcon = copyBtn.querySelector(".copy");
       const checkmarkIcon = copyBtn.querySelector(".checkmark");
-      await navigator.clipboard.writeText(source);
+      await navigator.clipboard.writeText(code);
       copyIcon.classList.add("hidden");
       checkmarkIcon.classList.remove("hidden");
       copyBtn.disabled = true;
@@ -495,12 +504,12 @@ const source = "import Avatar  from \"rocksolidjs/Avatar\";\nimport Chip  from \
       console.error("failed to copy to clipboard");
     }
   });
-})();</script>
+})();</script> </div> </div>
 <p>Avatars are useful when a chip represents a person, account, or other
 entity with a visual identity.</p>
 <h3 id="icon">Icon</h3>
 <p>Use the <code>icon</code> prop to display an icon before the chip label.</p>
-<div id="compoent-example-oc6wavhnjmo" data-component-example class="my-8
+<div data-component-example class="my-8
     overflow-hidden
     rounded-xl
     border
@@ -516,9 +525,9 @@ entity with a visual identity.</p>
       text-base
       text-neutral-900
       dark:bg-neutral-950
-      dark:text-neutral-100" data-component-preview> <astro-island uid="Zqr5hB" component-url="/_astro/dynamic-component-renderer.D9U5PMa1.js" component-export="default" renderer-url="/_astro/client.BgJ9siUT.js" props="{&quot;name&quot;:[0,&quot;Chip/examples/icon&quot;]}" ssr client="only" opts="{&quot;name&quot;:&quot;DynamicComponentRenderer&quot;,&quot;value&quot;:&quot;solid-js&quot;}"></astro-island> </div> <div data-code class="border-t
+      dark:text-neutral-100" data-component-preview> <astro-island uid="Zqr5hB" component-url="/_astro/dynamic-component-renderer.DMQQXM0d.js" component-export="default" renderer-url="/_astro/client.BgJ9siUT.js" props="{&quot;name&quot;:[0,&quot;Chip/examples/icon&quot;]}" ssr client="only" opts="{&quot;name&quot;:&quot;DynamicComponentRenderer&quot;,&quot;value&quot;:&quot;solid-js&quot;}"></astro-island> </div> <div data-code class="border-t
       border-neutral-200
-      dark:border-neutral-800"> <div class="relative"> <button type="button" data-copy class="absolute
+      dark:border-neutral-800"> <div id="code-block-0uzu6jhyy9pf" class="relative"> <button type="button" data-copy class="absolute
           top-3
           z-10
           ltr:right-3
@@ -534,7 +543,9 @@ entity with a visual identity.</p>
           hover:bg-neutral-200/80
           dark:bg-neutral-700/90
           dark:text-white
-          dark:hover:bg-neutral-700"> <svg class="checkmark hidden " xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="m10 13.6l5.9-5.9q.275-.275.7-.275t.7.275t.275.7t-.275.7l-6.6 6.6q-.3.3-.7.3t-.7-.3l-2.6-2.6q-.275-.275-.275-.7t.275-.7t.7-.275t.7.275z"></path></svg> <svg class="copy " xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"></path><g fill="none" stroke="currentColor"><rect width="9" height="13" x="6.5" y="6.5" rx="1.5"></rect><path d="M8.5 6A1.5 1.5 0 0 1 10 4.5h6A1.5 1.5 0 0 1 17.5 6v10a1.5 1.5 0 0 1-1.5 1.5"></path></g></svg> </button> <div class="overflow-x-auto
+          dark:hover:bg-neutral-700
+          
+          "> <svg class="checkmark hidden " xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="m10 13.6l5.9-5.9q.275-.275.7-.275t.7.275t.275.7t-.275.7l-6.6 6.6q-.3.3-.7.3t-.7-.3l-2.6-2.6q-.275-.275-.275-.7t.275-.7t.7-.275t.7.275z"></path></svg> <svg class="copy " xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"></path><g fill="none" stroke="currentColor"><rect width="9" height="13" x="6.5" y="6.5" rx="1.5"></rect><path d="M8.5 6A1.5 1.5 0 0 1 10 4.5h6A1.5 1.5 0 0 1 17.5 6v10a1.5 1.5 0 0 1-1.5 1.5"></path></g></svg> </button> <div class="overflow-x-auto
     text-lg
     border-neutral-200
     dark:border-neutral-800 rounded-xl " data-highlighted-code><pre class="shiki shiki-themes min-light min-dark" style="--shiki-light:#24292eff;--shiki-dark:#b392f0;--shiki-light-bg:#ffffff;--shiki-dark-bg:#1f1f1f" tabindex="0"><code><span class="line"><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">import</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0"> Chip  </span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">from</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70"> "rocksolidjs/Chip"</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">;</span></span>
@@ -558,15 +569,15 @@ entity with a visual identity.</p>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">    &#x3C;</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">path</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> fill</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">=</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">"none"</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> stroke</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">=</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">"currentColor"</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> stroke-linecap</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">=</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">"round"</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> stroke-linejoin</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">=</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">"round"</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> d</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">=</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">"M3.45 8.975Q8 7.35 9.95 7.35c1.625 0 2.6.975 2.6 2.275c0 .48-.133.915-.382 1.274l-1.874 2.486m4.206-8.96C11.9 2.475 9.3 1.5 8 1.5c-1.326 0-1.702.301-2.222 1.004M1.5 11.575l1.95-2.6m11.05-4.55l-1.95 2.6m-6.772-4.52l-1.92 2.411"</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0"> /></span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">    &#x3C;</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">path</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> fill</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">=</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">"none"</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> stroke</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">=</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">"currentColor"</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> stroke-linecap</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">=</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">"round"</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> stroke-linejoin</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">=</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">"round"</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> d</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">=</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">"M5.02 8.43c-.981-.31-1.57-.961-1.57-2.055c0-1.625.975-2.275 2.6-2.275c1.097 0 3.307.694 5.329 2.083a75 75 0 0 1 1.171.842l-1.496.51"</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0"> /></span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">  &#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">svg</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
-<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">);</span></span></code></pre></div> </div> </div> </div> <script>(function(){const id = "oc6wavhnjmo";
-const source = "import Chip  from \"rocksolidjs/Chip\";\nimport type { ComponentProps } from \"solid-js\";\n\nexport default function Example() {\n  return (\n    \u003cChip\n      label=\"SolidJS\"\n      icon={\u003cSolidIcon aria-hidden />}\n    />\n  );\n}\n\nconst SolidIcon = (\n  props: ComponentProps\u003c\"svg\">,\n) => (\n  \u003csvg {...props} xmlns=\"http://www.w3.org/2000/svg\" width=\"1em\" height=\"1em\" viewBox=\"0 0 16 16\">\n    \u003cpath d=\"M0 0h16v16H0z\" fill=\"none\" />\n    \u003cpath fill=\"none\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"M1.5 11.575Q6.05 14.5 8 14.5c1.625 0 2.6-.975 2.6-2.275S9.625 9.95 8 9.95q-1.95 0-6.5 1.625\" />\n    \u003cpath fill=\"none\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"M3.45 8.975Q8 7.35 9.95 7.35c1.625 0 2.6.975 2.6 2.275c0 .48-.133.915-.382 1.274l-1.874 2.486m4.206-8.96C11.9 2.475 9.3 1.5 8 1.5c-1.326 0-1.702.301-2.222 1.004M1.5 11.575l1.95-2.6m11.05-4.55l-1.95 2.6m-6.772-4.52l-1.92 2.411\" />\n    \u003cpath fill=\"none\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"M5.02 8.43c-.981-.31-1.57-.961-1.57-2.055c0-1.625.975-2.275 2.6-2.275c1.097 0 3.307.694 5.329 2.083a75 75 0 0 1 1.171.842l-1.496.51\" />\n  \u003c/svg>\n);";
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">);</span></span></code></pre></div> </div> <script>(function(){const id = "0uzu6jhyy9pf";
+const code = "import Chip  from \"rocksolidjs/Chip\";\nimport type { ComponentProps } from \"solid-js\";\n\nexport default function Example() {\n  return (\n    \u003cChip\n      label=\"SolidJS\"\n      icon={\u003cSolidIcon aria-hidden />}\n    />\n  );\n}\n\nconst SolidIcon = (\n  props: ComponentProps\u003c\"svg\">,\n) => (\n  \u003csvg {...props} xmlns=\"http://www.w3.org/2000/svg\" width=\"1em\" height=\"1em\" viewBox=\"0 0 16 16\">\n    \u003cpath d=\"M0 0h16v16H0z\" fill=\"none\" />\n    \u003cpath fill=\"none\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"M1.5 11.575Q6.05 14.5 8 14.5c1.625 0 2.6-.975 2.6-2.275S9.625 9.95 8 9.95q-1.95 0-6.5 1.625\" />\n    \u003cpath fill=\"none\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"M3.45 8.975Q8 7.35 9.95 7.35c1.625 0 2.6.975 2.6 2.275c0 .48-.133.915-.382 1.274l-1.874 2.486m4.206-8.96C11.9 2.475 9.3 1.5 8 1.5c-1.326 0-1.702.301-2.222 1.004M1.5 11.575l1.95-2.6m11.05-4.55l-1.95 2.6m-6.772-4.52l-1.92 2.411\" />\n    \u003cpath fill=\"none\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"M5.02 8.43c-.981-.31-1.57-.961-1.57-2.055c0-1.625.975-2.275 2.6-2.275c1.097 0 3.307.694 5.329 2.083a75 75 0 0 1 1.171.842l-1.496.51\" />\n  \u003c/svg>\n);";
 
-  const copyBtn = document.querySelector(`#compoent-example-${id} [data-copy]`);
+  const copyBtn = document.querySelector(`#code-block-${id} [data-copy]`);
   copyBtn?.addEventListener("click", async () => {
     try {
       const copyIcon = copyBtn.querySelector(".copy");
       const checkmarkIcon = copyBtn.querySelector(".checkmark");
-      await navigator.clipboard.writeText(source);
+      await navigator.clipboard.writeText(code);
       copyIcon.classList.add("hidden");
       checkmarkIcon.classList.remove("hidden");
       copyBtn.disabled = true;
@@ -579,10 +590,10 @@ const source = "import Chip  from \"rocksolidjs/Chip\";\nimport type { Component
       console.error("failed to copy to clipboard");
     }
   });
-})();</script>
+})();</script> </div> </div>
 <h3 id="delete">Delete</h3>
 <p>Use the <code>onDelete</code> prop to make a chip dismissible or removable.</p>
-<div id="compoent-example-xzp39dxfn6s" data-component-example class="my-8
+<div data-component-example class="my-8
     overflow-hidden
     rounded-xl
     border
@@ -598,9 +609,9 @@ const source = "import Chip  from \"rocksolidjs/Chip\";\nimport type { Component
       text-base
       text-neutral-900
       dark:bg-neutral-950
-      dark:text-neutral-100" data-component-preview> <astro-island uid="1FdOFw" component-url="/_astro/dynamic-component-renderer.D9U5PMa1.js" component-export="default" renderer-url="/_astro/client.BgJ9siUT.js" props="{&quot;name&quot;:[0,&quot;Chip/examples/delete&quot;]}" ssr client="only" opts="{&quot;name&quot;:&quot;DynamicComponentRenderer&quot;,&quot;value&quot;:&quot;solid-js&quot;}"></astro-island> </div> <div data-code class="border-t
+      dark:text-neutral-100" data-component-preview> <astro-island uid="1FdOFw" component-url="/_astro/dynamic-component-renderer.DMQQXM0d.js" component-export="default" renderer-url="/_astro/client.BgJ9siUT.js" props="{&quot;name&quot;:[0,&quot;Chip/examples/delete&quot;]}" ssr client="only" opts="{&quot;name&quot;:&quot;DynamicComponentRenderer&quot;,&quot;value&quot;:&quot;solid-js&quot;}"></astro-island> </div> <div data-code class="border-t
       border-neutral-200
-      dark:border-neutral-800"> <div class="relative"> <button type="button" data-copy class="absolute
+      dark:border-neutral-800"> <div id="code-block-lozyvff5c1m" class="relative"> <button type="button" data-copy class="absolute
           top-3
           z-10
           ltr:right-3
@@ -616,7 +627,9 @@ const source = "import Chip  from \"rocksolidjs/Chip\";\nimport type { Component
           hover:bg-neutral-200/80
           dark:bg-neutral-700/90
           dark:text-white
-          dark:hover:bg-neutral-700"> <svg class="checkmark hidden " xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="m10 13.6l5.9-5.9q.275-.275.7-.275t.7.275t.275.7t-.275.7l-6.6 6.6q-.3.3-.7.3t-.7-.3l-2.6-2.6q-.275-.275-.275-.7t.275-.7t.7-.275t.7.275z"></path></svg> <svg class="copy " xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"></path><g fill="none" stroke="currentColor"><rect width="9" height="13" x="6.5" y="6.5" rx="1.5"></rect><path d="M8.5 6A1.5 1.5 0 0 1 10 4.5h6A1.5 1.5 0 0 1 17.5 6v10a1.5 1.5 0 0 1-1.5 1.5"></path></g></svg> </button> <div class="overflow-x-auto
+          dark:hover:bg-neutral-700
+          
+          "> <svg class="checkmark hidden " xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="m10 13.6l5.9-5.9q.275-.275.7-.275t.7.275t.275.7t-.275.7l-6.6 6.6q-.3.3-.7.3t-.7-.3l-2.6-2.6q-.275-.275-.275-.7t.275-.7t.7-.275t.7.275z"></path></svg> <svg class="copy " xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"></path><g fill="none" stroke="currentColor"><rect width="9" height="13" x="6.5" y="6.5" rx="1.5"></rect><path d="M8.5 6A1.5 1.5 0 0 1 10 4.5h6A1.5 1.5 0 0 1 17.5 6v10a1.5 1.5 0 0 1-1.5 1.5"></path></g></svg> </button> <div class="overflow-x-auto
     text-lg
     border-neutral-200
     dark:border-neutral-800 rounded-xl " data-highlighted-code><pre class="shiki shiki-themes min-light min-dark" style="--shiki-light:#24292eff;--shiki-dark:#b392f0;--shiki-light-bg:#ffffff;--shiki-dark-bg:#1f1f1f" tabindex="0"><code><span class="line"><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">import</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0"> Chip  </span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">from</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70"> "rocksolidjs/Chip"</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">;</span></span>
@@ -631,15 +644,15 @@ const source = "import Chip  from \"rocksolidjs/Chip\";\nimport type { Component
 <span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">      onDelete</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">=</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">{handleDelete}</span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">    /></span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">  );</span></span>
-<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> </div> </div> <script>(function(){const id = "xzp39dxfn6s";
-const source = "import Chip  from \"rocksolidjs/Chip\";\n\nexport default function Example() {\n  const handleDelete = (event: MouseEvent) => {\n    console.log(\"Chip deleted\", event);\n  };\n  return (\n    \u003cChip\n      label=\"Removable\"\n      onDelete={handleDelete}\n    />\n  );\n}";
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> <script>(function(){const id = "lozyvff5c1m";
+const code = "import Chip  from \"rocksolidjs/Chip\";\n\nexport default function Example() {\n  const handleDelete = (event: MouseEvent) => {\n    console.log(\"Chip deleted\", event);\n  };\n  return (\n    \u003cChip\n      label=\"Removable\"\n      onDelete={handleDelete}\n    />\n  );\n}";
 
-  const copyBtn = document.querySelector(`#compoent-example-${id} [data-copy]`);
+  const copyBtn = document.querySelector(`#code-block-${id} [data-copy]`);
   copyBtn?.addEventListener("click", async () => {
     try {
       const copyIcon = copyBtn.querySelector(".copy");
       const checkmarkIcon = copyBtn.querySelector(".checkmark");
-      await navigator.clipboard.writeText(source);
+      await navigator.clipboard.writeText(code);
       copyIcon.classList.add("hidden");
       checkmarkIcon.classList.remove("hidden");
       copyBtn.disabled = true;
@@ -652,13 +665,13 @@ const source = "import Chip  from \"rocksolidjs/Chip\";\n\nexport default functi
       console.error("failed to copy to clipboard");
     }
   });
-})();</script>
+})();</script> </div> </div>
 <p>The <code>onDelete</code> callback receives the mouse event generated by the delete
 action. Use it to remove the chip or perform another action.</p>
 <p>A custom delete icon can be provided with the <code>deleteIcon</code> prop.</p>
 <h3 id="disabled">Disabled</h3>
 <p>Use the <code>disabled</code> prop to prevent interaction with the chip.</p>
-<div id="compoent-example-34cd9v6ihsm" data-component-example class="my-8
+<div data-component-example class="my-8
     overflow-hidden
     rounded-xl
     border
@@ -674,9 +687,9 @@ action. Use it to remove the chip or perform another action.</p>
       text-base
       text-neutral-900
       dark:bg-neutral-950
-      dark:text-neutral-100" data-component-preview> <astro-island uid="1sGdgt" component-url="/_astro/dynamic-component-renderer.D9U5PMa1.js" component-export="default" renderer-url="/_astro/client.BgJ9siUT.js" props="{&quot;name&quot;:[0,&quot;Chip/examples/disabled&quot;]}" ssr client="only" opts="{&quot;name&quot;:&quot;DynamicComponentRenderer&quot;,&quot;value&quot;:&quot;solid-js&quot;}"></astro-island> </div> <div data-code class="border-t
+      dark:text-neutral-100" data-component-preview> <astro-island uid="1sGdgt" component-url="/_astro/dynamic-component-renderer.DMQQXM0d.js" component-export="default" renderer-url="/_astro/client.BgJ9siUT.js" props="{&quot;name&quot;:[0,&quot;Chip/examples/disabled&quot;]}" ssr client="only" opts="{&quot;name&quot;:&quot;DynamicComponentRenderer&quot;,&quot;value&quot;:&quot;solid-js&quot;}"></astro-island> </div> <div data-code class="border-t
       border-neutral-200
-      dark:border-neutral-800"> <div class="relative"> <button type="button" data-copy class="absolute
+      dark:border-neutral-800"> <div id="code-block-dg8eyywecde" class="relative"> <button type="button" data-copy class="absolute
           top-3
           z-10
           ltr:right-3
@@ -692,7 +705,9 @@ action. Use it to remove the chip or perform another action.</p>
           hover:bg-neutral-200/80
           dark:bg-neutral-700/90
           dark:text-white
-          dark:hover:bg-neutral-700"> <svg class="checkmark hidden " xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="m10 13.6l5.9-5.9q.275-.275.7-.275t.7.275t.275.7t-.275.7l-6.6 6.6q-.3.3-.7.3t-.7-.3l-2.6-2.6q-.275-.275-.275-.7t.275-.7t.7-.275t.7.275z"></path></svg> <svg class="copy " xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"></path><g fill="none" stroke="currentColor"><rect width="9" height="13" x="6.5" y="6.5" rx="1.5"></rect><path d="M8.5 6A1.5 1.5 0 0 1 10 4.5h6A1.5 1.5 0 0 1 17.5 6v10a1.5 1.5 0 0 1-1.5 1.5"></path></g></svg> </button> <div class="overflow-x-auto
+          dark:hover:bg-neutral-700
+          
+          "> <svg class="checkmark hidden " xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="m10 13.6l5.9-5.9q.275-.275.7-.275t.7.275t.275.7t-.275.7l-6.6 6.6q-.3.3-.7.3t-.7-.3l-2.6-2.6q-.275-.275-.275-.7t.275-.7t.7-.275t.7.275z"></path></svg> <svg class="copy " xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"></path><g fill="none" stroke="currentColor"><rect width="9" height="13" x="6.5" y="6.5" rx="1.5"></rect><path d="M8.5 6A1.5 1.5 0 0 1 10 4.5h6A1.5 1.5 0 0 1 17.5 6v10a1.5 1.5 0 0 1-1.5 1.5"></path></g></svg> </button> <div class="overflow-x-auto
     text-lg
     border-neutral-200
     dark:border-neutral-800 rounded-xl " data-highlighted-code><pre class="shiki shiki-themes min-light min-dark" style="--shiki-light:#24292eff;--shiki-dark:#b392f0;--shiki-light-bg:#ffffff;--shiki-dark-bg:#1f1f1f" tabindex="0"><code><span class="line"><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">import</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0"> Chip  </span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">from</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70"> "rocksolidjs/Chip"</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">;</span></span>
@@ -705,15 +720,15 @@ action. Use it to remove the chip or perform another action.</p>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">      &#x3C;</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">Chip</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> label</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">=</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">"Disabled with delete"</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> disabled</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> onDelete</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">=</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">{() </span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">=></span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0"> {}} /></span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">    &#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">div</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">  );</span></span>
-<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> </div> </div> <script>(function(){const id = "34cd9v6ihsm";
-const source = "import Chip  from \"rocksolidjs/Chip\";\n\nexport default function Example() {\n  return (\n    \u003cdiv class=\"flex gap-4\">\n      \u003cChip label=\"Disabled\" disabled />\n      \u003cChip label=\"Disabled\" variant=\"outlined\" disabled />\n      \u003cChip label=\"Disabled with delete\" disabled onDelete={() => {}} />\n    \u003c/div>\n  );\n}";
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> <script>(function(){const id = "dg8eyywecde";
+const code = "import Chip  from \"rocksolidjs/Chip\";\n\nexport default function Example() {\n  return (\n    \u003cdiv class=\"flex gap-4\">\n      \u003cChip label=\"Disabled\" disabled />\n      \u003cChip label=\"Disabled\" variant=\"outlined\" disabled />\n      \u003cChip label=\"Disabled with delete\" disabled onDelete={() => {}} />\n    \u003c/div>\n  );\n}";
 
-  const copyBtn = document.querySelector(`#compoent-example-${id} [data-copy]`);
+  const copyBtn = document.querySelector(`#code-block-${id} [data-copy]`);
   copyBtn?.addEventListener("click", async () => {
     try {
       const copyIcon = copyBtn.querySelector(".copy");
       const checkmarkIcon = copyBtn.querySelector(".checkmark");
-      await navigator.clipboard.writeText(source);
+      await navigator.clipboard.writeText(code);
       copyIcon.classList.add("hidden");
       checkmarkIcon.classList.remove("hidden");
       copyBtn.disabled = true;
@@ -726,13 +741,13 @@ const source = "import Chip  from \"rocksolidjs/Chip\";\n\nexport default functi
       console.error("failed to copy to clipboard");
     }
   });
-})();</script>
+})();</script> </div> </div>
 <p>When <code>disabled</code> is <code>true</code>, the chip is visually presented as disabled and
 does not respond to interactive actions such as deleting the chip.</p>
 <h3 id="clickable">Clickable</h3>
 <p>Use the <code>onClick</code> prop to make a Chip interactive. When <code>onClick</code> is
 provided, the Chip becomes focusable and clickable.</p>
-<div id="compoent-example-qpoekz0spcm" data-component-example class="my-8
+<div data-component-example class="my-8
     overflow-hidden
     rounded-xl
     border
@@ -748,9 +763,9 @@ provided, the Chip becomes focusable and clickable.</p>
       text-base
       text-neutral-900
       dark:bg-neutral-950
-      dark:text-neutral-100" data-component-preview> <astro-island uid="Z1JUw3u" component-url="/_astro/dynamic-component-renderer.D9U5PMa1.js" component-export="default" renderer-url="/_astro/client.BgJ9siUT.js" props="{&quot;name&quot;:[0,&quot;Chip/examples/clickable&quot;]}" ssr client="only" opts="{&quot;name&quot;:&quot;DynamicComponentRenderer&quot;,&quot;value&quot;:&quot;solid-js&quot;}"></astro-island> </div> <div data-code class="border-t
+      dark:text-neutral-100" data-component-preview> <astro-island uid="Z1JUw3u" component-url="/_astro/dynamic-component-renderer.DMQQXM0d.js" component-export="default" renderer-url="/_astro/client.BgJ9siUT.js" props="{&quot;name&quot;:[0,&quot;Chip/examples/clickable&quot;]}" ssr client="only" opts="{&quot;name&quot;:&quot;DynamicComponentRenderer&quot;,&quot;value&quot;:&quot;solid-js&quot;}"></astro-island> </div> <div data-code class="border-t
       border-neutral-200
-      dark:border-neutral-800"> <div class="relative"> <button type="button" data-copy class="absolute
+      dark:border-neutral-800"> <div id="code-block-v0i88yl1utp" class="relative"> <button type="button" data-copy class="absolute
           top-3
           z-10
           ltr:right-3
@@ -766,7 +781,9 @@ provided, the Chip becomes focusable and clickable.</p>
           hover:bg-neutral-200/80
           dark:bg-neutral-700/90
           dark:text-white
-          dark:hover:bg-neutral-700"> <svg class="checkmark hidden " xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="m10 13.6l5.9-5.9q.275-.275.7-.275t.7.275t.275.7t-.275.7l-6.6 6.6q-.3.3-.7.3t-.7-.3l-2.6-2.6q-.275-.275-.275-.7t.275-.7t.7-.275t.7.275z"></path></svg> <svg class="copy " xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"></path><g fill="none" stroke="currentColor"><rect width="9" height="13" x="6.5" y="6.5" rx="1.5"></rect><path d="M8.5 6A1.5 1.5 0 0 1 10 4.5h6A1.5 1.5 0 0 1 17.5 6v10a1.5 1.5 0 0 1-1.5 1.5"></path></g></svg> </button> <div class="overflow-x-auto
+          dark:hover:bg-neutral-700
+          
+          "> <svg class="checkmark hidden " xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="m10 13.6l5.9-5.9q.275-.275.7-.275t.7.275t.275.7t-.275.7l-6.6 6.6q-.3.3-.7.3t-.7-.3l-2.6-2.6q-.275-.275-.275-.7t.275-.7t.7-.275t.7.275z"></path></svg> <svg class="copy " xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"></path><g fill="none" stroke="currentColor"><rect width="9" height="13" x="6.5" y="6.5" rx="1.5"></rect><path d="M8.5 6A1.5 1.5 0 0 1 10 4.5h6A1.5 1.5 0 0 1 17.5 6v10a1.5 1.5 0 0 1-1.5 1.5"></path></g></svg> </button> <div class="overflow-x-auto
     text-lg
     border-neutral-200
     dark:border-neutral-800 rounded-xl " data-highlighted-code><pre class="shiki shiki-themes min-light min-dark" style="--shiki-light:#24292eff;--shiki-dark:#b392f0;--shiki-light-bg:#ffffff;--shiki-dark-bg:#1f1f1f" tabindex="0"><code><span class="line"><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">import</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0"> Chip  </span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">from</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70"> "rocksolidjs/Chip"</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">;</span></span>
@@ -781,15 +798,15 @@ provided, the Chip becomes focusable and clickable.</p>
 <span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">      onClick</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">=</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">{handleClick} </span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">    /></span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">  );</span></span>
-<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> </div> </div> <script>(function(){const id = "qpoekz0spcm";
-const source = "import Chip  from \"rocksolidjs/Chip\";\n\nexport default function Example() {\n  const handleClick = (event: MouseEvent) => {\n    console.log(\"Chip clicked\", event);\n  };\n  return (\n    \u003cChip\n      label=\"Click me\"\n      onClick={handleClick} \n    />\n  );\n}\n";
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> <script>(function(){const id = "v0i88yl1utp";
+const code = "import Chip  from \"rocksolidjs/Chip\";\n\nexport default function Example() {\n  const handleClick = (event: MouseEvent) => {\n    console.log(\"Chip clicked\", event);\n  };\n  return (\n    \u003cChip\n      label=\"Click me\"\n      onClick={handleClick} \n    />\n  );\n}";
 
-  const copyBtn = document.querySelector(`#compoent-example-${id} [data-copy]`);
+  const copyBtn = document.querySelector(`#code-block-${id} [data-copy]`);
   copyBtn?.addEventListener("click", async () => {
     try {
       const copyIcon = copyBtn.querySelector(".copy");
       const checkmarkIcon = copyBtn.querySelector(".checkmark");
-      await navigator.clipboard.writeText(source);
+      await navigator.clipboard.writeText(code);
       copyIcon.classList.add("hidden");
       checkmarkIcon.classList.remove("hidden");
       copyBtn.disabled = true;
@@ -802,10 +819,10 @@ const source = "import Chip  from \"rocksolidjs/Chip\";\n\nexport default functi
       console.error("failed to copy to clipboard");
     }
   });
-})();</script>
+})();</script> </div> </div>
 <h3 id="customization">Customization</h3>
 <p>Use <code>slotProps</code> to customize the delete icon and label.</p>
-<div id="compoent-example-cmsp6g48ck4" data-component-example class="my-8
+<div data-component-example class="my-8
     overflow-hidden
     rounded-xl
     border
@@ -821,9 +838,9 @@ const source = "import Chip  from \"rocksolidjs/Chip\";\n\nexport default functi
       text-base
       text-neutral-900
       dark:bg-neutral-950
-      dark:text-neutral-100" data-component-preview> <astro-island uid="2eANzc" component-url="/_astro/dynamic-component-renderer.D9U5PMa1.js" component-export="default" renderer-url="/_astro/client.BgJ9siUT.js" props="{&quot;name&quot;:[0,&quot;Chip/examples/slot-props&quot;]}" ssr client="only" opts="{&quot;name&quot;:&quot;DynamicComponentRenderer&quot;,&quot;value&quot;:&quot;solid-js&quot;}"></astro-island> </div> <div data-code class="border-t
+      dark:text-neutral-100" data-component-preview> <astro-island uid="2eANzc" component-url="/_astro/dynamic-component-renderer.DMQQXM0d.js" component-export="default" renderer-url="/_astro/client.BgJ9siUT.js" props="{&quot;name&quot;:[0,&quot;Chip/examples/slot-props&quot;]}" ssr client="only" opts="{&quot;name&quot;:&quot;DynamicComponentRenderer&quot;,&quot;value&quot;:&quot;solid-js&quot;}"></astro-island> </div> <div data-code class="border-t
       border-neutral-200
-      dark:border-neutral-800"> <div class="relative"> <button type="button" data-copy class="absolute
+      dark:border-neutral-800"> <div id="code-block-0iztnzogm6un" class="relative"> <button type="button" data-copy class="absolute
           top-3
           z-10
           ltr:right-3
@@ -839,7 +856,9 @@ const source = "import Chip  from \"rocksolidjs/Chip\";\n\nexport default functi
           hover:bg-neutral-200/80
           dark:bg-neutral-700/90
           dark:text-white
-          dark:hover:bg-neutral-700"> <svg class="checkmark hidden " xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="m10 13.6l5.9-5.9q.275-.275.7-.275t.7.275t.275.7t-.275.7l-6.6 6.6q-.3.3-.7.3t-.7-.3l-2.6-2.6q-.275-.275-.275-.7t.275-.7t.7-.275t.7.275z"></path></svg> <svg class="copy " xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"></path><g fill="none" stroke="currentColor"><rect width="9" height="13" x="6.5" y="6.5" rx="1.5"></rect><path d="M8.5 6A1.5 1.5 0 0 1 10 4.5h6A1.5 1.5 0 0 1 17.5 6v10a1.5 1.5 0 0 1-1.5 1.5"></path></g></svg> </button> <div class="overflow-x-auto
+          dark:hover:bg-neutral-700
+          
+          "> <svg class="checkmark hidden " xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="m10 13.6l5.9-5.9q.275-.275.7-.275t.7.275t.275.7t-.275.7l-6.6 6.6q-.3.3-.7.3t-.7-.3l-2.6-2.6q-.275-.275-.275-.7t.275-.7t.7-.275t.7.275z"></path></svg> <svg class="copy " xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"></path><g fill="none" stroke="currentColor"><rect width="9" height="13" x="6.5" y="6.5" rx="1.5"></rect><path d="M8.5 6A1.5 1.5 0 0 1 10 4.5h6A1.5 1.5 0 0 1 17.5 6v10a1.5 1.5 0 0 1-1.5 1.5"></path></g></svg> </button> <div class="overflow-x-auto
     text-lg
     border-neutral-200
     dark:border-neutral-800 rounded-xl " data-highlighted-code><pre class="shiki shiki-themes min-light min-dark" style="--shiki-light:#24292eff;--shiki-dark:#b392f0;--shiki-light-bg:#ffffff;--shiki-dark-bg:#1f1f1f" tabindex="0"><code><span class="line"><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">import</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0"> Chip  </span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">from</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70"> "rocksolidjs/Chip"</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">;</span></span>
@@ -859,15 +878,15 @@ const source = "import Chip  from \"rocksolidjs/Chip\";\n\nexport default functi
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">      }}</span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">    /></span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">  );</span></span>
-<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> </div> </div> <script>(function(){const id = "cmsp6g48ck4";
-const source = "import Chip  from \"rocksolidjs/Chip\";\n\nexport default function Example() {\n  return (\n    \u003cChip\n      label=\"Custom label\"\n      onDelete={() => {}}\n      slotProps={{\n        label: {\n          class: \"font-semibold\",\n        },\n        deleteIcon: {\n          class: \"text-red-500\",\n        },\n      }}\n    />\n  );\n}";
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> <script>(function(){const id = "0iztnzogm6un";
+const code = "import Chip  from \"rocksolidjs/Chip\";\n\nexport default function Example() {\n  return (\n    \u003cChip\n      label=\"Custom label\"\n      onDelete={() => {}}\n      slotProps={{\n        label: {\n          class: \"font-semibold\",\n        },\n        deleteIcon: {\n          class: \"text-red-500\",\n        },\n      }}\n    />\n  );\n}";
 
-  const copyBtn = document.querySelector(`#compoent-example-${id} [data-copy]`);
+  const copyBtn = document.querySelector(`#code-block-${id} [data-copy]`);
   copyBtn?.addEventListener("click", async () => {
     try {
       const copyIcon = copyBtn.querySelector(".copy");
       const checkmarkIcon = copyBtn.querySelector(".checkmark");
-      await navigator.clipboard.writeText(source);
+      await navigator.clipboard.writeText(code);
       copyIcon.classList.add("hidden");
       checkmarkIcon.classList.remove("hidden");
       copyBtn.disabled = true;
@@ -880,7 +899,7 @@ const source = "import Chip  from \"rocksolidjs/Chip\";\n\nexport default functi
       console.error("failed to copy to clipboard");
     }
   });
-})();</script>
+})();</script> </div> </div>
 <h2 id="accessibility">Accessibility</h2>
 <ul>
 <li>Keep chip labels short and meaningful.</li>

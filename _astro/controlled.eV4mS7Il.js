@@ -1,1 +1,0 @@
-import{O as e,S as t}from"./web.Ck_zQUvi.js";import{t as n}from"./Input.DcZ6T0hJ.js";function r(){let[r,i]=e(``);return t(n,{get value(){return r()},onInput:e=>i(e.target.value),placeholder:`Type something...`,"aria-label":`Controlled input`,get color(){return r().length>10?`error`:`default`},get suffix(){return`${r().length} / 10`}})}export{r as default};

@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="en"> <head><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><title>Input</title><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="generator" content="Astro v7.2.2"><meta name="description" content="A text input component for collecting and editing user-entered values."><meta name="keywords" content="RockSolid, rocksolidjs, SolidJS, SolidJS components, SolidJS UI library, Tailwind CSS, component library, UI components, accessible components, TypeScript, themeable components, reusable components, frontend library"><meta name="author" content="Darshan Sunil Rajadhyaksha"><link rel="canonical" href="https://rocksolidjs.com/components/input/"><link rel="sitemap" href="/sitemap-index.xml"><meta name="robots" content="index, follow"><!-- OG --><meta property="og:type" content="article"><meta property="og:title" content="Input"><meta property="og:description" content="A text input component for collecting and editing user-entered values."><meta property="og:image" content="https://rocksolidjs.com/assets/og.png"><meta property="og:image:width" content="1024"><meta property="og:image:height" content="768"><meta property="og:url" content="https://rocksolidjs.com/components/input/"><meta property="og:site_name" content="RockSolid"><meta property="og:locale" content="en_US"><!-- X --><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Input"><meta name="twitter:description" content="A text input component for collecting and editing user-entered values."><meta name="twitter:image" content="https://rocksolidjs.com/assets/og.png"><meta name="twitter:image:width" content="1024"><meta name="twitter:image:height" content="768"><link rel="icon" href="/assets/favicon/favicon.ico"><link rel="icon" type="image/png" sizes="96x96" href="/assets/favicon/favicon-96x96.png"><link rel="icon" type="image/svg+xml" href="/assets/favicon/favicon.svg"><link rel="shortcut icon" href="/assets/favicon/favicon.ico"><link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png"><link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet"><script>
+<!DOCTYPE html><html lang="en"> <head><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><title>Input</title><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="generator" content="Astro v7.3.2"><meta name="description" content="A text input component for collecting and editing user-entered values."><meta name="keywords" content="RockSolid, rocksolidjs, SolidJS, SolidJS components, SolidJS UI library, Tailwind CSS, component library, UI components, accessible components, TypeScript, themeable components, reusable components, frontend library"><meta name="author" content="Darshan Sunil Rajadhyaksha"><link rel="canonical" href="https://rocksolidjs.com/components/input/"><link rel="sitemap" href="/sitemap-index.xml"><meta name="robots" content="index, follow"><!-- OG --><meta property="og:type" content="article"><meta property="og:title" content="Input"><meta property="og:description" content="A text input component for collecting and editing user-entered values."><meta property="og:image" content="https://rocksolidjs.com/assets/og.png"><meta property="og:image:width" content="1024"><meta property="og:image:height" content="768"><meta property="og:url" content="https://rocksolidjs.com/components/input/"><meta property="og:site_name" content="RockSolid"><meta property="og:locale" content="en_US"><!-- X --><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Input"><meta name="twitter:description" content="A text input component for collecting and editing user-entered values."><meta name="twitter:image" content="https://rocksolidjs.com/assets/og.png"><meta name="twitter:image:width" content="1024"><meta name="twitter:image:height" content="768"><link rel="icon" href="/assets/favicon/favicon.ico"><link rel="icon" type="image/png" sizes="96x96" href="/assets/favicon/favicon-96x96.png"><link rel="icon" type="image/svg+xml" href="/assets/favicon/favicon.svg"><link rel="shortcut icon" href="/assets/favicon/favicon.ico"><link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png"><link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet"><script>
     const theme = localStorage.getItem("theme");
     if (
       theme === "dark" ||
@@ -11,7 +11,7 @@
     ) {
       document.documentElement.classList.add("dark");
     }
-  </script><link rel="stylesheet" href="/_astro/base.C1-k0NAi.css"></head> <body class="min-h-screen bg-white text-neutral-900
+  </script><link rel="stylesheet" href="/_astro/base.CiuBXjTW.css"></head> <body class="min-h-screen bg-white text-neutral-900
     dark:bg-neutral-950 dark:text-neutral-100"> <!-- Mobile overlay --> <div id="sidebar-overlay" class="pointer-events-none fixed inset-0 z-40
       bg-black/40 opacity-0 transition-opacity
       duration-200 lg:hidden"></div> <div class="min-h-screen lg:grid
@@ -38,8 +38,7 @@ RockSolid
 </a> <p class="mt-1 text-xs
           text-neutral-500
           dark:text-neutral-500">
-v0.1.1
-</p> </div> <!-- GitHub --> <div class="mb-7"> <a href="https://github.com/darshan-rajadhyaksha/rocksolid/" target="_blank" rel="noopener noreferrer" class="flex w-full items-center gap-3
+v0.1.2 </p> </div> <!-- GitHub --> <div class="mb-7"> <a href="https://github.com/darshan-rajadhyaksha/rocksolid/" target="_blank" rel="noopener noreferrer" class="flex w-full items-center gap-3
           rounded-md px-3 py-2
           text-sm font-medium
           text-neutral-600
@@ -129,7 +128,7 @@ RTL
           dark:hover:text-neutral-100"> <span class="theme-light"> <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="m15 8l-3-3l3-3l3 3zm5 3l-2-2l2-2l2 2zm-7.925 11q-2.1 0-3.937-.8t-3.2-2.162t-2.163-3.2t-.8-3.938q0-3.65 2.325-6.437T10.225 2q-.45 2.475.275 4.838t2.5 4.137t4.138 2.5t4.837.275q-.65 3.6-3.45 5.925T12.075 22"></path></svg> </span> <span class="theme-dark hidden"> <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="M11 3V2q0-.425.288-.712T12 1t.713.288T13 2v1q0 .425-.288.713T12 4t-.712-.288T11 3m0 19v-1q0-.425.288-.712T12 20t.713.288T13 21v1q0 .425-.288.713T12 23t-.712-.288T11 22m11-9h-1q-.425 0-.712-.288T20 12t.288-.712T21 11h1q.425 0 .713.288T23 12t-.288.713T22 13M3 13H2q-.425 0-.712-.288T1 12t.288-.712T2 11h1q.425 0 .713.288T4 12t-.288.713T3 13m16.75-7.325l-.35.35q-.275.275-.687.275T18 6q-.275-.275-.288-.687t.263-.713l.375-.375q.275-.3.7-.3t.725.3t.288.725t-.313.725M6.025 19.4l-.375.375q-.275.3-.7.3t-.725-.3t-.288-.725t.313-.725l.35-.35q.275-.275.688-.275T6 18q.275.275.288.688t-.263.712m12.3.35l-.35-.35q-.275-.275-.275-.687T18 18q.275-.275.688-.287t.712.262l.375.375q.3.275.3.7t-.3.725t-.725.288t-.725-.313M4.6 6.025l-.375-.375q-.3-.275-.3-.7t.3-.725t.725-.288t.725.313l.35.35q.275.275.275.688T6 6q-.275.275-.687.288T4.6 6.025M7.75 16.25Q6 14.5 6 12t1.75-4.25T12 6t4.25 1.75T18 12t-1.75 4.25T12 18t-4.25-1.75"></path></svg> </span> </button> </div> </div> </header> <main class="py-8 sm:py-10"> <div class="prose-docs px-6 sm:px-10 lg:px-16 xl:px-20"> <h1 id="input">Input</h1>
 <p>The Input component provides a styled field for entering and editing
 text and other supported input values.</p>
-<div id="compoent-example-kd1g51snv7" data-component-example class="my-8
+<div data-component-example class="my-8
     overflow-hidden
     rounded-xl
     border
@@ -145,9 +144,9 @@ text and other supported input values.</p>
       text-base
       text-neutral-900
       dark:bg-neutral-950
-      dark:text-neutral-100" data-component-preview> <style>astro-island,astro-slot,astro-static-slot{display:contents}</style><script>(()=>{var e=async t=>{await(await t())()};(self.Astro||(self.Astro={})).only=e;window.dispatchEvent(new Event("astro:only"));})();</script><script>(()=>{var g=Object.defineProperty;var w=(a,s,c)=>s in a?g(a,s,{enumerable:!0,configurable:!0,writable:!0,value:c}):a[s]=c;var l=(a,s,c)=>w(a,typeof s!="symbol"?s+"":s,c);var E=new Set(["__proto__","constructor","prototype"]);{let a={0:t=>y(t),1:t=>c(t),2:t=>new RegExp(t),3:t=>new Date(t),4:t=>new Map(c(t)),5:t=>new Set(c(t)),6:t=>BigInt(t),7:t=>new URL(t),8:t=>new Uint8Array(t),9:t=>new Uint16Array(t),10:t=>new Uint32Array(t),11:t=>Number.POSITIVE_INFINITY*t},s=t=>{let[p,e]=t;return p in a?a[p](e):void 0},c=t=>t.map(s),y=t=>typeof t!="object"||t===null?t:Object.fromEntries(Object.entries(t).map(([p,e])=>[p,s(e)]));class f extends HTMLElement{constructor(){super(...arguments);l(this,"Component");l(this,"hydrator");l(this,"hydrate",async()=>{var b;if(!this.hydrator||!this.isConnected)return;let e=(b=this.parentElement)==null?void 0:b.closest("astro-island[ssr]");if(e){e.addEventListener("astro:hydrate",this.hydrate,{once:!0});return}let r=this.querySelectorAll("astro-slot"),n={},d=this.querySelectorAll("template[data-astro-template]");for(let o of d){let i=o.closest(this.tagName);i!=null&&i.isSameNode(this)&&(n[o.getAttribute("data-astro-template")||"default"]=o.innerHTML,o.remove())}for(let o of r){let i=o.closest(this.tagName);i!=null&&i.isSameNode(this)&&(n[o.getAttribute("name")||"default"]=o.innerHTML)}let u;try{u=this.hasAttribute("props")?y(JSON.parse(this.getAttribute("props"))):{}}catch(o){let i=this.getAttribute("component-url")||"<unknown>",v=this.getAttribute("component-export");throw v&&(i+=` (export ${v})`),console.error(`[hydrate] Error parsing props for component ${i}`,this.getAttribute("props"),o),o}let h;await this.hydrator(this)(this.Component,u,n,{client:this.getAttribute("client")}),this.removeAttribute("ssr"),this.dispatchEvent(new CustomEvent("astro:hydrate"))});l(this,"unmount",()=>{this.isConnected||this.dispatchEvent(new CustomEvent("astro:unmount"))})}disconnectedCallback(){document.removeEventListener("astro:after-swap",this.unmount),document.addEventListener("astro:after-swap",this.unmount,{once:!0})}connectedCallback(){if(!this.hasAttribute("await-children")||document.readyState==="interactive"||document.readyState==="complete")this.childrenConnectedCallback();else{let e=()=>{document.removeEventListener("DOMContentLoaded",e),r.disconnect(),this.childrenConnectedCallback()},r=new MutationObserver(()=>{var n;((n=this.lastChild)==null?void 0:n.nodeType)===Node.COMMENT_NODE&&this.lastChild.nodeValue==="astro:end"&&(this.lastChild.remove(),e())});r.observe(this,{childList:!0}),document.addEventListener("DOMContentLoaded",e)}}async childrenConnectedCallback(){let e=this.getAttribute("before-hydration-url");e&&await import(e),this.start()}getRetryImportUrl(e){let r=new URL(e,document.baseURI);return r.searchParams.set("astro-retry",Date.now().toString()),r.toString()}async importWithRetry(e){try{return await import(e)}catch(r){return await new Promise(n=>setTimeout(n,1e3)),import(this.getRetryImportUrl(e))}}handleHydrationError(e){let r=this.getAttribute("component-url"),n=new CustomEvent("astro:hydration-error",{cancelable:!0,bubbles:!0,composed:!0,detail:{error:e,componentUrl:r}});this.dispatchEvent(n)&&console.error(`[astro-island] Error hydrating ${r}`,e)}async start(){let e=JSON.parse(this.getAttribute("opts")),r=this.getAttribute("client");if(Astro[r]===void 0){window.addEventListener(`astro:${r}`,()=>this.start(),{once:!0});return}try{await Astro[r](async()=>{let n=this.getAttribute("renderer-url");try{let[d,{default:u}]=await Promise.all([this.importWithRetry(this.getAttribute("component-url")),n?this.importWithRetry(n):Promise.resolve({default:()=>()=>{}})]),h=this.getAttribute("component-export")||"default";if(h.includes(".")){this.Component=d;for(let m of h.split(".")){if(E.has(m)||!this.Component||typeof this.Component!="object"&&typeof this.Component!="function"||!Object.hasOwn(this.Component,m))throw new Error(`Invalid component export path: ${h}`);this.Component=this.Component[m]}}else{if(E.has(h))throw new Error(`Invalid component export path: ${h}`);this.Component=d[h]}return this.hydrator=u,this.hydrate}catch(d){return this.handleHydrationError(d),()=>{}}},e,this)}catch(n){this.handleHydrationError(n)}}attributeChangedCallback(){this.hydrate()}}l(f,"observedAttributes",["props"]),customElements.get("astro-island")||customElements.define("astro-island",f)}})();</script><astro-island uid="kTztA" component-url="/_astro/dynamic-component-renderer.D9U5PMa1.js" component-export="default" renderer-url="/_astro/client.BgJ9siUT.js" props="{&quot;name&quot;:[0,&quot;Input/examples/basic&quot;]}" ssr client="only" opts="{&quot;name&quot;:&quot;DynamicComponentRenderer&quot;,&quot;value&quot;:&quot;solid-js&quot;}"></astro-island> </div> <div data-code class="border-t
+      dark:text-neutral-100" data-component-preview> <style>astro-island,astro-slot,astro-static-slot{display:contents}</style><script>(()=>{var e=async t=>{await(await t())()};(self.Astro||(self.Astro={})).only=e;window.dispatchEvent(new Event("astro:only"));})();</script><script>(()=>{var g=Object.defineProperty;var w=(a,s,c)=>s in a?g(a,s,{enumerable:!0,configurable:!0,writable:!0,value:c}):a[s]=c;var l=(a,s,c)=>w(a,typeof s!="symbol"?s+"":s,c);var E=new Set(["__proto__","constructor","prototype"]);{let a={0:t=>y(t),1:t=>c(t),2:t=>new RegExp(t),3:t=>new Date(t),4:t=>new Map(c(t)),5:t=>new Set(c(t)),6:t=>BigInt(t),7:t=>new URL(t),8:t=>new Uint8Array(t),9:t=>new Uint16Array(t),10:t=>new Uint32Array(t),11:t=>Number.POSITIVE_INFINITY*t},s=t=>{let[p,e]=t;return p in a?a[p](e):void 0},c=t=>t.map(s),y=t=>typeof t!="object"||t===null?t:Object.fromEntries(Object.entries(t).map(([p,e])=>[p,s(e)]));class f extends HTMLElement{constructor(){super(...arguments);l(this,"Component");l(this,"hydrator");l(this,"hydrate",async()=>{var b;if(!this.hydrator||!this.isConnected)return;let e=(b=this.parentElement)==null?void 0:b.closest("astro-island[ssr]");if(e){e.addEventListener("astro:hydrate",this.hydrate,{once:!0});return}let r=this.querySelectorAll("astro-slot"),n={},d=this.querySelectorAll("template[data-astro-template]");for(let o of d){let i=o.closest(this.tagName);i!=null&&i.isSameNode(this)&&(n[o.getAttribute("data-astro-template")||"default"]=o.innerHTML,o.remove())}for(let o of r){let i=o.closest(this.tagName);i!=null&&i.isSameNode(this)&&(n[o.getAttribute("name")||"default"]=o.innerHTML)}let u;try{u=this.hasAttribute("props")?y(JSON.parse(this.getAttribute("props"))):{}}catch(o){let i=this.getAttribute("component-url")||"<unknown>",v=this.getAttribute("component-export");throw v&&(i+=` (export ${v})`),console.error(`[hydrate] Error parsing props for component ${i}`,this.getAttribute("props"),o),o}let h;await this.hydrator(this)(this.Component,u,n,{client:this.getAttribute("client")}),this.removeAttribute("ssr"),this.dispatchEvent(new CustomEvent("astro:hydrate"))});l(this,"unmount",()=>{this.isConnected||this.dispatchEvent(new CustomEvent("astro:unmount"))})}disconnectedCallback(){document.removeEventListener("astro:after-swap",this.unmount),document.addEventListener("astro:after-swap",this.unmount,{once:!0})}connectedCallback(){if(!this.hasAttribute("await-children")||document.readyState==="interactive"||document.readyState==="complete")this.childrenConnectedCallback();else{let e=()=>{document.removeEventListener("DOMContentLoaded",e),r.disconnect(),this.childrenConnectedCallback()},r=new MutationObserver(()=>{var n;((n=this.lastChild)==null?void 0:n.nodeType)===Node.COMMENT_NODE&&this.lastChild.nodeValue==="astro:end"&&(this.lastChild.remove(),e())});r.observe(this,{childList:!0}),document.addEventListener("DOMContentLoaded",e)}}async childrenConnectedCallback(){let e=this.getAttribute("before-hydration-url");e&&await import(e),this.start()}getRetryImportUrl(e){let r=new URL(e,document.baseURI);return r.searchParams.set("astro-retry",Date.now().toString()),r.toString()}async importWithRetry(e){try{return await import(e)}catch(r){return await new Promise(n=>setTimeout(n,1e3)),import(this.getRetryImportUrl(e))}}handleHydrationError(e){let r=this.getAttribute("component-url"),n=new CustomEvent("astro:hydration-error",{cancelable:!0,bubbles:!0,composed:!0,detail:{error:e,componentUrl:r}});this.dispatchEvent(n)&&console.error(`[astro-island] Error hydrating ${r}`,e)}async start(){let e=JSON.parse(this.getAttribute("opts")),r=this.getAttribute("client");if(Astro[r]===void 0){window.addEventListener(`astro:${r}`,()=>this.start(),{once:!0});return}try{await Astro[r](async()=>{let n=this.getAttribute("renderer-url");try{let[d,{default:u}]=await Promise.all([this.importWithRetry(this.getAttribute("component-url")),n?this.importWithRetry(n):Promise.resolve({default:()=>()=>{}})]),h=this.getAttribute("component-export")||"default";if(h.includes(".")){this.Component=d;for(let m of h.split(".")){if(E.has(m)||!this.Component||typeof this.Component!="object"&&typeof this.Component!="function"||!Object.hasOwn(this.Component,m))throw new Error(`Invalid component export path: ${h}`);this.Component=this.Component[m]}}else{if(E.has(h))throw new Error(`Invalid component export path: ${h}`);this.Component=d[h]}return this.hydrator=u,this.hydrate}catch(d){return this.handleHydrationError(d),()=>{}}},e,this)}catch(n){this.handleHydrationError(n)}}attributeChangedCallback(){this.hydrate()}}l(f,"observedAttributes",["props"]),customElements.get("astro-island")||customElements.define("astro-island",f)}})();</script><astro-island uid="kTztA" component-url="/_astro/dynamic-component-renderer.DMQQXM0d.js" component-export="default" renderer-url="/_astro/client.BgJ9siUT.js" props="{&quot;name&quot;:[0,&quot;Input/examples/basic&quot;]}" ssr client="only" opts="{&quot;name&quot;:&quot;DynamicComponentRenderer&quot;,&quot;value&quot;:&quot;solid-js&quot;}"></astro-island> </div> <div data-code class="border-t
       border-neutral-200
-      dark:border-neutral-800"> <div class="relative"> <button type="button" data-copy class="absolute
+      dark:border-neutral-800"> <div id="code-block-vgc0uetgio" class="relative"> <button type="button" data-copy class="absolute
           top-3
           z-10
           ltr:right-3
@@ -163,7 +162,9 @@ text and other supported input values.</p>
           hover:bg-neutral-200/80
           dark:bg-neutral-700/90
           dark:text-white
-          dark:hover:bg-neutral-700"> <svg class="checkmark hidden " xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="m10 13.6l5.9-5.9q.275-.275.7-.275t.7.275t.275.7t-.275.7l-6.6 6.6q-.3.3-.7.3t-.7-.3l-2.6-2.6q-.275-.275-.275-.7t.275-.7t.7-.275t.7.275z"></path></svg> <svg class="copy " xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"></path><g fill="none" stroke="currentColor"><rect width="9" height="13" x="6.5" y="6.5" rx="1.5"></rect><path d="M8.5 6A1.5 1.5 0 0 1 10 4.5h6A1.5 1.5 0 0 1 17.5 6v10a1.5 1.5 0 0 1-1.5 1.5"></path></g></svg> </button> <div class="overflow-x-auto
+          dark:hover:bg-neutral-700
+          
+          "> <svg class="checkmark hidden " xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="m10 13.6l5.9-5.9q.275-.275.7-.275t.7.275t.275.7t-.275.7l-6.6 6.6q-.3.3-.7.3t-.7-.3l-2.6-2.6q-.275-.275-.275-.7t.275-.7t.7-.275t.7.275z"></path></svg> <svg class="copy " xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"></path><g fill="none" stroke="currentColor"><rect width="9" height="13" x="6.5" y="6.5" rx="1.5"></rect><path d="M8.5 6A1.5 1.5 0 0 1 10 4.5h6A1.5 1.5 0 0 1 17.5 6v10a1.5 1.5 0 0 1-1.5 1.5"></path></g></svg> </button> <div class="overflow-x-auto
     text-lg
     border-neutral-200
     dark:border-neutral-800 rounded-xl " data-highlighted-code><pre class="shiki shiki-themes min-light min-dark" style="--shiki-light:#24292eff;--shiki-dark:#b392f0;--shiki-light-bg:#ffffff;--shiki-dark-bg:#1f1f1f" tabindex="0"><code><span class="line"><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">import</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0"> Input </span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">from</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70"> "rocksolidjs/Input"</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">;</span></span>
@@ -179,15 +180,15 @@ text and other supported input values.</p>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">      /></span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">    &#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">div</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">  );</span></span>
-<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> </div> </div> <script>(function(){const id = "kd1g51snv7";
-const source = "import Input from \"rocksolidjs/Input\";\nimport Label from \"rocksolidjs/Label\";\n\nexport default function Example() {\n  return (\n    \u003cdiv class=\"flex flex-col gap-1\">\n      \u003cLabel for=\"name\">Name\u003c/Label>\n      \u003cInput\n        id=\"name\"\n        placeholder=\"Enter your name\"\n      />\n    \u003c/div>\n  );\n}";
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> <script>(function(){const id = "vgc0uetgio";
+const code = "import Input from \"rocksolidjs/Input\";\nimport Label from \"rocksolidjs/Label\";\n\nexport default function Example() {\n  return (\n    \u003cdiv class=\"flex flex-col gap-1\">\n      \u003cLabel for=\"name\">Name\u003c/Label>\n      \u003cInput\n        id=\"name\"\n        placeholder=\"Enter your name\"\n      />\n    \u003c/div>\n  );\n}";
 
-  const copyBtn = document.querySelector(`#compoent-example-${id} [data-copy]`);
+  const copyBtn = document.querySelector(`#code-block-${id} [data-copy]`);
   copyBtn?.addEventListener("click", async () => {
     try {
       const copyIcon = copyBtn.querySelector(".copy");
       const checkmarkIcon = copyBtn.querySelector(".checkmark");
-      await navigator.clipboard.writeText(source);
+      await navigator.clipboard.writeText(code);
       copyIcon.classList.add("hidden");
       checkmarkIcon.classList.remove("hidden");
       copyBtn.disabled = true;
@@ -200,12 +201,12 @@ const source = "import Input from \"rocksolidjs/Input\";\nimport Label from \"ro
       console.error("failed to copy to clipboard");
     }
   });
-})();</script>
+})();</script> </div> </div>
 <h2 id="examples">Examples</h2>
 <h3 id="colors">Colors</h3>
 <p>Use the <code>color</code> prop to communicate the semantic state or meaning of
 the input.</p>
-<div id="compoent-example-etr17x5jyu" data-component-example class="my-8
+<div data-component-example class="my-8
     overflow-hidden
     rounded-xl
     border
@@ -221,9 +222,9 @@ the input.</p>
       text-base
       text-neutral-900
       dark:bg-neutral-950
-      dark:text-neutral-100" data-component-preview> <astro-island uid="ZgnNEB" component-url="/_astro/dynamic-component-renderer.D9U5PMa1.js" component-export="default" renderer-url="/_astro/client.BgJ9siUT.js" props="{&quot;name&quot;:[0,&quot;Input/examples/colors&quot;]}" ssr client="only" opts="{&quot;name&quot;:&quot;DynamicComponentRenderer&quot;,&quot;value&quot;:&quot;solid-js&quot;}"></astro-island> </div> <div data-code class="border-t
+      dark:text-neutral-100" data-component-preview> <astro-island uid="ZgnNEB" component-url="/_astro/dynamic-component-renderer.DMQQXM0d.js" component-export="default" renderer-url="/_astro/client.BgJ9siUT.js" props="{&quot;name&quot;:[0,&quot;Input/examples/colors&quot;]}" ssr client="only" opts="{&quot;name&quot;:&quot;DynamicComponentRenderer&quot;,&quot;value&quot;:&quot;solid-js&quot;}"></astro-island> </div> <div data-code class="border-t
       border-neutral-200
-      dark:border-neutral-800"> <div class="relative"> <button type="button" data-copy class="absolute
+      dark:border-neutral-800"> <div id="code-block-h8tjwrj547p" class="relative"> <button type="button" data-copy class="absolute
           top-3
           z-10
           ltr:right-3
@@ -239,7 +240,9 @@ the input.</p>
           hover:bg-neutral-200/80
           dark:bg-neutral-700/90
           dark:text-white
-          dark:hover:bg-neutral-700"> <svg class="checkmark hidden " xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="m10 13.6l5.9-5.9q.275-.275.7-.275t.7.275t.275.7t-.275.7l-6.6 6.6q-.3.3-.7.3t-.7-.3l-2.6-2.6q-.275-.275-.275-.7t.275-.7t.7-.275t.7.275z"></path></svg> <svg class="copy " xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"></path><g fill="none" stroke="currentColor"><rect width="9" height="13" x="6.5" y="6.5" rx="1.5"></rect><path d="M8.5 6A1.5 1.5 0 0 1 10 4.5h6A1.5 1.5 0 0 1 17.5 6v10a1.5 1.5 0 0 1-1.5 1.5"></path></g></svg> </button> <div class="overflow-x-auto
+          dark:hover:bg-neutral-700
+          
+          "> <svg class="checkmark hidden " xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="m10 13.6l5.9-5.9q.275-.275.7-.275t.7.275t.275.7t-.275.7l-6.6 6.6q-.3.3-.7.3t-.7-.3l-2.6-2.6q-.275-.275-.275-.7t.275-.7t.7-.275t.7.275z"></path></svg> <svg class="copy " xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"></path><g fill="none" stroke="currentColor"><rect width="9" height="13" x="6.5" y="6.5" rx="1.5"></rect><path d="M8.5 6A1.5 1.5 0 0 1 10 4.5h6A1.5 1.5 0 0 1 17.5 6v10a1.5 1.5 0 0 1-1.5 1.5"></path></g></svg> </button> <div class="overflow-x-auto
     text-lg
     border-neutral-200
     dark:border-neutral-800 rounded-xl " data-highlighted-code><pre class="shiki shiki-themes min-light min-dark" style="--shiki-light:#24292eff;--shiki-dark:#b392f0;--shiki-light-bg:#ffffff;--shiki-dark-bg:#1f1f1f" tabindex="0"><code><span class="line"><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">import</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0"> Input </span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">from</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70"> "rocksolidjs/Input"</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">;</span></span>
@@ -274,15 +277,15 @@ the input.</p>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">      /></span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">    &#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">div</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">  );</span></span>
-<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> </div> </div> <script>(function(){const id = "etr17x5jyu";
-const source = "import Input from \"rocksolidjs/Input\";\n\nexport default function Example() {\n  return (\n    \u003cdiv class=\"flex flex-col gap-4\">\n      \u003cInput\n        color=\"default\"\n        placeholder=\"Default\"\n        aria-label=\"Default\"\n      />\n      \u003cInput\n        color=\"success\"\n        value=\"john@example.com\"\n        aria-label=\"Valid email\"\n      />\n      \u003cInput\n        color=\"warning\"\n        value=\"john@example\"\n        aria-label=\"Email with warning\"\n      />\n      \u003cInput\n        color=\"info\"\n        placeholder=\"Enter your username\"\n        aria-label=\"Username\"\n      />\n      \u003cInput\n        color=\"error\"\n        value=\"invalid-value\"\n        aria-label=\"Invalid value\"\n      />\n    \u003c/div>\n  );\n}";
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> <script>(function(){const id = "h8tjwrj547p";
+const code = "import Input from \"rocksolidjs/Input\";\n\nexport default function Example() {\n  return (\n    \u003cdiv class=\"flex flex-col gap-4\">\n      \u003cInput\n        color=\"default\"\n        placeholder=\"Default\"\n        aria-label=\"Default\"\n      />\n      \u003cInput\n        color=\"success\"\n        value=\"john@example.com\"\n        aria-label=\"Valid email\"\n      />\n      \u003cInput\n        color=\"warning\"\n        value=\"john@example\"\n        aria-label=\"Email with warning\"\n      />\n      \u003cInput\n        color=\"info\"\n        placeholder=\"Enter your username\"\n        aria-label=\"Username\"\n      />\n      \u003cInput\n        color=\"error\"\n        value=\"invalid-value\"\n        aria-label=\"Invalid value\"\n      />\n    \u003c/div>\n  );\n}";
 
-  const copyBtn = document.querySelector(`#compoent-example-${id} [data-copy]`);
+  const copyBtn = document.querySelector(`#code-block-${id} [data-copy]`);
   copyBtn?.addEventListener("click", async () => {
     try {
       const copyIcon = copyBtn.querySelector(".copy");
       const checkmarkIcon = copyBtn.querySelector(".checkmark");
-      await navigator.clipboard.writeText(source);
+      await navigator.clipboard.writeText(code);
       copyIcon.classList.add("hidden");
       checkmarkIcon.classList.remove("hidden");
       copyBtn.disabled = true;
@@ -295,10 +298,10 @@ const source = "import Input from \"rocksolidjs/Input\";\n\nexport default funct
       console.error("failed to copy to clipboard");
     }
   });
-})();</script>
+})();</script> </div> </div>
 <h3 id="sizes">Sizes</h3>
 <p>Use the <code>size</code> prop to control the visual size of the input.</p>
-<div id="compoent-example-xiptiezpx8m" data-component-example class="my-8
+<div data-component-example class="my-8
     overflow-hidden
     rounded-xl
     border
@@ -314,9 +317,9 @@ const source = "import Input from \"rocksolidjs/Input\";\n\nexport default funct
       text-base
       text-neutral-900
       dark:bg-neutral-950
-      dark:text-neutral-100" data-component-preview> <astro-island uid="Z1H0VoQ" component-url="/_astro/dynamic-component-renderer.D9U5PMa1.js" component-export="default" renderer-url="/_astro/client.BgJ9siUT.js" props="{&quot;name&quot;:[0,&quot;Input/examples/sizes&quot;]}" ssr client="only" opts="{&quot;name&quot;:&quot;DynamicComponentRenderer&quot;,&quot;value&quot;:&quot;solid-js&quot;}"></astro-island> </div> <div data-code class="border-t
+      dark:text-neutral-100" data-component-preview> <astro-island uid="Z1H0VoQ" component-url="/_astro/dynamic-component-renderer.DMQQXM0d.js" component-export="default" renderer-url="/_astro/client.BgJ9siUT.js" props="{&quot;name&quot;:[0,&quot;Input/examples/sizes&quot;]}" ssr client="only" opts="{&quot;name&quot;:&quot;DynamicComponentRenderer&quot;,&quot;value&quot;:&quot;solid-js&quot;}"></astro-island> </div> <div data-code class="border-t
       border-neutral-200
-      dark:border-neutral-800"> <div class="relative"> <button type="button" data-copy class="absolute
+      dark:border-neutral-800"> <div id="code-block-4h50acqie27" class="relative"> <button type="button" data-copy class="absolute
           top-3
           z-10
           ltr:right-3
@@ -332,7 +335,9 @@ const source = "import Input from \"rocksolidjs/Input\";\n\nexport default funct
           hover:bg-neutral-200/80
           dark:bg-neutral-700/90
           dark:text-white
-          dark:hover:bg-neutral-700"> <svg class="checkmark hidden " xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="m10 13.6l5.9-5.9q.275-.275.7-.275t.7.275t.275.7t-.275.7l-6.6 6.6q-.3.3-.7.3t-.7-.3l-2.6-2.6q-.275-.275-.275-.7t.275-.7t.7-.275t.7.275z"></path></svg> <svg class="copy " xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"></path><g fill="none" stroke="currentColor"><rect width="9" height="13" x="6.5" y="6.5" rx="1.5"></rect><path d="M8.5 6A1.5 1.5 0 0 1 10 4.5h6A1.5 1.5 0 0 1 17.5 6v10a1.5 1.5 0 0 1-1.5 1.5"></path></g></svg> </button> <div class="overflow-x-auto
+          dark:hover:bg-neutral-700
+          
+          "> <svg class="checkmark hidden " xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="m10 13.6l5.9-5.9q.275-.275.7-.275t.7.275t.275.7t-.275.7l-6.6 6.6q-.3.3-.7.3t-.7-.3l-2.6-2.6q-.275-.275-.275-.7t.275-.7t.7-.275t.7.275z"></path></svg> <svg class="copy " xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"></path><g fill="none" stroke="currentColor"><rect width="9" height="13" x="6.5" y="6.5" rx="1.5"></rect><path d="M8.5 6A1.5 1.5 0 0 1 10 4.5h6A1.5 1.5 0 0 1 17.5 6v10a1.5 1.5 0 0 1-1.5 1.5"></path></g></svg> </button> <div class="overflow-x-auto
     text-lg
     border-neutral-200
     dark:border-neutral-800 rounded-xl " data-highlighted-code><pre class="shiki shiki-themes min-light min-dark" style="--shiki-light:#24292eff;--shiki-dark:#b392f0;--shiki-light-bg:#ffffff;--shiki-dark-bg:#1f1f1f" tabindex="0"><code><span class="line"><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">import</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0"> Input </span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">from</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70"> "rocksolidjs/Input"</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">;</span></span>
@@ -357,15 +362,15 @@ const source = "import Input from \"rocksolidjs/Input\";\n\nexport default funct
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">      /></span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">    &#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">div</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">  );</span></span>
-<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> </div> </div> <script>(function(){const id = "xiptiezpx8m";
-const source = "import Input from \"rocksolidjs/Input\";\n\nexport default function Example() {\n  return (\n    \u003cdiv class=\"flex flex-col gap-4\">\n      \u003cInput\n        size=\"small\"\n        placeholder=\"Small input\"\n        aria-label=\"Small input\"\n      />\n      \u003cInput\n        size=\"medium\"\n        placeholder=\"Medium input\"\n        aria-label=\"Medium input\"\n      />\n      \u003cInput\n        size=\"large\"\n        placeholder=\"Large input\"\n        aria-label=\"Large input\"\n      />\n    \u003c/div>\n  );\n}";
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> <script>(function(){const id = "4h50acqie27";
+const code = "import Input from \"rocksolidjs/Input\";\n\nexport default function Example() {\n  return (\n    \u003cdiv class=\"flex flex-col gap-4\">\n      \u003cInput\n        size=\"small\"\n        placeholder=\"Small input\"\n        aria-label=\"Small input\"\n      />\n      \u003cInput\n        size=\"medium\"\n        placeholder=\"Medium input\"\n        aria-label=\"Medium input\"\n      />\n      \u003cInput\n        size=\"large\"\n        placeholder=\"Large input\"\n        aria-label=\"Large input\"\n      />\n    \u003c/div>\n  );\n}";
 
-  const copyBtn = document.querySelector(`#compoent-example-${id} [data-copy]`);
+  const copyBtn = document.querySelector(`#code-block-${id} [data-copy]`);
   copyBtn?.addEventListener("click", async () => {
     try {
       const copyIcon = copyBtn.querySelector(".copy");
       const checkmarkIcon = copyBtn.querySelector(".checkmark");
-      await navigator.clipboard.writeText(source);
+      await navigator.clipboard.writeText(code);
       copyIcon.classList.add("hidden");
       checkmarkIcon.classList.remove("hidden");
       copyBtn.disabled = true;
@@ -378,10 +383,10 @@ const source = "import Input from \"rocksolidjs/Input\";\n\nexport default funct
       console.error("failed to copy to clipboard");
     }
   });
-})();</script>
+})();</script> </div> </div>
 <h3 id="variants">Variants</h3>
 <p>Use the <code>variant</code> prop to control the visual style of the input.</p>
-<div id="compoent-example-euijpaflqj" data-component-example class="my-8
+<div data-component-example class="my-8
     overflow-hidden
     rounded-xl
     border
@@ -397,9 +402,9 @@ const source = "import Input from \"rocksolidjs/Input\";\n\nexport default funct
       text-base
       text-neutral-900
       dark:bg-neutral-950
-      dark:text-neutral-100" data-component-preview> <astro-island uid="2a0gRA" component-url="/_astro/dynamic-component-renderer.D9U5PMa1.js" component-export="default" renderer-url="/_astro/client.BgJ9siUT.js" props="{&quot;name&quot;:[0,&quot;Input/examples/variants&quot;]}" ssr client="only" opts="{&quot;name&quot;:&quot;DynamicComponentRenderer&quot;,&quot;value&quot;:&quot;solid-js&quot;}"></astro-island> </div> <div data-code class="border-t
+      dark:text-neutral-100" data-component-preview> <astro-island uid="2a0gRA" component-url="/_astro/dynamic-component-renderer.DMQQXM0d.js" component-export="default" renderer-url="/_astro/client.BgJ9siUT.js" props="{&quot;name&quot;:[0,&quot;Input/examples/variants&quot;]}" ssr client="only" opts="{&quot;name&quot;:&quot;DynamicComponentRenderer&quot;,&quot;value&quot;:&quot;solid-js&quot;}"></astro-island> </div> <div data-code class="border-t
       border-neutral-200
-      dark:border-neutral-800"> <div class="relative"> <button type="button" data-copy class="absolute
+      dark:border-neutral-800"> <div id="code-block-dhyddnz6vsp" class="relative"> <button type="button" data-copy class="absolute
           top-3
           z-10
           ltr:right-3
@@ -415,7 +420,9 @@ const source = "import Input from \"rocksolidjs/Input\";\n\nexport default funct
           hover:bg-neutral-200/80
           dark:bg-neutral-700/90
           dark:text-white
-          dark:hover:bg-neutral-700"> <svg class="checkmark hidden " xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="m10 13.6l5.9-5.9q.275-.275.7-.275t.7.275t.275.7t-.275.7l-6.6 6.6q-.3.3-.7.3t-.7-.3l-2.6-2.6q-.275-.275-.275-.7t.275-.7t.7-.275t.7.275z"></path></svg> <svg class="copy " xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"></path><g fill="none" stroke="currentColor"><rect width="9" height="13" x="6.5" y="6.5" rx="1.5"></rect><path d="M8.5 6A1.5 1.5 0 0 1 10 4.5h6A1.5 1.5 0 0 1 17.5 6v10a1.5 1.5 0 0 1-1.5 1.5"></path></g></svg> </button> <div class="overflow-x-auto
+          dark:hover:bg-neutral-700
+          
+          "> <svg class="checkmark hidden " xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="m10 13.6l5.9-5.9q.275-.275.7-.275t.7.275t.275.7t-.275.7l-6.6 6.6q-.3.3-.7.3t-.7-.3l-2.6-2.6q-.275-.275-.275-.7t.275-.7t.7-.275t.7.275z"></path></svg> <svg class="copy " xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"></path><g fill="none" stroke="currentColor"><rect width="9" height="13" x="6.5" y="6.5" rx="1.5"></rect><path d="M8.5 6A1.5 1.5 0 0 1 10 4.5h6A1.5 1.5 0 0 1 17.5 6v10a1.5 1.5 0 0 1-1.5 1.5"></path></g></svg> </button> <div class="overflow-x-auto
     text-lg
     border-neutral-200
     dark:border-neutral-800 rounded-xl " data-highlighted-code><pre class="shiki shiki-themes min-light min-dark" style="--shiki-light:#24292eff;--shiki-dark:#b392f0;--shiki-light-bg:#ffffff;--shiki-dark-bg:#1f1f1f" tabindex="0"><code><span class="line"><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">import</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0"> Input </span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">from</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70"> "rocksolidjs/Input"</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">;</span></span>
@@ -440,15 +447,15 @@ const source = "import Input from \"rocksolidjs/Input\";\n\nexport default funct
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">      /></span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">    &#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">div</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">  );</span></span>
-<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> </div> </div> <script>(function(){const id = "euijpaflqj";
-const source = "import Input from \"rocksolidjs/Input\";\n\nexport default function Example() {\n  return (\n    \u003cdiv class=\"flex flex-col gap-4\">\n      \u003cInput\n        variant=\"outlined\"\n        placeholder=\"Outlined variant\"\n        aria-label=\"Outlined variant\"\n      />\n      \u003cInput\n        variant=\"filled\"\n        placeholder=\"Filled variant\"\n        aria-label=\"Filled variant\"\n      />\n      \u003cInput\n        variant=\"ghost\"\n        placeholder=\"Ghost variant\"\n        aria-label=\"Ghost variant\"\n      />\n    \u003c/div>\n  );\n}";
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> <script>(function(){const id = "dhyddnz6vsp";
+const code = "import Input from \"rocksolidjs/Input\";\n\nexport default function Example() {\n  return (\n    \u003cdiv class=\"flex flex-col gap-4\">\n      \u003cInput\n        variant=\"outlined\"\n        placeholder=\"Outlined variant\"\n        aria-label=\"Outlined variant\"\n      />\n      \u003cInput\n        variant=\"filled\"\n        placeholder=\"Filled variant\"\n        aria-label=\"Filled variant\"\n      />\n      \u003cInput\n        variant=\"ghost\"\n        placeholder=\"Ghost variant\"\n        aria-label=\"Ghost variant\"\n      />\n    \u003c/div>\n  );\n}";
 
-  const copyBtn = document.querySelector(`#compoent-example-${id} [data-copy]`);
+  const copyBtn = document.querySelector(`#code-block-${id} [data-copy]`);
   copyBtn?.addEventListener("click", async () => {
     try {
       const copyIcon = copyBtn.querySelector(".copy");
       const checkmarkIcon = copyBtn.querySelector(".checkmark");
-      await navigator.clipboard.writeText(source);
+      await navigator.clipboard.writeText(code);
       copyIcon.classList.add("hidden");
       checkmarkIcon.classList.remove("hidden");
       copyBtn.disabled = true;
@@ -461,11 +468,11 @@ const source = "import Input from \"rocksolidjs/Input\";\n\nexport default funct
       console.error("failed to copy to clipboard");
     }
   });
-})();</script>
+})();</script> </div> </div>
 <h3 id="full-width">Full Width</h3>
 <p>Use the <code>fullWidth</code> prop to make the input fill the available width of
 its parent container.</p>
-<div id="compoent-example-ko0tz5bx9ds" data-component-example class="my-8
+<div data-component-example class="my-8
     overflow-hidden
     rounded-xl
     border
@@ -481,9 +488,9 @@ its parent container.</p>
       text-base
       text-neutral-900
       dark:bg-neutral-950
-      dark:text-neutral-100" data-component-preview> <astro-island uid="10yukm" component-url="/_astro/dynamic-component-renderer.D9U5PMa1.js" component-export="default" renderer-url="/_astro/client.BgJ9siUT.js" props="{&quot;name&quot;:[0,&quot;Input/examples/full-width&quot;]}" ssr client="only" opts="{&quot;name&quot;:&quot;DynamicComponentRenderer&quot;,&quot;value&quot;:&quot;solid-js&quot;}"></astro-island> </div> <div data-code class="border-t
+      dark:text-neutral-100" data-component-preview> <astro-island uid="10yukm" component-url="/_astro/dynamic-component-renderer.DMQQXM0d.js" component-export="default" renderer-url="/_astro/client.BgJ9siUT.js" props="{&quot;name&quot;:[0,&quot;Input/examples/full-width&quot;]}" ssr client="only" opts="{&quot;name&quot;:&quot;DynamicComponentRenderer&quot;,&quot;value&quot;:&quot;solid-js&quot;}"></astro-island> </div> <div data-code class="border-t
       border-neutral-200
-      dark:border-neutral-800"> <div class="relative"> <button type="button" data-copy class="absolute
+      dark:border-neutral-800"> <div id="code-block-m4z7jdmo19" class="relative"> <button type="button" data-copy class="absolute
           top-3
           z-10
           ltr:right-3
@@ -499,7 +506,9 @@ its parent container.</p>
           hover:bg-neutral-200/80
           dark:bg-neutral-700/90
           dark:text-white
-          dark:hover:bg-neutral-700"> <svg class="checkmark hidden " xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="m10 13.6l5.9-5.9q.275-.275.7-.275t.7.275t.275.7t-.275.7l-6.6 6.6q-.3.3-.7.3t-.7-.3l-2.6-2.6q-.275-.275-.275-.7t.275-.7t.7-.275t.7.275z"></path></svg> <svg class="copy " xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"></path><g fill="none" stroke="currentColor"><rect width="9" height="13" x="6.5" y="6.5" rx="1.5"></rect><path d="M8.5 6A1.5 1.5 0 0 1 10 4.5h6A1.5 1.5 0 0 1 17.5 6v10a1.5 1.5 0 0 1-1.5 1.5"></path></g></svg> </button> <div class="overflow-x-auto
+          dark:hover:bg-neutral-700
+          
+          "> <svg class="checkmark hidden " xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="m10 13.6l5.9-5.9q.275-.275.7-.275t.7.275t.275.7t-.275.7l-6.6 6.6q-.3.3-.7.3t-.7-.3l-2.6-2.6q-.275-.275-.275-.7t.275-.7t.7-.275t.7.275z"></path></svg> <svg class="copy " xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"></path><g fill="none" stroke="currentColor"><rect width="9" height="13" x="6.5" y="6.5" rx="1.5"></rect><path d="M8.5 6A1.5 1.5 0 0 1 10 4.5h6A1.5 1.5 0 0 1 17.5 6v10a1.5 1.5 0 0 1-1.5 1.5"></path></g></svg> </button> <div class="overflow-x-auto
     text-lg
     border-neutral-200
     dark:border-neutral-800 rounded-xl " data-highlighted-code><pre class="shiki shiki-themes min-light min-dark" style="--shiki-light:#24292eff;--shiki-dark:#b392f0;--shiki-light-bg:#ffffff;--shiki-dark-bg:#1f1f1f" tabindex="0"><code><span class="line"><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">import</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0"> Input </span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">from</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70"> "rocksolidjs/Input"</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">;</span></span>
@@ -514,15 +523,15 @@ its parent container.</p>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">      /></span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">    &#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">div</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">  );</span></span>
-<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> </div> </div> <script>(function(){const id = "ko0tz5bx9ds";
-const source = "import Input from \"rocksolidjs/Input\";\n\nexport default function Example() {\n  return (\n    \u003cdiv class=\"w-full\">\n      \u003cInput\n        fullWidth\n        placeholder=\"Enter your email address\"\n        aria-label=\"Email address\"\n      />\n    \u003c/div>\n  );\n}";
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> <script>(function(){const id = "m4z7jdmo19";
+const code = "import Input from \"rocksolidjs/Input\";\n\nexport default function Example() {\n  return (\n    \u003cdiv class=\"w-full\">\n      \u003cInput\n        fullWidth\n        placeholder=\"Enter your email address\"\n        aria-label=\"Email address\"\n      />\n    \u003c/div>\n  );\n}";
 
-  const copyBtn = document.querySelector(`#compoent-example-${id} [data-copy]`);
+  const copyBtn = document.querySelector(`#code-block-${id} [data-copy]`);
   copyBtn?.addEventListener("click", async () => {
     try {
       const copyIcon = copyBtn.querySelector(".copy");
       const checkmarkIcon = copyBtn.querySelector(".checkmark");
-      await navigator.clipboard.writeText(source);
+      await navigator.clipboard.writeText(code);
       copyIcon.classList.add("hidden");
       checkmarkIcon.classList.remove("hidden");
       copyBtn.disabled = true;
@@ -535,13 +544,13 @@ const source = "import Input from \"rocksolidjs/Input\";\n\nexport default funct
       console.error("failed to copy to clipboard");
     }
   });
-})();</script>
+})();</script> </div> </div>
 <h3 id="prefix-and-suffix">Prefix and Suffix</h3>
 <p>Use the <code>prefix</code> and <code>suffix</code> props to display content before or after
 the input value.</p>
 <p>Prefixes and suffixes can be used for icons, units, or other contextual
 content.</p>
-<div id="compoent-example-oxi0k5id8pd" data-component-example class="my-8
+<div data-component-example class="my-8
     overflow-hidden
     rounded-xl
     border
@@ -557,9 +566,9 @@ content.</p>
       text-base
       text-neutral-900
       dark:bg-neutral-950
-      dark:text-neutral-100" data-component-preview> <astro-island uid="Zssxik" component-url="/_astro/dynamic-component-renderer.D9U5PMa1.js" component-export="default" renderer-url="/_astro/client.BgJ9siUT.js" props="{&quot;name&quot;:[0,&quot;Input/examples/prefix-suffix&quot;]}" ssr client="only" opts="{&quot;name&quot;:&quot;DynamicComponentRenderer&quot;,&quot;value&quot;:&quot;solid-js&quot;}"></astro-island> </div> <div data-code class="border-t
+      dark:text-neutral-100" data-component-preview> <astro-island uid="Zssxik" component-url="/_astro/dynamic-component-renderer.DMQQXM0d.js" component-export="default" renderer-url="/_astro/client.BgJ9siUT.js" props="{&quot;name&quot;:[0,&quot;Input/examples/prefix-suffix&quot;]}" ssr client="only" opts="{&quot;name&quot;:&quot;DynamicComponentRenderer&quot;,&quot;value&quot;:&quot;solid-js&quot;}"></astro-island> </div> <div data-code class="border-t
       border-neutral-200
-      dark:border-neutral-800"> <div class="relative"> <button type="button" data-copy class="absolute
+      dark:border-neutral-800"> <div id="code-block-5j8w835emna" class="relative"> <button type="button" data-copy class="absolute
           top-3
           z-10
           ltr:right-3
@@ -575,7 +584,9 @@ content.</p>
           hover:bg-neutral-200/80
           dark:bg-neutral-700/90
           dark:text-white
-          dark:hover:bg-neutral-700"> <svg class="checkmark hidden " xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="m10 13.6l5.9-5.9q.275-.275.7-.275t.7.275t.275.7t-.275.7l-6.6 6.6q-.3.3-.7.3t-.7-.3l-2.6-2.6q-.275-.275-.275-.7t.275-.7t.7-.275t.7.275z"></path></svg> <svg class="copy " xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"></path><g fill="none" stroke="currentColor"><rect width="9" height="13" x="6.5" y="6.5" rx="1.5"></rect><path d="M8.5 6A1.5 1.5 0 0 1 10 4.5h6A1.5 1.5 0 0 1 17.5 6v10a1.5 1.5 0 0 1-1.5 1.5"></path></g></svg> </button> <div class="overflow-x-auto
+          dark:hover:bg-neutral-700
+          
+          "> <svg class="checkmark hidden " xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="m10 13.6l5.9-5.9q.275-.275.7-.275t.7.275t.275.7t-.275.7l-6.6 6.6q-.3.3-.7.3t-.7-.3l-2.6-2.6q-.275-.275-.275-.7t.275-.7t.7-.275t.7.275z"></path></svg> <svg class="copy " xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"></path><g fill="none" stroke="currentColor"><rect width="9" height="13" x="6.5" y="6.5" rx="1.5"></rect><path d="M8.5 6A1.5 1.5 0 0 1 10 4.5h6A1.5 1.5 0 0 1 17.5 6v10a1.5 1.5 0 0 1-1.5 1.5"></path></g></svg> </button> <div class="overflow-x-auto
     text-lg
     border-neutral-200
     dark:border-neutral-800 rounded-xl " data-highlighted-code><pre class="shiki shiki-themes min-light min-dark" style="--shiki-light:#24292eff;--shiki-dark:#b392f0;--shiki-light-bg:#ffffff;--shiki-dark-bg:#1f1f1f" tabindex="0"><code><span class="line"><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">import</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0"> Input </span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">from</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70"> "rocksolidjs/Input"</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">;</span></span>
@@ -601,15 +612,15 @@ content.</p>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">      /></span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">    &#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">div</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">  );</span></span>
-<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> </div> </div> <script>(function(){const id = "oxi0k5id8pd";
-const source = "import Input from \"rocksolidjs/Input\";\n\nexport default function Example() {\n  return (\n    \u003cdiv class=\"flex flex-col gap-4\">\n      \u003cInput\n        prefix=\"https://\"\n        placeholder=\"example.com\"\n        aria-label=\"Website\"\n      />\n      \u003cInput\n        placeholder=\"0.00\"\n        suffix=\"USD\"\n        aria-label=\"Amount\"\n      />\n      \u003cInput\n        prefix=\"$\"\n        placeholder=\"0.00\"\n        suffix=\"USD\"\n        aria-label=\"Price\"\n      />\n    \u003c/div>\n  );\n}";
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> <script>(function(){const id = "5j8w835emna";
+const code = "import Input from \"rocksolidjs/Input\";\n\nexport default function Example() {\n  return (\n    \u003cdiv class=\"flex flex-col gap-4\">\n      \u003cInput\n        prefix=\"https://\"\n        placeholder=\"example.com\"\n        aria-label=\"Website\"\n      />\n      \u003cInput\n        placeholder=\"0.00\"\n        suffix=\"USD\"\n        aria-label=\"Amount\"\n      />\n      \u003cInput\n        prefix=\"$\"\n        placeholder=\"0.00\"\n        suffix=\"USD\"\n        aria-label=\"Price\"\n      />\n    \u003c/div>\n  );\n}";
 
-  const copyBtn = document.querySelector(`#compoent-example-${id} [data-copy]`);
+  const copyBtn = document.querySelector(`#code-block-${id} [data-copy]`);
   copyBtn?.addEventListener("click", async () => {
     try {
       const copyIcon = copyBtn.querySelector(".copy");
       const checkmarkIcon = copyBtn.querySelector(".checkmark");
-      await navigator.clipboard.writeText(source);
+      await navigator.clipboard.writeText(code);
       copyIcon.classList.add("hidden");
       checkmarkIcon.classList.remove("hidden");
       copyBtn.disabled = true;
@@ -622,10 +633,10 @@ const source = "import Input from \"rocksolidjs/Input\";\n\nexport default funct
       console.error("failed to copy to clipboard");
     }
   });
-})();</script>
+})();</script> </div> </div>
 <h3 id="input-types">Input Types</h3>
 <p>Use the <code>type</code> prop to specify the type of input field.</p>
-<div id="compoent-example-873bkc94q0k" data-component-example class="my-8
+<div data-component-example class="my-8
     overflow-hidden
     rounded-xl
     border
@@ -641,9 +652,9 @@ const source = "import Input from \"rocksolidjs/Input\";\n\nexport default funct
       text-base
       text-neutral-900
       dark:bg-neutral-950
-      dark:text-neutral-100" data-component-preview> <astro-island uid="1za6uS" component-url="/_astro/dynamic-component-renderer.D9U5PMa1.js" component-export="default" renderer-url="/_astro/client.BgJ9siUT.js" props="{&quot;name&quot;:[0,&quot;Input/examples/types&quot;]}" ssr client="only" opts="{&quot;name&quot;:&quot;DynamicComponentRenderer&quot;,&quot;value&quot;:&quot;solid-js&quot;}"></astro-island> </div> <div data-code class="border-t
+      dark:text-neutral-100" data-component-preview> <astro-island uid="1za6uS" component-url="/_astro/dynamic-component-renderer.DMQQXM0d.js" component-export="default" renderer-url="/_astro/client.BgJ9siUT.js" props="{&quot;name&quot;:[0,&quot;Input/examples/types&quot;]}" ssr client="only" opts="{&quot;name&quot;:&quot;DynamicComponentRenderer&quot;,&quot;value&quot;:&quot;solid-js&quot;}"></astro-island> </div> <div data-code class="border-t
       border-neutral-200
-      dark:border-neutral-800"> <div class="relative"> <button type="button" data-copy class="absolute
+      dark:border-neutral-800"> <div id="code-block-idmik6usck" class="relative"> <button type="button" data-copy class="absolute
           top-3
           z-10
           ltr:right-3
@@ -659,7 +670,9 @@ const source = "import Input from \"rocksolidjs/Input\";\n\nexport default funct
           hover:bg-neutral-200/80
           dark:bg-neutral-700/90
           dark:text-white
-          dark:hover:bg-neutral-700"> <svg class="checkmark hidden " xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="m10 13.6l5.9-5.9q.275-.275.7-.275t.7.275t.275.7t-.275.7l-6.6 6.6q-.3.3-.7.3t-.7-.3l-2.6-2.6q-.275-.275-.275-.7t.275-.7t.7-.275t.7.275z"></path></svg> <svg class="copy " xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"></path><g fill="none" stroke="currentColor"><rect width="9" height="13" x="6.5" y="6.5" rx="1.5"></rect><path d="M8.5 6A1.5 1.5 0 0 1 10 4.5h6A1.5 1.5 0 0 1 17.5 6v10a1.5 1.5 0 0 1-1.5 1.5"></path></g></svg> </button> <div class="overflow-x-auto
+          dark:hover:bg-neutral-700
+          
+          "> <svg class="checkmark hidden " xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="m10 13.6l5.9-5.9q.275-.275.7-.275t.7.275t.275.7t-.275.7l-6.6 6.6q-.3.3-.7.3t-.7-.3l-2.6-2.6q-.275-.275-.275-.7t.275-.7t.7-.275t.7.275z"></path></svg> <svg class="copy " xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"></path><g fill="none" stroke="currentColor"><rect width="9" height="13" x="6.5" y="6.5" rx="1.5"></rect><path d="M8.5 6A1.5 1.5 0 0 1 10 4.5h6A1.5 1.5 0 0 1 17.5 6v10a1.5 1.5 0 0 1-1.5 1.5"></path></g></svg> </button> <div class="overflow-x-auto
     text-lg
     border-neutral-200
     dark:border-neutral-800 rounded-xl " data-highlighted-code><pre class="shiki shiki-themes min-light min-dark" style="--shiki-light:#24292eff;--shiki-dark:#b392f0;--shiki-light-bg:#ffffff;--shiki-dark-bg:#1f1f1f" tabindex="0"><code><span class="line"><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">import</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0"> Input </span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">from</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70"> "rocksolidjs/Input"</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">;</span></span>
@@ -704,15 +717,15 @@ const source = "import Input from \"rocksolidjs/Input\";\n\nexport default funct
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">      /></span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">    &#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">div</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">  );</span></span>
-<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> </div> </div> <script>(function(){const id = "873bkc94q0k";
-const source = "import Input from \"rocksolidjs/Input\";\n\nexport default function Example() {\n  return (\n    \u003cdiv class=\"flex flex-col gap-4\">\n      \u003cInput\n        type=\"text\"\n        placeholder=\"Full name\"\n        aria-label=\"Full name\"\n      />\n      \u003cInput\n        type=\"email\"\n        placeholder=\"you@example.com\"\n        aria-label=\"Email address\"\n      />\n      \u003cInput\n        type=\"password\"\n        placeholder=\"Enter your password\"\n        aria-label=\"Password\"\n      />\n      \u003cInput\n        type=\"number\"\n        placeholder=\"Enter your age\"\n        aria-label=\"Age\"\n      />\n      \u003cInput\n        type=\"search\"\n        placeholder=\"Search...\"\n        aria-label=\"Search\"\n      />\n      \u003cInput\n        type=\"tel\"\n        placeholder=\"+1 555 123 4567\"\n        aria-label=\"Phone number\"\n      />\n      \u003cInput\n        type=\"url\"\n        placeholder=\"https://example.com\"\n        aria-label=\"Website URL\"\n      />\n    \u003c/div>\n  );\n}";
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> <script>(function(){const id = "idmik6usck";
+const code = "import Input from \"rocksolidjs/Input\";\n\nexport default function Example() {\n  return (\n    \u003cdiv class=\"flex flex-col gap-4\">\n      \u003cInput\n        type=\"text\"\n        placeholder=\"Full name\"\n        aria-label=\"Full name\"\n      />\n      \u003cInput\n        type=\"email\"\n        placeholder=\"you@example.com\"\n        aria-label=\"Email address\"\n      />\n      \u003cInput\n        type=\"password\"\n        placeholder=\"Enter your password\"\n        aria-label=\"Password\"\n      />\n      \u003cInput\n        type=\"number\"\n        placeholder=\"Enter your age\"\n        aria-label=\"Age\"\n      />\n      \u003cInput\n        type=\"search\"\n        placeholder=\"Search...\"\n        aria-label=\"Search\"\n      />\n      \u003cInput\n        type=\"tel\"\n        placeholder=\"+1 555 123 4567\"\n        aria-label=\"Phone number\"\n      />\n      \u003cInput\n        type=\"url\"\n        placeholder=\"https://example.com\"\n        aria-label=\"Website URL\"\n      />\n    \u003c/div>\n  );\n}";
 
-  const copyBtn = document.querySelector(`#compoent-example-${id} [data-copy]`);
+  const copyBtn = document.querySelector(`#code-block-${id} [data-copy]`);
   copyBtn?.addEventListener("click", async () => {
     try {
       const copyIcon = copyBtn.querySelector(".copy");
       const checkmarkIcon = copyBtn.querySelector(".checkmark");
-      await navigator.clipboard.writeText(source);
+      await navigator.clipboard.writeText(code);
       copyIcon.classList.add("hidden");
       checkmarkIcon.classList.remove("hidden");
       copyBtn.disabled = true;
@@ -725,7 +738,7 @@ const source = "import Input from \"rocksolidjs/Input\";\n\nexport default funct
       console.error("failed to copy to clipboard");
     }
   });
-})();</script>
+})();</script> </div> </div>
 <p>The <code>type</code> prop supports the following input types: <code>number</code>, <code>search</code>, <code>time</code>,
 <code>image</code>, <code>text</code>, <code>color</code>, <code>date</code>, <code>datetime-local</code>, <code>email</code>, <code>file</code>, <code>month</code>,
 <code>password</code>, <code>tel</code>, <code>url</code>, and <code>week</code>.</p>
@@ -734,7 +747,7 @@ and assistive technologies can provide the correct behavior and
 keyboard experience.</p>
 <h3 id="controlled-value">Controlled Value</h3>
 <p>Use the <code>value</code> prop together with <code>onInput</code> to control the input value.</p>
-<div id="compoent-example-y0ey9b6zxf" data-component-example class="my-8
+<div data-component-example class="my-8
     overflow-hidden
     rounded-xl
     border
@@ -750,9 +763,9 @@ keyboard experience.</p>
       text-base
       text-neutral-900
       dark:bg-neutral-950
-      dark:text-neutral-100" data-component-preview> <astro-island uid="249Hyh" component-url="/_astro/dynamic-component-renderer.D9U5PMa1.js" component-export="default" renderer-url="/_astro/client.BgJ9siUT.js" props="{&quot;name&quot;:[0,&quot;Input/examples/controlled&quot;]}" ssr client="only" opts="{&quot;name&quot;:&quot;DynamicComponentRenderer&quot;,&quot;value&quot;:&quot;solid-js&quot;}"></astro-island> </div> <div data-code class="border-t
+      dark:text-neutral-100" data-component-preview> <astro-island uid="249Hyh" component-url="/_astro/dynamic-component-renderer.DMQQXM0d.js" component-export="default" renderer-url="/_astro/client.BgJ9siUT.js" props="{&quot;name&quot;:[0,&quot;Input/examples/controlled&quot;]}" ssr client="only" opts="{&quot;name&quot;:&quot;DynamicComponentRenderer&quot;,&quot;value&quot;:&quot;solid-js&quot;}"></astro-island> </div> <div data-code class="border-t
       border-neutral-200
-      dark:border-neutral-800"> <div class="relative"> <button type="button" data-copy class="absolute
+      dark:border-neutral-800"> <div id="code-block-one7o6mxf29" class="relative"> <button type="button" data-copy class="absolute
           top-3
           z-10
           ltr:right-3
@@ -768,7 +781,9 @@ keyboard experience.</p>
           hover:bg-neutral-200/80
           dark:bg-neutral-700/90
           dark:text-white
-          dark:hover:bg-neutral-700"> <svg class="checkmark hidden " xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="m10 13.6l5.9-5.9q.275-.275.7-.275t.7.275t.275.7t-.275.7l-6.6 6.6q-.3.3-.7.3t-.7-.3l-2.6-2.6q-.275-.275-.275-.7t.275-.7t.7-.275t.7.275z"></path></svg> <svg class="copy " xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"></path><g fill="none" stroke="currentColor"><rect width="9" height="13" x="6.5" y="6.5" rx="1.5"></rect><path d="M8.5 6A1.5 1.5 0 0 1 10 4.5h6A1.5 1.5 0 0 1 17.5 6v10a1.5 1.5 0 0 1-1.5 1.5"></path></g></svg> </button> <div class="overflow-x-auto
+          dark:hover:bg-neutral-700
+          
+          "> <svg class="checkmark hidden " xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="m10 13.6l5.9-5.9q.275-.275.7-.275t.7.275t.275.7t-.275.7l-6.6 6.6q-.3.3-.7.3t-.7-.3l-2.6-2.6q-.275-.275-.275-.7t.275-.7t.7-.275t.7.275z"></path></svg> <svg class="copy " xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"></path><g fill="none" stroke="currentColor"><rect width="9" height="13" x="6.5" y="6.5" rx="1.5"></rect><path d="M8.5 6A1.5 1.5 0 0 1 10 4.5h6A1.5 1.5 0 0 1 17.5 6v10a1.5 1.5 0 0 1-1.5 1.5"></path></g></svg> </button> <div class="overflow-x-auto
     text-lg
     border-neutral-200
     dark:border-neutral-800 rounded-xl " data-highlighted-code><pre class="shiki shiki-themes min-light min-dark" style="--shiki-light:#24292eff;--shiki-dark:#b392f0;--shiki-light-bg:#ffffff;--shiki-dark-bg:#1f1f1f" tabindex="0"><code><span class="line"><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">import</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0"> { createSignal } </span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">from</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70"> "solid-js"</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">;</span></span>
@@ -787,15 +802,15 @@ keyboard experience.</p>
 <span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">      suffix</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">=</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">{</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">`</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">${</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">value</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">().</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">length</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583"> }</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70"> / </span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">${</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">maxLength</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">}</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">`</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">    /></span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">  );</span></span>
-<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> </div> </div> <script>(function(){const id = "y0ey9b6zxf";
-const source = "import { createSignal } from \"solid-js\";\nimport Input from \"rocksolidjs/Input\";\n\nexport default function Example() {\n  const [value, setValue] = createSignal(\"\");\n  const maxLength = 10;\n  return (\n    \u003cInput\n      value={value()}\n      onInput={(event: InputEvent) => setValue((event.target as HTMLInputElement).value)}\n      placeholder=\"Type something...\"\n      aria-label=\"Controlled input\"\n      color={value().length > maxLength ? \"error\" : \"default\"}\n      suffix={`${value().length } / ${maxLength}`}\n    />\n  );\n}";
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> <script>(function(){const id = "one7o6mxf29";
+const code = "import { createSignal } from \"solid-js\";\nimport Input from \"rocksolidjs/Input\";\n\nexport default function Example() {\n  const [value, setValue] = createSignal(\"\");\n  const maxLength = 10;\n  return (\n    \u003cInput\n      value={value()}\n      onInput={(event: InputEvent) => setValue((event.target as HTMLInputElement).value)}\n      placeholder=\"Type something...\"\n      aria-label=\"Controlled input\"\n      color={value().length > maxLength ? \"error\" : \"default\"}\n      suffix={`${value().length } / ${maxLength}`}\n    />\n  );\n}";
 
-  const copyBtn = document.querySelector(`#compoent-example-${id} [data-copy]`);
+  const copyBtn = document.querySelector(`#code-block-${id} [data-copy]`);
   copyBtn?.addEventListener("click", async () => {
     try {
       const copyIcon = copyBtn.querySelector(".copy");
       const checkmarkIcon = copyBtn.querySelector(".checkmark");
-      await navigator.clipboard.writeText(source);
+      await navigator.clipboard.writeText(code);
       copyIcon.classList.add("hidden");
       checkmarkIcon.classList.remove("hidden");
       copyBtn.disabled = true;
@@ -808,7 +823,7 @@ const source = "import { createSignal } from \"solid-js\";\nimport Input from \"
       console.error("failed to copy to clipboard");
     }
   });
-})();</script>
+})();</script> </div> </div>
 <p>The <code>onInput</code> handler receives the native <code>InputEvent</code>, which can be
 used to update the signal that controls the input.</p>
 <h3 id="customization">Customization</h3>
@@ -821,7 +836,7 @@ individual component slots.</p>
 <li><code>prefix</code> — Props applied to the prefix element.</li>
 <li><code>suffix</code> — Props applied to the suffix element.</li>
 </ul>
-<div id="compoent-example-lnmzgm1huod" data-component-example class="my-8
+<div data-component-example class="my-8
     overflow-hidden
     rounded-xl
     border
@@ -837,9 +852,9 @@ individual component slots.</p>
       text-base
       text-neutral-900
       dark:bg-neutral-950
-      dark:text-neutral-100" data-component-preview> <astro-island uid="Z13r3Wy" component-url="/_astro/dynamic-component-renderer.D9U5PMa1.js" component-export="default" renderer-url="/_astro/client.BgJ9siUT.js" props="{&quot;name&quot;:[0,&quot;Input/examples/customization&quot;]}" ssr client="only" opts="{&quot;name&quot;:&quot;DynamicComponentRenderer&quot;,&quot;value&quot;:&quot;solid-js&quot;}"></astro-island> </div> <div data-code class="border-t
+      dark:text-neutral-100" data-component-preview> <astro-island uid="Z13r3Wy" component-url="/_astro/dynamic-component-renderer.DMQQXM0d.js" component-export="default" renderer-url="/_astro/client.BgJ9siUT.js" props="{&quot;name&quot;:[0,&quot;Input/examples/customization&quot;]}" ssr client="only" opts="{&quot;name&quot;:&quot;DynamicComponentRenderer&quot;,&quot;value&quot;:&quot;solid-js&quot;}"></astro-island> </div> <div data-code class="border-t
       border-neutral-200
-      dark:border-neutral-800"> <div class="relative"> <button type="button" data-copy class="absolute
+      dark:border-neutral-800"> <div id="code-block-nf9wfer0os" class="relative"> <button type="button" data-copy class="absolute
           top-3
           z-10
           ltr:right-3
@@ -855,7 +870,9 @@ individual component slots.</p>
           hover:bg-neutral-200/80
           dark:bg-neutral-700/90
           dark:text-white
-          dark:hover:bg-neutral-700"> <svg class="checkmark hidden " xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="m10 13.6l5.9-5.9q.275-.275.7-.275t.7.275t.275.7t-.275.7l-6.6 6.6q-.3.3-.7.3t-.7-.3l-2.6-2.6q-.275-.275-.275-.7t.275-.7t.7-.275t.7.275z"></path></svg> <svg class="copy " xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"></path><g fill="none" stroke="currentColor"><rect width="9" height="13" x="6.5" y="6.5" rx="1.5"></rect><path d="M8.5 6A1.5 1.5 0 0 1 10 4.5h6A1.5 1.5 0 0 1 17.5 6v10a1.5 1.5 0 0 1-1.5 1.5"></path></g></svg> </button> <div class="overflow-x-auto
+          dark:hover:bg-neutral-700
+          
+          "> <svg class="checkmark hidden " xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="m10 13.6l5.9-5.9q.275-.275.7-.275t.7.275t.275.7t-.275.7l-6.6 6.6q-.3.3-.7.3t-.7-.3l-2.6-2.6q-.275-.275-.275-.7t.275-.7t.7-.275t.7.275z"></path></svg> <svg class="copy " xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"></path><g fill="none" stroke="currentColor"><rect width="9" height="13" x="6.5" y="6.5" rx="1.5"></rect><path d="M8.5 6A1.5 1.5 0 0 1 10 4.5h6A1.5 1.5 0 0 1 17.5 6v10a1.5 1.5 0 0 1-1.5 1.5"></path></g></svg> </button> <div class="overflow-x-auto
     text-lg
     border-neutral-200
     dark:border-neutral-800 rounded-xl " data-highlighted-code><pre class="shiki shiki-themes min-light min-dark" style="--shiki-light:#24292eff;--shiki-dark:#b392f0;--shiki-light-bg:#ffffff;--shiki-dark-bg:#1f1f1f" tabindex="0"><code><span class="line"><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">import</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0"> Input </span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">from</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70"> "rocksolidjs/Input"</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">;</span></span>
@@ -880,15 +897,15 @@ individual component slots.</p>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">      }}</span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">    /></span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">  );</span></span>
-<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> </div> </div> <script>(function(){const id = "lnmzgm1huod";
-const source = "import Input from \"rocksolidjs/Input\";\n\nexport default function Example() {\n  return (\n    \u003cInput\n      class=\"custom-input\"\n      placeholder=\"Search documentation\"\n      prefix={\u003cspan>Search\u003c/span>}\n      suffix={\u003cspan>⌘K\u003c/span>}\n      slotProps={{\n        base: {\n          \"aria-label\": \"Search documentation\",\n        },\n        prefix: {\n          class: \"text-muted-foreground\",\n        },\n        suffix: {\n          class: \"text-muted-foreground\",\n        },\n      }}\n    />\n  );\n}";
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> <script>(function(){const id = "nf9wfer0os";
+const code = "import Input from \"rocksolidjs/Input\";\n\nexport default function Example() {\n  return (\n    \u003cInput\n      class=\"custom-input\"\n      placeholder=\"Search documentation\"\n      prefix={\u003cspan>Search\u003c/span>}\n      suffix={\u003cspan>⌘K\u003c/span>}\n      slotProps={{\n        base: {\n          \"aria-label\": \"Search documentation\",\n        },\n        prefix: {\n          class: \"text-muted-foreground\",\n        },\n        suffix: {\n          class: \"text-muted-foreground\",\n        },\n      }}\n    />\n  );\n}";
 
-  const copyBtn = document.querySelector(`#compoent-example-${id} [data-copy]`);
+  const copyBtn = document.querySelector(`#code-block-${id} [data-copy]`);
   copyBtn?.addEventListener("click", async () => {
     try {
       const copyIcon = copyBtn.querySelector(".copy");
       const checkmarkIcon = copyBtn.querySelector(".checkmark");
-      await navigator.clipboard.writeText(source);
+      await navigator.clipboard.writeText(code);
       copyIcon.classList.add("hidden");
       checkmarkIcon.classList.remove("hidden");
       copyBtn.disabled = true;
@@ -901,7 +918,7 @@ const source = "import Input from \"rocksolidjs/Input\";\n\nexport default funct
       console.error("failed to copy to clipboard");
     }
   });
-})();</script>
+})();</script> </div> </div>
 <h2 id="accessibility">Accessibility</h2>
 <ul>
 <li>Use the appropriate <code>type</code> for the expected input value.</li>

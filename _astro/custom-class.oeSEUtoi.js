@@ -1,0 +1,1 @@
+import{S as e}from"./web.Ck_zQUvi.js";import{t}from"./Spinner.C0ldrjwi.js";function n(){return e(t,{class:`text-blue-800 dark:text-blue-500`})}export{n as default};

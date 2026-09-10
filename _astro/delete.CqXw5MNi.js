@@ -1,0 +1,1 @@
+import{S as e}from"./web.Ck_zQUvi.js";import{t}from"./Chip.DWOOqJiR.js";function n(){return e(t,{label:`Removable`,onDelete:e=>{console.log(`Chip deleted`,e)}})}export{n as default};

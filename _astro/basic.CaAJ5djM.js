@@ -1,1 +1,0 @@
-import{S as e}from"./web.Ck_zQUvi.js";import{t}from"./Link.WU_u82tA.js";function n(){return e(t,{href:`/introduction/`,children:`Introduction`})}export{n as default};

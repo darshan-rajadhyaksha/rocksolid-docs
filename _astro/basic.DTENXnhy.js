@@ -1,0 +1,1 @@
+import{S as e}from"./web.Ck_zQUvi.js";import{t}from"./IconButton.xXqjywa9.js";import{t as n}from"./download.DRai7iDw.js";function r(){return e(t,{"aria-label":`Download`,get children(){return e(n,{})}})}export{r as default};

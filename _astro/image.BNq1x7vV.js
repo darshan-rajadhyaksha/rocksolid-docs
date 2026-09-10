@@ -1,0 +1,1 @@
+import{S as e}from"./web.Ck_zQUvi.js";import{t}from"./Avatar.CBf0OS3d.js";function n(){return e(t,{src:`https://i.pravatar.cc/150?img=12`,alt:`User avatar`})}export{n as default};

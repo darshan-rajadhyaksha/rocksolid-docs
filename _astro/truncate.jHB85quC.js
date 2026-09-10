@@ -1,0 +1,1 @@
+import{S as e,i as t,p as n,s as r}from"./web.Ck_zQUvi.js";import{t as i}from"./Typography.C6T46jn1.js";var a=n(`<div class=max-w-xs>`);function o(){return(()=>{var n=t(a);return r(n,e(i,{truncate:!0,children:`This is a long piece of text that will be truncated when it does not fit within the available space.`})),n})()}export{o as default};

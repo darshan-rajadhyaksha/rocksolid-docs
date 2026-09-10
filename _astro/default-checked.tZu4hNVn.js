@@ -1,1 +1,0 @@
-import{S as e,i as t,p as n,s as r}from"./web.Ck_zQUvi.js";import{t as i}from"./Checkbox.CiXb3pBv.js";var a=n(`<div class="flex gap-4">`);function o(){return(()=>{var n=t(a);return r(n,e(i,{defaultChecked:!0})),n})()}export{o as default};

@@ -1,1 +1,0 @@
-import{O as e,S as t}from"./web.Ck_zQUvi.js";import{t as n}from"./Checkbox.CiXb3pBv.js";function r(){let[r,i]=e(!1);return t(n,{get checked(){return r()},onChange:(e,t)=>i(t)})}export{r as default};

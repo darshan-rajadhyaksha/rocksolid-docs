@@ -1,1 +1,0 @@
-import{S as e}from"./web.Ck_zQUvi.js";import{t}from"./Textarea.COha-jiA.js";function n(){return e(t,{placeholder:`Tell us what you think...`,"aria-label":`Feedback`})}export{n as default};

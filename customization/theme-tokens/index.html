@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="en"> <head><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><title>Theme Tokens</title><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="generator" content="Astro v7.2.2"><meta name="description" content="Theme tokens define the visual styles used throughout the component library."><meta name="keywords" content="RockSolid, rocksolidjs, SolidJS, SolidJS components, SolidJS UI library, Tailwind CSS, component library, UI components, accessible components, TypeScript, themeable components, reusable components, frontend library"><meta name="author" content="Darshan Sunil Rajadhyaksha"><link rel="canonical" href="https://rocksolidjs.com/customization/theme-tokens/"><link rel="sitemap" href="/sitemap-index.xml"><meta name="robots" content="index, follow"><!-- OG --><meta property="og:type" content="article"><meta property="og:title" content="Theme Tokens"><meta property="og:description" content="Theme tokens define the visual styles used throughout the component library."><meta property="og:image" content="https://rocksolidjs.com/assets/og.png"><meta property="og:image:width" content="1024"><meta property="og:image:height" content="768"><meta property="og:url" content="https://rocksolidjs.com/customization/theme-tokens/"><meta property="og:site_name" content="RockSolid"><meta property="og:locale" content="en_US"><!-- X --><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Theme Tokens"><meta name="twitter:description" content="Theme tokens define the visual styles used throughout the component library."><meta name="twitter:image" content="https://rocksolidjs.com/assets/og.png"><meta name="twitter:image:width" content="1024"><meta name="twitter:image:height" content="768"><link rel="icon" href="/assets/favicon/favicon.ico"><link rel="icon" type="image/png" sizes="96x96" href="/assets/favicon/favicon-96x96.png"><link rel="icon" type="image/svg+xml" href="/assets/favicon/favicon.svg"><link rel="shortcut icon" href="/assets/favicon/favicon.ico"><link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png"><link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet"><script>
+<!DOCTYPE html><html lang="en"> <head><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><title>Theme Tokens</title><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="generator" content="Astro v7.3.2"><meta name="description" content="Theme tokens define the visual styles used throughout the component library."><meta name="keywords" content="RockSolid, rocksolidjs, SolidJS, SolidJS components, SolidJS UI library, Tailwind CSS, component library, UI components, accessible components, TypeScript, themeable components, reusable components, frontend library"><meta name="author" content="Darshan Sunil Rajadhyaksha"><link rel="canonical" href="https://rocksolidjs.com/customization/theme-tokens/"><link rel="sitemap" href="/sitemap-index.xml"><meta name="robots" content="index, follow"><!-- OG --><meta property="og:type" content="article"><meta property="og:title" content="Theme Tokens"><meta property="og:description" content="Theme tokens define the visual styles used throughout the component library."><meta property="og:image" content="https://rocksolidjs.com/assets/og.png"><meta property="og:image:width" content="1024"><meta property="og:image:height" content="768"><meta property="og:url" content="https://rocksolidjs.com/customization/theme-tokens/"><meta property="og:site_name" content="RockSolid"><meta property="og:locale" content="en_US"><!-- X --><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Theme Tokens"><meta name="twitter:description" content="Theme tokens define the visual styles used throughout the component library."><meta name="twitter:image" content="https://rocksolidjs.com/assets/og.png"><meta name="twitter:image:width" content="1024"><meta name="twitter:image:height" content="768"><link rel="icon" href="/assets/favicon/favicon.ico"><link rel="icon" type="image/png" sizes="96x96" href="/assets/favicon/favicon-96x96.png"><link rel="icon" type="image/svg+xml" href="/assets/favicon/favicon.svg"><link rel="shortcut icon" href="/assets/favicon/favicon.ico"><link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png"><link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet"><script>
     const theme = localStorage.getItem("theme");
     if (
       theme === "dark" ||
@@ -11,7 +11,7 @@
     ) {
       document.documentElement.classList.add("dark");
     }
-  </script><link rel="stylesheet" href="/_astro/base.C1-k0NAi.css"></head> <body class="min-h-screen bg-white text-neutral-900
+  </script><link rel="stylesheet" href="/_astro/base.CiuBXjTW.css"></head> <body class="min-h-screen bg-white text-neutral-900
     dark:bg-neutral-950 dark:text-neutral-100"> <!-- Mobile overlay --> <div id="sidebar-overlay" class="pointer-events-none fixed inset-0 z-40
       bg-black/40 opacity-0 transition-opacity
       duration-200 lg:hidden"></div> <div class="min-h-screen lg:grid
@@ -38,8 +38,7 @@ RockSolid
 </a> <p class="mt-1 text-xs
           text-neutral-500
           dark:text-neutral-500">
-v0.1.1
-</p> </div> <!-- GitHub --> <div class="mb-7"> <a href="https://github.com/darshan-rajadhyaksha/rocksolid/" target="_blank" rel="noopener noreferrer" class="flex w-full items-center gap-3
+v0.1.2 </p> </div> <!-- GitHub --> <div class="mb-7"> <a href="https://github.com/darshan-rajadhyaksha/rocksolid/" target="_blank" rel="noopener noreferrer" class="flex w-full items-center gap-3
           rounded-md px-3 py-2
           text-sm font-medium
           text-neutral-600
@@ -134,10 +133,49 @@ of a component’s appearance.</p>
 <p>All token values are strings containing Tailwind CSS classes. When a style
 needs different values for light and dark mode, both values should be included
 in the same class string.</p>
-<div class="overflow-x-auto
+<div id="code-block-1vpigrosmwti" class="relative"> <button type="button" data-copy class="absolute
+          top-3
+          z-10
+          ltr:right-3
+          rtl:left-3
+          rounded-md
+          bg-neutral-200
+          size-6
+          text-xl
+          grid
+          place-items-center
+          text-neutral-900
+          transition-colors
+          hover:bg-neutral-200/80
+          dark:bg-neutral-700/90
+          dark:text-white
+          dark:hover:bg-neutral-700
+          top-[50%] -translate-y-[50%]
+          "> <svg class="checkmark hidden " xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="m10 13.6l5.9-5.9q.275-.275.7-.275t.7.275t.275.7t-.275.7l-6.6 6.6q-.3.3-.7.3t-.7-.3l-2.6-2.6q-.275-.275-.275-.7t.275-.7t.7-.275t.7.275z"></path></svg> <svg class="copy " xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"></path><g fill="none" stroke="currentColor"><rect width="9" height="13" x="6.5" y="6.5" rx="1.5"></rect><path d="M8.5 6A1.5 1.5 0 0 1 10 4.5h6A1.5 1.5 0 0 1 17.5 6v10a1.5 1.5 0 0 1-1.5 1.5"></path></g></svg> </button> <div class="overflow-x-auto
     text-lg
     border-neutral-200
-    dark:border-neutral-800 rounded-xl border" data-highlighted-code><pre class="shiki shiki-themes min-light min-dark" style="--shiki-light:#24292eff;--shiki-dark:#b392f0;--shiki-light-bg:#ffffff;--shiki-dark-bg:#1f1f1f" tabindex="0"><code><span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">background</span><span style="--shiki-light:#212121;--shiki-dark:#BBBBBB">:</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70"> "bg-white dark:bg-zinc-900"</span></span></code></pre></div>
+    dark:border-neutral-800 rounded-xl border" data-highlighted-code><pre class="shiki shiki-themes min-light min-dark" style="--shiki-light:#24292eff;--shiki-dark:#b392f0;--shiki-light-bg:#ffffff;--shiki-dark-bg:#1f1f1f" tabindex="0"><code><span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">background</span><span style="--shiki-light:#212121;--shiki-dark:#BBBBBB">:</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70"> "bg-white dark:bg-zinc-900"</span></span></code></pre></div> </div> <script>(function(){const id = "1vpigrosmwti";
+const code = "background: \"bg-white dark:bg-zinc-900\"";
+
+  const copyBtn = document.querySelector(`#code-block-${id} [data-copy]`);
+  copyBtn?.addEventListener("click", async () => {
+    try {
+      const copyIcon = copyBtn.querySelector(".copy");
+      const checkmarkIcon = copyBtn.querySelector(".checkmark");
+      await navigator.clipboard.writeText(code);
+      copyIcon.classList.add("hidden");
+      checkmarkIcon.classList.remove("hidden");
+      copyBtn.disabled = true;
+      setTimeout(() => {
+        copyIcon.classList.remove("hidden");
+        checkmarkIcon.classList.add("hidden");
+        copyBtn.disabled = false;
+      }, 2000);
+    } catch (error) {
+      console.error("failed to copy to clipboard");
+    }
+  });
+})();</script>
 <h2 id="colors">Colors</h2>
 <p><code>colors</code> is the main color token group.</p>
 <p>It contains semantic color groups such as <code>default</code>, <code>success</code>, <code>warning</code>,
@@ -154,7 +192,25 @@ in the same class string.</p>
 <li><code>error</code> — Indicates an error, invalid state, or destructive action.</li>
 </ul>
 <h4 id="color-schema">Color Schema</h4>
-<div class="overflow-x-auto
+<div id="code-block-vtf2kcn0v7" class="relative"> <button type="button" data-copy class="absolute
+          top-3
+          z-10
+          ltr:right-3
+          rtl:left-3
+          rounded-md
+          bg-neutral-200
+          size-6
+          text-xl
+          grid
+          place-items-center
+          text-neutral-900
+          transition-colors
+          hover:bg-neutral-200/80
+          dark:bg-neutral-700/90
+          dark:text-white
+          dark:hover:bg-neutral-700
+          
+          "> <svg class="checkmark hidden " xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="m10 13.6l5.9-5.9q.275-.275.7-.275t.7.275t.275.7t-.275.7l-6.6 6.6q-.3.3-.7.3t-.7-.3l-2.6-2.6q-.275-.275-.275-.7t.275-.7t.7-.275t.7.275z"></path></svg> <svg class="copy " xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"></path><g fill="none" stroke="currentColor"><rect width="9" height="13" x="6.5" y="6.5" rx="1.5"></rect><path d="M8.5 6A1.5 1.5 0 0 1 10 4.5h6A1.5 1.5 0 0 1 17.5 6v10a1.5 1.5 0 0 1-1.5 1.5"></path></g></svg> </button> <div class="overflow-x-auto
     text-lg
     border-neutral-200
     dark:border-neutral-800 rounded-xl border" data-highlighted-code><pre class="shiki shiki-themes min-light min-dark" style="--shiki-light:#24292eff;--shiki-dark:#b392f0;--shiki-light-bg:#ffffff;--shiki-dark-bg:#1f1f1f" tabindex="0"><code><span class="line"><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">type</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> ThemeColors</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583"> =</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0"> {</span></span>
@@ -163,7 +219,28 @@ in the same class string.</p>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">  warning</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">:</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> ThemeColorVariants</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">;</span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">  info</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">:</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> ThemeColorVariants</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">;</span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">  error</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">:</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> ThemeColorVariants</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">;</span></span>
-<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">};</span></span></code></pre></div>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">};</span></span></code></pre></div> </div> <script>(function(){const id = "vtf2kcn0v7";
+const code = "type ThemeColors = {\n  default: ThemeColorVariants;\n  success: ThemeColorVariants;\n  warning: ThemeColorVariants;\n  info: ThemeColorVariants;\n  error: ThemeColorVariants;\n};";
+
+  const copyBtn = document.querySelector(`#code-block-${id} [data-copy]`);
+  copyBtn?.addEventListener("click", async () => {
+    try {
+      const copyIcon = copyBtn.querySelector(".copy");
+      const checkmarkIcon = copyBtn.querySelector(".checkmark");
+      await navigator.clipboard.writeText(code);
+      copyIcon.classList.add("hidden");
+      checkmarkIcon.classList.remove("hidden");
+      copyBtn.disabled = true;
+      setTimeout(() => {
+        copyIcon.classList.remove("hidden");
+        checkmarkIcon.classList.add("hidden");
+        copyBtn.disabled = false;
+      }, 2000);
+    } catch (error) {
+      console.error("failed to copy to clipboard");
+    }
+  });
+})();</script>
 <p>Each property represents a semantic purpose.</p>
 <p>Every color group must follow the <code>ThemeColorVariants</code> structure.</p>
 <h3 id="color-variants">Color Variants</h3>
@@ -171,7 +248,25 @@ in the same class string.</p>
 <p>For example, the <code>default</code> color contains <code>solid</code>, <code>filled</code>, <code>outlined</code>, and
 <code>ghost</code> variants.</p>
 <h4 id="color-variants-schema">Color Variants Schema</h4>
-<div class="overflow-x-auto
+<div id="code-block-ywlqty4ys1k" class="relative"> <button type="button" data-copy class="absolute
+          top-3
+          z-10
+          ltr:right-3
+          rtl:left-3
+          rounded-md
+          bg-neutral-200
+          size-6
+          text-xl
+          grid
+          place-items-center
+          text-neutral-900
+          transition-colors
+          hover:bg-neutral-200/80
+          dark:bg-neutral-700/90
+          dark:text-white
+          dark:hover:bg-neutral-700
+          
+          "> <svg class="checkmark hidden " xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="m10 13.6l5.9-5.9q.275-.275.7-.275t.7.275t.275.7t-.275.7l-6.6 6.6q-.3.3-.7.3t-.7-.3l-2.6-2.6q-.275-.275-.275-.7t.275-.7t.7-.275t.7.275z"></path></svg> <svg class="copy " xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"></path><g fill="none" stroke="currentColor"><rect width="9" height="13" x="6.5" y="6.5" rx="1.5"></rect><path d="M8.5 6A1.5 1.5 0 0 1 10 4.5h6A1.5 1.5 0 0 1 17.5 6v10a1.5 1.5 0 0 1-1.5 1.5"></path></g></svg> </button> <div class="overflow-x-auto
     text-lg
     border-neutral-200
     dark:border-neutral-800 rounded-xl border" data-highlighted-code><pre class="shiki shiki-themes min-light min-dark" style="--shiki-light:#24292eff;--shiki-dark:#b392f0;--shiki-light-bg:#ffffff;--shiki-dark-bg:#1f1f1f" tabindex="0"><code><span class="line"><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">type</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> ThemeColorVariants</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583"> =</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0"> {</span></span>
@@ -179,7 +274,28 @@ in the same class string.</p>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">  filled</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">:</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> ThemeColorStateTokens</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">;</span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">  outlined</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">:</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> ThemeColorStateTokens</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">;</span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">  ghost</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">:</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> ThemeColorStateTokens</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">;</span></span>
-<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">};</span></span></code></pre></div>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">};</span></span></code></pre></div> </div> <script>(function(){const id = "ywlqty4ys1k";
+const code = "type ThemeColorVariants = {\n  solid: ThemeColorStateTokens;\n  filled: ThemeColorStateTokens;\n  outlined: ThemeColorStateTokens;\n  ghost: ThemeColorStateTokens;\n};";
+
+  const copyBtn = document.querySelector(`#code-block-${id} [data-copy]`);
+  copyBtn?.addEventListener("click", async () => {
+    try {
+      const copyIcon = copyBtn.querySelector(".copy");
+      const checkmarkIcon = copyBtn.querySelector(".checkmark");
+      await navigator.clipboard.writeText(code);
+      copyIcon.classList.add("hidden");
+      checkmarkIcon.classList.remove("hidden");
+      copyBtn.disabled = true;
+      setTimeout(() => {
+        copyIcon.classList.remove("hidden");
+        checkmarkIcon.classList.add("hidden");
+        copyBtn.disabled = false;
+      }, 2000);
+    } catch (error) {
+      console.error("failed to copy to clipboard");
+    }
+  });
+})();</script>
 <p>The variants represent different levels of visual emphasis:</p>
 <ul>
 <li><code>solid</code> — Strong visual treatment, generally used for prominent actions.</li>
@@ -193,7 +309,25 @@ in the same class string.</p>
 <p>It contains the styles needed for the component’s default and interactive
 states.</p>
 <h4 id="color-state-tokens-schema">Color State Tokens Schema</h4>
-<div class="overflow-x-auto
+<div id="code-block-zgqcj9lh20p" class="relative"> <button type="button" data-copy class="absolute
+          top-3
+          z-10
+          ltr:right-3
+          rtl:left-3
+          rounded-md
+          bg-neutral-200
+          size-6
+          text-xl
+          grid
+          place-items-center
+          text-neutral-900
+          transition-colors
+          hover:bg-neutral-200/80
+          dark:bg-neutral-700/90
+          dark:text-white
+          dark:hover:bg-neutral-700
+          
+          "> <svg class="checkmark hidden " xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="m10 13.6l5.9-5.9q.275-.275.7-.275t.7.275t.275.7t-.275.7l-6.6 6.6q-.3.3-.7.3t-.7-.3l-2.6-2.6q-.275-.275-.275-.7t.275-.7t.7-.275t.7.275z"></path></svg> <svg class="copy " xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"></path><g fill="none" stroke="currentColor"><rect width="9" height="13" x="6.5" y="6.5" rx="1.5"></rect><path d="M8.5 6A1.5 1.5 0 0 1 10 4.5h6A1.5 1.5 0 0 1 17.5 6v10a1.5 1.5 0 0 1-1.5 1.5"></path></g></svg> </button> <div class="overflow-x-auto
     text-lg
     border-neutral-200
     dark:border-neutral-800 rounded-xl border" data-highlighted-code><pre class="shiki shiki-themes min-light min-dark" style="--shiki-light:#24292eff;--shiki-dark:#b392f0;--shiki-light-bg:#ffffff;--shiki-dark-bg:#1f1f1f" tabindex="0"><code><span class="line"><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">type</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> ThemeColorStateTokens</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583"> =</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0"> {</span></span>
@@ -202,7 +336,28 @@ states.</p>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">  border</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">:</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF"> string</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">;</span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">  hover</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">:</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF"> string</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">;</span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">  active</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">:</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF"> string</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">;</span></span>
-<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">};</span></span></code></pre></div>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">};</span></span></code></pre></div> </div> <script>(function(){const id = "zgqcj9lh20p";
+const code = "type ThemeColorStateTokens = {\n  background: string;\n  text: string;\n  border: string;\n  hover: string;\n  active: string;\n};";
+
+  const copyBtn = document.querySelector(`#code-block-${id} [data-copy]`);
+  copyBtn?.addEventListener("click", async () => {
+    try {
+      const copyIcon = copyBtn.querySelector(".copy");
+      const checkmarkIcon = copyBtn.querySelector(".checkmark");
+      await navigator.clipboard.writeText(code);
+      copyIcon.classList.add("hidden");
+      checkmarkIcon.classList.remove("hidden");
+      copyBtn.disabled = true;
+      setTimeout(() => {
+        copyIcon.classList.remove("hidden");
+        checkmarkIcon.classList.add("hidden");
+        copyBtn.disabled = false;
+      }, 2000);
+    } catch (error) {
+      console.error("failed to copy to clipboard");
+    }
+  });
+})();</script>
 <p>Each property controls a specific part of the component.</p>
 <ul>
 <li><code>background</code> — Defines the background style of the component.</li>
@@ -212,7 +367,25 @@ states.</p>
 <li><code>active</code> — Defines the styles applied while the component is pressed or active. The value normally contains Tailwind <code>active:</code> utilities.</li>
 </ul>
 <h3 id="default-color-values">Default Color Values</h3>
-<div class="overflow-x-auto
+<div id="code-block-selxck6527l" class="relative"> <button type="button" data-copy class="absolute
+          top-3
+          z-10
+          ltr:right-3
+          rtl:left-3
+          rounded-md
+          bg-neutral-200
+          size-6
+          text-xl
+          grid
+          place-items-center
+          text-neutral-900
+          transition-colors
+          hover:bg-neutral-200/80
+          dark:bg-neutral-700/90
+          dark:text-white
+          dark:hover:bg-neutral-700
+          
+          "> <svg class="checkmark hidden " xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="m10 13.6l5.9-5.9q.275-.275.7-.275t.7.275t.275.7t-.275.7l-6.6 6.6q-.3.3-.7.3t-.7-.3l-2.6-2.6q-.275-.275-.275-.7t.275-.7t.7-.275t.7.275z"></path></svg> <svg class="copy " xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"></path><g fill="none" stroke="currentColor"><rect width="9" height="13" x="6.5" y="6.5" rx="1.5"></rect><path d="M8.5 6A1.5 1.5 0 0 1 10 4.5h6A1.5 1.5 0 0 1 17.5 6v10a1.5 1.5 0 0 1-1.5 1.5"></path></g></svg> </button> <div class="overflow-x-auto
     text-lg
     border-neutral-200
     dark:border-neutral-800 rounded-xl border" data-highlighted-code><pre class="shiki shiki-themes min-light min-dark" style="--shiki-light:#24292eff;--shiki-dark:#b392f0;--shiki-light-bg:#ffffff;--shiki-dark-bg:#1f1f1f" tabindex="0"><code><span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">colors</span><span style="--shiki-light:#212121;--shiki-dark:#BBBBBB">:</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0"> {</span></span>
@@ -370,14 +543,53 @@ states.</p>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">      active</span><span style="--shiki-light:#212121;--shiki-dark:#BBBBBB">:</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70"> "active:bg-red-100 dark:active:bg-red-900/80"</span><span style="--shiki-light:#212121;--shiki-dark:#BBBBBB">,</span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">    }</span><span style="--shiki-light:#212121;--shiki-dark:#BBBBBB">,</span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">  }</span><span style="--shiki-light:#212121;--shiki-dark:#BBBBBB">,</span></span>
-<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> <script>(function(){const id = "selxck6527l";
+const code = "colors: {\n  default: {\n    solid: {\n      background: \"bg-neutral-900 dark:bg-neutral-100\",\n      text: \"text-neutral-50 dark:text-neutral-950\",\n      border: \"border-transparent\",\n      hover: \"hover:bg-neutral-800 dark:hover:bg-neutral-200\",\n      active: \"active:bg-neutral-950 dark:active:bg-neutral-300\",\n    },\n    filled: {\n      background: \"bg-neutral-200/70 dark:bg-neutral-800\",\n      text: \"text-neutral-900 dark:text-neutral-100\",\n      border: \"border-transparent\",\n      hover: \"hover:bg-neutral-200 dark:hover:bg-neutral-700\",\n      active: \"active:bg-neutral-300 dark:active:bg-neutral-600\",\n    },\n    outlined: {\n      background: \"bg-transparent\",\n      text: \"text-neutral-800 dark:text-neutral-200\",\n      border: \"border-neutral-800 dark:border-neutral-200\",\n      hover: \"hover:bg-neutral-100 dark:hover:bg-neutral-800/80\",\n      active: \"active:bg-neutral-200/80 dark:active:bg-neutral-700/80\",\n    },\n    ghost: {\n      background: \"bg-transparent\",\n      text: \"text-neutral-800 dark:text-neutral-200\",\n      border: \"border-transparent\",\n      hover: \"hover:bg-neutral-100 dark:hover:bg-neutral-800/80\",\n      active: \"active:bg-neutral-200/80 dark:active:bg-neutral-700/80\",\n    },\n  },\n\n  success: {\n    solid: {\n      background: \"bg-emerald-600 dark:bg-emerald-500\",\n      text: \"text-white dark:text-neutral-950\",\n      border: \"border-transparent\",\n      hover: \"hover:bg-emerald-700 dark:hover:bg-emerald-400\",\n      active: \"active:bg-emerald-800 dark:active:bg-emerald-300\",\n    },\n    filled: {\n      background: \"bg-emerald-100 dark:bg-emerald-950/90\",\n      text: \"text-emerald-900 dark:text-emerald-200\",\n      border: \"border-transparent\",\n      hover: \"hover:bg-emerald-200/80 dark:hover:bg-emerald-900\",\n      active: \"active:bg-emerald-300/80 dark:active:bg-emerald-850\",\n    },\n    outlined: {\n      background: \"bg-transparent\",\n      text: \"text-emerald-800 dark:text-emerald-300\",\n      border: \"border-emerald-800 dark:border-emerald-300\",\n      hover: \"hover:bg-emerald-50 dark:hover:bg-emerald-950/60\",\n      active: \"active:bg-emerald-100 dark:active:bg-emerald-900/80\",\n    },\n    ghost: {\n      background: \"bg-transparent\",\n      text: \"text-emerald-800 dark:text-emerald-300\",\n      border: \"border-transparent\",\n      hover: \"hover:bg-emerald-50 dark:hover:bg-emerald-950/60\",\n      active: \"active:bg-emerald-100 dark:active:bg-emerald-900/80\",\n    },\n  },\n\n  warning: {\n    solid: {\n      background: \"bg-amber-500 dark:bg-amber-400\",\n      text: \"text-amber-950 dark:text-amber-950\",\n      border: \"border-transparent\",\n      hover: \"hover:bg-amber-600 dark:hover:bg-amber-300\",\n      active: \"active:bg-amber-700 dark:active:bg-amber-200\",\n    },\n    filled: {\n      background: \"bg-amber-100 dark:bg-amber-950/90\",\n      text: \"text-amber-950 dark:text-amber-200\",\n      border: \"border-transparent\",\n      hover: \"hover:bg-amber-200/80 dark:hover:bg-amber-900\",\n      active: \"active:bg-amber-300/80 dark:active:bg-amber-850\",\n    },\n    outlined: {\n      background: \"bg-transparent\",\n      text: \"text-amber-900 dark:text-amber-300\",\n      border: \"border-amber-900 dark:border-amber-300\",\n      hover: \"hover:bg-amber-50 dark:hover:bg-amber-950/60\",\n      active: \"active:bg-amber-100 dark:active:bg-amber-900/80\",\n    },\n    ghost: {\n      background: \"bg-transparent\",\n      text: \"text-amber-900 dark:text-amber-300\",\n      border: \"border-transparent\",\n      hover: \"hover:bg-amber-50 dark:hover:bg-amber-950/60\",\n      active: \"active:bg-amber-100 dark:active:bg-amber-900/80\",\n    },\n  },\n\n  info: {\n    solid: {\n      background: \"bg-blue-600 dark:bg-blue-500\",\n      text: \"text-white dark:text-neutral-950\",\n      border: \"border-transparent\",\n      hover: \"hover:bg-blue-700 dark:hover:bg-blue-400\",\n      active: \"active:bg-blue-800 dark:active:bg-blue-300\",\n    },\n    filled: {\n      background: \"bg-blue-100 dark:bg-blue-950/90\",\n      text: \"text-blue-950 dark:text-blue-200\",\n      border: \"border-transparent\",\n      hover: \"hover:bg-blue-200/80 dark:hover:bg-blue-900\",\n      active: \"active:bg-blue-300/80 dark:active:bg-blue-850\",\n    },\n    outlined: {\n      background: \"bg-transparent\",\n      text: \"text-blue-800 dark:text-blue-300\",\n      border: \"border-blue-800 dark:border-blue-300\",\n      hover: \"hover:bg-blue-50 dark:hover:bg-blue-950/60\",\n      active: \"active:bg-blue-100 dark:active:bg-blue-900/80\",\n    },\n    ghost: {\n      background: \"bg-transparent\",\n      text: \"text-blue-800 dark:text-blue-300\",\n      border: \"border-transparent\",\n      hover: \"hover:bg-blue-50 dark:hover:bg-blue-950/60\",\n      active: \"active:bg-blue-100 dark:active:bg-blue-900/80\",\n    },\n  },\n\n  error: {\n    solid: {\n      background: \"bg-red-600 dark:bg-red-500\",\n      text: \"text-white dark:text-neutral-950\",\n      border: \"border-transparent\",\n      hover: \"hover:bg-red-700 dark:hover:bg-red-400\",\n      active: \"active:bg-red-800 dark:active:bg-red-300\",\n    },\n    filled: {\n      background: \"bg-red-100 dark:bg-red-950/90\",\n      text: \"text-red-950 dark:text-red-200\",\n      border: \"border-transparent\",\n      hover: \"hover:bg-red-200/80 dark:hover:bg-red-900\",\n      active: \"active:bg-red-300/80 dark:active:bg-red-850\",\n    },\n    outlined: {\n      background: \"bg-transparent\",\n      text: \"text-red-800 dark:text-red-300\",\n      border: \"border-red-800 dark:border-red-300\",\n      hover: \"hover:bg-red-50 dark:hover:bg-red-950/60\",\n      active: \"active:bg-red-100 dark:active:bg-red-900/80\",\n    },\n    ghost: {\n      background: \"bg-transparent\",\n      text: \"text-red-800 dark:text-red-300\",\n      border: \"border-transparent\",\n      hover: \"hover:bg-red-50 dark:hover:bg-red-950/60\",\n      active: \"active:bg-red-100 dark:active:bg-red-900/80\",\n    },\n  },\n}";
+
+  const copyBtn = document.querySelector(`#code-block-${id} [data-copy]`);
+  copyBtn?.addEventListener("click", async () => {
+    try {
+      const copyIcon = copyBtn.querySelector(".copy");
+      const checkmarkIcon = copyBtn.querySelector(".checkmark");
+      await navigator.clipboard.writeText(code);
+      copyIcon.classList.add("hidden");
+      checkmarkIcon.classList.remove("hidden");
+      copyBtn.disabled = true;
+      setTimeout(() => {
+        copyIcon.classList.remove("hidden");
+        checkmarkIcon.classList.add("hidden");
+        copyBtn.disabled = false;
+      }, 2000);
+    } catch (error) {
+      console.error("failed to copy to clipboard");
+    }
+  });
+})();</script>
 <h2 id="disabled">Disabled</h2>
 <p>The <code>disabled</code> token group defines the visual appearance of components that
 cannot currently be interacted with.</p>
 <p>It controls the foreground, background, border, and interaction state of
 disabled components.</p>
 <h4 id="disabled-schema">Disabled Schema</h4>
-<div class="overflow-x-auto
+<div id="code-block-pb5aydeltpf" class="relative"> <button type="button" data-copy class="absolute
+          top-3
+          z-10
+          ltr:right-3
+          rtl:left-3
+          rounded-md
+          bg-neutral-200
+          size-6
+          text-xl
+          grid
+          place-items-center
+          text-neutral-900
+          transition-colors
+          hover:bg-neutral-200/80
+          dark:bg-neutral-700/90
+          dark:text-white
+          dark:hover:bg-neutral-700
+          
+          "> <svg class="checkmark hidden " xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="m10 13.6l5.9-5.9q.275-.275.7-.275t.7.275t.275.7t-.275.7l-6.6 6.6q-.3.3-.7.3t-.7-.3l-2.6-2.6q-.275-.275-.275-.7t.275-.7t.7-.275t.7.275z"></path></svg> <svg class="copy " xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"></path><g fill="none" stroke="currentColor"><rect width="9" height="13" x="6.5" y="6.5" rx="1.5"></rect><path d="M8.5 6A1.5 1.5 0 0 1 10 4.5h6A1.5 1.5 0 0 1 17.5 6v10a1.5 1.5 0 0 1-1.5 1.5"></path></g></svg> </button> <div class="overflow-x-auto
     text-lg
     border-neutral-200
     dark:border-neutral-800 rounded-xl border" data-highlighted-code><pre class="shiki shiki-themes min-light min-dark" style="--shiki-light:#24292eff;--shiki-dark:#b392f0;--shiki-light-bg:#ffffff;--shiki-dark-bg:#1f1f1f" tabindex="0"><code><span class="line"><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">type</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> ThemeDisabled</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583"> =</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0"> {</span></span>
@@ -385,7 +597,28 @@ disabled components.</p>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">  text</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">:</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF"> string</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">;</span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">  border</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">:</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF"> string</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">;</span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">  state</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">:</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF"> string</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">;</span></span>
-<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">};</span></span></code></pre></div>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">};</span></span></code></pre></div> </div> <script>(function(){const id = "pb5aydeltpf";
+const code = "type ThemeDisabled = {\n  background: string;\n  text: string;\n  border: string;\n  state: string;\n};";
+
+  const copyBtn = document.querySelector(`#code-block-${id} [data-copy]`);
+  copyBtn?.addEventListener("click", async () => {
+    try {
+      const copyIcon = copyBtn.querySelector(".copy");
+      const checkmarkIcon = copyBtn.querySelector(".checkmark");
+      await navigator.clipboard.writeText(code);
+      copyIcon.classList.add("hidden");
+      checkmarkIcon.classList.remove("hidden");
+      copyBtn.disabled = true;
+      setTimeout(() => {
+        copyIcon.classList.remove("hidden");
+        checkmarkIcon.classList.add("hidden");
+        copyBtn.disabled = false;
+      }, 2000);
+    } catch (error) {
+      console.error("failed to copy to clipboard");
+    }
+  });
+})();</script>
 <p>The four properties control different aspects of the disabled appearance.</p>
 <ul>
 <li><code>background</code> — Defines the background color of disabled components.</li>
@@ -394,7 +627,25 @@ disabled components.</p>
 <li><code>state</code> — Defines interaction-related styles for disabled components. This can include utilities for opacity, cursor behavior, and pointer events.</li>
 </ul>
 <h4 id="default-values">Default Values</h4>
-<div class="overflow-x-auto
+<div id="code-block-phxd4dmuqwb" class="relative"> <button type="button" data-copy class="absolute
+          top-3
+          z-10
+          ltr:right-3
+          rtl:left-3
+          rounded-md
+          bg-neutral-200
+          size-6
+          text-xl
+          grid
+          place-items-center
+          text-neutral-900
+          transition-colors
+          hover:bg-neutral-200/80
+          dark:bg-neutral-700/90
+          dark:text-white
+          dark:hover:bg-neutral-700
+          
+          "> <svg class="checkmark hidden " xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="m10 13.6l5.9-5.9q.275-.275.7-.275t.7.275t.275.7t-.275.7l-6.6 6.6q-.3.3-.7.3t-.7-.3l-2.6-2.6q-.275-.275-.275-.7t.275-.7t.7-.275t.7.275z"></path></svg> <svg class="copy " xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"></path><g fill="none" stroke="currentColor"><rect width="9" height="13" x="6.5" y="6.5" rx="1.5"></rect><path d="M8.5 6A1.5 1.5 0 0 1 10 4.5h6A1.5 1.5 0 0 1 17.5 6v10a1.5 1.5 0 0 1-1.5 1.5"></path></g></svg> </button> <div class="overflow-x-auto
     text-lg
     border-neutral-200
     dark:border-neutral-800 rounded-xl border" data-highlighted-code><pre class="shiki shiki-themes min-light min-dark" style="--shiki-light:#24292eff;--shiki-dark:#b392f0;--shiki-light-bg:#ffffff;--shiki-dark-bg:#1f1f1f" tabindex="0"><code><span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">disabled</span><span style="--shiki-light:#212121;--shiki-dark:#BBBBBB">:</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0"> {</span></span>
@@ -402,7 +653,28 @@ disabled components.</p>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">  background</span><span style="--shiki-light:#212121;--shiki-dark:#BBBBBB">:</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70"> "bg-neutral-100 dark:bg-neutral-800"</span><span style="--shiki-light:#212121;--shiki-dark:#BBBBBB">,</span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">  border</span><span style="--shiki-light:#212121;--shiki-dark:#BBBBBB">:</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70"> "border-neutral-200 dark:border-neutral-800"</span><span style="--shiki-light:#212121;--shiki-dark:#BBBBBB">,</span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">  state</span><span style="--shiki-light:#212121;--shiki-dark:#BBBBBB">:</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70"> "opacity-50 cursor-not-allowed pointer-events-none"</span><span style="--shiki-light:#212121;--shiki-dark:#BBBBBB">,</span></span>
-<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> <script>(function(){const id = "phxd4dmuqwb";
+const code = "disabled: {\n  text: \"text-neutral-400 dark:text-neutral-600\",\n  background: \"bg-neutral-100 dark:bg-neutral-800\",\n  border: \"border-neutral-200 dark:border-neutral-800\",\n  state: \"opacity-50 cursor-not-allowed pointer-events-none\",\n}";
+
+  const copyBtn = document.querySelector(`#code-block-${id} [data-copy]`);
+  copyBtn?.addEventListener("click", async () => {
+    try {
+      const copyIcon = copyBtn.querySelector(".copy");
+      const checkmarkIcon = copyBtn.querySelector(".checkmark");
+      await navigator.clipboard.writeText(code);
+      copyIcon.classList.add("hidden");
+      checkmarkIcon.classList.remove("hidden");
+      copyBtn.disabled = true;
+      setTimeout(() => {
+        copyIcon.classList.remove("hidden");
+        checkmarkIcon.classList.add("hidden");
+        copyBtn.disabled = false;
+      }, 2000);
+    } catch (error) {
+      console.error("failed to copy to clipboard");
+    }
+  });
+})();</script>
 <h2 id="divider">Divider</h2>
 <p>The <code>divider</code> token defines the visual style used for separators between
 content or sections.</p>
@@ -410,16 +682,94 @@ content or sections.</p>
 component applies the token.</p>
 <h4 id="divider-schema">Divider Schema</h4>
 <p>The <code>divider</code> token is part of the <code>Theme</code> type.</p>
-<div class="overflow-x-auto
+<div id="code-block-vy0hdwzrydh" class="relative"> <button type="button" data-copy class="absolute
+          top-3
+          z-10
+          ltr:right-3
+          rtl:left-3
+          rounded-md
+          bg-neutral-200
+          size-6
+          text-xl
+          grid
+          place-items-center
+          text-neutral-900
+          transition-colors
+          hover:bg-neutral-200/80
+          dark:bg-neutral-700/90
+          dark:text-white
+          dark:hover:bg-neutral-700
+          top-[50%] -translate-y-[50%]
+          "> <svg class="checkmark hidden " xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="m10 13.6l5.9-5.9q.275-.275.7-.275t.7.275t.275.7t-.275.7l-6.6 6.6q-.3.3-.7.3t-.7-.3l-2.6-2.6q-.275-.275-.275-.7t.275-.7t.7-.275t.7.275z"></path></svg> <svg class="copy " xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"></path><g fill="none" stroke="currentColor"><rect width="9" height="13" x="6.5" y="6.5" rx="1.5"></rect><path d="M8.5 6A1.5 1.5 0 0 1 10 4.5h6A1.5 1.5 0 0 1 17.5 6v10a1.5 1.5 0 0 1-1.5 1.5"></path></g></svg> </button> <div class="overflow-x-auto
     text-lg
     border-neutral-200
-    dark:border-neutral-800 rounded-xl border" data-highlighted-code><pre class="shiki shiki-themes min-light min-dark" style="--shiki-light:#24292eff;--shiki-dark:#b392f0;--shiki-light-bg:#ffffff;--shiki-dark-bg:#1f1f1f" tabindex="0"><code><span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">divider</span><span style="--shiki-light:#212121;--shiki-dark:#BBBBBB">:</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0"> string;</span></span></code></pre></div>
+    dark:border-neutral-800 rounded-xl border" data-highlighted-code><pre class="shiki shiki-themes min-light min-dark" style="--shiki-light:#24292eff;--shiki-dark:#b392f0;--shiki-light-bg:#ffffff;--shiki-dark-bg:#1f1f1f" tabindex="0"><code><span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">divider</span><span style="--shiki-light:#212121;--shiki-dark:#BBBBBB">:</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0"> string;</span></span></code></pre></div> </div> <script>(function(){const id = "vy0hdwzrydh";
+const code = "divider: string;";
+
+  const copyBtn = document.querySelector(`#code-block-${id} [data-copy]`);
+  copyBtn?.addEventListener("click", async () => {
+    try {
+      const copyIcon = copyBtn.querySelector(".copy");
+      const checkmarkIcon = copyBtn.querySelector(".checkmark");
+      await navigator.clipboard.writeText(code);
+      copyIcon.classList.add("hidden");
+      checkmarkIcon.classList.remove("hidden");
+      copyBtn.disabled = true;
+      setTimeout(() => {
+        copyIcon.classList.remove("hidden");
+        checkmarkIcon.classList.add("hidden");
+        copyBtn.disabled = false;
+      }, 2000);
+    } catch (error) {
+      console.error("failed to copy to clipboard");
+    }
+  });
+})();</script>
 <p>The <code>divider</code> token itself is a Tailwind CSS class string.</p>
 <h4 id="default-value">Default Value</h4>
-<div class="overflow-x-auto
+<div id="code-block-yykgmdtck3a" class="relative"> <button type="button" data-copy class="absolute
+          top-3
+          z-10
+          ltr:right-3
+          rtl:left-3
+          rounded-md
+          bg-neutral-200
+          size-6
+          text-xl
+          grid
+          place-items-center
+          text-neutral-900
+          transition-colors
+          hover:bg-neutral-200/80
+          dark:bg-neutral-700/90
+          dark:text-white
+          dark:hover:bg-neutral-700
+          top-[50%] -translate-y-[50%]
+          "> <svg class="checkmark hidden " xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="m10 13.6l5.9-5.9q.275-.275.7-.275t.7.275t.275.7t-.275.7l-6.6 6.6q-.3.3-.7.3t-.7-.3l-2.6-2.6q-.275-.275-.275-.7t.275-.7t.7-.275t.7.275z"></path></svg> <svg class="copy " xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"></path><g fill="none" stroke="currentColor"><rect width="9" height="13" x="6.5" y="6.5" rx="1.5"></rect><path d="M8.5 6A1.5 1.5 0 0 1 10 4.5h6A1.5 1.5 0 0 1 17.5 6v10a1.5 1.5 0 0 1-1.5 1.5"></path></g></svg> </button> <div class="overflow-x-auto
     text-lg
     border-neutral-200
-    dark:border-neutral-800 rounded-xl border" data-highlighted-code><pre class="shiki shiki-themes min-light min-dark" style="--shiki-light:#24292eff;--shiki-dark:#b392f0;--shiki-light-bg:#ffffff;--shiki-dark-bg:#1f1f1f" tabindex="0"><code><span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">divider</span><span style="--shiki-light:#212121;--shiki-dark:#BBBBBB">:</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70"> "border-neutral-300 dark:border-neutral-700"</span></span></code></pre></div>
+    dark:border-neutral-800 rounded-xl border" data-highlighted-code><pre class="shiki shiki-themes min-light min-dark" style="--shiki-light:#24292eff;--shiki-dark:#b392f0;--shiki-light-bg:#ffffff;--shiki-dark-bg:#1f1f1f" tabindex="0"><code><span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">divider</span><span style="--shiki-light:#212121;--shiki-dark:#BBBBBB">:</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70"> "border-neutral-300 dark:border-neutral-700"</span></span></code></pre></div> </div> <script>(function(){const id = "yykgmdtck3a";
+const code = "divider: \"border-neutral-300 dark:border-neutral-700\"";
+
+  const copyBtn = document.querySelector(`#code-block-${id} [data-copy]`);
+  copyBtn?.addEventListener("click", async () => {
+    try {
+      const copyIcon = copyBtn.querySelector(".copy");
+      const checkmarkIcon = copyBtn.querySelector(".checkmark");
+      await navigator.clipboard.writeText(code);
+      copyIcon.classList.add("hidden");
+      checkmarkIcon.classList.remove("hidden");
+      copyBtn.disabled = true;
+      setTimeout(() => {
+        copyIcon.classList.remove("hidden");
+        checkmarkIcon.classList.add("hidden");
+        copyBtn.disabled = false;
+      }, 2000);
+    } catch (error) {
+      console.error("failed to copy to clipboard");
+    }
+  });
+})();</script>
 <h2 id="focus">Focus</h2>
 <p>The <code>focus</code> token defines the visual treatment applied when an interactive
 element receives focus.</p>
@@ -427,15 +777,93 @@ element receives focus.</p>
 the currently focused element visible.</p>
 <h4 id="focus-schema">Focus Schema</h4>
 <p>The <code>focus</code> token is part of the <code>Theme</code> type.</p>
-<div class="overflow-x-auto
+<div id="code-block-2mguw6qjpic" class="relative"> <button type="button" data-copy class="absolute
+          top-3
+          z-10
+          ltr:right-3
+          rtl:left-3
+          rounded-md
+          bg-neutral-200
+          size-6
+          text-xl
+          grid
+          place-items-center
+          text-neutral-900
+          transition-colors
+          hover:bg-neutral-200/80
+          dark:bg-neutral-700/90
+          dark:text-white
+          dark:hover:bg-neutral-700
+          top-[50%] -translate-y-[50%]
+          "> <svg class="checkmark hidden " xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="m10 13.6l5.9-5.9q.275-.275.7-.275t.7.275t.275.7t-.275.7l-6.6 6.6q-.3.3-.7.3t-.7-.3l-2.6-2.6q-.275-.275-.275-.7t.275-.7t.7-.275t.7.275z"></path></svg> <svg class="copy " xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"></path><g fill="none" stroke="currentColor"><rect width="9" height="13" x="6.5" y="6.5" rx="1.5"></rect><path d="M8.5 6A1.5 1.5 0 0 1 10 4.5h6A1.5 1.5 0 0 1 17.5 6v10a1.5 1.5 0 0 1-1.5 1.5"></path></g></svg> </button> <div class="overflow-x-auto
     text-lg
     border-neutral-200
-    dark:border-neutral-800 rounded-xl border" data-highlighted-code><pre class="shiki shiki-themes min-light min-dark" style="--shiki-light:#24292eff;--shiki-dark:#b392f0;--shiki-light-bg:#ffffff;--shiki-dark-bg:#1f1f1f" tabindex="0"><code><span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">focus</span><span style="--shiki-light:#212121;--shiki-dark:#BBBBBB">:</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0"> string;</span></span></code></pre></div>
+    dark:border-neutral-800 rounded-xl border" data-highlighted-code><pre class="shiki shiki-themes min-light min-dark" style="--shiki-light:#24292eff;--shiki-dark:#b392f0;--shiki-light-bg:#ffffff;--shiki-dark-bg:#1f1f1f" tabindex="0"><code><span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">focus</span><span style="--shiki-light:#212121;--shiki-dark:#BBBBBB">:</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0"> string;</span></span></code></pre></div> </div> <script>(function(){const id = "2mguw6qjpic";
+const code = "focus: string;";
+
+  const copyBtn = document.querySelector(`#code-block-${id} [data-copy]`);
+  copyBtn?.addEventListener("click", async () => {
+    try {
+      const copyIcon = copyBtn.querySelector(".copy");
+      const checkmarkIcon = copyBtn.querySelector(".checkmark");
+      await navigator.clipboard.writeText(code);
+      copyIcon.classList.add("hidden");
+      checkmarkIcon.classList.remove("hidden");
+      copyBtn.disabled = true;
+      setTimeout(() => {
+        copyIcon.classList.remove("hidden");
+        checkmarkIcon.classList.add("hidden");
+        copyBtn.disabled = false;
+      }, 2000);
+    } catch (error) {
+      console.error("failed to copy to clipboard");
+    }
+  });
+})();</script>
 <h4 id="default-value-1">Default Value</h4>
-<div class="overflow-x-auto
+<div id="code-block-861xl7of4b" class="relative"> <button type="button" data-copy class="absolute
+          top-3
+          z-10
+          ltr:right-3
+          rtl:left-3
+          rounded-md
+          bg-neutral-200
+          size-6
+          text-xl
+          grid
+          place-items-center
+          text-neutral-900
+          transition-colors
+          hover:bg-neutral-200/80
+          dark:bg-neutral-700/90
+          dark:text-white
+          dark:hover:bg-neutral-700
+          top-[50%] -translate-y-[50%]
+          "> <svg class="checkmark hidden " xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="m10 13.6l5.9-5.9q.275-.275.7-.275t.7.275t.275.7t-.275.7l-6.6 6.6q-.3.3-.7.3t-.7-.3l-2.6-2.6q-.275-.275-.275-.7t.275-.7t.7-.275t.7.275z"></path></svg> <svg class="copy " xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"></path><g fill="none" stroke="currentColor"><rect width="9" height="13" x="6.5" y="6.5" rx="1.5"></rect><path d="M8.5 6A1.5 1.5 0 0 1 10 4.5h6A1.5 1.5 0 0 1 17.5 6v10a1.5 1.5 0 0 1-1.5 1.5"></path></g></svg> </button> <div class="overflow-x-auto
     text-lg
     border-neutral-200
-    dark:border-neutral-800 rounded-xl border" data-highlighted-code><pre class="shiki shiki-themes min-light min-dark" style="--shiki-light:#24292eff;--shiki-dark:#b392f0;--shiki-light-bg:#ffffff;--shiki-dark-bg:#1f1f1f" tabindex="0"><code><span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">focus</span><span style="--shiki-light:#212121;--shiki-dark:#BBBBBB">:</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70"> "focus-visible:outline-none focus-visible:shadow-[0_0_0_1px_#2563eb,0_0_0_4px_rgba(37,99,235,0.35)] dark:focus-visible:shadow-[0_0_0_1px_#60a5fa,0_0_0_4px_rgba(96,165,250,0.35)]"</span></span></code></pre></div>
+    dark:border-neutral-800 rounded-xl border" data-highlighted-code><pre class="shiki shiki-themes min-light min-dark" style="--shiki-light:#24292eff;--shiki-dark:#b392f0;--shiki-light-bg:#ffffff;--shiki-dark-bg:#1f1f1f" tabindex="0"><code><span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">focus</span><span style="--shiki-light:#212121;--shiki-dark:#BBBBBB">:</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70"> "focus-visible:outline-none focus-visible:shadow-[0_0_0_1px_#2563eb,0_0_0_4px_rgba(37,99,235,0.35)] dark:focus-visible:shadow-[0_0_0_1px_#60a5fa,0_0_0_4px_rgba(96,165,250,0.35)]"</span></span></code></pre></div> </div> <script>(function(){const id = "861xl7of4b";
+const code = "focus: \"focus-visible:outline-none focus-visible:shadow-[0_0_0_1px_#2563eb,0_0_0_4px_rgba(37,99,235,0.35)] dark:focus-visible:shadow-[0_0_0_1px_#60a5fa,0_0_0_4px_rgba(96,165,250,0.35)]\"";
+
+  const copyBtn = document.querySelector(`#code-block-${id} [data-copy]`);
+  copyBtn?.addEventListener("click", async () => {
+    try {
+      const copyIcon = copyBtn.querySelector(".copy");
+      const checkmarkIcon = copyBtn.querySelector(".checkmark");
+      await navigator.clipboard.writeText(code);
+      copyIcon.classList.add("hidden");
+      checkmarkIcon.classList.remove("hidden");
+      copyBtn.disabled = true;
+      setTimeout(() => {
+        copyIcon.classList.remove("hidden");
+        checkmarkIcon.classList.add("hidden");
+        copyBtn.disabled = false;
+      }, 2000);
+    } catch (error) {
+      console.error("failed to copy to clipboard");
+    }
+  });
+})();</script>
 <h2 id="focus-within">Focus Within</h2>
 <p>The <code>focusWithin</code> token defines the visual treatment applied when an element
 or one of its descendants receives focus.</p>
@@ -443,15 +871,93 @@ or one of its descendants receives focus.</p>
 container but the visual focus indication should appear on the container.</p>
 <h4 id="focus-within-schema">Focus Within Schema</h4>
 <p>The <code>focusWithin</code> token is part of the <code>Theme</code> type.</p>
-<div class="overflow-x-auto
+<div id="code-block-489it8grkya" class="relative"> <button type="button" data-copy class="absolute
+          top-3
+          z-10
+          ltr:right-3
+          rtl:left-3
+          rounded-md
+          bg-neutral-200
+          size-6
+          text-xl
+          grid
+          place-items-center
+          text-neutral-900
+          transition-colors
+          hover:bg-neutral-200/80
+          dark:bg-neutral-700/90
+          dark:text-white
+          dark:hover:bg-neutral-700
+          top-[50%] -translate-y-[50%]
+          "> <svg class="checkmark hidden " xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="m10 13.6l5.9-5.9q.275-.275.7-.275t.7.275t.275.7t-.275.7l-6.6 6.6q-.3.3-.7.3t-.7-.3l-2.6-2.6q-.275-.275-.275-.7t.275-.7t.7-.275t.7.275z"></path></svg> <svg class="copy " xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"></path><g fill="none" stroke="currentColor"><rect width="9" height="13" x="6.5" y="6.5" rx="1.5"></rect><path d="M8.5 6A1.5 1.5 0 0 1 10 4.5h6A1.5 1.5 0 0 1 17.5 6v10a1.5 1.5 0 0 1-1.5 1.5"></path></g></svg> </button> <div class="overflow-x-auto
     text-lg
     border-neutral-200
-    dark:border-neutral-800 rounded-xl border" data-highlighted-code><pre class="shiki shiki-themes min-light min-dark" style="--shiki-light:#24292eff;--shiki-dark:#b392f0;--shiki-light-bg:#ffffff;--shiki-dark-bg:#1f1f1f" tabindex="0"><code><span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">focusWithin</span><span style="--shiki-light:#212121;--shiki-dark:#BBBBBB">:</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0"> string;</span></span></code></pre></div>
+    dark:border-neutral-800 rounded-xl border" data-highlighted-code><pre class="shiki shiki-themes min-light min-dark" style="--shiki-light:#24292eff;--shiki-dark:#b392f0;--shiki-light-bg:#ffffff;--shiki-dark-bg:#1f1f1f" tabindex="0"><code><span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">focusWithin</span><span style="--shiki-light:#212121;--shiki-dark:#BBBBBB">:</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0"> string;</span></span></code></pre></div> </div> <script>(function(){const id = "489it8grkya";
+const code = "focusWithin: string;";
+
+  const copyBtn = document.querySelector(`#code-block-${id} [data-copy]`);
+  copyBtn?.addEventListener("click", async () => {
+    try {
+      const copyIcon = copyBtn.querySelector(".copy");
+      const checkmarkIcon = copyBtn.querySelector(".checkmark");
+      await navigator.clipboard.writeText(code);
+      copyIcon.classList.add("hidden");
+      checkmarkIcon.classList.remove("hidden");
+      copyBtn.disabled = true;
+      setTimeout(() => {
+        copyIcon.classList.remove("hidden");
+        checkmarkIcon.classList.add("hidden");
+        copyBtn.disabled = false;
+      }, 2000);
+    } catch (error) {
+      console.error("failed to copy to clipboard");
+    }
+  });
+})();</script>
 <h3 id="default-value-2">Default Value</h3>
-<div class="overflow-x-auto
+<div id="code-block-wzar2i2rca" class="relative"> <button type="button" data-copy class="absolute
+          top-3
+          z-10
+          ltr:right-3
+          rtl:left-3
+          rounded-md
+          bg-neutral-200
+          size-6
+          text-xl
+          grid
+          place-items-center
+          text-neutral-900
+          transition-colors
+          hover:bg-neutral-200/80
+          dark:bg-neutral-700/90
+          dark:text-white
+          dark:hover:bg-neutral-700
+          top-[50%] -translate-y-[50%]
+          "> <svg class="checkmark hidden " xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="m10 13.6l5.9-5.9q.275-.275.7-.275t.7.275t.275.7t-.275.7l-6.6 6.6q-.3.3-.7.3t-.7-.3l-2.6-2.6q-.275-.275-.275-.7t.275-.7t.7-.275t.7.275z"></path></svg> <svg class="copy " xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"></path><g fill="none" stroke="currentColor"><rect width="9" height="13" x="6.5" y="6.5" rx="1.5"></rect><path d="M8.5 6A1.5 1.5 0 0 1 10 4.5h6A1.5 1.5 0 0 1 17.5 6v10a1.5 1.5 0 0 1-1.5 1.5"></path></g></svg> </button> <div class="overflow-x-auto
     text-lg
     border-neutral-200
-    dark:border-neutral-800 rounded-xl border" data-highlighted-code><pre class="shiki shiki-themes min-light min-dark" style="--shiki-light:#24292eff;--shiki-dark:#b392f0;--shiki-light-bg:#ffffff;--shiki-dark-bg:#1f1f1f" tabindex="0"><code><span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">focusWithin</span><span style="--shiki-light:#212121;--shiki-dark:#BBBBBB">:</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70"> "focus-within:shadow-[0_0_0_1px_#2563eb,0_0_0_4px_rgba(37,99,235,0.35)] dark:focus-within:shadow-[0_0_0_1px_#60a5fa,0_0_0_4px_rgba(96,165,250,0.35)]"</span></span></code></pre></div>
+    dark:border-neutral-800 rounded-xl border" data-highlighted-code><pre class="shiki shiki-themes min-light min-dark" style="--shiki-light:#24292eff;--shiki-dark:#b392f0;--shiki-light-bg:#ffffff;--shiki-dark-bg:#1f1f1f" tabindex="0"><code><span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">focusWithin</span><span style="--shiki-light:#212121;--shiki-dark:#BBBBBB">:</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70"> "focus-within:shadow-[0_0_0_1px_#2563eb,0_0_0_4px_rgba(37,99,235,0.35)] dark:focus-within:shadow-[0_0_0_1px_#60a5fa,0_0_0_4px_rgba(96,165,250,0.35)]"</span></span></code></pre></div> </div> <script>(function(){const id = "wzar2i2rca";
+const code = "focusWithin: \"focus-within:shadow-[0_0_0_1px_#2563eb,0_0_0_4px_rgba(37,99,235,0.35)] dark:focus-within:shadow-[0_0_0_1px_#60a5fa,0_0_0_4px_rgba(96,165,250,0.35)]\"";
+
+  const copyBtn = document.querySelector(`#code-block-${id} [data-copy]`);
+  copyBtn?.addEventListener("click", async () => {
+    try {
+      const copyIcon = copyBtn.querySelector(".copy");
+      const checkmarkIcon = copyBtn.querySelector(".checkmark");
+      await navigator.clipboard.writeText(code);
+      copyIcon.classList.add("hidden");
+      checkmarkIcon.classList.remove("hidden");
+      copyBtn.disabled = true;
+      setTimeout(() => {
+        copyIcon.classList.remove("hidden");
+        checkmarkIcon.classList.add("hidden");
+        copyBtn.disabled = false;
+      }, 2000);
+    } catch (error) {
+      console.error("failed to copy to clipboard");
+    }
+  });
+})();</script>
 <h2 id="rounded">Rounded</h2>
 <p>The <code>rounded</code> token group defines the border-radius scale used throughout the
 component library.</p>
@@ -466,7 +972,25 @@ of defining their own radius styles.</p>
 <li><code>full</code> — Fully rounded shape.</li>
 </ul>
 <h4 id="rounded-schema">Rounded Schema</h4>
-<div class="overflow-x-auto
+<div id="code-block-xus1iz2t1e7" class="relative"> <button type="button" data-copy class="absolute
+          top-3
+          z-10
+          ltr:right-3
+          rtl:left-3
+          rounded-md
+          bg-neutral-200
+          size-6
+          text-xl
+          grid
+          place-items-center
+          text-neutral-900
+          transition-colors
+          hover:bg-neutral-200/80
+          dark:bg-neutral-700/90
+          dark:text-white
+          dark:hover:bg-neutral-700
+          
+          "> <svg class="checkmark hidden " xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="m10 13.6l5.9-5.9q.275-.275.7-.275t.7.275t.275.7t-.275.7l-6.6 6.6q-.3.3-.7.3t-.7-.3l-2.6-2.6q-.275-.275-.275-.7t.275-.7t.7-.275t.7.275z"></path></svg> <svg class="copy " xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"></path><g fill="none" stroke="currentColor"><rect width="9" height="13" x="6.5" y="6.5" rx="1.5"></rect><path d="M8.5 6A1.5 1.5 0 0 1 10 4.5h6A1.5 1.5 0 0 1 17.5 6v10a1.5 1.5 0 0 1-1.5 1.5"></path></g></svg> </button> <div class="overflow-x-auto
     text-lg
     border-neutral-200
     dark:border-neutral-800 rounded-xl border" data-highlighted-code><pre class="shiki shiki-themes min-light min-dark" style="--shiki-light:#24292eff;--shiki-dark:#b392f0;--shiki-light-bg:#ffffff;--shiki-dark-bg:#1f1f1f" tabindex="0"><code><span class="line"><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">type</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> ThemeRounded</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583"> =</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0"> {</span></span>
@@ -475,9 +999,48 @@ of defining their own radius styles.</p>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">  medium</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">:</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF"> string</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">;</span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">  large</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">:</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF"> string</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">;</span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">  full</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">:</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF"> string</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">;</span></span>
-<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">};</span></span></code></pre></div>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">};</span></span></code></pre></div> </div> <script>(function(){const id = "xus1iz2t1e7";
+const code = "type ThemeRounded = {\n  none: string;\n  small: string;\n  medium: string;\n  large: string;\n  full: string;\n};";
+
+  const copyBtn = document.querySelector(`#code-block-${id} [data-copy]`);
+  copyBtn?.addEventListener("click", async () => {
+    try {
+      const copyIcon = copyBtn.querySelector(".copy");
+      const checkmarkIcon = copyBtn.querySelector(".checkmark");
+      await navigator.clipboard.writeText(code);
+      copyIcon.classList.add("hidden");
+      checkmarkIcon.classList.remove("hidden");
+      copyBtn.disabled = true;
+      setTimeout(() => {
+        copyIcon.classList.remove("hidden");
+        checkmarkIcon.classList.add("hidden");
+        copyBtn.disabled = false;
+      }, 2000);
+    } catch (error) {
+      console.error("failed to copy to clipboard");
+    }
+  });
+})();</script>
 <h4 id="default-values-1">Default Values</h4>
-<div class="overflow-x-auto
+<div id="code-block-ifgv4ozhzss" class="relative"> <button type="button" data-copy class="absolute
+          top-3
+          z-10
+          ltr:right-3
+          rtl:left-3
+          rounded-md
+          bg-neutral-200
+          size-6
+          text-xl
+          grid
+          place-items-center
+          text-neutral-900
+          transition-colors
+          hover:bg-neutral-200/80
+          dark:bg-neutral-700/90
+          dark:text-white
+          dark:hover:bg-neutral-700
+          
+          "> <svg class="checkmark hidden " xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="m10 13.6l5.9-5.9q.275-.275.7-.275t.7.275t.275.7t-.275.7l-6.6 6.6q-.3.3-.7.3t-.7-.3l-2.6-2.6q-.275-.275-.275-.7t.275-.7t.7-.275t.7.275z"></path></svg> <svg class="copy " xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"></path><g fill="none" stroke="currentColor"><rect width="9" height="13" x="6.5" y="6.5" rx="1.5"></rect><path d="M8.5 6A1.5 1.5 0 0 1 10 4.5h6A1.5 1.5 0 0 1 17.5 6v10a1.5 1.5 0 0 1-1.5 1.5"></path></g></svg> </button> <div class="overflow-x-auto
     text-lg
     border-neutral-200
     dark:border-neutral-800 rounded-xl border" data-highlighted-code><pre class="shiki shiki-themes min-light min-dark" style="--shiki-light:#24292eff;--shiki-dark:#b392f0;--shiki-light-bg:#ffffff;--shiki-dark-bg:#1f1f1f" tabindex="0"><code><span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">rounded</span><span style="--shiki-light:#212121;--shiki-dark:#BBBBBB">:</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0"> {</span></span>
@@ -486,7 +1049,28 @@ of defining their own radius styles.</p>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">  medium</span><span style="--shiki-light:#212121;--shiki-dark:#BBBBBB">:</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70"> "rounded-md"</span><span style="--shiki-light:#212121;--shiki-dark:#BBBBBB">,</span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">  large</span><span style="--shiki-light:#212121;--shiki-dark:#BBBBBB">:</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70"> "rounded-lg"</span><span style="--shiki-light:#212121;--shiki-dark:#BBBBBB">,</span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">  full</span><span style="--shiki-light:#212121;--shiki-dark:#BBBBBB">:</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70"> "rounded-full"</span><span style="--shiki-light:#212121;--shiki-dark:#BBBBBB">,</span></span>
-<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> <script>(function(){const id = "ifgv4ozhzss";
+const code = "rounded: {\n  none: \"rounded-none\",\n  small: \"rounded-sm\",\n  medium: \"rounded-md\",\n  large: \"rounded-lg\",\n  full: \"rounded-full\",\n}";
+
+  const copyBtn = document.querySelector(`#code-block-${id} [data-copy]`);
+  copyBtn?.addEventListener("click", async () => {
+    try {
+      const copyIcon = copyBtn.querySelector(".copy");
+      const checkmarkIcon = copyBtn.querySelector(".checkmark");
+      await navigator.clipboard.writeText(code);
+      copyIcon.classList.add("hidden");
+      checkmarkIcon.classList.remove("hidden");
+      copyBtn.disabled = true;
+      setTimeout(() => {
+        copyIcon.classList.remove("hidden");
+        checkmarkIcon.classList.add("hidden");
+        copyBtn.disabled = false;
+      }, 2000);
+    } catch (error) {
+      console.error("failed to copy to clipboard");
+    }
+  });
+})();</script>
 <h2 id="typography">Typography</h2>
 <p>The <code>typography</code> token group defines the text styles used throughout the
 component library.</p>
@@ -502,7 +1086,25 @@ different text colors.</p>
 <p><code>variants</code> is a group of predefined typography styles.</p>
 <p>It provides styles for headings, body text, and code.</p>
 <h4 id="typography-variants-schema">Typography Variants Schema</h4>
-<div class="overflow-x-auto
+<div id="code-block-14mbo77mm7o" class="relative"> <button type="button" data-copy class="absolute
+          top-3
+          z-10
+          ltr:right-3
+          rtl:left-3
+          rounded-md
+          bg-neutral-200
+          size-6
+          text-xl
+          grid
+          place-items-center
+          text-neutral-900
+          transition-colors
+          hover:bg-neutral-200/80
+          dark:bg-neutral-700/90
+          dark:text-white
+          dark:hover:bg-neutral-700
+          
+          "> <svg class="checkmark hidden " xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="m10 13.6l5.9-5.9q.275-.275.7-.275t.7.275t.275.7t-.275.7l-6.6 6.6q-.3.3-.7.3t-.7-.3l-2.6-2.6q-.275-.275-.275-.7t.275-.7t.7-.275t.7.275z"></path></svg> <svg class="copy " xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"></path><g fill="none" stroke="currentColor"><rect width="9" height="13" x="6.5" y="6.5" rx="1.5"></rect><path d="M8.5 6A1.5 1.5 0 0 1 10 4.5h6A1.5 1.5 0 0 1 17.5 6v10a1.5 1.5 0 0 1-1.5 1.5"></path></g></svg> </button> <div class="overflow-x-auto
     text-lg
     border-neutral-200
     dark:border-neutral-800 rounded-xl border" data-highlighted-code><pre class="shiki shiki-themes min-light min-dark" style="--shiki-light:#24292eff;--shiki-dark:#b392f0;--shiki-light-bg:#ffffff;--shiki-dark-bg:#1f1f1f" tabindex="0"><code><span class="line"><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">type</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> ThemeTypographyVariants</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583"> =</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0"> {</span></span>
@@ -516,7 +1118,28 @@ different text colors.</p>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">  body2</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">:</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF"> string</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">;</span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">  code</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">:</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF"> string</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">;</span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">  inherit</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">:</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF"> string</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">;</span></span>
-<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">};</span></span></code></pre></div>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">};</span></span></code></pre></div> </div> <script>(function(){const id = "14mbo77mm7o";
+const code = "type ThemeTypographyVariants = {\n  h1: string;\n  h2: string;\n  h3: string;\n  h4: string;\n  h5: string;\n  h6: string;\n  body1: string;\n  body2: string;\n  code: string;\n  inherit: string;\n};";
+
+  const copyBtn = document.querySelector(`#code-block-${id} [data-copy]`);
+  copyBtn?.addEventListener("click", async () => {
+    try {
+      const copyIcon = copyBtn.querySelector(".copy");
+      const checkmarkIcon = copyBtn.querySelector(".checkmark");
+      await navigator.clipboard.writeText(code);
+      copyIcon.classList.add("hidden");
+      checkmarkIcon.classList.remove("hidden");
+      copyBtn.disabled = true;
+      setTimeout(() => {
+        copyIcon.classList.remove("hidden");
+        checkmarkIcon.classList.add("hidden");
+        copyBtn.disabled = false;
+      }, 2000);
+    } catch (error) {
+      console.error("failed to copy to clipboard");
+    }
+  });
+})();</script>
 <p>Each value is a Tailwind CSS class string.</p>
 <ul>
 <li><code>h1</code> — The largest heading style, intended for primary page or section headings.</li>
@@ -540,25 +1163,121 @@ different text colors.</p>
 <li><code>textTertiary</code> — Lowest emphasis.</li>
 </ul>
 <h3 id="typography-colors-schema">Typography Colors Schema</h3>
-<div class="overflow-x-auto
+<div id="code-block-89bdj85apgj" class="relative"> <button type="button" data-copy class="absolute
+          top-3
+          z-10
+          ltr:right-3
+          rtl:left-3
+          rounded-md
+          bg-neutral-200
+          size-6
+          text-xl
+          grid
+          place-items-center
+          text-neutral-900
+          transition-colors
+          hover:bg-neutral-200/80
+          dark:bg-neutral-700/90
+          dark:text-white
+          dark:hover:bg-neutral-700
+          
+          "> <svg class="checkmark hidden " xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="m10 13.6l5.9-5.9q.275-.275.7-.275t.7.275t.275.7t-.275.7l-6.6 6.6q-.3.3-.7.3t-.7-.3l-2.6-2.6q-.275-.275-.275-.7t.275-.7t.7-.275t.7.275z"></path></svg> <svg class="copy " xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"></path><g fill="none" stroke="currentColor"><rect width="9" height="13" x="6.5" y="6.5" rx="1.5"></rect><path d="M8.5 6A1.5 1.5 0 0 1 10 4.5h6A1.5 1.5 0 0 1 17.5 6v10a1.5 1.5 0 0 1-1.5 1.5"></path></g></svg> </button> <div class="overflow-x-auto
     text-lg
     border-neutral-200
     dark:border-neutral-800 rounded-xl border" data-highlighted-code><pre class="shiki shiki-themes min-light min-dark" style="--shiki-light:#24292eff;--shiki-dark:#b392f0;--shiki-light-bg:#ffffff;--shiki-dark-bg:#1f1f1f" tabindex="0"><code><span class="line"><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">type</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> ThemeTypographyColors</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583"> =</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0"> {</span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">  textPrimary</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">:</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF"> string</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">;</span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">  textSecondary</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">:</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF"> string</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">;</span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">  textTertiary</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">:</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF"> string</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">;</span></span>
-<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">};</span></span></code></pre></div>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">};</span></span></code></pre></div> </div> <script>(function(){const id = "89bdj85apgj";
+const code = "type ThemeTypographyColors = {\n  textPrimary: string;\n  textSecondary: string;\n  textTertiary: string;\n};";
+
+  const copyBtn = document.querySelector(`#code-block-${id} [data-copy]`);
+  copyBtn?.addEventListener("click", async () => {
+    try {
+      const copyIcon = copyBtn.querySelector(".copy");
+      const checkmarkIcon = copyBtn.querySelector(".checkmark");
+      await navigator.clipboard.writeText(code);
+      copyIcon.classList.add("hidden");
+      checkmarkIcon.classList.remove("hidden");
+      copyBtn.disabled = true;
+      setTimeout(() => {
+        copyIcon.classList.remove("hidden");
+        checkmarkIcon.classList.add("hidden");
+        copyBtn.disabled = false;
+      }, 2000);
+    } catch (error) {
+      console.error("failed to copy to clipboard");
+    }
+  });
+})();</script>
 <h4 id="typography-schema">Typography Schema</h4>
 <p>The <code>typography</code> token combines the <code>variants</code> and <code>colors</code> groups.</p>
-<div class="overflow-x-auto
+<div id="code-block-2jqrxh92mmp" class="relative"> <button type="button" data-copy class="absolute
+          top-3
+          z-10
+          ltr:right-3
+          rtl:left-3
+          rounded-md
+          bg-neutral-200
+          size-6
+          text-xl
+          grid
+          place-items-center
+          text-neutral-900
+          transition-colors
+          hover:bg-neutral-200/80
+          dark:bg-neutral-700/90
+          dark:text-white
+          dark:hover:bg-neutral-700
+          
+          "> <svg class="checkmark hidden " xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="m10 13.6l5.9-5.9q.275-.275.7-.275t.7.275t.275.7t-.275.7l-6.6 6.6q-.3.3-.7.3t-.7-.3l-2.6-2.6q-.275-.275-.275-.7t.275-.7t.7-.275t.7.275z"></path></svg> <svg class="copy " xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"></path><g fill="none" stroke="currentColor"><rect width="9" height="13" x="6.5" y="6.5" rx="1.5"></rect><path d="M8.5 6A1.5 1.5 0 0 1 10 4.5h6A1.5 1.5 0 0 1 17.5 6v10a1.5 1.5 0 0 1-1.5 1.5"></path></g></svg> </button> <div class="overflow-x-auto
     text-lg
     border-neutral-200
     dark:border-neutral-800 rounded-xl border" data-highlighted-code><pre class="shiki shiki-themes min-light min-dark" style="--shiki-light:#24292eff;--shiki-dark:#b392f0;--shiki-light-bg:#ffffff;--shiki-dark-bg:#1f1f1f" tabindex="0"><code><span class="line"><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">type</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> ThemeTypography</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583"> =</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0"> {</span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">  variants</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">:</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> ThemeTypographyVariants</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">;</span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">  colors</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">:</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> ThemeTypographyColors</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">;</span></span>
-<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">};</span></span></code></pre></div>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">};</span></span></code></pre></div> </div> <script>(function(){const id = "2jqrxh92mmp";
+const code = "type ThemeTypography = {\n  variants: ThemeTypographyVariants;\n  colors: ThemeTypographyColors;\n};";
+
+  const copyBtn = document.querySelector(`#code-block-${id} [data-copy]`);
+  copyBtn?.addEventListener("click", async () => {
+    try {
+      const copyIcon = copyBtn.querySelector(".copy");
+      const checkmarkIcon = copyBtn.querySelector(".checkmark");
+      await navigator.clipboard.writeText(code);
+      copyIcon.classList.add("hidden");
+      checkmarkIcon.classList.remove("hidden");
+      copyBtn.disabled = true;
+      setTimeout(() => {
+        copyIcon.classList.remove("hidden");
+        checkmarkIcon.classList.add("hidden");
+        copyBtn.disabled = false;
+      }, 2000);
+    } catch (error) {
+      console.error("failed to copy to clipboard");
+    }
+  });
+})();</script>
 <h4 id="default-values-2">Default Values</h4>
-<div class="overflow-x-auto
+<div id="code-block-fo0mhv6iqmt" class="relative"> <button type="button" data-copy class="absolute
+          top-3
+          z-10
+          ltr:right-3
+          rtl:left-3
+          rounded-md
+          bg-neutral-200
+          size-6
+          text-xl
+          grid
+          place-items-center
+          text-neutral-900
+          transition-colors
+          hover:bg-neutral-200/80
+          dark:bg-neutral-700/90
+          dark:text-white
+          dark:hover:bg-neutral-700
+          
+          "> <svg class="checkmark hidden " xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="m10 13.6l5.9-5.9q.275-.275.7-.275t.7.275t.275.7t-.275.7l-6.6 6.6q-.3.3-.7.3t-.7-.3l-2.6-2.6q-.275-.275-.275-.7t.275-.7t.7-.275t.7.275z"></path></svg> <svg class="copy " xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"></path><g fill="none" stroke="currentColor"><rect width="9" height="13" x="6.5" y="6.5" rx="1.5"></rect><path d="M8.5 6A1.5 1.5 0 0 1 10 4.5h6A1.5 1.5 0 0 1 17.5 6v10a1.5 1.5 0 0 1-1.5 1.5"></path></g></svg> </button> <div class="overflow-x-auto
     text-lg
     border-neutral-200
     dark:border-neutral-800 rounded-xl border" data-highlighted-code><pre class="shiki shiki-themes min-light min-dark" style="--shiki-light:#24292eff;--shiki-dark:#b392f0;--shiki-light-bg:#ffffff;--shiki-dark-bg:#1f1f1f" tabindex="0"><code><span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">typography</span><span style="--shiki-light:#212121;--shiki-dark:#BBBBBB">:</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0"> {</span></span>
@@ -579,7 +1298,28 @@ different text colors.</p>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">    textSecondary</span><span style="--shiki-light:#212121;--shiki-dark:#BBBBBB">:</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70"> "text-neutral-600 dark:text-neutral-300"</span><span style="--shiki-light:#212121;--shiki-dark:#BBBBBB">,</span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">    textTertiary</span><span style="--shiki-light:#212121;--shiki-dark:#BBBBBB">:</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70"> "text-neutral-500 dark:text-neutral-400"</span><span style="--shiki-light:#212121;--shiki-dark:#BBBBBB">,</span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">  }</span><span style="--shiki-light:#212121;--shiki-dark:#BBBBBB">,</span></span>
-<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> <script>(function(){const id = "fo0mhv6iqmt";
+const code = "typography: {\n  variants: {\n    h1: \"text-4xl sm:text-5xl font-extrabold tracking-tight leading-tight\",\n    h2: \"text-3xl sm:text-4xl font-bold tracking-tight leading-snug\",\n    h3: \"text-2xl sm:text-3xl font-bold tracking-tight leading-snug\",\n    h4: \"text-xl sm:text-2xl font-semibold tracking-tight leading-normal\",\n    h5: \"text-lg font-semibold tracking-normal leading-normal\",\n    h6: \"text-base font-semibold tracking-normal leading-normal\",\n    body1: \"text-base font-normal leading-relaxed tracking-normal\",\n    body2: \"text-sm font-normal leading-normal tracking-normal\",\n    code: \"font-mono text-sm font-normal leading-relaxed\",\n    inherit: \"font-[inherit] leading-[inherit] tracking-[inherit]\",\n  },\n  colors: {\n    textPrimary: \"text-neutral-900 dark:text-neutral-50\",\n    textSecondary: \"text-neutral-600 dark:text-neutral-300\",\n    textTertiary: \"text-neutral-500 dark:text-neutral-400\",\n  },\n}";
+
+  const copyBtn = document.querySelector(`#code-block-${id} [data-copy]`);
+  copyBtn?.addEventListener("click", async () => {
+    try {
+      const copyIcon = copyBtn.querySelector(".copy");
+      const checkmarkIcon = copyBtn.querySelector(".checkmark");
+      await navigator.clipboard.writeText(code);
+      copyIcon.classList.add("hidden");
+      checkmarkIcon.classList.remove("hidden");
+      copyBtn.disabled = true;
+      setTimeout(() => {
+        copyIcon.classList.remove("hidden");
+        checkmarkIcon.classList.add("hidden");
+        copyBtn.disabled = false;
+      }, 2000);
+    } catch (error) {
+      console.error("failed to copy to clipboard");
+    }
+  });
+})();</script>
 <h2 id="shadow">Shadow</h2>
 <p>The <code>shadow</code> token group defines the elevation scale used throughout the
 component library.</p>
@@ -593,7 +1333,25 @@ behind them.</p>
 <li><code>large</code> — Strong elevation.</li>
 </ul>
 <h3 id="shadow-schema">Shadow Schema</h3>
-<div class="overflow-x-auto
+<div id="code-block-yypqsy8n9" class="relative"> <button type="button" data-copy class="absolute
+          top-3
+          z-10
+          ltr:right-3
+          rtl:left-3
+          rounded-md
+          bg-neutral-200
+          size-6
+          text-xl
+          grid
+          place-items-center
+          text-neutral-900
+          transition-colors
+          hover:bg-neutral-200/80
+          dark:bg-neutral-700/90
+          dark:text-white
+          dark:hover:bg-neutral-700
+          
+          "> <svg class="checkmark hidden " xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="m10 13.6l5.9-5.9q.275-.275.7-.275t.7.275t.275.7t-.275.7l-6.6 6.6q-.3.3-.7.3t-.7-.3l-2.6-2.6q-.275-.275-.275-.7t.275-.7t.7-.275t.7.275z"></path></svg> <svg class="copy " xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"></path><g fill="none" stroke="currentColor"><rect width="9" height="13" x="6.5" y="6.5" rx="1.5"></rect><path d="M8.5 6A1.5 1.5 0 0 1 10 4.5h6A1.5 1.5 0 0 1 17.5 6v10a1.5 1.5 0 0 1-1.5 1.5"></path></g></svg> </button> <div class="overflow-x-auto
     text-lg
     border-neutral-200
     dark:border-neutral-800 rounded-xl border" data-highlighted-code><pre class="shiki shiki-themes min-light min-dark" style="--shiki-light:#24292eff;--shiki-dark:#b392f0;--shiki-light-bg:#ffffff;--shiki-dark-bg:#1f1f1f" tabindex="0"><code><span class="line"><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">type</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> ThemeShadow</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583"> =</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0"> {</span></span>
@@ -601,9 +1359,48 @@ behind them.</p>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">  small</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">:</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF"> string</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">;</span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">  medium</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">:</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF"> string</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">;</span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">  large</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">:</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF"> string</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">;</span></span>
-<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">};</span></span></code></pre></div>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">};</span></span></code></pre></div> </div> <script>(function(){const id = "yypqsy8n9";
+const code = "type ThemeShadow = {\n  none: string;\n  small: string;\n  medium: string;\n  large: string;\n};";
+
+  const copyBtn = document.querySelector(`#code-block-${id} [data-copy]`);
+  copyBtn?.addEventListener("click", async () => {
+    try {
+      const copyIcon = copyBtn.querySelector(".copy");
+      const checkmarkIcon = copyBtn.querySelector(".checkmark");
+      await navigator.clipboard.writeText(code);
+      copyIcon.classList.add("hidden");
+      checkmarkIcon.classList.remove("hidden");
+      copyBtn.disabled = true;
+      setTimeout(() => {
+        copyIcon.classList.remove("hidden");
+        checkmarkIcon.classList.add("hidden");
+        copyBtn.disabled = false;
+      }, 2000);
+    } catch (error) {
+      console.error("failed to copy to clipboard");
+    }
+  });
+})();</script>
 <h4 id="default-values-3">Default Values</h4>
-<div class="overflow-x-auto
+<div id="code-block-cvnub34sx5j" class="relative"> <button type="button" data-copy class="absolute
+          top-3
+          z-10
+          ltr:right-3
+          rtl:left-3
+          rounded-md
+          bg-neutral-200
+          size-6
+          text-xl
+          grid
+          place-items-center
+          text-neutral-900
+          transition-colors
+          hover:bg-neutral-200/80
+          dark:bg-neutral-700/90
+          dark:text-white
+          dark:hover:bg-neutral-700
+          
+          "> <svg class="checkmark hidden " xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="m10 13.6l5.9-5.9q.275-.275.7-.275t.7.275t.275.7t-.275.7l-6.6 6.6q-.3.3-.7.3t-.7-.3l-2.6-2.6q-.275-.275-.275-.7t.275-.7t.7-.275t.7.275z"></path></svg> <svg class="copy " xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"></path><g fill="none" stroke="currentColor"><rect width="9" height="13" x="6.5" y="6.5" rx="1.5"></rect><path d="M8.5 6A1.5 1.5 0 0 1 10 4.5h6A1.5 1.5 0 0 1 17.5 6v10a1.5 1.5 0 0 1-1.5 1.5"></path></g></svg> </button> <div class="overflow-x-auto
     text-lg
     border-neutral-200
     dark:border-neutral-800 rounded-xl border" data-highlighted-code><pre class="shiki shiki-themes min-light min-dark" style="--shiki-light:#24292eff;--shiki-dark:#b392f0;--shiki-light-bg:#ffffff;--shiki-dark-bg:#1f1f1f" tabindex="0"><code><span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">shadow</span><span style="--shiki-light:#212121;--shiki-dark:#BBBBBB">:</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0"> {</span></span>
@@ -611,11 +1408,50 @@ behind them.</p>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">  small</span><span style="--shiki-light:#212121;--shiki-dark:#BBBBBB">:</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70"> "shadow-sm dark:shadow-[0_1px_2px_0_rgba(0,0,0,0.4)]"</span><span style="--shiki-light:#212121;--shiki-dark:#BBBBBB">,</span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">  medium</span><span style="--shiki-light:#212121;--shiki-dark:#BBBBBB">:</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70"> "shadow dark:shadow-[0_4px_6px_-1px_rgba(0,0,0,0.5)]"</span><span style="--shiki-light:#212121;--shiki-dark:#BBBBBB">,</span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">  large</span><span style="--shiki-light:#212121;--shiki-dark:#BBBBBB">:</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70"> "shadow-lg dark:shadow-[0_10px_15px_-3px_rgba(0,0,0,0.6)]"</span><span style="--shiki-light:#212121;--shiki-dark:#BBBBBB">,</span></span>
-<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> <script>(function(){const id = "cvnub34sx5j";
+const code = "shadow: {\n  none: \"shadow-none\",\n  small: \"shadow-sm dark:shadow-[0_1px_2px_0_rgba(0,0,0,0.4)]\",\n  medium: \"shadow dark:shadow-[0_4px_6px_-1px_rgba(0,0,0,0.5)]\",\n  large: \"shadow-lg dark:shadow-[0_10px_15px_-3px_rgba(0,0,0,0.6)]\",\n}";
+
+  const copyBtn = document.querySelector(`#code-block-${id} [data-copy]`);
+  copyBtn?.addEventListener("click", async () => {
+    try {
+      const copyIcon = copyBtn.querySelector(".copy");
+      const checkmarkIcon = copyBtn.querySelector(".checkmark");
+      await navigator.clipboard.writeText(code);
+      copyIcon.classList.add("hidden");
+      checkmarkIcon.classList.remove("hidden");
+      copyBtn.disabled = true;
+      setTimeout(() => {
+        copyIcon.classList.remove("hidden");
+        checkmarkIcon.classList.add("hidden");
+        copyBtn.disabled = false;
+      }, 2000);
+    } catch (error) {
+      console.error("failed to copy to clipboard");
+    }
+  });
+})();</script>
 <h2 id="theme-schema">Theme Schema</h2>
 <p>All token groups described above make up the complete theme.</p>
 <h3 id="theme-schema-1">Theme Schema</h3>
-<div class="overflow-x-auto
+<div id="code-block-bbblzgh7zgc" class="relative"> <button type="button" data-copy class="absolute
+          top-3
+          z-10
+          ltr:right-3
+          rtl:left-3
+          rounded-md
+          bg-neutral-200
+          size-6
+          text-xl
+          grid
+          place-items-center
+          text-neutral-900
+          transition-colors
+          hover:bg-neutral-200/80
+          dark:bg-neutral-700/90
+          dark:text-white
+          dark:hover:bg-neutral-700
+          
+          "> <svg class="checkmark hidden " xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="m10 13.6l5.9-5.9q.275-.275.7-.275t.7.275t.275.7t-.275.7l-6.6 6.6q-.3.3-.7.3t-.7-.3l-2.6-2.6q-.275-.275-.275-.7t.275-.7t.7-.275t.7.275z"></path></svg> <svg class="copy " xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"></path><g fill="none" stroke="currentColor"><rect width="9" height="13" x="6.5" y="6.5" rx="1.5"></rect><path d="M8.5 6A1.5 1.5 0 0 1 10 4.5h6A1.5 1.5 0 0 1 17.5 6v10a1.5 1.5 0 0 1-1.5 1.5"></path></g></svg> </button> <div class="overflow-x-auto
     text-lg
     border-neutral-200
     dark:border-neutral-800 rounded-xl border" data-highlighted-code><pre class="shiki shiki-themes min-light min-dark" style="--shiki-light:#24292eff;--shiki-dark:#b392f0;--shiki-light-bg:#ffffff;--shiki-dark-bg:#1f1f1f" tabindex="0"><code><span class="line"><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">type</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> Theme</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583"> =</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0"> {</span></span>
@@ -627,13 +1463,52 @@ behind them.</p>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">  rounded</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">:</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> ThemeRounded</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">;</span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">  typography</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">:</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> ThemeTypography</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">;</span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">  shadow</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">:</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> ThemeShadow</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">;</span></span>
-<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">};</span></span></code></pre></div>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">};</span></span></code></pre></div> </div> <script>(function(){const id = "bbblzgh7zgc";
+const code = "type Theme = {\n  colors: ThemeColors;\n  disabled: ThemeDisabled;\n  divider: string;\n  focus: string;\n  focusWithin: string;\n  rounded: ThemeRounded;\n  typography: ThemeTypography;\n  shadow: ThemeShadow;\n};";
+
+  const copyBtn = document.querySelector(`#code-block-${id} [data-copy]`);
+  copyBtn?.addEventListener("click", async () => {
+    try {
+      const copyIcon = copyBtn.querySelector(".copy");
+      const checkmarkIcon = copyBtn.querySelector(".checkmark");
+      await navigator.clipboard.writeText(code);
+      copyIcon.classList.add("hidden");
+      checkmarkIcon.classList.remove("hidden");
+      copyBtn.disabled = true;
+      setTimeout(() => {
+        copyIcon.classList.remove("hidden");
+        checkmarkIcon.classList.add("hidden");
+        copyBtn.disabled = false;
+      }, 2000);
+    } catch (error) {
+      console.error("failed to copy to clipboard");
+    }
+  });
+})();</script>
 <h2 id="customizing-theme-tokens">Customizing Theme Tokens</h2>
 <p>Existing theme tokens can be overridden using
 <a href="/customization/create-theme"><code>createTheme</code></a>.</p>
 <p>You only need to provide the values you want to change. Values that are not
 overridden continue to use the default theme.</p>
-<div class="overflow-x-auto
+<div id="code-block-72eu4jwg2o7" class="relative"> <button type="button" data-copy class="absolute
+          top-3
+          z-10
+          ltr:right-3
+          rtl:left-3
+          rounded-md
+          bg-neutral-200
+          size-6
+          text-xl
+          grid
+          place-items-center
+          text-neutral-900
+          transition-colors
+          hover:bg-neutral-200/80
+          dark:bg-neutral-700/90
+          dark:text-white
+          dark:hover:bg-neutral-700
+          
+          "> <svg class="checkmark hidden " xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="m10 13.6l5.9-5.9q.275-.275.7-.275t.7.275t.275.7t-.275.7l-6.6 6.6q-.3.3-.7.3t-.7-.3l-2.6-2.6q-.275-.275-.275-.7t.275-.7t.7-.275t.7.275z"></path></svg> <svg class="copy " xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"></path><g fill="none" stroke="currentColor"><rect width="9" height="13" x="6.5" y="6.5" rx="1.5"></rect><path d="M8.5 6A1.5 1.5 0 0 1 10 4.5h6A1.5 1.5 0 0 1 17.5 6v10a1.5 1.5 0 0 1-1.5 1.5"></path></g></svg> </button> <div class="overflow-x-auto
     text-lg
     border-neutral-200
     dark:border-neutral-800 rounded-xl border" data-highlighted-code><pre class="shiki shiki-themes min-light min-dark" style="--shiki-light:#24292eff;--shiki-dark:#b392f0;--shiki-light-bg:#ffffff;--shiki-dark-bg:#1f1f1f" tabindex="0"><code><span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">createTheme</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">({</span></span>
@@ -644,7 +1519,28 @@ overridden continue to use the default theme.</p>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">      }</span><span style="--shiki-light:#212121;--shiki-dark:#BBBBBB">,</span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">    }</span><span style="--shiki-light:#212121;--shiki-dark:#BBBBBB">,</span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">  }</span><span style="--shiki-light:#212121;--shiki-dark:#BBBBBB">,</span></span>
-<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">});</span></span></code></pre></div>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">});</span></span></code></pre></div> </div> <script>(function(){const id = "72eu4jwg2o7";
+const code = "createTheme({\n  colors: {\n    default: {\n      solid: {\n        background: \"bg-slate-900 dark:bg-slate-100\",\n      },\n    },\n  },\n});";
+
+  const copyBtn = document.querySelector(`#code-block-${id} [data-copy]`);
+  copyBtn?.addEventListener("click", async () => {
+    try {
+      const copyIcon = copyBtn.querySelector(".copy");
+      const checkmarkIcon = copyBtn.querySelector(".checkmark");
+      await navigator.clipboard.writeText(code);
+      copyIcon.classList.add("hidden");
+      checkmarkIcon.classList.remove("hidden");
+      copyBtn.disabled = true;
+      setTimeout(() => {
+        copyIcon.classList.remove("hidden");
+        checkmarkIcon.classList.add("hidden");
+        copyBtn.disabled = false;
+      }, 2000);
+    } catch (error) {
+      console.error("failed to copy to clipboard");
+    }
+  });
+})();</script>
 <p>New theme tokens can also be added, but they must follow the expected token
 structure.</p>
 <p>If a new token does not follow the expected structure,

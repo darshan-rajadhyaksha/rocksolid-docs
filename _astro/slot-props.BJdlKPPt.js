@@ -1,1 +1,0 @@
-import{S as e}from"./web.Ck_zQUvi.js";import{t}from"./Chip.BoZAFSMz.js";function n(){return e(t,{label:`Custom label`,onDelete:()=>{},slotProps:{label:{class:`font-semibold`},deleteIcon:{class:`text-red-500`}}})}export{n as default};

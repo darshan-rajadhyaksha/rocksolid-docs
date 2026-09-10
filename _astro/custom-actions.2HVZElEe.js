@@ -1,0 +1,1 @@
+import{S as e}from"./web.Ck_zQUvi.js";import{t}from"./Button.DQyB4V7T.js";import{t as n}from"./Alert.BfvJfxCt.js";function r(){return e(n,{color:`warning`,get action(){return e(t,{size:`small`,color:`warning`,children:`Review`})},onClose:()=>console.log(`Close action`),children:`Please review your account settings.`})}export{r as default};
