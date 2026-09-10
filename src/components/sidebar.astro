@@ -1,4 +1,5 @@
 ---
+import project from "@/config/project";
 import { navigations } from "@/config/navigations";
 
 const pathname = Astro.url.pathname;
@@ -49,7 +50,7 @@ const isActive = (href: string) => {
           text-neutral-500
           dark:text-neutral-500"
       >
-        v0.1.1
+        v{project.version}
       </p>
     </div>
 

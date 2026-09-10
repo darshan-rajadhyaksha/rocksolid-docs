@@ -1,30 +1,83 @@
 ---
 import { codeToHtml } from "shiki";
+import Checkmark from "@/icons/checkmark";
+import Copy from "@/icons/copy";
 
-const {
-  code = "",
-  lang = "tsx",
-  class: className = "",
-} = Astro.props;
+const { code = "", lang = "tsx", class: className = "" } = Astro.props;
 
-const highlightedCode = await codeToHtml(
-  code.trim(), 
-  {
-    lang,
-    themes: {
-      light: "min-light",
-      dark: "min-dark",
-    },
-    defaultColor: false,
+const id = Math.random().toString(36).substring(2);
+
+const timmedCode = code.trim(); 
+
+const isOneline = timmedCode.split("\n").length === 1;
+
+const highlightedCode = await codeToHtml(timmedCode, {
+  lang,
+  themes: {
+    light: "min-light",
+    dark: "min-dark",
   },
-);
+  defaultColor: false,
+});
 ---
 
 <div
-  class={`overflow-x-auto
+  id={`code-block-${id}`}
+  class="relative"
+>
+  <button
+    type="button"
+    data-copy
+    class={`absolute
+          top-3
+          z-10
+          ltr:right-3
+          rtl:left-3
+          rounded-md
+          bg-neutral-200
+          size-6
+          text-xl
+          grid
+          place-items-center
+          text-neutral-900
+          transition-colors
+          hover:bg-neutral-200/80
+          dark:bg-neutral-700/90
+          dark:text-white
+          dark:hover:bg-neutral-700
+          ${isOneline ? "top-[50%] -translate-y-[50%]" : ""}
+          `}
+  >
+    <Checkmark class="checkmark hidden" />
+    <Copy class="copy" />
+  </button>
+  <div
+    class={`overflow-x-auto
     text-lg
     border-neutral-200
     dark:border-neutral-800 rounded-xl ${className}`}
-  data-highlighted-code
-  set:html={highlightedCode}
-/>
+    data-highlighted-code
+    set:html={highlightedCode}
+  />
+</div>
+
+<script define:vars={{ id, code: timmedCode }}>
+  const copyBtn = document.querySelector(`#code-block-${id} [data-copy]`);
+  copyBtn?.addEventListener("click", async () => {
+    try {
+      const copyIcon = copyBtn.querySelector(".copy");
+      const checkmarkIcon = copyBtn.querySelector(".checkmark");
+      await navigator.clipboard.writeText(code);
+      copyIcon.classList.add("hidden");
+      checkmarkIcon.classList.remove("hidden");
+      copyBtn.disabled = true;
+      setTimeout(() => {
+        copyIcon.classList.remove("hidden");
+        checkmarkIcon.classList.add("hidden");
+        copyBtn.disabled = false;
+      }, 2000);
+    } catch (error) {
+      console.error("failed to copy to clipboard");
+    }
+  });
+</script>

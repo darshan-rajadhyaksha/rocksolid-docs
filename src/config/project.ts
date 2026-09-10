@@ -1,5 +1,6 @@
 export default ({
   name: "RockSolid",
+  version: "0.1.2",
   keywords: [
     "RockSolid",
     "rocksolidjs",

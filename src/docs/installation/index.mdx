@@ -7,7 +7,7 @@ import CodeBlock from "@/components/code-block.astro";
 
 # Installation
 
-RockSolid is a component library built with **SolidJS**, **Tailwind CSS**, and **Tailwind Variants**.
+RockSolid is a component library built with **SolidJS** and **Tailwind CSS**.
 
 Follow the steps below to create a SolidJS project, configure Tailwind CSS, and install RockSolid.
 
@@ -18,9 +18,8 @@ RockSolid requires the following:
 - Node.js 18 or later
 - SolidJS
 - Tailwind CSS
-- Tailwind Variants
 
-If you already have a SolidJS project with Tailwind CSS configured, you can skip to [Install RockSolid](#5-install-rocksolid).
+If you already have a SolidJS project with Tailwind CSS configured, you can skip to [Install RockSolid](#4-install-rocksolid).
 
 ## 1. Create a SolidJS Project
 
@@ -110,20 +109,7 @@ import "./index.css";
   lang="js"
 />
 
-## 4. Install Tailwind Variants
-
-RockSolid uses Tailwind Variants for component styling.
-
-Install it using:
-
-<CodeBlock code={`
-npm install tailwind-variants
-`}
-  class="border"
-  lang="bash"
-/>
-
-## 5. Install RockSolid
+## 4. Install RockSolid
 
 Install the RockSolid component library:
 
@@ -134,7 +120,7 @@ npm install rocksolidjs
   lang="js"
 />
 
-## 6. Import RockSolid Styles
+## 5. Import RockSolid Styles
 
 Import the RockSolid stylesheet into your application's global CSS file:
 
@@ -151,7 +137,7 @@ Import the RockSolid stylesheet into your application's global CSS file:
 The Tailwind CSS import should come before the RockSolid stylesheet. 
 Add the package as a Tailwind source so its classes are detected.
 
-## 7. Use RockSolid Components
+## 6. Use RockSolid Components
 
 You can now import and use RockSolid components in your SolidJS application:
 
@@ -177,7 +163,6 @@ Your project now includes:
 - SolidJS
 - Vite
 - Tailwind CSS
-- Tailwind Variants
 - RockSolid
 
 You are now ready to build your application using RockSolid components.
