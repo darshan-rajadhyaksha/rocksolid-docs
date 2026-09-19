@@ -3,7 +3,7 @@ import IconButton from "rocksolidjs/IconButton";
 
 export default function Example() {
   return (
-    <Badge badgeContent={5}>
+    <Badge badgeContent={50}>
       <IconButton>
         <NotificationIcon />
       </IconButton>

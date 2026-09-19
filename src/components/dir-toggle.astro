@@ -21,7 +21,9 @@
   const rtl = document.querySelector("#rtl");
 
   const setDir = (dir: "ltr" | "rtl") => {
-    document.documentElement.dir = dir;
+    const documentElement = document.documentElement;
+    documentElement.classList.add("disable-transition");
+    documentElement.dir = dir;
     localStorage.setItem("dir", dir);
 
     ltr?.classList.toggle("bg-neutral-200", dir === "ltr");
@@ -29,6 +31,9 @@
 
     ltr?.classList.toggle("dark:bg-neutral-700", dir === "ltr");
     rtl?.classList.toggle("dark:bg-neutral-700", dir === "rtl");
+    setTimeout(() => {
+      documentElement.classList.remove("disable-transition");
+    }, 0);
   };
 
   const saved = localStorage.getItem("dir") as "ltr" | "rtl" | null;

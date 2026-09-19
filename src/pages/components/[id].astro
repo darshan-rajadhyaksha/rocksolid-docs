@@ -1,6 +1,7 @@
 ---
 import BaseLayout from "@/layouts/base.astro";
 import { navigations } from "@/config/navigations";
+import project from "@/config/project";
 
 const {
   id = "",
@@ -26,6 +27,7 @@ export const getStaticPaths = async () => {
 
 <BaseLayout
   title={matched?.title}
+  metaTitle={`${matched?.title} - ${project.name}`}
   description={matched?.description}
   url={matched?.href}
 >

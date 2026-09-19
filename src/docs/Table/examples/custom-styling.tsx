@@ -30,31 +30,33 @@ const orders = [
 
 export default function CustomStyling() {
   return (
-    <Table class="rounded-lg shadow-sm">
-      <TableHead class="bg-muted/50">
-        <TableRow>
-          <TableCell class="font-semibold">Order</TableCell>
-          <TableCell class="font-semibold">Customer</TableCell>
-          <TableCell class="font-semibold">Product</TableCell>
-          <TableCell class="font-semibold">Status</TableCell>
-          <TableCell align="right" class="font-semibold">
-            Total
-          </TableCell>
-        </TableRow>
-      </TableHead>
-      <TableBody>
-        {orders.map((order) => (
-          <TableRow class="hover:bg-neutral-100/80 dark:hover:bg-neutral-900">
-            <TableCell class="font-medium">{order.id}</TableCell>
-            <TableCell>{order.customer}</TableCell>
-            <TableCell>{order.product}</TableCell>
-            <TableCell>{order.status}</TableCell>
-            <TableCell align="right" class="font-medium">
-              {order.total}
+    <div class="w-full overflow-x-auto">
+      <Table class="rounded-lg min-w-200 border-separate overflow-hidden border border-neutral-300 dark:border-neutral-700">
+        <TableHead class="bg-muted/50">
+          <TableRow>
+            <TableCell class="font-semibold">Order</TableCell>
+            <TableCell class="font-semibold">Customer</TableCell>
+            <TableCell class="font-semibold">Product</TableCell>
+            <TableCell class="font-semibold">Status</TableCell>
+            <TableCell align="right" class="font-semibold">
+              Total
             </TableCell>
           </TableRow>
-        ))}
-      </TableBody>
-    </Table>
+        </TableHead>
+        <TableBody>
+          {orders.map((order) => (
+            <TableRow class="hover:bg-neutral-100/80 dark:hover:bg-neutral-900">
+              <TableCell class="font-medium">{order.id}</TableCell>
+              <TableCell>{order.customer}</TableCell>
+              <TableCell>{order.product}</TableCell>
+              <TableCell>{order.status}</TableCell>
+              <TableCell align="right" class="font-medium">
+                {order.total}
+              </TableCell>
+            </TableRow>
+          ))}
+        </TableBody>
+      </Table>
+    </div>
   );
 }

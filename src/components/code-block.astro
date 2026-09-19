@@ -28,6 +28,7 @@ const highlightedCode = await codeToHtml(timmedCode, {
   <button
     type="button"
     data-copy
+    aria-label="Copy code to clipboard"
     class={`absolute
           top-3
           z-10
@@ -45,6 +46,7 @@ const highlightedCode = await codeToHtml(timmedCode, {
           dark:bg-neutral-700/90
           dark:text-white
           dark:hover:bg-neutral-700
+          cursor-pointer
           ${isOneline ? "top-[50%] -translate-y-[50%]" : ""}
           `}
   >
@@ -68,10 +70,12 @@ const highlightedCode = await codeToHtml(timmedCode, {
       const copyIcon = copyBtn.querySelector(".copy");
       const checkmarkIcon = copyBtn.querySelector(".checkmark");
       await navigator.clipboard.writeText(code);
+      copyBtn.classList.remove("cursor-pointer");
       copyIcon.classList.add("hidden");
       checkmarkIcon.classList.remove("hidden");
       copyBtn.disabled = true;
       setTimeout(() => {
+        copyBtn.classList.add("cursor-pointer");
         copyIcon.classList.remove("hidden");
         checkmarkIcon.classList.add("hidden");
         copyBtn.disabled = false;

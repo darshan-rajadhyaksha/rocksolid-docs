@@ -5,6 +5,7 @@ export default function Example() {
     <div class="w-full">
       <Select
         fullWidth
+        value="upi"
         options={[
           { label: "Credit card", value: "credit-card" },
           { label: "Debit card", value: "debit-card" },

@@ -7,14 +7,12 @@ export default function Example() {
       <Label for="role">Role</Label>
       <Select
         id="role"
+        value="admin"
         options={[
           { label: "Administrator", value: "admin" },
           { label: "Editor", value: "editor" },
           { label: "Viewer", value: "viewer" },
         ]}
-        onChange={(event: InputEvent) => {
-          console.log((event.currentTarget as HTMLSelectElement).value);
-        }}
       />
     </div>
   );

@@ -3,7 +3,7 @@ import Divider from "rocksolidjs/Divider";
 
 export default function Example() {
   return (
-    <div class="flex items-center rounded-lg border border-neutral-200 dark:border-neutral-800">
+    <div class="flex items-center rounded-lg border border-neutral-300 dark:border-neutral-700">
       <Button variant="ghost" class="rounded-none rounded-tl-[inherit] rounded-bl-[inherit]">Edit</Button>
       <Divider aria-hidden orientation="vertical" />
       <Button variant="ghost" class="rounded-none">Duplicate</Button>

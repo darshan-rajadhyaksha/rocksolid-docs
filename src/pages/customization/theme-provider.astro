@@ -1,10 +1,12 @@
 ---
 import BaseLayout from "@/layouts/base.astro";
 import ThemeProviderDocument from "@/docs/ThemeProvider/index.mdx";
+import project from "@/config/project";
 ---
 
 <BaseLayout
   title="ThemeProvider"
+  metaTitle={`ThemeProvider - ${project.name}`}
   description="ThemeProvider component applies a custom theme configuration across your application."
   url="/customization/theme-provider/"
 >

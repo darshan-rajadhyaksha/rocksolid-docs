@@ -1,10 +1,12 @@
 ---
 import BaseLayout from "@/layouts/base.astro";
 import CustomizaionDocument from "@/docs/customization/index.mdx";
+import project from "@/config/project";
 ---
 
 <BaseLayout
   title="Customization"
+  metaTitle={`Customization - ${project.name}`}
   description="Customize components with classes, slotProps, reusable components, and themes for a flexible SolidJS application."
   url="/customization/"
 >

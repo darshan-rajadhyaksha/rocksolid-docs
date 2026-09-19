@@ -2,12 +2,20 @@ import Alert from "rocksolidjs/Alert";
 
 export default function Example() {
   return (
-    <Alert
-      color="info"
-      icon={<CustomInfoIcon />}
-    >
-      This alert contains an custom icon.
-    </Alert>
+    <div class="w-full flex flex-col gap-4">
+      <Alert
+        color="info"
+        icon={<CustomInfoIcon />}
+      >
+        This alert contains an custom icon.
+      </Alert>
+      <Alert
+        color="info"
+        icon={null}
+      >
+        This alert does not display an icon.
+      </Alert>
+    </div>
   );
 }
 

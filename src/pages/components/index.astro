@@ -1,12 +1,14 @@
 ---
 import BaseLayout from "@/layouts/base.astro";
 import { navigations } from "@/config/navigations";
+import project from "@/config/project";
 
 const components = navigations[1].items;
 ---
 
 <BaseLayout
   title="Components"
+  metaTitle={`Components - ${project.name}`}
   description="A collection of reusable, accessible, and customizable SolidJS UI components for modern web projects."
   url="/components/"
 >

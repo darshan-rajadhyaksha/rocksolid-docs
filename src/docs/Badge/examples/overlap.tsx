@@ -9,7 +9,7 @@ export default function Example() {
         overlap="circle"
       >
         <Avatar
-          src="https://i.pravatar.cc/150?img=1"
+          src="https://i.pravatar.cc/150?img=20"
           alt="User avatar"
         />
       </Badge>
@@ -18,7 +18,7 @@ export default function Example() {
         overlap="rect"
       >
         <Avatar
-          src="https://i.pravatar.cc/150?img=1"
+          src="https://i.pravatar.cc/150?img=20"
           alt="User avatar"
           rounded="none"
         />

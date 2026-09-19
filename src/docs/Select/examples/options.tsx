@@ -4,6 +4,7 @@ export default function Example() {
   return (
     <Select
       options={[
+        { label: "None", value: "" },
         { label: "Engineering", value: "engineering" },
         { label: "Design", value: "design" },
         { label: "Marketing", value: "marketing" },

@@ -1,9 +1,11 @@
 ---
 import BaseLayout from "@/layouts/base.astro";
 import IntroductionDocument from "@/docs/introduction/index.mdx";
+import project from "@/config/project";
 ---
 <BaseLayout
   title="Introduction"
+  metaTitle={`Introduction - ${project.name}`}
   description="RockSolid is a modern, accessible, and customizable component library built with SolidJS and Tailwind CSS."
   url="/introduction/"
 >

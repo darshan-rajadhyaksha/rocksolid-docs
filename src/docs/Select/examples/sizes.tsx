@@ -11,14 +11,17 @@ export default function Example() {
     <div class="flex flex-col gap-4">
       <Select
         size="small"
+        value="low"
         options={options}
       />
       <Select
         size="medium"
+        value="medium"
         options={options}
       />
       <Select
         size="large"
+        value="high"
         options={options}
       />
     </div>

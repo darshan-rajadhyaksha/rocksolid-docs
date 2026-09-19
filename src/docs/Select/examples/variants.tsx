@@ -10,14 +10,17 @@ export default function Example() {
     <div class="flex flex-col gap-4">
       <Select
         variant="filled"
+        value="monthly"
         options={options}
       />
       <Select
         variant="outlined"
+        value="monthly"
         options={options}
       />
       <Select
         variant="ghost"
+        value="monthly"
         options={options}
       />
     </div>

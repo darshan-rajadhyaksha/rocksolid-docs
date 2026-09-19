@@ -1,10 +1,12 @@
 ---
 import BaseLayout from "@/layouts/base.astro";
 import ThemeTokensDocument from "@/docs/customization/theme-tokens/index.mdx";
+import project from "@/config/project";
 ---
 
 <BaseLayout
   title="Theme Tokens"
+  metaTitle={`Theme Tokens - ${project.name}`}
   description="Theme tokens define the visual styles used throughout the component library."
   url="/customization/theme-tokens/"
 >

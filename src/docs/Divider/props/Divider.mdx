@@ -1,5 +1,8 @@
 | Prop        | Type                         | Required | Default        | Description                                    |
 | ----------- | ---------------------------- | -------- | -------------- | ---------------------------------------------- |
+| align       | `"start" \| "center" \| "end"` | No | `"center"` | Controls the alignment of the Divider content. |
 | as          | `string`                     | No       | `"div"`        | The HTML element used to render the Divider.   |
+| children    | `JSXElement` | No | — | Content to display within the Divider. |
 | class       | `string`                     | No       | —              | Additional CSS classes applied to the Divider. |
 | orientation | `"horizontal" \| "vertical"` | No       | `"horizontal"` | Controls the direction of the Divider.         |
+| slotProps   | `{ divider?: object }`       | No       | —              | Provides props for customizing the Divider slots.<br /><ul><li>`divider` — Props for the internal divider element.</li></ul> |
