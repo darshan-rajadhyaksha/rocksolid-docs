@@ -1,0 +1,1 @@
+import{S as e}from"./web.Ck_zQUvi.js";import{t}from"./Button.Da_Ic3ID.js";function n(){return e(t,{children:`Click me`})}export{n as default};

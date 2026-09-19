@@ -1,0 +1,1 @@
+import{S as e}from"./web.Ck_zQUvi.js";import{t}from"./Avatar.BYgsDd3J.js";import{t as n}from"./Chip.DvLnLVc0.js";function r(){return e(n,{label:`John Doe`,get avatar(){return e(t,{src:`https://i.pravatar.cc/100?img=11`,size:`small`})}})}export{r as default};

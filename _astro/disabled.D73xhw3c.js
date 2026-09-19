@@ -1,0 +1,1 @@
+import{S as e}from"./web.Ck_zQUvi.js";import{t}from"./Textarea.ZtiyKcv_.js";function n(){return e(t,{disabled:!0,value:`This response is no longer editable.`,"aria-label":`Disabled response`})}export{n as default};
