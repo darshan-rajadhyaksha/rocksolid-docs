@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="en"> <head><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><title>Input</title><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="generator" content="Astro v7.3.2"><meta name="description" content="A text input component for collecting and editing user-entered values."><meta name="keywords" content="RockSolid, rocksolidjs, SolidJS, SolidJS components, SolidJS UI library, Tailwind CSS, component library, UI components, accessible components, TypeScript, themeable components, reusable components, frontend library"><meta name="author" content="Darshan Sunil Rajadhyaksha"><link rel="canonical" href="https://rocksolidjs.com/components/input/"><link rel="sitemap" href="/sitemap-index.xml"><meta name="robots" content="index, follow"><!-- OG --><meta property="og:type" content="article"><meta property="og:title" content="Input"><meta property="og:description" content="A text input component for collecting and editing user-entered values."><meta property="og:image" content="https://rocksolidjs.com/assets/og.png"><meta property="og:image:width" content="1024"><meta property="og:image:height" content="768"><meta property="og:url" content="https://rocksolidjs.com/components/input/"><meta property="og:site_name" content="RockSolid"><meta property="og:locale" content="en_US"><!-- X --><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Input"><meta name="twitter:description" content="A text input component for collecting and editing user-entered values."><meta name="twitter:image" content="https://rocksolidjs.com/assets/og.png"><meta name="twitter:image:width" content="1024"><meta name="twitter:image:height" content="768"><link rel="icon" href="/assets/favicon/favicon.ico"><link rel="icon" type="image/png" sizes="96x96" href="/assets/favicon/favicon-96x96.png"><link rel="icon" type="image/svg+xml" href="/assets/favicon/favicon.svg"><link rel="shortcut icon" href="/assets/favicon/favicon.ico"><link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png"><link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet"><script>
+<!DOCTYPE html><html lang="en"> <head><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><title>Input - RockSolid</title><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="generator" content="Astro v7.3.2"><meta name="description" content="A text input component for collecting and editing user-entered values."><meta name="keywords" content="RockSolid, rocksolidjs, SolidJS, SolidJS components, SolidJS UI library, Tailwind CSS, component library, UI components, accessible components, TypeScript, themeable components, reusable components, frontend library"><meta name="author" content="Darshan Sunil Rajadhyaksha"><link rel="canonical" href="https://rocksolidjs.com/components/input/"><link rel="sitemap" href="/sitemap-index.xml"><meta name="robots" content="index, follow"><!-- OG --><meta property="og:type" content="article"><meta property="og:title" content="Input - RockSolid"><meta property="og:description" content="A text input component for collecting and editing user-entered values."><meta property="og:image" content="https://rocksolidjs.com/assets/og.png"><meta property="og:image:width" content="1024"><meta property="og:image:height" content="768"><meta property="og:url" content="https://rocksolidjs.com/components/input/"><meta property="og:site_name" content="RockSolid"><meta property="og:locale" content="en_US"><!-- X --><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Input - RockSolid"><meta name="twitter:description" content="A text input component for collecting and editing user-entered values."><meta name="twitter:image" content="https://rocksolidjs.com/assets/og.png"><meta name="twitter:image:width" content="1024"><meta name="twitter:image:height" content="768"><link rel="icon" href="/assets/favicon/favicon.ico"><link rel="icon" type="image/png" sizes="96x96" href="/assets/favicon/favicon-96x96.png"><link rel="icon" type="image/svg+xml" href="/assets/favicon/favicon.svg"><link rel="shortcut icon" href="/assets/favicon/favicon.ico"><link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png"><link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet"><script>
     const theme = localStorage.getItem("theme");
     if (
       theme === "dark" ||
@@ -11,7 +11,7 @@
     ) {
       document.documentElement.classList.add("dark");
     }
-  </script><link rel="stylesheet" href="/_astro/base.CiuBXjTW.css"></head> <body class="min-h-screen bg-white text-neutral-900
+  </script><link rel="stylesheet" href="/_astro/base.Bk-AUz7t.css"></head> <body class="min-h-screen bg-white text-neutral-900
     dark:bg-neutral-950 dark:text-neutral-100"> <!-- Mobile overlay --> <div id="sidebar-overlay" class="pointer-events-none fixed inset-0 z-40
       bg-black/40 opacity-0 transition-opacity
       duration-200 lg:hidden"></div> <div class="min-h-screen lg:grid
@@ -38,7 +38,7 @@ RockSolid
 </a> <p class="mt-1 text-xs
           text-neutral-500
           dark:text-neutral-500">
-v0.1.2 </p> </div> <!-- GitHub --> <div class="mb-7"> <a href="https://github.com/darshan-rajadhyaksha/rocksolid/" target="_blank" rel="noopener noreferrer" class="flex w-full items-center gap-3
+v0.1.3 </p> </div> <!-- GitHub --> <div class="mb-7"> <a href="https://github.com/darshan-rajadhyaksha/rocksolid/" target="_blank" rel="noopener noreferrer" class="flex w-full items-center gap-3
           rounded-md px-3 py-2
           text-sm font-medium
           text-neutral-600
@@ -110,7 +110,7 @@ v0.1.2 </p> </div> <!-- GitHub --> <div class="mb-7"> <a href="https://github.co
 LTR
 </button> <button id="rtl" type="button" class="rounded px-2 py-1 text-sm">
 RTL
-</button> </div> <script type="module">var e=document.querySelector(`#ltr`),t=document.querySelector(`#rtl`),n=n=>{document.documentElement.dir=n,localStorage.setItem(`dir`,n),e?.classList.toggle(`bg-neutral-200`,n===`ltr`),t?.classList.toggle(`bg-neutral-200`,n===`rtl`),e?.classList.toggle(`dark:bg-neutral-700`,n===`ltr`),t?.classList.toggle(`dark:bg-neutral-700`,n===`rtl`)};n(localStorage.getItem(`dir`)||`ltr`),e?.addEventListener(`click`,()=>n(`ltr`)),t?.addEventListener(`click`,()=>n(`rtl`));</script> <!-- Theme --> <button type="button" data-theme-toggle aria-label="Toggle theme" class="inline-flex items-center gap-2
+</button> </div> <script type="module">var e=document.querySelector(`#ltr`),t=document.querySelector(`#rtl`),n=n=>{let r=document.documentElement;r.classList.add(`disable-transition`),r.dir=n,localStorage.setItem(`dir`,n),e?.classList.toggle(`bg-neutral-200`,n===`ltr`),t?.classList.toggle(`bg-neutral-200`,n===`rtl`),e?.classList.toggle(`dark:bg-neutral-700`,n===`ltr`),t?.classList.toggle(`dark:bg-neutral-700`,n===`rtl`),setTimeout(()=>{r.classList.remove(`disable-transition`)},0)};n(localStorage.getItem(`dir`)||`ltr`),e?.addEventListener(`click`,()=>n(`ltr`)),t?.addEventListener(`click`,()=>n(`rtl`));</script> <!-- Theme --> <button type="button" data-theme-toggle aria-label="Toggle theme" class="inline-flex items-center gap-2
           rounded-md
           border border-neutral-200
           bg-white
@@ -144,9 +144,9 @@ text and other supported input values.</p>
       text-base
       text-neutral-900
       dark:bg-neutral-950
-      dark:text-neutral-100" data-component-preview> <style>astro-island,astro-slot,astro-static-slot{display:contents}</style><script>(()=>{var e=async t=>{await(await t())()};(self.Astro||(self.Astro={})).only=e;window.dispatchEvent(new Event("astro:only"));})();</script><script>(()=>{var g=Object.defineProperty;var w=(a,s,c)=>s in a?g(a,s,{enumerable:!0,configurable:!0,writable:!0,value:c}):a[s]=c;var l=(a,s,c)=>w(a,typeof s!="symbol"?s+"":s,c);var E=new Set(["__proto__","constructor","prototype"]);{let a={0:t=>y(t),1:t=>c(t),2:t=>new RegExp(t),3:t=>new Date(t),4:t=>new Map(c(t)),5:t=>new Set(c(t)),6:t=>BigInt(t),7:t=>new URL(t),8:t=>new Uint8Array(t),9:t=>new Uint16Array(t),10:t=>new Uint32Array(t),11:t=>Number.POSITIVE_INFINITY*t},s=t=>{let[p,e]=t;return p in a?a[p](e):void 0},c=t=>t.map(s),y=t=>typeof t!="object"||t===null?t:Object.fromEntries(Object.entries(t).map(([p,e])=>[p,s(e)]));class f extends HTMLElement{constructor(){super(...arguments);l(this,"Component");l(this,"hydrator");l(this,"hydrate",async()=>{var b;if(!this.hydrator||!this.isConnected)return;let e=(b=this.parentElement)==null?void 0:b.closest("astro-island[ssr]");if(e){e.addEventListener("astro:hydrate",this.hydrate,{once:!0});return}let r=this.querySelectorAll("astro-slot"),n={},d=this.querySelectorAll("template[data-astro-template]");for(let o of d){let i=o.closest(this.tagName);i!=null&&i.isSameNode(this)&&(n[o.getAttribute("data-astro-template")||"default"]=o.innerHTML,o.remove())}for(let o of r){let i=o.closest(this.tagName);i!=null&&i.isSameNode(this)&&(n[o.getAttribute("name")||"default"]=o.innerHTML)}let u;try{u=this.hasAttribute("props")?y(JSON.parse(this.getAttribute("props"))):{}}catch(o){let i=this.getAttribute("component-url")||"<unknown>",v=this.getAttribute("component-export");throw v&&(i+=` (export ${v})`),console.error(`[hydrate] Error parsing props for component ${i}`,this.getAttribute("props"),o),o}let h;await this.hydrator(this)(this.Component,u,n,{client:this.getAttribute("client")}),this.removeAttribute("ssr"),this.dispatchEvent(new CustomEvent("astro:hydrate"))});l(this,"unmount",()=>{this.isConnected||this.dispatchEvent(new CustomEvent("astro:unmount"))})}disconnectedCallback(){document.removeEventListener("astro:after-swap",this.unmount),document.addEventListener("astro:after-swap",this.unmount,{once:!0})}connectedCallback(){if(!this.hasAttribute("await-children")||document.readyState==="interactive"||document.readyState==="complete")this.childrenConnectedCallback();else{let e=()=>{document.removeEventListener("DOMContentLoaded",e),r.disconnect(),this.childrenConnectedCallback()},r=new MutationObserver(()=>{var n;((n=this.lastChild)==null?void 0:n.nodeType)===Node.COMMENT_NODE&&this.lastChild.nodeValue==="astro:end"&&(this.lastChild.remove(),e())});r.observe(this,{childList:!0}),document.addEventListener("DOMContentLoaded",e)}}async childrenConnectedCallback(){let e=this.getAttribute("before-hydration-url");e&&await import(e),this.start()}getRetryImportUrl(e){let r=new URL(e,document.baseURI);return r.searchParams.set("astro-retry",Date.now().toString()),r.toString()}async importWithRetry(e){try{return await import(e)}catch(r){return await new Promise(n=>setTimeout(n,1e3)),import(this.getRetryImportUrl(e))}}handleHydrationError(e){let r=this.getAttribute("component-url"),n=new CustomEvent("astro:hydration-error",{cancelable:!0,bubbles:!0,composed:!0,detail:{error:e,componentUrl:r}});this.dispatchEvent(n)&&console.error(`[astro-island] Error hydrating ${r}`,e)}async start(){let e=JSON.parse(this.getAttribute("opts")),r=this.getAttribute("client");if(Astro[r]===void 0){window.addEventListener(`astro:${r}`,()=>this.start(),{once:!0});return}try{await Astro[r](async()=>{let n=this.getAttribute("renderer-url");try{let[d,{default:u}]=await Promise.all([this.importWithRetry(this.getAttribute("component-url")),n?this.importWithRetry(n):Promise.resolve({default:()=>()=>{}})]),h=this.getAttribute("component-export")||"default";if(h.includes(".")){this.Component=d;for(let m of h.split(".")){if(E.has(m)||!this.Component||typeof this.Component!="object"&&typeof this.Component!="function"||!Object.hasOwn(this.Component,m))throw new Error(`Invalid component export path: ${h}`);this.Component=this.Component[m]}}else{if(E.has(h))throw new Error(`Invalid component export path: ${h}`);this.Component=d[h]}return this.hydrator=u,this.hydrate}catch(d){return this.handleHydrationError(d),()=>{}}},e,this)}catch(n){this.handleHydrationError(n)}}attributeChangedCallback(){this.hydrate()}}l(f,"observedAttributes",["props"]),customElements.get("astro-island")||customElements.define("astro-island",f)}})();</script><astro-island uid="kTztA" component-url="/_astro/dynamic-component-renderer.DMQQXM0d.js" component-export="default" renderer-url="/_astro/client.BgJ9siUT.js" props="{&quot;name&quot;:[0,&quot;Input/examples/basic&quot;]}" ssr client="only" opts="{&quot;name&quot;:&quot;DynamicComponentRenderer&quot;,&quot;value&quot;:&quot;solid-js&quot;}"></astro-island> </div> <div data-code class="border-t
+      dark:text-neutral-100" data-component-preview> <style>astro-island,astro-slot,astro-static-slot{display:contents}</style><script>(()=>{var e=async t=>{await(await t())()};(self.Astro||(self.Astro={})).only=e;window.dispatchEvent(new Event("astro:only"));})();</script><script>(()=>{var g=Object.defineProperty;var w=(a,s,c)=>s in a?g(a,s,{enumerable:!0,configurable:!0,writable:!0,value:c}):a[s]=c;var l=(a,s,c)=>w(a,typeof s!="symbol"?s+"":s,c);var E=new Set(["__proto__","constructor","prototype"]);{let a={0:t=>y(t),1:t=>c(t),2:t=>new RegExp(t),3:t=>new Date(t),4:t=>new Map(c(t)),5:t=>new Set(c(t)),6:t=>BigInt(t),7:t=>new URL(t),8:t=>new Uint8Array(t),9:t=>new Uint16Array(t),10:t=>new Uint32Array(t),11:t=>Number.POSITIVE_INFINITY*t},s=t=>{let[p,e]=t;return p in a?a[p](e):void 0},c=t=>t.map(s),y=t=>typeof t!="object"||t===null?t:Object.fromEntries(Object.entries(t).map(([p,e])=>[p,s(e)]));class f extends HTMLElement{constructor(){super(...arguments);l(this,"Component");l(this,"hydrator");l(this,"hydrate",async()=>{var b;if(!this.hydrator||!this.isConnected)return;let e=(b=this.parentElement)==null?void 0:b.closest("astro-island[ssr]");if(e){e.addEventListener("astro:hydrate",this.hydrate,{once:!0});return}let r=this.querySelectorAll("astro-slot"),n={},d=this.querySelectorAll("template[data-astro-template]");for(let o of d){let i=o.closest(this.tagName);i!=null&&i.isSameNode(this)&&(n[o.getAttribute("data-astro-template")||"default"]=o.innerHTML,o.remove())}for(let o of r){let i=o.closest(this.tagName);i!=null&&i.isSameNode(this)&&(n[o.getAttribute("name")||"default"]=o.innerHTML)}let u;try{u=this.hasAttribute("props")?y(JSON.parse(this.getAttribute("props"))):{}}catch(o){let i=this.getAttribute("component-url")||"<unknown>",v=this.getAttribute("component-export");throw v&&(i+=` (export ${v})`),console.error(`[hydrate] Error parsing props for component ${i}`,this.getAttribute("props"),o),o}let h;await this.hydrator(this)(this.Component,u,n,{client:this.getAttribute("client")}),this.removeAttribute("ssr"),this.dispatchEvent(new CustomEvent("astro:hydrate"))});l(this,"unmount",()=>{this.isConnected||this.dispatchEvent(new CustomEvent("astro:unmount"))})}disconnectedCallback(){document.removeEventListener("astro:after-swap",this.unmount),document.addEventListener("astro:after-swap",this.unmount,{once:!0})}connectedCallback(){if(!this.hasAttribute("await-children")||document.readyState==="interactive"||document.readyState==="complete")this.childrenConnectedCallback();else{let e=()=>{document.removeEventListener("DOMContentLoaded",e),r.disconnect(),this.childrenConnectedCallback()},r=new MutationObserver(()=>{var n;((n=this.lastChild)==null?void 0:n.nodeType)===Node.COMMENT_NODE&&this.lastChild.nodeValue==="astro:end"&&(this.lastChild.remove(),e())});r.observe(this,{childList:!0}),document.addEventListener("DOMContentLoaded",e)}}async childrenConnectedCallback(){let e=this.getAttribute("before-hydration-url");e&&await import(e),this.start()}getRetryImportUrl(e){let r=new URL(e,document.baseURI);return r.searchParams.set("astro-retry",Date.now().toString()),r.toString()}async importWithRetry(e){try{return await import(e)}catch(r){return await new Promise(n=>setTimeout(n,1e3)),import(this.getRetryImportUrl(e))}}handleHydrationError(e){let r=this.getAttribute("component-url"),n=new CustomEvent("astro:hydration-error",{cancelable:!0,bubbles:!0,composed:!0,detail:{error:e,componentUrl:r}});this.dispatchEvent(n)&&console.error(`[astro-island] Error hydrating ${r}`,e)}async start(){let e=JSON.parse(this.getAttribute("opts")),r=this.getAttribute("client");if(Astro[r]===void 0){window.addEventListener(`astro:${r}`,()=>this.start(),{once:!0});return}try{await Astro[r](async()=>{let n=this.getAttribute("renderer-url");try{let[d,{default:u}]=await Promise.all([this.importWithRetry(this.getAttribute("component-url")),n?this.importWithRetry(n):Promise.resolve({default:()=>()=>{}})]),h=this.getAttribute("component-export")||"default";if(h.includes(".")){this.Component=d;for(let m of h.split(".")){if(E.has(m)||!this.Component||typeof this.Component!="object"&&typeof this.Component!="function"||!Object.hasOwn(this.Component,m))throw new Error(`Invalid component export path: ${h}`);this.Component=this.Component[m]}}else{if(E.has(h))throw new Error(`Invalid component export path: ${h}`);this.Component=d[h]}return this.hydrator=u,this.hydrate}catch(d){return this.handleHydrationError(d),()=>{}}},e,this)}catch(n){this.handleHydrationError(n)}}attributeChangedCallback(){this.hydrate()}}l(f,"observedAttributes",["props"]),customElements.get("astro-island")||customElements.define("astro-island",f)}})();</script><astro-island uid="kTztA" component-url="/_astro/dynamic-component-renderer.uIVJPxGH.js" component-export="default" renderer-url="/_astro/client.BgJ9siUT.js" props="{&quot;name&quot;:[0,&quot;Input/examples/basic&quot;]}" ssr client="only" opts="{&quot;name&quot;:&quot;DynamicComponentRenderer&quot;,&quot;value&quot;:&quot;solid-js&quot;}"></astro-island> </div> <div data-code class="border-t
       border-neutral-200
-      dark:border-neutral-800"> <div id="code-block-vgc0uetgio" class="relative"> <button type="button" data-copy class="absolute
+      dark:border-neutral-800"> <div id="code-block-adasveegiba" class="relative"> <button type="button" data-copy aria-label="Copy code to clipboard" class="absolute
           top-3
           z-10
           ltr:right-3
@@ -163,6 +163,7 @@ text and other supported input values.</p>
           dark:bg-neutral-700/90
           dark:text-white
           dark:hover:bg-neutral-700
+          cursor-pointer
           
           "> <svg class="checkmark hidden " xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="m10 13.6l5.9-5.9q.275-.275.7-.275t.7.275t.275.7t-.275.7l-6.6 6.6q-.3.3-.7.3t-.7-.3l-2.6-2.6q-.275-.275-.275-.7t.275-.7t.7-.275t.7.275z"></path></svg> <svg class="copy " xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"></path><g fill="none" stroke="currentColor"><rect width="9" height="13" x="6.5" y="6.5" rx="1.5"></rect><path d="M8.5 6A1.5 1.5 0 0 1 10 4.5h6A1.5 1.5 0 0 1 17.5 6v10a1.5 1.5 0 0 1-1.5 1.5"></path></g></svg> </button> <div class="overflow-x-auto
     text-lg
@@ -180,7 +181,7 @@ text and other supported input values.</p>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">      /></span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">    &#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">div</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">  );</span></span>
-<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> <script>(function(){const id = "vgc0uetgio";
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> <script>(function(){const id = "adasveegiba";
 const code = "import Input from \"rocksolidjs/Input\";\nimport Label from \"rocksolidjs/Label\";\n\nexport default function Example() {\n  return (\n    \u003cdiv class=\"flex flex-col gap-1\">\n      \u003cLabel for=\"name\">Name\u003c/Label>\n      \u003cInput\n        id=\"name\"\n        placeholder=\"Enter your name\"\n      />\n    \u003c/div>\n  );\n}";
 
   const copyBtn = document.querySelector(`#code-block-${id} [data-copy]`);
@@ -189,10 +190,12 @@ const code = "import Input from \"rocksolidjs/Input\";\nimport Label from \"rock
       const copyIcon = copyBtn.querySelector(".copy");
       const checkmarkIcon = copyBtn.querySelector(".checkmark");
       await navigator.clipboard.writeText(code);
+      copyBtn.classList.remove("cursor-pointer");
       copyIcon.classList.add("hidden");
       checkmarkIcon.classList.remove("hidden");
       copyBtn.disabled = true;
       setTimeout(() => {
+        copyBtn.classList.add("cursor-pointer");
         copyIcon.classList.remove("hidden");
         checkmarkIcon.classList.add("hidden");
         copyBtn.disabled = false;
@@ -222,9 +225,9 @@ the input.</p>
       text-base
       text-neutral-900
       dark:bg-neutral-950
-      dark:text-neutral-100" data-component-preview> <astro-island uid="ZgnNEB" component-url="/_astro/dynamic-component-renderer.DMQQXM0d.js" component-export="default" renderer-url="/_astro/client.BgJ9siUT.js" props="{&quot;name&quot;:[0,&quot;Input/examples/colors&quot;]}" ssr client="only" opts="{&quot;name&quot;:&quot;DynamicComponentRenderer&quot;,&quot;value&quot;:&quot;solid-js&quot;}"></astro-island> </div> <div data-code class="border-t
+      dark:text-neutral-100" data-component-preview> <astro-island uid="ZgnNEB" component-url="/_astro/dynamic-component-renderer.uIVJPxGH.js" component-export="default" renderer-url="/_astro/client.BgJ9siUT.js" props="{&quot;name&quot;:[0,&quot;Input/examples/colors&quot;]}" ssr client="only" opts="{&quot;name&quot;:&quot;DynamicComponentRenderer&quot;,&quot;value&quot;:&quot;solid-js&quot;}"></astro-island> </div> <div data-code class="border-t
       border-neutral-200
-      dark:border-neutral-800"> <div id="code-block-h8tjwrj547p" class="relative"> <button type="button" data-copy class="absolute
+      dark:border-neutral-800"> <div id="code-block-xhpzcgicdv" class="relative"> <button type="button" data-copy aria-label="Copy code to clipboard" class="absolute
           top-3
           z-10
           ltr:right-3
@@ -241,6 +244,7 @@ the input.</p>
           dark:bg-neutral-700/90
           dark:text-white
           dark:hover:bg-neutral-700
+          cursor-pointer
           
           "> <svg class="checkmark hidden " xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="m10 13.6l5.9-5.9q.275-.275.7-.275t.7.275t.275.7t-.275.7l-6.6 6.6q-.3.3-.7.3t-.7-.3l-2.6-2.6q-.275-.275-.275-.7t.275-.7t.7-.275t.7.275z"></path></svg> <svg class="copy " xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"></path><g fill="none" stroke="currentColor"><rect width="9" height="13" x="6.5" y="6.5" rx="1.5"></rect><path d="M8.5 6A1.5 1.5 0 0 1 10 4.5h6A1.5 1.5 0 0 1 17.5 6v10a1.5 1.5 0 0 1-1.5 1.5"></path></g></svg> </button> <div class="overflow-x-auto
     text-lg
@@ -277,7 +281,7 @@ the input.</p>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">      /></span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">    &#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">div</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">  );</span></span>
-<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> <script>(function(){const id = "h8tjwrj547p";
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> <script>(function(){const id = "xhpzcgicdv";
 const code = "import Input from \"rocksolidjs/Input\";\n\nexport default function Example() {\n  return (\n    \u003cdiv class=\"flex flex-col gap-4\">\n      \u003cInput\n        color=\"default\"\n        placeholder=\"Default\"\n        aria-label=\"Default\"\n      />\n      \u003cInput\n        color=\"success\"\n        value=\"john@example.com\"\n        aria-label=\"Valid email\"\n      />\n      \u003cInput\n        color=\"warning\"\n        value=\"john@example\"\n        aria-label=\"Email with warning\"\n      />\n      \u003cInput\n        color=\"info\"\n        placeholder=\"Enter your username\"\n        aria-label=\"Username\"\n      />\n      \u003cInput\n        color=\"error\"\n        value=\"invalid-value\"\n        aria-label=\"Invalid value\"\n      />\n    \u003c/div>\n  );\n}";
 
   const copyBtn = document.querySelector(`#code-block-${id} [data-copy]`);
@@ -286,10 +290,12 @@ const code = "import Input from \"rocksolidjs/Input\";\n\nexport default functio
       const copyIcon = copyBtn.querySelector(".copy");
       const checkmarkIcon = copyBtn.querySelector(".checkmark");
       await navigator.clipboard.writeText(code);
+      copyBtn.classList.remove("cursor-pointer");
       copyIcon.classList.add("hidden");
       checkmarkIcon.classList.remove("hidden");
       copyBtn.disabled = true;
       setTimeout(() => {
+        copyBtn.classList.add("cursor-pointer");
         copyIcon.classList.remove("hidden");
         checkmarkIcon.classList.add("hidden");
         copyBtn.disabled = false;
@@ -317,9 +323,9 @@ const code = "import Input from \"rocksolidjs/Input\";\n\nexport default functio
       text-base
       text-neutral-900
       dark:bg-neutral-950
-      dark:text-neutral-100" data-component-preview> <astro-island uid="Z1H0VoQ" component-url="/_astro/dynamic-component-renderer.DMQQXM0d.js" component-export="default" renderer-url="/_astro/client.BgJ9siUT.js" props="{&quot;name&quot;:[0,&quot;Input/examples/sizes&quot;]}" ssr client="only" opts="{&quot;name&quot;:&quot;DynamicComponentRenderer&quot;,&quot;value&quot;:&quot;solid-js&quot;}"></astro-island> </div> <div data-code class="border-t
+      dark:text-neutral-100" data-component-preview> <astro-island uid="Z1H0VoQ" component-url="/_astro/dynamic-component-renderer.uIVJPxGH.js" component-export="default" renderer-url="/_astro/client.BgJ9siUT.js" props="{&quot;name&quot;:[0,&quot;Input/examples/sizes&quot;]}" ssr client="only" opts="{&quot;name&quot;:&quot;DynamicComponentRenderer&quot;,&quot;value&quot;:&quot;solid-js&quot;}"></astro-island> </div> <div data-code class="border-t
       border-neutral-200
-      dark:border-neutral-800"> <div id="code-block-4h50acqie27" class="relative"> <button type="button" data-copy class="absolute
+      dark:border-neutral-800"> <div id="code-block-by59chlabf" class="relative"> <button type="button" data-copy aria-label="Copy code to clipboard" class="absolute
           top-3
           z-10
           ltr:right-3
@@ -336,6 +342,7 @@ const code = "import Input from \"rocksolidjs/Input\";\n\nexport default functio
           dark:bg-neutral-700/90
           dark:text-white
           dark:hover:bg-neutral-700
+          cursor-pointer
           
           "> <svg class="checkmark hidden " xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="m10 13.6l5.9-5.9q.275-.275.7-.275t.7.275t.275.7t-.275.7l-6.6 6.6q-.3.3-.7.3t-.7-.3l-2.6-2.6q-.275-.275-.275-.7t.275-.7t.7-.275t.7.275z"></path></svg> <svg class="copy " xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"></path><g fill="none" stroke="currentColor"><rect width="9" height="13" x="6.5" y="6.5" rx="1.5"></rect><path d="M8.5 6A1.5 1.5 0 0 1 10 4.5h6A1.5 1.5 0 0 1 17.5 6v10a1.5 1.5 0 0 1-1.5 1.5"></path></g></svg> </button> <div class="overflow-x-auto
     text-lg
@@ -362,7 +369,7 @@ const code = "import Input from \"rocksolidjs/Input\";\n\nexport default functio
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">      /></span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">    &#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">div</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">  );</span></span>
-<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> <script>(function(){const id = "4h50acqie27";
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> <script>(function(){const id = "by59chlabf";
 const code = "import Input from \"rocksolidjs/Input\";\n\nexport default function Example() {\n  return (\n    \u003cdiv class=\"flex flex-col gap-4\">\n      \u003cInput\n        size=\"small\"\n        placeholder=\"Small input\"\n        aria-label=\"Small input\"\n      />\n      \u003cInput\n        size=\"medium\"\n        placeholder=\"Medium input\"\n        aria-label=\"Medium input\"\n      />\n      \u003cInput\n        size=\"large\"\n        placeholder=\"Large input\"\n        aria-label=\"Large input\"\n      />\n    \u003c/div>\n  );\n}";
 
   const copyBtn = document.querySelector(`#code-block-${id} [data-copy]`);
@@ -371,10 +378,12 @@ const code = "import Input from \"rocksolidjs/Input\";\n\nexport default functio
       const copyIcon = copyBtn.querySelector(".copy");
       const checkmarkIcon = copyBtn.querySelector(".checkmark");
       await navigator.clipboard.writeText(code);
+      copyBtn.classList.remove("cursor-pointer");
       copyIcon.classList.add("hidden");
       checkmarkIcon.classList.remove("hidden");
       copyBtn.disabled = true;
       setTimeout(() => {
+        copyBtn.classList.add("cursor-pointer");
         copyIcon.classList.remove("hidden");
         checkmarkIcon.classList.add("hidden");
         copyBtn.disabled = false;
@@ -402,9 +411,9 @@ const code = "import Input from \"rocksolidjs/Input\";\n\nexport default functio
       text-base
       text-neutral-900
       dark:bg-neutral-950
-      dark:text-neutral-100" data-component-preview> <astro-island uid="2a0gRA" component-url="/_astro/dynamic-component-renderer.DMQQXM0d.js" component-export="default" renderer-url="/_astro/client.BgJ9siUT.js" props="{&quot;name&quot;:[0,&quot;Input/examples/variants&quot;]}" ssr client="only" opts="{&quot;name&quot;:&quot;DynamicComponentRenderer&quot;,&quot;value&quot;:&quot;solid-js&quot;}"></astro-island> </div> <div data-code class="border-t
+      dark:text-neutral-100" data-component-preview> <astro-island uid="2a0gRA" component-url="/_astro/dynamic-component-renderer.uIVJPxGH.js" component-export="default" renderer-url="/_astro/client.BgJ9siUT.js" props="{&quot;name&quot;:[0,&quot;Input/examples/variants&quot;]}" ssr client="only" opts="{&quot;name&quot;:&quot;DynamicComponentRenderer&quot;,&quot;value&quot;:&quot;solid-js&quot;}"></astro-island> </div> <div data-code class="border-t
       border-neutral-200
-      dark:border-neutral-800"> <div id="code-block-dhyddnz6vsp" class="relative"> <button type="button" data-copy class="absolute
+      dark:border-neutral-800"> <div id="code-block-hl7pcchf2tv" class="relative"> <button type="button" data-copy aria-label="Copy code to clipboard" class="absolute
           top-3
           z-10
           ltr:right-3
@@ -421,6 +430,7 @@ const code = "import Input from \"rocksolidjs/Input\";\n\nexport default functio
           dark:bg-neutral-700/90
           dark:text-white
           dark:hover:bg-neutral-700
+          cursor-pointer
           
           "> <svg class="checkmark hidden " xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="m10 13.6l5.9-5.9q.275-.275.7-.275t.7.275t.275.7t-.275.7l-6.6 6.6q-.3.3-.7.3t-.7-.3l-2.6-2.6q-.275-.275-.275-.7t.275-.7t.7-.275t.7.275z"></path></svg> <svg class="copy " xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"></path><g fill="none" stroke="currentColor"><rect width="9" height="13" x="6.5" y="6.5" rx="1.5"></rect><path d="M8.5 6A1.5 1.5 0 0 1 10 4.5h6A1.5 1.5 0 0 1 17.5 6v10a1.5 1.5 0 0 1-1.5 1.5"></path></g></svg> </button> <div class="overflow-x-auto
     text-lg
@@ -447,7 +457,7 @@ const code = "import Input from \"rocksolidjs/Input\";\n\nexport default functio
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">      /></span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">    &#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">div</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">  );</span></span>
-<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> <script>(function(){const id = "dhyddnz6vsp";
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> <script>(function(){const id = "hl7pcchf2tv";
 const code = "import Input from \"rocksolidjs/Input\";\n\nexport default function Example() {\n  return (\n    \u003cdiv class=\"flex flex-col gap-4\">\n      \u003cInput\n        variant=\"outlined\"\n        placeholder=\"Outlined variant\"\n        aria-label=\"Outlined variant\"\n      />\n      \u003cInput\n        variant=\"filled\"\n        placeholder=\"Filled variant\"\n        aria-label=\"Filled variant\"\n      />\n      \u003cInput\n        variant=\"ghost\"\n        placeholder=\"Ghost variant\"\n        aria-label=\"Ghost variant\"\n      />\n    \u003c/div>\n  );\n}";
 
   const copyBtn = document.querySelector(`#code-block-${id} [data-copy]`);
@@ -456,10 +466,12 @@ const code = "import Input from \"rocksolidjs/Input\";\n\nexport default functio
       const copyIcon = copyBtn.querySelector(".copy");
       const checkmarkIcon = copyBtn.querySelector(".checkmark");
       await navigator.clipboard.writeText(code);
+      copyBtn.classList.remove("cursor-pointer");
       copyIcon.classList.add("hidden");
       checkmarkIcon.classList.remove("hidden");
       copyBtn.disabled = true;
       setTimeout(() => {
+        copyBtn.classList.add("cursor-pointer");
         copyIcon.classList.remove("hidden");
         checkmarkIcon.classList.add("hidden");
         copyBtn.disabled = false;
@@ -488,9 +500,9 @@ its parent container.</p>
       text-base
       text-neutral-900
       dark:bg-neutral-950
-      dark:text-neutral-100" data-component-preview> <astro-island uid="10yukm" component-url="/_astro/dynamic-component-renderer.DMQQXM0d.js" component-export="default" renderer-url="/_astro/client.BgJ9siUT.js" props="{&quot;name&quot;:[0,&quot;Input/examples/full-width&quot;]}" ssr client="only" opts="{&quot;name&quot;:&quot;DynamicComponentRenderer&quot;,&quot;value&quot;:&quot;solid-js&quot;}"></astro-island> </div> <div data-code class="border-t
+      dark:text-neutral-100" data-component-preview> <astro-island uid="10yukm" component-url="/_astro/dynamic-component-renderer.uIVJPxGH.js" component-export="default" renderer-url="/_astro/client.BgJ9siUT.js" props="{&quot;name&quot;:[0,&quot;Input/examples/full-width&quot;]}" ssr client="only" opts="{&quot;name&quot;:&quot;DynamicComponentRenderer&quot;,&quot;value&quot;:&quot;solid-js&quot;}"></astro-island> </div> <div data-code class="border-t
       border-neutral-200
-      dark:border-neutral-800"> <div id="code-block-m4z7jdmo19" class="relative"> <button type="button" data-copy class="absolute
+      dark:border-neutral-800"> <div id="code-block-qmce5xsphqd" class="relative"> <button type="button" data-copy aria-label="Copy code to clipboard" class="absolute
           top-3
           z-10
           ltr:right-3
@@ -507,6 +519,7 @@ its parent container.</p>
           dark:bg-neutral-700/90
           dark:text-white
           dark:hover:bg-neutral-700
+          cursor-pointer
           
           "> <svg class="checkmark hidden " xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="m10 13.6l5.9-5.9q.275-.275.7-.275t.7.275t.275.7t-.275.7l-6.6 6.6q-.3.3-.7.3t-.7-.3l-2.6-2.6q-.275-.275-.275-.7t.275-.7t.7-.275t.7.275z"></path></svg> <svg class="copy " xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"></path><g fill="none" stroke="currentColor"><rect width="9" height="13" x="6.5" y="6.5" rx="1.5"></rect><path d="M8.5 6A1.5 1.5 0 0 1 10 4.5h6A1.5 1.5 0 0 1 17.5 6v10a1.5 1.5 0 0 1-1.5 1.5"></path></g></svg> </button> <div class="overflow-x-auto
     text-lg
@@ -523,7 +536,7 @@ its parent container.</p>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">      /></span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">    &#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">div</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">  );</span></span>
-<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> <script>(function(){const id = "m4z7jdmo19";
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> <script>(function(){const id = "qmce5xsphqd";
 const code = "import Input from \"rocksolidjs/Input\";\n\nexport default function Example() {\n  return (\n    \u003cdiv class=\"w-full\">\n      \u003cInput\n        fullWidth\n        placeholder=\"Enter your email address\"\n        aria-label=\"Email address\"\n      />\n    \u003c/div>\n  );\n}";
 
   const copyBtn = document.querySelector(`#code-block-${id} [data-copy]`);
@@ -532,10 +545,12 @@ const code = "import Input from \"rocksolidjs/Input\";\n\nexport default functio
       const copyIcon = copyBtn.querySelector(".copy");
       const checkmarkIcon = copyBtn.querySelector(".checkmark");
       await navigator.clipboard.writeText(code);
+      copyBtn.classList.remove("cursor-pointer");
       copyIcon.classList.add("hidden");
       checkmarkIcon.classList.remove("hidden");
       copyBtn.disabled = true;
       setTimeout(() => {
+        copyBtn.classList.add("cursor-pointer");
         copyIcon.classList.remove("hidden");
         checkmarkIcon.classList.add("hidden");
         copyBtn.disabled = false;
@@ -566,9 +581,9 @@ content.</p>
       text-base
       text-neutral-900
       dark:bg-neutral-950
-      dark:text-neutral-100" data-component-preview> <astro-island uid="Zssxik" component-url="/_astro/dynamic-component-renderer.DMQQXM0d.js" component-export="default" renderer-url="/_astro/client.BgJ9siUT.js" props="{&quot;name&quot;:[0,&quot;Input/examples/prefix-suffix&quot;]}" ssr client="only" opts="{&quot;name&quot;:&quot;DynamicComponentRenderer&quot;,&quot;value&quot;:&quot;solid-js&quot;}"></astro-island> </div> <div data-code class="border-t
+      dark:text-neutral-100" data-component-preview> <astro-island uid="Zssxik" component-url="/_astro/dynamic-component-renderer.uIVJPxGH.js" component-export="default" renderer-url="/_astro/client.BgJ9siUT.js" props="{&quot;name&quot;:[0,&quot;Input/examples/prefix-suffix&quot;]}" ssr client="only" opts="{&quot;name&quot;:&quot;DynamicComponentRenderer&quot;,&quot;value&quot;:&quot;solid-js&quot;}"></astro-island> </div> <div data-code class="border-t
       border-neutral-200
-      dark:border-neutral-800"> <div id="code-block-5j8w835emna" class="relative"> <button type="button" data-copy class="absolute
+      dark:border-neutral-800"> <div id="code-block-xa9midku7o" class="relative"> <button type="button" data-copy aria-label="Copy code to clipboard" class="absolute
           top-3
           z-10
           ltr:right-3
@@ -585,6 +600,7 @@ content.</p>
           dark:bg-neutral-700/90
           dark:text-white
           dark:hover:bg-neutral-700
+          cursor-pointer
           
           "> <svg class="checkmark hidden " xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="m10 13.6l5.9-5.9q.275-.275.7-.275t.7.275t.275.7t-.275.7l-6.6 6.6q-.3.3-.7.3t-.7-.3l-2.6-2.6q-.275-.275-.275-.7t.275-.7t.7-.275t.7.275z"></path></svg> <svg class="copy " xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"></path><g fill="none" stroke="currentColor"><rect width="9" height="13" x="6.5" y="6.5" rx="1.5"></rect><path d="M8.5 6A1.5 1.5 0 0 1 10 4.5h6A1.5 1.5 0 0 1 17.5 6v10a1.5 1.5 0 0 1-1.5 1.5"></path></g></svg> </button> <div class="overflow-x-auto
     text-lg
@@ -612,7 +628,7 @@ content.</p>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">      /></span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">    &#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">div</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">  );</span></span>
-<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> <script>(function(){const id = "5j8w835emna";
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> <script>(function(){const id = "xa9midku7o";
 const code = "import Input from \"rocksolidjs/Input\";\n\nexport default function Example() {\n  return (\n    \u003cdiv class=\"flex flex-col gap-4\">\n      \u003cInput\n        prefix=\"https://\"\n        placeholder=\"example.com\"\n        aria-label=\"Website\"\n      />\n      \u003cInput\n        placeholder=\"0.00\"\n        suffix=\"USD\"\n        aria-label=\"Amount\"\n      />\n      \u003cInput\n        prefix=\"$\"\n        placeholder=\"0.00\"\n        suffix=\"USD\"\n        aria-label=\"Price\"\n      />\n    \u003c/div>\n  );\n}";
 
   const copyBtn = document.querySelector(`#code-block-${id} [data-copy]`);
@@ -621,10 +637,12 @@ const code = "import Input from \"rocksolidjs/Input\";\n\nexport default functio
       const copyIcon = copyBtn.querySelector(".copy");
       const checkmarkIcon = copyBtn.querySelector(".checkmark");
       await navigator.clipboard.writeText(code);
+      copyBtn.classList.remove("cursor-pointer");
       copyIcon.classList.add("hidden");
       checkmarkIcon.classList.remove("hidden");
       copyBtn.disabled = true;
       setTimeout(() => {
+        copyBtn.classList.add("cursor-pointer");
         copyIcon.classList.remove("hidden");
         checkmarkIcon.classList.add("hidden");
         copyBtn.disabled = false;
@@ -652,9 +670,9 @@ const code = "import Input from \"rocksolidjs/Input\";\n\nexport default functio
       text-base
       text-neutral-900
       dark:bg-neutral-950
-      dark:text-neutral-100" data-component-preview> <astro-island uid="1za6uS" component-url="/_astro/dynamic-component-renderer.DMQQXM0d.js" component-export="default" renderer-url="/_astro/client.BgJ9siUT.js" props="{&quot;name&quot;:[0,&quot;Input/examples/types&quot;]}" ssr client="only" opts="{&quot;name&quot;:&quot;DynamicComponentRenderer&quot;,&quot;value&quot;:&quot;solid-js&quot;}"></astro-island> </div> <div data-code class="border-t
+      dark:text-neutral-100" data-component-preview> <astro-island uid="1za6uS" component-url="/_astro/dynamic-component-renderer.uIVJPxGH.js" component-export="default" renderer-url="/_astro/client.BgJ9siUT.js" props="{&quot;name&quot;:[0,&quot;Input/examples/types&quot;]}" ssr client="only" opts="{&quot;name&quot;:&quot;DynamicComponentRenderer&quot;,&quot;value&quot;:&quot;solid-js&quot;}"></astro-island> </div> <div data-code class="border-t
       border-neutral-200
-      dark:border-neutral-800"> <div id="code-block-idmik6usck" class="relative"> <button type="button" data-copy class="absolute
+      dark:border-neutral-800"> <div id="code-block-pw9b3al9rqh" class="relative"> <button type="button" data-copy aria-label="Copy code to clipboard" class="absolute
           top-3
           z-10
           ltr:right-3
@@ -671,6 +689,7 @@ const code = "import Input from \"rocksolidjs/Input\";\n\nexport default functio
           dark:bg-neutral-700/90
           dark:text-white
           dark:hover:bg-neutral-700
+          cursor-pointer
           
           "> <svg class="checkmark hidden " xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="m10 13.6l5.9-5.9q.275-.275.7-.275t.7.275t.275.7t-.275.7l-6.6 6.6q-.3.3-.7.3t-.7-.3l-2.6-2.6q-.275-.275-.275-.7t.275-.7t.7-.275t.7.275z"></path></svg> <svg class="copy " xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"></path><g fill="none" stroke="currentColor"><rect width="9" height="13" x="6.5" y="6.5" rx="1.5"></rect><path d="M8.5 6A1.5 1.5 0 0 1 10 4.5h6A1.5 1.5 0 0 1 17.5 6v10a1.5 1.5 0 0 1-1.5 1.5"></path></g></svg> </button> <div class="overflow-x-auto
     text-lg
@@ -717,7 +736,7 @@ const code = "import Input from \"rocksolidjs/Input\";\n\nexport default functio
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">      /></span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">    &#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">div</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">  );</span></span>
-<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> <script>(function(){const id = "idmik6usck";
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> <script>(function(){const id = "pw9b3al9rqh";
 const code = "import Input from \"rocksolidjs/Input\";\n\nexport default function Example() {\n  return (\n    \u003cdiv class=\"flex flex-col gap-4\">\n      \u003cInput\n        type=\"text\"\n        placeholder=\"Full name\"\n        aria-label=\"Full name\"\n      />\n      \u003cInput\n        type=\"email\"\n        placeholder=\"you@example.com\"\n        aria-label=\"Email address\"\n      />\n      \u003cInput\n        type=\"password\"\n        placeholder=\"Enter your password\"\n        aria-label=\"Password\"\n      />\n      \u003cInput\n        type=\"number\"\n        placeholder=\"Enter your age\"\n        aria-label=\"Age\"\n      />\n      \u003cInput\n        type=\"search\"\n        placeholder=\"Search...\"\n        aria-label=\"Search\"\n      />\n      \u003cInput\n        type=\"tel\"\n        placeholder=\"+1 555 123 4567\"\n        aria-label=\"Phone number\"\n      />\n      \u003cInput\n        type=\"url\"\n        placeholder=\"https://example.com\"\n        aria-label=\"Website URL\"\n      />\n    \u003c/div>\n  );\n}";
 
   const copyBtn = document.querySelector(`#code-block-${id} [data-copy]`);
@@ -726,10 +745,12 @@ const code = "import Input from \"rocksolidjs/Input\";\n\nexport default functio
       const copyIcon = copyBtn.querySelector(".copy");
       const checkmarkIcon = copyBtn.querySelector(".checkmark");
       await navigator.clipboard.writeText(code);
+      copyBtn.classList.remove("cursor-pointer");
       copyIcon.classList.add("hidden");
       checkmarkIcon.classList.remove("hidden");
       copyBtn.disabled = true;
       setTimeout(() => {
+        copyBtn.classList.add("cursor-pointer");
         copyIcon.classList.remove("hidden");
         checkmarkIcon.classList.add("hidden");
         copyBtn.disabled = false;
@@ -763,9 +784,9 @@ keyboard experience.</p>
       text-base
       text-neutral-900
       dark:bg-neutral-950
-      dark:text-neutral-100" data-component-preview> <astro-island uid="249Hyh" component-url="/_astro/dynamic-component-renderer.DMQQXM0d.js" component-export="default" renderer-url="/_astro/client.BgJ9siUT.js" props="{&quot;name&quot;:[0,&quot;Input/examples/controlled&quot;]}" ssr client="only" opts="{&quot;name&quot;:&quot;DynamicComponentRenderer&quot;,&quot;value&quot;:&quot;solid-js&quot;}"></astro-island> </div> <div data-code class="border-t
+      dark:text-neutral-100" data-component-preview> <astro-island uid="249Hyh" component-url="/_astro/dynamic-component-renderer.uIVJPxGH.js" component-export="default" renderer-url="/_astro/client.BgJ9siUT.js" props="{&quot;name&quot;:[0,&quot;Input/examples/controlled&quot;]}" ssr client="only" opts="{&quot;name&quot;:&quot;DynamicComponentRenderer&quot;,&quot;value&quot;:&quot;solid-js&quot;}"></astro-island> </div> <div data-code class="border-t
       border-neutral-200
-      dark:border-neutral-800"> <div id="code-block-one7o6mxf29" class="relative"> <button type="button" data-copy class="absolute
+      dark:border-neutral-800"> <div id="code-block-oqxcosufohq" class="relative"> <button type="button" data-copy aria-label="Copy code to clipboard" class="absolute
           top-3
           z-10
           ltr:right-3
@@ -782,6 +803,7 @@ keyboard experience.</p>
           dark:bg-neutral-700/90
           dark:text-white
           dark:hover:bg-neutral-700
+          cursor-pointer
           
           "> <svg class="checkmark hidden " xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="m10 13.6l5.9-5.9q.275-.275.7-.275t.7.275t.275.7t-.275.7l-6.6 6.6q-.3.3-.7.3t-.7-.3l-2.6-2.6q-.275-.275-.275-.7t.275-.7t.7-.275t.7.275z"></path></svg> <svg class="copy " xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"></path><g fill="none" stroke="currentColor"><rect width="9" height="13" x="6.5" y="6.5" rx="1.5"></rect><path d="M8.5 6A1.5 1.5 0 0 1 10 4.5h6A1.5 1.5 0 0 1 17.5 6v10a1.5 1.5 0 0 1-1.5 1.5"></path></g></svg> </button> <div class="overflow-x-auto
     text-lg
@@ -802,7 +824,7 @@ keyboard experience.</p>
 <span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">      suffix</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">=</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">{</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">`</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">${</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">value</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">().</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">length</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583"> }</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70"> / </span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">${</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">maxLength</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">}</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">`</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">    /></span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">  );</span></span>
-<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> <script>(function(){const id = "one7o6mxf29";
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> <script>(function(){const id = "oqxcosufohq";
 const code = "import { createSignal } from \"solid-js\";\nimport Input from \"rocksolidjs/Input\";\n\nexport default function Example() {\n  const [value, setValue] = createSignal(\"\");\n  const maxLength = 10;\n  return (\n    \u003cInput\n      value={value()}\n      onInput={(event: InputEvent) => setValue((event.target as HTMLInputElement).value)}\n      placeholder=\"Type something...\"\n      aria-label=\"Controlled input\"\n      color={value().length > maxLength ? \"error\" : \"default\"}\n      suffix={`${value().length } / ${maxLength}`}\n    />\n  );\n}";
 
   const copyBtn = document.querySelector(`#code-block-${id} [data-copy]`);
@@ -811,10 +833,12 @@ const code = "import { createSignal } from \"solid-js\";\nimport Input from \"ro
       const copyIcon = copyBtn.querySelector(".copy");
       const checkmarkIcon = copyBtn.querySelector(".checkmark");
       await navigator.clipboard.writeText(code);
+      copyBtn.classList.remove("cursor-pointer");
       copyIcon.classList.add("hidden");
       checkmarkIcon.classList.remove("hidden");
       copyBtn.disabled = true;
       setTimeout(() => {
+        copyBtn.classList.add("cursor-pointer");
         copyIcon.classList.remove("hidden");
         checkmarkIcon.classList.add("hidden");
         copyBtn.disabled = false;
@@ -852,9 +876,9 @@ individual component slots.</p>
       text-base
       text-neutral-900
       dark:bg-neutral-950
-      dark:text-neutral-100" data-component-preview> <astro-island uid="Z13r3Wy" component-url="/_astro/dynamic-component-renderer.DMQQXM0d.js" component-export="default" renderer-url="/_astro/client.BgJ9siUT.js" props="{&quot;name&quot;:[0,&quot;Input/examples/customization&quot;]}" ssr client="only" opts="{&quot;name&quot;:&quot;DynamicComponentRenderer&quot;,&quot;value&quot;:&quot;solid-js&quot;}"></astro-island> </div> <div data-code class="border-t
+      dark:text-neutral-100" data-component-preview> <astro-island uid="Z13r3Wy" component-url="/_astro/dynamic-component-renderer.uIVJPxGH.js" component-export="default" renderer-url="/_astro/client.BgJ9siUT.js" props="{&quot;name&quot;:[0,&quot;Input/examples/customization&quot;]}" ssr client="only" opts="{&quot;name&quot;:&quot;DynamicComponentRenderer&quot;,&quot;value&quot;:&quot;solid-js&quot;}"></astro-island> </div> <div data-code class="border-t
       border-neutral-200
-      dark:border-neutral-800"> <div id="code-block-nf9wfer0os" class="relative"> <button type="button" data-copy class="absolute
+      dark:border-neutral-800"> <div id="code-block-vqgl5r7kqro" class="relative"> <button type="button" data-copy aria-label="Copy code to clipboard" class="absolute
           top-3
           z-10
           ltr:right-3
@@ -871,6 +895,7 @@ individual component slots.</p>
           dark:bg-neutral-700/90
           dark:text-white
           dark:hover:bg-neutral-700
+          cursor-pointer
           
           "> <svg class="checkmark hidden " xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="m10 13.6l5.9-5.9q.275-.275.7-.275t.7.275t.275.7t-.275.7l-6.6 6.6q-.3.3-.7.3t-.7-.3l-2.6-2.6q-.275-.275-.275-.7t.275-.7t.7-.275t.7.275z"></path></svg> <svg class="copy " xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"></path><g fill="none" stroke="currentColor"><rect width="9" height="13" x="6.5" y="6.5" rx="1.5"></rect><path d="M8.5 6A1.5 1.5 0 0 1 10 4.5h6A1.5 1.5 0 0 1 17.5 6v10a1.5 1.5 0 0 1-1.5 1.5"></path></g></svg> </button> <div class="overflow-x-auto
     text-lg
@@ -897,7 +922,7 @@ individual component slots.</p>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">      }}</span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">    /></span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">  );</span></span>
-<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> <script>(function(){const id = "nf9wfer0os";
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> <script>(function(){const id = "vqgl5r7kqro";
 const code = "import Input from \"rocksolidjs/Input\";\n\nexport default function Example() {\n  return (\n    \u003cInput\n      class=\"custom-input\"\n      placeholder=\"Search documentation\"\n      prefix={\u003cspan>Search\u003c/span>}\n      suffix={\u003cspan>⌘K\u003c/span>}\n      slotProps={{\n        base: {\n          \"aria-label\": \"Search documentation\",\n        },\n        prefix: {\n          class: \"text-muted-foreground\",\n        },\n        suffix: {\n          class: \"text-muted-foreground\",\n        },\n      }}\n    />\n  );\n}";
 
   const copyBtn = document.querySelector(`#code-block-${id} [data-copy]`);
@@ -906,10 +931,12 @@ const code = "import Input from \"rocksolidjs/Input\";\n\nexport default functio
       const copyIcon = copyBtn.querySelector(".copy");
       const checkmarkIcon = copyBtn.querySelector(".checkmark");
       await navigator.clipboard.writeText(code);
+      copyBtn.classList.remove("cursor-pointer");
       copyIcon.classList.add("hidden");
       checkmarkIcon.classList.remove("hidden");
       copyBtn.disabled = true;
       setTimeout(() => {
+        copyBtn.classList.add("cursor-pointer");
         copyIcon.classList.remove("hidden");
         checkmarkIcon.classList.add("hidden");
         copyBtn.disabled = false;

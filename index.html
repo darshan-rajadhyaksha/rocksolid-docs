@@ -11,7 +11,7 @@
     ) {
       document.documentElement.classList.add("dark");
     }
-  </script><link rel="stylesheet" href="/_astro/base.CiuBXjTW.css"></head> <body class="min-h-screen bg-white text-neutral-900
+  </script><link rel="stylesheet" href="/_astro/base.Bk-AUz7t.css"></head> <body class="min-h-screen bg-white text-neutral-900
     dark:bg-neutral-950 dark:text-neutral-100"> <!-- Mobile overlay --> <div id="sidebar-overlay" class="pointer-events-none fixed inset-0 z-40
       bg-black/40 opacity-0 transition-opacity
       duration-200 lg:hidden"></div> <div class="min-h-screen lg:grid
@@ -38,7 +38,7 @@ RockSolid
 </a> <p class="mt-1 text-xs
           text-neutral-500
           dark:text-neutral-500">
-v0.1.2 </p> </div> <!-- GitHub --> <div class="mb-7"> <a href="https://github.com/darshan-rajadhyaksha/rocksolid/" target="_blank" rel="noopener noreferrer" class="flex w-full items-center gap-3
+v0.1.3 </p> </div> <!-- GitHub --> <div class="mb-7"> <a href="https://github.com/darshan-rajadhyaksha/rocksolid/" target="_blank" rel="noopener noreferrer" class="flex w-full items-center gap-3
           rounded-md px-3 py-2
           text-sm font-medium
           text-neutral-600
@@ -110,7 +110,7 @@ v0.1.2 </p> </div> <!-- GitHub --> <div class="mb-7"> <a href="https://github.co
 LTR
 </button> <button id="rtl" type="button" class="rounded px-2 py-1 text-sm">
 RTL
-</button> </div> <script type="module">var e=document.querySelector(`#ltr`),t=document.querySelector(`#rtl`),n=n=>{document.documentElement.dir=n,localStorage.setItem(`dir`,n),e?.classList.toggle(`bg-neutral-200`,n===`ltr`),t?.classList.toggle(`bg-neutral-200`,n===`rtl`),e?.classList.toggle(`dark:bg-neutral-700`,n===`ltr`),t?.classList.toggle(`dark:bg-neutral-700`,n===`rtl`)};n(localStorage.getItem(`dir`)||`ltr`),e?.addEventListener(`click`,()=>n(`ltr`)),t?.addEventListener(`click`,()=>n(`rtl`));</script> <!-- Theme --> <button type="button" data-theme-toggle aria-label="Toggle theme" class="inline-flex items-center gap-2
+</button> </div> <script type="module">var e=document.querySelector(`#ltr`),t=document.querySelector(`#rtl`),n=n=>{let r=document.documentElement;r.classList.add(`disable-transition`),r.dir=n,localStorage.setItem(`dir`,n),e?.classList.toggle(`bg-neutral-200`,n===`ltr`),t?.classList.toggle(`bg-neutral-200`,n===`rtl`),e?.classList.toggle(`dark:bg-neutral-700`,n===`ltr`),t?.classList.toggle(`dark:bg-neutral-700`,n===`rtl`),setTimeout(()=>{r.classList.remove(`disable-transition`)},0)};n(localStorage.getItem(`dir`)||`ltr`),e?.addEventListener(`click`,()=>n(`ltr`)),t?.addEventListener(`click`,()=>n(`rtl`));</script> <!-- Theme --> <button type="button" data-theme-toggle aria-label="Toggle theme" class="inline-flex items-center gap-2
           rounded-md
           border border-neutral-200
           bg-white
