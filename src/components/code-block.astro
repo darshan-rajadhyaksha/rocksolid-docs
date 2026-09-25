@@ -2,8 +2,14 @@
 import { codeToHtml } from "shiki";
 import Checkmark from "@/icons/checkmark";
 import Copy from "@/icons/copy";
+import Stackblitz from "@/icons/stackblitz";
 
-const { code = "", lang = "tsx", class: className = "" } = Astro.props;
+const {
+  code = "",
+  lang = "tsx",
+  demoLink = "",
+  class: className = "",
+} = Astro.props;
 
 const id = Math.random().toString(36).substring(2);
 
@@ -25,6 +31,34 @@ const highlightedCode = await codeToHtml(timmedCode, {
   id={`code-block-${id}`}
   class="relative"
 >
+  {demoLink ? <a
+    href={demoLink}
+    target="_blank"
+    rel="noreferrer noopener"
+    aria-label="Open code in Stackblitz editor"
+    class={`absolute
+          top-3
+          z-10
+          ltr:right-10
+          rtl:left-10
+          rounded-md
+          bg-neutral-200
+          size-6
+          text-md
+          grid
+          place-items-center
+          text-neutral-900
+          transition-colors
+          hover:bg-neutral-200/80
+          dark:bg-neutral-700/90
+          dark:text-white
+          dark:hover:bg-neutral-700
+          cursor-pointer
+          ${isOneline ? "top-[50%] -translate-y-[50%]" : ""}
+          `}
+  >
+    <Stackblitz />
+  </a> : null}
   <button
     type="button"
     data-copy

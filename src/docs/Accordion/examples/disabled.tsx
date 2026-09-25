@@ -2,7 +2,7 @@ import Accordion from "rocksolidjs/Accordion";
 import AccordionSummary from "rocksolidjs/AccordionSummary";
 import AccordionDetails from "rocksolidjs/AccordionDetails";
 
-export default function DisabledAccordion() {
+export default function Example() {
   return (
     <div class="max-w-md">
       <Accordion>

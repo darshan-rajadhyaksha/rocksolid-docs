@@ -5,9 +5,10 @@ import CodeBlock from "@/components/code-block.astro";
 type Props = {
   name: string;
   lang?: string;
+  demoLink?: string;
 };
 
-const { name, lang = "tsx" } = Astro.props as Props;
+const { name, lang = "tsx", demoLink = "" } = Astro.props as Props;
 
 const sources = import.meta.glob("/src/docs/**/*.tsx", {
   eager: true,
@@ -56,6 +57,10 @@ if (!source) {
       border-neutral-200
       dark:border-neutral-800"
   >
-    <CodeBlock code={source} lang={lang} />
+    <CodeBlock
+      code={source}
+      lang={lang}
+      demoLink={demoLink}
+    />
   </div>
 </div>
