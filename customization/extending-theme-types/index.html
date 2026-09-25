@@ -11,7 +11,7 @@
     ) {
       document.documentElement.classList.add("dark");
     }
-  </script><link rel="stylesheet" href="/_astro/base.BBeZSeec.css"></head> <body class="min-h-screen bg-white text-neutral-900
+  </script><link rel="stylesheet" href="/_astro/base.CT79ykrf.css"></head> <body class="min-h-screen bg-white text-neutral-900
     dark:bg-neutral-950 dark:text-neutral-100"> <!-- Mobile overlay --> <div id="sidebar-overlay" class="pointer-events-none fixed inset-0 z-40
       bg-black/40 opacity-0 transition-opacity
       duration-200 lg:hidden"></div> <div class="min-h-screen lg:grid
@@ -145,7 +145,7 @@ TypeScript type checking and autocomplete.</p>
 <h2 id="where-to-define-extensions">Where to Define Extensions</h2>
 <p>Theme extensions should be declared in a TypeScript declaration file.</p>
 <p>A common approach is to keep all theme type extensions in one place:</p>
-<div id="code-block-38cqdlrouys" class="relative"> <button type="button" data-copy aria-label="Copy code to clipboard" class="absolute
+<div id="code-block-b9cafgq4d4" class="relative">  <button type="button" data-copy aria-label="Copy code to clipboard" class="absolute
           top-3
           z-10
           ltr:right-3
@@ -170,7 +170,7 @@ TypeScript type checking and autocomplete.</p>
     dark:border-neutral-800 rounded-xl border" data-highlighted-code><pre class="shiki shiki-themes min-light min-dark" style="--shiki-light:#24292eff;--shiki-dark:#b392f0;--shiki-light-bg:#ffffff;--shiki-dark-bg:#1f1f1f" tabindex="0"><code><span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">src</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">/</span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">  types</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">/</span></span>
 <span class="line"><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">    theme</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">.</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">d</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">.ts</span></span>
-<span class="line"><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">  theme</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">.ts</span></span></code></pre></div> </div> <script>(function(){const id = "38cqdlrouys";
+<span class="line"><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">  theme</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">.ts</span></span></code></pre></div> </div> <script>(function(){const id = "b9cafgq4d4";
 const code = "src/\n  types/\n    theme.d.ts\n  theme.ts";
 
   const copyBtn = document.querySelector(`#code-block-${id} [data-copy]`);
@@ -198,7 +198,7 @@ const code = "src/\n  types/\n    theme.d.ts\n  theme.ts";
 theme tokens.</p>
 <p>Your actual theme values should remain in your theme configuration.</p>
 <p>For example:</p>
-<div id="code-block-aikptu6dira" class="relative"> <button type="button" data-copy aria-label="Copy code to clipboard" class="absolute
+<div id="code-block-i680ic4jip" class="relative">  <button type="button" data-copy aria-label="Copy code to clipboard" class="absolute
           top-3
           z-10
           ltr:right-3
@@ -230,7 +230,7 @@ theme tokens.</p>
 <span class="line"><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">  interface</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> ExtendedThemeTypographyColors</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0"> {</span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">    link</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">:</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF"> string</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">;</span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">  }</span></span>
-<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> <script>(function(){const id = "aikptu6dira";
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> <script>(function(){const id = "i680ic4jip";
 const code = "import \"rocksolidjs\";\nimport { type ThemeColorVariants } from \"rocksolidjs\";\n\ndeclare module \"rocksolidjs\" {\n  interface ExtendedThemeColors {\n    brand: ThemeColorVariants;\n  }\n  interface ExtendedThemeTypographyColors {\n    link: string;\n  }\n}";
 
   const copyBtn = document.querySelector(`#code-block-${id} [data-copy]`);
@@ -255,7 +255,7 @@ const code = "import \"rocksolidjs\";\nimport { type ThemeColorVariants } from \
   });
 })();</script>
 <p>Then define the values in your theme:</p>
-<div id="code-block-jl33eumkzpg" class="relative"> <button type="button" data-copy aria-label="Copy code to clipboard" class="absolute
+<div id="code-block-smz9fkuor3m" class="relative">  <button type="button" data-copy aria-label="Copy code to clipboard" class="absolute
           top-3
           z-10
           ltr:right-3
@@ -290,7 +290,7 @@ const code = "import \"rocksolidjs\";\nimport { type ThemeColorVariants } from \
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">      link</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">:</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70"> "text-blue-600 dark:text-blue-400"</span><span style="--shiki-light:#212121;--shiki-dark:#BBBBBB">,</span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">    }</span><span style="--shiki-light:#212121;--shiki-dark:#BBBBBB">,</span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">  }</span><span style="--shiki-light:#212121;--shiki-dark:#BBBBBB">,</span></span>
-<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">});</span></span></code></pre></div> </div> <script>(function(){const id = "jl33eumkzpg";
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">});</span></span></code></pre></div> </div> <script>(function(){const id = "smz9fkuor3m";
 const code = "import createTheme from \"rocksolidjs/createTheme\";\n\nexport const theme = createTheme({\n  colors: {\n    brand: {\n      // ...\n    },\n  },\n  typography: {\n    colors: {\n      link: \"text-blue-600 dark:text-blue-400\",\n    },\n  },\n});";
 
   const copyBtn = document.querySelector(`#code-block-${id} [data-copy]`);
@@ -328,7 +328,7 @@ const code = "import createTheme from \"rocksolidjs/createTheme\";\n\nexport con
 <p>For example, suppose your application has a <code>brand</code> color that does not exist
 in the default theme.</p>
 <p>First, add the color to <code>ExtendedThemeColors</code>:</p>
-<div id="code-block-wy2mr1896o" class="relative"> <button type="button" data-copy aria-label="Copy code to clipboard" class="absolute
+<div id="code-block-f7s4qkagmw6" class="relative">  <button type="button" data-copy aria-label="Copy code to clipboard" class="absolute
           top-3
           z-10
           ltr:right-3
@@ -354,7 +354,7 @@ in the default theme.</p>
 <span class="line"><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">  interface</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> ExtendedThemeColors</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0"> {</span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">    brand</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">:</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> ThemeColorVariants</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">;</span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">  }</span></span>
-<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> <script>(function(){const id = "wy2mr1896o";
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> <script>(function(){const id = "f7s4qkagmw6";
 const code = "declare module \"rocksolidjs\" {\n  interface ExtendedThemeColors {\n    brand: ThemeColorVariants;\n  }\n}";
 
   const copyBtn = document.querySelector(`#code-block-${id} [data-copy]`);
@@ -382,7 +382,7 @@ const code = "declare module \"rocksolidjs\" {\n  interface ExtendedThemeColors 
 <p>This means the custom color follows the same structure as the built-in color
 groups.</p>
 <p>The value can then be added to <code>createTheme</code>:</p>
-<div id="code-block-8x3p1e15cd3" class="relative"> <button type="button" data-copy aria-label="Copy code to clipboard" class="absolute
+<div id="code-block-uvil157h2gj" class="relative">  <button type="button" data-copy aria-label="Copy code to clipboard" class="absolute
           top-3
           z-10
           ltr:right-3
@@ -437,7 +437,7 @@ groups.</p>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">      }</span><span style="--shiki-light:#212121;--shiki-dark:#BBBBBB">,</span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">    }</span><span style="--shiki-light:#212121;--shiki-dark:#BBBBBB">,</span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">  }</span><span style="--shiki-light:#212121;--shiki-dark:#BBBBBB">,</span></span>
-<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">});</span></span></code></pre></div> </div> <script>(function(){const id = "8x3p1e15cd3";
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">});</span></span></code></pre></div> </div> <script>(function(){const id = "uvil157h2gj";
 const code = "createTheme({\n  colors: {\n    brand: {\n      solid: {\n        background: \"bg-indigo-600 dark:bg-indigo-500\",\n        text: \"text-white dark:text-white\",\n        border: \"border-indigo-600 dark:border-indigo-500\",\n        hover: \"hover:bg-indigo-700 dark:hover:bg-indigo-400\",\n        active: \"active:bg-indigo-800 dark:active:bg-indigo-300\",\n      },\n      filled: {\n        background: \"bg-indigo-100 dark:bg-indigo-950\",\n        text: \"text-indigo-700 dark:text-indigo-300\",\n        border: \"border-indigo-100 dark:border-indigo-950\",\n        hover: \"hover:bg-indigo-200 dark:hover:bg-indigo-900\",\n        active: \"active:bg-indigo-300 dark:active:bg-indigo-800\",\n      },\n      outlined: {\n        background: \"bg-transparent dark:bg-transparent\",\n        text: \"text-indigo-700 dark:text-indigo-300\",\n        border: \"border-indigo-600 dark:border-indigo-500\",\n        hover: \"hover:bg-indigo-50 dark:hover:bg-indigo-950\",\n        active: \"active:bg-indigo-100 dark:active:bg-indigo-900\",\n      },\n      ghost: {\n        background: \"bg-transparent dark:bg-transparent\",\n        text: \"text-indigo-700 dark:text-indigo-300\",\n        border: \"border-transparent dark:border-transparent\",\n        hover: \"hover:bg-indigo-50 dark:hover:bg-indigo-950\",\n        active: \"active:bg-indigo-100 dark:active:bg-indigo-900\",\n      },\n    },\n  },\n});";
 
   const copyBtn = document.querySelector(`#code-block-${id} [data-copy]`);
@@ -470,7 +470,7 @@ about the color token structure.</p>
 <p>The disabled theme group contains tokens used when components are disabled.</p>
 <p>To add custom disabled tokens, extend <code>ExtendedThemeDisabled</code>.</p>
 <p>For example, if your application needs an <code>opacity</code> token:</p>
-<div id="code-block-reelobvplt" class="relative"> <button type="button" data-copy aria-label="Copy code to clipboard" class="absolute
+<div id="code-block-amf2e0659b6" class="relative">  <button type="button" data-copy aria-label="Copy code to clipboard" class="absolute
           top-3
           z-10
           ltr:right-3
@@ -496,7 +496,7 @@ about the color token structure.</p>
 <span class="line"><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">  interface</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> ExtendedThemeDisabled</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0"> {</span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">    opacity</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">:</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF"> string</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">;</span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">  }</span></span>
-<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> <script>(function(){const id = "reelobvplt";
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> <script>(function(){const id = "amf2e0659b6";
 const code = "declare module \"rocksolidjs\" {\n  interface ExtendedThemeDisabled {\n    opacity: string;\n  }\n}";
 
   const copyBtn = document.querySelector(`#code-block-${id} [data-copy]`);
@@ -521,7 +521,7 @@ const code = "declare module \"rocksolidjs\" {\n  interface ExtendedThemeDisable
   });
 })();</script>
 <p>You can then provide the value through <code>createTheme</code>:</p>
-<div id="code-block-bze843zr2jn" class="relative"> <button type="button" data-copy aria-label="Copy code to clipboard" class="absolute
+<div id="code-block-hwyoy5lqc2v" class="relative">  <button type="button" data-copy aria-label="Copy code to clipboard" class="absolute
           top-3
           z-10
           ltr:right-3
@@ -547,7 +547,7 @@ const code = "declare module \"rocksolidjs\" {\n  interface ExtendedThemeDisable
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">  disabled</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">:</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0"> {</span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">    opacity</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">:</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70"> "opacity-50"</span><span style="--shiki-light:#212121;--shiki-dark:#BBBBBB">,</span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">  }</span><span style="--shiki-light:#212121;--shiki-dark:#BBBBBB">,</span></span>
-<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">});</span></span></code></pre></div> </div> <script>(function(){const id = "bze843zr2jn";
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">});</span></span></code></pre></div> </div> <script>(function(){const id = "hwyoy5lqc2v";
 const code = "createTheme({\n  disabled: {\n    opacity: \"opacity-50\",\n  },\n});";
 
   const copyBtn = document.querySelector(`#code-block-${id} [data-copy]`);
@@ -573,7 +573,7 @@ const code = "createTheme({\n  disabled: {\n    opacity: \"opacity-50\",\n  },\n
 })();</script>
 <p>You can add as many custom disabled tokens as your application requires.</p>
 <p>For example:</p>
-<div id="code-block-1gaecsi8d7f" class="relative"> <button type="button" data-copy aria-label="Copy code to clipboard" class="absolute
+<div id="code-block-kju8di6c9x" class="relative">  <button type="button" data-copy aria-label="Copy code to clipboard" class="absolute
           top-3
           z-10
           ltr:right-3
@@ -600,7 +600,7 @@ const code = "createTheme({\n  disabled: {\n    opacity: \"opacity-50\",\n  },\n
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">    opacity</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">:</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF"> string</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">;</span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">    cursor</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">:</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF"> string</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">;</span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">  }</span></span>
-<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> <script>(function(){const id = "1gaecsi8d7f";
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> <script>(function(){const id = "kju8di6c9x";
 const code = "declare module \"rocksolidjs\" {\n  interface ExtendedThemeDisabled {\n    opacity: string;\n    cursor: string;\n  }\n}";
 
   const copyBtn = document.querySelector(`#code-block-${id} [data-copy]`);
@@ -625,7 +625,7 @@ const code = "declare module \"rocksolidjs\" {\n  interface ExtendedThemeDisable
   });
 })();</script>
 <p>The corresponding theme values are:</p>
-<div id="code-block-xrew53qz07c" class="relative"> <button type="button" data-copy aria-label="Copy code to clipboard" class="absolute
+<div id="code-block-jvqwwj7sgq" class="relative">  <button type="button" data-copy aria-label="Copy code to clipboard" class="absolute
           top-3
           z-10
           ltr:right-3
@@ -652,7 +652,7 @@ const code = "declare module \"rocksolidjs\" {\n  interface ExtendedThemeDisable
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">    opacity</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">:</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70"> "opacity-50"</span><span style="--shiki-light:#212121;--shiki-dark:#BBBBBB">,</span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">    cursor</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">:</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70"> "cursor-not-allowed"</span><span style="--shiki-light:#212121;--shiki-dark:#BBBBBB">,</span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">  }</span><span style="--shiki-light:#212121;--shiki-dark:#BBBBBB">,</span></span>
-<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">});</span></span></code></pre></div> </div> <script>(function(){const id = "xrew53qz07c";
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">});</span></span></code></pre></div> </div> <script>(function(){const id = "jvqwwj7sgq";
 const code = "createTheme({\n  disabled: {\n    opacity: \"opacity-50\",\n    cursor: \"cursor-not-allowed\",\n  },\n});";
 
   const copyBtn = document.querySelector(`#code-block-${id} [data-copy]`);
@@ -682,7 +682,7 @@ Tailwind CSS utilities required by your application.</p>
 <p>The rounded theme group defines the border-radius scale used by components.</p>
 <p>To add a custom radius, extend <code>ExtendedThemeRounded</code>.</p>
 <p>For example, add an <code>extraLarge</code> radius:</p>
-<div id="code-block-cxb7a96bqll" class="relative"> <button type="button" data-copy aria-label="Copy code to clipboard" class="absolute
+<div id="code-block-thkda67bhvb" class="relative">  <button type="button" data-copy aria-label="Copy code to clipboard" class="absolute
           top-3
           z-10
           ltr:right-3
@@ -708,7 +708,7 @@ Tailwind CSS utilities required by your application.</p>
 <span class="line"><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">  interface</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> ExtendedThemeRounded</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0"> {</span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">    extraLarge</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">:</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF"> string</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">;</span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">  }</span></span>
-<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> <script>(function(){const id = "cxb7a96bqll";
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> <script>(function(){const id = "thkda67bhvb";
 const code = "declare module \"rocksolidjs\" {\n  interface ExtendedThemeRounded {\n    extraLarge: string;\n  }\n}";
 
   const copyBtn = document.querySelector(`#code-block-${id} [data-copy]`);
@@ -733,7 +733,7 @@ const code = "declare module \"rocksolidjs\" {\n  interface ExtendedThemeRounded
   });
 })();</script>
 <p>Then provide the corresponding Tailwind CSS class:</p>
-<div id="code-block-9lrj01nywmu" class="relative"> <button type="button" data-copy aria-label="Copy code to clipboard" class="absolute
+<div id="code-block-76ve360zpqq" class="relative">  <button type="button" data-copy aria-label="Copy code to clipboard" class="absolute
           top-3
           z-10
           ltr:right-3
@@ -759,7 +759,7 @@ const code = "declare module \"rocksolidjs\" {\n  interface ExtendedThemeRounded
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">  rounded</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">:</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0"> {</span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">    extraLarge</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">:</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70"> "rounded-2xl"</span><span style="--shiki-light:#212121;--shiki-dark:#BBBBBB">,</span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">  }</span><span style="--shiki-light:#212121;--shiki-dark:#BBBBBB">,</span></span>
-<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">});</span></span></code></pre></div> </div> <script>(function(){const id = "9lrj01nywmu";
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">});</span></span></code></pre></div> </div> <script>(function(){const id = "76ve360zpqq";
 const code = "createTheme({\n  rounded: {\n    extraLarge: \"rounded-2xl\",\n  },\n});";
 
   const copyBtn = document.querySelector(`#code-block-${id} [data-copy]`);
@@ -784,7 +784,7 @@ const code = "createTheme({\n  rounded: {\n    extraLarge: \"rounded-2xl\",\n  }
   });
 })();</script>
 <p>You can add multiple custom radius values:</p>
-<div id="code-block-7ehskqags6h" class="relative"> <button type="button" data-copy aria-label="Copy code to clipboard" class="absolute
+<div id="code-block-xm3386qebhd" class="relative">  <button type="button" data-copy aria-label="Copy code to clipboard" class="absolute
           top-3
           z-10
           ltr:right-3
@@ -811,7 +811,7 @@ const code = "createTheme({\n  rounded: {\n    extraLarge: \"rounded-2xl\",\n  }
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">    extraSmall</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">:</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF"> string</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">;</span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">    extraLarge</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">:</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF"> string</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">;</span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">  }</span></span>
-<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> <script>(function(){const id = "7ehskqags6h";
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> <script>(function(){const id = "xm3386qebhd";
 const code = "declare module \"rocksolidjs\" {\n  interface ExtendedThemeRounded {\n    extraSmall: string;\n    extraLarge: string;\n  }\n}";
 
   const copyBtn = document.querySelector(`#code-block-${id} [data-copy]`);
@@ -836,7 +836,7 @@ const code = "declare module \"rocksolidjs\" {\n  interface ExtendedThemeRounded
   });
 })();</script>
 <p>Then define their values:</p>
-<div id="code-block-zvjdsgxzmv" class="relative"> <button type="button" data-copy aria-label="Copy code to clipboard" class="absolute
+<div id="code-block-zkrmykf33y" class="relative">  <button type="button" data-copy aria-label="Copy code to clipboard" class="absolute
           top-3
           z-10
           ltr:right-3
@@ -863,7 +863,7 @@ const code = "declare module \"rocksolidjs\" {\n  interface ExtendedThemeRounded
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">    extraSmall</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">:</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70"> "rounded-xs"</span><span style="--shiki-light:#212121;--shiki-dark:#BBBBBB">,</span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">    extraLarge</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">:</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70"> "rounded-2xl"</span><span style="--shiki-light:#212121;--shiki-dark:#BBBBBB">,</span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">  }</span><span style="--shiki-light:#212121;--shiki-dark:#BBBBBB">,</span></span>
-<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">});</span></span></code></pre></div> </div> <script>(function(){const id = "zvjdsgxzmv";
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">});</span></span></code></pre></div> </div> <script>(function(){const id = "zkrmykf33y";
 const code = "createTheme({\n  rounded: {\n    extraSmall: \"rounded-xs\",\n    extraLarge: \"rounded-2xl\",\n  },\n});";
 
   const copyBtn = document.querySelector(`#code-block-${id} [data-copy]`);
@@ -893,7 +893,7 @@ available in your project.</p>
 <p>The shadow theme group defines the elevation styles used by components.</p>
 <p>To add a custom shadow, extend <code>ExtendedThemeShadow</code>.</p>
 <p>For example:</p>
-<div id="code-block-82u3b9bub3m" class="relative"> <button type="button" data-copy aria-label="Copy code to clipboard" class="absolute
+<div id="code-block-bu4rquzd61" class="relative">  <button type="button" data-copy aria-label="Copy code to clipboard" class="absolute
           top-3
           z-10
           ltr:right-3
@@ -919,7 +919,7 @@ available in your project.</p>
 <span class="line"><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">  interface</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> ExtendedThemeShadow</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0"> {</span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">    extraLarge</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">:</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF"> string</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">;</span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">  }</span></span>
-<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> <script>(function(){const id = "82u3b9bub3m";
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> <script>(function(){const id = "bu4rquzd61";
 const code = "declare module \"rocksolidjs\" {\n  interface ExtendedThemeShadow {\n    extraLarge: string;\n  }\n}";
 
   const copyBtn = document.querySelector(`#code-block-${id} [data-copy]`);
@@ -944,7 +944,7 @@ const code = "declare module \"rocksolidjs\" {\n  interface ExtendedThemeShadow 
   });
 })();</script>
 <p>Then provide the corresponding value:</p>
-<div id="code-block-vx1ieyz7aca" class="relative"> <button type="button" data-copy aria-label="Copy code to clipboard" class="absolute
+<div id="code-block-bj55mevtloe" class="relative">  <button type="button" data-copy aria-label="Copy code to clipboard" class="absolute
           top-3
           z-10
           ltr:right-3
@@ -970,7 +970,7 @@ const code = "declare module \"rocksolidjs\" {\n  interface ExtendedThemeShadow 
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">  shadow</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">:</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0"> {</span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">    extraLarge</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">:</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70"> "shadow-2xl"</span><span style="--shiki-light:#212121;--shiki-dark:#BBBBBB">,</span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">  }</span><span style="--shiki-light:#212121;--shiki-dark:#BBBBBB">,</span></span>
-<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">});</span></span></code></pre></div> </div> <script>(function(){const id = "vx1ieyz7aca";
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">});</span></span></code></pre></div> </div> <script>(function(){const id = "bj55mevtloe";
 const code = "createTheme({\n  shadow: {\n    extraLarge: \"shadow-2xl\",\n  },\n});";
 
   const copyBtn = document.querySelector(`#code-block-${id} [data-copy]`);
@@ -995,7 +995,7 @@ const code = "createTheme({\n  shadow: {\n    extraLarge: \"shadow-2xl\",\n  },\
   });
 })();</script>
 <p>Custom shadows can also use Tailwind CSS arbitrary values:</p>
-<div id="code-block-yn4q7b6qujk" class="relative"> <button type="button" data-copy aria-label="Copy code to clipboard" class="absolute
+<div id="code-block-q07ynejtor" class="relative">  <button type="button" data-copy aria-label="Copy code to clipboard" class="absolute
           top-3
           z-10
           ltr:right-3
@@ -1021,7 +1021,7 @@ const code = "createTheme({\n  shadow: {\n    extraLarge: \"shadow-2xl\",\n  },\
 <span class="line"><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">  interface</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> ExtendedThemeShadow</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0"> {</span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">    elevated</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">:</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF"> string</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">;</span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">  }</span></span>
-<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> <script>(function(){const id = "yn4q7b6qujk";
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> <script>(function(){const id = "q07ynejtor";
 const code = "declare module \"rocksolidjs\" {\n  interface ExtendedThemeShadow {\n    elevated: string;\n  }\n}";
 
   const copyBtn = document.querySelector(`#code-block-${id} [data-copy]`);
@@ -1046,7 +1046,7 @@ const code = "declare module \"rocksolidjs\" {\n  interface ExtendedThemeShadow 
   });
 })();</script>
 <p>Then define their values:</p>
-<div id="code-block-1j2p4m7ixp2" class="relative"> <button type="button" data-copy aria-label="Copy code to clipboard" class="absolute
+<div id="code-block-u1ukf32hb5f" class="relative">  <button type="button" data-copy aria-label="Copy code to clipboard" class="absolute
           top-3
           z-10
           ltr:right-3
@@ -1072,7 +1072,7 @@ const code = "declare module \"rocksolidjs\" {\n  interface ExtendedThemeShadow 
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">  shadow</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">:</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0"> {</span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">    elevated</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">:</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70"> "shadow-[0_20px_40px_-10px_rgb(0_0_0_/_0.25)]"</span><span style="--shiki-light:#212121;--shiki-dark:#BBBBBB">,</span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">  }</span><span style="--shiki-light:#212121;--shiki-dark:#BBBBBB">,</span></span>
-<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">});</span></span></code></pre></div> </div> <script>(function(){const id = "1j2p4m7ixp2";
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">});</span></span></code></pre></div> </div> <script>(function(){const id = "u1ukf32hb5f";
 const code = "createTheme({\n  shadow: {\n    elevated: \"shadow-[0_20px_40px_-10px_rgb(0_0_0_/_0.25)]\",\n  },\n});";
 
   const copyBtn = document.querySelector(`#code-block-${id} [data-copy]`);
@@ -1111,7 +1111,7 @@ different types of tokens.</p>
 <p>If your application needs another typography style, extend
 <code>ExtendedThemeTypographyVariants</code>.</p>
 <p>For example, add a <code>caption</code> variant:</p>
-<div id="code-block-jzz2anirn5m" class="relative"> <button type="button" data-copy aria-label="Copy code to clipboard" class="absolute
+<div id="code-block-lxykhuo6a7h" class="relative">  <button type="button" data-copy aria-label="Copy code to clipboard" class="absolute
           top-3
           z-10
           ltr:right-3
@@ -1137,7 +1137,7 @@ different types of tokens.</p>
 <span class="line"><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">  interface</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> ExtendedThemeTypographyVariants</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0"> {</span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">    caption</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">:</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF"> string</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">;</span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">  }</span></span>
-<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> <script>(function(){const id = "jzz2anirn5m";
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> <script>(function(){const id = "lxykhuo6a7h";
 const code = "declare module \"rocksolidjs\" {\n  interface ExtendedThemeTypographyVariants {\n    caption: string;\n  }\n}";
 
   const copyBtn = document.querySelector(`#code-block-${id} [data-copy]`);
@@ -1162,7 +1162,7 @@ const code = "declare module \"rocksolidjs\" {\n  interface ExtendedThemeTypogra
   });
 })();</script>
 <p>Then provide the Tailwind CSS classes through <code>createTheme</code>:</p>
-<div id="code-block-ie1zy7b5v6" class="relative"> <button type="button" data-copy aria-label="Copy code to clipboard" class="absolute
+<div id="code-block-wtg4hc7xdm" class="relative">  <button type="button" data-copy aria-label="Copy code to clipboard" class="absolute
           top-3
           z-10
           ltr:right-3
@@ -1190,7 +1190,7 @@ const code = "declare module \"rocksolidjs\" {\n  interface ExtendedThemeTypogra
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">      caption</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">:</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70"> "text-xs font-normal leading-4"</span><span style="--shiki-light:#212121;--shiki-dark:#BBBBBB">,</span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">    }</span><span style="--shiki-light:#212121;--shiki-dark:#BBBBBB">,</span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">  }</span><span style="--shiki-light:#212121;--shiki-dark:#BBBBBB">,</span></span>
-<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">});</span></span></code></pre></div> </div> <script>(function(){const id = "ie1zy7b5v6";
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">});</span></span></code></pre></div> </div> <script>(function(){const id = "wtg4hc7xdm";
 const code = "createTheme({\n  typography: {\n    variants: {\n      caption: \"text-xs font-normal leading-4\",\n    },\n  },\n});";
 
   const copyBtn = document.querySelector(`#code-block-${id} [data-copy]`);
@@ -1215,7 +1215,7 @@ const code = "createTheme({\n  typography: {\n    variants: {\n      caption: \"
   });
 })();</script>
 <p>You can add multiple typography variants:</p>
-<div id="code-block-fvrlv4pmdtb" class="relative"> <button type="button" data-copy aria-label="Copy code to clipboard" class="absolute
+<div id="code-block-atmps2j287" class="relative">  <button type="button" data-copy aria-label="Copy code to clipboard" class="absolute
           top-3
           z-10
           ltr:right-3
@@ -1243,7 +1243,7 @@ const code = "createTheme({\n  typography: {\n    variants: {\n      caption: \"
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">    label</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">:</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF"> string</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">;</span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">    overline</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">:</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF"> string</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">;</span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">  }</span></span>
-<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> <script>(function(){const id = "fvrlv4pmdtb";
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> <script>(function(){const id = "atmps2j287";
 const code = "declare module \"rocksolidjs\" {\n  interface ExtendedThemeTypographyVariants {\n    caption: string;\n    label: string;\n    overline: string;\n  }\n}";
 
   const copyBtn = document.querySelector(`#code-block-${id} [data-copy]`);
@@ -1268,7 +1268,7 @@ const code = "declare module \"rocksolidjs\" {\n  interface ExtendedThemeTypogra
   });
 })();</script>
 <p>Then define their values:</p>
-<div id="code-block-u67xsdbnbfr" class="relative"> <button type="button" data-copy aria-label="Copy code to clipboard" class="absolute
+<div id="code-block-vm3nuleb61" class="relative">  <button type="button" data-copy aria-label="Copy code to clipboard" class="absolute
           top-3
           z-10
           ltr:right-3
@@ -1298,7 +1298,7 @@ const code = "declare module \"rocksolidjs\" {\n  interface ExtendedThemeTypogra
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">      overline</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">:</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70"> "text-xs font-semibold uppercase tracking-wide"</span><span style="--shiki-light:#212121;--shiki-dark:#BBBBBB">,</span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">    }</span><span style="--shiki-light:#212121;--shiki-dark:#BBBBBB">,</span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">  }</span><span style="--shiki-light:#212121;--shiki-dark:#BBBBBB">,</span></span>
-<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">});</span></span></code></pre></div> </div> <script>(function(){const id = "u67xsdbnbfr";
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">});</span></span></code></pre></div> </div> <script>(function(){const id = "vm3nuleb61";
 const code = "createTheme({\n  typography: {\n    variants: {\n      caption: \"text-xs font-normal leading-4\",\n      label: \"text-sm font-medium leading-5\",\n      overline: \"text-xs font-semibold uppercase tracking-wide\",\n    },\n  },\n});";
 
   const copyBtn = document.querySelector(`#code-block-${id} [data-copy]`);
@@ -1331,7 +1331,7 @@ define the typography style.</p>
 <p>If your application needs additional semantic text colors, extend
 <code>ExtendedThemeTypographyColors</code>.</p>
 <p>For example, add a <code>link</code> color:</p>
-<div id="code-block-pr2z5n0o4ts" class="relative"> <button type="button" data-copy aria-label="Copy code to clipboard" class="absolute
+<div id="code-block-czbb2o3ophe" class="relative">  <button type="button" data-copy aria-label="Copy code to clipboard" class="absolute
           top-3
           z-10
           ltr:right-3
@@ -1357,7 +1357,7 @@ define the typography style.</p>
 <span class="line"><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">  interface</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> ExtendedThemeTypographyColors</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0"> {</span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">    link</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">:</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF"> string</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">;</span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">  }</span></span>
-<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> <script>(function(){const id = "pr2z5n0o4ts";
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> <script>(function(){const id = "czbb2o3ophe";
 const code = "declare module \"rocksolidjs\" {\n  interface ExtendedThemeTypographyColors {\n    link: string;\n  }\n}";
 
   const copyBtn = document.querySelector(`#code-block-${id} [data-copy]`);
@@ -1382,7 +1382,7 @@ const code = "declare module \"rocksolidjs\" {\n  interface ExtendedThemeTypogra
   });
 })();</script>
 <p>Then provide its value:</p>
-<div id="code-block-1v7txssclor" class="relative"> <button type="button" data-copy aria-label="Copy code to clipboard" class="absolute
+<div id="code-block-ukenz5anu6f" class="relative">  <button type="button" data-copy aria-label="Copy code to clipboard" class="absolute
           top-3
           z-10
           ltr:right-3
@@ -1410,7 +1410,7 @@ const code = "declare module \"rocksolidjs\" {\n  interface ExtendedThemeTypogra
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">      link</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">:</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70"> "text-blue-600 dark:text-blue-400"</span><span style="--shiki-light:#212121;--shiki-dark:#BBBBBB">,</span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">    }</span><span style="--shiki-light:#212121;--shiki-dark:#BBBBBB">,</span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">  }</span><span style="--shiki-light:#212121;--shiki-dark:#BBBBBB">,</span></span>
-<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">});</span></span></code></pre></div> </div> <script>(function(){const id = "1v7txssclor";
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">});</span></span></code></pre></div> </div> <script>(function(){const id = "ukenz5anu6f";
 const code = "createTheme({\n  typography: {\n    colors: {\n      link: \"text-blue-600 dark:text-blue-400\",\n    },\n  },\n});";
 
   const copyBtn = document.querySelector(`#code-block-${id} [data-copy]`);
@@ -1435,7 +1435,7 @@ const code = "createTheme({\n  typography: {\n    colors: {\n      link: \"text-
   });
 })();</script>
 <p>You can add multiple semantic typography colors:</p>
-<div id="code-block-0abmflkjldiu" class="relative"> <button type="button" data-copy aria-label="Copy code to clipboard" class="absolute
+<div id="code-block-13bgz44pdwln" class="relative">  <button type="button" data-copy aria-label="Copy code to clipboard" class="absolute
           top-3
           z-10
           ltr:right-3
@@ -1462,7 +1462,7 @@ const code = "createTheme({\n  typography: {\n    colors: {\n      link: \"text-
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">    link</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">:</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF"> string</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">;</span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">    caption</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">:</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF"> string</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">;</span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">  }</span></span>
-<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> <script>(function(){const id = "0abmflkjldiu";
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> <script>(function(){const id = "13bgz44pdwln";
 const code = "declare module \"rocksolidjs\" {\n  interface ExtendedThemeTypographyColors {\n    link: string;\n    caption: string;\n  }\n}";
 
   const copyBtn = document.querySelector(`#code-block-${id} [data-copy]`);
@@ -1487,7 +1487,7 @@ const code = "declare module \"rocksolidjs\" {\n  interface ExtendedThemeTypogra
   });
 })();</script>
 <p>Then provide the corresponding Tailwind CSS classes:</p>
-<div id="code-block-j43rj18r41l" class="relative"> <button type="button" data-copy aria-label="Copy code to clipboard" class="absolute
+<div id="code-block-gnnpo4gjvr" class="relative">  <button type="button" data-copy aria-label="Copy code to clipboard" class="absolute
           top-3
           z-10
           ltr:right-3
@@ -1516,7 +1516,7 @@ const code = "declare module \"rocksolidjs\" {\n  interface ExtendedThemeTypogra
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">      caption</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">:</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70"> "text-zinc-600 dark:text-zinc-400"</span><span style="--shiki-light:#212121;--shiki-dark:#BBBBBB">,</span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">    }</span><span style="--shiki-light:#212121;--shiki-dark:#BBBBBB">,</span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">  }</span><span style="--shiki-light:#212121;--shiki-dark:#BBBBBB">,</span></span>
-<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">});</span></span></code></pre></div> </div> <script>(function(){const id = "j43rj18r41l";
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">});</span></span></code></pre></div> </div> <script>(function(){const id = "gnnpo4gjvr";
 const code = "createTheme({\n  typography: {\n    colors: {\n      link: \"text-blue-600 dark:text-blue-400\",\n      caption: \"text-zinc-600 dark:text-zinc-400\",\n    },\n  },\n});";
 
   const copyBtn = document.querySelector(`#code-block-${id} [data-copy]`);
@@ -1543,7 +1543,7 @@ const code = "createTheme({\n  typography: {\n    colors: {\n      link: \"text-
 <h2 id="extending-multiple-theme-groups">Extending Multiple Theme Groups</h2>
 <p>All theme extensions can be declared in the same TypeScript declaration file.</p>
 <p>For example:</p>
-<div id="code-block-gt8whvilh4m" class="relative"> <button type="button" data-copy aria-label="Copy code to clipboard" class="absolute
+<div id="code-block-dkr5u8dxroa" class="relative">  <button type="button" data-copy aria-label="Copy code to clipboard" class="absolute
           top-3
           z-10
           ltr:right-3
@@ -1587,7 +1587,7 @@ const code = "createTheme({\n  typography: {\n    colors: {\n      link: \"text-
 <span class="line"><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">  interface</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> ExtendedThemeTypographyColors</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0"> {</span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">    link</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">:</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF"> string</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">;</span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">  }</span></span>
-<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> <script>(function(){const id = "gt8whvilh4m";
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> <script>(function(){const id = "dkr5u8dxroa";
 const code = "import \"rocksolidjs\";\nimport { type ThemeColorVariants } from \"rocksolidjs\";\n\ndeclare module \"rocksolidjs\" {\n  interface ExtendedThemeColors {\n    brand: ThemeColorVariants;\n  }\n  interface ExtendedThemeDisabled {\n    opacity: string;\n  }\n  interface ExtendedThemeRounded {\n    extraLarge: string;\n  }\n  interface ExtendedThemeShadow {\n    extraLarge: string;\n  }\n  interface ExtendedThemeTypographyVariants {\n    caption: string;\n  }\n  interface ExtendedThemeTypographyColors {\n    link: string;\n  }\n}";
 
   const copyBtn = document.querySelector(`#code-block-${id} [data-copy]`);
@@ -1614,7 +1614,7 @@ const code = "import \"rocksolidjs\";\nimport { type ThemeColorVariants } from \
 <p>You should generally keep these declarations in one place rather than
 scattering them across multiple files.</p>
 <p>The actual theme values can then be defined in your theme configuration:</p>
-<div id="code-block-t1kbzb9c5w" class="relative"> <button type="button" data-copy aria-label="Copy code to clipboard" class="absolute
+<div id="code-block-zgtsyix0vlk" class="relative">  <button type="button" data-copy aria-label="Copy code to clipboard" class="absolute
           top-3
           z-10
           ltr:right-3
@@ -1659,7 +1659,7 @@ scattering them across multiple files.</p>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">      link</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">:</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70"> "text-blue-600 dark:text-blue-400"</span><span style="--shiki-light:#212121;--shiki-dark:#BBBBBB">,</span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">    }</span><span style="--shiki-light:#212121;--shiki-dark:#BBBBBB">,</span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">  }</span><span style="--shiki-light:#212121;--shiki-dark:#BBBBBB">,</span></span>
-<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">});</span></span></code></pre></div> </div> <script>(function(){const id = "t1kbzb9c5w";
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">});</span></span></code></pre></div> </div> <script>(function(){const id = "zgtsyix0vlk";
 const code = "createTheme({\n  colors: {\n    brand: {\n      // ThemeColorVariants\n    },\n  },\n  disabled: {\n    opacity: \"opacity-50\",\n  },\n  rounded: {\n    extraLarge: \"rounded-2xl\",\n  },\n  shadow: {\n    extraLarge: \"shadow-2xl\",\n  },\n  typography: {\n    variants: {\n      caption: \"text-xs font-normal leading-4\",\n    },\n    colors: {\n      link: \"text-blue-600 dark:text-blue-400\",\n    },\n  },\n});";
 
   const copyBtn = document.querySelector(`#code-block-${id} [data-copy]`);
@@ -1688,7 +1688,7 @@ const code = "createTheme({\n  colors: {\n    brand: {\n      // ThemeColorVaria
 <p>When you add a custom token, TypeScript needs to know about that token before
 you can use it with type safety and autocomplete.</p>
 <p>For example, after extending:</p>
-<div id="code-block-mzuhb2sq3i7" class="relative"> <button type="button" data-copy aria-label="Copy code to clipboard" class="absolute
+<div id="code-block-7opztpq9pjc" class="relative">  <button type="button" data-copy aria-label="Copy code to clipboard" class="absolute
           top-3
           z-10
           ltr:right-3
@@ -1714,7 +1714,7 @@ you can use it with type safety and autocomplete.</p>
 <span class="line"><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">  interface</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> ExtendedThemeTypographyColors</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0"> {</span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">    link</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">:</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF"> string</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">;</span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">  }</span></span>
-<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> <script>(function(){const id = "mzuhb2sq3i7";
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> <script>(function(){const id = "7opztpq9pjc";
 const code = "declare module \"rocksolidjs\" {\n  interface ExtendedThemeTypographyColors {\n    link: string;\n  }\n}";
 
   const copyBtn = document.querySelector(`#code-block-${id} [data-copy]`);
@@ -1739,7 +1739,7 @@ const code = "declare module \"rocksolidjs\" {\n  interface ExtendedThemeTypogra
   });
 })();</script>
 <p>TypeScript recognizes <code>link</code> inside the theme configuration:</p>
-<div id="code-block-n1ehblvhim9" class="relative"> <button type="button" data-copy aria-label="Copy code to clipboard" class="absolute
+<div id="code-block-s302tjuxxa" class="relative">  <button type="button" data-copy aria-label="Copy code to clipboard" class="absolute
           top-3
           z-10
           ltr:right-3
@@ -1767,7 +1767,7 @@ const code = "declare module \"rocksolidjs\" {\n  interface ExtendedThemeTypogra
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">      link</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">:</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70"> "text-blue-600 dark:text-blue-400"</span><span style="--shiki-light:#212121;--shiki-dark:#BBBBBB">,</span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">    }</span><span style="--shiki-light:#212121;--shiki-dark:#BBBBBB">,</span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">  }</span><span style="--shiki-light:#212121;--shiki-dark:#BBBBBB">,</span></span>
-<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">});</span></span></code></pre></div> </div> <script>(function(){const id = "n1ehblvhim9";
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">});</span></span></code></pre></div> </div> <script>(function(){const id = "s302tjuxxa";
 const code = "createTheme({\n  typography: {\n    colors: {\n      link: \"text-blue-600 dark:text-blue-400\",\n    },\n  },\n});";
 
   const copyBtn = document.querySelector(`#code-block-${id} [data-copy]`);
@@ -1796,7 +1796,7 @@ theme token.</p>
 <p>For structured tokens such as colors, the extension also determines the
 structure that TypeScript expects.</p>
 <p>For example:</p>
-<div id="code-block-rhvyasj6fye" class="relative"> <button type="button" data-copy aria-label="Copy code to clipboard" class="absolute
+<div id="code-block-i133oc83mwf" class="relative">  <button type="button" data-copy aria-label="Copy code to clipboard" class="absolute
           top-3
           z-10
           ltr:right-3
@@ -1822,7 +1822,7 @@ structure that TypeScript expects.</p>
 <span class="line"><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">  interface</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> ExtendedThemeColors</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0"> {</span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">    brand</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">:</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> ThemeColorVariants</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">;</span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">  }</span></span>
-<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> <script>(function(){const id = "rhvyasj6fye";
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> <script>(function(){const id = "i133oc83mwf";
 const code = "declare module \"rocksolidjs\" {\n  interface ExtendedThemeColors {\n    brand: ThemeColorVariants;\n  }\n}";
 
   const copyBtn = document.querySelector(`#code-block-${id} [data-copy]`);
@@ -1850,7 +1850,7 @@ const code = "declare module \"rocksolidjs\" {\n  interface ExtendedThemeColors 
 <h2 id="one-time-type-extension">One-Time Type Extension</h2>
 <p>Type extensions should be declared once for your application.</p>
 <p>For example, avoid doing this in multiple files:</p>
-<div id="code-block-u1ki3pjy7i8" class="relative"> <button type="button" data-copy aria-label="Copy code to clipboard" class="absolute
+<div id="code-block-a9rap3yodhp" class="relative">  <button type="button" data-copy aria-label="Copy code to clipboard" class="absolute
           top-3
           z-10
           ltr:right-3
@@ -1876,7 +1876,7 @@ const code = "declare module \"rocksolidjs\" {\n  interface ExtendedThemeColors 
 <span class="line"><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">  interface</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> ExtendedThemeTypographyColors</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0"> {</span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">    link</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">:</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF"> string</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">;</span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">  }</span></span>
-<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> <script>(function(){const id = "u1ki3pjy7i8";
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> <script>(function(){const id = "a9rap3yodhp";
 const code = "declare module \"rocksolidjs\" {\n  interface ExtendedThemeTypographyColors {\n    link: string;\n  }\n}";
 
   const copyBtn = document.querySelector(`#code-block-${id} [data-copy]`);
@@ -1901,7 +1901,7 @@ const code = "declare module \"rocksolidjs\" {\n  interface ExtendedThemeTypogra
   });
 })();</script>
 <p>Instead, keep your extensions in one declaration file:</p>
-<div id="code-block-i6knxeaee7" class="relative"> <button type="button" data-copy aria-label="Copy code to clipboard" class="absolute
+<div id="code-block-ss95br0en1k" class="relative">  <button type="button" data-copy aria-label="Copy code to clipboard" class="absolute
           top-3
           z-10
           ltr:right-3
@@ -1925,7 +1925,7 @@ const code = "declare module \"rocksolidjs\" {\n  interface ExtendedThemeTypogra
     border-neutral-200
     dark:border-neutral-800 rounded-xl border" data-highlighted-code><pre class="shiki shiki-themes min-light min-dark" style="--shiki-light:#24292eff;--shiki-dark:#b392f0;--shiki-light-bg:#ffffff;--shiki-dark-bg:#1f1f1f" tabindex="0"><code><span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">src</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">/</span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">  types</span><span style="--shiki-light:#D32F2F;--shiki-dark:#F97583">/</span></span>
-<span class="line"><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">    theme</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">.</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">d</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">.ts</span></span></code></pre></div> </div> <script>(function(){const id = "i6knxeaee7";
+<span class="line"><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">    theme</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">.</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">d</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">.ts</span></span></code></pre></div> </div> <script>(function(){const id = "ss95br0en1k";
 const code = "src/\n  types/\n    theme.d.ts";
 
   const copyBtn = document.querySelector(`#code-block-${id} [data-copy]`);

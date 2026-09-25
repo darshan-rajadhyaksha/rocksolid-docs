@@ -11,7 +11,7 @@
     ) {
       document.documentElement.classList.add("dark");
     }
-  </script><link rel="stylesheet" href="/_astro/base.BBeZSeec.css"></head> <body class="min-h-screen bg-white text-neutral-900
+  </script><link rel="stylesheet" href="/_astro/base.CT79ykrf.css"></head> <body class="min-h-screen bg-white text-neutral-900
     dark:bg-neutral-950 dark:text-neutral-100"> <!-- Mobile overlay --> <div id="sidebar-overlay" class="pointer-events-none fixed inset-0 z-40
       bg-black/40 opacity-0 transition-opacity
       duration-200 lg:hidden"></div> <div class="min-h-screen lg:grid
@@ -149,7 +149,26 @@ multiple rows.</p>
       dark:bg-neutral-950
       dark:text-neutral-100" data-component-preview> <style>astro-island,astro-slot,astro-static-slot{display:contents}</style><script>(()=>{var e=async t=>{await(await t())()};(self.Astro||(self.Astro={})).only=e;window.dispatchEvent(new Event("astro:only"));})();</script><script>(()=>{var g=Object.defineProperty;var w=(a,s,c)=>s in a?g(a,s,{enumerable:!0,configurable:!0,writable:!0,value:c}):a[s]=c;var l=(a,s,c)=>w(a,typeof s!="symbol"?s+"":s,c);var E=new Set(["__proto__","constructor","prototype"]);{let a={0:t=>y(t),1:t=>c(t),2:t=>new RegExp(t),3:t=>new Date(t),4:t=>new Map(c(t)),5:t=>new Set(c(t)),6:t=>BigInt(t),7:t=>new URL(t),8:t=>new Uint8Array(t),9:t=>new Uint16Array(t),10:t=>new Uint32Array(t),11:t=>Number.POSITIVE_INFINITY*t},s=t=>{let[p,e]=t;return p in a?a[p](e):void 0},c=t=>t.map(s),y=t=>typeof t!="object"||t===null?t:Object.fromEntries(Object.entries(t).map(([p,e])=>[p,s(e)]));class f extends HTMLElement{constructor(){super(...arguments);l(this,"Component");l(this,"hydrator");l(this,"hydrate",async()=>{var b;if(!this.hydrator||!this.isConnected)return;let e=(b=this.parentElement)==null?void 0:b.closest("astro-island[ssr]");if(e){e.addEventListener("astro:hydrate",this.hydrate,{once:!0});return}let r=this.querySelectorAll("astro-slot"),n={},d=this.querySelectorAll("template[data-astro-template]");for(let o of d){let i=o.closest(this.tagName);i!=null&&i.isSameNode(this)&&(n[o.getAttribute("data-astro-template")||"default"]=o.innerHTML,o.remove())}for(let o of r){let i=o.closest(this.tagName);i!=null&&i.isSameNode(this)&&(n[o.getAttribute("name")||"default"]=o.innerHTML)}let u;try{u=this.hasAttribute("props")?y(JSON.parse(this.getAttribute("props"))):{}}catch(o){let i=this.getAttribute("component-url")||"<unknown>",v=this.getAttribute("component-export");throw v&&(i+=` (export ${v})`),console.error(`[hydrate] Error parsing props for component ${i}`,this.getAttribute("props"),o),o}let h;await this.hydrator(this)(this.Component,u,n,{client:this.getAttribute("client")}),this.removeAttribute("ssr"),this.dispatchEvent(new CustomEvent("astro:hydrate"))});l(this,"unmount",()=>{this.isConnected||this.dispatchEvent(new CustomEvent("astro:unmount"))})}disconnectedCallback(){document.removeEventListener("astro:after-swap",this.unmount),document.addEventListener("astro:after-swap",this.unmount,{once:!0})}connectedCallback(){if(!this.hasAttribute("await-children")||document.readyState==="interactive"||document.readyState==="complete")this.childrenConnectedCallback();else{let e=()=>{document.removeEventListener("DOMContentLoaded",e),r.disconnect(),this.childrenConnectedCallback()},r=new MutationObserver(()=>{var n;((n=this.lastChild)==null?void 0:n.nodeType)===Node.COMMENT_NODE&&this.lastChild.nodeValue==="astro:end"&&(this.lastChild.remove(),e())});r.observe(this,{childList:!0}),document.addEventListener("DOMContentLoaded",e)}}async childrenConnectedCallback(){let e=this.getAttribute("before-hydration-url");e&&await import(e),this.start()}getRetryImportUrl(e){let r=new URL(e,document.baseURI);return r.searchParams.set("astro-retry",Date.now().toString()),r.toString()}async importWithRetry(e){try{return await import(e)}catch(r){return await new Promise(n=>setTimeout(n,1e3)),import(this.getRetryImportUrl(e))}}handleHydrationError(e){let r=this.getAttribute("component-url"),n=new CustomEvent("astro:hydration-error",{cancelable:!0,bubbles:!0,composed:!0,detail:{error:e,componentUrl:r}});this.dispatchEvent(n)&&console.error(`[astro-island] Error hydrating ${r}`,e)}async start(){let e=JSON.parse(this.getAttribute("opts")),r=this.getAttribute("client");if(Astro[r]===void 0){window.addEventListener(`astro:${r}`,()=>this.start(),{once:!0});return}try{await Astro[r](async()=>{let n=this.getAttribute("renderer-url");try{let[d,{default:u}]=await Promise.all([this.importWithRetry(this.getAttribute("component-url")),n?this.importWithRetry(n):Promise.resolve({default:()=>()=>{}})]),h=this.getAttribute("component-export")||"default";if(h.includes(".")){this.Component=d;for(let m of h.split(".")){if(E.has(m)||!this.Component||typeof this.Component!="object"&&typeof this.Component!="function"||!Object.hasOwn(this.Component,m))throw new Error(`Invalid component export path: ${h}`);this.Component=this.Component[m]}}else{if(E.has(h))throw new Error(`Invalid component export path: ${h}`);this.Component=d[h]}return this.hydrator=u,this.hydrate}catch(d){return this.handleHydrationError(d),()=>{}}},e,this)}catch(n){this.handleHydrationError(n)}}attributeChangedCallback(){this.hydrate()}}l(f,"observedAttributes",["props"]),customElements.get("astro-island")||customElements.define("astro-island",f)}})();</script><astro-island uid="Z2kiwVM" component-url="/_astro/dynamic-component-renderer.CgF8CvU8.js" component-export="default" renderer-url="/_astro/client.BgJ9siUT.js" props="{&quot;name&quot;:[0,&quot;Table/examples/basic&quot;]}" ssr client="only" opts="{&quot;name&quot;:&quot;DynamicComponentRenderer&quot;,&quot;value&quot;:&quot;solid-js&quot;}"></astro-island> </div> <div data-code class="border-t
       border-neutral-200
-      dark:border-neutral-800"> <div id="code-block-amp9wl0hwj9" class="relative"> <button type="button" data-copy aria-label="Copy code to clipboard" class="absolute
+      dark:border-neutral-800"> <div id="code-block-2r1euato2mp" class="relative"> <a href="https://stackblitz.com/edit/rocksolid-table-basic?file=src%2FApp.tsx" target="_blank" rel="noreferrer noopener" aria-label="Open code in Stackblitz editor" class="absolute
+          top-3
+          z-10
+          ltr:right-10
+          rtl:left-10
+          rounded-md
+          bg-neutral-200
+          size-6
+          text-md
+          grid
+          place-items-center
+          text-neutral-900
+          transition-colors
+          hover:bg-neutral-200/80
+          dark:bg-neutral-700/90
+          dark:text-white
+          dark:hover:bg-neutral-700
+          cursor-pointer
+          
+          "> <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"></path><path fill="currentColor" d="M10.83 14.38c.09-.18-.09-.36-.28-.36H5.11c-.28 0-.38-.27-.19-.45l10.41-11.5c.19-.18.56 0 .47.27l-2.53 7.37c-.09.18 0 .36.19.36h5.44c.28 0 .38.27.19.45L8.68 21.93c-.19.18-.56 0-.47-.27l2.63-7.28Z"></path></svg> </a> <button type="button" data-copy aria-label="Copy code to clipboard" class="absolute
           top-3
           z-10
           ltr:right-3
@@ -228,7 +247,7 @@ multiple rows.</p>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">      &#x3C;/</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">Table</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">    &#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">div</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">  );</span></span>
-<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> <script>(function(){const id = "amp9wl0hwj9";
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> <script>(function(){const id = "2r1euato2mp";
 const code = "import Table from \"rocksolidjs/Table\";\nimport TableBody from \"rocksolidjs/TableBody\";\nimport TableCell from \"rocksolidjs/TableCell\";\nimport TableHead from \"rocksolidjs/TableHead\";\nimport TableRow from \"rocksolidjs/TableRow\";\n\nconst users = [\n  {\n    name: \"Olivia Martin\",\n    email: \"olivia@example.com\",\n    role: \"Admin\",\n    status: \"Active\",\n    joined: \"Jan 12, 2025\",\n  },\n  {\n    name: \"Jackson Lee\",\n    email: \"jackson@example.com\",\n    role: \"Member\",\n    status: \"Active\",\n    joined: \"Feb 08, 2025\",\n  },\n  {\n    name: \"Sophia Brown\",\n    email: \"sophia@example.com\",\n    role: \"Member\",\n    status: \"Inactive\",\n    joined: \"Mar 21, 2025\",\n  },\n];\n\nexport default function Example() {\n  return (\n    \u003cdiv class=\"w-full overflow-x-auto\">\n      \u003cTable class=\"min-w-200\">\n        \u003cTableHead>\n          \u003cTableRow>\n            \u003cTableCell>Name\u003c/TableCell>\n            \u003cTableCell>Email\u003c/TableCell>\n            \u003cTableCell>Role\u003c/TableCell>\n            \u003cTableCell>Status\u003c/TableCell>\n            \u003cTableCell>Joined\u003c/TableCell>\n          \u003c/TableRow>\n        \u003c/TableHead>\n        \u003cTableBody>\n          {users.map((user) => (\n            \u003cTableRow>\n              \u003cTableCell>{user.name}\u003c/TableCell>\n              \u003cTableCell>{user.email}\u003c/TableCell>\n              \u003cTableCell>{user.role}\u003c/TableCell>\n              \u003cTableCell>{user.status}\u003c/TableCell>\n              \u003cTableCell>{user.joined}\u003c/TableCell>\n            \u003c/TableRow>\n          ))}\n        \u003c/TableBody>\n      \u003c/Table>\n    \u003c/div>\n  );\n}";
 
   const copyBtn = document.querySelector(`#code-block-${id} [data-copy]`);
@@ -274,7 +293,26 @@ when displaying a larger amount of data.</p>
       dark:bg-neutral-950
       dark:text-neutral-100" data-component-preview> <astro-island uid="JXc1l" component-url="/_astro/dynamic-component-renderer.CgF8CvU8.js" component-export="default" renderer-url="/_astro/client.BgJ9siUT.js" props="{&quot;name&quot;:[0,&quot;Table/examples/dense&quot;]}" ssr client="only" opts="{&quot;name&quot;:&quot;DynamicComponentRenderer&quot;,&quot;value&quot;:&quot;solid-js&quot;}"></astro-island> </div> <div data-code class="border-t
       border-neutral-200
-      dark:border-neutral-800"> <div id="code-block-n4xt4ceapuq" class="relative"> <button type="button" data-copy aria-label="Copy code to clipboard" class="absolute
+      dark:border-neutral-800"> <div id="code-block-3hha9du8tyb" class="relative"> <a href="https://stackblitz.com/edit/rocksolid-table-dense?file=src%2FApp.tsx" target="_blank" rel="noreferrer noopener" aria-label="Open code in Stackblitz editor" class="absolute
+          top-3
+          z-10
+          ltr:right-10
+          rtl:left-10
+          rounded-md
+          bg-neutral-200
+          size-6
+          text-md
+          grid
+          place-items-center
+          text-neutral-900
+          transition-colors
+          hover:bg-neutral-200/80
+          dark:bg-neutral-700/90
+          dark:text-white
+          dark:hover:bg-neutral-700
+          cursor-pointer
+          
+          "> <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"></path><path fill="currentColor" d="M10.83 14.38c.09-.18-.09-.36-.28-.36H5.11c-.28 0-.38-.27-.19-.45l10.41-11.5c.19-.18.56 0 .47.27l-2.53 7.37c-.09.18 0 .36.19.36h5.44c.28 0 .38.27.19.45L8.68 21.93c-.19.18-.56 0-.47-.27l2.63-7.28Z"></path></svg> </a> <button type="button" data-copy aria-label="Copy code to clipboard" class="absolute
           top-3
           z-10
           ltr:right-3
@@ -330,7 +368,7 @@ when displaying a larger amount of data.</p>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">      &#x3C;/</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">TableBody</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">    &#x3C;/</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">Table</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">  );</span></span>
-<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> <script>(function(){const id = "n4xt4ceapuq";
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> <script>(function(){const id = "3hha9du8tyb";
 const code = "import Table from \"rocksolidjs/Table\";\nimport TableBody from \"rocksolidjs/TableBody\";\nimport TableCell from \"rocksolidjs/TableCell\";\nimport TableHead from \"rocksolidjs/TableHead\";\nimport TableRow from \"rocksolidjs/TableRow\";\n\nconst users = [\n  { name: \"Olivia Martin\", email: \"olivia@example.com\", role: \"Admin\" },\n  { name: \"Jackson Lee\", email: \"jackson@example.com\", role: \"Member\" },\n  { name: \"Sophia Brown\", email: \"sophia@example.com\", role: \"Member\" },\n  { name: \"Noah Wilson\", email: \"noah@example.com\", role: \"Member\" },\n];\n\nexport default function Example() {\n  return (\n    \u003cTable dense>\n      \u003cTableHead>\n        \u003cTableRow>\n          \u003cTableCell>Name\u003c/TableCell>\n          \u003cTableCell>Email\u003c/TableCell>\n          \u003cTableCell>Role\u003c/TableCell>\n        \u003c/TableRow>\n      \u003c/TableHead>\n      \u003cTableBody>\n        {users.map((user) => (\n          \u003cTableRow>\n            \u003cTableCell>{user.name}\u003c/TableCell>\n            \u003cTableCell>{user.email}\u003c/TableCell>\n            \u003cTableCell>{user.role}\u003c/TableCell>\n          \u003c/TableRow>\n        ))}\n      \u003c/TableBody>\n    \u003c/Table>\n  );\n}";
 
   const copyBtn = document.querySelector(`#code-block-${id} [data-copy]`);
@@ -375,7 +413,26 @@ row.</p>
       dark:bg-neutral-950
       dark:text-neutral-100" data-component-preview> <astro-island uid="ZhkCxw" component-url="/_astro/dynamic-component-renderer.CgF8CvU8.js" component-export="default" renderer-url="/_astro/client.BgJ9siUT.js" props="{&quot;name&quot;:[0,&quot;Table/examples/selected&quot;]}" ssr client="only" opts="{&quot;name&quot;:&quot;DynamicComponentRenderer&quot;,&quot;value&quot;:&quot;solid-js&quot;}"></astro-island> </div> <div data-code class="border-t
       border-neutral-200
-      dark:border-neutral-800"> <div id="code-block-g2uxnoppa8e" class="relative"> <button type="button" data-copy aria-label="Copy code to clipboard" class="absolute
+      dark:border-neutral-800"> <div id="code-block-6myaifshh9w" class="relative"> <a href="https://stackblitz.com/edit/rocksolid-table-selected-row?file=src%2FApp.tsx" target="_blank" rel="noreferrer noopener" aria-label="Open code in Stackblitz editor" class="absolute
+          top-3
+          z-10
+          ltr:right-10
+          rtl:left-10
+          rounded-md
+          bg-neutral-200
+          size-6
+          text-md
+          grid
+          place-items-center
+          text-neutral-900
+          transition-colors
+          hover:bg-neutral-200/80
+          dark:bg-neutral-700/90
+          dark:text-white
+          dark:hover:bg-neutral-700
+          cursor-pointer
+          
+          "> <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"></path><path fill="currentColor" d="M10.83 14.38c.09-.18-.09-.36-.28-.36H5.11c-.28 0-.38-.27-.19-.45l10.41-11.5c.19-.18.56 0 .47.27l-2.53 7.37c-.09.18 0 .36.19.36h5.44c.28 0 .38.27.19.45L8.68 21.93c-.19.18-.56 0-.47-.27l2.63-7.28Z"></path></svg> </a> <button type="button" data-copy aria-label="Copy code to clipboard" class="absolute
           top-3
           z-10
           ltr:right-3
@@ -466,7 +523,7 @@ row.</p>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">      &#x3C;/</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">TableBody</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">    &#x3C;/</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">Table</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">  );</span></span>
-<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> <script>(function(){const id = "g2uxnoppa8e";
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> <script>(function(){const id = "6myaifshh9w";
 const code = "import { createSignal, For } from \"solid-js\";\nimport Checkbox from \"rocksolidjs/Checkbox\";\nimport Table from \"rocksolidjs/Table\";\nimport TableBody from \"rocksolidjs/TableBody\";\nimport TableCell from \"rocksolidjs/TableCell\";\nimport TableHead from \"rocksolidjs/TableHead\";\nimport TableRow from \"rocksolidjs/TableRow\";\n\nconst users = [\n  { id: 1, name: \"Olivia Martin\", email: \"olivia@example.com\", role: \"Admin\" },\n  { id: 2, name: \"Jackson Lee\", email: \"jackson@example.com\", role: \"Member\" },\n  { id: 3, name: \"Sophia Brown\", email: \"sophia@example.com\", role: \"Member\" },\n];\n\nexport default function Example() {\n  const [selected, setSelected] = createSignal\u003cnumber[]>([]);\n\n  const toggleRow = (id: number) => {\n    setSelected((current) =>\n      current.includes(id)\n        ? current.filter((selectedId) => selectedId !== id)\n        : [...current, id],\n    );\n  };\n\n  const handleSelectAll = (e: Event) => {\n    if ((e.currentTarget as HTMLInputElement).checked) {\n      setSelected(users.map(user => user.id));\n    } else {\n      setSelected([]);\n    }\n  };\n\n  return (\n    \u003cTable>\n      \u003cTableHead>\n        \u003cTableRow>\n          \u003cTableCell class=\"w-12\">\n            \u003cCheckbox\n              aria-label=\"Select all users\"\n              checked={selected().length === users.length}\n              onChange={handleSelectAll}\n            />\n          \u003c/TableCell>\n          \u003cTableCell>Name\u003c/TableCell>\n          \u003cTableCell>Email\u003c/TableCell>\n          \u003cTableCell>Role\u003c/TableCell>\n        \u003c/TableRow>\n      \u003c/TableHead>\n      \u003cTableBody>\n        \u003cFor each={users}>\n          {(user) => (\n            \u003cTableRow selected={selected().includes(user.id)}>\n              \u003cTableCell>\n                \u003cCheckbox\n                  checked={selected().includes(user.id)}\n                  onChange={() => toggleRow(user.id)}\n                  aria-label={`Select ${user.name}`}\n                />\n              \u003c/TableCell>\n              \u003cTableCell>{user.name}\u003c/TableCell>\n              \u003cTableCell>{user.email}\u003c/TableCell>\n              \u003cTableCell>{user.role}\u003c/TableCell>\n            \u003c/TableRow>\n          )}\n        \u003c/For>\n      \u003c/TableBody>\n    \u003c/Table>\n  );\n}";
 
   const copyBtn = document.querySelector(`#code-block-${id} [data-copy]`);
@@ -511,7 +568,26 @@ of cell content.</p>
       dark:bg-neutral-950
       dark:text-neutral-100" data-component-preview> <astro-island uid="z3L0l" component-url="/_astro/dynamic-component-renderer.CgF8CvU8.js" component-export="default" renderer-url="/_astro/client.BgJ9siUT.js" props="{&quot;name&quot;:[0,&quot;Table/examples/alignment&quot;]}" ssr client="only" opts="{&quot;name&quot;:&quot;DynamicComponentRenderer&quot;,&quot;value&quot;:&quot;solid-js&quot;}"></astro-island> </div> <div data-code class="border-t
       border-neutral-200
-      dark:border-neutral-800"> <div id="code-block-gv2gw8dsbgn" class="relative"> <button type="button" data-copy aria-label="Copy code to clipboard" class="absolute
+      dark:border-neutral-800"> <div id="code-block-9nrc0pi79g6" class="relative"> <a href="https://stackblitz.com/edit/rocksolid-table-cell-alignment?file=src%2FApp.tsx" target="_blank" rel="noreferrer noopener" aria-label="Open code in Stackblitz editor" class="absolute
+          top-3
+          z-10
+          ltr:right-10
+          rtl:left-10
+          rounded-md
+          bg-neutral-200
+          size-6
+          text-md
+          grid
+          place-items-center
+          text-neutral-900
+          transition-colors
+          hover:bg-neutral-200/80
+          dark:bg-neutral-700/90
+          dark:text-white
+          dark:hover:bg-neutral-700
+          cursor-pointer
+          
+          "> <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"></path><path fill="currentColor" d="M10.83 14.38c.09-.18-.09-.36-.28-.36H5.11c-.28 0-.38-.27-.19-.45l10.41-11.5c.19-.18.56 0 .47.27l-2.53 7.37c-.09.18 0 .36.19.36h5.44c.28 0 .38.27.19.45L8.68 21.93c-.19.18-.56 0-.47-.27l2.63-7.28Z"></path></svg> </a> <button type="button" data-copy aria-label="Copy code to clipboard" class="absolute
           top-3
           z-10
           ltr:right-3
@@ -566,7 +642,7 @@ of cell content.</p>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">      &#x3C;/</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">TableBody</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">    &#x3C;/</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">Table</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">  );</span></span>
-<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> <script>(function(){const id = "gv2gw8dsbgn";
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> <script>(function(){const id = "9nrc0pi79g6";
 const code = "import Table from \"rocksolidjs/Table\";\nimport TableBody from \"rocksolidjs/TableBody\";\nimport TableCell from \"rocksolidjs/TableCell\";\nimport TableHead from \"rocksolidjs/TableHead\";\nimport TableRow from \"rocksolidjs/TableRow\";\n\nconst orders = [\n  { product: \"Wireless Headphones\", quantity: 2, price: \"$199.00\" },\n  { product: \"Mechanical Keyboard\", quantity: 1, price: \"$149.00\" },\n  { product: \"USB-C Hub\", quantity: 3, price: \"$89.00\" },\n];\n\nexport default function Example() {\n  return (\n    \u003cTable>\n      \u003cTableHead>\n        \u003cTableRow>\n          \u003cTableCell align=\"left\">Product\u003c/TableCell>\n          \u003cTableCell align=\"right\">Quantity\u003c/TableCell>\n          \u003cTableCell align=\"right\">Price\u003c/TableCell>\n        \u003c/TableRow>\n      \u003c/TableHead>\n      \u003cTableBody>\n        {orders.map((order) => (\n          \u003cTableRow>\n            \u003cTableCell align=\"left\">{order.product}\u003c/TableCell>\n            \u003cTableCell align=\"right\">{order.quantity}\u003c/TableCell>\n            \u003cTableCell align=\"right\">{order.price}\u003c/TableCell>\n          \u003c/TableRow>\n        ))}\n      \u003c/TableBody>\n    \u003c/Table>\n  );\n}";
 
   const copyBtn = document.querySelector(`#code-block-${id} [data-copy]`);
@@ -611,7 +687,26 @@ content associated with the table data.</p>
       dark:bg-neutral-950
       dark:text-neutral-100" data-component-preview> <astro-island uid="7swCT" component-url="/_astro/dynamic-component-renderer.CgF8CvU8.js" component-export="default" renderer-url="/_astro/client.BgJ9siUT.js" props="{&quot;name&quot;:[0,&quot;Table/examples/footer&quot;]}" ssr client="only" opts="{&quot;name&quot;:&quot;DynamicComponentRenderer&quot;,&quot;value&quot;:&quot;solid-js&quot;}"></astro-island> </div> <div data-code class="border-t
       border-neutral-200
-      dark:border-neutral-800"> <div id="code-block-dkglvkyov0w" class="relative"> <button type="button" data-copy aria-label="Copy code to clipboard" class="absolute
+      dark:border-neutral-800"> <div id="code-block-c60iwm86pd" class="relative"> <a href="https://stackblitz.com/edit/rocksolid-table-footer?file=src%2FApp.tsx" target="_blank" rel="noreferrer noopener" aria-label="Open code in Stackblitz editor" class="absolute
+          top-3
+          z-10
+          ltr:right-10
+          rtl:left-10
+          rounded-md
+          bg-neutral-200
+          size-6
+          text-md
+          grid
+          place-items-center
+          text-neutral-900
+          transition-colors
+          hover:bg-neutral-200/80
+          dark:bg-neutral-700/90
+          dark:text-white
+          dark:hover:bg-neutral-700
+          cursor-pointer
+          
+          "> <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"></path><path fill="currentColor" d="M10.83 14.38c.09-.18-.09-.36-.28-.36H5.11c-.28 0-.38-.27-.19-.45l10.41-11.5c.19-.18.56 0 .47.27l-2.53 7.37c-.09.18 0 .36.19.36h5.44c.28 0 .38.27.19.45L8.68 21.93c-.19.18-.56 0-.47-.27l2.63-7.28Z"></path></svg> </a> <button type="button" data-copy aria-label="Copy code to clipboard" class="absolute
           top-3
           z-10
           ltr:right-3
@@ -683,7 +778,7 @@ content associated with the table data.</p>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">      &#x3C;/</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">TableFooter</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">    &#x3C;/</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">Table</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">  );</span></span>
-<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> <script>(function(){const id = "dkglvkyov0w";
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> <script>(function(){const id = "c60iwm86pd";
 const code = "import Table from \"rocksolidjs/Table\";\nimport TableBody from \"rocksolidjs/TableBody\";\nimport TableCell from \"rocksolidjs/TableCell\";\nimport TableFooter from \"rocksolidjs/TableFooter\";\nimport TableHead from \"rocksolidjs/TableHead\";\nimport TableRow from \"rocksolidjs/TableRow\";\n\nconst orders = [\n  { product: \"Wireless Headphones\", quantity: 2, total: \"$398.00\" },\n  { product: \"Mechanical Keyboard\", quantity: 1, total: \"$149.00\" },\n  { product: \"USB-C Hub\", quantity: 3, total: \"$267.00\" },\n];\n\nexport default function Example() {\n  const total = orders.reduce(\n    (sum, order) => sum + Number(order.total.replace(\"$\", \"\")),\n    0,\n  );\n\n  return (\n    \u003cTable>\n      \u003cTableHead>\n        \u003cTableRow>\n          \u003cTableCell>Product\u003c/TableCell>\n          \u003cTableCell align=\"right\">Quantity\u003c/TableCell>\n          \u003cTableCell align=\"right\">Total\u003c/TableCell>\n        \u003c/TableRow>\n      \u003c/TableHead>\n      \u003cTableBody>\n        {orders.map((order) => (\n          \u003cTableRow>\n            \u003cTableCell>{order.product}\u003c/TableCell>\n            \u003cTableCell align=\"right\">{order.quantity}\u003c/TableCell>\n            \u003cTableCell align=\"right\">{order.total}\u003c/TableCell>\n          \u003c/TableRow>\n        ))}\n      \u003c/TableBody>\n      \u003cTableFooter class=\"bg-neutral-100 dark:bg-neutral-900\">\n        \u003cTableRow>\n          \u003cTableCell class=\"font-semibold\">Total\u003c/TableCell>\n          \u003cTableCell align=\"right\" class=\"font-semibold\">\n            {orders.reduce((sum, order) => sum + order.quantity, 0)}\n          \u003c/TableCell>\n          \u003cTableCell align=\"right\" class=\"font-semibold\">\n            ${total.toFixed(2)}\n          \u003c/TableCell>\n        \u003c/TableRow>\n      \u003c/TableFooter>\n    \u003c/Table>\n  );\n}";
 
   const copyBtn = document.querySelector(`#code-block-${id} [data-copy]`);
@@ -727,7 +822,26 @@ const code = "import Table from \"rocksolidjs/Table\";\nimport TableBody from \"
       dark:bg-neutral-950
       dark:text-neutral-100" data-component-preview> <astro-island uid="Z152nr5" component-url="/_astro/dynamic-component-renderer.CgF8CvU8.js" component-export="default" renderer-url="/_astro/client.BgJ9siUT.js" props="{&quot;name&quot;:[0,&quot;Table/examples/custom-styling&quot;]}" ssr client="only" opts="{&quot;name&quot;:&quot;DynamicComponentRenderer&quot;,&quot;value&quot;:&quot;solid-js&quot;}"></astro-island> </div> <div data-code class="border-t
       border-neutral-200
-      dark:border-neutral-800"> <div id="code-block-9h8k9hek7v" class="relative"> <button type="button" data-copy aria-label="Copy code to clipboard" class="absolute
+      dark:border-neutral-800"> <div id="code-block-0js64p9mqb77" class="relative"> <a href="https://stackblitz.com/edit/rocksolid-table-customization?file=src%2FApp.tsx" target="_blank" rel="noreferrer noopener" aria-label="Open code in Stackblitz editor" class="absolute
+          top-3
+          z-10
+          ltr:right-10
+          rtl:left-10
+          rounded-md
+          bg-neutral-200
+          size-6
+          text-md
+          grid
+          place-items-center
+          text-neutral-900
+          transition-colors
+          hover:bg-neutral-200/80
+          dark:bg-neutral-700/90
+          dark:text-white
+          dark:hover:bg-neutral-700
+          cursor-pointer
+          
+          "> <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"></path><path fill="currentColor" d="M10.83 14.38c.09-.18-.09-.36-.28-.36H5.11c-.28 0-.38-.27-.19-.45l10.41-11.5c.19-.18.56 0 .47.27l-2.53 7.37c-.09.18 0 .36.19.36h5.44c.28 0 .38.27.19.45L8.68 21.93c-.19.18-.56 0-.47-.27l2.63-7.28Z"></path></svg> </a> <button type="button" data-copy aria-label="Copy code to clipboard" class="absolute
           top-3
           z-10
           ltr:right-3
@@ -810,7 +924,7 @@ const code = "import Table from \"rocksolidjs/Table\";\nimport TableBody from \"
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">      &#x3C;/</span><span style="--shiki-light:#1976D2;--shiki-dark:#79B8FF">Table</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">    &#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#FFAB70">div</span><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">></span></span>
 <span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">  );</span></span>
-<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> <script>(function(){const id = "9h8k9hek7v";
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#B392F0">}</span></span></code></pre></div> </div> <script>(function(){const id = "0js64p9mqb77";
 const code = "import Table from \"rocksolidjs/Table\";\nimport TableBody from \"rocksolidjs/TableBody\";\nimport TableCell from \"rocksolidjs/TableCell\";\nimport TableHead from \"rocksolidjs/TableHead\";\nimport TableRow from \"rocksolidjs/TableRow\";\n\nconst orders = [\n  {\n    id: \"#1024\",\n    customer: \"Olivia Martin\",\n    product: \"Wireless Headphones\",\n    status: \"Completed\",\n    total: \"$398.00\",\n  },\n  {\n    id: \"#1025\",\n    customer: \"Jackson Lee\",\n    product: \"Mechanical Keyboard\",\n    status: \"Processing\",\n    total: \"$149.00\",\n  },\n  {\n    id: \"#1026\",\n    customer: \"Sophia Brown\",\n    product: \"USB-C Hub\",\n    status: \"Pending\",\n    total: \"$267.00\",\n  },\n];\n\nexport default function CustomStyling() {\n  return (\n    \u003cdiv class=\"w-full overflow-x-auto\">\n      \u003cTable class=\"rounded-lg min-w-200 border-separate overflow-hidden border border-neutral-300 dark:border-neutral-700\">\n        \u003cTableHead class=\"bg-muted/50\">\n          \u003cTableRow>\n            \u003cTableCell class=\"font-semibold\">Order\u003c/TableCell>\n            \u003cTableCell class=\"font-semibold\">Customer\u003c/TableCell>\n            \u003cTableCell class=\"font-semibold\">Product\u003c/TableCell>\n            \u003cTableCell class=\"font-semibold\">Status\u003c/TableCell>\n            \u003cTableCell align=\"right\" class=\"font-semibold\">\n              Total\n            \u003c/TableCell>\n          \u003c/TableRow>\n        \u003c/TableHead>\n        \u003cTableBody>\n          {orders.map((order) => (\n            \u003cTableRow class=\"hover:bg-neutral-100/80 dark:hover:bg-neutral-900\">\n              \u003cTableCell class=\"font-medium\">{order.id}\u003c/TableCell>\n              \u003cTableCell>{order.customer}\u003c/TableCell>\n              \u003cTableCell>{order.product}\u003c/TableCell>\n              \u003cTableCell>{order.status}\u003c/TableCell>\n              \u003cTableCell align=\"right\" class=\"font-medium\">\n                {order.total}\n              \u003c/TableCell>\n            \u003c/TableRow>\n          ))}\n        \u003c/TableBody>\n      \u003c/Table>\n    \u003c/div>\n  );\n}";
 
   const copyBtn = document.querySelector(`#code-block-${id} [data-copy]`);
