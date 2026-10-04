@@ -1,0 +1,120 @@
+---
+title: ButtonGroup
+description: Groups related buttons together into a single, connected control.
+---
+
+import MDXTabeWrapper from "@/components/mdx-table-wrapper.astro";
+import ComponentExample from "@/components/component-example.astro";
+import ButtonGroupProps from "./props/ButtonGroup.mdx";
+
+# ButtonGroup
+
+The ButtonGroup component groups related buttons together into a single,
+connected control. It can be used to present actions that belong to the
+same context or provide a set of closely related choices.
+
+<ComponentExample
+  name="ButtonGroup/examples/basic"
+  title="Basic button group"
+  demoLink="https://stackblitz.com/edit/rocksolid-button-group-basic?file=src%2FApp.tsx"
+/>
+
+## Examples
+
+### Colors
+
+Use the `color` prop to communicate the semantic meaning of the buttons
+within the group.
+
+<ComponentExample
+  name="ButtonGroup/examples/colors"
+  title="Colors"
+  demoLink="https://stackblitz.com/edit/rocksolid-button-group-colors?file=src%2FApp.tsx"
+/>
+
+### Sizes
+
+Use the `size` prop to control the size of the button group.
+
+<ComponentExample
+  name="ButtonGroup/examples/sizes"
+  title="Sizes"
+  demoLink="https://stackblitz.com/edit/rocksolid-button-group-sizes?file=src%2FApp.tsx"
+/>
+
+### Variants
+
+Use the `variant` prop to control the visual style of the button group.
+
+<ComponentExample
+  name="ButtonGroup/examples/variants"
+  title="Variants"
+  demoLink="https://stackblitz.com/edit/rocksolid-button-group-variants?file=src%2FApp.tsx"
+/>
+
+### Orientation
+
+Use the `orientation` prop to control the direction of the button group.
+
+<ComponentExample
+  name="ButtonGroup/examples/orientation"
+  title="Orientation"
+  demoLink="https://stackblitz.com/edit/rocksolid-button-group-orientation?file=src%2FApp.tsx"
+/>
+
+
+### Full Width
+
+Use the `fullWidth` prop to make the button group span the available
+width of its container.
+
+<ComponentExample
+  name="ButtonGroup/examples/full-width"
+  title="Full width"
+  demoLink="https://stackblitz.com/edit/rocksolid-button-group-full-width?file=src%2FApp.tsx"
+/>
+
+### Disabled
+
+Use the `disabled` prop to disable the entire button group.
+
+<ComponentExample
+  name="ButtonGroup/examples/disabled"
+  title="Disabled"
+  demoLink="https://stackblitz.com/edit/rocksolid-button-group-disabled?file=src%2FApp.tsx"
+/>
+
+### Split Button
+
+Use a ButtonGroup to create a split button when an action has a
+primary operation and additional related options.
+
+<ComponentExample
+  name="ButtonGroup/examples/split-button"
+  title="Split button"
+  demoLink="https://stackblitz.com/edit/rocksolid-button-group-split-button?file=src%2FApp.tsx"
+/>
+
+
+## Accessibility
+
+-  Give the button group an accessible name using `aria-label` or `aria-labelledby` to describe its purpose.
+- Group related actions together so their relationship is clear to users.
+- Ensure each button has an accessible name that describes its action.
+- Do not rely on color alone to communicate the meaning of an action.
+- Keep the order of buttons consistent with the expected action flow.
+
+## API
+
+### ButtonGroup
+
+The ButtonGroup component supports custom elements, colors, sizes, variants,
+disabled states, full-width layouts, and custom children.
+
+<MDXTabeWrapper>
+  <ButtonGroupProps />
+</MDXTabeWrapper>
+
+## Related Components
+
+- [Button](/components/button/) — Use Button for individual actions.

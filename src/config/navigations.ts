@@ -4,6 +4,7 @@ import AvatarDocument from "@/docs/Avatar/index.mdx";
 import BadgeDocument from "@/docs/Badge/index.mdx";
 import BreadcrumbsDocument from "@/docs/Breadcrumbs/index.mdx";
 import ButtonDocument from "@/docs/Button/index.mdx";
+import ButtonGroupDocument from "@/docs/ButtonGroup/index.mdx";
 import CardDocument from "@/docs/Card/index.mdx";
 import CheckboxDocument from "@/docs/Checkbox/index.mdx";
 import ChipDocument from "@/docs/Chip/index.mdx";
@@ -103,6 +104,13 @@ export const navigations: NavigationGroup[] = [
         description: "Button component triggers an action or event with a customizable button.",
         href: "/components/button/",
         document: ButtonDocument,
+      },
+      {
+        id: "button-group",
+        title: "ButtonGroup",
+        description: "Groups related buttons together into a single, connected control.",
+        href: "/components/button-group/",
+        document: ButtonGroupDocument,
       },
       {
         id: "card",
