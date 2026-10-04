@@ -1,0 +1,1 @@
+import{S as e}from"./web.Ck_zQUvi.js";import{n as t}from"./Button-D7kRTDWq.Da0RBxkW.js";import"./Button.5jBDNi85.js";function n(){return e(t,{children:`Click me`})}export{n as default};

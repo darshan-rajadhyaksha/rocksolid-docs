@@ -1,0 +1,1 @@
+import{S as e}from"./web.Ck_zQUvi.js";import{n as t}from"./Button-D7kRTDWq.Da0RBxkW.js";import"./Button.5jBDNi85.js";import{t as n}from"./ButtonGroup.Csca9g1Z.js";function r(){return e(n,{get children(){return[e(t,{children:`First`}),e(t,{children:`Second`}),e(t,{children:`Third`})]}})}export{r as default};

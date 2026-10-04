@@ -1,0 +1,1 @@
+import{S as e}from"./web.Ck_zQUvi.js";import{t}from"./Spinner.eHYEEGQ1.js";function n(){return e(t,{})}export{n as default};
